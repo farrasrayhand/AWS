@@ -1,0 +1,1192 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='模块-3-挑战实验为咖啡馆创建静态网站'><span>模块 3 挑战实验：为咖啡馆创建静态网站</span></h1><h2 id='场景'><span>场景</span></h2><p><span>Frank 和 Martha 是一对夫妻，他们拥有并经营着一家小咖啡馆，出售甜点和咖啡。他们的女儿 Sofía 和另一名员工 Nikhil（一名中学生）也在咖啡馆里工作。咖啡馆在大城市中只有一个门店。</span></p><p><span>这家咖啡馆目前还没有营销策略。当有人路过，注意到这家咖啡馆，并决定去尝尝时，他们往往就能赢得新顾客。这家咖啡馆以高质量的甜点和咖啡而闻名，但它的名声仅在去过这家咖啡店的人中传播，或者从顾客那里听说过这家咖啡馆的人。</span></p><p><span>Sofía 向 Frank 和 Martha 建议，他们应该提高社区对咖啡馆所提供产品的意识。该咖啡馆尚无网络，目前未使用任何云计算服务。但是，这种情况即将改变。</span></p><br><h2 id='实验概览和目标'><span>实验概览和目标</span></h2><p><span>在本实验中，您将使用 Amazon Simple Storage Service (Amazon S3) 构建静态网站并实施架构最佳实践来保护和管理您的数据。</span></p><p><span>完成本实验后，您应能够：</span></p><ul><li><span>使用 Amazon S3 托管静态网站</span></li><li><span>使用 Amazon S3 实施一种保护数据的方法</span></li><li><span>在 Amazon S3 中实施数据生命周期策略</span></li><li><span>在 Amazon S3 中实施灾难恢复 (DR) 策略</span>
+<br>
+<span>在本实验结束时，您的架构应如下例所示：</span></li></ul><p><img src="images/module-3-challenge-lab-cafe-static-website-architecture.PNG" referrerpolicy="no-referrer" alt="咖啡馆网站架构"></p><p><br>
+<strong><span>注意：</span></strong><span>在此挑战实验中，部分任务并没有提供分步说明。您必须自己弄清楚如何完成这些任务。</span></p><br><h2 id='持续时间'><span>持续时间</span></h2><p><span>完成本实验大约需要 </span><strong><span>60 分钟</span></strong><span>。</span></p><br><h2 id='aws-服务限制'><span>AWS 服务限制</span></h2><p><span>在本实验环境中，对 AWS 服务和服务操作的访问可能仅限于完成实验说明所需的服务和服务操作。如果您尝试访问其他服务或执行本实验中所述之外的操作，可能会遇到错误。</span></p><br><h2 id='访问-aws-管理控制台'><span>访问 AWS 管理控制台</span></h2><ol start='' ><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）即可启动您的实验。</span></p><p><strong><span>Start Lab</span></strong><span>（启动实验）面板随即会打开，其中显示了实验状态。</span></p><p><strong><span>提示</span></strong><span>：如果您需要更多时间来完成实验，请再次选择 Start Lab（启动实验）按钮，重新启动环境计时器。</span></p></li><li><p><span>请耐心等待，直到您看到消息 </span><em><span>Lab status: ready</span></em><span>（实验状态：就绪），然后选择 </span><strong><span>X</span></strong><span> 关闭 </span><strong><span>Start Lab</span></strong><span>（启动实验）面板。</span></p></li><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_voc_grey"><span>AWS</span></span><span>。</span></p><p><span>AWS 管理控制台将会在一个新的浏览器选项卡中打开。您将自动登录系统。</span></p><p><strong><span>提示</span></strong><span>：如果未打开新的浏览器选项卡，则您的浏览器顶部通常会出现一个横幅或图标，并显示一条消息，指明您的浏览器阻止了该网站打开弹出窗口。请选择横幅或图标，然后选择 </span><strong><span>Allow pop ups</span></strong><span>（允许弹出窗口）。</span></p></li><li><p><span>排列 AWS 管理控制台选项卡，使其与这些说明一起显示。理想情况下，您将能够同时看到这两个浏览器选项卡，从而更轻松地执行实验步骤。</span></p></li></ol><br><h2 id='咖啡厅的业务请求启动静态网站挑战-1）'><span>咖啡厅的业务请求：启动静态网站（挑战 #1）</span></h2><p><span>Sophie 对 Nikhil 说，她希望咖啡馆能够建立自己的网站，直观地展示咖啡馆的产品。它还将为顾客提供商业细节，例如门店位置、营业时间和电话号码。</span></p><p><span>Nikhil 很高兴他被邀请为这家咖啡馆创建第一个网站。</span></p><p><span>对于第一个挑战，您将担任 Nikhil 的角色，并使用 Amazon S3 为咖啡馆创建基本网站。</span></p><br><h3 id='任务-1提取本实验所需的文件'><span>任务 1：提取本实验所需的文件</span></h3><p><span>在此任务中，您将提取创建静态网站所需的文件。</span></p><ol start='5' ><li><span>打开此 </span><a href='https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/Module-3-Challenge-Lab/static-website.zip'><span> Amazon S3 链接 </span></a><span>，下载本实验所需的 * .zip * 文件。</span></li><li><span>在计算机上，提取文件。请注意，您有一个 </span><em><span>index.html</span></em><span> 文件和两个包含级联样式表 (CSS) 和图像文件的文件夹。</span></li></ol><br><h3 id='任务-2创建-s3-存储桶来托管静态网站'><span>任务 2：创建 S3 存储桶来托管静态网站</span></h3><p><span>在此任务中，您将创建一个 S3 存储桶并对其进行配置，以便托管静态网站。</span></p><ol start='7' ><li><p><span>打开 </span><strong><span>Amazon S3 控制台</span></strong><span>。</span></p></li><li><p><span>创建存储桶来托管静态网站。</span></p><ul><li><span>在 AWS 区域中创建离最有可能访问该存储桶的人最近的存储桶。</span></li><li><strong><span>提示</span></strong><span>：您必须禁用</span><strong><span>阻止</span><em><span>所有</span></em><span>公有访问</span></strong><span>。</span></li></ul></li><li><p><span>在您的存储桶上启用静态网站托管。</span></p><ul><li><strong><span>提示</span></strong><span>：您将使用 *index.html * 文件作为索引文档。</span></li></ul></li></ol><br><h3 id='任务-3将内容上传到-s3-存储桶'><span>任务 3：将内容上传到 S3 存储桶</span></h3><p><span>在此任务中，您会将静态文件上传到 S3 存储桶。</span></p><ol start='10' ><li><span>将 </span><em><span>index.html</span></em><span> 文件以及 </span><em><span>css</span></em><span> 和</span><em><span>图像</span></em><span> 文件夹上传到 S3 存储桶。</span></li><li><span>在单独的 Web 浏览器选项卡中，打开静态网站的终端节点链接。</span></li></ol><br><h4 id='回答有关实验的问题'><span>回答有关实验的问题</span></h4><p><span>完成实验后，选择上方蓝色的 </span><strong><span>Submit</span></strong><span>（提交）按钮，将会记录答案。</span></p><ol start='12' ><li><p><span>查看本实验中的问题。</span></p><ul><li><span>选择 </span><span id="ssb_voc_grey"><span>Details </span><i class="fas fa-angle-down"></i></span><span>（详细信息）</span>
+<span>菜单，然后选择 </span><span id="ssb_voc_grey"><span>Show</span></span><span>（显示）。</span></li><li><span>选择页面底部的 </span><strong><span>Access the multiple choice questions</span></strong><span>（查看多项选择题）链接。</span></li></ul></li><li><p><span>在加载的页面中，回答第一个问题：</span></p><ul><li><strong><span>问题 1</span></strong><span>：在完成任务 3 后浏览网站时，是否在浏览器中看到该页面？</span></li></ul><p><strong><span>注意</span></strong><span>：请将浏览器选项卡中的问题页面保持打开状态，以便稍后在实验中返回查看。</span></p></li></ol><br><h3 id='任务-4创建存储桶策略以授予公有读取访问权限'><span>任务 4：创建存储桶策略以授予公有读取访问权限</span></h3><p><span>Frank 分享了他为咖啡馆创建</span><em><span>许多</span></em><span>新型糕点的计划。您意识到，您将需要为他创建的每个新甜点上传一个图像，并启用对该对象的公共访问权限。您不想手动执行此过程。相反，您决定创建一个存储桶策略，当每个对象上传到文件夹时，该策略将自动将其公开。</span></p><ol start='14' ><li><p><span>运用存储桶策略编辑器创建一个存储桶策略，向公共匿名用户授予只读权限。</span></p><p><strong><span>提示</span></strong><span>：如果您遇到困难，请参考 </span><a href='https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html'><span>AWS 文档</span></a><span>中的示例。</span></p></li><li><p><span>确认咖啡馆的网站现在可以公开访问。</span></p></li></ol><p><br>
+<span>    </span><em><span>恭喜！</span></em><span>您现在拥有了咖啡馆的静态网站。</span>
+<br></p><h2 id='新的业务需求保护网站数据挑战-2）'><span>新的业务需求：保护网站数据（挑战 #2）</span></h2><p><span>您向 Sofía 展示了新网站，她印象很深刻。干得好！</span></p><p><span>您和 Sofía 讨论说，随着咖啡馆供应数量的增加，您可能需要对网站进行许多更新。</span></p><p><span>Olivia 是 AWS 解决方案的架构师和咖啡馆的常客，她建议您实施一种策略来防止意外覆盖和删除网站对象。</span></p><p><span>您已经需要对网站进行一些更改，因此您决定现在是探索对象版本控制的好时机。</span></p><br><h3 id='任务-5为-s3-存储桶启用版本控制'><span>任务 5：为 S3 存储桶启用版本控制</span></h3><p><span>在此任务中，您将启用 S3 存储桶的版本控制，并确认它可以工作。</span></p><ol start='16' ><li><p><span>在 S3 控制台中，启用 S3 存储桶的版本控制。</span></p><p><strong><span>注意</span></strong><span>：请注意，启用版本控制之后，就无法禁用了。</span></p></li><li><p><span>在您最喜欢的文本编辑器中，打开 </span><em><span>index.html</span></em><span> 文件。例如，您可以使用 Notepad ++ 或 TextWrangler。</span></p></li><li><p><span>按照以下说明修改文件：</span></p><ul><li><span>找到 HTML 中包含CSS代码 </span><strong><span>bgcolor=&quot;aquamarine&quot;</span></strong><span> 的第一行，将其改为 </span><code>bgcolor=&quot;gainsboro&quot;</code><span>。</span></li><li><span>找到 HTML 中包含CSS代码 </span><strong><span>bgcolor=&quot;orange&quot;</span></strong><span> 的第一行，将其改为 </span><code>bgcolor=&quot;cornsilk&quot;</code><span>。</span></li><li><span>找到 HTML 中包含CSS代码 </span><strong><span>bgcolor=&quot;aquamarine&quot;</span></strong><span> 的第二行，将其改为 </span><code>bgcolor=&quot;gainsboro&quot;</code><span>。</span></li><li><span>保存更改。</span></li></ul></li><li><p><span>将更新后的文件上传到 S3 存储桶。</span></p></li><li><p><span>使用您的网站重新加载 Web 浏览器选项卡并注意变化。</span></p></li><li><p><span>要查看 </span><em><span>index.html</span></em><span> 文件的最新版本，请转到存储桶，然后选择 </span><strong><span>Show</span></strong><span>（显示）。您应该在下拉菜单中看到此文件的两个版本。</span></p></li><li><p><span>返回显示本实验多项选择题的浏览器选项卡，并回答以下问题：</span></p><ul><li><strong><span>问题 2</span></strong><span>：确保最大程度的保护和防止意外删除保留版本的另一种方法是什么？（</span><strong><span>提示</span></strong><span>：查看 </span><a href='https://aws.amazon.com/s3/faqs/'><span>Amazon S3 常见问题解答</span></a><span>。）</span></li></ul></li></ol><p><br>
+<br>
+<span>    </span><strong><span>架构最佳实践</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">在此任务中，您使用了一种技术来实施*保护数据*的架构最佳实践。</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><details>
+	<summary>展开<b>此处</b>以了解更多信息。</summary>
+	根据<a href="https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf">架构完善的框架</a>，版本控制可以成为更大的数据生命周期管理流程的一部分。在构建任何系统之前，应该先制定影响安全性的基本实践。例如，<i>数据分类</i>提供了一种根据敏感度级别对组织数据进行分类的方法。<i>加密</i>通过使未经授权的访问无法理解数据来保护数据。这些工具和技术非常重要，因为它们支持诸如预防财务损失或遵守监管义务等目标。
+</details><br><h2 id='新业务需求优化-s3-对象存储的成本挑战-3）'><span>新业务需求：优化 S3 对象存储的成本（挑战 #3）</span></h2><p><span>现在您启用了版本控制，您意识到，随着您上传新对象和版本，S3 存储桶的大小将继续增长。为了节省成本，您决定实施一种策略来停用其中一些旧版本。</span></p><br><h3 id='任务-6设置生命周期策略'><span>任务 6：设置生命周期策略</span></h3><p><span>在此任务中，您将设置一个生命周期策略，以自动将源存储桶中较旧版本的对象移动到 S3 标准 – 不频繁访问（S3 标准 – IA）。该策略最终还应该使对象过期。</span></p><ol start='23' ><li><span>创建生命周期规则：</span></li></ol><ul><li><span>30 天后将所有源存储桶对象的以前版本移动到 S3 标准 – IA</span></li><li><span>对象的前一个版本在 365 天后过期</span>
+<br><span> </span><strong><span>提示</span></strong><span>：如果您遇到困难，请参阅 </span><a href='https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-lifecycle.html'><span>AWS 文档</span></a><span>以获取指导。</span>
+<br>
+<strong><span>注意</span></strong><span>：要将 </span><em><span>复制范围</span></em><span> 限制为特定存储桶对象（例如，</span><em><span>index.html</span></em><span>文件），请在创建生命周期规则之前为该对象创建标签。</span>
+<br></li></ul><p><span>很好！现在，您应该有了一个生命周期规则，该规则将在 30 天后将源存储桶对象的先前版本移动到 S3 标准 – IA。该策略还将在 365 天后永久删除存在于 S3 标准 – IA 中的对象。</span></p><p><br>
+<strong><span>架构最佳实践</span></strong></p><p><span>在此任务中，您实施了</span><em><span>定义数据生命周期管理的架构最佳实践。</span></em></p><details>
+	<summary>展开<b>此处</b>以了解更多信息。</summary>
+	根据<a href="https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf">架构完善的框架</a>，实际上，生命周期战略应该基于数据的<i>重要性和敏感性</i>以及<i>法律和组织要求</i>。您应考虑诸如数据保留期限、数据销毁、数据访问管理、数据转换和数据共享等因素。
+</details><br><h2 id='新的业务需求增强灾难恢复的持久性和规划-挑战-4'><span>新的业务需求：增强灾难恢复的持久性和规划 (挑战 #4)</span></h2><p><span>下次 Olivia 来咖啡馆时，您会告诉她网站的更新。您描述了为防止网站的静态文件被意外覆盖或删除而采取的措施。Olivia 告诉您，跨区域复制是 Amazon S3 的另一项功能，您也可以使用它来备份和归档关键数据。</span></p><br><h3 id='任务-7启用跨区域复制'><span>任务 7：启用跨区域复制</span></h3><p><span>在此任务中，您将在源 S3 存储桶上启用跨区域复制。</span></p><ol start='24' ><li><p><span>在与源存储桶不同的区域中，创建第二个存储桶并对其启用版本控制。第二个存储桶是您的</span><em><span>目标存储桶</span></em><span>。</span></p></li><li><p><span>在源 S3 存储桶上，启用跨区域复制。创建复制规则时，请确保：</span></p><ul><li><span>复制整个源存储桶。</span></li><li><span>将 </span><strong><span>CafeRole</span></strong><span> 用于 AWS Identity and Access Management (IAM) 角色。此 IAM 角色授予 Amazon S3 从源存储桶读取对象并将其复制到目标存储桶的权限。</span></li><li><span>如果显示警告 </span><em><span>The replication rule is saved, but it might not work</span></em><span>（复制规则已保存，但它可能不起作用），可以忽略此警告并继续下一步操作。</span>
+<br>
+<strong><span>提示</span></strong><span>：如果您遇到困难，请参阅 </span><a href='https://docs.aws.amazon.com/AmazonS3/latest/user-guide/enable-replication.html#enable-replication-add-rule'><span>AWS 文档</span></a><span> 获取指导。</span>
+<br>
+<strong><span>注意</span></strong><span>：</span><em><span>CafeRole</span></em><span> 具有以下权限：</span></li></ul></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">Version</span><span class="cm-meta">: </span>2012-10-17</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">Statement</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">  - </span><span class="cm-atom">Action</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta"><span class="cm-tab" role="presentation" cm-text="	">    </span>- </span>s3:ListBucket</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta"><span class="cm-tab" role="presentation" cm-text="	">    </span>- </span>s3:ReplicateObject</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta"><span class="cm-tab" role="presentation" cm-text="	">    </span>- </span>s3:ReplicateDelete</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta"><span class="cm-tab" role="presentation" cm-text="	">    </span>- </span>s3:ReplicateTags</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta"><span class="cm-tab" role="presentation" cm-text="	">    </span>- </span>s3:Get*</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Resource</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta"><span class="cm-tab" role="presentation" cm-text="	">    </span>- </span><span class="cm-string">'*'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Effect</span><span class="cm-meta">: </span>Allow</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 246px;"></div><div class="CodeMirror-gutters" style="display: none; height: 246px;"></div></div></div></pre><p><span>此访问策略允许角色在</span><em><span>所有</span></em><span> S3 存储桶上执行复制任务。在真实的生产环境中，您应将策略限制为仅适用于源和目标 S3 存储桶。有关创建 IAM 角色的更多信息，请参阅</span><a href='https://docs.aws.amazon.com/AmazonS3/latest/dev/setting-repl-config-perm-overview.html'><span>设置复制权限</span></a><span>。</span>
+<br></p><ol start='26' ><li><p><span>返回浏览器选项卡，其中包含本实验的多项选择问题，然后回答以下问题：</span></p><p><span>– </span><strong><span>问题 3</span></strong><span>：您在目标存储桶中看到源存储桶中的对象了吗？</span></p></li><li><p><span>对 </span><em><span>index.html</span></em><span> 文件进行细微更改，然后将新版本上传到源存储桶。</span></p></li><li><p><span>验证源存储桶现在有三个版本的 </span><em><span>index.html</span></em><span> 文件。</span></p></li><li><p><span>确认新对象已复制到目标存储桶。您可能需要重新加载浏览器选项卡。</span></p></li><li><p><span>转到源存储桶并删除最新版本。</span></p></li><li><p><span>返回显示本实验多项选择题的浏览器选项卡，并回答以下问题：</span></p><ul><li><strong><span>问题 4</span></strong><span>：您刚从源存储桶中删除的版本是否也从目标存储桶中删除？</span></li></ul></li></ol><p><br>
+<span>    </span><strong><span>架构最佳实践</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">在此任务中，您实施了*自动执行灾难恢复*的架构最佳实践。</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><details>
+	<summary>展开<b>此处</b>以了解更多信息。</summary>
+根据<a href="https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf">架构完善的框架</a>，灾难恢复策略的开始是准备<i>备份和冗余工作负载组件</i>。您应该使用 AWS 或第三方工具自动执行系统恢复并将流量路由到灾难恢复站点或区域。
+</details><br><h2 id='提交作业'><span>提交作业</span></h2><ol start='32' ><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_blue"><span>Submit</span></span><span>（提交）记录您的进度，在出现提示时，选择 </span><strong><span>Yes</span></strong><span>（是）。</span></p></li><li><p><span>如果在几分钟后仍未显示结果，请返回到这些说明的顶部，并选择 </span><span id="ssb_voc_grey"><span>Grades</span></span><span>（成绩）</span></p><p><strong><span>提示</span></strong><span>：您可以多次提交作业。更改作业后，再次选择 </span><strong><span>Submit</span></strong><span>（提交）即可。您最后一次提交的作业将记录为本实验的成绩。</span></p></li><li><p><span>要查找有关您作业的详细反馈，请选择 </span><span id="ssb_voc_grey"><span>Details</span></span><span>（详细信息），然后选择 </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span>（查看提交报告）。</span></p></li></ol><br><h2 id='实验完成'><span>实验完成</span></h2><p><i class="fas fa-flag-checkered"></i><span> 恭喜！您已完成实验。</span></p><ol start='35' ><li><p><span>若要确认您想结束实验，请选择此页面顶部的 </span><span id="ssb_voc_grey"><strong><span>End Lab</span></strong></span><span>（结束实验），然后选择 </span><span id="ssb_blue"><strong><span>Yes</span></strong></span><span>（是）。</span></p><p><span>此时应显示一个面板，并显示消息：</span><em><span>DELETE has been initiated... You may close this message box now.</span></em><span>（删除操作已启动...您现在可以关闭此消息框。）</span></p></li><li><p><span>选择右上角的 </span><strong><span>X</span></strong><span> 关闭面板。</span></p></li></ol><p>&nbsp;</p><p><br>
+<em><span>©2020 Amazon Web Services, Inc. 及其附属公司。保留所有权利。未经 Amazon Web Services, Inc. 事先书面许可，不得复制或转载本文的部分或全部内容。禁止商业目的复制、出借或出售本文。</span></em></p></div></div>
+</body>
+</html>
