@@ -1,0 +1,1163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='módulo 10---laboratorio-guiado-automatización-de-la-implementación-de-infraestructura-con-aws cloudformation'><span>Módulo 10 - Laboratorio guiado: Automatización de la implementación de infraestructura con AWS CloudFormation</span></h1><h2 id='información-general-y-objetivos-del-laboratorio'><span>Información general y objetivos del laboratorio</span></h2><p><span>Implementar la infraestructura de manera uniforme y confiable es difícil. Requiere que las personas sigan procedimientos documentados sin tomar atajos no registrados. Además, puede ser complicado implementar la infraestructura fuera de horario cuando hay menos personal disponible. AWS CloudFormation modifica esta situación, ya que define la infraestructura en una plantilla que se puede implementar automáticamente, incluso en una programación automatizada.</span></p><p><span>En este laboratorio, aprenderá cómo implementar varias capas de infraestructura con AWS CloudFormation y cómo actualizar y eliminar una pila de CloudFormation (mientras conserva algunos recursos).</span></p><p><span>Después de completar este laboratorio, debería ser capaz de lo siguiente:</span></p><ul><li><span>Utilizar AWS CloudFormation para implementar una capa de red de nube privada virtual (VPC)</span></li><li><span>Utilizar AWS CloudFormation para implementar una capa de aplicación que haga referencia a la capa de redes</span></li><li><span>Explorar las plantillas con AWS CloudFormation Designer</span></li><li><span>Eliminar una pila que tiene una política de eliminación</span></li></ul><br><h2 id='duración'><span>Duración</span></h2><p><span>El tiempo estimado para completar este laboratorio es de </span><strong><span>20 minutos</span></strong><span>.</span></p><br><h2 id='restricciones-de-los-servicios-de-aws'><span>Restricciones de los servicios de AWS</span></h2><p><span>En este entorno de laboratorio, el acceso a los servicios y las acciones de los servicios de AWS puede restringirse a los que se necesiten para cumplir las instrucciones del laboratorio. Es posible que se produzcan errores si intenta acceder a otros servicios o hacer acciones que no sean las que se describen en este laboratorio.</span></p><br><h2 id='acceso-a-la-consola-de-administración-de-aws'><span>Acceso a la consola de administración de AWS</span></h2><ol start='' ><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratorio) y comience a trabajar en él.</span></p><p><span>Se abrirá el panel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratorio), donde se muestra el estado del laboratorio.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Sugerencia</span></strong><span>: Si necesita más tiempo para completar el laboratorio, vuelva a hacer clic en el botón </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratorio) para reiniciar el temporizador del entorno.</span></p></li><li><p><span>Espere hasta que en el panel </span><strong><span>Start Lab</span></strong><span> (Iniciar Laboratorio) se muestre el mensaje </span><em><span>Lab Status: ready (Estado del laboratorio: listo)</span></em><span> y, luego, cierre el panel haciendo clic en la </span><strong><span>X</span></strong><span>.</span></p></li><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>Con esta acción, se abrirá la consola de administración de AWS en una nueva pestaña del navegador, y el sistema iniciará su sesión de forma automática.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Sugerencia</span></strong><span>: Si no se abre una nueva pestaña del navegador, por lo general habrá un aviso o un icono en la parte superior, el cual indicará que el navegador impide que el sitio abra ventanas emergentes. Haga clic en el aviso o el icono y elija </span><strong><span>Allow pop ups</span></strong><span> (Permitir ventanas emergentes).</span></p></li><li><p><span>Ubique la pestaña de la </span><strong><span>consola de administración de AWS</span></strong><span> de modo que aparezca junto con estas instrucciones. El método más óptimo sería tener ambas pestañas del navegador abiertas al mismo tiempo para que pueda seguir los pasos del laboratorio más fácilmente.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>No cambie la región a menos que se le indique expresamente que debe hacerlo</span></strong><span>.</span></p></li></ol><br><h2 id='tarea-1-implementar-una-capa-de-red'><span>Tarea 1: Implementar una capa de red</span></h2><p><span>Se trata de una recomendación de las prácticas recomendadas para implementar una infraestructura en </span><em><span>capas</span></em><span>. Las capas comunes son las siguientes:</span></p><ul><li><span>Red (Amazon VPC)</span></li><li><span>Base de datos</span></li><li><span>Aplicación</span></li></ul><p><span>De esta forma, las plantillas se pueden volver a utilizar entre sistemas. Por ejemplo, puede implementar una topología de red común entre entornos de desarrollo, pruebas y producción, o implementar una base de datos estándar para varias aplicaciones.</span></p><p><span>En esta tarea, implementará una plantilla de AWS CloudFormation que crea una </span><em><span>capa de redes</span></em><span> a través de Amazon VPC.</span></p><ol start='5' ><li><p><span>Haga clic derecho en el siguiente enlace y descargue la plantilla </span><a href='../../../scripts/lab-network.yaml'><span>lab-network.yaml</span></a><span> en su equipo.</span></p><p><i class="fas fa-comment"></i><span> Si desea ver cómo se definen los recursos de AWS, puede abrir la plantilla en un editor de texto.</span></p><p><span>Las plantillas se pueden escribir en el lenguaje de notación de objetos JavaScript (JSON) o YAML Ain&#39;t Markup Language (YAML). YAML es un lenguaje de marcado similar a JSON, pero es más fácil de leer y editar.</span></p></li><li><p><span>En la </span><strong><span>consola de administración de AWS</span></strong><span>, encontrará el menú </span><span id="ssb_services"><span>Services</span><i class="fas fa-angle-down"></i></span><span> (Servicios), donde debe seleccionar </span><strong><span>CloudFormation</span></strong><span>.</span></p></li><li><p><span>Si ve este mensaje, haga clic en </span><span style="color:blue"><span>Try it out now and provide us feedback (Pruébelo ahora y envíenos sus comentarios)</span></span><span>:</span></p><p><img src="images/new-console.png" referrerpolicy="no-referrer" alt="Nueva consola"></p></li><li><p><span>Elija </span><span id="ssb_orange"><span>Create stack</span></span><span> (crear pila) y configure estos ajustes.</span></p><p><strong><span>Paso 1: Especificar la plantilla</span></strong></p><ul><li><strong><span>Template source</span></strong><span> (Origen de la plantilla): </span><span id="ssbox_cloudformation_blue"><i class="far fa-dot-circle" style="color:#007dbc;"></i><span> Upload a template file</span></span><span> (Cargar un archivo de plantilla)</span></li><li><strong><span>Upload a template file</span></strong><span> (Cargar un archivo de plantilla): haga clic en </span><span id="ssb_ssm_white"><span>Choose file</span></span><span> (Elegir archivo) y seleccione el archivo </span><strong><span>lab-network.yaml</span></strong><span> que descargó.</span></li><li><span>Elija </span><span id="ssb_orange"><span>Next</span></span><span> (Siguiente).</span></li></ul><p><strong><span>Paso 2: Crear pila</span></strong></p><ul><li><strong><span>Stack name</span></strong><span> (Nombre de la pila): </span><code>lab-network</code></li><li><span>Elija </span><span id="ssb_orange"><span>Next</span></span><span> (Siguiente).</span></li></ul><p><strong><span>Paso 3: Configurar las opciones de la pila</span></strong></p><ul><li><p><span>En la sección </span><strong><span>Tags</span></strong><span> (Etiquetas), escriba estos valores.</span></p><ul><li><strong><span>Key</span></strong><span> (Clave): </span><code>application</code></li><li><strong><span>Value</span></strong><span> (Valor): </span><code>inventory</code></li></ul></li><li><p><span>Elija </span><span id="ssb_orange"><span>Next</span></span><span> (Siguiente).</span></p></li></ul><p><strong><span>Paso 4: Revisar lab-network</span></strong></p><ul><li><span>Elija </span><span id="ssb_orange"><span>Create stack</span></span><span> (crear pila).</span></li></ul><p><span>AWS CloudFormation ahora utilizará la </span><em><span>plantilla</span></em><span> para generar un </span><em><span>pila</span></em><span> de recursos en la cuenta de AWS.</span></p><p><span>Las </span><em><span>etiquetas</span></em><span> especificadas se propagan automáticamente a los recursos que se crean, lo que facilita la identificación de los recursos utilizados por las aplicaciones particulares.</span></p></li><li><p><span>Haga clic en la pestaña </span><strong><span>Stack info</span></strong><span> (Información de la pila).</span></p></li><li><p><span>Espere a que </span><strong><span>Status</span></strong><span> (estado) cambie a </span><span style="color: green;"><i class="far fa-check-circle"></i><span>CREATE_COMPLETE</span></span><span>.</span></p><p><i class="fas fa-comment"></i><span>Si es necesario, haga clic en </span><strong><span>Refresh</span></strong><span> (Actualizar)</span><i class="fas fa-redo"></i><span> cada 15 segundos para actualizar la pantalla.</span></p><p><span>A partir de ahora, puede examinar los recursos que se crearon.</span></p></li><li><p><span>Elija la pestaña </span><strong><span>Resources</span></strong><span> (Recursos).</span></p><p><span>Verá una lista de los recursos creados por la plantilla.</span></p><p><i class="fas fa-comment"></i><span> Si la lista está vacía, actualice la lista seleccionando </span><strong><span>Refresh</span></strong><span> (Actualizar)</span><i class="fas fa-redo"></i><span>.</span></p></li><li><p><span>Haga clic en la pestaña </span><strong><span>Events</span></strong><span> (Eventos) y desplácese a través del registro de eventos.</span></p><p><span>El registro de eventos muestra (desde los eventos más recientes a los menos recientes) las actividades realizadas por AWS CloudFormation. Algunos ejemplos incluyen empezar a crear un recurso y, luego, completar la creación. Todo error que se produzca durante la creación de la pila se mostrará en esta pestaña.</span></p></li><li><p><span>Elija la pestaña </span><strong><span>Outputs</span></strong><span> (Resultados).</span></p><p><span>Una pila de CloudFormation puede proporcionar </span><em><span>información de los resultados</span></em><span>, como el ID de los recursos específicos y enlaces a los recursos.</span></p><p><span>Se enumeran dos resultados.</span></p><ul><li><strong><span>PublicSubnet:</span></strong><span>  El ID de la subred pública que se creó (por ejemplo: _subnet-08aafd57f745035f1__</span></li><li><strong><span>VPC:</span></strong><span> El ID de la VPC que se creó (por ejemplo: </span><em><span>vpc-08e2b7d1272ee9fb4</span></em><span>)</span></li></ul><p><span>Los resultados también se pueden utilizar para proporcionar valores a otras pilas. Esto se muestra en la columna </span><strong><span>Export name</span></strong><span> (Nombre de exportación). En este caso, la VPC y los ID de subred reciben nombres de exportación para que otras pilas puedan recuperar los valores. Estas otras pilas pueden crear recursos dentro de la VPC y la subred que se acaban de crear. Utilizará estos valores en la siguiente tarea.</span></p></li><li><p><span>Elija la pestaña </span><strong><span>Template</span></strong><span> (Plantilla).</span></p><p><span>Esta pestaña muestra la plantilla que se utilizó para crear la pila, es decir, la plantilla que cargó mientras creaba la pila. Examine la plantilla y vea los recursos que se crearon. También explore la sección </span><strong><span>Outputs</span></strong><span> (Resultados) al final (esta sección define qué valores exportar).</span></p></li></ol><br><h2 id='tarea 2-implementar-una-capa-de-aplicación'><span>Tarea 2: Implementar una capa de aplicación</span></h2><p><span>Ahora que ha implementado la </span><em><span>capa de red</span></em><span>, ha llegado el momento de implementar una </span><em><span>capa de aplicación</span></em><span> que contenga una instancia de Amazon Elastic Compute Cloud (Amazon EC2) y un grupo de seguridad.</span></p><p><span>La plantilla de AWS CloudFormation </span><em><span>importará</span></em><span> la VPC y los ID de subred desde la sección </span><em><span>Outputs (Resultados)</span></em><span> de la pila de CloudFormation existente. A continuación, utilizará esta información para crear el grupo de seguridad en la VPC y la instancia EC2 en la subred.</span></p><ol start='15' ><li><p><span>Haga clic derecho en el siguiente enlace y descargue la plantilla en su equipo: </span><a href='../../../scripts/lab-application.yaml'><span>lab-application.yaml</span></a></p><p><i class="fas fa-comment"></i><span> Si desea ver cómo se definen los recursos, puede abrir la plantilla en un editor de texto.</span></p></li><li><p><span>En el panel de navegación izquierdo, elija </span><strong><span>Stacks</span></strong><span> (Pilas).</span></p></li><li><p><span>Seleccione </span><strong><span>Create stack &gt; With new resources (standard)</span></strong><span> (Crear pila &gt; Con nuevos recursos [estándar]), y, a continuación, configure estos ajustes.</span></p><p><strong><span>Paso 1: Especificar la plantilla</span></strong></p><ul><li><strong><span>Template source</span></strong><span> (Origen de la plantilla): </span><span id="ssbox_cloudformation_blue"><i class="far fa-dot-circle" style="color:#007dbc;"></i><span> Upload a template file</span></span><span> (Cargar un archivo de plantilla)</span></li><li><strong><span>Upload a template file</span></strong><span> (Cargar un archivo de plantilla): Haga clic en </span><span id="ssb_ssm_white"><span>Choose file</span></span><span> (Seleccionar archivo) y seleccione el archivo </span><strong><span>lab-application.yaml</span></strong><span> que descargó.</span></li><li><span>Elija </span><span id="ssb_orange"><span>Next</span></span><span> (Siguiente)</span></li></ul><p><strong><span>Paso 2: Crear pila</span></strong></p><ul><li><strong><span>Stack name</span></strong><span> (Nombre de la pila): </span><code>lab-application</code></li><li><strong><span>NetworkStackName</span></strong><span> (Nombre de la pila de red): </span><code>lab-network</code></li><li><span>Seleccione </span><span id="ssb_orange"><span>Next</span></span><span> (Siguiente)</span></li></ul><p><i class="fas fa-comment"></i><span> El parámetro </span><em><span>Network Stack Name (Nombre de la pila de red)</span></em><span> indica a la plantilla el nombre de la pila que creó primero (</span><em><span>lab-network</span></em><span>) para que esta pueda recuperar los valores de la sección </span><em><span>Outputs (Resultados)</span></em><span>.</span></p><p><strong><span>Paso 3: Configurar las opciones de la pila</span></strong></p><ul><li><span>En la sección </span><strong><span>Tags</span></strong><span> (Etiquetas), escriba estos valores.</span></li><li><strong><span>Key</span></strong><span> (clave): </span><code>application</code></li><li><strong><span>Value</span></strong><span> (valor): </span><code>inventory</code></li><li><span>Seleccione </span><span id="ssb_orange"><span>Next</span></span><span> (Siguiente)</span></li></ul><p><strong><span>Paso 4: Revisar la aplicación de laboratorio</span></strong></p><ul><li><span>Haga clic en </span><span id="ssb_orange"><span>Create stack</span></span><span> (Crear pila)</span></li></ul><p><span>Mientras se está creando la pila, examine los detalles en la pestaña </span><strong><span>Events</span></strong><span> (Eventos) y en la pestaña </span><strong><span>Resources</span></strong><span> (Recursos). Puede monitorear el progreso del proceso de creación de recursos y el estado del recurso.</span></p></li><li><p><span>En la pestaña </span><strong><span>Stack info</span></strong><span> (Información de la pila), espere a que </span><strong><span>Status</span></strong><span> (Estado) cambie a </span><span style="color: green;"><i class="far fa-check-circle"></i><span>CREATE_COMPLETE</span></span><span>.</span></p></li></ol><p><span>La aplicación ya está lista.</span></p><ol start='19' ><li><p><span>Elija la pestaña </span><strong><span>Outputs</span></strong><span> (Resultados).</span></p></li><li><p><span>Copie la </span><strong><span>URL</span></strong><span> que se muestra y, a continuación, abra una nueva pestaña del navegador web, pegue la URL y presione INTRO.</span></p><p><span>La pestaña del navegador abrirá la aplicación, que se está ejecutando en el servidor web que creó esta nueva pila de CloudFormation.</span></p><p><span>Una pila de CloudFormation puede utilizar valores de referencia de otra pila de CloudFormation. Por ejemplo, esta parte de la plantilla </span><em><span>lab-application</span></em><span> hace referencia a la plantilla </span><em><span>lab-network</span></em><span>:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  WebServerSecurityGroup</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Type</span><span class="cm-meta">: </span>AWS<span class="cm-meta">::</span>EC2<span class="cm-meta">::</span>SecurityGroup</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Properties</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  GroupDescription</span><span class="cm-meta">: </span>Enable HTTP ingress</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  VpcId</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp;  Fn::ImportValue</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  !Sub $<span class="cm-meta">{</span>NetworkStackName<span class="cm-meta">}</span>-VPCID</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 157px;"></div><div class="CodeMirror-gutters" style="display: none; height: 157px;"></div></div></div></pre><p><span>La última línea utiliza el </span><em><span>nombre de pila de red</span></em><span> que proporcionó (</span><em><span>lab-network</span></em><span>) cuando se creó la pila. Importa el valor de </span><em><span>lab-network-VPCID</span></em><span> desde </span><em><span>Outputs (Resultados)</span></em><span> de la primera pila. A continuación, inserta el valor en el campo del ID de VPC de la definición del grupo de seguridad. El resultado es que el grupo de seguridad se crea en la VPC creada por la primera pila.</span></p><p><span>Este es otro ejemplo, que está en la plantilla CloudFormation que acaba de utilizar para crear la pila de aplicaciones. Este código de plantilla coloca la instancia EC2 en la subred creada por la pila de red:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  SubnetId</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Fn::ImportValue</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  !Sub $<span class="cm-meta">{</span>NetworkStackName<span class="cm-meta">}</span>-SubnetID</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p><span>Toma el </span><em><span>ID de subred</span></em><span> de la pila </span><em><span>lab-network</span></em><span> (red del laboratorio) y lo utiliza en la pila </span><em><span>lab-application</span></em><span> (aplicación del laboratorio) para lanzar la instancia en la subred pública que creó la primera pila.</span></p></li></ol><br><h2 id='tarea 3-actualizar-una-pila'><span>Tarea 3: Actualizar una pila</span></h2><p><span>AWS CloudFormation también puede </span><em><span>actualizar</span></em><span> una pila que se ha implementado. Cuando actualiza una pila, AWS CloudFormation solo modificará o reemplazará los recursos que se están modificando. Cualquier recurso que no modifique quedará como está.</span></p><p><span>En esta tarea, actualizará la pila </span><em><span>lab-application</span></em><span> (aplicación del laboratorio) para modificar un parámetro en el grupo de seguridad.</span></p><p><span>En primer lugar, deberá examinar la configuración actual en el grupo de seguridad.</span></p><ol start='21' ><li><p><span>En la </span><strong><span>consola de administración de AWS</span></strong><span>, encontrará el menú </span><span id="ssb_services"><span>Services</span><i class="fas fa-angle-down"></i></span><span> (Servicios), donde debe elegir </span><strong><span>EC2</span></strong><span>.</span></p></li><li><p><span>En el panel de navegación izquierdo, elija </span><strong><span>Security Groups</span></strong><span> (Grupos de seguridad).</span></p></li><li><p><span>Elija la casilla de verificación de </span><i class="far fa-check-square"></i><span> </span><strong><span>lab-application-WebServerSecurityGroup...</span></strong><span>.</span></p></li><li><p><span>Elija la pestaña </span><strong><span>Inbound rules</span></strong><span> (Reglas de entrada).</span></p><p><span>El grupo de seguridad actualmente solo tiene una regla. La regla permite el tráfico </span><em><span>HTTP</span></em><span>.</span></p><p><span>Ahora volverá a AWS CloudFormation para actualizar la pila.</span></p></li><li><p><span>En el menú </span><span id="ssb_services"><span>Services</span><i class="fas fa-angle-down"></i></span><span> (Servicios), elija </span><strong><span>CloudFormation</span></strong><span>.</span></p></li><li><p><span>Haga clic derecho en este enlace y descargue la plantilla actualizada </span><a href='../../../scripts/lab-application2.yaml'><span>lab-application2.yaml</span></a><span> en su equipo.</span></p><p><span>Esta plantilla tiene una configuración adicional para permitir el tráfico entrante de Secure Shell (SSH) en el puerto 22:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">  - </span><span class="cm-atom">IpProtocol</span><span class="cm-meta">: </span>tcp</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  FromPort</span><span class="cm-meta">: </span><span class="cm-number">22</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  ToPort</span><span class="cm-meta">: </span><span class="cm-number">22</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  CidrIp</span><span class="cm-meta">: </span>0.0.0.0/0</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre></li><li><p><span>En la lista </span><strong><span>Stacks</span></strong><span> (Pilas) de la </span><strong><span>consola de AWS CloudFormation</span></strong><span>, elija </span><strong><span>lab-application</span></strong><span>.</span></p></li><li><p><span>Elija </span><span id="ssb_ssm_white"><span>Update</span></span><span> (Actualizar) y configure estos ajustes.</span></p><ul><li><span>Elija </span><span id="ssbox_cloudformation_blue"><i class="far fa-dot-circle" style="color:#007dbc;"></i><span>Replace current template</span></span><span> (Reemplazar plantilla actual).</span></li><li><strong><span>Template source</span></strong><span> (Origen de la plantilla): </span><span id="ssbox_cloudformation_blue"><i class="far fa-dot-circle" style="color:#007dbc;"></i><span> Upload a template file</span></span><span> (Cargar un archivo de plantilla)</span></li><li><strong><span>Upload a template file</span></strong><span> (Cargar un archivo de plantilla): Haga clic en </span><span id="ssb_ssm_white"><span>Choose file</span></span><span> (Elegir archivo) y seleccione el archivo </span><strong><span>lab-application2.yaml</span></strong><span> que descargó.</span></li></ul></li><li><p><span>Elija </span><span id="ssb_orange"><span>Next</span></span><span> (Siguiente) en cada una de las </span><em><span>tres</span></em><span> pantallas siguientes para avanzar a la página </span><strong><span>Review lab-application</span></strong><span> (Revisar lab-application).</span></p><p><span>En la sección </span><strong><span>Change set preview</span></strong><span> (Vista previa del conjunto de cambios) de la parte inferior de la página, AWS CloudFormation muestra los recursos que se actualizarán</span></p><p><img src="images/change-set-preview.png" referrerpolicy="no-referrer" alt="Vista previa del conjunto de cambios"></p><p><span>Esta vista previa del conjunto de cambios indica que AWS CloudFormation </span><em><span>modificará</span></em><span> </span><em><span>WebServerSecurityGroup</span></em><span> sin necesidad de reemplazarlo (</span><em><span>Replacement = False</span></em><span>). Este conjunto de cambios significa que al grupo de seguridad se le aplicará un cambio menor y que no será necesario cambiar ninguna referencia al grupo de seguridad.</span></p></li><li><p><span>Elija </span><span id="ssb_orange"><span>Update stack</span></span><span> (Actualizar pila).</span></p></li><li><p><span>En la pestaña </span><strong><span>Stack info</span></strong><span> (Información de la pila), espere a que </span><strong><span>Status</span></strong><span> (Estado) cambie a </span><span style="color: green;"><i class="far fa-check-circle"></i><span>UPDATE_COMPLETE</span></span><span>.</span></p><p><i class="fas fa-comment"></i><span> Si es necesario, seleccione </span><strong><span>Refresh</span></strong><span> (Actualizar) </span><i class="fas fa-redo"></i><span> cada 15 segundos para actualizar el estado.</span></p><p><span>A partir de ahora, puede verificar el cambio.</span></p></li><li><p><span>Regrese a la </span><strong><span>consola de Amazon EC2</span></strong><span> y, en el panel de navegación izquierdo, seleccione </span><strong><span>Security Groups</span></strong><span> (Grupos de seguridad).</span></p></li><li><p><span>En la lista </span><strong><span>Security Groups</span></strong><span> (Grupos de seguridad), seleccione </span><strong><span>lab-application-WebServerSecurityGroup</span></strong><span>.</span></p><p><span>La pestaña </span><strong><span>Inbound rules</span></strong><span> (Reglas de entrada) debe mostrar una regla adicional que permita el tráfico </span><em><span>SSH</span></em><span> a través del </span><em><span>puerto TCP 22</span></em><span>.</span></p><p><span>Esta subtarea demuestra cómo se pueden implementar los cambios en un proceso repetible y documentado. Las plantillas de AWS CloudFormation se pueden almacenar en un repositorio de código fuente (como AWS CodeCommit). De esta manera, puede mantener versiones y un historial de las plantillas y la infraestructura que se implementó.</span></p></li></ol><br><h2 id='tarea 4-explorar-las-plantillas-con-aws cloudformation designer'><span>Tarea 4: Explorar las plantillas con AWS CloudFormation Designer</span></h2><p><em><span>AWS CloudFormation Designer</span></em><span> es una herramienta gráfica para crear, ver y modificar plantillas de AWS CloudFormation. Con Designer, puede diagramar los recursos de la plantilla mediante una interfaz que permite arrastrar y soltar y, a continuación, editar su información a través del editor JSON y YAML integrado.</span></p><p><span>Independientemente de si es un usuario principiante o avanzado de AWS CloudFormation, Designer puede ayudarlo a ver rápidamente la interrelación entre los recursos de una plantilla. También le permite modificar plantillas fácilmente.</span></p><p><span>En esta tarea, obtendrá experiencia práctica con Designer.</span></p><ol start='34' ><li><p><span>En el menú </span><span id="ssb_services"><span>Services (Servicios)</span><i class="fas fa-angle-down"></i></span><span>, elija </span><strong><span>CloudFormation</span></strong><span>.</span></p></li><li><p><span>En el panel de navegación izquierdo, elija </span><strong><span>Designer</span></strong><span>.</span></p><p><strong><span>Sugerencia:</span></strong><span> Es posible que necesite expandir el panel de navegación con un clic en el ícono de menú.</span></p></li></ol><ol start='36' ><li><span>Seleccione el menú </span><strong><span>File</span></strong><span> (Archivos)</span><i class="fas fa-file"></i><span>, seleccione </span><strong><span>Open &gt; Local file (Abrir &gt; Archivo local)</span></strong><span> y seleccione la plantilla </span><strong><span>lab-application2.yaml</span></strong><span> que descargó previamente.</span></li></ol><p><span>Designer mostrará una representación gráfica de la plantilla:</span></p><p><img src="images/designer.png" referrerpolicy="no-referrer" alt="CloudFormation Designer"></p><p><span>En lugar de diagramar una arquitectura típica, Designer es un editor visual para plantillas de AWS CloudFormation, por lo que diseña los recursos definidos en una plantilla y sus relaciones entre sí.</span></p><ol start='37' ><li><p><span>Experimente con las características de Designer. Algunas de las cosas que puede intentar son estas:</span></p><ul><li><span>Haga clic en los recursos en pantalla. El panel inferior mostrará, a continuación, la parte de la plantilla que define los recursos.</span></li><li><span>Intente arrastrar un nuevo recurso, desde el panel </span><strong><span>Resource types</span></strong><span> (Tipos de recursos) de la izquierda, hasta el área de diseño. La definición del recurso se insertará automáticamente en la plantilla.</span></li><li><span>Pruebe arrastrar los círculos conectores de recursos para crear relaciones entre los recursos.</span></li><li><span>Abra la plantilla </span><strong><span>lab-network.yaml</span></strong><span> que descargó anteriormente en el laboratorio y explore sus recursos en Designer.</span></li></ul></li></ol><br><h2 id='tarea 5-eliminar-la-pila'><span>Tarea 5: Eliminar la pila</span></h2><p><span>Cuando los recursos ya no son necesarios, AWS CloudFormation puede eliminar aquellos creados para la pila.</span></p><p><span>También se puede especificar una </span><em><span>política de eliminación (deletion policy)</span></em><span> en relación con los recursos. Puede conservar o (en algunos casos) hacer una copia de seguridad de un recurso cuando se elimina su pila. Esta característica es útil para conservar bases de datos, volúmenes de disco o cualquier recurso que pueda ser necesario después de eliminar la pila.</span></p><p><span>La pila </span><em><span>lab-application</span></em><span> se configuró para tomar una instantánea de un volumen de disco de Amazon Elastic Block Store (Amazon EBS) antes de que se elimine. El código de la plantilla que hace posible esta configuración es el siguiente:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  DiskVolume</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Type</span><span class="cm-meta">: </span>AWS<span class="cm-meta">::</span>EC2<span class="cm-meta">::</span>Volume</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Properties</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  Size</span><span class="cm-meta">: </span><span class="cm-number">100</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  AvailabilityZone</span><span class="cm-meta">: </span>!GetAtt WebServerInstance.AvailabilityZone</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  Tags</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta"> &nbsp; &nbsp; &nbsp;  - </span><span class="cm-atom">Key</span><span class="cm-meta">: </span>Name</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp; &nbsp;  Value</span><span class="cm-meta">: </span>Web Data</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  DeletionPolicy</span><span class="cm-meta">: </span>Snapshot</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 202px;"></div><div class="CodeMirror-gutters" style="display: none; height: 202px;"></div></div></div></pre><p><span>El campo </span><em><span>DeletionPolicy (Política de eliminación)</span></em><span> en la línea final dirige a AWS CloudFormation a crear una instantánea del volumen de disco antes de que se elimine.</span></p><p><span>Ahora, eliminará la pila </span><em><span>lab-application</span></em><span> y veremos los resultados de esta política de eliminación.</span></p><ol start='38' ><li><p><span>Vuelva a la </span><strong><span>consola principal de AWS CloudFormation</span></strong><span> seleccionando el enlace </span><span style="color:#1166bb"><span>Close (Cerrar)</span></span><span> en la parte superior de la página de Designer (seleccione </span><strong><span>Leave page</span></strong><span> [Abandonar la página] si se le solicita).</span></p></li><li><p><span>En la lista de pilas, elija el enlace </span><strong><span>lab-application</span></strong><span>.</span></p></li><li><p><span>Seleccione </span><span id="ssb_ssm_white"><span>Delete</span></span><span> (Eliminar).</span></p></li><li><p><span>Seleccione </span><span id="ssb_orange"><span>Delete stack</span></span><span> (Eliminar pila).</span></p><p><span>Puede monitorear el proceso de eliminación en la pestaña </span><strong><span>Events</span></strong><span> (Eventos) y actualizar la pantalla seleccionando </span><strong><span>Refresh</span></strong><span> (Actualizar) </span><i class="fas fa-redo"></i><span> ocasionalmente. También puede ver una entrada del registro de eventos que indica que se está creando la instantánea de EBS.</span></p></li><li><p><span>Espere a que se elimine la pila. Desaparecerá de la lista de pilas.</span></p><p><span>Se eliminó la pila de aplicaciones __, pero la pila de red permaneció intacta. Este caso refuerza la idea de que diferentes equipos (por ejemplo, el equipo de red o el equipo de aplicaciones) podrían administrar sus propias pilas.</span></p><p><span>Ahora comprobará que se creó una instantánea del volumen de EBS antes de que se eliminara el volumen de EBS.</span></p></li><li><p><span>En el menú </span><span id="ssb_services"><span>Services (Servicios)</span><i class="fas fa-angle-down"></i></span><span>, seleccione </span><strong><span>EC2</span></strong><span>.</span></p></li><li><p><span>En el panel de navegación izquierdo, seleccione </span><strong><span>Snapshots</span></strong><span> (Instantáneas).</span></p><p><span>Debería ver una instantánea con un tiempo de </span><strong><span>inicio</span></strong><span> en los últimos minutos.</span></p></li></ol><p>&nbsp;</p><br><h2 id='envío-del-trabajo'><span>Envío del trabajo</span></h2><ol start='45' ><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_blue"><span>Submit</span></span><span> (Enviar) para registrar su progreso y, cuando se le indique, elija </span><strong><span>Yes</span></strong><span> (Sí).</span></p></li><li><p><span>Si los resultados no se muestran después de algunos minutos, vuelva a la parte superior de estas instrucciones y elija </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Resultados).</span></p><p><strong><span>Sugerencia</span></strong><span>: Puede enviar su trabajo varias veces. Después de realizar las modificaciones pertinentes, vuelva a elegir </span><strong><span>Submit</span></strong><span> (Enviar). Su último envío es el que se registrará para este laboratorio.</span></p></li><li><p><span>Para encontrar comentarios detallados sobre su trabajo, elija </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalles) seguido de </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Ver informe de envío).</span></p></li></ol><br><h2 id='fin-del-laboratorio-i-classfas-fa-graduation-capi'><span>Fin del laboratorio </span><i class="fas fa-graduation-cap"></i></h2><p><i class="fas fa-flag-checkered"></i><span> ¡Felicitaciones! Ha completado el laboratorio.</span></p><ol start='48' ><li><p><span>Elija </span><span id="ssb_voc_grey"><span>End Lab</span></span><span> (Finalizar laboratorio) en la parte superior de esta página y, a continuación, seleccione </span><span id="ssb_blue"><span>Yes</span></span><span> (Sí) para confirmar que desea finalizar el laboratorio.</span></p><p><span>Un panel presentará el mensaje </span><em><span>DELETE has been initiated… You may close this message box now (Se ha iniciado la ELIMINACIÓN… Ya puede cerrar este cuadro de mensaje)</span></em><span>.</span></p></li><li><p><span>Seleccione la </span><strong><span>X</span></strong><span> de la esquina superior derecha para cerrar el panel.</span></p></li></ol><p>&nbsp;</p><p><em><span>© 2020 Amazon Web Services, Inc. y sus empresas afiliadas. Todos los derechos reservados. Este contenido no puede reproducirse ni redistribuirse, total ni parcialmente, sin el permiso previo por escrito de Amazon Web Services, Inc. Queda prohibida la copia, el préstamo y la venta de carácter comercial.</span></em></p><p>&nbsp;</p></div></div>
+</body>
+</html>

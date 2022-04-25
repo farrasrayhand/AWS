@@ -1,0 +1,1164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='módulo-14----laboratório-guiado-armazenamento-híbrido-e-migração-de-dados-com-o-file-gateway-do-aws-storage-gateway'><span>Módulo 14 – Laboratório guiado: Armazenamento híbrido e migração de dados com o File Gateway do AWS Storage Gateway</span></h1><h2 id='visão-geral-e-objetivos-do-laboratório'><span>Visão geral e objetivos do laboratório</span></h2><p><span>Neste laboratório, você usará o serviço File Gateway do AWS Storage Gateway para associar uma montagem NFS (Network File System) a um armazenamento de dados on-premises. Em seguida, você replicará esses dados para um bucket do S3 na AWS. Além disso, você configurará recursos avançados do Amazon S3, como políticas de ciclo de vida do Amazon S3 e replicação entre regiões.</span></p><p><span>Depois de concluir este laboratório, você deverá ser capaz de:</span></p><ul><li><span>Configurar um File Gateway com um compartilhamento de arquivos NFS e associá-lo a uma instância do Linux</span></li><li><span>Migrar um conjunto de dados da instância do Linux para um bucket do S3</span></li><li><span>Criar e configurar um bucket principal do S3 para migrar dados do servidor on-premises para a AWS</span></li><li><span>Criar e configurar um bucket secundário do S3 a ser usado para replicação entre regiões</span></li><li><span>Criar uma política de ciclo de vida do S3 para gerenciar automaticamente dados em um bucket</span></li></ul><br><h2 id='duração'><span>Duração</span></h2><p><span>Este laboratório levará aproximadamente </span><strong><span>90 minutos</span></strong><span> para ser concluído.</span></p><br><h2 id='restrições-de-serviço-da-aws'><span>Restrições de serviço da AWS</span></h2><p><span>Neste ambiente de laboratório, o acesso aos serviços e ações de serviço da AWS pode estar restrito àqueles necessários para concluir as instruções do laboratório. Você poderá encontrar erros se tentar acessar outros serviços ou executar ações além do que está descrito neste laboratório.</span></p><br><h2 id='acessar-o-console-de-gerenciamento-da-aws'><span>Acessar o Console de Gerenciamento da AWS</span></h2><ol start='' ><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratório) para iniciar o laboratório.</span></p><p><span>Um painel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratório) é aberto com o status do laboratório.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Dica</span></strong><span>: se você precisar de mais tempo para concluir o laboratório, escolha novamente o botão </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratório) para reiniciar o cronômetro do ambiente.</span></p></li><li><p><span>Aguarde até que o painel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratório) exiba a mensagem </span><em><span>Lab status: ready (Status do laboratório: pronto)</span></em><span> e, em seguida, escolha </span><strong><span>X</span></strong><span> para fechar o painel.</span></p></li><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>Essa ação abrirá o Console de Gerenciamento da AWS em uma nova guia do navegador. O sistema fará seu login automaticamente.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Dica</span></strong><span>: se uma nova guia do navegador não for aberta, normalmente você verá uma faixa ou um ícone na parte superior do navegador com uma mensagem informando que o navegador está impedindo que o site abra janelas pop-up. Escolha a faixa ou o ícone e depois </span><strong><span>Allow pop ups</span></strong><span> (Permitir pop-ups).</span></p></li><li><p><span>Organize a guia do </span><strong><span>Console de Gerenciamento da AWS</span></strong><span> para que ela seja exibida com essas instruções. O ideal é ver as duas guias do navegador abertas ao mesmo tempo, para facilitar o acompanhamento das etapas do laboratório.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Não altere a região, a menos que seja especificamente instruído a fazer isso</span></strong><span>.</span></p></li></ol><br><h2 id='tarefa-1-analisar-a-arquitetura-do-laboratório'><span>Tarefa 1: analisar a arquitetura do laboratório</span></h2><p><span>Esse ambiente de laboratório usa três regiões da AWS no total. Uma instância do EC2 de Linux que emula um servidor on-premises é implantada na região us-east-1 (Virgínia do Norte). O dispositivo virtual Storage Gateway é implantado na mesma região que o servidor Linux. Em um cenário real, o dispositivo seria implantado em um ambiente VMware vSphere ou Microsoft Hyper-V ou como um dispositivo físico do Storage Gateway.</span></p><p><span>O bucket principal do S3 é criado na região us-east-2 (Ohio). Os dados do host Linux são copiados para o bucket principal do S3. Esse bucket também pode ser chamado de </span><em><span>origem</span></em><span>.</span></p><p><span>O bucket secundário do S3 é criado na região us-west-2 (Oregon). Esse bucket secundário é o </span><em><span>destino</span></em><span> da política de replicação entre regiões. Ele também pode ser chamado de </span><em><span>destino</span></em><span>.</span></p><p><img src="images/spl-223-architecture-diagram.png" referrerpolicy="no-referrer" alt="Diagrama de arquitetura do laboratório"></p><br><h2 id='tarefa-2-criar-os-buckets-principal-e-secundário-do-s3'><span>Tarefa 2: criar os buckets principal e secundário do S3</span></h2><p><span>Antes de configurar o File Gateway, você deve criar o bucket principal do S3 (ou a origem), em que você replicará os dados. Você também criará o bucket secundário (ou o destino), que será usado para a replicação entre regiões.</span></p><ol start='5' ><li><span>No </span><strong><span>Console de Gerenciamento da AWS</span></strong><span>, no menu </span><span id="ssb_services"><span>Services</span></span><span> (Serviços), selecione </span><strong><span>S3</span></strong><span>.</span></li><li><span>Escolha </span><span id="ssb_orange"><span>Create bucket</span></span><span> (Criar bucket) e defina estas configurações:</span></li></ol><ul><li><strong><span>Bucket name</span></strong><span> (Nome do bucket): crie um nome que você consiga lembrar facilmente. Ele deve ser globalmente único.</span></li><li><strong><span>Region (Região):</span></strong><span> </span><em><span>US East (Ohio) (Leste dos EUA [Ohio])</span></em></li></ul><ol start='7' ><li><p><span>Escolha </span><span id="ssb_orange"><span>Create</span></span><span> (Criar)</span></p></li><li><p><span>Clique no bucket que você criou e depois na guia </span><strong><span>Properties</span></strong><span> (Propriedades).</span></p></li><li><p><span>Em </span><strong><span>Versioning</span></strong><span> (Versionamento), clique em </span><strong><span>Enable versioning</span></strong><span> (Ativar versionamento) e depois em </span><strong><span>Save</span></strong><span> (Salvar).</span></p><p><i class="fas fa-info-circle"></i><span> Para a replicação entre regiões, você deve habilitar o versionamento para os buckets de origem e de destino.</span></p></li><li><p><span>Repita as etapas anteriores desta tarefa para criar um segundo bucket com a seguinte configuração:</span></p></li></ol><ul><li><strong><span>Bucket name</span></strong><span> (Nome do bucket): crie um nome que você consiga lembrar facilmente. Ele deve ser globalmente único.</span></li><li><strong><span>Region</span></strong><span> (Região): </span><em><span>US West (Oregon) (Oeste dos EUA [Oregon])</span></em></li><li><strong><span>Versioning</span></strong><span> (Versionamento): </span><em><span>Enabled (Habilitado)</span></em></li></ul><br><h2 id='tarefa-3-habilitar-a-replicação-entre-regiões'><span>Tarefa 3: habilitar a replicação entre regiões</span></h2><p><span>Agora que você criou seus dois buckets do S3 e habilitou o versionamento neles, pode criar uma política de replicação.</span></p><ol start='11' ><li><span>Selecione o nome do bucket de </span><em><span>origem</span></em><span> que você criou na região Leste dos EUA (Ohio).</span></li><li><span>Selecione a guia </span><strong><span>Management</span></strong><span> (Gerenciamento) e escolha </span><span id="ssb_s3_white"></i><span> Replication</span></span><span> (Replicação)</span></li><li><span>Escolha </span><span id="ssb_s3_blue"><i class="fas fa-plus"></i><span>Add rule</span></span><span> (Adicionar regra) e depois ajuste estas configurações:</span></li></ol><ul><li><p><strong><span>Set source</span></strong><span> (Definir origem): </span><em><span>Entire bucket (Bucket inteiro)</span></em></p></li><li><p><span>Escolha </span><span id="ssb_s3_blue"></i><span> Next</span></span><span> (Próximo)</span></p></li><li><p><strong><span>Bucket de destino:</span></strong></p><ul><li><i class="far fa-dot-circle"></i><span> </span><em><span>Buckets nesta conta</span></em></li><li><span>Selecione o bucket que você criou na região Oeste dos EUA (Oregon). Talvez seja necessário rolar para baixo para conseguir vê-lo.</span></li></ul></li><li><p><span>Escolha </span><span id="ssb_s3_blue"></i><span> Next</span></span><span> (Próximo)</span></p></li></ul><ol start='14' ><li><span>Na tela </span><strong><span>Configure rules options</span></strong><span> (Configurar opções de regras), ajuste estas configurações:</span></li></ol><ul><li><p><strong><span>IAM role</span></strong><span> (Função do IAM): </span><em><span>S3-CRR-Role</span></em></p><ul><li><strong><span>Observação:</span></strong><span> para localizar a função do AWS Identity and Access Management (IAM), na caixa de pesquisa, insira </span><code>S3-CRR</code><span> (essa função foi pré-criada com as permissões necessárias para este laboratório)</span></li></ul></li><li><p><strong><span>Rule name</span></strong><span> (Nome da regra): </span><code>crr-full-bucket</code></p></li></ul><ol start='15' ><li><span>Escolha </span><span id="ssb_s3_blue"></i><span> Next (Próximo)</span></span></li><li><span>Revise as configurações e escolha </span><span id="ssb_s3_blue"></i><span> Save</span></span><span> (Salvar)</span></li></ol><p><strong><span>Observação</span></strong><span>: se a mensagem </span><em><span>The replication rule is saved, but it might not work (A regra de replicação foi salva, mas talvez não funcione)</span></em><span> for exibida, você poderá ignorá-la e avançar para a etapa seguinte.</span></p><ol start='17' ><li><span>Retorne ao bucket que você criou na região Leste dos EUA (Ohio).</span></li><li><span>Faça upload de um arquivo do computador local para o bucket.</span></li></ol><p><em><span>Para este laboratório, use um arquivo pequeno que não contenha informações confidenciais, como um arquivo de texto em branco.</span></em></p><ol start='19' ><li><span>Aguarde até que o arquivo seja carregado e, em seguida, retorne ao bucket criado na região Oeste dos EUA (Oregon). O arquivo que você fez upload também deve ser copiado para esse bucket.</span></li></ol><p><strong><span>Observação:</span></strong><span> talvez seja necessário escolher o botão de atualização </span><i class="fas fa-sync"></i><span> na área superior direita da janela.</span></p><br><h2 id='tarefa-4-configurar-o-file-gateway-e-criar-um-compartilhamento-de-arquivos-nfs'><span>Tarefa 4: configurar o File Gateway e criar um compartilhamento de arquivos NFS</span></h2><p><span>Nesta tarefa, você implantará o dispositivo do File Gateway como uma instância do Amazon Elastic Compute Cloud (Amazon EC2). Em seguida, configurará um disco de cache, selecionará um bucket do S3 para sincronizar seus arquivos on-premises e escolherá uma política do IAM para usar. Por fim, criará um compartilhamento de arquivos NFS no File Gateway.</span></p><ol start='20' ><li><span>No canto superior esquerdo, escolha o menu </span><span id="ssb_services"><span>Services</span></span><span> (Serviços) e, em seguida, selecione </span><strong><span>Storage Gateway</span></strong><span>.</span></li></ol><p><span>Você também pode procurar o </span><em><span>Storage Gateway</span></em><span> na parte superior do menu </span><strong><span>Services (Serviços)</span></strong><span> para facilitar a localização.</span></p><ol start='21' ><li><span>No canto superior direito do console, verifique se a região atual é </span><em><span>N. Virginia (Virgínia do Norte)</span></em><span>.</span></li></ol><p><span>Uma página de conceitos básicos do AWS Storage Gateway deverá ser exibida porque o serviço Storage Gateway não foi configurado nesta região.</span></p><ol start='22' ><li><span>Escolha </span><span id="ssb_blue"></i><span> Get started</span></span><span> (Comece a usar)</span></li></ol><p><span>   Se você não vir a página de conceitos básicos, selecione </span><span id="ssb_blue"></i><span> Create gateway</span></span><span> (Criar gateway)</span></p><ol start='23' ><li><span>Selecione </span><strong><span>File gateway</span></strong><span> (Gateway de arquivos) e escolha </span><span id="ssb_blue"></i><span> Next</span></span><span> (Próximo)</span></li><li><span>Selecione </span><strong><span>Amazon EC2</span></strong><span> e escolha o botão </span><span id="ssb_grey"></i><span> </span><i class="fas fa-external-link-alt"></i><span> Launch instance</span></span><span> (Executar instância).</span></li></ol><p><span>Uma nova guia é aberta para o assistente de execução da instância do EC2. Esse link seleciona automaticamente a Amazon Machine Image (AMI) correta que deve ser usada para o dispositivo do File Gateway.</span></p><ol start='25' ><li><span>Selecione o tipo de instância </span><strong><span>t2.xlarge</span></strong><span> e escolha </span><span id="ssb_grey"></i><span> Next: Configure Instance Details</span></span><span> (Próximo: Configurar detalhes da instância)</span></li></ol><p><strong><span>Observação:</span></strong><span> t2.xlarge é o único tipo de instância que você pode selecionar neste ambiente de laboratório. Se você selecionar qualquer outro tipo, receberá uma mensagem de erro na parte final do assistente.</span></p><p><i class="fas fa-info-circle"></i><span> O tipo de instância t2.xlarge é utilizado somente como um exemplo neste laboratório. Para obter o dimensionamento correto do dispositivo ao implantar um dispositivo do Storage Gateway, consulte a </span><a href='https://docs.aws.amazon.com/storagegateway/latest/userguide/Requirements.html#requirements-hardware-storage'><span>documentação do Storage Gateway</span></a><span>.</span></p><ol start='26' ><li><span>Na tela </span><strong><span>Configure instance details</span></strong><span> (Configurar detalhes da instância), ajuste estas configurações:</span></li></ol><ul><li><p><strong><span>Number of instances</span></strong><span> (Número de instâncias): </span><code>1</code></p></li><li><p><strong><span>Network</span></strong><span> (Rede): </span><em><span>On-Prem-VPC</span></em></p></li><li><p><strong><span>Subnet</span></strong><span> (Sub-rede): </span><em><span>On-Prem-Subnet</span></em></p></li><li><p><strong><span>Auto-assign Public IP</span></strong><span> (Atribuir IP público automaticamente): </span><em><span>Use subnet setting (Usar configuração de sub-rede)</span></em><span> (Enable [Ativar])</span></p></li><li><p><span>Aceite os valores padrão das opções restantes</span></p><p><strong><span>Observação</span></strong><span>: Você pode ignorar mensagens de aviso como: </span><em><span>You do not have permissions to list instance profiles. Contact your administrator, or check your IAM permissions (Você não tem permissões para listar perfis de instância. Entre em contato com seu administrador ou verifique suas permissões do IAM).</span></em></p></li></ul><ol start='27' ><li><span>Escolha </span><span id="ssb_grey"></i><span>Next: Add Storage</span></span><span> (Próximo: adicionar armazenamento)</span></li><li><span>Escolha </span><span id="ssb_grey"></i><span> Add New Volume</span></span><span> (Adicionar novo volume) e ajuste estas configurações:</span></li></ol><ul><li><strong><span>Volume Type</span></strong><span> (Tipo de volume): </span><em><span>EBS</span></em></li><li><strong><span>Device</span></strong><span> (Dispositivo): </span><em><span>/dev/sdb</span></em></li><li><strong><span>Size</span></strong><span> (Tamanho) </span><strong><span>(GiB)</span></strong><span>: </span><code>150</code></li><li><strong><span>Volume Type</span></strong><span> (Tipo de volume): </span><em><span>General Purpose SSD (SSD de uso geral) (gp2)</span></em></li><li><strong><span>Delete on termination</span></strong><span> (Excluir no encerramento): </span><i class="far fa-check-square"></i></li></ul><ol start='29' ><li><span>Escolha </span><span id="ssb_grey"></i><span> Next: Add Tags</span></span><span> (Próximo: adicionar tags)</span></li><li><span>Escolha </span><span id="ssb_grey"></i><span> Add Tag</span></span><span> (Adicionar tag) e ajuste estas configurações:</span></li></ol><ul><li><strong><span>Key</span></strong><span> (Chave): </span><code>Name (Nome)</code></li><li><strong><span>Value</span></strong><span> (Valor): </span><code>File Gateway Appliance (Dispositivo do File Gateway)</code></li><li><strong><span>Instances</span></strong><span> (Instâncias): </span><i class="far fa-check-square"></i></li><li><strong><span>Volumes:</span></strong><span> </span><i class="far fa-check-square"></i></li></ul><p><strong><span>Observação:</span></strong><span> as tags diferenciam maiúsculas e minúsculas.</span></p><ol start='31' ><li><span>Escolha </span><span id="ssb_grey"></i><span>Next: Configure Security Group</span></span><span> (Próximo: configurar grupo de segurança)</span></li><li><span>Escolha </span><strong><span>Select an existing security group</span></strong><span> (Selecionar um grupo de segurança existente) e, em seguida, selecione:</span></li></ol><ul><li><p><em><span>File Gateway activation and NFS access ports (Ativação do File Gateway e portas de acesso NFS)</span></em></p><ul><li><p><span>Esse grupo de segurança é configurado para permitir o tráfego pelas portas 80 (HTTP), 443 (HTTPS), 53 (DNS), 123 (NTP) e 2049 (NFS). Essas portas permitem a ativação do dispositivo do File Gateway. Elas também possibilitam a conectividade do servidor Linux com o compartilhamento NFS que você criará no File Gateway.</span></p><p><span>Para obter informações adicionais sobre as portas usadas pelo Storage Gateway, consulte a </span><a href='https://docs.aws.amazon.com/storagegateway/latest/userguide/Requirements.html#networks'><span>documentação do Storage Gateway</span></a><span>.</span></p></li></ul></li><li><p><em><span>Acesso SSH on-premises</span></em></p><ul><li><span>Esse grupo de segurança é configurado para permitir conexões do Secure Shell (SSH) na porta 22.</span></li></ul></li></ul><p><img src="images/security-group-selection.PNG" referrerpolicy="no-referrer" alt="Seleção do grupo de segurança"></p><ol start='33' ><li><span>Escolha </span><span id="ssb_blue"></i><span> Review and Launch</span></span><span> (Revisar e executar)</span></li></ol><p><span>   </span><strong><span>Observação:</span></strong><span> você verá mensagens de aviso na parte superior da próxima tela. Você pode ignorar esses avisos para este laboratório. Para evitar conexões indesejadas ou maliciosas com suas instâncias em um ambiente de produção, sempre crie grupos de segurança tão restritivos quanto possível.</span></p><ol start='34' ><li><span>Escolha </span><span id="ssb_blue"></i><span> Launch</span></span><span> (Executar)</span></li><li><span>Na tela </span><strong><span>Select an existing key pair or create a new key pair</span></strong><span> (Selecionar um par de chaves existente ou criar um par de chaves novo), defina estas configurações:</span></li></ol><ul><li><strong><span>Choose an existing key pair</span></strong><span> (Escolher um par de chaves existente)</span></li><li><strong><span>Select a key pair</span></strong><span> (Selecionar um par de chaves): Escolher a chave disponível</span></li><li><i class="far fa-check-square"></i><span> </span><em><span>I acknowledge that I have access to the selected private key file... (Reconheço que tenho acesso ao arquivo de chave privada selecionado...)</span></em></li></ul><p><strong><span>Observação:</span></strong><span> este par de chaves é fornecido na página </span><strong><span>Details &gt; Show &gt; Credentials</span></strong><span> (Detalhes &gt; Mostrar &gt; Credenciais) deste laboratório.</span></p><ol start='36' ><li><span>Escolha </span><span id="ssb_blue"></i><span> Launch Instances</span></span><span> (Executar instâncias)</span></li><li><span>Escolha </span><span id="ssb_blue"></i><span> View Instances</span></span><span> (Exibir instâncias)</span></li></ol><p><span>   A implantação da instância do dispositivo do File Gateway deve levar alguns minutos.</span></p><ol start='38' ><li><span>Monitore o status da implantação e aguarde a conclusão das </span><strong><span>verificações de status</span></strong><span>.</span></li></ol><p><span>   </span><strong><span>Observação:</span></strong><span> talvez seja necessário escolher o botão de atualização </span><i class="fas fa-sync"></i><span> na área superior direita da janela.</span></p><ol start='39' ><li><span>Selecione a instância do File Gateway na lista e, na parte inferior da tela, localize o endereço </span><strong><span>IP público IPv4</span></strong><span> e copie-o. Você usará esse endereço IP quando concluir a implantação do File Gateway.</span></li><li><span>Retorne à guia </span><strong><span>AWS Storage Gateway</span></strong><span> no navegador. Ela ainda deve estar na tela </span><strong><span>Select host platform</span></strong><span> (Selecionar plataforma de host).</span></li><li><span>Verifique se </span><strong><span>Amazon EC2</span></strong><span> está selecionado e escolha </span><span id="ssb_blue"></i><span> Next</span></span><span> (Próximo)</span></li><li><span>Para o tipo de endpoint, selecione </span><strong><span>Public</span></strong><span> (Público) e, em seguida, escolha </span><span id="ssb_blue"></i><span> Next</span></span><span> (Próximo)</span></li><li><span>Cole o endereço </span><strong><span>IP público IPv4</span></strong><span> que você copiou da instância do dispositivo do File Gateway e escolha </span><span id="ssb_blue"></i><span> Conectar ao gateway</span></span></li><li><span>Na tela </span><strong><span>Activate gateway</span></strong><span> (Ativar gateway), defina estas configurações:</span></li></ol><ul><li><strong><span>Gateway time zone</span></strong><span> (Fuso horário do gateway): </span><em><span>GMT -5:00 Eastern Time (US &amp; Canada) (GMT - 5:00 Hora do Leste [EUA e Canadá])</span></em></li><li><strong><span>Gateway name</span></strong><span> (Nome do gateway): </span><code>File Gateway</code></li></ul><ol start='45' ><li><span>Escolha </span><span id="ssb_blue"></i><span>Activate gateway</span></span><span> (Ativar gateway)</span></li><li><span>Na tela </span><strong><span>Configure local disks</span></strong><span> (Configurar discos locais), aguarde até que o status </span><em><span>Preparing local disks (Preparando discos locais)</span></em><span> mostre que o processamento foi concluído (aproximadamente um minuto).</span></li><li><span>Depois que o processamento for concluído, acesse </span><strong><span>Allocated to</span></strong><span> (Alocado para) e selecione </span><strong><span>Cache</span></strong><span>.</span></li><li><span>Escolha </span><span id="ssb_blue"></i><span> Configure logging</span></span><span> (Configurar registro em log)</span></li><li><span>Na tela </span><strong><span>Gateway health log group</span></strong><span> (Grupo de logs de integridade do gateway), acesse </span><strong><span>Gateway health log group</span></strong><span> (Grupo de logs de integridade do gateway) e selecione </span><strong><span>Disable logging</span></strong><span> (Desabilitar registro em log).</span></li><li><span>Escolha </span><span id="ssb_blue"></i><span> Save and continue</span></span><span> (Salvar e continuar)</span></li><li><span>Aguarde até que o status do File Gateway seja alterado para </span><em><span>Running</span></em><span> (Em execução) (aproximadamente um a dois minutos), selecione a entrada </span><strong><span>File Gateway</span></strong><span> e escolha </span><span id="ssb_grey"></i><span> Create file share</span></span><span> (Criar compartilhamento de arquivos)</span></li><li><span>Na tela </span><strong><span>Configure file share settings</span></strong><span> (Definir configurações de compartilhamento de arquivos), defina estas configurações:</span></li></ol><ul><li><strong><span>Amazon S3 bucket name</span></strong><span> (Nome do bucket do Amazon S3): insira o nome do bucket de origem criado na região Leste dos EUA (Ohio) na Tarefa 1.</span></li><li><strong><span>Access objects using</span></strong><span> (Acessar objetos usando): </span><em><span>Network File System (NFS) (Sistema de arquivos de rede [NFS])</span></em></li><li><strong><span>Gateway:</span></strong><span> selecione o nome do File Gateway que você acabou de criar (que deve ser </span><em><span>File Gateway</span></em><span>)</span></li></ul><ol start='53' ><li><span>Escolha </span><span id="ssb_blue"></i><span> Next (Próximo)</span></span></li><li><span>Na tela </span><strong><span>Configure how files are stored in Amazon S3</span></strong><span> (Configurar como os arquivos são armazenados no Amazon S3), defina estas configurações:</span></li></ol><ul><li><p><strong><span>Storage class for new objects</span></strong><span> (Classe de armazenamento para objetos novos): </span><em><span>S3 Standard</span></em><span> (S3 padrão)</span></p></li><li><p><strong><span>Object metadata</span></strong><span> (Metadados do objeto):</span></p><ul><li><i class="far fa-check-square"></i><span> </span><em><span>Guess MIME type</span></em><span> (Adivinhar o tipo de MIME)</span></li><li><i class="far fa-check-square"></i><span> </span><em><span>Give bucket owner full control (Dar controle total ao proprietário do bucket)</span></em></li><li><i class="far fa-square"></i><span> Enable </span><em><span>Requester Pays</span></em><span> (Habilitar o pagamento pelo solicitante)</span></li></ul></li><li><p><strong><span>Access your S3 bucket</span></strong><span> (Acessar seu bucket do S3): </span><em><span>Use an existing IAM role (Usar uma função do IAM existente)</span></em></p></li><li><p><strong><span>IAM role</span></strong><span> (Função do IAM): cole o </span><em><span>FgwIamPolicyARN</span></em><span>, que você pode recuperar seguindo estas instruções:</span></p><ul><li><span>Escolha o menu suspenso </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalhes) acima destas instruções</span></li><li><span>Selecione </span><span id="ssb_voc_grey"><span>Show</span></span><span> (Mostrar)</span></li><li><span>Copie o valor </span><em><span>FgwIamPolicyARN</span></em></li></ul></li></ul><ol start='55' ><li><span>Escolha </span><span id="ssb_blue"></i><span> Next</span></span><span> (Próximo)</span></li></ol><p><span>   </span><strong><span>Observação:</span></strong><span> você pode receber uma mensagem de aviso de que o compartilhamento de arquivos está acessível de qualquer lugar. Para este laboratório, você pode ignorar esse aviso com segurança. Em um ambiente de produção, você sempre deve criar políticas tão restritivas quanto possível para evitar conexões indesejadas ou maliciosas com suas instâncias.</span></p><ol start='56' ><li><span>Escolha </span><span id="ssb_blue"></i><span>Create file share</span></span><span> (Criar compartilhamento de arquivos)</span></li><li><span>Monitore o status da implantação e aguarde que o </span><strong><span>Status</span></strong><span> seja alterado para </span><em><span>Available (Disponível)</span></em><span>, o que leva menos de um minuto.</span></li></ol><p><span>   </span><strong><span>Observação:</span></strong><span> talvez seja necessário escolher o botão de atualização </span><i class="fas fa-sync"></i><span> na área superior direita da janela.</span></p><ol start='58' ><li><span>Selecione o compartilhamento de arquivos que você acabou de criar. Na parte inferior da tela, observe o comando para montar o compartilhamento de arquivos no Linux. Você precisará dele para a próxima tarefa.</span></li></ol><p><span>   </span><img src="images/linux-mount-command.PNG" referrerpolicy="no-referrer" alt="Comando de montagem para Linux"></p><br><h2 id='tarefa-5-montar-o-compartilhamento-de-arquivos-para-a-instância-do-linux-e-migrar-dados'><span>Tarefa 5: montar o compartilhamento de arquivos para a instância do Linux e migrar dados</span></h2><p><span>Antes de migrar dados para o compartilhamento NFS que você criou, primeiro você deve montar o compartilhamento. Nesta tarefa, você montará o compartilhamento NFS em um servidor Linux e, em seguida, copiará dados para o compartilhamento.</span></p><ol start='59' ><li><span>Conecte-se à instância </span><strong><span>On-Prem Linux Server</span></strong><span>.</span></li></ol><h3 id='i-classfab-fa-windowsi-usuários-do-microsoft-windows'><i class="fab fa-windows"></i><span> Usuários do Microsoft Windows</span></h3><p><i class="fas fa-comment"></i><span> Estas instruções são especificamente para usuários do Microsoft Windows. Se você estiver usando macOS ou Linux, </span><a href="#ssh-MACLinux"><span>vá para a próxima seção</span></a><span>.</span></p><p>&nbsp;</p><ol start='60' ><li><span>Acima destas instruções que você está lendo no momento, escolha o menu suspenso </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalhes) e, em seguida, selecione </span><span id="ssb_voc_grey"><span>Show</span></span><span> (Mostrar)</span></li></ol><p><span>   Uma janela </span><strong><span>Credentials</span></strong><span> (Credenciais) é aberta.</span></p><ol start='2' ><li><span>Escolha o botão </span><strong><span>Download PPK</span></strong><span> (Fazer download do PPK) e salve o arquivo </span><strong><span>labsuser.ppk</span></strong><span>.</span></li></ol><p><strong><span>Observação:</span></strong><span> normalmente, o navegador salva o arquivo no diretório </span><strong><span>Downloads</span></strong><span>.</span></p><ol start='3' ><li><span>Anote o endereço de </span><strong><span>OnPremLinuxInstance</span></strong><span>, se ele for exibido.</span></li><li><span>Saia do painel </span><strong><span>Details</span></strong><span> (Detalhes) escolhendo o </span><strong><span>X</span></strong><span>.</span></li><li><span>Para usar o SSH para acessar a instância do EC2, você deve usar o </span><strong><span>PuTTY</span></strong><span>. Se não tiver o PuTTY instalado no seu computador, </span><a href="https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe"><span>faça download do PuTTY</span></a><span>.</span></li><li><span>Abra o </span><strong><span>putty.exe</span></strong><span>.</span></li><li><span>Configure o tempo limite do PuTTY para manter a sessão do PuTTY aberta por mais tempo:</span></li></ol><ul><li><span>Escolha </span><strong><span>Connection</span></strong><span> (Conexão)</span></li><li><strong><span>Seconds between keepalives</span></strong><span> (Segundos entre os keepalives): </span><code>30</code></li></ul><ol start='8' ><li><span>Defina a sessão do PuTTY com as configurações a seguir.</span></li></ol><ul><li><p><span>Escolha </span><strong><span>Session (Sessão)</span></strong></p></li><li><p><strong><span>Host Name</span></strong><span> (or IP address) (Nome do host [ou endereço IP]): cole o </span><strong><span>OnPremLinuxInstance</span></strong><span> ara a instância que você anotou anteriormente</span></p><ul><li><span>Como alternativa, volte para o console do Amazon EC2 e escolha </span><strong><span>Instances</span></strong><span> (Instâncias)</span></li><li><span>Selecione a instância à qual deseja se conectar</span></li><li><span>Na guia </span><em><span>Description (Descrição)</span></em><span>, copie o valor </span><strong><span>IPv4 Public IP</span></strong><span> (IP público IPv4)</span></li></ul></li><li><p><span>De volta ao PuTTY, na lista </span><strong><span>Connection</span></strong><span> (Conexão), expanda o </span><i class="far fa-plus-square"></i><span> </span><strong><span>SSH</span></strong></p></li><li><p><span>Escolha </span><strong><span>Auth</span></strong><span> (Autenticação) (mas não expanda)</span></p></li><li><p><span>Escolha </span><strong><span>Browse</span></strong><span> (Procurar)</span></p></li><li><p><span>Procure e selecione o arquivo </span><strong><span>labsuser.ppk</span></strong><span> do qual você fez o download</span></p></li><li><p><span>Para selecionar o arquivo, escolha </span><strong><span>Open</span></strong><span> (Abrir)</span></p></li><li><p><span>Escolha </span><strong><span>Open</span></strong><span> (Abrir) novamente</span></p></li></ul><ol start='68' ><li><span>Para confiar e se conectar ao host, escolha </span><strong><span>Yes</span></strong><span> (Sim).</span></li><li><span>Quando for solicitado que você faça login como (</span><strong><span>login as</span></strong><span>), digite: </span><code>ec2-user</code></li></ol><p><span>   Essa ação conecta você à instância do EC2.</span></p><ol start='70' ><li><span>Usuários do Microsoft Windows: </span><a href="#ssh-after"><span>Clique aqui para avançar para a próxima tarefa.</span></a></li></ol><p>&nbsp;</p><p><a id='ssh-MACLinux'></a></p><h3 id='usuários-de-macos-i-classfab-fa-applei-e-linuxi-classfab-fa-linuxi'><span>Usuários de macOS </span><span style="font-size: 30px; color: #808080;"><i class="fab fa-apple"></i></span><span> e Linux</span><span style="font-size: 30px; "><i class="fab fa-linux"></i></span></h3><p><span>Essas instruções são especificamente para usuários de macOS ou Linux. Se você é um usuário do Windows, </span><a href="#ssh-after"><span>avance para a próxima tarefa.</span></a></p><ol start='71' ><li><span>Acima destas instruções que você está lendo no momento, escolha o menu suspenso </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalhes) e, em seguida, selecione </span><span id="ssb_voc_grey"><span>Show</span></span><span> (Mostrar)</span></li></ol><p><span>   Uma janela </span><strong><span>Credentials</span></strong><span> (Credenciais) é aberta.</span></p><ol start='72' ><li><p><span>Escolha o botão </span><strong><span>Download PEM</span></strong><span> (Fazer download do PEM) e salve o arquivo </span><strong><span>labsuser.pem</span></strong><span>.</span></p></li><li><p><span>Anote o endereço de </span><strong><span>OnPremLinuxInstance</span></strong><span>, se ele for exibido.</span></p></li><li><p><span>Saia do painel </span><strong><span>Details</span></strong><span> (Detalhes) escolhendo o </span><strong><span>X</span></strong><span>.</span></p></li><li><p><span>Abra uma janela do terminal e altere o diretório para aquele no qual foi feito download do arquivo </span><em><span>labsuser.pem</span></em><span> usando o comando </span><code>cd</code><span>.</span></p><p><span>Por exemplo, se o arquivo </span><em><span>labsuser.pem</span></em><span> foi salvo no diretório </span><strong><span>Downloads</span></strong><span>, execute este comando:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> ~/Downloads</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Altere as permissões na chave para que se tornem somente leitura executando este comando:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">chmod</span> <span class="cm-number">400</span> labsuser.pem</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Execute o comando a seguir (substitua </span><strong><span>&lt;public-ip</span><span>&gt;</span></strong><span> pelo endereço </span><strong><span>OnPremLinuxInstance</span></strong><span> que você copiou anteriormente).</span></p><ul><li><span>Como alternativa, para localizar o endereço IP da instância on-premises, retorne ao console do Amazon EC2 e selecione </span><strong><span>Instances</span></strong><span> (Instâncias)</span></li><li><span>Selecione a instância à qual você deseja se conectar</span></li><li><span>Na guia </span><strong><span>Description (Descrição)</span></strong><span>, copie o valor </span><strong><span>IPv4 Public IP</span></strong><span> (IP público IPv4)</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">ssh</span> <span class="cm-attribute">-i</span> labsuser.pem ec2-user@&lt;public-ip&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Quando solicitado a permitir a primeira conexão com este servidor SSH remoto, insira </span><code>yes (sim)</code><span>.</span></p><p><span>Como você está usando um par de chaves para autenticação, não é necessário fornecer uma senha.</span></p></li></ol><p><a id='ssh-after'></a></p><br><h4 id='agora-você-deve-estar-conectado-à-instância'><span>Agora você deve estar conectado à instância.</span></h4><ol start='79' ><li><p><span>Na instância do Linux, para exibir os dados existentes neste servidor, insira o comando a seguir:</span></p><p><code>ls /media/data</code></p><p><span>Você verá 20 arquivos de imagem no formato.png.</span></p></li><li><p><span>Crie o diretório que será usado para sincronizar dados com seu bucket do S3 usando o comando a seguir:</span></p><p><code>sudo mkdir -p /mnt/nfs/s3</code></p></li><li><p><span>Monte o compartilhamento de arquivos na instância do Linux usando o comando que você copiou no fim da última tarefa.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2002px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> mount <span class="cm-attribute">-t</span> nfs <span class="cm-attribute">-o</span> nolock,hard &lt;File-Gateway-appliance-private-IP-address&gt;:/&lt;S3-bucket-name&gt; /mnt/nfs/s3</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><p><span>Por exemplo:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> mount <span class="cm-attribute">-t</span> nfs <span class="cm-attribute">-o</span> nolock,hard <span class="cm-number">10</span>.10.1.33:/lab-nfs-bucket /mnt/nfs/s3</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Verifique se o compartilhamento foi montado corretamente inserindo o comando a seguir:</span></p><p><code>df -h</code></p><p><span>A saída do comando deve ser semelhante ao exemplo a seguir:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="pseudocode"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="pseudocode"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-bracket">[</span><span class="cm-variable">ec2</span><span class="cm-operator">-</span><span class="cm-variable">user</span>@<span class="cm-variable">ip</span><span class="cm-operator">-</span><span class="cm-number">10</span><span class="cm-operator">-</span><span class="cm-number">10</span><span class="cm-operator">-</span><span class="cm-number">1-210</span> <span class="cm-operator">~</span><span class="cm-bracket">]</span>$ <span class="cm-variable">df</span> <span class="cm-operator">-</span><span class="cm-variable">h</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">Filesystem</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">Size</span> &nbsp;<span class="cm-variable">Used</span> <span class="cm-variable">Avail</span> <span class="cm-variable">Use</span><span class="cm-operator">%</span> <span class="cm-variable">Mounted</span> <span class="cm-variable">on</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">devtmpfs</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-number">483</span><span class="cm-variable">M</span> &nbsp; <span class="cm-number">64</span><span class="cm-variable">K</span> &nbsp;<span class="cm-number">483</span><span class="cm-variable">M</span> &nbsp; <span class="cm-number">1</span><span class="cm-operator">%</span> /d<span class="cm-variable">ev</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">tmpfs</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-number">493</span><span class="cm-variable">M</span> &nbsp; &nbsp; <span class="cm-number">0</span> &nbsp;<span class="cm-number">493</span><span class="cm-variable">M</span> &nbsp; <span class="cm-number">0</span><span class="cm-operator">%</span> /d<span class="cm-variable">ev</span>/s<span class="cm-variable">hm</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">/d<span class="cm-variable">ev</span>/x<span class="cm-variable">vda1</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-number">7.8</span><span class="cm-variable">G</span> &nbsp;<span class="cm-number">1.1</span><span class="cm-variable">G</span> &nbsp;<span class="cm-number">6.6</span><span class="cm-variable">G</span> &nbsp;<span class="cm-number">14</span><span class="cm-operator">%</span> /</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-number">10.10</span>.<span class="cm-number">1.33</span><span class="cm-bracket">:</span>/l<span class="cm-variable">ab</span><span class="cm-operator">-</span><span class="cm-variable">nfs</span><span class="cm-operator">-</span><span class="cm-variable">bucket</span> &nbsp;<span class="cm-number">8.0</span><span class="cm-variable">E</span> &nbsp; &nbsp; <span class="cm-number">0</span> &nbsp;<span class="cm-number">8.0</span><span class="cm-variable">E</span> &nbsp; <span class="cm-number">0</span><span class="cm-operator">%</span> /m<span class="cm-variable">nt</span>/n<span class="cm-variable">fs</span>/s<span class="cm-number">3</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 134px;"></div><div class="CodeMirror-gutters" style="display: none; height: 134px;"></div></div></div></pre></li><li><p><span>Agora que você criou o ponto de montagem, pode copiar os dados que deseja migrar para o Amazon S3 para o compartilhamento usando este comando:</span></p><p><code>cp -v /media/data/*.png /mnt/nfs/s3</code></p></li></ol><br><h2 id='tarefa-6-confirmar-a-migração-dos-dados'><span>Tarefa 6: confirmar a migração dos dados</span></h2><p><span>Você terminou de configurar o gateway e copiar os dados para o compartilhamento NFS. Agora, verificará se a configuração funciona conforme o esperado.</span></p><ol start='84' ><li><span>Escolha o menu </span><span id="ssb_services"><span>Services (Serviços)</span></span><span> e selecione </span><strong><span>S3</span></strong><span>.</span></li><li><span>Selecione o bucket que você criou na região Leste dos EUA (Ohio) e verifique se os 20 arquivos de imagem estão listados.</span></li></ol><p><strong><span>Observação:</span></strong><span> talvez seja necessário escolher o botão de atualização </span><i class="fas fa-sync"></i><span> na área superior direita da janela.</span></p><ol start='86' ><li><span>Retorne à página de buckets do S3 e selecione o bucket que você criou na região Oeste dos EUA (Oregon). Verifique se os arquivos de imagens foram replicados para este bucket, com base na política que você criou anteriormente.</span></li></ol><p><br>
+<span>Você migrou dados com êxito para o Amazon S3 usando o AWS Storage Gateway no modo File Gateway. Depois que seus dados forem armazenados no Amazon S3, você poderá agir sobre eles como dados nativos do Amazon S3. Neste laboratório, você criou uma política de replicação para copiar os dados para uma região secundária. Também é possível executar outras operações, como configurar uma política de ciclo de vida. Por exemplo, você pode migrar dados usados com pouca frequência automaticamente do S3 Standard para o Amazon Simple Storage Service Glacier para armazenamento de longo prazo, o que pode reduzir custos.</span></p><br><h2 id='enviar-o-trabalho'><span>Enviar o trabalho</span></h2><ol start='87' ><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_blue"><span>Submit</span></span><span> (Enviar) para gravar seu progresso e, quando solicitado, escolha </span><strong><span>Yes</span></strong><span> (Sim).</span></p></li><li><p><span>Se os resultados não forem exibidos após alguns minutos, volte ao topo destas instruções e escolha </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Notas).</span></p><p><strong><span>Dica</span></strong><span>: você pode enviar seu trabalho várias vezes. Depois de alterar o trabalho, escolha </span><strong><span>Submit</span></strong><span> (Enviar) novamente. Seu último envio é o que será gravado para este laboratório.</span></p></li><li><p><span>Para ver o feedback detalhado do seu trabalho, escolha </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalhes) e depois </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Visualizar relatório de envio).</span></p></li></ol><br><h2 id='laboratório-concluído-i-classfas-fa-graduation-capi'><span>Laboratório concluído </span><i class="fas fa-graduation-cap"></i></h2><p><i class="fas fa-flag-checkered"></i><span> Parabéns! Você concluiu o laboratório.</span></p><ol start='90' ><li><p><span>Escolha </span><span id="ssb_voc_grey"><span>End Lab</span></span><span> (Encerrar laboratório) na parte superior desta página e, em seguida, selecione </span><span id="ssb_blue"><span>Yes</span></span><span> (Sim) para confirmar que você deseja encerrar o laboratório.</span></p><p><span>Será exibido um painel com a mensagem: </span><em><span>DELETE has been initiated... You may close this message box now. (A EXCLUSÃO foi iniciada... Você pode fechar esta caixa de mensagem agora).</span></em></p></li><li><p><span>Escolha o </span><strong><span>X</span></strong><span> no canto superior direito para fechar o painel.</span></p></li></ol><br><p>&nbsp;</p><p><em><span>©2020, Amazon Web Services, Inc. e suas afiliadas. Todos os direitos reservados. Este trabalho não pode ser reproduzido ou redistribuído, no todo ou em parte, sem permissão prévia por escrito da Amazon Web Services, Inc. É proibido copiar, emprestar ou vender para fins comerciais.</span></em></p></div></div>
+</body>
+</html>

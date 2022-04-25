@@ -1,0 +1,1171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='模块-10----指导实验使用-aws-cloudformation-实现自动化基础设施部署'><span>模块 10 – 指导实验：使用 AWS CloudFormation 实现自动化基础设施部署</span></h1><h2 id='实验概览和目标'><span>实验概览和目标</span></h2><p><span>以一致、可靠的方式部署基础设施很难，它要求用户遵循记录完备的流程，不能采取任何无正式记录的捷径。此外，如果可用人手较少，用户很难在正常的工作时间外部署基础设施。通过在可自动部署（甚至可以按自动安排好的时间部署）的模板中定义基础设施，AWS CloudFormation 改变了这种情况。</span></p><p><span>在本实验中，您将学习如何使用 AWS CloudFormation 部署多层基础设施、更新 CloudFormation 堆栈以及删除堆栈（同时保留一些资源）。</span></p><p><span>完成本实验后，您应能够：</span></p><ul><li><span>使用 AWS CloudFormation 部署 Virtual Private Cloud (VPC) 网络层</span></li><li><span>使用 AWS CloudFormation 部署引用网络层的应用层</span></li><li><span>使用 AWS CloudFormation Designer 浏览模板</span></li><li><span>删除一个具有删除策略的堆栈</span></li></ul><br><h2 id='持续时间'><span>持续时间</span></h2><p><span>完成本实验大约需要 </span><strong><span>20 分钟</span></strong><span>。</span></p><br><h2 id='aws-服务限制'><span>AWS 服务限制</span></h2><p><span>在本实验环境中，对 AWS 服务和服务操作的访问可能仅限于完成实验说明所需的服务和服务操作。如果您尝试访问其他服务或执行本实验中所述之外的操作，可能会遇到错误。</span></p><br><h2 id='访问-aws-管理控制台'><span>访问 AWS 管理控制台</span></h2><ol start='' ><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）即可启动您的实验。</span></p><p><strong><span>Start Lab</span></strong><span>（启动实验）面板随即会打开，其中显示了实验状态。</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>提示</span></strong><span>：如果您需要更多时间来完成实验，请再次选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）按钮，重新启动环境计时器。</span></p></li><li><p><span>请耐心等待，直到 </span><strong><span>Start Lab</span></strong><span>（启动实验）面板显示消息 </span><em><span>Lab status: ready</span></em><span>（实验状态：就绪），然后选择 </span><strong><span>X</span></strong><span> 关闭此面板。</span></p></li><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_voc_grey"><span>AWS</span></span><span>。</span></p><p><span>此操作将在一个新的浏览器选项卡中打开 AWS 管理控制台。您将自动登录系统。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>提示</span></strong><span>：如果未打开新的浏览器选项卡，您的浏览器顶部通常会出现一个横幅或图标，并显示一条消息，指明您的浏览器阻止该了网站打开弹出窗口。请选择横幅或图标，然后选择 </span><strong><span>Allow pop-ups</span></strong><span>（允许弹出窗口）。</span></p></li><li><p><span>排列 </span><strong><span>AWS 管理控制台</span></strong><span>选项卡，使其与这些说明一起显示。理想情况下，您将同时打开两个浏览器选项卡，以便能够更轻松地执行实验步骤。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>除非特别要求，否则请勿更改区域</span></strong><span>。</span></p></li></ol><br><h2 id='任务-1部署网络层'><span>任务 1：部署网络层</span></h2><p><em><span>分层</span></em><span>部署基础设施是一项最佳实践。常见的层是：</span></p><ul><li><span>网络 (Amazon VPC)</span></li><li><span>数据库</span></li><li><span>应用程序</span></li></ul><p><span>这样，模板就可以在系统之间重复使用。例如，您可以在开发、测试和生产环境之间部署通用网络拓扑，或者为多个应用程序部署标准数据库。</span></p><p><span>在此任务中，您将部署一个 AWS CloudFormation 模板，该模板使用 Amazon VPC 创建</span><em><span>网络层</span></em><span>。</span></p><ol start='5' ><li><p><span>右键单击以下链接，将模板下载到您的计算机中：</span><a href='../../../scripts/lab-network.yaml'><span>lab-network.yaml</span></a></p><p><i class="fas fa-comment"></i><span> 如果需要，您可以在文本编辑器中打开此模板，查看 AWS 资源的定义方式。</span></p><p><span>模板可以用 JavaScript 对象表示法 (JSON) 或 YAML Ain&#39;t Markup Language (YAML) 编写。YAML 是一种类似于 JSON 的标记语言，但更容易阅读和编辑。</span></p></li><li><p><span>在 </span><strong><span>AWS 管理控制台</span></strong><span>的 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单中，选择 </span><strong><span>CloudFormation</span></strong><span>。</span></p></li><li><p><span>如果您看到此消息，请单击 </span><span style="color:blue"><span>Try it out now and provide us feedback</span></span><span>（立即试用并提供反馈）：</span></p><p><img src="images/new-console.png" referrerpolicy="no-referrer" alt="新控制台"></p></li><li><p><span>选择 </span><span id="ssb_orange"><span>Create stack</span></span><span>（创建堆栈）并配置以下设置。</span></p><p><strong><span>第 1 步：指定模板</span></strong></p><ul><li><strong><span>Template source</span></strong><span>（模板源）：</span><span id="ssbox_cloudformation_blue"><i class="far fa-dot-circle" style="color:#007dbc;"></i><span> Upload a template file</span></span><span>（上传模板文件）</span></li><li><strong><span>Upload a template file</span></strong><span>（上传模板文件）：单击 </span><span id="ssb_ssm_white"><span>Choose file</span></span><span>（选择文件），然后选择您下载的 </span><strong><span>lab-network.yaml</span></strong><span> 文件。</span></li><li><span>选择 </span><span id="ssb_orange"><span>Next</span></span><span>（下一步）</span></li></ul><p><strong><span>第 2 步：创建堆栈</span></strong></p><ul><li><strong><span>Stack name</span></strong><span>（堆栈名称）：</span><code>lab-network</code></li><li><span>选择 </span><span id="ssb_orange"><span>Next</span></span><span>（下一步）</span></li></ul><p><strong><span>第 3 步：配置堆栈选项</span></strong></p><ul><li><p><span>在 </span><strong><span>Tags</span></strong><span>（标签）部分中，输入以下值。</span></p><ul><li><strong><span>Key</span></strong><span>（键）：</span><code>application</code></li><li><strong><span>Value</span></strong><span>（值）：</span><code>inventory</code></li></ul></li><li><p><span>选择 </span><span id="ssb_orange"><span>Next</span></span><span>（下一步）</span></p></li></ul><p><strong><span>第 4 步：审核 lab-network</span></strong></p><ul><li><span>选择 </span><span id="ssb_orange"><span>Create stack</span></span><span>（创建堆栈）</span></li></ul><p><span>AWS CloudFormation 现在将使用该</span><em><span>模板</span></em><span>在 AWS 账户中生成资源</span><em><span>堆栈</span></em><span>。</span></p><p><span>指定的</span><em><span>标签</span></em><span>将自动传播到创建的资源，以便更容易地识别特定应用程序使用的资源。</span></p></li><li><p><span>选择 </span><strong><span>Stack info</span></strong><span>（堆栈信息）选项卡。</span></p></li><li><p><span>等待堆栈的 </span><strong><span>Status</span></strong><span>（状态）更改为 </span><span style="color: green;"><i class="far fa-check-circle"></i><span> CREATE_COMPLETE</span></span><span>。</span></p><p><i class="fas fa-comment"></i><span> 根据需要，可每隔 15 秒选择一次 </span><strong><span>Refresh</span></strong><span>（刷新）</span><i class="fas fa-redo"></i><span> 来更新显示的内容。</span></p><p><span>现在，您可以查看已创建的资源。</span></p></li><li><p><span>选择 </span><strong><span>Resources</span></strong><span>（资源）选项卡。</span></p><p><span>您将看到通过该模板创建的资源列表。</span></p><p><i class="fas fa-comment"></i><span> 如果列表为空，请通过选择 </span><strong><span>Refresh</span></strong><span>（刷新）</span><i class="fas fa-redo"></i><span> 来更新列表。</span></p></li><li><p><span>选择 </span><strong><span>Events</span></strong><span>（事件）选项卡并滚动浏览事件日志。</span></p><p><span>事件日志显示 AWS CloudFormation 执行的活动（从最新活动到较早的活动）。示例事件包括开始创建资源，然后完成资源创建。在堆栈创建过程中遇到的任何错误都将在此选项卡中列出。</span></p></li><li><p><span>选择 </span><strong><span>Outputs</span></strong><span>（输出）选项卡。</span></p><p><span>CloudFormation 堆栈可以提供</span><em><span>输出信息</span></em><span>，例如特定资源的 ID 和资源的链接。</span></p><p><span>列出了两项输出。</span></p><p><span>– </span><strong><span>公有子网：</span></strong><span>创建的公有子网的 ID（例如：</span><em><span>subnet-08aafd57f745035f1</span></em><span>）</span>
+<span>– </span><strong><span>VPC：</span></strong><span>创建的 VPC 的 ID（例如：</span><em><span>vpc-08e2b7d1272ee9fb4</span></em><span>）</span></p><p><span>输出还可用于向其他堆栈提供值。这显示在 </span><strong><span>Export name</span></strong><span>（导出名称）列中。在这种情况下，将为 VPC 和子网 ID 指定导出名称，以便其他堆栈可以检索这些值。然后，这些其他堆栈可以在刚创建的 VPC 和子网内构建资源。您将在下一个任务中使用这些值。</span></p></li><li><p><span>选择 </span><strong><span>Template</span></strong><span>（模板）选项卡。</span></p><p><span>此选项卡显示用于创建堆栈的模板，即您在创建堆栈时上传的模板。您可以随意检查模板，查看创建的资源。还可以随意浏览最后的 </span><strong><span>Outputs</span></strong><span>（输出）部分（本部分定义了要导出的值）。</span></p></li></ol><br><h2 id='任务-2部署应用层'><span>任务 2：部署应用层</span></h2><p><span>现在，</span><em><span>网络层</span></em><span>已经部署完毕，下面您要部署包含 Amazon Elastic Compute Cloud (Amazon EC2) 实例和安全组的</span><em><span>应用层</span></em><span>。</span></p><p><span>AWS CloudFormation 模板将从现有 CloudFormation 堆栈的 </span><em><span>Outputs</span></em><span>（输出）中</span><em><span>导入</span></em><span> VPC 和子网 ID。然后，它将使用此信息在 VPC 中创建安全组，在子网中创建 EC2 实例。</span></p><ol start='15' ><li><p><span>右键单击以下链接，将模板下载到您的计算机：</span><a href='../../../scripts/lab-application.yaml'><span>lab-application.yaml</span></a></p><p><i class="fas fa-comment"></i><span> 如果需要，您可以在文本编辑器中打开此模板，查看资源的定义方式。</span></p></li><li><p><span>在左侧导航窗格中，选择 </span><strong><span>Stacks</span></strong><span>（堆栈）。</span></p></li><li><p><span>选择 </span><strong><span>Create stack &gt; With new resources (standard)</span></strong><span>（创建堆栈 &gt; 使用新资源（标准）），然后配置这些设置。</span></p><p><strong><span>第 1 步：指定模板</span></strong></p><p><span>– </span><strong><span>Template source</span></strong><span>（模板源）：</span><span id="ssbox_cloudformation_blue"><i class="far fa-dot-circle" style="color:#007dbc;"></i><span> Upload a template file</span></span><span>（上传模板文件）</span>
+<span>– </span><strong><span>Upload a template file</span></strong><span>（上传模板文件）：点击 </span><span id="ssb_ssm_white"><span>Choose file</span></span><span>（选择文件），然后选择您下载的 </span><strong><span>lab-application.yaml</span></strong><span> 文件。</span>
+<span>– 选择 </span><span id="ssb_orange"><span>Next</span></span><span>（下一步）</span></p><p><strong><span>第 2 步：创建堆栈</span></strong></p><p><span>– </span><strong><span>Stack name</span></strong><span>（堆栈名称）：</span><code>lab-application</code>
+<span>– </span><strong><span>NetworkStackName：</span></strong><code>lab-network</code>
+<span>– 选择 </span><span id="ssb_orange"><span>Next</span></span><span>（下一步）</span></p><p><i class="fas fa-comment"></i><em><span>Network Stack Name</span></em><span> 参数会将您创建的第一个堆栈的名称 (</span><em><span>lab-network</span></em><span>) 告知模板，以便模板可以从 </span><em><span>Outputs</span></em><span>（输出）中检索值。</span></p><p><strong><span>第 3 步：配置堆栈选项</span></strong></p><p><span>– 在 </span><strong><span>Tags</span></strong><span>（标签）部分中，输入这些值。</span>
+<span>  – </span><strong><span>Key</span></strong><span>（键）：</span><code>application</code>
+<span>  – </span><strong><span>Value</span></strong><span>（值）：</span><code>inventory</code>
+<span>– 选择 </span><span id="ssb_orange"><span>Next</span></span><span>（下一步）</span></p><p><strong><span>第 4 步：审核 lab-application</span></strong></p><p><span>– 选择 </span><span id="ssb_orange"><span>Create stack</span></span><span>（创建堆栈）</span></p><p><span>在创建堆栈时，请在 </span><strong><span>Events</span></strong><span>（事件）选项卡和 </span><strong><span>Resources</span></strong><span>（资源）选项卡中检查详细信息。您可以监控资源创建过程的进度和资源状态。</span></p></li><li><p><span>在 </span><strong><span>Stack info</span></strong><span>（堆栈信息）选项卡中，等待 </span><strong><span>Status</span></strong><span>（状态）更改为 </span><span style="color: green;"><i class="far fa-check-circle"></i><span> CREATE_COMPLETE</span></span><span>。</span></p><p><span>您的应用程序现已准备就绪！</span></p></li><li><p><span>选择 </span><strong><span>Outputs</span></strong><span>（输出）选项卡。</span></p></li><li><p><span>复制显示的 </span><strong><span>URL</span></strong><span>，然后打开一个新的 Web 浏览器标签页，粘贴此 URL 并按 Enter 键。</span></p><p><span>浏览器选项卡将打开该应用程序，该应用程序正在创建此新 CloudFormation 堆栈的 Web 服务器上运行。</span></p><p><span>CloudFormation 堆栈可以使用来自另一个 CloudFormation 堆栈的引用值。例如，</span><em><span>lab-application</span></em><span>模板的这一部分引用了 </span><em><span>lab-network</span></em><span> 模板：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  WebServerSecurityGroup</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Type</span><span class="cm-meta">: </span>AWS<span class="cm-meta">::</span>EC2<span class="cm-meta">::</span>SecurityGroup</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Properties</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  GroupDescription</span><span class="cm-meta">: </span>Enable HTTP ingress</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  VpcId</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp;  Fn::ImportValue</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  !Sub $<span class="cm-meta">{</span>NetworkStackName<span class="cm-meta">}</span>-VPCID</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 157px;"></div><div class="CodeMirror-gutters" style="display: none; height: 157px;"></div></div></div></pre><p><span>最后一行使用您在创建堆栈时提供的 </span><em><span>网络堆栈名称</span></em><span>（</span><em><span>lab-network</span></em><span>）。它从第一个堆栈的 </span><em><span>Outputs</span></em><span>（输出）中导入 </span><em><span>lab-network-VPCID</span></em><span> 的值。然后，它将该值插入到安全组定义的 VPC ID 字段中。结果是，系统在第一个堆栈创建的 VPC 中创建了该安全组。</span></p><p><span>下面是另一个示例，它位于您刚刚用于创建应用程序堆栈的 CloudFormation 模板中。此模板代码将 EC2 实例放入由网络堆栈创建的子网中：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  SubnetId</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Fn::ImportValue</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  !Sub $<span class="cm-meta">{</span>NetworkStackName<span class="cm-meta">}</span>-SubnetID</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p><span>它从 </span><em><span>lab-network</span></em><span> 堆栈获取 </span><em><span>subnet ID</span></em><span>（子网 ID），并在 </span><em><span>lab-application</span></em><span> 堆栈中使用此 ID 在由第一个堆栈创建的公有子网中启动实例。</span></p></li></ol><br><h2 id='任务-3更新堆栈'><span>任务 3：更新堆栈</span></h2><p><span>AWS CloudFormation 还可以</span><em><span>更新</span></em><span>已部署的堆栈。当您更新堆栈时，AWS CloudFormation 将仅修改或替换正在更改的资源。任何未更改的资源将保留原样。</span></p><p><span>在此任务中，您将更新 </span><em><span>lab-application</span></em><span> 堆栈，以修改安全组中的设置。</span></p><p><span>首先，您将检查安全组的当前设置。</span></p><ol start='21' ><li><p><span>在 </span><strong><span>AWS 管理控制台</span></strong><span>上，从 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单中选择 </span><strong><span>EC2</span></strong><span>。</span></p></li><li><p><span>在左侧导航窗格中，选择 </span><strong><span>Security Groups</span></strong><span>（安全组）。</span></p></li><li><p><span>选中复选框 </span><i class="far fa-check-square"></i><span> </span><strong><span>lab-application-WebServerSecurityGroup...</span></strong><span>。</span></p></li><li><p><span>选择 </span><strong><span>Inbound rules</span></strong><span>（入站规则）选项卡。</span></p><p><span>目前，安全组中只有一条规则，该规则允许 </span><em><span>HTTP</span></em><span> 流量。</span></p><p><span>现在，您将返回 AWS CloudFormation 更新堆栈。</span></p></li><li><p><span>在 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单上，选择 </span><strong><span>CloudFormation</span></strong><span>。</span></p></li><li><p><span>右键单击以下链接，将更新后的模板下载到您的计算机：</span><a href='../../../scripts/lab-application2.yaml'><span>lab-application2.yaml</span></a></p><p><span>此模板具有一项额外的配置，允许流经端口 22 的入站安全外壳 (SSH) 流量：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">  - </span><span class="cm-atom">IpProtocol</span><span class="cm-meta">: </span>tcp</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  FromPort</span><span class="cm-meta">: </span><span class="cm-number">22</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  ToPort</span><span class="cm-meta">: </span><span class="cm-number">22</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  CidrIp</span><span class="cm-meta">: </span>0.0.0.0/0</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre></li><li><p><span>在 </span><strong><span>AWS CloudFormation 控制台</span></strong><span>的 </span><strong><span>Stacks</span></strong><span>（堆栈）列表中，选择 </span><strong><span>lab-application</span></strong><span>。</span></p></li><li><p><span>选择 </span><span id="ssb_ssm_white"><span>Update</span></span><span>（更新）并配置以下设置。</span></p><ul><li><span>选择 </span><span id="ssbox_cloudformation_blue"><i class="far fa-dot-circle" style="color:#007dbc;"></i><span> Replace current template</span></span><span>（替换当前模板）</span></li><li><strong><span>Template source</span></strong><span>（模板源）：</span><span id="ssbox_cloudformation_blue"><i class="far fa-dot-circle" style="color:#007dbc;"></i><span> Upload a template file</span></span><span>（上传模板文件）</span></li><li><strong><span>Upload a template file:</span></strong><span>（上传模板文件）：单击 </span><span id="ssb_ssm_white"><span>Choose file</span></span><span>（选择文件），然后选择您下载的 </span><strong><span>lab-application2.yaml</span></strong><span> 文件。</span></li></ul></li><li><p><span>在接下来</span><em><span>三</span></em><span>个屏幕中的每个屏幕中，都选择 </span><span id="ssb_orange"><span>Next</span></span><span>（下一步）以进入 </span><strong><span>Review lab-application</span></strong><span>（审核 lab-application）页面。</span></p><p><span>在页面底部的 </span><strong><span>Change set preview</span></strong><span>（更改集概述）部分，AWS CloudFormation 将显示要更新的资源：</span></p><p><img src="images/change-set-preview.png" referrerpolicy="no-referrer" alt="更改集预览"></p><p><span>此更改集预览表明 AWS CloudFormation 将</span><em><span>修改</span></em><span> </span><em><span>WebServerSecurityGroup</span></em><span> 而无需替换它（</span><em><span>Replacement = False</span></em><span>）。此更改集意味着安全组将对其应用细微更改，并且不需要更改对安全组的引用。</span></p></li><li><p><span>选择 </span><span id="ssb_orange"><span>Update Stack</span></span><span>（更新堆栈）。</span></p></li><li><p><span>在 </span><strong><span>Stack info</span></strong><span>（堆栈信息）选项卡中，等待 </span><strong><span>Status</span></strong><span>（状态）更改为 </span><span style="color: green;"><i class="far fa-check-circle"></i><span> UPDATE_COMPLETE</span></span><span>。</span></p><p><i class="fas fa-comment"></i><span> 如果需要，可每隔 15 秒选择一次 </span><strong><span>Refresh</span></strong><span>（刷新）</span><i class="fas fa-redo"></i><span> 来更新状态。</span></p><p><span>现在，您可以确认更改。</span></p></li><li><p><span>返回到 </span><strong><span>Amazon EC2 控制台</span></strong><span>，然后从左侧导航窗格中选择 </span><strong><span>Security Groups</span></strong><span>（安全组）。</span></p></li><li><p><span>在 </span><strong><span>Security Groups</span></strong><span>（安全组）列表中，选择 </span><strong><span>lab-application-WebServerSecurityGroup</span></strong><span>。</span></p><p><strong><span>Inbound rules</span></strong><span>（入站规则）选项卡应显示允许通过 </span><em><span>TCP 端口 22</span></em><span> 的 </span><em><span>SSH</span></em><span> 流量的附加规则。</span></p><p><span>此子任务演示了如何在可重复的记录完备的流程中部署更改。AWS CloudFormation 模板可以存储在源代码存储库（例如 AWS CodeCommit）中。这样，您就可以维护模板和部署的基础设施的版本和历史记录。</span></p></li></ol><br><h2 id='任务-4使用-aws-cloudformation-designer-浏览模板'><span>任务 4：使用 AWS CloudFormation Designer 浏览模板</span></h2><p><em><span>AWS CloudFormation Designer</span></em><span> 是一种图形工具，用于创建、查看和修改 AWS CloudFormation 模板。借助 Designer，您可以使用拖放界面绘制模板资源图，然后通过集成的 JSON 和 YAML 编辑器编辑模板资源的详细信息。</span></p><p><span>无论您是 AWS CloudFormation 新手还是经验丰富的用户，Designer 都能帮您迅速了解模板中各项资源之间的相互关系，并轻松修改模板。</span></p><p><span>在此任务中，您将获得一些使用 Designer 的实际动手经验。</span></p><ol start='34' ><li><span>在 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单上，选择 </span><strong><span>CloudFormation</span></strong><span>。</span></li><li><span>在左侧导航窗格中，选择 </span><strong><span>Designer</span></strong><span>（设计器）。</span></li></ol><p><strong><span>提示：</span></strong><span>您可能需要通过选择菜单图标来展开左侧导航窗格。</span></p><ol start='36' ><li><span>选择 </span><i class="fas fa-file"></i><span> </span><strong><span>File</span></strong><span>（文件）菜单，选择 </span><strong><span>Open &gt; Local file</span></strong><span>（打开 &gt; 本地文件），然后选择您之前下载的 </span><strong><span>lab-application2.yaml</span></strong><span> 模板。</span></li></ol><p><span>Designer 将以图形方式显示该模板：</span></p><p><img src="images/designer.png" referrerpolicy="no-referrer" alt="CloudFormation Designer"></p><p><span>Designer 是 AWS CloudFormation 模板的可视化编辑器，绘制的不是典型的架构图，而是绘制模板中定义的资源以及它们相互之间的关系。</span></p><ol start='37' ><li><p><span>试用 Designer 的功能。可以尝试以下操作：</span></p><ul><li><span>单击显示的资源。随后，下方窗格将显示用于定义资源的部分模板。</span></li><li><span>尝试将新资源从左侧的 </span><strong><span>Resource types</span></strong><span>（资源类型）窗格中拖动到设计区域。资源的定义将自动插入到模板中。</span></li><li><span>尝试拖动资源连接器圈，创建各资源之间的关系。</span></li><li><span>打开您之前在实验中下载的 </span><strong><span>lab-network.yaml</span></strong><span> 模板，并在 Designer 中浏览其资源。</span></li></ul></li></ol><br><h2 id='任务-5删除堆栈'><span>任务 5：删除堆栈</span></h2><p><span>当不再需要为堆栈构建的资源时，AWS CloudFormation 可以将这些资源删除。</span></p><p><span>还可以针对资源指定</span><em><span>删除策略</span></em><span>。当资源堆栈被删除时，它可以保留或（在某些情况下）备份资源。此功能对于保留数据库、磁盘卷，或删除堆栈后可能需要的任何资源非常有用。</span></p><p><em><span>lab-application</span></em><span> 堆栈被配置为在删除 Amazon Elastic Block Store (Amazon EBS) 磁盘卷之前为其创建快照。模板中完成该配置的代码是：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  DiskVolume</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Type</span><span class="cm-meta">: </span>AWS<span class="cm-meta">::</span>EC2<span class="cm-meta">::</span>Volume</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Properties</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  Size</span><span class="cm-meta">: </span><span class="cm-number">100</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  AvailabilityZone</span><span class="cm-meta">: </span>!GetAtt WebServerInstance.AvailabilityZone</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  Tags</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta"> &nbsp; &nbsp; &nbsp;  - </span><span class="cm-atom">Key</span><span class="cm-meta">: </span>Name</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp; &nbsp;  Value</span><span class="cm-meta">: </span>Web Data</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  DeletionPolicy</span><span class="cm-meta">: </span>Snapshot</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 202px;"></div><div class="CodeMirror-gutters" style="display: none; height: 202px;"></div></div></div></pre><p><span>最后一行中的 </span><em><span>DeletionPolicy</span></em><span> 将指示 AWS CloudFormation 在删除磁盘卷之前为其创建快照。</span></p><p><span>现在，您将删除 </span><em><span>lab-application</span></em><span> 堆栈，并查看此删除策略的结果。</span></p><ol start='38' ><li><p><span>通过选择 Designer 页面顶部的 </span><span style="color:#1166bb"><span>Close</span></span><span>（关闭）链接返回主 </span><strong><span>AWS CloudFormation 控制台</span></strong><span>（如果出现提示，请选择 </span><strong><span>Leave page</span></strong><span>（离开页面））。</span></p></li><li><p><span>在堆栈列表中，选择 </span><strong><span>lab-application</span></strong><span> 链接。</span></p></li><li><p><span>选择 </span><span id="ssb_ssm_white"><span>Delete</span></span><span>（删除）。</span></p></li><li><p><span>选择 </span><span id="ssb_orange"><span>Delete stack</span></span><span>（删除堆栈）。</span></p><p><span>您可以在 </span><strong><span>Events</span></strong><span>（事件）选项卡中监控删除过程，偶尔选择 </span><strong><span>Refresh</span></strong><span>（刷新）</span><i class="fas fa-redo"></i><span> 来更新屏幕。您可能还会看到一个事件日志条目，表明正在创建 EBS 快照。</span></p></li><li><p><span>请等待堆栈被删除。删除后它将从堆栈列表中消失。</span></p><p><span>应用程序堆栈 __ 已删除，但网络堆栈保持不变。此场景强化了这样一个想法，即不同的团队（例如，网络团队或应用程序团队）可以管理自己的堆栈。</span></p><p><span>现在，您将在删除 EBS 卷之前为其创建了快照。</span></p></li><li><p><span>从 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单中，选择 </span><strong><span>EC2</span></strong><span>。</span></p></li><li><p><span>在左侧导航窗格中，选择 </span><strong><span>Snapshots</span></strong><span>（快照）。</span></p><p><span>您应该看到最后几分钟里有一个带有</span><strong><span>Started</span></strong><span>（已开始）时间的快照。</span></p></li></ol><p>&nbsp;</p><br><h2 id='提交作业'><span>提交作业</span></h2><ol start='45' ><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_blue"><span>Submit</span></span><span>（提交）记录您的进度，在出现提示时，选择 </span><strong><span>Yes</span></strong><span>（是）。</span></p></li><li><p><span>如果在几分钟后仍未显示结果，请返回到这些说明的顶部，并选择 </span><span id="ssb_voc_grey"><span>Grades</span></span><span>（成绩）</span></p><p><strong><span>提示</span></strong><span>：您可以多次提交作业。更改作业后，再次选择 </span><strong><span>Submit</span></strong><span>（提交）即可。您最后一次提交的作业将记录为本实验的成绩。</span></p></li><li><p><span>要查找有关您作业的详细反馈，请选择 </span><span id="ssb_voc_grey"><span>Details</span></span><span>（详细信息），然后选择 </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span>（查看提交报告）。</span></p></li></ol><br><h2 id='实验完成-i-classfas-fa-graduation-capi'><span>实验完成 </span><i class="fas fa-graduation-cap"></i></h2><p><i class="fas fa-flag-checkered"></i><span> 恭喜！您已完成实验。</span></p><ol start='48' ><li><p><span>选择此页面顶部的 </span><span id="ssb_voc_grey"><span>End Lab</span></span><span>（结束实验），然后选择 </span><span id="ssb_blue"><span>Yes</span></span><span>（是）确认您要结束实验。</span></p><p><span>此时将显示一个面板，表明 </span><em><span>DELETE has been initiated... You may close this message box now.</span></em><span>（删除操作已启动...您现在可以关闭此消息框。）</span></p></li><li><p><span>选择右上角的 </span><strong><span>X</span></strong><span> 以关闭面板。</span></p></li></ol><p>&nbsp;</p><p><em><span>©2020 Amazon Web Services, Inc. 及其附属公司。保留所有权利。未经 Amazon Web Services, Inc. 事先书面许可，不得复制或转载本文的部分或全部内容。禁止商业性复制、出租或出售。</span></em></p><p>&nbsp;</p></div></div>
+</body>
+</html>

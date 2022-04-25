@@ -1,0 +1,1164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='módulo-6----laboratório-guiado-criar-uma-virtual-private-cloud'><span>Módulo 6 – Laboratório guiado: Criar uma Virtual Private Cloud</span></h1><h2 id='visão-geral-e-objetivos-do-laboratório'><span>Visão geral e objetivos do laboratório</span></h2><p><span>A rede tradicional é difícil. Envolve equipamentos, cabeamento, configurações complexas e habilidades especializadas. O Amazon Virtual Private Cloud (Amazon VPC) oculta a complexidade e simplifica a implantação de redes privadas seguras.</span></p><p><span>Este laboratório mostra como criar sua própria Virtual Private Cloud (VPC), implantar recursos e criar conexões de emparelhamento privado entre VPCs.</span></p><p><span>Depois de concluir este laboratório, você deverá ser capaz de:</span></p><ul><li><span>Implantar uma VPC</span></li><li><span>Criar e associar um gateway da Internet à VPC</span></li><li><span>Criar uma sub-rede pública</span></li><li><span>Criar sub-rede privada</span></li><li><span>Criar um servidor de aplicações para testar a VPC</span></li></ul><p>&nbsp;</p><p><span>No </span><strong><span>final</span></strong><span> deste laboratório, sua arquitetura será semelhante ao seguinte exemplo:</span></p><p><img src="images/module-6-guided-lab-architecture.png" referrerpolicy="no-referrer" alt="Arquitetura"></p><p><br>
+<span>##Duração</span></p><p><span>Este laboratório levará aproximadamente </span><strong><span>30 minutos</span></strong><span> para ser concluído.</span></p><br><h2 id='restrições-de-serviço-da-aws'><span>Restrições de serviço da AWS</span></h2><p><span>Neste ambiente de laboratório, o acesso aos serviços e ações de serviço da AWS pode estar restrito àqueles necessários para concluir as instruções do laboratório. Você poderá encontrar erros se tentar acessar outros serviços ou executar ações além do que está descrito neste laboratório.</span></p><br><h2 id='acessar-o-console-de-gerenciamento-da-aws'><span>Acessar o Console de Gerenciamento da AWS</span></h2><ol start='' ><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratório) para iniciar o laboratório.</span></p><p><span>Um painel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratório) é aberto com o status do laboratório.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Dica</span></strong><span>: se você precisar de mais tempo para concluir o laboratório, escolha novamente o botão </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratório) para reiniciar o cronômetro do ambiente.</span></p></li><li><p><span>Aguarde até que o painel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratório) exiba a mensagem </span><em><span>Lab status: ready (Status do laboratório: pronto)</span></em><span> e, em seguida, escolha </span><strong><span>X</span></strong><span> para fechar o painel.</span></p></li><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>Essa ação abrirá o Console de Gerenciamento da AWS em uma nova guia do navegador. O sistema fará seu login automaticamente.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Dica</span></strong><span>: se uma nova guia do navegador não for aberta, normalmente você verá uma faixa ou um ícone na parte superior do navegador com uma mensagem informando que o navegador está impedindo que o site abra janelas pop-up. Escolha a faixa ou o ícone e depois </span><strong><span>Allow pop ups</span></strong><span> (Permitir pop-ups).</span></p></li><li><p><span>Organize a guia do </span><strong><span>Console de Gerenciamento da AWS</span></strong><span> para que ela seja exibida com essas instruções. O ideal é ver as duas guias do navegador abertas ao mesmo tempo, para facilitar o acompanhamento das etapas do laboratório.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Não altere a região, a menos que seja especificamente instruído a fazer isso</span></strong><span>.</span></p></li></ol><br><h2 id='tarefa-1-criar-uma-vpc'><span>Tarefa 1: criar uma VPC</span></h2><p><span>Você começará usando a Amazon VPC para criar uma nova </span><strong><span>Virtual Private Cloud</span></strong><span> (VPC – Nuvem privada virtual).</span></p><p><span>Uma VPC é uma rede virtual dedicada à sua conta da Amazon Web Services (AWS). Ela fica isolada logicamente de outras redes virtuais na Nuvem AWS. É possível executar recursos da AWS, como instâncias do Amazon Elastic Compute Cloud (Amazon EC2), na VPC. Você pode configurar a VPC modificando sua faixa de endereços IP e criar sub-redes. Também é possível configurar tabelas de rotas, gateways de rede e configurações de segurança.</span></p><ol start='5' ><li><p><span>No </span><strong><span>Console de Gerenciamento da AWS</span></strong><span>, no menu </span><span id="ssb_services"><span>Services</span><i class="fas fa-angle-down"></i></span><span> (Serviços), escolha </span><strong><span>VPC</span></strong><span>.</span></p><p><span>O console da VPC oferece um assistente de VPC que pode criar várias arquiteturas de VPC automaticamente. No entanto, neste laboratório, você criará os componentes da VPC manualmente.</span></p></li><li><p><span>No painel de navegação à esquerda, escolha </span><strong><span>Your VPCs</span></strong><span> (Suas VPCs).</span></p><p><span>Uma VPC padrão é fornecida para que você possa executar recursos assim que começar a usar a AWS. Há também uma </span><strong><span>VPC compartilhada</span></strong><span> que você usará mais tarde no laboratório. No entanto, agora você criará sua própria </span><em><span>Lab VPC</span></em><span>.</span></p><p><span>A VPC terá um intervalo Classless Inter-Domain Routing (CIDR – Roteamento entre domínios sem classe) de </span><strong><span>10.0.0.0/16</span></strong><span>, que inclui todos os endereços IP que começam com </span><strong><span>10.0.x.x</span></strong><span> contendo mais de 65.000 endereços. Posteriormente, você dividirá os endereços em _sub-redes_separadas.</span></p></li><li><p><span>Escolha </span><span id="ssb_blue"><span>Create VPC</span></span><span> (Criar VPC) e defina estas configurações:</span></p><ul><li><strong><span>Name tag</span></strong><span> (Tag de nome): </span><code>Lab VPC</code></li><li><strong><span>IPv4 CIDR block</span></strong><span> (Bloco CIDR IPv4): </span><code>10.0.0.0/16</code></li><li><span>Escolha </span><span id="ssb_blue"><span>Create</span></span><span> (Criar) e </span><span id="ssb_blue"><span>Close</span></span><span> (Fechar).</span></li></ul><p><i class="fas fa-comment"></i><span> Se essas opções não aparecerem, cancele sua configuração. No painel de navegação à esquerda, certifique-se de que escolheu </span><strong><span>Your VPCs</span></strong><span> (Suas VPCs). Em seguida, escolha </span><strong><span>Create VPC</span></strong><span> (Criar VPC) novamente.</span></p></li><li><p><span>Selecione </span><i class="far fa-check-square"></i><strong><span>Lab VPC</span></strong><span> e certifique-se de que é a única VPC selecionada.</span></p></li><li><p><span>Na metade inferior da página, escolha a guia </span><strong><span>Tags</span></strong><span>.</span></p><p><span>Tags são úteis para identificar recursos. Por exemplo, você pode usar uma tag para identificar centros de custo ou ambientes diferentes (como desenvolvimento, teste ou produção).</span></p></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Actions</span><i class="fas fa-angle-down"></i></span><span> (Ações) e selecione </span><strong><span>Edit DNS hostnames</span></strong><span> (Editar nomes de host DNS).</span></p></li></ol><p><span>   Essa opção atribui um nome de sistema de nomes de domínio (DNS) </span><em><span>amigável</span></em><span> às instâncias do EC2 na VPC, como:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">_ec2-52-42-133-255.us-west-2.compute.amazonaws.com_</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><ol start='11' ><li><span>Selecione </span><i class="far fa-check-square"></i><strong><span>enable</span></strong><span> (habilitar), escolha </span><span id="ssb_blue"><span>Save</span></span><span> (Salvar) e, em seguida, escolha </span><span id="ssb_blue"><span>Close</span></span><span> (Fechar)</span></li></ol><p><span>   Todas as instâncias do EC2 executadas na VPC agora receberão automaticamente um nome de host DNS. Você também pode adicionar um nome de DNS mais significativo (como </span><em><span>app.exemplo.com</span></em><span>) posteriormente usando o Amazon Route 53.</span></p><p>&nbsp;</p><h2 id='tarefa-2-criar-sub-redes'><span>Tarefa 2: criar sub-redes</span></h2><p><span>Uma sub-rede é um subintervalo de endereços IP dentro da VPC. Os recursos da AWS podem ser executados em uma sub-rede especificada. Use uma </span><em><span>sub-rede pública</span></em><span> para recursos que devem ser conectados à Internet e use uma </span><em><span>sub-rede privada</span></em><span> para recursos que devem permanecer isolados da Internet.</span></p><p><span>Nesta tarefa, você criará uma sub-rede pública e uma sub-rede privada:</span></p><p><img src="images/module-6-guided-lab-task-2.png" referrerpolicy="no-referrer" alt="Sub-redes"></p><br><h3 id='criar-uma-sub-rede-pública'><span>Criar uma sub-rede pública</span></h3><p><span>A sub-rede pública será usada para recursos voltados para a Internet.</span></p><ol start='12' ><li><p><span>No painel de navegação à esquerda, escolha </span><strong><span>Subnets</span></strong><span> (Sub-redes).</span></p></li><li><p><span>Escolha </span><span id="ssb_blue"><span>Create subnet</span></span><span> (Criar sub-rede) e configure estes ajustes:</span></p><ul><li><strong><span>Name tag</span></strong><span> (Tag de nome): </span><code>Public Subnet (Sub-rede pública)</code></li><li><strong><span>VPC:</span></strong><span> </span><em><span>Lab VPC</span></em></li><li><strong><span>Availability Zone</span></strong><span> (Zona de disponibilidade): selecione a </span><em><span>primeira</span></em><span> zona de disponibilidade na lista (</span><em><span>não</span></em><span> escolha </span><strong><span>No Preference</span></strong><span> (Sem preferência)).</span></li><li><strong><span>IPv4 CIDR block</span></strong><span> (Bloco CIDR IPv4): </span><code>10.0.0.0/24</code></li><li><span>Escolha </span><span id="ssb_blue"><span>Create</span></span><span> (Criar) e </span><span id="ssb_blue"><span>Close</span></span><span> (Fechar).</span></li></ul><p><i class="fas fa-comment"></i><span> A VPC tem um bloco CIDR de </span><em><span>10.0.0.0/16</span></em><span>, que inclui todos os endereços IP </span><em><span>10.0.x.x.</span></em><span> A sub-rede que você acabou de criar tem um bloco CIDR de </span><em><span>10.0.0.0/24</span></em><span>, que inclui todos os endereços IP </span><em><span>10.0.0.x.</span></em><span> Eles podem ser semelhantes, mas a sub-rede é menor que a VPC devido ao </span><em><span>/24</span></em><span> no intervalo CIDR.</span></p><p><span>Agora, você vai configurar a sub-rede para atribuir um endereço IP público automaticamente a todas as instâncias executadas nela.</span></p></li><li><p><span>Selecione </span><i class="far fa-check-square"></i><strong><span>Public Subnet</span></strong><span> (Sub-rede pública).</span></p></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Actions</span><i class="fas fa-angle-down"></i></span><span> (Ações) e selecione </span><strong><span>Modify auto-assign IP settings</span></strong><span> (Modificar configurações de IP de atribuição automática), e:</span></p><ul><li><span>Selecione </span><i class="far fa-check-square"></i><strong><span>Auto-assign IPv4</span></strong><span> (Atribuir IPv4 automaticamente)</span></li><li><span>Escolha </span><span id="ssb_blue"><span>Save</span></span><span> (Salvar)</span></li></ul><p><i class="fas fa-comment"></i><span> Embora essa sub-rede tenha sido denominada </span><em><span>Public Subnet (Sub-rede pública)</span></em><span>, ela ainda não é pública. Uma sub-rede pública deve ter um gateway da Internet, que você anexará na próxima tarefa.</span></p></li></ol><br><h3 id='criar-uma-sub-rede-privada'><span>Criar uma sub-rede privada</span></h3><p><span>A sub-rede privada será usada para recursos que devem permanecer isolados da Internet.</span></p><ol start='16' ><li><p><span>Use o que você acabou de aprender para criar outra sub-rede com estas configurações:</span></p><ul><li><strong><span>Name tag</span></strong><span> (Tag de nome): </span><code>Private Subnet</code><span> (Sub-rede privada)</span></li><li><strong><span>VPC:</span></strong><span> </span><em><span>Lab VPC</span></em></li><li><strong><span>Availability Zone</span></strong><span> (Zona de disponibilidade): selecione a </span><em><span>primeira</span></em><span> zona de disponibilidade na lista (</span><em><span>não</span></em><span> escolha </span><strong><span>No Preference</span></strong><span> (Sem preferência)).</span></li><li><strong><span>IPv4 CIDR block</span></strong><span> (Bloco CIDR IPv4): </span><code>10.0.2.0/23</code></li></ul><p><span>O bloco CIDR de </span><em><span>10.0.2.0/23</span></em><span> inclui todos os endereços IP que começam com </span><em><span>10.0.2.x</span></em><span> e </span><em><span>10.0.3.x</span></em><span>. Isso é duas vezes maior que a sub-rede pública, pois a maioria dos recursos deve ser mantida em sub-redes privadas, a menos que devam estar especificamente acessíveis pela Internet.</span></p><p><span>Sua VPC agora tem duas sub-redes. No entanto, a sub-rede pública é totalmente isolada e não pode se comunicar com recursos fora da VPC. Em seguida, você configurará a sub-rede pública para se conectar à Internet por meio de um gateway da Internet.</span></p></li></ol><br><h2 id='tarefa-3-criar-um-gateway-da-internet'><span>Tarefa 3: criar um gateway da Internet</span></h2><p><span>Um </span><em><span>gateway da Internet</span></em><span> é um componente da VPC dimensionado horizontalmente, redundante e altamente disponível que permite a comunicação entre instâncias em uma VPC e na Internet. Ele não impõe riscos de disponibilidade ou restrições de largura de banda no tráfego da rede.</span></p><p><span>Um gateway da Internet tem duas finalidades:</span></p><ul><li><span>Fornecer um destino para que as tabelas de rotas se conectem à Internet</span></li><li><span>Executar a conversão de endereços de rede (NAT) para instâncias que receberam endereços IPv4 públicos</span></li></ul><p><span>Nesta tarefa, você criará um gateway da Internet para que o tráfego da Internet possa acessar a sub-rede pública.</span></p><ol start='17' ><li><p><span>No painel de navegação à esquerda, escolha </span><strong><span>Internet Gateways</span></strong><span> (Gateways da Internet).</span></p></li><li><p><span>Escolha </span><span id="ssb_blue"><span>Create Internet Gateway</span></span><span> (Criar gateway da Internet) e configure estes ajustes:</span></p><ul><li><strong><span>Name tag</span></strong><span> (Tag de nome): </span><code>Lab IGW (IGW do laboratório)</code></li><li><span>Escolha </span><span id="ssb_blue"><span>Create</span></span><span> (Criar) e </span><span id="ssb_blue"><span>Close</span></span><span> (Fechar).</span></li></ul><p><span>Agora, você pode anexar o gateway da Internet à </span><em><span>Lab VPC</span></em><span>.</span></p></li><li><p><span>Selecione </span><i class="far fa-check-square"></i><span> </span><strong><span>Lab IGW</span></strong><span> (IGW do laboratório) e certifique-se de que é o único gateway que você selecionou.</span></p></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Actions</span><i class="fas fa-angle-down"></i></span><span> (Ações) e </span><strong><span>Attach to VPC</span></strong><span> (Anexar à VPC) e defina estas configurações:</span></p><ul><li><strong><span>VPC:</span></strong><span> na lista, selecione </span><em><span>Lab VPC</span></em></li><li><span>Escolha </span><span id="ssb_blue"><span>Attach</span></span><span> (Associar)</span></li></ul><p><span>Essa ação anexará o gateway da Internet à sua </span><em><span>Lab VPC</span></em><span>. Embora tenha criado um gateway da Internet e o tenha anexado à sua VPC, você também deve configurar a </span><em><span>tabela de rotas</span></em><span> de sub-rede pública para que ela use o gateway da Internet.</span></p></li></ol><br><h2 id='tarefa-4-configurar-tabelas-de-rotas'><span>Tarefa 4: configurar tabelas de rotas</span></h2><p><span>Uma </span><em><span>tabela de rotas</span></em><span> contém um conjunto de regras, chamado </span><em><span>rotas</span></em><span>, que são usadas para determinar para onde o tráfego de rede é direcionado. Cada sub-rede em uma VPC deve estar associada a uma tabela de rotas porque a tabela controla o roteamento da sub-rede. Uma sub-rede só pode ser associada a uma tabela de rotas por vez, mas você pode associar várias sub-redes à mesma tabela de rotas.</span></p><p><span>Para usar um gateway da Internet, a tabela de rotas de uma sub-rede deve conter uma rota que direcione o tráfego vinculado à Internet para o gateway da Internet. Se uma sub-rede estiver associada a uma tabela de rotas que tenha uma rota para um gateway da Internet, ela será conhecida como </span><em><span>sub-rede pública</span></em><span>.</span></p><p><span>Nesta tarefa, você vai:</span></p><ul><li><span>Criar uma </span><em><span>tabela de rotas públicas</span></em><span> para tráfego vinculado à Internet</span></li><li><span>Adicionar uma </span><em><span>rota</span></em><span> à tabela de rotas para direcionar o tráfego de entrada da Internet para o gateway da Internet.</span></li><li><span>Associar a sub-rede pública à nova tabela de rotas</span></li></ul><ol start='21' ><li><p><span>No painel de navegação à esquerda, escolha </span><strong><span>Route Tables</span></strong><span> (Tabelas de rotas).</span></p><p><span>Várias tabelas de rotas serão exibidas, mas há apenas uma tabela de rotas associada à </span><em><span>Lab VPC</span></em><span>. Essa tabela roteia o tráfego localmente, portanto, é chamada de </span><em><span>tabela de rotas privadas</span></em><span>.</span></p></li><li><p><span>Na coluna </span><strong><span>VPC ID</span></strong><span> (ID da VPC), selecione </span><i class="far fa-check-square"></i><span> a tabela de rotas que mostra </span><strong><span>Lab VPC</span></strong><span> (você pode expandir a coluna para ver os nomes).</span></p></li><li><p><span>Na coluna </span><strong><span>Name</span></strong><span> (Nome), escolha </span><i class="fas fa-pencil-alt"></i><span> então digite o nome </span><code>Private Route Table</code><span> e escolha </span><i class="fas fa-check-circle"></i><span>.</span></p></li><li><p><span>Na metade inferior da página, escolha a guia </span><strong><span>Routes</span></strong><span> (Rotas).</span></p></li></ol><p><span>Há apenas uma rota. Ela mostra que todo o tráfego destinado a </span><em><span>10.0.0.0/16</span></em><span> (que é o intervalo da </span><em><span>Lab VPC</span></em><span>) será roteado </span><em><span>localmente</span></em><span>. Isso permite que todas as sub-redes em uma VPC se comuniquem entre si.</span></p><p><span>Agora, você criará uma nova tabela de rotas públicas para enviar tráfego público para o gateway da Internet.</span></p><ol start='25' ><li><p><span>Escolha </span><span id="ssb_blue"><span>Create route table</span></span><span> (Criar tabela de rotas) e configure estes ajustes:</span></p><ul><li><strong><span>Name tag</span></strong><span> (Tag de nome): </span><code>Public Route Table (Tabela de rotas públicas)</code></li><li><strong><span>VPC:</span></strong><span> </span><em><span>Lab VPC</span></em></li><li><span>Escolha </span><span id="ssb_blue"><span>Create</span></span><span> (Criar) e </span><span id="ssb_blue"><span>Close</span></span><span> (Fechar).</span></li></ul></li><li><p><span>Selecione </span><i class="far fa-check-square"></i><span> </span><strong><span>Public Route Table</span></strong><span> (Tabela de rotas públicas), e certifique-se de que é a única tabela de rotas que você selecionou.</span></p></li><li><p><span>Na guia </span><strong><span>Routes</span></strong><span> (Rotas), escolha </span><span id="ssb_grey"><span>Edit routes</span></span><span> (Editar rotas).</span></p><p><span>Agora você vai adicionar uma rota para direcionar o tráfego destinado à Internet (</span><em><span>0.0.0.0/0</span></em><span>) ao gateway da Internet.</span></p></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Add route</span></span><span> (Adicionar rota), em seguida configure estes ajustes:</span></p><ul><li><strong><span>Destination</span></strong><span> (Destino): </span><code>0.0.0.0/0</code></li><li><strong><span>Target</span></strong><span> (Destino): selecione </span><em><span>Internet Gateway (Gateway da Internet)</span></em><span>, depois selecione </span><em><span>Lab IGW (IGW do laboratório)</span></em><span> da lista</span></li><li><span>Escolha </span><span id="ssb_blue"><span>Save routes</span></span><span> (Salvar rotas) e </span><span id="ssb_blue"><span>Close</span></span><span> (Fechar).</span></li></ul><p><span>A etapa final é </span><em><span>associar</span></em><span> essa nova tabela de rotas à sub-rede pública.</span></p></li><li><p><span>Escolha a guia </span><strong><span>Subnet Associations</span></strong><span> (Associações de sub-rede).</span></p></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Edit subnet associations</span></span><span> (Editar associações de sub-rede).</span></p></li><li><p><span>Selecione a </span><i class="far fa-check-square"></i><span> linha com </span><strong><span>Public Subnet</span></strong><span> (Sub-rede pública).</span></p></li><li><p><span>Escolha </span><span id="ssb_blue"><span>Save</span></span><span> (Salvar)</span></p><p><span>A sub-rede pública agora é </span><em><span>pública</span></em><span> porque tem uma entrada de tabela de rotas que envia tráfego para a Internet por meio do gateway da Internet.</span></p><p><span>Para resumir, você pode criar uma sub-rede pública seguindo estas etapas:</span></p><ul><li><span>Criar um </span><em><span>gateway da Internet</span></em></li><li><span>Crie uma </span><em><span>tabela de rota</span></em></li><li><span>Adicionar uma </span><em><span>rota</span></em><span> à tabela de rotas que direciona o tráfego </span><em><span>0.0.0.0/0</span></em><span> ao gateway da Internet</span></li><li><span>Associar a tabela de rotas a uma </span><em><span>sub-rede</span></em><span>, que se torna assim uma </span><em><span>sub-rede pública</span></em></li></ul></li></ol><br><h2 id='tarefa-5-criar-um-grupo-de-segurança-para-o-servidor-de-aplicações'><span>Tarefa 5: criar um grupo de segurança para o servidor de aplicações</span></h2><p><span>Um </span><em><span>grupo de segurança</span></em><span> atua como um firewall virtual para que as instâncias controlem o tráfego de entrada e saída. Os grupos de segurança operam no nível da </span><em><span>interface de rede elástica para a instância</span></em><span>. Os grupos de segurança não operam no nível da </span><em><span>sub-rede</span></em><span>. Assim, cada instância pode ter seu próprio firewall controlando o tráfego. Se você não especificar um grupo de segurança específico no momento da inicialização, a instância será atribuída automaticamente ao </span><em><span>grupo de segurança padrão</span></em><span> da VPC.</span></p><p><span>Nesta tarefa, você criará um grupo de segurança que permite que os usuários acessem o servidor de aplicações via HTTP.</span></p><ol start='33' ><li><p><span>No painel de navegação à esquerda, escolha </span><strong><span>Security Groups (Grupos de segurança)</span></strong><span>.</span></p></li><li><p><span>Escolha </span><span id="ssb_blue"><span>Create security group</span></span><span> (Criar grupo de segurança) e configure estes ajustes:</span></p><ul><li><strong><span>Security group name</span></strong><span> (Nome do grupo de segurança): </span><code>App-SG</code></li><li><strong><span>Description</span></strong><span> (Descrição): </span><code>Allow HTTP traffic (Permitir tráfego HTTP)</code></li><li><strong><span>VPC:</span></strong><span> </span><em><span>Lab VPC</span></em></li><li><span>Escolha </span><span id="ssb_blue"><span>Create</span></span><span> (Criar) e </span><span id="ssb_blue"><span>Close</span></span><span> (Fechar).</span></li></ul></li><li><p><span>Selecione </span><i class="far fa-check-square" aria-hidden="true"></i><strong><span>App-SG</span></strong><span>.</span></p></li><li><p><span>Escolha a guia </span><strong><span>Inbound Rules</span></strong><span> (Regras de entrada).</span></p><p><span>As configurações de </span><strong><span>Inbound Rules</span></strong><span> (Regras de entrada) determinam qual tráfego é permitido chegar à instância. Você o configurará para permitir o tráfego HTTP (porta 80) que vem de qualquer lugar na Internet (</span><em><span>0.0.0.0/0</span></em><span>).</span></p></li><li><p><span>Selecione </span><span id="ssb_grey"><span>Edit rules</span></span><span> (Editar regras).</span></p></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Add Rule</span></span><span> (Adicionar regra) e configure estes ajustes:</span></p><ul><li><strong><span>Type</span></strong><span> (Tipo): </span><em><span>HTTP</span></em></li><li><strong><span>Source</span></strong><span> (Origem): </span><em><span>Anywhere (Qualquer lugar)</span></em></li><li><strong><span>Description</span></strong><span> (Descrição): </span><code>Allow Web access (Permitir acesso à Web)</code></li><li><span>Escolha </span><span id="ssb_blue"><span>Save rules</span></span><span> (Salvar regras) e </span><span id="ssb_blue"><span>Close</span></span><span> (Fechar).</span></li></ul><p><span>Você usa este </span><em><span>App-SG</span></em><span> na próxima tarefa.</span></p></li></ol><br><h2 id='tarefa-6-iniciar-um-servidor-de-aplicações-na-sub-rede-pública'><span>Tarefa 6: iniciar um servidor de aplicações na sub-rede pública</span></h2><p><span>Para testar se sua VPC está configurada corretamente, você executará uma instância do EC2 na sub-rede pública. Você também confirmará que pode acessar a instância do EC2 a partir da Internet.</span></p><ol start='39' ><li><p><span>No menu </span><span id="ssb_services"><span>Services</span><i class="fas fa-angle-down"></i></span><span> (Serviços), escolha </span><strong><span>EC2</span></strong><span>.</span></p></li><li><p><span>Escolha </span><span id="ssb_orange"><span>Launch Instance</span></span><span> (Executar instância) e selecione </span><strong><span>Launch Instance</span></strong><span> (Executar instância) na lista suspensa. Configure estas opções:</span></p><ul><li><p><span>Etapa 1 (escolher AMI):</span></p></li><li><p><strong><span>AMI:</span></strong><span> </span><em><span>Amazon Linux 2</span></em></p></li><li><p><span>Etapa 2 (escolher tipo de instância):</span></p><ul><li><strong><span>Instance Type</span></strong><span> (Tipo de instância): </span><em><span>t2.micro</span></em></li></ul></li><li><p><span>Etapa 3 (configurar detalhes da instância):</span></p><ul><li><strong><span>Network</span></strong><span> (Rede): </span><em><span>Lab VPC</span></em></li><li><strong><span>Subnet</span></strong><span> (Sub-rede): </span><em><span>Public Subnet (Sub-rede pública)</span></em></li><li><strong><span>IAM role</span></strong><span> (Função do IAM): </span><em><span>Inventory-App-Role</span></em></li><li><strong><span>User Data</span></strong><span> (Dados do usuário) (em </span><i class="fas fa-caret-right"></i><span> </span><strong><span>Advanced Details</span></strong><span> (Detalhes avançados)):</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">#!/bin/bash</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Install Apache Web Server and PHP</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">yum install <span class="cm-attribute">-y</span> httpd mysql</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">amazon-linux-extras install <span class="cm-attribute">-y</span> php7.2</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Download Lab files</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod6-guided/scripts/inventory-app.zip</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">unzip inventory-app.zip <span class="cm-attribute">-d</span> /var/www/html/</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Download and install the AWS SDK for PHP</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> https://github.com/aws/aws-sdk-php/releases/download/3.62.3/aws.zip</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">unzip aws <span class="cm-attribute">-d</span> /var/www/html</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Turn on web server</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">chkconfig httpd on</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">service</span> httpd <span class="cm-builtin">start</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 314px;"></div><div class="CodeMirror-gutters" style="display: none; height: 314px;"></div></div></div></pre></li><li><p><span>Etapa 4 (adicionar armazenamento):</span></p><ul><li><span>Usar configurações padrão (sem alterações)</span></li></ul></li><li><p><span>Etapa 5 (adicionar tags):</span></p><ul><li><span>Escolha </span><span id="ssb_grey"><span>Add Tag</span></span><span> (Adicionar tag)</span></li><li><strong><span>Key</span></strong><span> (Chave): </span><code>Name (Nome)</code></li><li><strong><span>Value</span></strong><span> (Valor): </span><code>App Server (Servidor de aplicativos)</code></li></ul></li><li><p><span>Etapa 6 (configurar grupo de segurança):</span></p><ul><li><strong><span>Select an existing security group</span></strong><span> (Selecionar um grupo de segurança existente): </span><em><span>App-SG</span></em></li></ul><p><i class="fas fa-comment"></i><span> Você receberá este aviso: </span><em><span>You will not be able to connect to the instance (Você não será capaz de se conectar à instância)</span></em><span>. Esse aviso é aceitável porque você não estará se conectando à instância. Toda a configuração é feita por meio do script de dados do usuário.</span></p><ul><li><span>Escolha </span><strong><span>Continue</span></strong><span> (Continuar).</span></li></ul></li><li><p><span>Etapa 7 (revisar):</span></p><ul><li><span id="ssb_blue"><span>Executar</span></span></li></ul></li></ul></li><li><p><span>Uma janela </span><strong><span>Select an existing key pair or create a new key pair</span></strong><span> (Selecione um par de chaves existente ou crie um novo par de chaves) será exibida:</span></p></li></ol><ul><li><span>Selecione </span><strong><span>Proceed without a key pair</span></strong><span> (Prosseguir sem um par de chaves).</span></li><li><span>Selecione </span><i class="far fa-check-square"></i><span> </span><strong><span>I acknowledge that... (Eu reconheço que...)</span></strong><span>.</span></li><li><span>Escolha </span><span id="ssb_blue"><span>Launch Instances</span></span><span> (Executar instâncias).</span></li></ul><p><span>Uma página de status notifica que suas instâncias estão sendo iniciadas.</span></p><ol start='42' ><li><span>Escolha </span><span id="ssb_blue"><span>View Instances</span></span><span> (Exibir instâncias).</span></li><li><span>Aguarde até que o servidor de aplicações seja totalmente iniciado. Ele deve exibir o seguinte status:</span></li></ol><ul><li><strong><span>Instance State</span></strong><span> (Estado da instância): </span><span style="color:green"><i class="fas fa-circle"></i></span><span> running (em execução)</span></li></ul><p><i class="fas fa-comment"></i><span> Você pode optar por renovar </span><i class="fas fa-sync" aria-hidden="true"></i><span> ocasionalmente para atualizar a exibição.</span></p><ol start='44' ><li><span>Selecione </span><i class="far fa-check-square"></i><span> </span><strong><span>App Server</span></strong><span> (Servidor de aplicativos).</span></li><li><span>Copie o endereço </span><strong><span>IPv4 Public IP</span></strong><span> (IP público do IPv4) da guia </span><strong><span>Description (Descrição)</span></strong><span>.</span></li><li><span>Abra uma nova guia do navegador da Web com esse endereço IP.</span></li></ol><p><span>Se você configurou a VPC corretamente, a aplicação Inventory e esta mensagem devem ser exibidas: </span><em><span>Please configure settings to connect to database (Defina as configurações para se conectar ao banco de dados)</span></em><span>. Você ainda não definiu nenhuma configuração de banco de dados, mas a aparência da aplicação Inventory demonstra que a sub-rede pública foi configurada corretamente.</span></p><p><span style="color:red"><i class="fas fa-exclamation-triangle"></i></span><span> Se a aplicação Inventory não aparecer, aguarde 60 segundos e atualize </span><i class="fas fa-sync"></i><span> a página para tentar novamente. Pode levar alguns minutos para que a instância do EC2 inicialize e execute o script que instala o software.</span></p><br><h2 id='enviar-o-trabalho'><span>Enviar o trabalho</span></h2><ol start='47' ><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_blue"><span>Submit</span></span><span> (Enviar) para gravar seu progresso e, quando solicitado, escolha </span><strong><span>Yes</span></strong><span> (Sim).</span></p></li><li><p><span>Se os resultados não forem exibidos após alguns minutos, volte ao topo destas instruções e escolha </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Notas).</span></p><p><strong><span>Dica</span></strong><span>: você pode enviar seu trabalho várias vezes. Depois de alterar o trabalho, escolha </span><strong><span>Submit</span></strong><span> (Enviar) novamente. Seu último envio é o que será gravado para este laboratório.</span></p></li><li><p><span>Para ver o feedback detalhado do seu trabalho, escolha </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalhes) e depois </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Visualizar relatório de envio).</span></p></li></ol><br><h2 id='laboratório-concluído-i-classfas-fa-graduation-capi'><span>Laboratório concluído </span><i class="fas fa-graduation-cap"></i></h2><p><i class="fas fa-flag-checkered"></i><span> Parabéns! Você concluiu o laboratório.</span></p><ol start='50' ><li><p><span>Escolha </span><span id="ssb_voc_grey"><span>End Lab</span></span><span> (Encerrar laboratório) na parte superior desta página e, em seguida, selecione </span><span id="ssb_blue"><span>Yes</span></span><span> (Sim) para confirmar que você deseja encerrar o laboratório.</span></p><p><span>Um painel indica que </span><em><span>DELETE has been initiated... You may close this message box now (A EXCLUSÃO foi iniciada... Você pode fechar esta caixa de mensagem agora)</span></em><span>.</span></p></li><li><p><span>Escolha o </span><strong><span>X</span></strong><span> no canto superior direito para fechar o painel.</span></p></li></ol><p>&nbsp;</p><p><em><span>©2020, Amazon Web Services, Inc. e suas afiliadas. Todos os direitos reservados. Este trabalho não pode ser reproduzido ou redistribuído, no todo ou em parte, sem permissão prévia por escrito da Amazon Web Services, Inc. É proibido copiar, emprestar ou vender para fins comerciais.</span></em></p></div></div>
+</body>
+</html>

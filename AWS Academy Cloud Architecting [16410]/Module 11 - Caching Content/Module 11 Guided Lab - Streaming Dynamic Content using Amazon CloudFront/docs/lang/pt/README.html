@@ -1,0 +1,1163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='módulo-11---laboratório-guiado-streaming-de-conteúdo-dinâmico-usando-o-amazon-cloudfront'><span>Módulo 11 - Laboratório guiado: Streaming de conteúdo dinâmico usando o Amazon CloudFront</span></h1><h2 id='visão-geral-e-objetivos-do-laboratório'><span>Visão geral e objetivos do laboratório</span></h2><p><span>Neste laboratório, você usará o Amazon CloudFront para fornecer um fluxo dinâmico de várias taxas de bits para um dispositivo conectado usando o protocolo HTTP Live Streaming (HLS) da Apple. O fluxo pode ser reproduzido em qualquer navegador que suporte o protocolo HLS. Neste laboratório, você também usará o Amazon Elastic Transcoder para converter um vídeo de origem em várias taxas de bits que serão entregues usando o CloudFront.</span></p><p><span>Depois de concluir este laboratório, você deverá ser capaz de:</span></p><ul><li><p><span>Criar várias versões de taxa de bits de um determinado arquivo de mídia de origem usando o Amazon Elastic Transcoder.</span></p></li><li><p><span>Usar o Amazon CloudFront para fornecer o stream dinâmico (taxa de bits múltipla) criado pelo Amazon Elastic Transcoder.</span></p><p>&nbsp;</p></li></ul><p><span>No </span><strong><span>final</span></strong><span> deste laboratório, sua arquitetura será semelhante ao seguinte exemplo:</span></p><p><img src="images/module-11-guided-lab-1-final-architecture.png" referrerpolicy="no-referrer" alt="Arquitetura"></p><p>&nbsp;</p><h2 id='duração'><span>Duração</span></h2><p><span>Este laboratório levará aproximadamente </span><strong><span>30 minutos</span></strong><span> para ser concluído.</span></p><br><h2 id='restrições-de-serviço-da-aws'><span>Restrições de serviço da AWS</span></h2><p><span>Neste ambiente de laboratório, o acesso aos serviços e ações de serviço da AWS pode estar restrito àqueles necessários para concluir as instruções do laboratório. Você poderá encontrar erros se tentar acessar outros serviços ou executar ações além do que está descrito neste laboratório.</span></p><br><h2 id='acessar-o-console-de-gerenciamento-da-aws'><span>Acessar o Console de Gerenciamento da AWS</span></h2><ol start='' ><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratório) para iniciar o laboratório.</span></p><p><span>Um painel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratório) é aberto com o status do laboratório.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Dica</span></strong><span>: se você precisar de mais tempo para concluir o laboratório, escolha novamente o botão </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratório) para reiniciar o cronômetro do ambiente.</span></p></li><li><p><span>Aguarde até que o painel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratório) exiba a mensagem </span><em><span>Lab status: ready (Status do laboratório: pronto)</span></em><span> e, em seguida, escolha </span><strong><span>X</span></strong><span> para fechar o painel.</span></p></li><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>Essa ação abrirá o Console de Gerenciamento da AWS em uma nova guia do navegador. O sistema fará seu login automaticamente.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Dica</span></strong><span>: se uma nova guia do navegador não for aberta, normalmente você verá uma faixa ou um ícone na parte superior do navegador com uma mensagem informando que o navegador está impedindo que o site abra janelas pop-up. Escolha a faixa ou o ícone e depois </span><strong><span>Allow pop ups</span></strong><span> (Permitir pop-ups).</span></p></li><li><p><span>Organize a guia do </span><strong><span>Console de Gerenciamento da AWS</span></strong><span> para que ela seja exibida com essas instruções. O ideal é ver as duas guias do navegador abertas ao mesmo tempo, para facilitar o acompanhamento das etapas do laboratório.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Não altere a região, a menos que seja especificamente instruído a fazer isso</span></strong><span>.</span></p></li></ol><br><h2 id='tarefa-1-preparação-de-laboratório'><span>Tarefa 1: preparação de Laboratório</span></h2><p><span>Neste laboratório, você usará um arquivo de vídeo de exemplo para configurar um fluxo dinâmico. Para sua conveniência, um bucket do Amazon Simple Storage Service (Amazon S3) já foi criado.</span></p><ol start='5' ><li><p><span>No Console de Gerenciamento da AWS, no menu </span><strong><span>Services</span></strong><span> (Serviços), escolha </span><strong><span>S3</span></strong><span>.</span></p><p><span>Um bucket do S3 contendo a string </span><strong><em><span>awstrainingreinvent</span></em></strong><span> deve estar presente. Observe a Região em que o bucket está e abra o bucket.</span></p></li><li><p><span>Abra a pasta </span><strong><span>input</span></strong><span>. Ela contém um arquivo de vídeo chamado </span><strong><span>AmazonS3Sample.mp4</span></strong><span>.</span></p><p><strong><span>Observação:</span></strong><span> a partir do momento em que você faz login no console do Amazon S3, pode levar até dez minutos para que o arquivo apareça no bucket do S3. Se você não vir, selecione o ícone de seta circular no canto superior direito da tela para atualizar o conteúdo do intervalo.</span></p></li></ol><br><h2 id='tarefa-2-criar-uma-distribuição-do-amazon-cloudfront'><span>Tarefa 2: criar uma distribuição do Amazon CloudFront</span></h2><p><span>Nesta tarefa, você criará uma distribuição do Amazon CloudFront que será usada para entregar os vários arquivos de taxa de bits gerados pelo Amazon Elastic Transcoder para dispositivos de usuário final.</span></p><ol start='7' ><li><p><span>No menu </span><strong><span>Services (Serviços)</span></strong><span>, escolha </span><strong><span>CloudFront</span></strong><span>.</span></p></li><li><p><span>Escolha </span><strong><span>Create Distribution</span></strong><span> (Criar distribuição).</span></p></li><li><p><span>Na seção </span><strong><span>Web</span></strong><span> da página, escolha </span><strong><span>Começar</span></strong><span>.</span></p></li><li><p><span>Na seção </span><strong><span>Configurações de Origem</span></strong><span> da página, insira as seguintes informações:</span></p><ul><li><span>Selecione o campo </span><strong><span>Origin Domain Name</span></strong><span> (Nome do domínio de origem). Uma lista de buckets do S3 será exibida. Escolha aquele que foi criado anteriormente que tem </span><strong><span>awstrainingreinvent</span></strong><span> como parte do nome do arquivo.</span></li><li><span>Em </span><strong><span>Restrict Bucket Access</span></strong><span> (Restringir o acesso ao bucket), selecione </span><strong><span>No</span></strong><span> (Não).</span></li></ul></li><li><p><span>Role até o final da página e selecione </span><strong><span>Create Distribution</span></strong><span> (Criar distribuição).</span></p></li></ol><br><h2 id='tarefa-3-criar-um-pipeline-do-amazon-elastic-transcoder'><span>Tarefa 3: criar um pipeline do Amazon Elastic Transcoder</span></h2><h3 id='criar-um-pipeline'><span>Criar um pipeline</span></h3><p><span>Nesta seção, você criará um pipeline que gerenciará os trabalhos para transcodificar o arquivo de entrada.</span></p><ol start='12' ><li><p><span>No Console de Gerenciamento da AWS, no menu </span><strong><span>Services</span></strong><span> (Serviços), escolha </span><strong><span>Elastic Transcoder</span></strong><span>.</span></p></li><li><p><span>Na barra de navegação do console do Amazon Elastic Transcoder, selecione a mesma região em que o bucket do S3 foi criado.</span></p></li><li><p><span>Na página Pipelines, escolha </span><strong><span>Create a new Pipeline</span></strong><span> (Criar um novo pipeline).</span></p></li><li><p><span>Para </span><strong><span>Pipeline Name</span></strong><span> (Nome do pipeline), insira </span><code>InputPipeline</code></p></li><li><p><span>Para </span><strong><span>Input Bucket</span></strong><span> (Bucket de entrada), selecione o bucket do S3 </span><strong><span>awstrainingreinvent</span></strong><span>.</span></p></li><li><p><span>Para </span><strong><span>IAM Role (Função do IAM)</span></strong><span>, em </span><strong><span>Other roles</span></strong><span> (Outras funções), selecione </span><strong><span>AmazonElasticTranscoderRole</span></strong><span>. Essa é uma função pré-criada no modelo do CloudFormation desse laboratório que usa a política gerenciada AmazonElasticTranscoderRole. O serviço Elastic Transcoder assumirá essa função para acessar os recursos do Amazon S3 e do Amazon Simple Notification Service (Amazon SNS) em sua conta de laboratório.</span></p></li><li><p><span>Na seção </span><strong><span>Configuration for Amazon S3 Bucket for Transcoded Files and Playlists</span></strong><span> (Configuração do bucket do Amazon S3 para arquivos e playlists transcodificados), insira as seguintes informações:</span></p><ul><li><span>Em </span><strong><span>Bucket</span></strong><span>, selecione o bucket do S3 </span><strong><span>awstrainingreinvent</span></strong><span>.</span></li><li><span>Em </span><strong><span>Storage Class</span></strong><span> (Classe de armazenamento), selecione </span><strong><span>Standard (Padrão)</span></strong><span>.</span></li></ul></li><li><p><span>Na seção </span><strong><span>Configuration for Amazon S3 Bucket for Thumbnails</span></strong><span> (Configuração do bucket do Amazon S3 para miniaturas), insira as seguintes informações:</span></p><ul><li><span>Em </span><strong><span>Bucket</span></strong><span>, selecione o bucket do S3 </span><strong><span>awstrainingreinvent</span></strong><span>.</span></li><li><span>Em </span><strong><span>Storage Class</span></strong><span> (Classe de armazenamento), selecione </span><strong><span>ReducedRedundancy</span></strong><span>.</span></li></ul></li><li><p><span>Selecione </span><strong><span>Create pipeline</span></strong><span> (Criar pipeline).</span></p></li></ol><br><h3 id='criar-um-trabalho'><span>Criar um trabalho</span></h3><p><span>Nesta seção, você criará um trabalho no pipeline do Amazon Elastic Transcoder que acabou de ser criado. Ele faz o trabalho de transcodificar o arquivo de entrada em várias taxas de bits, conforme selecionado.</span></p><ol start='21' ><li><p><span>Na página Pipelines, escolha </span><strong><span>Create New Job</span></strong><span> (Criar novo trabalho) para criar um job de transcodificação. Você cria o trabalho no pipeline (fila) que deseja usar para transcodificar o arquivo de vídeo.</span></p></li><li><p><span>Para </span><strong><span>Pipeline</span></strong><span>, selecione </span><strong><span>InputPipeline</span></strong><span>.</span></p></li><li><p><span>Para </span><strong><span>Output Key Prefix</span></strong><span> (Prefixo da chave de saída), insira </span><code>output/</code><span>.</span></p><p><span>O Amazon Elastic Transcoder prependerá esse valor aos nomes de todos os arquivos que o trabalho criará (incluindo arquivos de saída, miniaturas e playlists).</span></p></li><li><p><span>Para </span><strong><span>Input Key</span></strong><span> (Chave de entrada), selecione o arquivo de entrada chamado </span><strong><span>input/AmazonS3Sample.mp4.</span></strong></p></li></ol><br><h3 id='configurar-detalhes-de-saída'><span>Configurar detalhes de saída</span></h3><p><span>As configurações nesta seção determinarão quantos arquivos de saída (taxas de bits) são criados. Você irá configurar três arquivos de saída para esta demonstração com três taxas de bits separadas (2Mbps, 1.5Mbps e 1Mbps). Cada taxa de bits de saída exigirá que você crie uma seção separada de detalhes de saída. Isso também exibirá um arquivo de lista de reprodução para cada taxa de bits, que lista todos os segmentos que compõem o fluxo.</span></p><ol start='25' ><li><p><span>Para </span><strong><span>Preset:</span></strong><span> (Predefinição:), selecione </span><strong><span>System prest: HLS 2M</span></strong><span> (Predefinição do sistema: HLS 2M)</span></p></li><li><p><span>Para </span><strong><span>Segment Duration</span></strong><span> (Duração do Segmento), insira </span><code>10</code><span> (que é o padrão HLS).</span></p></li><li><p><span>Para </span><strong><span>Output Key</span></strong><span> (Chave de saída), insira um prefixo exclusivo como </span><code>HLS20M</code><span> para nomear os segmentos criados usando essa predefinição.</span></p></li><li><p><span>Clique em </span><strong><span>+ Add Another Output</span></strong><span> (+ Adicionar outra saída) e repita as etapas acima para gerar segmentos para predefinições </span><strong><span>HLS 1.5M</span></strong><span> e </span><strong><span>HLS 1M</span></strong><span> e, em seguida, fornecer os respectivos nomes de prefixo:</span></p><ul><li><code>HLS15M</code></li><li><code>HLS10M</code></li></ul></li></ol><br><h3 id='configurar-uma-lista-de-reprodução'><span>Configurar uma lista de reprodução</span></h3><p><span>A lista de reprodução combinará todas as listas de reprodução individuais de taxa de bits e fornecerá um único URL para que os dispositivos reproduzam o fluxo. Para configurar uma lista de reprodução, faça o seguinte:</span></p><ol start='29' ><li><p><span>Em </span><strong><span>Playlists (Adaptive Streaming)</span></strong><span> (Listas de reprodução (streaming adaptável)), escolha </span><strong><span>Add Playlist</span></strong><span> (Adicionar lista de reprodução) e, em seguida, configure:</span></p><ul><li><strong><span>Playlist Name</span></strong><span> (Nome da lista de reprodução) </span><code>primary</code></li><li><strong><span>Playlist Format:</span></strong><span> (Formato da lista de reprodução:) </span><em><span>HLSv3</span></em></li></ul></li><li><p><span>Selecione todas as três saídas, que foram inseridas na seção anterior, para incluí-las nesta lista de reprodução selecionando a opção </span><strong><span>+</span></strong><span>.</span></p></li><li><p><span>Escolha </span><strong><span>Create New Job</span></strong><span> (Criar novo trabalho).</span></p><p><span>O processo de transcodificação deve ser concluído dentro de um minuto.</span></p></li></ol><br><h2 id='tarefa-4-testar-a-reprodução-do-stream-dinâmico-multi-bit-rate'><span>Tarefa 4: testar a reprodução do stream dinâmico (multi Bit-Rate)</span></h2><p><span>Neste módulo, você testará a reprodução do fluxo dinâmico gerado na seção anterior usando um dispositivo iOS ou Android. Você também pode usar um dispositivo Android 4.x para testar o exercício abaixo.</span></p><p><strong><span>Observação:</span></strong><span> alguns navegadores podem não suportar esse recurso. Use o navegador da Web padrão no dispositivo para testar.</span></p><br><h3 id='criar-o-url-de-reprodução'><span>Criar o URL de reprodução</span></h3><p><span>O URL de reprodução que o Amazon CloudFront reproduz é composto por dois componentes:</span></p><ul><li><p><span>Nome de domínio do Amazon CloudFront</span></p></li><li><p><span>Caminho do arquivo da lista de reprodução no bucket do S3 (saída gerada pelo Elastic Transcoder):</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">http://&lt;CloudFront domain name&gt;/&lt;playlist file path in Amazon S3 bucket&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre></li></ul><br><h3 id='obter-um-nome-de-domínio-do-amazon-cloudfront'><span>Obter um nome de domínio do Amazon CloudFront</span></h3><p><span>Para obter um nome de domínio do Amazon CloudFront:</span></p><ol start='32' ><li><span>No Console de Gerenciamento da AWS, no menu </span><strong><span>Services</span></strong><span> (Serviços), escolha </span><strong><span>CloudFront</span></strong><span>.</span></li><li><span>Selecione a distribuição do </span><strong><span>Amazon CloudFront</span></strong><span> criada anteriormente e verifique se </span><strong><span>Distribution Status</span></strong><span> (Status da distribuição) foi alterado de </span><em><span>In Progress</span></em><span> (Em andamento) para </span><em><span>Deployed</span></em><span> (Implantada).</span></li><li><span>Prossiga para a próxima etapa somente depois que o </span><strong><span>Status</span></strong><span> mudar para </span><em><span>Deployed</span></em><span> (Implantada).</span></li><li><span>Selecione a distribuição marcando a caixa quadrada à esquerda de Distribution (Distribuição).</span></li><li><span>Escolha </span><strong><span>Distribution Settings</span></strong><span> (Configurações de distribuição).</span></li><li><span>Copie </span><strong><span>Domain Name</span></strong><span> (Nome de domínio) e cole em um editor de texto.</span></li></ol><br><h3 id='obter-o-caminho-do-arquivo-da-lista-de-reprodução'><span>Obter o caminho do arquivo da lista de reprodução</span></h3><p><span>Para obter o caminho do arquivo da lista de reprodução:</span></p><ol start='38' ><li><p><span>No menu </span><strong><span>Services</span></strong><span> (Serviços), escolha </span><strong><span>S3</span></strong><span>.</span></p></li><li><p><span>Selecione o bucket do S3 </span><strong><span>awstrainingreinvent</span></strong><span>.</span></p></li><li><p><span>Abra a pasta de </span><strong><span>saída</span></strong><span> (que contém a saída do trabalho de transcodificação) e selecione o arquivo de lista de reprodução </span><strong><span>primary.m3u8</span></strong><span>.</span></p><p><span>Esse é o arquivo que você vai reproduzir em seu dispositivo móvel.</span></p><p><span>Em seguida, você deve criar o URL do arquivo a partir do CloudFront.</span></p></li><li><p><span>Em um editor de texto, crie o URL anexando </span><code>/output/primary.m3u8</code><span> ao final do nome de domínio do CloudFront.</span></p><p><span>O novo URL deve ser semelhante a: </span><em><span>d1ckwesahkbyvu.cloudfront.net/output/primary.m3u8</span></em></p></li><li><p><span>Digite o URL no navegador padrão de um dispositivo iOS ou Android. Se você não tiver um dispositivo móvel disponível, digite o URL em um navegador no computador.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Esteja ciente de que as taxas de dados padrão podem ser aplicadas ao reproduzir o vídeo em um dispositivo móvel</span></strong><span>.</span></p></li><li><p><span>O stream deve começar a ser reproduzido em seu dispositivo e solicitar dinamicamente os segmentos relevantes com base nas condições de largura de banda e CPU.</span></p></li></ol><p><span>Você aprendeu a usar serviços da AWS como Amazon S3, Amazon Elastic Transcoder e Amazon CloudFront juntos para fornecer arquivos de mídia HLS para dispositivos iOS ou Android.</span></p><p><span>Você conseguiu realizar com êxito as seguintes tarefas:</span></p><ul><li><span>Aprender os conceitos básicos e a terminologia dos serviços Amazon Elastic Transcoder e Amazon CloudFront.</span></li><li><span>Criar seu próprio pipeline do Amazon Elastic Transcoder e distribuição do Amazon CloudFront.</span></li><li><span>Usar o Amazon Elastic Transcoder para transcodificar um arquivo de vídeo em diferentes formatos HLS e distribuí-lo para dispositivos remotos usando o Amazon CloudFront.</span></li></ul><br><h2 id='enviar-o-trabalho'><span>Enviar o trabalho</span></h2><ol start='44' ><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_blue"><span>Submit</span></span><span> (Enviar) para gravar o progresso e, quando solicitado, escolha </span><strong><span>Yes</span></strong><span> (Sim).</span></p></li><li><p><span>Se os resultados não forem exibidos após alguns minutos, volte ao topo destas instruções e escolha </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Notas).</span></p><p><strong><span>Dica</span></strong><span>: você pode enviar seu trabalho várias vezes. Depois de alterar o trabalho, escolha </span><strong><span>Submit</span></strong><span> (Enviar) novamente. Seu último envio é o que será gravado para este laboratório.</span></p></li><li><p><span>Para ver o feedback detalhado do seu trabalho, escolha </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalhes) e depois </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Visualizar relatório de envio).</span></p></li></ol><br><h2 id='laboratório-concluído-i-classfas-fa-graduation-capi'><span>Laboratório concluído </span><i class="fas fa-graduation-cap"></i></h2><p><i class="fas fa-flag-checkered"></i><span> Parabéns! Você concluiu o laboratório.</span></p><ol start='47' ><li><p><span>Escolha </span><span id="ssb_voc_grey"><span>End Lab</span></span><span> (Encerrar laboratório) na parte superior desta página e, em seguida, selecione </span><span id="ssb_blue"><span>Yes</span></span><span> (Sim) para confirmar que você deseja encerrar o laboratório.</span></p><p><span>Um painel indica que </span><em><span>DELETE has been initiated... You may close this message box now (A EXCLUSÃO foi iniciada... Você pode fechar esta caixa de mensagem agora)</span></em><span>.</span></p></li><li><p><span>Escolha o </span><strong><span>X</span></strong><span> no canto superior direito para fechar o painel.</span></p></li></ol><br><h2 id='recursos-adicionais'><span>Recursos adicionais</span></h2><ul><li><a href='http://aws.amazon.com/elastictranscoder/'><span>Amazon Elastic Transcoder e Amazon CloudFront</span></a></li><li><a href='http://aws.amazon.com/cloudfront/'><span>Amazon CloudFront</span></a></li><li><a href='http://aws.amazon.com/training/'><span>AWS Training and Certification</span></a></li></ul><p>&nbsp;</p><p><em><span>©2020, Amazon Web Services, Inc. e suas afiliadas. Todos os direitos reservados. Este trabalho não pode ser reproduzido ou redistribuído, no todo ou em parte, sem permissão prévia por escrito da Amazon Web Services, Inc. É proibido copiar, emprestar ou vender para fins comerciais.</span></em></p></div></div>
+</body>
+</html>

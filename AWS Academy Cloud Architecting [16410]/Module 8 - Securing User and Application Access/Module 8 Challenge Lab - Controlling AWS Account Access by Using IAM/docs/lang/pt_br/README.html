@@ -1,0 +1,680 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-fences-math .MathJax_SVG_Display, .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: visible; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-math .MathJax_SVG_Display { margin-top: 8px; cursor: default; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+ :root {--mermaid-font-zoom:1.25em ;} 
+</style><title>README</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='módulo-8----laboratório-de-desafio-controlar-o-acesso-à-conta-da-aws-usando-o-iam'><span>Módulo 8 – Laboratório de desafio: Controlar o acesso à conta da AWS usando o IAM</span></h1><h2 id='cenário'><span>Cenário</span></h2><p><span>Depois de falar com Mateo sobre a infraestrutura da AWS da cafeteria, Sofía percebeu que ela precisa abordar algumas questões básicas de segurança sobre a maneira como a equipe da cafeteria tem usado a conta da AWS.</span></p><p><span>A cafeteria agora é grande o suficiente para que os membros da equipe que criam, mantêm ou acessam aplicações na AWS se especializem em funções (como desenvolvedor ou administrador de banco de dados). Até agora, eles não fizeram um esforço para definir claramente o nível de acesso que cada usuário deveria ter com base em suas respectivas funções e responsabilidades.</span></p><p><span>Sofía passou algum tempo pensando sobre o que cada pessoa deve ser capaz de fazer na conta, especialmente no que se refere ao AWS Cloud9, Amazon Elastic Compute Cloud (Amazon EC2) e Amazon Relational Database Service (Amazon RDS). Ela tomou algumas decisões e criou este gráfico, que descreve como ela definiria os direitos de acesso na conta da AWS:</span></p><figure><table><thead><tr><th><span>Grupo do IAM</span></th><th><span>Usuário do IAM</span></th><th><span>Acesso ao serviço da AWS</span></th><th><span>Motivo</span></th></tr></thead><tbody><tr><td><span>AppDevelopers</span></td><td><span>Nikhil</span></td><td><span>Acesso do </span><strong><span>AWS Cloud9</span></strong><span> ao ambiente de desenvolvimento do Amazon EC2. </span><br><span>Além disso, acesso somente leitura ao </span><strong><span>Amazon EC2</span></strong><span>.</span></td><td><span>Nikhil muitas vezes trabalha como desenvolvedor de aplicações. Ele precisa ter acesso ao ambiente do AWS Cloud9 para ver o ambiente de desenvolvimento da aplicação Web da cafeteria. No entanto, ele não deveria ter acesso ao ambiente de produção. Ele também precisa ver todos os recursos do Amazon EC2 e detalhes da configuração, mas sem poder modificá-los.</span></td></tr><tr><td><span>DBAdministrators</span></td><td><span>Olivia</span></td><td><span>Acesso total ao </span><strong><span>Amazon RDS</span></strong><span>. </span><br><span>Além disso, acesso total ao </span><strong><span>AWS Systems Manager</span></strong><span>.</span></td><td><span>Olivia foi contratada como administradora de banco de dados para ajudar a gerenciar o banco de dados usado pela aplicação Web da cafeteria. Portanto, ela precisar ter todos os direitos de acesso ao Amazon RDS. Ela também precisará de acesso ao AWS Systems Manager, onde são armazenadas as informações de conexão do banco de dados. No entanto, além do acesso a esses dois serviços, Sofía não consegue pensar em nenhuma razão pela qual Olivia precisaria de mais acesso aos recursos da AWS.</span></td></tr></tbody></table></figure><p><span>Observe que, em vez de atribuir permissões diretamente aos usuários, Sofía decidiu definir </span><em><span>grupos do IAM</span></em><span>. Em seguida, ela associará as políticas do IAM que concedem acesso a esses grupos. Em seguida, ela planeja alocar usuários aos grupos apropriados. Se a cafeteria contratar mais desenvolvedores ou administradores de banco de dados, ela poderá adicioná-los a esses grupos como novos usuários. Esses novos usuários herdarão as permissões corretas para sua função no desenvolvimento e manutenção da infraestrutura de contas da AWS. Essa abordagem será dimensionada de acordo com o crescimento da cafeteria.</span></p><p><span>Agora que Sofía sabe quais direitos de acesso ela quer atribuir a quais usuários, ela está pronta para começar!</span></p><p>&nbsp;</p><h2 id='visão-geral-e-objetivos-do-laboratório'><span>Visão geral e objetivos do laboratório</span></h2><p><span>Neste laboratório, você usará o AWS Identity and Access Management (IAM) para definir diferentes direitos de acesso para usuários distintos. Você testará e ajustará o acesso, além de observar como os direitos concedidos afetam as ações que os usuários do IAM podem executar nos recursos da conta da AWS.</span></p><p><span>Depois de concluir este laboratório, você deverá ser capaz de:</span></p><ul><li><span>Criar usuários e grupos do IAM e associar políticas do IAM a esses grupos</span></li><li><span>Indicar como direitos de acesso limitados afetam os recursos que os usuários do IAM podem acessar e as ações que podem realizar</span></li><li><span>Usar políticas do IAM gerenciadas pela AWS para modificar os direitos de acesso do usuário e observar os resultados</span></li><li><span>Usar o simulador de políticas do IAM para observar o escopo de acesso concedido por diferentes políticas</span></li><li><span>Acessar o consultor de acesso do IAM para observar quais direitos de acesso os usuários utilizam</span></li><li><span>Criar políticas personalizadas do IAM usando o editor visual</span></li></ul><p>&nbsp;</p><p><span>Quando você </span><em><span>inicia</span></em><span> o laboratório, os seguintes recursos já estarão na conta da AWS:</span></p><p><img src="images/arch-after-task-1.png" referrerpolicy="no-referrer" alt="arquitetura inicial"></p><p><span>No </span><em><span>final</span></em><span> deste laboratório, sua arquitetura incluirá os seguintes recursos e configurações:</span></p><p><img src="images/arch-end-lab.png" referrerpolicy="no-referrer" alt="arquitetura final"></p><p>&nbsp;</p><h2 id='duração'><span>Duração</span></h2><p><span>Este laboratório levará aproximadamente </span><strong><span>80 minutos</span></strong><span> para ser concluído.</span></p><p>&nbsp;</p><h2 id='restrições-de-serviço-da-aws'><span>Restrições de serviço da AWS</span></h2><p><span>Neste ambiente de laboratório, o acesso aos serviços e ações de serviço da AWS pode estar restrito àqueles necessários para concluir as instruções do laboratório. Você poderá encontrar erros se tentar acessar outros serviços ou executar ações além do que está descrito neste laboratório.</span></p><p>&nbsp;</p><h2 id='acessar-o-console-de-gerenciamento-da-aws'><span>Acessar o Console de Gerenciamento da AWS</span></h2><ol start='' ><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratório) para iniciar o laboratório.</span></p><p><span>Um painel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratório) é aberto com o status do laboratório.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Dica</span></strong><span>: se você precisar de mais tempo para concluir o laboratório do que o exibido no cronômetro, escolha o botão </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratório) novamente para reiniciar o cronômetro do ambiente. Isso não excluirá os recursos que você criou.</span></p><p><span> </span></p></li><li><p><span>Aguarde até que a mensagem </span><em><span>Lab status: ready (Status do laboratório: pronto)</span></em><span> seja exibida e feche o painel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratório) escolhendo </span><strong><span>X</span></strong><span>.</span></p></li><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>O Console de Gerenciamento da AWS será aberto em uma nova guia do navegador. O sistema fará o seu login automaticamente.</span></p><p><strong><span>Dica</span></strong><span>: se uma nova guia do navegador não for aberta, normalmente você verá uma faixa ou um ícone na parte superior do navegador com uma mensagem informando que o navegador está impedindo que o site abra janelas pop-up. Escolha a faixa ou o ícone e depois </span><strong><span>Allow pop ups</span></strong><span> (Permitir pop-ups).</span></p></li><li><p><span>Organize a guia do Console de Gerenciamento da AWS para que ela seja exibida com essas instruções. O ideal é ver as duas guias do navegador abertas ao mesmo tempo, para facilitar o acompanhamento das etapas do laboratório.</span></p><p><strong><span>Observação</span></strong><span>: você também pode desmarcar a caixa ao lado de Terminal na parte superior da tela para ocultá-la.</span></p></li></ol><p>&nbsp;</p><h2 id='uma-exigência-de-negócios-configurar-o-acesso-à-conta-da-aws-para-desenvolvedores-de-aplicações-desafio-nº-1'><span>Uma exigência de negócios: Configurar o acesso à conta da AWS para desenvolvedores de aplicações (Desafio nº 1)</span></h2><p><span>A cafeteria quer configurar as permissões de acesso apropriadas para desenvolvedores de aplicações. Você assumirá o papel de Sofía para configurar o acesso. Em seguida, assumirá o papel de Nikhil e testará o acesso para desenvolvedores de aplicações.</span></p><p>&nbsp;</p><h3 id='tarefa-1-configurar-um-grupo-do-iam-com-políticas-e-um-usuário-do-iam'><span>Tarefa 1: configurar um grupo do IAM com políticas e um usuário do IAM</span></h3><p><span>Nesta primeira tarefa no laboratório, você trabalhará como Sofía, a administradora de contas da AWS.</span></p><p><span>Como Sofía, você criará um grupo do IAM e atribuirá a ele políticas gerenciadas da AWS. Em seguida, você criará um novo usuário do IAM e o adicionará como membro do grupo. Em seguida, você criará um ambiente do AWS Cloud9 na instância do EC2 existente em que a versão de desenvolvimento da aplicação Web da cafeteria é executada. Finalmente, você compartilhará o ambiente de desenvolvimento com o novo usuário.</span></p><p><strong><span>Observação</span></strong><span>: </span><em><span>o usuário usado no login é mostrado na área superior direita da página da Web</span></em><span>. No momento, você deve estar logado como um usuário </span><em><span>voclabs</span></em><span>. Neste laboratório, imagine que o usuário </span><em><span>voclabs</span></em><span> é Sofía.</span></p><p>&nbsp;</p><ol start='5' ><li><p><span>No console, abra a página de serviço do IAM.</span></p><p>&nbsp;</p></li></ol><ol start='6' ><li><p><span>Crie um </span><strong><span>grupo do IAM</span></strong><span> chamado </span><code>AppDevelopers</code><span> e associe as seguintes políticas do IAM a ele:</span></p><ul><li><p><strong><span>AmazonEC2ReadOnlyAccess</span></strong></p></li><li><p><strong><span>AWSCloud9EnvironmentMember</span></strong></p><p>&nbsp;</p></li></ul></li></ol><ol start='7' ><li><p><span>Crie um </span><strong><span>usuário do IAM</span></strong><span> e adicione o usuário ao grupo </span><em><span>AppDevelopers</span></em><span>.</span></p><ul><li><p><strong><span>Nome de usuário</span></strong><span>: </span><code>Nikhil</code></p></li><li><p><strong><span>Tipo de acesso</span></strong><span>: </span><em><span>acesso ao Console de Gerenciamento da AWS</span></em></p></li><li><p><strong><span>Senha personalizada</span></strong><span>: </span><code>@ppD3veloper2020!</code></p></li><li><p><strong><span>Exigir redefinição de senha</span></strong><span>: desmarque esta caixa</span></p></li><li><p><span>Adicione Nikhil ao grupo </span><em><span>AppDevelopers</span></em></p></li><li><p><strong><span>Observação</span></strong><span>: você não precisa adicionar tags.</span></p></li><li><p><span>Na tela </span><strong><span>Success</span></strong><span> (Sucesso), você pode </span><em><span>opcionalmente</span></em><span> escolher </span><strong><span>Download .csv (Fazer download do .csv)</span></strong><span> e salvar o arquivo no computador</span></p></li><li><p><span>Escolha </span><strong><span>Close</span></strong><span> (Fechar)</span></p><p>&nbsp;</p></li></ul></li><li><p><span>Enquanto ainda estiver usando o login de usuário </span><em><span>voclabs</span></em><span> (Sofía), conecte-se ao AWS Cloud9 IDE e configure a aplicação Web da cafeteria.</span></p><ul><li><p><span>Abra a página do serviço </span><strong><span>AWS Cloud9</span></strong><span> e, em </span><strong><span>DEVCafeServer</span></strong><span>, escolha </span><strong><span>Open IDE</span></strong><span> (Abrir IDE).</span></p><p><span>O IDE do AWS Cloud9 que é executado em uma instância do EC2 deve ser exibido.</span></p></li><li><p><span>Na janela do terminal do Bash, na parte inferior da tela, cole e execute estes três comandos:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19995px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod8-challenge/install-cafe-app.sh</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">chmod</span> <span class="cm-operator">+</span>x install-cafe-app.sh</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">./install-cafe-app.sh</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Observação</span></strong><span>: você </span><em><span>não</span></em><span> precisa esperar que o script termine a execução. Em vez disso, vá para a próxima etapa.</span></p><p>&nbsp;</p></li></ul></li><li><p><span>Compartilhe o ambiente do AWS Cloud9 com o usuário </span><em><span>Nikhil</span></em><span>.</span></p><ul><li><p><span>No canto superior direito do IDE do AWS Cloud9, escolha </span><strong><span>Share</span></strong><span> (Compartilhar).</span></p></li><li><p><span>No painel </span><strong><span>Share this environment</span></strong><span> (Compartilhar este ambiente), em </span><strong><span>Invite Members</span></strong><span> (Convidar membros), insira </span><code>Nikhil</code><span> e escolha </span><strong><span>Convidar</span></strong><span>.</span></p></li><li><p><span>Escolha </span><strong><span>OK</span></strong><span> e </span><strong><span>OK</span></strong><span> novamente. Depois, </span><strong><span>Done</span></strong><span> (Concluído).</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Importante</span></strong><span>: feche a guia do navegador do IDE do AWS Cloud9, mas deixe aberta pelo menos uma outra guia do navegador em que você esteja conectado ao Console de Gerenciamento da AWS como o usuário </span><em><span>voclabs</span></em><span> (Sofía).</span></p></li></ul></li></ol><p>&nbsp;</p><h3 id='tarefa-2-fazer-login-como-nikhil-e-testar-o-acesso'><span>Tarefa 2: fazer login como Nikhil e testar o acesso</span></h3><p><span>Nesta tarefa, você trabalhará como Nikhil para testar as permissões de acesso que a Sofía configurou.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Dica</span></strong><span>: recomendamos abrir uma guia de navegação anônima ou privada para fazer login como </span><em><span>Nikhil</span></em><span>.</span></p><ul><li><span>Por exemplo, se você estiver usando o </span><em><span>Chrome</span></em><span>, escolha </span><strong><span>File</span></strong><span> (Arquivo) &gt; </span><strong><span>New Incognito Window (Nova janela anônima)</span></strong><span>. Se você estiver usando o </span><em><span>Firefox</span></em><span>, escolha </span><strong><span>File</span></strong><span> (Arquivo) &gt; </span><strong><span>New Private Window</span></strong><span> (Nova janela privada).</span></li><li><span>Você também pode usar um navegador diferente (por exemplo, se usou o Chrome para concluir a Tarefa 1, use o Firefox, Edge ou Safari para a Tarefa 2).</span></li></ul><p><strong><span>Observação</span></strong><span>: é conveniente usar uma sessão anônima, uma sessão privada ou um navegador diferente. Você pode manter o login de usuário </span><em><span>voclabs</span></em><span> e também de outro usuário (como </span><em><span>Nikhil</span></em><span>) simultaneamente. Assim, é possível alternar entre esses dois níveis de acesso sem precisar fazer logout ou fazer login repetidamente. As informações da sessão autenticada nas diferentes guias do navegador serão isoladas umas das outras.</span></p><p>&nbsp;</p><ol start='10' ><li><p><span>Faça login no Console de gerenciamento da AWS como </span><em><span>Nikhil</span></em><span>.</span></p><ul><li><p><span>Na guia do navegador onde você está conectado como o usuário </span><em><span>voclabs</span></em><span> (Sofía), abra o console do </span><strong><span>IAM</span></strong><span> e escolha </span><strong><span>Users</span></strong><span> (Usuários) e </span><strong><span>Nikhil</span></strong><span>.</span></p></li><li><p><span>Abra a guia </span><strong><span>Security credentials (Credenciais de segurança)</span></strong><span> e, na seção </span><strong><span>Sign-in credentials</span></strong><span> (Credenciais de login), copie o </span><strong><span>Console sign-in link</span></strong><span> (link de login do console).</span></p></li><li><p><span>Cole o link em uma guia de navegação anônima ou privada (ou outro navegador, conforme explicado na dica anterior).</span></p></li><li><p><span>Na tela </span><strong><span>Sign in as IAM user</span></strong><span> (Fazer login como usuário do IAM), insira as credenciais de Nikhil e escolha </span><strong><span>Sign in</span></strong><span> (Fazer login).</span></p><ul><li><strong><span>Nome de usuário do IAM</span></strong><span>: </span><code>Nikhil</code></li><li><strong><span>Senha</span></strong><span>: </span><code>@ppD3veloper2020!</code></li></ul></li></ul></li><li><p><span>Abra o console do </span><strong><span>Amazon EC2</span></strong><span> e, em uma guia do navegador, carregue a aplicação Web da cafeteria.</span></p><ul><li><p><span>Verifique se você está na </span><strong><span>região</span></strong><span> correta (por exemplo, </span><em><span>Norte da Virgínia</span></em><span>) e mude para ela, se necessário.</span></p></li><li><p><span>Você deve ser capaz de visualizar todos os detalhes das instâncias do EC2.</span></p></li><li><p><span>Localize e copie o </span><strong><span>endereço IP público IPv4</span></strong><span> da instância </span><strong><span>aws-cloud9-DEVCafeServer</span></strong><span>.</span></p></li><li><p><span>Em uma nova guia do navegador, carregue </span><code>http://&lt;dev-public-ip-address&gt;/cafe</code><span>, em que </span>&lt;<em><span>dev-public-ip-address</span></em>&gt;<span> é o endereço IP copiado.</span></p><p><span>O site da cafeteria deve ser exibido. Mantenha essa guia do navegador aberta para consultá-la posteriormente no laboratório.</span></p></li></ul><p><span>  </span></p></li></ol><ol start='12' ><li><p><span>Reinicie o servidor da Web para testar ainda mais o acesso ao Amazon EC2.</span></p><ul><li><p><span>Tente reiniciar a instância </span><em><span>aws-cloud9-DEVCafeServer</span></em></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Dica</span></strong><span>: para localizar a opção </span><strong><span>Reboot</span></strong><span> (Reiniciar), selecione a instância e procure no menu </span><strong><span>Actions</span></strong><span> (Ações).</span></p></li></ul></li></ol><p>&nbsp;</p><h4 id='responder-a-perguntas-sobre-o-acesso-ao-amazon-ec2-de-nikhil'><span>Responder a perguntas sobre o acesso ao Amazon EC2 de Nikhil</span></h4><p><span>As respostas serão verificadas quando você escolher o botão azul </span><strong><span>Submit</span></strong><span> (Enviar) no final do laboratório.</span></p><ol start='13' ><li><p><span>Acesse as perguntas deste laboratório.</span></p><ul><li><p><span>Acima dessas instruções, escolha o menu </span><span id="ssb_voc_grey"><span>Details</span><i class="fas fa-angle-down"></i></span><span> (Detalhes) e </span><span id="ssb_voc_grey"><span>Show</span></span><span> (Mostrar).</span></p></li><li><p><span>Escolha o link </span><strong><span>Access the multiple choice questions</span></strong><span> (Acessar as perguntas de múltipla escolha) na parte inferior da página.</span></p><p><span>As perguntas devem ser carregadas em uma nova guia do navegador.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='14' ><li><p><span>Na página que você acabou de abrir, responda às duas primeiras perguntas:</span></p><ul><li><p><strong><span>Pergunta 1</span></strong><span>: O que aconteceu quando Nikhil tentou reiniciar a instância do EC2?</span></p></li><li><p><strong><span>Pergunta 2</span></strong><span>: Qual política do IAM permitiu que Nikhil acessasse o ambiente  AWS Cloud9?</span></p><p><strong><span>Observação</span></strong><span>: deixe a página da Web de perguntas abertas na guia do navegador, pois você a consultará de novo mais adiante neste laboratório.</span></p></li></ul></li></ol><p>&nbsp;</p><h4 id='acessar-o-servidor-de-desenvolvimento-como-nikhil'><span>Acessar o servidor de desenvolvimento como Nikhil</span></h4><ol start='15' ><li><p><span>Retorne à guia do navegador em que você está conectado ao Console de Gerenciamento da AWS como </span><em><span>Nikhil</span></em><span>.</span></p><p><strong><span>Dica</span></strong><span>: lembre-se de que é possível ver qual usuário você está usando na área superior direita da interface do navegador.</span></p></li></ol><p>&nbsp;</p><ol start='16' ><li><p><span>Navegue até o console do </span><strong><span>AWS Cloud9</span></strong><span> e conecte-se ao IDE do AWS Cloud9 na instância </span><em><span>DEVCafeServer</span></em><span> do EC2.</span></p><ul><li><p><span>No menu </span><strong><span>Services</span></strong><span> (Serviços), escolha </span><strong><span>AWS Cloud9</span></strong><span>.</span></p></li><li><p><span>À esquerda, use o ícone </span><i class="fas fa-bars"></i><span> (menu) para expandir o menu e escolha </span><strong><span>Shared with you</span></strong><span> (Compartilhado com você). Verifique se o ambiente </span><strong><span>DEVCafeServer</span></strong><span> está disponível.</span></p></li><li><p><span>Escolha </span><strong><span>Open IDE</span></strong><span> (Abrir IDE).</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Observação</span></strong><span>: você acabou de se conectar ao SO convidado da instância </span><em><span>aws-cloud9-DEVCafeServer</span></em><span> do EC2. Você observou essa instância no console do Amazon EC2 pouco tempo atrás. Você pode usar o IDE para navegar e editar arquivos no servidor Web. Ele também fornece um terminal Bash que é executado na instância.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='17' ><li><p><span>Na instância de desenvolvimento do site da cafeteria, modifique o cabeçalho principal da página da Web.</span></p><ul><li><span>Abra a página principal no editor acessando o navegador de arquivos, navegando para o diretório </span><code>DEVCafeServer/www/html/cafe</code><span> e clicando duas vezes em </span><strong><span>index.php</span></strong><span>.</span></li><li><span>Modifique a </span><strong><span>linha 13</span></strong><span> conforme mostrado abaixo:</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="html"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="html"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"center"</span><span class="cm-tag cm-bracket">&gt;</span>Caf<span class="cm-atom">&amp;eacute;</span> DEV Site<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><ul><li><p><span>Para salvar a alteração, escolha </span><strong><span>File (Arquivo) &gt; Save (Salvar)</span></strong><span> e, no navegador, atualize a página da Web </span><code>http://dev-public-ip-address/cafe/</code><span>.</span></p><p><span>Observe que, enquanto atuava como Nikhil, você alterou o cabeçalho principal da página da Web no ambiente de desenvolvimento.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='18' ><li><p><span>Teste a conectividade do banco de dados de aplicações Web.</span></p><ul><li><span>No site da cafeteria, escolha </span><strong><span>Menu</span></strong><span>.</span></li><li><span>Que mensagem é exibida?</span></li></ul></li></ol><p>&nbsp;</p><ol start='19' ><li><p><span>Retorne à guia do navegador com as perguntas de múltipla escolha deste laboratório e responda à seguinte pergunta:</span></p><ul><li><p><strong><span>Pergunta 3</span></strong><span>: Qual mensagem foi exibida na página </span><strong><span>Menu</span></strong><span> da instância de desenvolvimento do site da cafeteria?</span></p><p><i class="fas fa-comment"></i><span> Nikhil lembra que os parâmetros de conexão de banco de dados são armazenados no AWS Systems Manager Parameter Store.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='20' ><li><p><span>Como </span><em><span>Nikhil</span></em><span>, abra o repositório de parâmetros do Systems Manager.</span></p><ul><li><span>No console, abra o serviço </span><strong><span>Systems Manager</span></strong><span>.</span></li><li><span>No menu à esquerda, escolha </span><strong><span>Application Management</span></strong><span> (Gerenciamento de aplicações) &gt; </span><strong><span>Parameter Store</span></strong><span> (Repositório de parâmetros).</span></li></ul></li></ol><ul><li><span>Que mensagem é exibida?</span></li></ul><p>&nbsp;</p><ol start='21' ><li><p><span>Retorne à guia do navegador com as perguntas de múltipla escolha deste laboratório e responda à seguinte pergunta:</span></p><ul><li><strong><span>Pergunta 4</span></strong><span>: Qual mensagem foi exibida quando Nikhil abriu a página do repositório de parâmetros do Systems Manager no console?</span></li></ul><p><span>Nikhil alerta Sofía sobre o problema no servidor de desenvolvimento que o impede de aprimorar a aplicação Web da cafeteria. Sofía está preocupada. Ela pede a Nikhil para verificar se a versão de </span><em><span>produção</span></em><span> do site está tendo o mesmo problema.</span></p></li></ol><p>&nbsp;</p><ol start='22' ><li><p><span>Como </span><em><span>Nikhil</span></em><span>, verifique se a aplicação Web de produção da cafeteria está funcionando corretamente.</span></p><ul><li><span>Abra o console do </span><strong><span>Amazon EC2</span></strong><span> e copie o </span><strong><span>endereço IP público IPv4</span></strong><span> da instância </span><strong><span>PRODCafeServer</span></strong><span>.</span></li><li><span>Em uma nova janela do navegador, carregue </span><code>http://prod-public-ip-address/cafe/menu.php</code><span>.</span></li><li><span>A página da Web é exibida corretamente e você consegue fazer pedidos?</span></li></ul></li></ol><p>&nbsp;</p><h2 id='nova-exigência-de-negócios-configurar-o-acesso-à-conta-da-aws-para-administradores-de-banco-de-dados-desafio-nº-2'><span>Nova exigência de negócios: Configurar o acesso à conta da AWS para administradores de banco de dados (Desafio nº 2)</span></h2><p><span>Nikhil relata os resultados do teste para Sofía. Ela está feliz em saber que o espaço de produção ainda está funcionando bem. No entanto, Sofía quer corrigir o problema no espaço de desenvolvimento.</span></p><p><span>Sofía decide pedir para Olivia corrigir o problema. No entanto, a Sofía deve primeiro definir os direitos de acesso à conta da AWS para administradores de banco de dados. Ela deve então criar um recurso de usuário do IAM para que a Olivia possa fazer login na conta.</span></p><p>&nbsp;</p><h3 id='tarefa-3-configurar-o-iam-para-acesso-de-usuário-administrador-do-banco-de-dados'><span>Tarefa 3: configurar o IAM para acesso de usuário administrador do banco de dados</span></h3><p><span>Nesta tarefa, você trabalhará como </span><em><span>Sofía</span></em><span> para permitir que Olivia acesse a AWS.</span></p><ol start='23' ><li><p><span>De volta ao navegador onde você está usando o login de usuário </span><em><span>voclabs</span></em><span> (Sofía), crie um </span><strong><span>grupo IAM</span></strong><span> chamado </span><code>DBAdministrators</code><span>, com as seguintes permissões:</span></p><ul><li><strong><span>AmazonRDSReadOnlyAccess</span></strong></li><li><strong><span>AmazonSSMFullAccess</span></strong></li></ul><p><strong><span>Observação</span></strong><span>: em uma situação real, Sofía precisaria conceder mais do que acesso somente leitura ao RDS para seus administradores de banco de dados. No entanto, as permissões deste ambiente de laboratório não permitem associar a política AmazonRDSFullAccess. Em vez disso, para este laboratório, você precisa usar a política AmazonRDSReadOnlyAccess como substituta.</span></p><p>&nbsp;</p></li><li><p><span>Crie um usuário do IAM chamado </span><code>Olivia</code><span> com acesso ao </span><strong><span>Console de Gerenciamento da AWS</span></strong><span>.</span></p><ul><li><span>Defina uma senha personalizada: </span><code>Db@dministrat0r2020!</code></li><li><span>Desmarque a exigência de redefinição da senha</span></li></ul></li></ol><p>&nbsp;</p><ol start='25' ><li><span>Adicione Olivia ao grupo </span><strong><span>DBAdministrators</span></strong><span>.</span></li></ol><p>&nbsp;</p><h3 id='tarefa-4-fazer-login-como-administrador-do-banco-de-dados-e-resolver-o-problema-de-conectividade-de-banco-de-dados'><span>Tarefa 4: fazer login como administrador do banco de dados e resolver o problema de conectividade de banco de dados</span></h3><p><span>Nesta tarefa, você trabalhará como </span><em><span>Olivia</span></em><span> para resolver o problema do banco de dados que Nikhil identificou. Você também trabalhará como </span><em><span>Sofía</span></em><span> para ajudar Olivia a resolver alguns problemas.</span></p><ol start='26' ><li><p><span>Faça login no Console de gerenciamento da AWS como </span><em><span>Olivia</span></em><span>.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Dica</span></strong><span>: use a sessão anônima, sessão privada ou um navegador diferente do que você usou para fazer login como Nikhil. Para isso:</span></p><ul><li><p><span>Escolha </span><strong><span>Nikhil @ </span>&lt;<em><span>account-number</span></em>&gt;</strong><span> na área superior do console e </span><strong><span>Sign Out</span></strong><span> (Sair).</span></p></li><li><p><span>Em seguida, escolha </span><strong><span>Log back in</span></strong><span> (Fazer login novamente).</span></p><p><span>A tela </span><strong><span>Fazer login como usuário do IAM</span></strong><span> deve ser exibida com o </span><em><span>ID da conta</span></em><span> pré-preenchido.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Observação</span></strong><span>: se a tela de login não exibir o ID da conta, volte para a guia do navegador em que você ainda está conectado como o usuário </span><em><span>voclabs</span></em><span> (Sofía). No console do IAM, escolha </span><strong><span>Users</span></strong><span> (Usuários) e </span><strong><span>Olivia</span></strong><span>. Escolha a guia </span><strong><span>Security credentials (Credenciais de segurança)</span></strong><span>. Na seção </span><strong><span>Sign-in credentials</span></strong><span> (Credenciais de login), copie o </span><strong><span>Console sign-in link</span></strong><span> (link de login do console).</span></p></li><li><p><span>Faça login com as credenciais de Olivia:</span></p><ul><li><p><strong><span>Nome de usuário do IAM</span></strong><span>: </span><code>Olivia</code></p></li><li><p><strong><span>Senha</span></strong><span>: </span><code>Db@dministrat0r2020!</code></p><p><span> </span></p></li></ul></li></ul></li></ol><ol start='27' ><li><p><span>Verifique se o banco de dados do RDS está em execução.</span></p><ul><li><span>Abra a página do </span><strong><span>Amazon RDS</span></strong><span> e escolha </span><strong><span>Databases</span></strong><span> (Bancos de dados).</span></li><li><span>Verifique se o </span><strong><span>Status</span></strong><span> da instância do banco de dados é </span><em><span>Disponível</span></em><span>.</span></li></ul><p><span>Olivia observa que o banco de dados está em execução.</span></p><p><span>Ela lembra que o ambiente de desenvolvimento se conecta ao banco de dados usando parâmetros armazenados no repositório de parâmetros do Systems Manager. Olivia se pergunta se a instância </span><em><span>DEVCafeServer</span></em><span> do EC2 tem permissão para ler os parâmetros fora do repositório.</span></p><p>&nbsp;</p></li><li><p><span>Abra o console do </span><strong><span>Amazon EC2</span></strong><span> e escolha </span><strong><span>Running Instances</span></strong><span> (Instâncias em execução).</span></p><p>&nbsp;</p></li></ol><ol start='29' ><li><p><span>Retorne à guia do navegador com as perguntas de múltipla escolha deste laboratório e responda à seguinte pergunta:</span></p><ul><li><strong><span>Pergunta 5</span></strong><span>: Por que Olivia não pode acessar os detalhes da instância do EC2?</span></li></ul><p><span>Olivia diz à Sofía que ela não consegue acessar as instâncias do EC2 e Sofía volta ao console para resolver esse problema.</span></p><p><span>Agora você trabalhará como </span><em><span>Sofía</span></em><span> para revisar e atualizar o acesso de Olivia aos recursos da AWS.</span></p></li></ol><p>&nbsp;</p><ol start='30' ><li><p><span>Retorne à guia do navegador em que você faz login como o usuário </span><em><span>voclabs</span></em><span> (Sofía).</span></p><p>&nbsp;</p></li></ol><ol start='31' ><li><p><span>Abra o grupo </span><strong><span>DBAdministrators</span></strong><span> e associe estas políticas:</span></p><ul><li><strong><span>AmazonEC2ReadOnlyAccess</span></strong></li><li><strong><span>IAMReadOnlyAccess</span></strong></li></ul><p><strong><span>Observação</span></strong><span>: Sofía percebe que Olivia precisa de algumas permissões do IAM caso precise acessar os detalhes da função do IAM associada à instância do EC2.</span></p><p>&nbsp;</p></li><li><p><span>Ainda como o usuário </span><em><span>voclabs</span></em><span> (Sofía), verifique quais serviços e recursos Olivia usou.</span></p><ul><li><p><span>No console do IAM, abra o usuário </span><strong><span>Olivia</span></strong><span> e escolha a guia </span><strong><span>Access Advisor</span></strong><span> (Consultor de acesso)</span></p></li><li><p><span>Observe que você pode ver quais áreas do serviço Olivia acessou. A atividade geralmente é exibida em até 4 horas (conforme indicado nos detalhes do consultor de acesso). Talvez você ainda não veja os </span><strong><span>Últimos dados acessados</span></strong><span> por Olivia.</span></p><p><i class="fas fa-info-circle"></i><span> Você pode usar essa exibição para obter informações sobre se as permissões de um usuário são mais amplas do que deveriam. Essas informações permitem que você aproxime os direitos de acesso ao </span><a href='https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege'><span>princípio do privilégio mínimo</span></a><span>.</span></p><p><span>Sofía pede à Olivia para verificar seu acesso ao Amazon EC2.</span></p></li></ul><p>&nbsp;</p></li><li><p><span>Como </span><em><span>Olivia</span></em><span>, volte para a guia do navegador em que o usuário da Olivia está conectado e atualize a página de instâncias do console do </span><strong><span>Amazon EC2</span></strong><span>.</span></p><ul><li><p><span>Olivia agora deve ser capaz de acessar ambas as instâncias do EC2 em execução.</span></p></li><li><p><span>Selecione a instância </span><strong><span>aws-cloud9-DEVCafeServer</span></strong><span>.</span></p></li><li><p><span>Na guia </span><strong><span>Description</span></strong><span> (Descrição), encontre </span><strong><span>IAM role</span></strong><span> (função do IAM) e escolha </span><strong><span>CafeRole</span></strong><span>.</span></p></li><li><p><span>Na guia </span><strong><span>Permissions</span></strong><span> (Permissões), expanda a política </span><strong><span>AmazonSSMManagedInstanceCore</span></strong><span> e escolha a opção de exibição </span><strong><span>JSON</span></strong><span>.</span></p></li><li><p><span>Revise as permissões da política.</span></p><p>&nbsp;</p></li></ul></li></ol><ol start='34' ><li><p><span>Retorne à guia do navegador com as perguntas de múltipla escolha deste laboratório e responda à seguinte pergunta:</span></p><ul><li><strong><span>Pergunta 6</span></strong><span>: Nomeie duas ações específicas na política que permitem à aplicação Web da cafeteria nesta instância acessar as credenciais do banco de dados no repositório de parâmetros.</span></li></ul><p><span>Olivia agora está convencida de que a aplicação Web na instância de desenvolvimento do EC2 pode acessar o repositório de parâmetros. Talvez o problema seja outra coisa. Olivia discute a questão com Sofía.</span></p><p><span>Depois de conversar um pouco, Sofía lembra que, antes, o ambiente de desenvolvimento usava um banco de dados local, mas agora usa o Amazon RDS. O banco de dados local tinha um nome de usuário diferente que permitia que a aplicação Web se conectasse ao banco de dados. A conexão com o banco de dados no Amazon RDS exige um nome de usuário de banco de dados diferente. Esse deve ser o problema!</span></p><p><span>Sofía pede à Olivia para atualizar o nome de usuário do banco de dados e verificar se essa é a fonte do problema.</span></p><p>&nbsp;</p></li><li><p><span>Como </span><em><span>Olivia</span></em><span>, atualize o valor </span><strong><span>dbUser</span></strong><span> no repositório de parâmetros do Systems Manager.</span></p></li></ol><p>&nbsp;</p><ol start='36' ><li><p><span>Na aplicação Web do servidor de desenvolvimento da cafeteria, atualize a página </span><strong><span>Menu</span></strong><span>.</span></p><ul><li><span>Se esta página não estiver aberta, carregue </span><code>http://&lt;dev-public-ip-address&gt;/cafe/menu.php</code><span> em um navegador (em que </span>&lt;<em><span>dev-public-ip-address</span></em>&gt;<span> é o endereço IP público IPv4 real da instância </span><strong><span>aws-cloud9-DEVCafeServer</span></strong><span>).</span></li><li><span>Será que todo o conteúdo da página é exibido corretamente agora? Você consegue enviar um pedido?</span></li></ul><p><span>Parabéns! Você agiu como membro do grupo </span><em><span>DBAdministrators</span></em><span> e corrigiu o site. Nikhil agradece a Olivia por resolver o problema, e Olivia também informa Sofía que o problema foi resolvido.</span></p></li></ol><p>&nbsp;</p><h2 id='nova-exigência-de-negócios-refinar-o-acesso-do-usuário-do-iam-desafio-nº-3'><span>Nova exigência de negócios: Refinar o acesso do usuário do IAM (Desafio nº 3)</span></h2><p><span>Frank e Martha estão felizes que Sofía e a equipe melhoraram a segurança da conta da AWS. Sofía também está feliz porque conseguiu configurar diferentes permissões para seus desenvolvedores de aplicações e administradores de banco de dados. Ela gosta que atribuir permissões separadas a cada função faz com que os membros da equipe colaborem no desenvolvimento e na resolução de problemas, cada um dentro da sua principal área de competência e com as responsabilidades atribuídas.</span></p><p><span>Sofía resolve relaxar com seus amigos por um tempo. No entanto, ela já está pensando em personalizar ainda mais as configurações de segurança que atribuiu aos diferentes usuários. Algumas das permissões ainda são amplas demais e não seguem totalmente o princípio do privilégio mínimo. Neste desafio final no laboratório, você assumirá o papel de Sofía e trabalhará para definir uma política do IAM personalizada que reduza o número de ações permitidas do IAM concedidas aos membros do grupo de administradores de banco de dados. No entanto, você também deve conceder acesso suficiente ao IAM para que eles cumpram suas responsabilidades de trabalho.</span></p><p>&nbsp;</p><h3 id='tarefa-5-usar-o-simulador-de-políticas-do-iam-e-criar-uma-política-personalizada-do-iam-com-o-editor-visual'><span>Tarefa 5: usar o simulador de políticas do IAM e criar uma política personalizada do IAM com o editor visual</span></h3><ol start='37' ><li><p><span>Retorne à janela do navegador em que você está usando o login do usuário </span><em><span>voclabs</span></em><span> (Sofía) e carregue este URL em uma nova guia do navegador: </span><a href='https://policysim.aws.amazon.com/' target='_blank' class='url'>https://policysim.aws.amazon.com/</a></p><p><span>A página IAM Policy Simulator (Simulador de políticas do IAM) deve abrir.</span></p><p>&nbsp;</p></li><li><p><span>Escolha o usuário </span><strong><span>Olivia</span></strong><span>.</span></p><p>&nbsp;</p></li><li><p><span>Na lista </span><strong><span>IAM Policies</span></strong><span> (Políticas do IAM), certifique-se de que a política </span><strong><span>IAMReadOnlyAccess</span></strong><span> esteja marcada. No entanto, </span><em><span>desmarque</span></em><span> as caixas das outras políticas.</span></p><p>&nbsp;</p></li></ol><ol start='40' ><li><p><span>Na seção </span><strong><span>Policy Simulator</span></strong><span> (Simulador de política), escolha </span><strong><span>Select service</span></strong><span> (Selecionar serviço). Na caixa de pesquisa </span><strong><span>Filter</span></strong><span> (Filtrar), insira </span><code>Ident</code><span> e selecione </span><strong><span>Identity and Access Management</span></strong><span>.</span></p><p>&nbsp;</p></li><li><p><span>Escolha a opção </span><strong><span>Select All</span></strong><span> (Selecionar tudo) (à direita do menu </span><strong><span>Select actions</span></strong><span> (Selecionar ações)) e </span><strong><span>Run Simulation</span></strong><span> (Executar simulação).</span></p><ul><li><span>No painel </span><strong><span>Configurações e resultados da ação</span></strong><span>, deve ser exibida uma lista de ações.</span></li><li><span>A coluna </span><strong><span>Permissão</span></strong><span> exibe as permissões de Olivia para cada ação. A política </span><em><span>IAMReadOnlyAccess</span></em><span> não permite que Olivia execute as ações </span><strong><span>Adicionar</span></strong><span> ou </span><strong><span>Criar</span></strong><span>. No entanto, role para encontrar as ações que ela </span><em><span>pode</span></em><span> executar.</span></li><li><span>O resumo (no topo da lista) mostra que Olivia está autorizada a executar </span><em><span>57 ações do IAM</span></em><span>.</span></li></ul></li></ol><p><img src="images/policy-simulator.png" referrerpolicy="no-referrer" alt="equipe da cafeteria"></p><p>&nbsp;</p><p><span>Sofía lembra que só concedeu à Olivia as permissões da política </span><em><span>IAMReadOnlyAccess</span></em><span> para que ela pudesse observar os detalhes de certas políticas. Essas políticas são associadas à função do IAM por sua vez é associada a duas instâncias do servidor da cafeteria. Por isso, Sofía decide criar uma nova política do IAM mais restritiva para membros do grupo </span><em><span>DBAdministrators</span></em><span>.</span></p><p><span>Nas próximas etapas, você trabalhará como Sofía para criar essa nova política.</span></p><p>&nbsp;</p><ol start='42' ><li><p><span>Retorne à guia do navegador em que você faz login como o usuário </span><strong><span>voclabs</span></strong><span> (Sofía).</span></p><p>&nbsp;</p></li></ol><ol start='43' ><li><p><span>No console do </span><strong><span>IAM</span></strong><span>, escolha </span><strong><span>Policies</span></strong><span> (Políticas) e </span><strong><span>Create policy</span></strong><span> (Criar política).</span></p><p>&nbsp;</p></li></ol><ol start='44' ><li><p><span>Na guia </span><strong><span>Visual editor</span></strong><span> (Editor visual), defina as configurações a seguir.</span></p><ul><li><p><span>Clique em </span><strong><span>Choose a service</span></strong><span> (Escolher um serviço). Pesquise e escolha </span><strong><span>EC2</span></strong><span>.</span></p><ul><li><span>Na caixa de pesquisa </span><strong><span>Actions</span></strong><span> (Ações), procure </span><strong><span>IAM</span></strong><span> e selecione </span><strong><span>DescribeIamInstanceProfileAssociations</span></strong><span>.</span></li></ul><p><img src="images/visual-editor.png" referrerpolicy="no-referrer" alt="Editor visual do IAM"></p></li><li><p><span>Na parte inferior da tela, escolha </span><strong><span>Add additional permissions</span></strong><span> (Adicionar permissões).</span></p></li><li><p><span>Clique em </span><strong><span>Choose a service</span></strong><span> (Escolher um serviço). Procure e escolha </span><strong><span>IAM</span></strong><span>.</span></p><ul><li><p><span>Na caixa de pesquisa </span><strong><span>Actions</span></strong><span> (Ações), pesquise </span><strong><span>Get</span></strong><span> e selecione as seguintes ações:</span></p><ul><li><strong><span>GetPolicyVersion</span></strong></li><li><strong><span>GetRole</span></strong></li><li><strong><span>GetRolePolicy</span></strong></li></ul></li><li><p><span>De volta à caixa de pesquisa, pesquise </span><strong><span>List</span></strong><span> e selecione as seguintes ações:</span></p><ul><li><strong><span>ListAttachedRolePolicies</span></strong></li><li><strong><span>ListInstanceProfiles</span></strong></li><li><strong><span>ListInstanceProfilesForRole</span></strong></li><li><strong><span>ListPolicies</span></strong></li><li><strong><span>ListRolePolicies</span></strong></li><li><strong><span>ListRoles</span></strong></li></ul></li></ul></li><li><p><span>Expanda a seção </span><strong><span>Resources</span></strong><span> (Recursos) e, para os três tipos de recursos (</span><em><span>instance-profile</span></em><span>, </span><em><span>policy</span></em><span> e </span><em><span>role</span></em><span>), selecione </span><strong><span>Any in this account</span></strong><span> (Qualquer nesta conta).</span></p></li><li><p><span>De volta à parte superior da tela, escolha a guia </span><strong><span>JSON</span></strong></p><p><span>Isso exibe o documento JSON que você acabou de compor usando o editor visual.</span></p></li><li><p><span>Verifique se os detalhes do documento da política correspondem ao que é mostrado no exemplo a seguir:</span></p></li></ul></li></ol><p><img src="images/policy.png" referrerpolicy="no-referrer" alt="Política do IAM"></p><p><span>Infelizmente, neste ambiente de laboratório não é possível conceder as permissões para criar uma política do IAM. Se você selecionar </span><strong><span>Review policy</span></strong><span> (Revisar política), dar um nome à política e escolher </span><strong><span>Create policy</span></strong><span> (Criar política), ocorrerá um erro de permissão.</span></p><p><span>No entanto, uma política que corresponde exatamente à política de exemplo foi criada para você quando você iniciou este laboratório, e agora você já tem experiência em usar o editor visual. Você também viu como ele permite criar políticas refinadas sem a necessidade de criar um documento de política JSON do zero.</span></p><p>&nbsp;</p><ol start='45' ><li><p><span>Saia do assistente </span><strong><span>Criar política</span></strong><span> selecionando </span><strong><span>Cancelar</span></strong><span>.</span></p><p>&nbsp;</p></li></ol><ol start='46' ><li><p><span>Na caixa de pesquisa </span><strong><span>Políticas</span></strong><span>, pesquise </span><code>LimitedIamPolicy</code><span>.</span></p><p><span>Observe que os detalhes da política correspondem aos que você criou, conforme indicado na captura de tela anterior.</span></p><p><strong><span>Observação</span></strong><span>: os elementos </span><em><span>Sid</span></em><span> em uma política são opcionais. Além disso, a ordem em que </span><em><span>Efeito</span></em><span>, </span><em><span>Ação</span></em><span>e </span><em><span>Recurso</span></em><span> aparecem no documento da política não afeta seu funcionamento.</span></p></li></ol><p>&nbsp;</p><ol start='47' ><li><p><span>Edite o grupo </span><strong><span>DBAdministrators</span></strong><span> IAM.</span></p><ul><li><strong><span>Associe</span></strong><span> a política </span><strong><span>LimitedIamPolicy</span></strong></li><li><strong><span>Desassocie</span></strong><span> a política </span><strong><span>IAMReadOnlyAccess</span></strong></li></ul><p><span>Sofía pede para Olivia confirmar se ainda pode acessar os detalhes da função </span><em><span>CafeRole</span></em><span> do IAM, mesmo com os direitos de acesso mais limitados do IAM que acabaram de ser concedidos a ela.</span></p></li></ol><p>&nbsp;</p><ol start='48' ><li><p><span>Volte para a guia do navegador em que você está com o login de </span><em><span>Olivia</span></em><span> e verifique que ainda pode acessar os detalhes da função </span><em><span>CafeRole</span></em><span>.</span></p><ul><li><p><span>No console do </span><strong><span>Amazon EC2</span></strong><span>, selecione a instância </span><strong><span>aws-cloud9-DEVCafeServer</span></strong><span>.</span></p></li><li><p><span>Na guia </span><strong><span>Description (Descrição)</span></strong><span>, escolha </span><strong><span>IAM role (Função do IAM) &gt; CafeRole</span></strong><span>.</span></p></li><li><p><span>Expanda a política </span><strong><span>AmazonSSMManagedInstanceCore</span></strong><span> e verifique se você ainda pode ver os detalhes do documento JSON.</span></p><p>&nbsp;</p></li></ul></li></ol><ol start='49' ><li><p><strong><span>(Opcional)</span></strong><span> Retorne à guia do navegador do </span><strong><span>IAM Policy Simulator</span></strong><span> em que você fez login como o usuário </span><em><span>voclabs</span></em><span> (Sofía). Execute a simulação novamente (para ver quais ações do IAM Olivia pode realizar).</span></p><ul><li><i class="fas fa-info-circle"></i><span> </span><strong><span>Dica</span></strong><span>: para exibir as novas políticas do IAM que se aplicam a Olivia, atualize a página do navegador.</span></li><li><span>Antes da alteração no grupo </span><em><span>DBAdministrators</span></em><span> do IAM, Olivia tinha permissão para executar 57 ações relacionadas ao serviço IAM. No entanto, após a mudança, o acesso ao serviço do IAM agora é muito mais limitado.</span></li><li><span>A nova política concede menos permissões do IAM. No entanto, Olivia ainda tem o acesso que precisa para desempenhar suas funções de trabalho.</span></li></ul></li></ol><p>&nbsp;</p><h2 id='novidades-da-cafeteria'><span>Novidades da cafeteria</span></h2><p><img src="images/team.png" referrerpolicy="no-referrer" alt="equipe da cafeteria"></p><p><span>Sofía acredita que está ficando boa em gerenciar o acesso de usuários à conta da AWS!</span></p><p><span>Ela sabe como usar </span><em><span>políticas do IAM gerenciadas pela AWS</span></em><span> para controlar o acesso e também como usar o </span><em><span>IAM Policy Simulator</span></em><span> para observar o escopo das permissões concedidas por diferentes políticas. Ela sabe como acessar o </span><em><span>IAM Access Analyzer</span></em><span> para observar quais direitos de acesso diferentes usuários estão usando. E, finalmente, ela também praticou como usar a política do editor visual do IAM para criar </span><em><span>políticas personalizadas do IAM</span></em><span>.</span></p><p>&nbsp;</p><h2 id='enviar-o-trabalho'><span>Enviar o trabalho</span></h2><ol start='50' ><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_blue"><span>Submit</span></span><span> (Enviar) para gravar o progresso e, quando solicitado, escolha </span><strong><span>Yes</span></strong><span> (Sim).</span></p><p>&nbsp;</p></li><li><p><span>Se os resultados não forem exibidos após alguns minutos, volte ao topo destas instruções e escolha </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Notas).</span></p><p><strong><span>Dica</span></strong><span>: você pode enviar seu trabalho várias vezes. Depois de alterar o trabalho, escolha </span><strong><span>Submit</span></strong><span> (Enviar) novamente. Seu último envio é o que será gravado para este laboratório.</span></p><p>&nbsp;</p></li><li><p><span>Para ver o feedback detalhado do seu trabalho, escolha </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalhes) e depois </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Visualizar relatório de envio).</span></p></li></ol><p>&nbsp;</p><h2 id='laboratório-concluído'><span>Laboratório concluído</span></h2><p><i class="icon-flag-checkered"></i><span> Parabéns! Você concluiu o laboratório.</span></p><ol start='53' ><li><p><span>Para confirmar que você deseja encerrar o laboratório, escolha </span><strong><span id="ssb_voc_grey"><span>End Lab</span></span></strong><span> (Encerrar laboratório),na parte superior desta página e escolha </span><strong><span id="ssb_blue"><span>Yes</span></span></strong><span> (Sim).</span></p><p><span>Será exibido um painel com a mensagem: </span><em><span>DELETE has been initiated... You may close this message box now. (A EXCLUSÃO foi iniciada... Você pode fechar esta caixa de mensagem agora).</span></em></p><p>&nbsp;</p></li><li><p><span>Escolha o </span><strong><span>X</span></strong><span> no canto superior direito para fechar o painel.</span></p><p>&nbsp;</p></li></ol><p><em><span>©2020, Amazon Web Services, Inc. e suas afiliadas. Todos os direitos reservados. Este trabalho não pode ser reproduzido ou redistribuído, no todo ou em parte, sem permissão prévia por escrito da Amazon Web Services, Inc. É proibido copiar, emprestar ou vender para fins comerciais.</span></em></p></div></div>
+</body>
+</html>

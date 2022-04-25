@@ -1,0 +1,1177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='começar-módulo-6----laboratório-de-desafio-criação-de-um-ambiente-de-rede-da-vpc-para-a-cafeteria'><span>Começar Módulo 6 – Laboratório de desafio: Criação de um ambiente de rede da VPC para a cafeteria</span></h1><h2 id='cenário'><span>Cenário</span></h2><p><span>Sofía e Nikhil estão agora confiantes em sua capacidade de criar uma arquitetura de dois níveis por causa de sua experiência em migrar os dados da cafeteria. Eles foram movidos com êxito de um banco de dados MariaDB em uma instância do Amazon Elastic Compute Cloud (Amazon EC2) para uma instância de banco de dados do Amazon Relational Database Service (Amazon RDS). Além disso, eles também moveram seus recursos de banco de dados de uma sub-rede pública para uma sub-rede privada.</span></p><p><img src="images/mateo.jpg" referrerpolicy="no-referrer"></p><p><span>Quando o Mateo, um cliente regular da cafeteria e um administrador e engenheiro de sistemas da AWS, visita a cafeteria, Sofía e Nikhil falam sobre a migração do banco de dados. Mateo diz que eles podem melhorar a segurança executando o servidor de aplicações do café em outra sub-rede privada separada da instância do banco de dados. Eles poderiam, então, passar por um host bastion (ou caixa de salto) para obter acesso administrativo ao servidor de aplicações. O servidor de aplicações também deve ser capaz de baixar os patches necessários.</span></p><p><span>Sabendo que </span><a href='https://aws.amazon.com/blogs/enterprise-strategy/create-a-culture-of-experimentation-enabled-by-the-cloud/'><span>a nuvem facilita a experimentação</span></a><span>, Sofía e Nikhil estão ansiosos para configurar um ambiente VPC que não seja de produção. Eles podem usá-lo implementar a nova arquitetura e testar diferentes camadas de segurança, sem interromper acidentalmente o ambiente de produção da cafeteria.</span></p><br><h2 id='visão-geral-e-objetivos-do-laboratório'><span>Visão geral e objetivos do laboratório</span></h2><p><span>Neste laboratório, você usa o Amazon Virtual Private Cloud (Amazon VPC) para criar um ambiente de rede na AWS e implementar camadas de segurança para proteger seus recursos.</span></p><p><span>Depois de concluir este laboratório, você deverá ser capaz de:</span></p><ul><li><span>Crie um ambiente de virtual private cloud (VPC) que permita que você se conecte com segurança a recursos privados</span></li><li><span>Permita que seus recursos privados se conectem à Internet</span></li><li><span>Crie uma camada adicional de segurança em sua VPC para controlar o tráfego de e para recursos privados</span></li></ul><p><span>Quando você iniciar o laboratório, você só terá uma VPC criada para você na conta da AWS.</span></p><p><span>No fim deste laboratório, sua arquitetura será parecida com o seguinte exemplo:</span></p><p><img src="images/module-6-challenge-lab-final-architecture.PNG" referrerpolicy="no-referrer" alt="arquitetura final"></p><p><span>(No diagrama, as setas de comunicação foram omitidas por simplicidade.)</span></p><p><strong><span>Nota</span></strong><span>: neste laboratório de desafio, instruções passo a passo não são fornecidas para a maioria das tarefas. Você deve descobrir como completar as tarefas por conta própria.</span></p><br><h2 id='duração'><span>Duração</span></h2><p><span>Este laboratório levará aproximadamente </span><strong><span>90 minutos</span></strong><span> para ser concluído.</span></p><br><h2 id='restrições-de-serviço-da-aws'><span>Restrições de serviço da AWS</span></h2><p><span>Neste ambiente de laboratório, o acesso aos serviços e ações de serviço da AWS pode estar restrito àqueles necessários para concluir as instruções do laboratório. Você poderá encontrar erros se tentar acessar outros serviços ou executar ações além do que está descrito neste laboratório.</span></p><br><h2 id='acessar-o-console-de-gerenciamento-da-aws'><span>Acessar o Console de gerenciamento da AWS</span></h2><ol start='' ><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratório) para iniciar o laboratório.</span></p><p><span>Um painel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratório) é aberto com o status do laboratório.</span></p><p><strong><span>Dica</span></strong><span>:se você precisar de mais tempo para concluir o laboratório, escolha novamente o botão Start Lab (Iniciar laboratório) para reiniciar o cronômetro do ambiente.</span></p></li><li><p><span>Aguarde até que a mensagem </span><em><span>Lab status: ready (Status do laboratório: pronto)</span></em><span> seja exibida e feche o painel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratório) escolhendo </span><strong><span>X</span></strong><span>.</span></p></li><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_voc_grey"><span>AWS</span></span></p><p><span>O Console de Gerenciamento da AWS será aberto em uma nova guia do navegador. O sistema fará o seu login automaticamente.</span></p><p><strong><span>Dica</span></strong><span>: se uma nova guia do navegador não for aberta, normalmente você verá uma faixa ou um ícone na parte superior do navegador com uma mensagem informando que o navegador está impedindo que o site abra janelas pop-up. Escolha a faixa ou o ícone e escolha </span><strong><span>Allow pop ups</span></strong><span> (Permitir pop-ups).</span></p></li><li><p><span>Organize a guia do Console de Gerenciamento da AWS para que ela seja exibida com essas instruções. O ideal é ver as duas guias do navegador ao mesmo tempo, para facilitar o acompanhamento das etapas do laboratório.</span></p></li></ol><br><h2 id='uma-solicitação-de-negócios-para-a-cafeteria-criar-uma-rede-vpc-que-permita-que-a-equipe-da-cafeteria-administre-remotamente-e-de-forma-segura-o-servidor-de-aplicações-web-desafio-nº-1'><span>Uma solicitação de negócios para a cafeteria: criar uma rede VPC que permita que a equipe da cafeteria administre remotamente e de forma segura o servidor de aplicações Web (Desafio nº 1)</span></h2><p><span>Neste desafio, você assumirá o papel de um dos administradores do sistema da cafeteria. Você criará e configurará uma rede VPC para que você possa se conectar com segurança de um host bastion em uma sub-rede pública a uma instância do EC2 em uma sub-rede privada. Você também criará um gateway NAT para permitir que a instância do EC2 em sua sub-rede privada acesse a Internet.</span></p><br><h3 id='tarefa-1-criar-uma-sub-rede-pública'><span>Tarefa 1: criar uma sub-rede pública</span></h3><p><span>Sua primeira tarefa neste laboratório é criar uma sub-rede pública no </span><em><span>Lab VPC</span></em><span>. Depois de criar uma sub-rede pública, você criará um gateway da Internet para permitir a comunicação da sub-rede para a Internet. Você atualizará a tabela de roteamento associada à sub-rede para rotear o tráfego de rede vinculado à Internet por meio do gateway de Internet.</span></p><ol start='5' ><li><p><span>Abra o </span><strong><span>console da Amazon VPC</span></strong><span>.</span></p></li><li><p><span>Observe que uma VPC chamada </span><code>Lab VPC</code><span> foi criada para você.</span></p></li><li><p><span>Crie uma sub-rede pública que atenda aos seguintes critérios:</span></p><ul><li><strong><span>Name tag</span></strong><span> (Tag de nome): </span><code>Public Subnet (Sub-rede pública)</code></li><li><strong><span>VPC</span></strong><span>: </span><em><span>Lab VPC</span></em></li><li><strong><span>Zona de disponibilidade</span></strong><span>: escolha Zona </span><strong><span>de</span></strong><span> disponibilidade a da sua Região (por exemplo, se sua Região for </span><em><span>us-east-1</span></em><span>e selecione </span><strong><span>us-east-1a</span></strong><span>)</span></li><li><strong><span>IPv4 CIDR block</span></strong><span> (Bloco CIDR IPv4): </span><code>10.0.0.0/24</code></li></ul></li><li><p><span>Crie um novo gateway da Internet e anexe-o ao </span><code>Lab VPC</code><span>.</span></p></li><li><p><span>Edite a tabela de rotas que foi criada em sua VPC. Adicione a rota </span><code>0.0.0.0/0</code><span>. Para o destino, selecione o gateway da Internet que você criou na etapa anterior</span></p><p><strong><span>Dica</span></strong><span>: para concluir esta tarefa com êxito, você deve criar alguns recursos. Se você ficar preso, consulte a </span><a href='https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html'><span>Documentação da AWS</span></a><span>.</span></p></li></ol><br><h3 id='tarefa-2-criar-um-host-bastion'><span>Tarefa 2: criar um host bastion</span></h3><p><span>Nesta tarefa, você criará um host bastion na </span><em><span>sub-rede pública</span></em><span>. Em tarefas posteriores, você criará uma instância do EC2 em uma sub-rede privada e se conectará a ela a partir desse host bastion.</span></p><ol start='10' ><li><p><span>No </span><strong><span>console do Amazon EC2</span></strong><span>, crie uma instância do EC2 na </span><code>sub-rede pública</code><span> da </span><em><span>Lab VPC</span></em><span> que atenda aos seguintes critérios:</span></p><ul><li><p><strong><span>Imagem de máquina da Amazon (AMI)</span></strong><span>: </span><em><span>AMI do Amazon Linux 2 (HVM)</span></em></p></li><li><p><strong><span>Instance Type</span></strong><span> (Tipo de instância): </span><em><span>t2.micro</span></em></p></li><li><p><strong><span>Atribuir IP público automaticamente</span></strong><span>: Esta configuração deve ser desabilitada</span></p></li><li><p><strong><span>Name</span></strong><span> (Nome): </span><code>Bastion Host</code></p></li><li><p><span>Grupo de segurança chamado </span><code>Bastion Host SG</code><span> que permite somente o seguinte tráfego:</span></p><ul><li><strong><span>Type</span></strong><span> (Tipo): </span><em><span>SSH</span></em></li><li><strong><span>Port</span></strong><span> (Porta): </span><code>22</code></li><li><strong><span>Source</span></strong><span> (Origem): seu endereço IP</span></li></ul></li><li><p><span>Usa o par de chaves </span><strong><span>vockey</span></strong></p></li></ul></li></ol><br><blockquote><p><strong><span>Observação:</span></strong><span> na prática, fortalecer um host bastion envolve mais trabalho do que restringir somente o tráfego do Secure Shell (SSH) de seu endereço IP de Um ou Mais Servidores Cisco ICM NT. Normalmente, um host bastion é colocado em uma rede fechada de outras redes. Muitas vezes, é protegido com autenticação multifator (MFA) e monitorado com ferramentas de auditoria. A maioria das empresas requer uma trilha de acesso auditável para o host bastião.</span></p></blockquote><br><h3 id='tarefa-3-alocar-um-endereço-ip-elástico-para-o-host-bastion'><span>Tarefa 3: alocar um endereço IP elástico para o host bastion</span></h3><p><span>Nesta tarefa, você atribuirá um endereço IP elástico ao host bastion.</span></p><p><span>O host bastion que você acabou de criar não pode ser alcançado a partir da Internet. Ele não tem um endereço IPv4 público ou um endereço IP elástico associado ao seu endereço IPv4 privado. Os endereços IP elásticos são associados a instâncias de bastion e são permitidos a partir de firewalls on-premises. Se uma instância for encerrada e uma nova instância for executada em seu lugar, o endereço IP elástico existente será associado novamente à nova instância. Com esse comportamento, o mesmo endereço IP elástico confiável é usado o tempo todo.</span></p><ol start='11' ><li><span>Alocar um endereço IP elástico e torná-lo acessível a partir da Internet através do IPv4 associando-o ao seu host bastion.</span></li></ol><br><h3 id='tarefa-4-testar-a-conexão-com-o-host-bastion'><span>Tarefa 4: testar a conexão com o host bastion</span></h3><p><span>Nesta tarefa, você usará a chave SSH (arquivo.pem ou arquivo.ppk) para testar a conexão SSH com seu host bastion. Esta chave foi criada para você.</span></p><ol start='12' ><li><p><span>Na área superior direita dessas instruções, selecione </span><strong><span>Detalhes</span></strong><span>.</span></p></li><li><p><span>Ao lado </span><strong><span>da AWS</span></strong><span>, escolha </span><strong><span>Mostrar</span></strong><span>.</span></p></li><li><p><span>Faça download da chave SSH. Observe que o arquivo será nomeado </span><strong><span>labuser.</span><span>*</span></strong><span>.</span></p><ul><li><strong><span>Usuários do Microsoft Windows PuTTY</span></strong><span>: </span><em><span>fazer download do PPK</span></em></li><li><strong><span>Usuários do macOS ou Linux</span></strong><span>: </span><em><span>fazer download do PEM</span></em></li></ul></li><li><p><span>Para fechar a janela, escolha </span><strong><span>Cancel</span></strong><span> (Cancelar).</span></p></li><li><p><span>Conecte-se ao seu host bastion usando SSH.</span></p></li><li><p><span>Depois de ter testado sua conexão com o host bastion, você pode fechar o terminal ou PuTTY.</span></p><p><strong><span>Dica</span></strong><span>: se você ficar em dúvida sobre o que fazer, consulte a </span><a href='https://docs.aws.amazon.com/quickstarts/latest/vmlaunch/step-2-connect-to-instance.html'><span>Documentação da AWS</span></a><span>. Essa página fornece instruções detalhadas sobre como usar o SSH para se conectar a uma instância do EC2.</span></p></li></ol><br><blockquote><p><strong><span>Observação para usuários do Microsoft Windows</span></strong><span>: Se você não tiver o PuTTY instalado, você deve </span><a href='https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe'><span>baixar e instalar o PuTTY</span></a><span>. Recomendamos que você configure o PuTTY para que sua conexão não expire. Para manter a sessão PuTTY aberta por mais tempo, defina </span><strong><span>Segundos entre keepalives</span></strong><span> como </span><code>30</code><span>.</span></p></blockquote><br><h3 id='tarefa-5-criar-uma-sub-rede-privada'><span>Tarefa 5: criar uma sub-rede privada</span></h3><p><span>Nesta tarefa, você criará uma sub-rede privada no </span><em><span>Lab VPC</span></em><span>.</span></p><ol start='18' ><li><p><span>No console, crie uma sub-rede privada que atenda aos seguintes critérios:</span></p><ul><li><strong><span>Name tag</span></strong><span> (Tag de nome): </span><code>Private Subnet (Sub-rede privada)</code></li><li><strong><span>Availability Zone</span></strong><span> (Zona de disponibilidade): o mesmo que a </span><em><span>sub-rede pública</span></em></li><li><strong><span>IPv4 CIDR block</span></strong><span> (Bloco CIDR IPv4): </span><code>10.0.1.0/24</code></li></ul></li></ol><br><h3 id='tarefa-6-criar-um-gateway-nat'><span>Tarefa 6: criar um gateway NAT</span></h3><p><span>Nesta tarefa, você criará um gateway NAT, que permite que os recursos na </span><em><span>sub-rede privada</span></em><span> se conectem à Internet.</span></p><ol start='19' ><li><p><span>Crie um gateway NAT que atenda aos seguintes critérios:</span></p><ul><li><strong><span>Name</span></strong><span> (Nome): </span><code>Lab NAT Gateway</code></li><li><strong><span>Subnet</span></strong><span> (Sub-rede): </span><em><span>Public Subnet 2 (Sub-rede pública 2)</span></em></li></ul><p><strong><span>Dica</span></strong><span>: o gateway NAT precisa de um endereço IP elástico.</span></p></li><li><p><span>Crie uma nova tabela de rotas que atenda aos seguintes critérios:</span></p><ul><li><strong><span>Name tag</span></strong><span> (Tag de nome): </span><code>Tabela de rota de sub-rede privada</code></li><li><strong><span>Destination</span></strong><span> (Destino): </span><code>0.0.0.0/0</code></li><li><strong><span>Target</span></strong><span> (Alvo): </span><em><span>NAT Gateway</span></em></li></ul></li><li><p><span>Anexe esta tabela de rotas à </span><em><span>sub-rede privada</span></em><span>, que você criou anteriormente.</span></p><p><strong><span>Dica</span></strong><span>: se você ficar em dúvida sobre o que fazer, consulte a [Documentação da AWS] (</span><a href='https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html#nat-gateway-creating' target='_blank' class='url'>https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html#nat-gateway-creating</a><span>).</span></p></li></ol><br><h3 id='tarefa-7-criar-uma-instância-do-ec2-na-sub-rede-privada'><span>Tarefa 7: criar uma instância do EC2 na sub-rede privada</span></h3><p><span>Nesta tarefa, você criará uma instância do EC2 na </span><em><span>sub-rede privada</span></em><span>e a configurará para permitir o tráfego SSH do host bastion. Você também criará um novo par de chaves para acessar essa instância.</span></p><ol start='22' ><li><p><span>Crie um novo par de chaves chamado </span><code>vockey2</code><span>e faça download do .ppk (Microsoft Windows) ou .pem (macOS ou Linux) apropriado.</span></p></li><li><p><span>Crie uma instância do EC2 na </span><em><span>sub-rede privada</span></em><span> da </span><em><span>Lab VPC</span></em><span> que atenda aos seguintes critérios.</span></p><ul><li><p><strong><span>AMI</span></strong><span>: </span><em><span>Amazon Linux 2 AMI (HVM)</span></em></p></li><li><p><strong><span>Instance Type</span></strong><span> (Tipo de instância): </span><em><span>t2.micro</span></em></p></li><li><p><strong><span>Nome</span></strong><span>: </span><code>Instância privada</code></p></li><li><p><span>Permite apenas o seguinte tráfego:</span></p><ul><li><strong><span>Type</span></strong><span> (Tipo): </span><em><span>SSH</span></em></li><li><strong><span>Port</span></strong><span> (Porta): </span><code>22</code></li><li><strong><span>Fonte</span></strong><span>: Grupo de segurança do host Bastion (</span><strong><span>Dica</span></strong><span>: consulte a </span><a href='https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html'><span>documentação da AWS</span></a><span>)</span></li></ul></li><li><p><span>Usa o par de chaves </span><strong><span>vockey2</span></strong><span> que você criou anteriormente</span></p></li></ul></li></ol><br><h3 id='tarefa-8-configurar-o-cliente-ssh-para-passagem-ssh'><span>Tarefa 8: configurar o cliente SSH para passagem SSH</span></h3><p><span>Como a instância privada que você acabou de criar usa um par de chaves diferente do host bastion, você deve configurar seu cliente SSH para usar a passagem SSH. Essa ação permite que você use um par de chaves armazenado no computador para acessar a instância privada sem carregar o par de chaves para o host de bastião. Esta é uma boa prática de segurança.</span></p><p><span>Para configurar seu cliente, siga as etapas do Microsoft Windows ou do macOS ou Linux.</span></p><h4 id='somente-usuários-do-microsoft-windows'><span>Somente usuários do Microsoft Windows</span></h4><p><span>Os usuários do Windows devem concluir as seguintes etapas.</span></p><ol start='24' ><li><p><span>Faça download e instale o </span><em><span>Pageant</span></em><span>, que está disponível na </span><a href='http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html'><span>página de download</span></a><span>PuTTY.</span></p></li><li><p><span>Depois de instalar o Pageant, abra-o. O Pageant é executado como um serviço do Windows.</span></p></li><li><p><span>Para importar a chave formatada em PuTTY para o Pageant, siga as etapas a seguir.</span></p><ul><li><span>Na bandeja do sistema do Windows, clique duas vezes no ícone </span><strong><span>Pageant</span></strong><span>. </span><img src="./images/pagent-icon.png" referrerpolicy="no-referrer" alt="Ícone Pageant"></li><li><span>Escolha </span><strong><span>Add key</span></strong><span> (Adicionar chave).</span></li><li><span>Selecione o arquivo.ppk que você baixou quando criou o par de chaves </span><em><span>vockey2</span></em><span>.</span></li></ul><p><span>Sua tela deve ser semelhante ao exemplo a seguir:</span></p><p><img src="./images/pagent.PNG" referrerpolicy="no-referrer" alt="Captura de tela de Pageant"></p></li><li><p><span>Adicione o primeiro </span><em><span>vockey</span></em><span> que você baixou anteriormente. O nome do arquivo era </span><strong><span>labuser.\ *</span></strong><span>.</span></p><p><span>Agora você deve ter duas chaves listadas. Você pode fechar a janela do Pageant.</span></p></li><li><p><span>Na massa de vidraceiro, em </span><strong><span>Conexão &gt; SSH &gt; Auth</span></strong><span>, selecione </span><strong><span>Permitir encaminhamento de agente</span></strong><span> e deixe o </span><strong><span>arquivo de chave privada para a caixa de autenticação</span></strong><span> vazio. Depois de concluir esta etapa, continue para a Tarefa 9, etapa 32. Prossiga para se conectar ao host bastion usando PuTTY como faria normalmente, mas não abra um arquivo.ppk.</span></p></li></ol><h4 id='apenas-usuários-do-macos-ou-linux'><span>Apenas usuários do macOS ou Linux</span></h4><p><span>Para usuários do macOS, o </span><em><span>ssh-agent</span></em><span> já está instalado como parte do sistema operacional. Para adicionar suas chaves, conclua as seguintes etapas.</span></p><ol start='29' ><li><p><span>Adicione suas chaves privadas à aplicação keychain usando o comando </span><code>ssh-add</code><span>, com a opção </span><code>-K</code><span> e o </span><code>arquivo.pem</code><span> para a chave. O comando deve ser parecido com o exemplo a seguir.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">ssh-add <span class="cm-attribute">-K</span> vockey2.pem</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Certifique-se de que você adiciona as </span><em><span>chaves vockey.pem</span></em><span> e </span><em><span>vockey2.pem</span></em><span> que você baixou.</span></p><p><span>Ao adicionar a chave ao agente, você pode usar SSH para se conectar a uma instância sem usar a opção </span><code>–i</code><keyfile><span> ao se conectar.</span></p></li><li><p><span>Para verificar se as chaves estão disponíveis para ssh-agent, use o comando </span><code>ssh-add</code><span> com a opção </span><code>-L</code><span>, como o exemplo a seguir.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">ssh-add –L</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>O agente deve exibir as chaves armazenadas.</span></p></li></ol><p><span>Depois que a chave for adicionada ao seu chaveiro, você poderá se conectar à instância do host bastion com SSH usando a opção </span><code>–A</code><span>. Essa opção habilita o encaminhamento de agente SSH. Ele também permite que o agente SSH local responda a um desafio de chave pública quando você usa o SSH para se conectar do host bastion a uma instância de destino em sua VPC.</span></p><p><span>Por exemplo, para se conectar a uma instância em uma sub-rede privada, você inseriria o seguinte comando (esse comando habilita o encaminhamento do agente SSH usando a instância do host bastion):</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">ssh</span> –A ec2-user@&lt;bastion-IP-address-or-DNS-entry&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>Depois de se conectar à instância do host bastion, você pode usar o SSH para se conectar a uma instância específica inserindo um comando como este exemplo.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">ssh</span> user@&lt;instance-IP-address-or-DNS-entry&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><blockquote><p><strong><span>Observação</span></strong><span>: o ssh-agent não sabe qual chave deve usar para uma determinada conexão SSH. Portanto, o ssh-agent tentará sequencialmente todas as chaves carregadas no agente. Como as instâncias encerram a conexão após cinco tentativas de conexão com falha, verifique se o agente tem cinco ou menos chaves. Como cada administrador deve ter apenas uma única chave, isso geralmente não é um problema para a maioria das implantações. Para obter detalhes sobre como gerenciar as chaves no ssh-agent, use o comando </span><code>man ssh-agent</code><span>.</span></p></blockquote><br><h3 id='tarefa-9-testar-a-conexão-ssh-do-host-bastion'><span>Tarefa 9: testar a conexão SSH do host bastion</span></h3><p><span>Nesta tarefa, você testará a conexão SSH do host bastion para a instância do EC2 que está sendo </span><em><span>executada na sub-rede privada</span></em><span>.</span></p><ol start='32' ><li><p><span>Conecte-se à instância do host bastion usando SSH.</span></p><p><strong><span>Dica</span></strong><span>: Use o método de conexão descrito na seção de passagem SSH.</span></p></li><li><p><span>Conecte-se à instância privada usando SSH e o endereço IP da instância privada.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">ssh</span> ec2-user@&lt;private-ip-address-of-instance-in-private-subnet&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Agora que você está conectado à instância do EC2 na </span><em><span>sub-rede privada</span></em><span>, teste sua conexão com a Internet.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">ping</span> <span class="cm-number">8</span>.8.8.8</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><strong><span>Dica</span></strong><span>: Pressione CTRL+C para sair do comando</span>
+<br></p></li></ol><p><span>Agora você estabeleceu uma comunicação entre o </span><em><span>Host Bastion</span></em><span> na </span><em><span>sub-rede pública</span></em><span> e a instância do EC2 na </span><em><span>sub-rede privada</span></em><span>, como no diagrama a seguir:</span>
+<br></p><p><img src="images/module-6-challenge-lab-bastion-to-private.PNG" referrerpolicy="no-referrer" alt="bastion host para instância do EC2 privada"></p><p><br>
+<br>
+<strong><span>Melhores práticas de arquitetura</span></strong></p><p><span>Neste primeiro desafio, você implementou a melhor prática arquitetônica de </span><em><span>permitir que as pessoas realizem ações à distância.</span></em></p><details>
+	<summary>Expanda <b>aqui</b> para saber mais sobre isso.</summary>
+	De acordo com o <a href="https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html">Well-Architected Framework</a>, os recursos de computação exigem várias camadas de defesa para ajudar a protegê-los de ameaças externas e internas. Na prática, você deve remover a capacidade de acesso interativo para reduzir o risco de erro humano e o potencial de configuração ou gerenciamento manual. O Well-Architected Framework recomenda que você use um fluxo de trabalho de gerenciamento de alterações para implantar instâncias do EC2 usando a infraestrutura como código. Em seguida, você deve usar ferramentas, como o Amazon EC2 Systems Manager, para gerenciar instâncias do EC2 em vez de permitir acesso direto ou um host bastion. Para obter mais informações sobre como substituir um host bastion pelo Amazon EC2 Systems Manager, consulte esta publicação do blog de segurança <a href="https://aws.amazon.com/blogs/mt/replacing-a-bastion-host-with-amazon-ec2-systems-manager">da AWS</a>
+</details><br><h2 id='novo-requisito-de-negócios-aprimorando-a-camada-de-segurança-para-recursos-privados-desafio-2'><span>Novo requisito de negócios: Aprimorando a camada de segurança para recursos privados (Desafio #2)</span></h2><p><span>Sofía e Nikhil estão orgulhosos das mudanças que fizeram na arquitetura de aplicações da cafeteria. Eles ficam satisfeitos com a segurança adicional que construíram e também estão felizes em ter um ambiente de teste que podem usar antes de implantar atualizações na instância de produção. Eles contam ao Mateo sobre sua nova arquitetura de aplicações e ele fica impressionado! Para melhorar ainda mais a segurança de seus aplicações, Mateo aconselha a criar uma camada adicional de segurança usando listas de controle de acesso à rede personalizadas (Network ACLs).</span></p><p><span>Neste desafio, você continuará a assumir o papel de um dos administradores de sistemas da cafeteria. Agora que você estabeleceu acesso seguro do host bastion para a instância do EC2 na sub-rede privada, você deve aprimorar a camada de segurança da sub-rede privada. Para realizar essa tarefa, você criará e configurará uma Network ACL personalizada.</span></p><br><h3 id='tarefa-10-criar-uma-network-acl'><span>Tarefa 10: criar uma Network ACL</span></h3><p><span>Nesta tarefa, você criará uma rede personalizada ACL para controlar o tráfego de e para a </span><em><span>sub-rede privada</span></em><span>.</span></p><p><span>Você pode usar Network ACLs para controlar o tráfego entre sub-redes. É uma boa prática usar Network ACLs para implementar regras semelhantes às regras do grupo de segurança. As Network ACLs fornecem uma camada adicional de proteção.</span></p><p><span>Para este desafio, você criará uma instância do EC2 na </span><em><span>sub-rede pública</span></em><span>. Você criará um grupo de segurança que permita o tráfego do Internet Control Message Protocol (ICMP) da rede local. Em seguida, criará e configurará sua rede personalizada ACL para negar o tráfego ICMP entre a </span><em><span>sub-rede privada</span></em><span> e esta instância de teste. O ICMP é usado pelo utilitário </span><em><span>ping</span></em><span>.</span></p><ol start='35' ><li><p><span>Acesse o </span><strong><span>console da Amazon VPC</span></strong><span>e inspecione a Network ACL padrão do </span><em><span>Lab VPC</span></em><span>.</span></p><p><strong><span>Nota 1</span></strong><span>: As sub-redes que você criou são associadas automaticamente à rede padrão ACL.</span><br/><strong><span>Nota 2</span></strong><span>: As regras de entrada e de saída da rede padrão ACL </span><em><span>permitem</span></em><span> todo o tráfego.</span></p></li></ol><ol start='36' ><li><p><span>Crie uma Network ACL personalizada chamada </span><code>Lab Network ACL</code><span> para o </span><em><span>Lab VPC</span></em><span>.</span></p><p><strong><span>Nota</span></strong><span>: As regras de entrada e de saída padrão da rede feita sob encomenda ACL </span><em><span>negam</span></em><span> todo o tráfego.</span></p></li></ol><ol start='37' ><li><p><span>Configure sua rede personalizada ACL para </span><em><span>permitir TODO o tráfego que entra e sai da</span></em><span> </span><em><span>sub-rede privada</span></em><span>.</span></p><p><strong><span>Dica</span></strong><span>: se você não souber como fazer isso, consulte os exemplos na </span><a href='https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html#CreateACL'><span>Documentação da AWS</span></a><span>.</span></p></li></ol><br><h3 id='tarefa-11-testar-a-network-acl-personalizada'><span>Tarefa 11: testar a Network ACL personalizada</span></h3><ol start='38' ><li><p><span>Crie uma instância do EC2 na </span><em><span>sub-rede pública</span></em><span> da </span><em><span>Lab VPC</span></em><span>. Ela deve atender aos seguintes critérios.</span></p><ul><li><span>AMI: </span><em><span>Amazon Linux 2 AMI (HVM)</span></em></li><li><span>Instance Type (Tipo de instância): </span><em><span>t2.micro</span></em></li><li><span>Nome: </span><code>Instância de teste</code></li><li><span>Permite </span><em><span>todo tráfego de entrada ICMP – IPv4</span></em><span> para a instância por meio do grupo de segurança</span></li></ul></li></ol><ol start='39' ><li><p><span>Observe o endereço IP privado da </span><em><span>instância de teste</span></em><span>.</span></p></li><li><p><span>Teste que você pode alcançar o endereço IP privado da Instância de </span><em><span>teste a partir da Instância</span></em><span> </span><em><span>Privada</span></em><span>. Na janela de terminal </span><em><span>Instância Privada</span></em><span>, execute o seguinte comando ping:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">ping</span> &lt;private-ip-address-of-test-instance&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Deixe o utilitário </span><em><span>ping</span></em><span> em execução.</span></p></li><li><p><span>Modifique sua rede personalizada ACL para </span><em><span>negar todo o tráfego ICMP — IPv4 ao</span></em><span> </span><code>/32</code><private-ip-address-of-test-instance></p><ul><li><span>Certifique-se de adicionar </span><code>/32</code><span> ao final do endereço IP privado.</span></li><li><span>Certifique-se de que esta regra seja avaliada </span><strong><em><span>primeiro</span></em></strong><span>.</span></li></ul></li><li><p><span>Na janela do terminal da </span><em><span>instância privada</span></em><span>, o comando ping deve parar de responder. O tráfego para a </span><em><span>instância de teste</span></em><span> foi bloqueado.</span></p></li></ol><br><p><span>Agora você negou o tráfego da </span><em><span>sub-rede privada</span></em><span> para a </span><em><span>instância de teste</span></em><span>, conforme mostrado no diagrama a seguir:</span></p><br><p><img src="images/module-6-challenge-lab-private-to-test.PNG" referrerpolicy="no-referrer" alt="instância privada do EC2 para testar a instância do EC2"></p><p><br>
+<br>
+<strong><span>Melhores práticas de arquitetura</span></strong></p><p><span>Neste segundo desafio, você protegeu seus recursos de rede implementando a melhor prática arquitetônica de </span><em><span>controlar o tráfego em todas as camadas</span></em><span>.</span></p><details>
+	<summary>Expanda <b>aqui</b> para saber mais sobre isso.</summary>
+	De acordo com o <a href="https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html">Well-Architected Framework</a>, qualquer carga de trabalho que tenha alguma forma de conectividade de rede, seja a Internet ou uma rede privada, requer várias camadas de defesa para ajudar a protegê-lo contra ameaças externas e internas baseadas em rede. Quando você controla o tráfego em todas as camadas, você aplica várias camadas de controles de segurança (conhecidas como uma abordagem de <i>defesa em profundidade</i>) para tráfego de entrada e saída. Por exemplo, você faz isso na Amazon VPC usando grupos de segurança, Network ACLs e sub-redes.
+</details><br><h2 id='responder-às-perguntas-sobre-o-laboratório'><span>Responder às perguntas sobre o laboratório</span></h2><p><span>As respostas serão gravadas quando você escolher o botão azul </span><strong><span>Submit</span></strong><span> (Enviar) acima no fim do laboratório.</span></p><ol start='44' ><li><span>Acesse as perguntas deste laboratório.</span></li></ol><ul><li><span>Escolha o menu </span><span id="ssb_voc_grey"><span>Details (Detalhes) </span><i class="fas fa-angle-down"></i></span>
+<span>e escolha </span><span id="ssb_voc_grey"><span>Show</span></span><span> (Mostrar).</span></li><li><span>Escolha o link </span><strong><span>Access the multiple choice questions</span></strong><span> (Acessar as perguntas de múltipla escolha) que aparece na parte inferior da página.</span></li></ul><ol start='45' ><li><p><span>Na página que você carregou, responda às seguintes perguntas:</span></p><ul><li><strong><span>Pergunta 1</span></strong><span>: Qual é o propósito do gateway da Internet na sub-rede pública?</span></li><li><strong><span>Pergunta 2</span></strong><span>: O que permite que a instância na sub-rede privada se conecte à Internet para que ela possa baixar atualizações?</span></li><li><strong><span>Pergunta 3</span></strong><span>: A instância na sub-rede privada pode ser acessada diretamente da Internet?</span></li><li><strong><span>Pergunta 4</span></strong><span>: Por que você usa dois pares de chaves diferentes para acessar a instância privada e o host bastion?</span></li><li><strong><span>Pergunta 5</span></strong><span>: O host bastion pode usar ping e obter uma resposta da instância na sub-rede privada?</span></li><li><strong><span>Pergunta 6</span></strong><span>: Quais regras de grupo de segurança permitem que a instância do EC2 privada receba o tráfego de retorno depois de fazer ping da instância de teste?</span></li></ul></li></ol><br><h2 id='enviar-o-trabalho'><span>Enviar o trabalho</span></h2><ol start='46' ><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_blue"><span>Submit</span></span><span> (Enviar) para gravar o progresso e, quando solicitado, escolha </span><strong><span>Yes</span></strong><span> (Sim).</span></p></li><li><p><span>Se os resultados não forem exibidos após alguns minutos, volte ao topo destas instruções e escolha </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Notas).</span></p><p><strong><span>Dica</span></strong><span>: você pode enviar seu trabalho várias vezes. Depois de alterar o trabalho, escolha </span><strong><span>Submit</span></strong><span> (Enviar) novamente. Seu último envio é o que será gravado para este laboratório.</span></p></li><li><p><span>Para ver o feedback detalhado do seu trabalho, escolha </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalhes) e depois </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Visualizar relatório de envio).</span></p></li></ol><br><h2 id='laboratório-concluído'><span>Laboratório concluído</span></h2><p><i class="fas fa-flag-checkered"></i><span> Parabéns! Você concluiu o laboratório.</span></p><ol start='49' ><li><p><span>Para confirmar que você deseja encerrar o laboratório, escolha </span><strong><span id="ssb_voc_grey"><span>End Lab</span></span></strong><span> (Encerrar laboratório) na parte superior desta página e escolha </span><strong><span id="ssb_blue"><span>Yes</span></span></strong><span> (Sim).</span></p><p><span>Será exibido um painel com a mensagem: </span><em><span>DELETE has been initiated... You may close this message box now. (A EXCLUSÃO foi iniciada... Você pode fechar esta caixa de mensagem agora).</span></em></p></li></ol><ol start='50' ><li><span>Escolha o </span><strong><span>X</span></strong><span> no canto superior direito para fechar o painel.</span></li></ol><p>&nbsp;</p><p><br>
+<em><span>©2020 Amazon Web Services, Inc. e suas afiliadas. Todos os direitos reservados. Este trabalho não pode ser reproduzido ou redistribuído, no todo ou em parte, sem permissão prévia por escrito da Amazon Web Services, Inc. É proibido copiar, emprestar ou vender para fins comerciais.</span></em></p></div></div>
+</body>
+</html>

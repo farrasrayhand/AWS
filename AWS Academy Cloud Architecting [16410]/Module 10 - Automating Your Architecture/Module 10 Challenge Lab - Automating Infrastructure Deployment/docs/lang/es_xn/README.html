@@ -1,0 +1,1163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='módulo 10---laboratorio-de-desafíos-automatización-de-la-implementación-de-infraestructura'><span>Módulo 10 - Laboratorio de desafíos: Automatización de la implementación de infraestructura</span></h1><h2 id='caso'><span>Caso</span></h2><p><span>Hasta este momento, el personal de la cafetería creaba sus recursos de AWS y configuraba manualmente sus aplicaciones, principalmente mediante la consola de administración de AWS. Este enfoque sirvió para que la cafetería desarrollara una presencia web rápidamente. Sin embargo, les resulta difícil replicar sus implementaciones en nuevas regiones de AWS para poder admitir nuevas ubicaciones de la cafetería en varios países. También les gustaría tener entornos de desarrollo y producción separados que tengan configuraciones equivalentes de forma fiable.</span></p><p><span>En este laboratorio de desafíos, asumirá el rol de Sofía mientras trabaja para automatizar las implementaciones de la cafetería y replicarlas en otra región de AWS.</span></p><p>&nbsp;</p><h2 id='información-general-y-objetivos-del-laboratorio'><span>Información general y objetivos del laboratorio</span></h2><p><span>En este laboratorio, obtendrá experiencia en la creación de plantillas de AWS CloudFormation. Utilizará las plantillas para crear y actualizar pilas de AWS CloudFormation. Las pilas crean y administran actualizaciones de recursos en varias áreas de servicio de AWS de su cuenta de AWS. Practicará el uso de AWS CodeCommit para controlar la versión de sus plantillas. También observará cómo puede utilizar AWS CodePipeline para automatizar las actualizaciones de la pila.</span></p><p><span>Después de completar este laboratorio, debería ser capaz de lo siguiente:</span></p><ul><li><span>Implementar una capa de red de nube privada virtual (VPC) mediante una plantilla de AWS CloudFormation</span></li><li><span>Implementar una capa de aplicación mediante una plantilla de AWS CloudFormation</span></li><li><span>Utilizar Git para invocar AWS CodePipeline y para crear o actualizar pilas a partir de plantillas almacenadas en AWS CodeCommit</span></li><li><span>Duplicar recursos de red y aplicaciones en otra región de AWS mediante AWS CloudFormation</span></li></ul><p>&nbsp;</p><p><span>Cuando </span><em><span>inicie</span></em><span> el laboratorio, ya estarán creados los siguientes recursos en la cuenta de AWS:</span></p><p><img src="images/start-arch.png" referrerpolicy="no-referrer" alt="arquitectura inicial"></p><p><span>Tenga en cuenta que en este laboratorio de desafíos encontrará algunas tareas que no incluyen instrucciones paso a paso. Debe darse cuenta sin ayuda de cómo completar las tareas.</span></p><p>&nbsp;</p><h2 id='duración'><span>Duración</span></h2><p><span>Para completar este laboratorio, se necesitan aproximadamente </span><strong><span>90 minutos</span></strong><span>.</span></p><p>&nbsp;</p><h2 id='restricciones-de-los-servicios-de-aws'><span>Restricciones de los servicios de AWS</span></h2><p><span>En este entorno de laboratorio, el acceso a los servicios y las acciones de los servicios de AWS puede restringirse a los que se necesiten para cumplir las instrucciones del laboratorio. Es posible que se produzcan errores si intenta acceder a otros servicios o hacer acciones que no sean las que se describen en este laboratorio.</span></p><p>&nbsp;</p><h2 id='acceso-a-la-consola-de-administración-de-aws'><span>Acceso a la consola de administración de AWS</span></h2><ol start='' ><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratorio) y comience a trabajar en él.</span></p><p><span>Se abrirá el panel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratorio), donde se muestra el estado del laboratorio.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Sugerencia</span></strong><span>: Si alguna vez necesita más tiempo para completar el laboratorio que el que se muestra en el temporizador, elija el botón </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratorio) de nuevo para reiniciar el temporizador del entorno. Esta acción no eliminará los recursos que haya creado.</span></p></li><li><p><span>Espere hasta que aparezca el mensaje </span><em><span>Lab status: ready (Estado del laboratorio: listo)</span></em><span> y, a continuación, haga clic en </span><strong><span>X</span></strong><span> para cerrar el panel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratorio).</span></p></li><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>Esto abrirá la consola de administración de AWS en una nueva pestaña del navegador y el sistema iniciará su sesión de forma automática.</span></p><p><strong><span>Sugerencia</span></strong><span>: Si no se abre una nueva pestaña del navegador, por lo general habrá un aviso o un icono en la parte superior, el cual indicará que el navegador impide que el sitio abra ventanas emergentes. Haga clic en el aviso o el icono y elija </span><strong><span>Allow pop ups</span></strong><span> (Permitir ventanas emergentes).</span></p></li><li><p><span>Ubique la pestaña de la consola de administración de AWS de modo que aparezca junto con estas instrucciones. El método más óptimo sería tener ambas pestañas del navegador abiertas al mismo tiempo para que pueda seguir los pasos del laboratorio más fácilmente.</span></p><p><strong><span>Nota</span></strong><span>: Para ocultar la ventana del terminal, puede desactivar la casilla </span><strong><span>Terminal</span></strong><span> (Terminal) en la parte superior de la pantalla.</span></p></li></ol><p>&nbsp;</p><h2 id='una-solicitud-empresarial-crear-un-sitio-web-estático-para-la-cafetería-mediante-aws cloudformation-desafío-nº 1'><span>Una solicitud empresarial: crear un sitio web estático para la cafetería mediante AWS CloudFormation (Desafío n.º 1)</span></h2><p><span>La cafetería desea comenzar a utilizar AWS CloudFormation para crear y mantener recursos en la cuenta de AWS. A modo de primer intento de este proceso, asumirá el rol de Sofía y creará una plantilla simple de AWS CloudFormation que pueda utilizarse para crear un bucket de Amazon Simple Storage Service (Amazon S3). A continuación, agregará más detalles a la plantilla, de manera que cuando actualice la pila, esta configure el bucket para alojar un sitio web estático para la cafetería.</span></p><p>&nbsp;</p><h3 id='tarea 1-crear-una-plantilla-de-aws cloudformation-desde-cero'><span>Tarea 1: Crear una plantilla de AWS CloudFormation desde cero</span></h3><p><span>En esta primera tarea, creará una plantilla de AWS CloudFormation que cree un depósito de S3. A continuación, ejecutará un comando la interfaz de línea de comandos de AWS (CLI de AWS) que creó la pila AWS CloudFormation. (La pila es el recurso que crea el bucket).</span></p><p>&nbsp;</p><ol start='5' ><li><span>Navegue hasta el servicio AWS Cloud9 y abra el entorno de desarrollo integrado (IDE) de la instancia de AWS Cloud9 existente.</span></li></ol><p>&nbsp;</p><ol start='6' ><li><span>En el IDE de AWS Cloud9, elija </span><strong><span>File &gt; New File (Archivo &gt; Nuevo archivo)</span></strong><span>, y, a continuación, seleccione </span><strong><span>File &gt; Save (Archivo &gt; Guardar)</span></strong><span>, y guarde el nuevo archivo como: </span><code>S3.yaml</code></li></ol><p>&nbsp;</p><ol start='7' ><li><p><span>En la parte superior del archivo, agregue las siguientes dos líneas:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">AWSTemplateFormatVersion</span><span class="cm-meta">: </span><span class="cm-string">"2010-09-09"</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">Description</span><span class="cm-meta">:</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div><div class="CodeMirror-gutters" style="display: none; height: 46px;"></div></div></div></pre></li></ol><p>&nbsp;</p><ol start='8' ><li><p><span>A continuación, agregue las tres líneas siguientes a la plantilla:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">Resources</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  S3Bucket</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Type</span><span class="cm-meta">: </span>AWS<span class="cm-meta">::</span>S3<span class="cm-meta">::</span>Bucket</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 69px;"></div><div class="CodeMirror-gutters" style="display: none; height: 69px;"></div></div></div></pre><p><strong><span>Sugerencia</span></strong><span>: Asegúrese de mantener el número correcto de espacios para cada nivel de sangría. La línea </span><code>Resources (recursos):</code><span> no debe tener sangría. La línea </span><code>S3Bucket:</code><span> debe mantener una sangría de 2 espacios. Por último, la línea </span><code>Type: AWS::S3::Bucket</code><span> debe mantener una sangría de 4 espacios.</span></p><p><i class="fas fa-info-circle"></i><span>AWS CloudFormation admite la especificación YAML versión 1.1, con algunas excepciones. Para obtener más información acerca de YAML, visite </span><a href='http://www.yaml.org/'><span>el sitio web de YAML</span></a><span>.</span></p></li></ol><p>&nbsp;</p><ol start='9' ><li><p><span>Agregue una descripción (como </span><code>“cafe S3 template”</code><span>) en la línea </span><strong><span>Description</span></strong><span> (descripción):. Antes de comenzar la descripción, asegúrese de tener un espacio </span><em><span>después de</span></em><span> los dos puntos (:). Después de escribir la descripción, </span><strong><span>guarde</span></strong><span> los cambios en el archivo.</span></p><p><i class="fas fa-info-circle"></i><span> En el laboratorio guiado anterior de este módulo, utilizó la consola de administración de AWS para crear una pila de AWS CloudFormation. Aquí, utilizará la CLI de AWS en su lugar.</span></p></li></ol><p>&nbsp;</p><ol start='10' ><li><p><span>En el terminal Bash, ejecute estas dos líneas de código:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws configure <span class="cm-builtin">get</span> region</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws cloudformation create-stack <span class="cm-attribute">--stack-name</span> CreateBucket <span class="cm-attribute">--template-body</span> file://S3.yaml</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 69px;"></div><div class="CodeMirror-gutters" style="display: none; height: 69px;"></div></div></div></pre><p><span>La primera línea de código que ejecutó devolvió la región de AWS predeterminada del cliente de la CLI de AWS que está instalado en la instancia de AWS Cloud9. Puede modificar la región predeterminada de AWS ejecutando </span><code>aws configure</code><span>. Sin embargo, para este laboratorio, debe mantener la región predeterminada.</span></p><p><span>La segunda línea de código que ejecutó creó una pila que utilizaba la plantilla que definió. Dado que no especificó la región en el comando, la pila se creará en la región predeterminada.</span></p><p><span>Si el comando </span><code>create-stack</code><span> se ejecutó correctamente, debería ver alguna salida con formato de notación de objetos JavaScript (JSON). Esta salida debe indicar un </span><em><span>ID de pila</span></em><span>.</span></p><p><span>Este diagrama ilustra las acciones que acaba de completar.</span></p><p><img src="images/s3stack.png" referrerpolicy="no-referrer" alt="codepipeline"></p></li><li><p><span>En la consola de administración de AWS, diríjase al servicio AWS CloudFormation y observe los detalles de la pila </span><em><span>CreateBucket</span></em><span>.</span></p><p><span>Por ejemplo, observe la información en las pestañas </span><strong><span>Events</span></strong><span> (Eventos), </span><strong><span>Resources</span></strong><span> (Recursos), </span><strong><span>Outputs</span></strong><span> (Resultados), y </span><strong><span>Template</span></strong><span> (Plantilla).</span></p></li></ol><p>&nbsp;</p><ol start='12' ><li><p><span>Vaya a la página de servicio de Amazon S3 para observar el bucket que creó la plantilla.</span></p><p><strong><span>Sugerencia</span></strong><span>: El bucket tiene el nombre de bucket </span><em><span>createbucket-s3bucket-</span>&lt;<span>random-string</span>&gt;</em><span>.</span></p></li></ol><p>&nbsp;</p><h4 id='cómo-responder-a-preguntas-sobre-la-pila-de-aws cloudformation'><span>Cómo responder a preguntas sobre la pila de AWS CloudFormation</span></h4><p><span>Las respuestas se registrarán cuando haga clic el botón azul </span><strong><span>Submit</span></strong><span> (enviar) que está al final del laboratorio.</span></p><p>&nbsp;</p><ol start='13' ><li><p><span>Acceda a las preguntas de este laboratorio.</span></p><ul><li><span>Elija el menú </span><span id="ssb_voc_grey"><span>Details (Detalles) </span><i class="fas fa-angle-down"></i></span><span> y después </span><span id="ssb_voc_grey"><span>Show</span></span><span> (Mostrar).</span></li><li><span>Elija el enlace </span><strong><span>Access the multiple choice questions</span></strong><span> (Acceder a las preguntas de opción múltiple) que aparece en la parte inferior de la página.</span></li></ul></li></ol><p>&nbsp;</p><ol start='14' ><li><p><span>En la página que cargó, envíe respuestas para cada una de las siguientes preguntas:</span></p><ul><li><strong><span>Pregunta 1:</span></strong><span> ¿Se creó un bucket de S3, incluso si no se le especificó un nombre? Si la respuesta es afirmativa, ¿qué nombre se le asignó?</span></li><li><strong><span>Pregunta 2:</span></strong><span> ¿En qué región se creó el bucket y por qué se creó allí?</span></li><li><strong><span>Pregunta 3:</span></strong><span> Para definir un bucket de S3, ¿cuántas líneas de código necesitó escribir en la sección </span><code>Resources (recursos):</code><span> del archivo de la plantilla?</span></li></ul><p><strong><span>Nota:</span></strong><span> Deje abierta la pestaña del navegador que contiene las preguntas, para poder volver a ella más adelante en el laboratorio.</span></p></li></ol><p>&nbsp;</p><h3 id='tarea 2-configurar-el-bucket-como-un-sitio-web-y-actualizar-la-pila'><span>Tarea 2: Configurar el bucket como un sitio web y actualizar la pila</span></h3><p><span>En la siguiente tarea, actualizará la plantilla de AWS CloudFormation. La actualización configurará el bucket de S3 para alojar un sitio web estático. Esta tarea es similar a los resultados del laboratorio de desafíos del Módulo 3. En ese laboratorio de desafíos, creó y configuró el bucket de S3 manualmente mediante la consola de administración de AWS. Sin embargo, en este laboratorio, configurará el bucket mediante una plantilla de AWS CloudFormation.</span></p><p>&nbsp;</p><ol start='15' ><li><p><span>Cargue activos estáticos del sitio web en el bucket.</span></p><p><span>Para realizar esta tarea, ejecute los siguientes comandos en el terminal Bash (reemplace </span>&lt;<em><span>bucket-name</span></em><span>&amp;gt por el nombre real del bucket):</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.25px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod10-challenge/static-website.zip</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">unzip static-website.zip <span class="cm-attribute">-d</span> static</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> static</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws s3 <span class="cm-builtin">cp</span> <span class="cm-attribute">--recursive</span> . s3://&lt;bucket-name&gt;/ <span class="cm-attribute">--acl</span> public-read</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 115px;"></div><div class="CodeMirror-gutters" style="display: none; height: 115px;"></div></div></div></pre><p><span>Si estas operaciones son correctas, debería ver numerosos mensajes que dicen </span><em><span>upload:</span>&lt;<span>file_name</span>&gt;</em><span> en la salida de comandos.</span></p></li></ol><p>&nbsp;</p><ol start='16' ><li><p><span>En una nueva pestaña del navegador, abra la documentación de la plantilla de AWS CloudFormation para definir los recursos del bucket de S3.</span></p><ul><li><span>Vaya a la documentación </span><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html"><span>Referencia de tipos de recursos y propiedades de AWS</span></a></li><li><span>Desplácese hacia abajo, elija </span><strong><span>Amazon S3</span></strong><span> y, a continuación, elija el tipo de recurso </span><strong><span>AWS::S3::Bucket</span></strong><span>.</span></li></ul></li></ol><p>&nbsp;</p><ol start='17' ><li><p><span>Utilizando la documentación como referencia, modifique su plantilla S3.yaml para establecer las siguientes características en el recurso del bucket de S3:</span></p><ul><li><span>Asociar una </span><em><span>política de eliminación</span></em><span> que retenga el bucket.</span></li><li><span>Configurar el bucket para alojar un sitio web estático con </span><em><span>index.html</span></em><span> establecido como documento de índice</span></li></ul><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Sugerencia</span></strong><span>: Puede realizar esta tarea agregando dos líneas de código adicionales a su plantilla. Consulte el código en la sección </span><em><span>Examples (Ejemplos)</span></em><span> de la página de documentación que abrió en el último paso.</span></p></li></ol><p>&nbsp;</p><ol start='18' ><li><p><span>Agregue una </span><em><span>resultado</span></em><span> que proporcione la URL del sitio web a su plantilla de AWS CloudFormation.</span></p><p><span>Una vez más, consulte la sección </span><strong><span>Examples</span></strong><span> (Ejemplos) de la documentación como referencia.</span></p></li></ol><p>&nbsp;</p><ol start='19' ><li><span>Guarde los cambios en el archivo S3.yaml.</span></li></ol><p>&nbsp;</p><ol start='20' ><li><p><span>Valide la plantilla.</span></p><p><span>De vuelta en el terminal Bash, vuelva a cambiar el directorio a la ubicación del archivo S3.yaml y valide su plantilla ejecutando los siguientes comandos.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> ../</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws cloudformation validate-template <span class="cm-attribute">--template-body</span> file://S3.yaml</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div><div class="CodeMirror-gutters" style="display: none; height: 46px;"></div></div></div></pre><p><span>Si la salida indica que la plantilla tiene errores de sintaxis o de otro tipo, corríjalos y, a continuación, ejecute de nuevo el comando para comprobar que se hayan resuelto.</span></p></li></ol><p>&nbsp;</p><ol start='21' ><li><p><span>Actualice la pila ejecutando este comando:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.25px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws cloudformation update-stack <span class="cm-attribute">--stack-name</span> CreateBucket <span class="cm-attribute">--template-body</span> file://S3.yaml</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div><div class="CodeMirror-gutters" style="display: none; height: 46px;"></div></div></div></pre><p><strong><span>Sugerencia</span></strong><span>: Es importante utilizar la sintaxis YAML adecuada. Si recibe un </span><em><span>ValidationError (Error de validación)</span></em><span>cuando ejecute el comando </span><code>update-stack</code><span>, revise el uso de dos puntos y confirme que ha mantenido la sangría en cada línea correctamente. Las plantillas de ejemplo de la documentación proporcionan una buena referencia de plantillas YAML bien estructuradas.</span></p></li></ol><p>&nbsp;</p><ol start='22' ><li><p><span>Vaya al servicio AWS CloudFormation y confirme que la actualización de la pila se haya completado correctamente.</span></p><ul><li><p><span>La pila debe mostrar el estado </span><em><span>UPDATE_COMPLETE (ACTUALIZACIÓN COMPLETADA)</span></em><span>.</span></p></li><li><p><span>Si la pila no obtiene el estado de </span><em><span>UPDATE_COMPLETE</span></em><span>, pruebe estas sugerencias de solución de problemas.</span></p><ul><li><span>Si ve que la pila tiene el estado </span><em><span>ROLLBACK (RESTAURACIÓN)</span></em><span> de algún tipo, vaya a la pestaña </span><strong><span>Events</span></strong><span> (Eventos) y busque una entrada </span><em><span>UPDATE_FAILED (ACTUALIZACIÓN FALLIDA)</span></em><span>. (Lea el motivo de </span><em><span>Status [Estado]</span></em><span> de ese evento para comprender por qué falló la actualización de la pila).</span></li><li><span>Cuando considere que ha resuelto error, vuelva a ejecutar el comando </span><code>update-stack</code><span>. En la consola, vuelva a la pila de AWS CloudFormation y vaya a la pestaña </span><strong><span>Events</span></strong><span> (Eventos) para confirmar si actualizó correctamente la pila.</span></li><li><span>Repita este procedimiento según sea necesario.</span></li></ul></li></ul></li></ol><p>&nbsp;</p><ol start='23' ><li><p><span>Compruebe que se haya realizado correctamente.</span></p><ul><li><p><span>¿La pestaña </span><strong><span>Outputs</span></strong><span> (Resultados) de la pila muestra un resultado con un valor de URL? Si es así, haga clic en el enlace.</span></p></li><li><p><span>¿Se abre el sitio web estático? (Ha copiado previamente los activos del sitio web en el bucket).</span></p><p><span>Si es así, ¡felicitaciones!</span></p><p><strong><span>Nota:</span></strong><span> Si la pila no tiene ningún resultado, o si el hipervínculo del resultado no muestra el contenido del sitio web de la cafetería, puede intentar estos pasos de solución de problemas.</span></p><ul><li><p><span>Vaya a la consola de Amazon S3 y elija su bucket. La pestaña </span><strong><span>Overview</span></strong><span> (Información general) debe enumerar el archivo index.html y dos carpetas llamadas </span><em><span>css</span></em><span> e </span><em><span>imágenes</span></em><span>. Si estos recursos no aparecen en la lista, recomendamos que vuelva a repasar el primer paso de esta sección de desafíos.</span></p></li><li><p><span>Elija el archivo </span><strong><span>index.html</span></strong><span> y, a continuación, elija </span><strong><span>Permissions</span></strong><span> (Permisos). En </span><strong><span>Public access</span></strong><span> (Acceso público), el valor del </span><strong><span>Read object</span></strong><span> (Objeto de lectura) debe ser </span><em><span>Yes (Sí)</span></em><span>.</span></p></li><li><p><span>Vuelva a la vista del bucket. En la pestaña </span><strong><span>Properties</span></strong><span> (Propiedades) confirme que </span><i class="fas fa-check-circle" style="color:purple"></i><span> </span><strong><span>Static website hosting</span></strong><span> (El alojamiento de sitio web estático) está habilitado, con un </span><strong><span>Hosting type</span></strong><span> (Tipo de alojamiento) de </span><em><span>Bucket</span></em><span>.</span></p></li><li><p><span>Todos los permisos y las propiedades que se describen en esta lista deben establecerse en la plantilla S3.yaml. Si es necesario, ajuste los detalles de la plantilla y vuelva a ejecutar el comando </span><code>update-stack</code><span> de la CLI de AWS.</span></p><p><strong><span>Nota:</span></strong><span> En este primer desafío, copió manualmente los archivos del sitio web en el bucket. También puede realizar esta acción utilizando un recurso personalizado de AWS CloudFormation, combinado con una función de AWS Lambda. Ambos recursos se pueden definir en una plantilla de AWS CloudFormation. Este enfoque representa un uso más avanzado de AWS CloudFormation que va más allá del alcance de este laboratorio. Sin embargo, si está interesado en este tema, puede consultar la página de </span><a href='https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources-lambda.html'><span>Recursos personalizados y respaldados por AWS Lambda</span></a><span> en la documentación de AWS.</span></p></li></ul></li></ul></li></ol><p>&nbsp;</p><h2 id='nuevo-requisito-empresarial-almacenar-plantillas-en-un-sistema-de-control-de-versiones-desafío-nº 2'><span>Nuevo requisito empresarial: almacenar plantillas en un sistema de control de versiones (Desafío n.º 2)</span></h2><p><span>El equipo de la cafetería quedó impresionado de que Sofía haya configurado un sitio web estático completo utilizando una plantilla de AWS CloudFormation. Dado este éxito, el equipo decidió que le gustaría ampliar su uso de Infrastructure as Code (IaC) para crear otros recursos de aplicaciones en la cuenta de AWS.</span></p><p><span>El equipo entiende que es una práctica recomendada almacenar las plantillas de IaC en un sistema de control de versiones, así que le pidieron a Sofía que aceptara el desafío. Cuando Mateo pasó por la cafetería, Sofía le comentó sobre este nuevo requisito empresarial. Él mencionó que AWS CodeCommit sería una buena opción para almacenar plantillas y administrar el control de sus versiones. Mateo creó un repositorio de CodeCommit que contiene algunas plantillas de ejemplo de AWS CloudFormation. Sofía está ansiosa por comenzar a utilizar este repositorio de código.</span></p><p>&nbsp;</p><h3 id='tarea 3-clonar-un-repositorio-codecommit-que-contiene-plantillas-de-aws cloudformation'><span>Tarea 3: Clonar un repositorio CodeCommit que contiene plantillas de AWS CloudFormation</span></h3><p><span>En esta tarea, trabajará como Sofía para clonar un repositorio CodeCommit. El equipo de la cafetería utilizará el repositorio para almacenar y controlar las versiones de las plantillas de AWS CloudFormation.</span></p><p>&nbsp;</p><ol start='24' ><li><span>Diríjase al servicio CodeCommit y, en su cuenta, observe el repositorio llamado </span><em><span>CFTemplatesRepo</span></em><span>.</span></li></ol><p><img src="images/code-commit.png" referrerpolicy="no-referrer" alt="codecommit"></p><p><i class="fas fa-info-circle"></i><span> CodeCommit es un servicio de control de código fuente que se puede utilizar para alojar repositorios basados en Git. Se puede utilizar de una manera similar a los repositorios de GitHub. Para obtener más información acerca de AWS CodeCommit, consulte la </span><a href='https://aws.amazon.com/codecommit/'><span>documentación de AWS</span></a><span>.</span></p><p>&nbsp;</p><ol start='25' ><li><p><span>Elija </span><strong><span>CFTemplatesRepo</span></strong><span> y luego elija la carpeta </span><strong><span>Templates</span></strong><span> (Plantillas).</span></p><p><span>Observe que contiene plantillas de AWS CloudFormation.</span></p><p><i class="fas fa-info-circle"></i><span> En esta parte del laboratorio, almacenará sus plantillas de IaC de AWS CloudFormation en CodeCommit.</span></p></li></ol><p>&nbsp;</p><ol start='26' ><li><p><span>Abra el archivo </span><em><span>CFTemplatesRepo/templates/</span><strong><span>start-lab.yaml</span></strong></em><span> y analice el contenido.</span></p><ul><li><p><span>Observe que esta plantilla define algunos de los recursos que vio en esta cuenta de AWS.</span></p></li><li><p><span>Por ejemplo:</span></p><ul><li><span>A partir de la línea 6, la plantilla define una </span><em><span>instancia de AWS Cloud9</span></em></li><li><span>A partir de la línea 12, la plantilla define el </span><em><span>repositorio de CodeCommit</span></em><span> que tiene abierto</span></li></ul><p><i class="fas fa-info-circle"></i><span> La plataforma de laboratorio que aloja este laboratorio creó una pila de AWS CloudFormation cuando seleccionó </span><strong><span>Start Lab</span></strong><span> (Iniciar Laboratorio). La plantilla de AWS CloudFormation que la pila ejecutó incluye las definiciones de recursos contenidas en esta plantilla. Sin embargo, esta plantilla de ejemplo no contiene todas las definiciones de recursos que se encuentran en la plantilla </span><em><span>real</span></em><span> que se utilizó para iniciar este laboratorio.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='27' ><li><p><span>En las rutas de navegación del extremo superior de la página, elija </span><strong><span>Repositories</span></strong><span> (Repositorios) y en la columna </span><strong><span>Clone URL</span></strong><span> (Clonar URL), elija </span><strong><span>HTTPS</span></strong><span>.</span></p><p><i class="fas fa-info-circle"></i><span> Esta acción copia la URL clonada en HTTPS del repositorio de CodeCommit al portapapeles.</span></p></li></ol><p>&nbsp;</p><ol start='28' ><li><p><span>Vuelva al IDE de AWS Cloud9 y clone el repositorio de CodeCommit existente a su espacio de trabajo (reemplace </span>&lt;<em><span>url</span></em>&gt;<span> con la URL clonada que copió)</span></p><p><span>En el terminal Bash del IDE de AWS Cloud9, escriba este comando:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">git</span> clone &lt;url&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><p><span>Este comando clona una copia del repositorio de CodeCommit que acaba de observar. El comando crea un directorio </span><em><span>CFTemplateSrepo</span></em><span> que debería aparecer ahora en el panel de navegación (que es el panel izquierdo del IDE).</span></p><p><span>Utilice el software cliente Git para analizar la copia local del repositorio.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> CFTemplatesRepo</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">git</span> status</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div><div class="CodeMirror-gutters" style="display: none; height: 46px;"></div></div></div></pre><p><img src="images/git-clone.png" referrerpolicy="no-referrer" alt="git status"></p><p><span>El comando </span><code>git status</code><span> muestra a qué rama del repositorio está conectado. También muestra que su copia local está actualizada con la rama de origen en CodeCommit.</span></p></li></ol><p>&nbsp;</p><h2 id='nuevo-requisito-empresarial-utilizar-un-servicio-de-entrega-continua-crear-las-capas-de-red-y-aplicaciones-para-la-cafetería-desafío-nº 3'><span>Nuevo requisito empresarial: utilizar un servicio de entrega continua, crear las capas de red y aplicaciones para la cafetería (desafío n.º 3)</span></h2><p><span>El siguiente desafío es que Sofía utilice AWS CloudFormation para crear todos los recursos de redes en los que pueda implementarse el sitio web dinámico de la aplicación de la cafetería. A continuación, deberá implementar la propia aplicación de la cafetería.</span></p><p><span>Además, Sofía quiere encontrar una manera más fácil de actualizar pilas cuando actualice una plantilla de AWS CloudFormation. Ahora debe actualizar plantillas con frecuencia y considera que debería poder automatizar las actualizaciones de las pilas.</span></p><p><span>Sofía habló con Mateo sobre este problema. Él mencionó que AWS CodePipeline ofrece las capacidades de servicio de integración y entrega continuas (CI/CD) que busca. Mateo creó dos canalizaciones para Sofía, y está ansiosa por comenzar a trabajar con ellas.</span></p><p><span>En este desafío, trabajará como Sofía y utilizarás estas canalizaciones. También definirá, en plantillas de AWS CloudFormation, todos los recursos necesarios para implementar el sitio web dinámico de la cafetería.</span></p><p>&nbsp;</p><h3 id='tarea 4-crear-una-nueva-capa-de-red-con-aws cloudformation-codecommit-y-codepipeline'><span>Tarea 4: Crear una nueva capa de red con AWS CloudFormation, CodeCommit y CodePipeline</span></h3><p><span>En esta tarea, utilizará una plantilla de AWS CloudFormation para crear una VPC con una subred pública, junto con otros recursos de red. Obtendrá experiencia con el uso de una canalización de CI/CD. Cuando utilice Git para insertar la plantilla en un repositorio de CodeCommit, esta desencadenará una canalización que creará una pila de AWS CloudFormation.</span></p><p>&nbsp;</p><ol start='29' ><li><p><span>Cree una nueva plantilla de AWS CloudFormation que cree una VPC, una subred pública y otros recursos.</span></p><ul><li><span>En el panel de navegación del IDE de AWS Cloud9, expanda el directorio </span><strong><span>CFTemplatesrepo/templates</span></strong><span>.</span></li><li><span>En el directorio </span><strong><span>Templates</span></strong><span> (Plantillas), haga clic derecho en </span><code>template1.yaml</code><span> y cree un duplicado.</span></li><li><span>Cambie el nombre del duplicado a: </span><code>cafe-network.yaml</code></li><li><span>En el editor de texto, abra cafe-network.yaml y establezca la descripción como: </span><code>Network layer for the café</code></li><li><span>Observe los detalles de los siete recursos que crea esta plantilla.</span></li></ul></li></ol><p>&nbsp;</p><ol start='30' ><li><p><span>Observe los detalles de AWS CodePipeline que se configuraron previamente en su cuenta.</span></p><ul><li><p><span>En la consola de administración de AWS, encontrará el menú </span><span id="ssb_services"><span>Services (Servicios)</span><i class="fas fa-angle-down"></i></span><span>, donde debe elegir </span><strong><span>CodePipeline</span></strong><span>.</span></p></li><li><p><span>Elija </span><strong><span>Pipelines</span></strong><span> (Canalizaciones).</span></p></li><li><p><span>Observe que se han predefinido dos canalizaciones:</span></p><ul><li><span>CafeAppPipeline</span></li><li><span>CafeNetworkPipeline</span></li></ul><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Importante</span></strong><span>: El estado del intento más reciente de ejecutar cada canalización mostrará que hubo un error. Sin embargo, este estado es normal. Los archivos de la plantilla de AWS CloudFormation a los que hacen referencia las canalizaciones no existen en la ubicación esperada.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='31' ><li><p><span>Analice la etapa </span><em><span>Source (Origen)</span></em><span> de CafeNetworkPipeline.</span></p><ul><li><p><span>Elija </span><strong><span>CafeNetworkPipeline</span></strong><span> y observe los detalles de la canalización.</span></p><p><span>En el área de </span><strong><span>Source</span></strong><span> (Origen), podrá ver que </span><strong><span>SourceAction</span></strong><span> (Acción de origen) de esta canalización es </span><em><span>AWS CodeCommit</span></em><span>.</span></p></li><li><p><span>A la derecha del encabezado </span><strong><span>SourceAction</span></strong><span> (Acción de origen), elija </span><i class="fas fa-info-circle"></i></p><p><span>Los detalles de la ventana </span><strong><span>Configuration</span></strong><span> (Configuración) muestran que el origen es el repositorio </span><em><span>CFTemplateRepo</span></em><span> de CodeCommit.</span></p></li><li><p><span>Para regresar a la página </span><strong><span>CafeNetworkPipeline</span></strong><span>, elija </span><strong><span>Done</span></strong><span> (Listo).</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='32' ><li><p><span>Analice la etapa </span><em><span>Deploy (Implementar)</span></em><span> de CafeNetworkPipeline.</span></p><ul><li><p><span>Observe que la acción </span><em><span>Deploy (Implementar)</span></em><span> se realizará mediante AWS CloudFormation.</span></p></li><li><p><span>A la derecha del encabezado </span><strong><span>RunChangeSet</span></strong><span> (Ejecutar conjunto de cambios), elija </span><i class="fas fa-info-circle"></i></p><p><strong><span>Análisis</span></strong><span>: los detalles de la ventana </span><strong><span>Configuration</span></strong><span> (Configuración) muestran que se ejecutará o actualizará una pila llamada </span><em><span>update-cafe-network</span></em><span>. Para realizar estas acciones, la pila utilizará la plantilla de AWS CloudFormation cafe-network.yaml. Esta acción </span><em><span>Deploy (Implementar)</span></em><span> recibe la plantilla de la etapa </span><em><span>Source (Origen)</span></em><span>, que encontró la plantilla en el repositorio de CodeCommit.</span></p><p><span>El siguiente diagrama ilustra cómo desencadenará esta canalización y lo que hará. También muestra algunos de los recursos de la cuenta de AWS que la pila de AWS CloudFormation resultante creará o actualizará.</span></p></li></ul><p><img src="images/code-pipeline.png" referrerpolicy="no-referrer" alt="codepipeline"></p><p><i class="fas fa-info-circle"></i><span> Para obtener más información acerca de AWS CodePipeline, consulte la </span><a href='https://aws.amazon.com/codepipeline/'><span>documentación de AWS</span></a><span>.</span></p></li></ol><p>&nbsp;</p><ol start='33' ><li><p><span>Vuelva a la instancia de AWS Cloud9 y active la creación de </span><em><span>update-cafe-network</span></em><span> a través del registro de su plantilla de AWS CloudFormation en CodeCommit.</span></p><ul><li><p><span>Observe como la copia local del repositorio es diferente de la original. En el terminal Bash, ejecute el siguiente comando:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">git</span> status</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><p><span>El resultado debería mostrar que el archivo cafe-network.yaml que creó actualmente no tiene seguimiento en Git.</span></p></li><li><p><span>Ejecute estos dos comandos para agregar el archivo nuevo al repositorio y luego confírmelo en el repositorio con un comentario.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">git</span> add templates/cafe-network.yaml</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">git</span> commit <span class="cm-attribute">-m</span> <span class="cm-string">'initial commit of network template'</span>  templates/cafe-network.yaml</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 69px;"></div><div class="CodeMirror-gutters" style="display: none; height: 69px;"></div></div></div></pre></li><li><p><span>Compruebe el estado de su copia local del repositorio:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">git</span> status</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre></li></ul><p><span>La información devuelta debe reportar que su rama adelante del origen con una confirmación.</span></p><ul><li><p><span>Por último, envíe la confirmación al repositorio remoto (este comando en realidad copia el archivo a CodeCommit):</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">git</span> push</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre></li></ul></li></ol><p>&nbsp;</p><ol start='34' ><li><p><span>Vuelva a la consola CodePipeline y elija </span><strong><span>CafeNetworkPipeline</span></strong><span>.</span></p><ul><li><p><span>Observe que la creación de la pila se activa automáticamente.</span></p><p><strong><span>Nota:</span></strong><span> Puede tomar uno o dos minutos para que la etapa de </span><em><span>Source (Origen)</span></em><span> se actualice y la etapa </span><em><span>Deploy (Implementar)</span></em><span> muestre que está </span><em><span>In progress (En curso)</span></em><span>. Eventualmente, el estado de la etapa </span><em><span>Deploy (Implementar)</span></em><span> debería mostrar </span><em><span>Succeeded (Completado correctamente)</span></em><span>.</span></p></li><li><p><span>Tenga en cuenta que los detalles de </span><em><span>Source (Origen)</span></em><span> y </span><em><span>Deploy (Implementar)</span></em><span> muestran el número de confirmación que se devolvió cuando ejecutó </span><code>git push</code><span>. Los detalles también pueden mostrar el comentario que agregó a la confirmación.</span></p></li></ul></li></ol><p>&nbsp;</p><p><img src="images/pipeline-success.png" referrerpolicy="no-referrer" alt="pipeline success"></p><p>&nbsp;</p><p><span>Sugerencias para la solución problemas:</span></p><ul><li><p><span>Si el paso </span><em><span>Deploy (Implementar)</span></em><span> tiene el estado </span><em><span>Failed - Just now (Error, ahora)</span></em><span>, abra el enlace </span><strong><span>Details</span></strong><span> (Detalles) para acceder a los detalles del error. Por ejemplo, puede haber un error de formato de plantilla que debe resolver.</span></p></li><li><p><span>Después de actualizar la plantilla, puede actualizar la pila ejecutando de nuevo los comandos </span><code>git commit</code><span> y </span><code>git push</code><span> adecuados.</span></p><ul><li><span>El botón </span><strong><span>Release change</span></strong><span> (Liberar cambio) también puede activar la canalización para que vuelva a ejecutarse. Puede hacerlo incluso si no hace cambios al repositorio de CodeCommit (como al emitir un comando </span><code>git push</code><span>).</span></li><li><span>De la misma manera, puede utilizar el botón </span><strong><span>Retry</span></strong><span> (Reintentar) en la etapa </span><em><span>Deploy (Implementar)</span></em><span> de la canalización. Reintentará la etapa </span><em><span>Deploy (Implementar)</span></em><span> sin reintentar la etapa </span><em><span>Source (Origen)</span></em><span>.</span></li></ul></li><li><p><span>Si la pila no se restaura y le impide realizar actualizaciones adicionales a la pila, puede eliminar la pila. Para hacerlo, vaya a la página de las pilas en la consola de AWS CloudFormation y elimine la pila. Si elimina la pila de red, envíe una nueva actualización a Git. Esta acción activará la recreación de la pila.</span></p></li></ul><p>&nbsp;</p><ol start='35' ><li><p><span>En la consola de AWS CloudFormation, confirme que se haya ejecutado la pila </span><em><span>update-cafe-network</span></em><span>. Debe tener un estado </span><em><span>CREATE_COMPLETE (CREACIÓN COMPLETADA)</span></em><span> o </span><em><span>UPDATE_COMPLETE (ACTUALIZACIÓN COMPLETADA)</span></em><span>.</span></p><p><span>Además, verifique la pestaña </span><strong><span>Outputs</span></strong><span> (Resultados) de la pila. Actualmente no muestra resultados. Sin embargo, pronto actualizará la pila para que cree resultados.</span></p></li></ol><p>&nbsp;</p><ol start='36' ><li><p><span>En la consola de Amazon VPC, observe que los recursos definidos en la plantilla cafe-network.yaml se crearon en la cuenta de AWS.</span></p><p><span>Por ejemplo, la consola debe enumerar una VPC denominada </span><em><span>Cafe VPC</span></em><span> y una subred denominada </span><em><span>Cafe Public Subnet</span></em><span>.</span></p><p><span>¡Felicitaciones! Ha creado correctamente los recursos de red que se necesitan para ejecutar el sitio web de la cafetería.</span></p></li></ol><p>&nbsp;</p><h3 id='tarea 5-actualizar-la-pila-de-red'><span>Tarea 5: Actualizar la pila de red</span></h3><p><span>En esta tarea, actualizará la pila de red para que exporte información esencial sobre dos de los recursos que crea. A continuación, la pila de aplicaciones que cree más adelante puede hacer referencia a estas dos salidas.</span></p><p>&nbsp;</p><ol start='37' ><li><span>Agregue las siguientes líneas al final de </span><em><span>cafe-network.yaml</span></em><span>.</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="YAML" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">Outputs</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  PublicSubnet</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Description</span><span class="cm-meta">: </span>The subnet ID to use for public web servers</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Value</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  Ref</span><span class="cm-meta">: </span>PublicSubnet</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Export</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  Name</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp;  'Fn::Sub'</span><span class="cm-meta">: </span><span class="cm-string">'${AWS::StackName}-SubnetID'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  VpcId</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Description</span><span class="cm-meta">: </span>The VPC ID</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Value</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  Ref</span><span class="cm-meta">: </span>VPC</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Export</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  Name</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp;  'Fn::Sub'</span><span class="cm-meta">: </span><span class="cm-string">'${AWS::StackName}-VpcID'</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 345px;"></div><div class="CodeMirror-gutters" style="display: none; height: 345px;"></div></div></div></pre><p>&nbsp;</p><ol start='38' ><li><span>Guarde el cambio y, en el terminal Bash, agregue y confirme el código y luego envíelo a CodeCommit mediante Git.</span></li></ol><p>&nbsp;</p><ol start='39' ><li><span>Verifique que se produzca la actualización de la pila de AWS CloudFormation. También verifique que la pestaña </span><strong><span>Outputs</span></strong><span> (Resultados) ahora muestre dos claves con nombres de exportación.</span></li></ol><figure><table><thead><tr><th><span>Nombre</span></th><th><span>Nombre de exportación</span></th></tr></thead><tbody><tr><td><em><span>PublicSubnet</span></em></td><td><em><span>update-cafe-network-SubnetID</span></em></td></tr><tr><td><em><span>VpcId</span></em></td><td><em><span>update-cafe-network-VpcID</span></em></td></tr></tbody></table></figure><p>&nbsp;</p><p><img src="images/export-name.png" referrerpolicy="no-referrer" alt="exportvalue"></p><p>&nbsp;</p><h3 id='tarea 6-definir-un-recurso-de-instancia ec2-y-crear-la-pila-de-aplicaciones'><span>Tarea 6: Definir un recurso de instancia EC2 y crear la pila de aplicaciones</span></h3><p><span>En esta tarea, creará una nueva plantilla de AWS CloudFormation que se utilizará para crear una pila. La nueva pila implementará un sitio web dinámico para la cafetería. La canalización de </span><em><span>CafeAppPipeline</span></em><span> (que observó anteriormente) crea o actualiza la pila </span><em><span>update-cafe-app</span></em><span> cuando envía la plantilla cafe-app.yaml al repositorio CodeCommit.</span></p><p>&nbsp;</p><ol start='40' ><li><span>Vuelva a AWS Cloud9 y duplique el archivo </span><strong><span>template2.yaml</span></strong><span> en el directorio de plantillas y cambie el nombre del duplicado a </span><code>cafe-app.yaml</code><span>.</span></li></ol><p>&nbsp;</p><ol start='41' ><li><p><span>En la plantilla cafe-app.yaml, analice el contenido de la plantilla existente:</span></p><ul><li><span>En el área </span><strong><span>Parameters</span></strong><span> (Parámetros), </span><strong><span>LatestAmiId</span></strong><span> (ID de la AMI más reciente) realiza una búsqueda. Encuentra el ID más reciente de la imagen de Amazon Machine (AMI) de Amazon Linux 2 para la región de AWS en la que crea la pila. Puede hacer referencia a la imagen cuando defina una instancia de Amazon Elastic Compute Cloud (Amazon EC2).</span></li><li><span>También en el área de </span><strong><span>Parameters</span></strong><span> (Parámetros), </span><strong><span>CafeNetworkParameter</span></strong><span> define un valor de cadena. El valor predeterminado es el nombre de la pila que creó cuando ejecutó la plantilla de AWS CloudFormation cafe-network.yaml. Establecer esta cadena como parámetro le proporciona la flexibilidad para señalar a un nombre de una pila diferente si debe hacer referencia a recursos en otra pila.</span></li><li><span>En el área </span><strong><span>Mappings</span></strong><span> (Mapeos), se puede hacer referencia al mapeo </span><strong><span>RegionMap</span></strong><span> cuando defina una instancia EC2. El uso de este mapeo puede ayudar a garantizar que se utilice el par de claves correcto para la instancia. Sin embargo, el uso de esta característica depende de la región de AWS en la que ejecute la plantilla.</span></li><li><span>En el área </span><strong><span>Resources</span></strong><span> (Recursos), se define un </span><strong><span>grupo de seguridad EC2</span></strong><span>. Abre los puertos TCP 80 y 22 para el tráfico de red entrante. Se crea en la VPC que creó la pila de </span><em><span>update-cafe-network</span></em><span>.</span></li><li><span>En el área </span><strong><span>Outputs</span></strong><span> (Resultados), un resultado denominado </span><strong><span>WebServerPublicIP</span></strong><span> devuelve la dirección pública IPv4 de la instancia EC2 que definirá a continuación.</span></li></ul></li></ol><p>&nbsp;</p><ol start='42' ><li><p><span>En la plantilla cafe-app.yaml, defina un tercer </span><em><span>parámetro</span></em><span> para que un usuario pueda elegir entre diferentes tipos de instancia cuando lancen una instancia EC2.</span></p><ul><li><span>Diríjase a la </span><a href='https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html'><span>documentación de AWS</span></a><span>. Debajo de la sección </span><em><span>Definición de un parámetro en una plantilla</span></em><span>, copie el parámetro de ejemplo de YAML.</span></li><li><span>Pegue el parámetro en la plantilla. A continuación, modifique el parámetro para que los tipos de instancia permitidos sean </span><em><span>t2.micro</span></em><span>,* t2.small*, </span><em><span>t3.micro</span></em><span> y </span><em><span>t3.small</span></em><span>. Además, establezca el valor predeterminado como </span><code>t2.small</code><span> y actualice la descripción para que refleje las opciones que el usuario puede elegir.</span></li></ul></li></ol><p>&nbsp;</p><ol start='43' ><li><span>En una nueva pestaña del navegador, abra la </span><a href='https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html'><span>documentación de AWS</span></a><span> y utilice la información de esa página como referencia.</span></li></ol><p>&nbsp;</p><ol start='44' ><li><p><span>De vuelta en la plantilla cafe-app.yaml, cree un nuevo recurso de </span><em><span>instancia EC2</span></em><span> que tenga las siguientes características:</span></p><ul><li><span>Configure </span><strong><span>Logical ID</span></strong><span> (ID lógico) a </span><code>CafeInstance</code><span> (si es necesario, consulte </span><a href='https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html' target='_blank' class='url'>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html</a><span>)</span></li><li><span>Incluya </span><strong><span>ImageId</span></strong><span> (ID de imagen) que haga referencia al parámetro </span><em><span>LatestAmiId (ID de la AMI más reciente)</span></em></li><li><span>Para </span><strong><span>Instance type</span></strong><span> (Tipo de instancia), haga referencia al parámetro de tipo de instancia que definió en el paso anterior.</span></li><li><span>Para </span><strong><span>KeyName</span></strong><span> (Nombre de clave), utilice la siguiente línea de código, que hace referencia al mapeo RegionMap que ya está definido en la plantilla:</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">KeyName</span><span class="cm-meta">: </span>!FindInMap <span class="cm-meta">[</span>RegionMap<span class="cm-meta">,</span> !Ref <span class="cm-string">"AWS::Region"</span><span class="cm-meta">,</span> keypair<span class="cm-meta">]</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><ul><li><p><span>Para </span><strong><span>Instance profile</span></strong><span> (Perfil de instancia) (el rol de AWS Identity and Access Management o IAM asociado a la instancia), especifique </span><code>CafeRole</code><span>.</span></p><p><strong><span>Nota:</span></strong><span>: El rol de IAM de CafeRole ya existe en su cuenta. Cuando lo asocia, le concede a su instancia EC2 los permisos para recuperar los valores del Almacén de parámetros desde AWS Systems Manager.</span></p></li><li><p><span>En la sección </span><strong><span>Properties</span></strong><span> (Propiedades), incluya las siguientes líneas de código:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">NetworkInterfaces</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">  - </span><span class="cm-atom">DeviceIndex</span><span class="cm-meta">: </span><span class="cm-string">'0'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  AssociatePublicIpAddress</span><span class="cm-meta">: </span><span class="cm-string">'true'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  SubnetId</span><span class="cm-meta">: </span>!ImportValue</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  'Fn::Sub'</span><span class="cm-meta">: </span><span class="cm-string">'${CafeNetworkParameter}-SubnetID'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  GroupSet</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta"> &nbsp; &nbsp;  - </span>!Ref CafeSG</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 161px;"></div><div class="CodeMirror-gutters" style="display: none; height: 161px;"></div></div></div></pre><ul><li><strong><span>Análisis</span></strong><span>: Las líneas anteriores ayudan a garantizar que la instancia se implemente en la </span><em><span>subred pública</span></em><span> que creó cuando ejecutó la pila de red de la cafetería. Recuerde que, al comienzo de esta tarea, actualizó la pila de red para definir resutados con nombres de </span><em><span>exportación</span></em><span>. En el código anterior, </span><em><span>importa</span></em><span> el valor de </span><strong><span>SubnetId</span></strong><span> (ID de subred). El código anterior también ayuda a garantizar que la instancia que crea esté en el grupo de seguridad </span><em><span>CafeSG</span></em><span> que ya está definido en esta plantilla.</span></li></ul></li><li><p><span>Establezca una </span><strong><span>etiqueta</span></strong><span> con una </span><em><span>clave</span></em><span> de </span><em><span>Name</span></em><span> y un </span><em><span>valor</span></em><span> de </span><em><span>Cafe Web Server</span></em></p><ul><li><strong><span>Sugerencia:</span></strong><span> Observe cómo se aplicó la etiqueta de </span><em><span>Nombre</span></em><span> al recurso del grupo de seguridad que ya está definido en la plantilla.</span></li></ul></li><li><p><span>En la sección </span><strong><span>Properties</span></strong><span> (Propiedades), incluya las siguientes líneas de código para </span><strong><span>UserData</span></strong><span> (Datos de Usuario):</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  UserData</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Fn::Base64</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  !Sub |</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">#!/bin/bash</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  yum -y update</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  yum install -y httpd mariadb-server wget</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  systemctl enable httpd</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  systemctl start httpd</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  systemctl enable mariadb</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  systemctl start mariadb</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  wget https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod10-challenge/cafe-app.sh</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  chmod +x cafe-app.sh</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  ./cafe-app.sh</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 345px;"></div><div class="CodeMirror-gutters" style="display: none; height: 345px;"></div></div></div></pre><p><strong><span>Análisis</span></strong><span>: El código anterior se ejecuta en la instancia al final del proceso de arranque. Instala un servidor web HTTP de Apache, una base de datos MariaDB y PHP en la instancia de Amazon Linux. Luego, inicia el servidor web y la base de datos. A continuación, descarga un script llamado cafe-app.sh y lo ejecuta. El script cafe-app configura la base de datos e instala el código PHP que hace que funcione el sitio web de la cafetería.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='45' ><li><p><span>Una vez que esté satisfecho con las actualizaciones de su plantilla, guarde los cambios. Para validar el formato de la plantilla en la terminal Bash, ejecute el siguiente comando:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.25px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws cloudformation validate-template <span class="cm-attribute">--template-body</span> file:///home/ec2-user/environment/CFTemplatesRepo/templates/cafe-app.yaml</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div><div class="CodeMirror-gutters" style="display: none; height: 46px;"></div></div></div></pre><p><span>Si recibe una respuesta con formato JSON que incluye los tres parámetros que se definieron en la parte superior de su plantilla, entonces su plantilla pasó la validación. Sin embargo, si recibió una respuesta </span><em><span>ValidationError (Error de validación)</span></em><span> (o alguna otra respuesta de error), debe corregir el problema. A continuación, guarde los cambios y vuelva a ejecutar el comando </span><code>validate-template</code><span>.</span></p></li></ol><p>&nbsp;</p><ol start='46' ><li><p><span>Si su plantilla pasó el control de verificación, agregue el archivo a CodeCommit. En el terminal Bash, ejecute los comandos </span><code>git</code><span> para agregar el archivo, confirmarlo y enviarlo al repositorio.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Sugerencia</span></strong><span>: Puede ser útil consultar los comandos Git de la tarea 3. Sin embargo, recuerde que el nombre de la plantilla que debe enviar a CodeCommit para esta tarea es diferente.</span></p></li></ol><p>&nbsp;</p><ol start='47' ><li><p><span>Vuelva a la consola CodePipeline y elija </span><strong><span>CafeAppPipeline</span></strong><span>.</span></p><p><strong><span>Nota:</span></strong><span> Puede tomar uno o dos minutos para que la etapa de </span><em><span>Source (Origen)</span></em><span> se actualice y la etapa </span><em><span>Deploy (Implementar)</span></em><span> muestre que está </span><em><span>In progress (En curso)</span></em><span>. Eventualmente, el estado de la etapa </span><em><span>Deploy (Implementar)</span></em><span> debería mostrar </span><em><span>Succeeded - Just now (Completado correctamente, ahora)</span></em><span>.</span></p><ul><li><span>Si el estado muestra un error, pruebe estos consejos para la solución de problemas.</span></li><li><span>Si ve que la etapa </span><em><span>Deploy (Implementar)</span></em><span> tiene el estado </span><em><span>Failed - Just now (Error, ahora)</span></em><span>, abra la información del error seleccionando el enlace </span><strong><span>Details</span></strong><span> (Detalles). Puede proporcionar un enlace que lo lleve a los detalles de la pila de AWS CloudFormation. (Diríjase a la pestaña </span><strong><span>Events [Eventos]</span></strong><span> para averiguar qué error fue el primero que causó que la pila se restaurase).</span></li><li><span>Si la pila no se puede restaurar, o si tiene un estado </span><em><span>ROLLBACK_COMPLETE (RESTAURACIÓN COMPLETADA)</span></em><span> que le impide actualizar la pila con la canalización, puede eliminar la pila de la página de pilas de AWS CloudFormation. Luego, envíe una nueva actualización a Git para activar la creación de la pila otra vez.</span></li></ul></li></ol><p>&nbsp;</p><ol start='48' ><li><span>En la consola de AWS CloudFormation, verifique que la pila </span><em><span>update-cafe-app</span></em><span> se haya ejecutado correctamente y tenga el estado </span><em><span>CREATE_COMPLETE (CREACIÓN COMPLETADA)</span></em><span>.</span></li></ol><p>&nbsp;</p><ol start='49' ><li><span>Diríjase a la consola de Amazon EC2. Observe que se creó la instancia EC2 y los recursos del grupo de seguridad (que se definieron en la plantilla cafe-app.yaml).</span></li></ol><p>&nbsp;</p><ol start='50' ><li><p><span>Después de que la instancia EC2 haya iniciado y aprobado ambos controles de estado, pruebe el sitio web de la cafetería. En una pestaña del navegador, cargue la siguiente URL, donde </span>&lt;<em><span>public-ip-address</span></em>&gt;<span> es la </span><em><span>dirección IPv4 pública</span></em><span> de la instancia EC2 que definió: </span><code>http://&lt;public-ip-address&gt;/cafe</code></p><p><span>Debería poder ver el sitio web de la cafetería.</span></p><p><strong><span>Sugerencia</span></strong><span>: Los detalles del script de datos de usuario que definió pueden tardar aproximadamente 2 minutos en terminar de ejecutarse. Sea paciente si no ve el sitio web inmediatamente.</span></p><p><span>Observe que el sitio web muestra información del servidor, como la región y la zona de disponibilidad donde se ejecuta el servidor web.</span></p><p><span>¡Felicitaciones! Implementó una capa de red y una capa de aplicaciones utilizando una canalización CI/CD y un enfoque IaC.</span></p></li></ol><p>&nbsp;</p><h4 id='cómo-responder-preguntas-sobre-los-resultados-de-crear-una-capa-de-aplicaciones'><span>Cómo responder preguntas sobre los resultados de crear una capa de aplicaciones</span></h4><ol start='51' ><li><p><span>Regrese a la pestaña del navegador con las preguntas de opción múltiple correspondientes a este laboratorio y responda la siguiente pregunta.</span></p><ul><li><strong><span>Pregunta 4: </span></strong><span>  Vaya a la pestaña </span><strong><span>Parameters</span></strong><span> (Parámetros) de la pila </span><em><span>update-cafe-app</span></em><span>. ¿Qué valor ve para </span><strong><span>LatestAmiId</span></strong><span> (ID de la AMI más reciente)?</span></li><li><strong><span>Pregunta 5:</span></strong><span> Diríjase a la pestaña </span><strong><span>Stack info</span></strong><span> (Información de la pila) de la pila </span><em><span>update-cafe-app</span></em><span>. ¿Cuál es el nombre de recurso de Amazon (ARN) del rol de IAM que concede los permisos para crear y actualizar la pila </span><em><span>update-cafe-app</span></em><span>?</span></li><li><strong><span>Pregunta 6:</span></strong><span> En la consola de administración de AWS, vaya al repositorio de CodeCommit donde se almacenan las plantillas de AWS CloudFormation. Elija </span><strong><span>Commits</span></strong><span> (Confirmaciones) y, en la lista de </span><strong><span>Commits</span></strong><span> (Confirmaciones), abra una de las confirmaciones seleccionando su ID de confirmación. ¿Qué puede observar?</span></li></ul></li></ol><p>&nbsp;</p><h2 id='nuevo-requisito-empresarial-duplicar-los-recursos-de-redes-y-aplicaciones-en-una-segunda-región-de-aws-desafío-nº 4'><span>Nuevo requisito empresarial: duplicar los recursos de redes y aplicaciones en una segunda región de AWS (desafío n.º 4)</span></h2><p><span>Sofía se complace de haber podido crear tanto la capa de red como la capa de aplicación para el sitio web dinámico de la cafetería mediante AWS CloudFormation. Sofía también acaba de enterarse de que el personal de la cafetería quiere que duplique estos recursos en una segunda región de AWS, por lo que está aún más complacida.</span></p><p><span>Sofía pronto experimentará los beneficios del esfuerzo que realizó para definir los recursos y configuraciones en las plantillas de AWS CloudFormation. Observará que es más fácil duplicar entornos a través de un enfoque de IaC en lugar de crear todos los recursos manualmente.</span></p><p>&nbsp;</p><h3 id='tarea 7-duplicar-la-red-de-la-cafetería-y-el-sitio-web-en-otra-región-de-aws'><span>Tarea 7: Duplicar la red de la cafetería y el sitio web en otra región de AWS</span></h3><p><span>En esta última tarea del laboratorio, podrá ver lo rápido que es posible duplicar una implementación. La implementación rápida es posible porque definió todos sus recursos en plantillas de AWS CloudFormation.</span></p><p><span>En las tareas 4, 5 y 6, las pilas de AWS CloudFormation se crearon o actualizaron automáticamente. Se definió una canalización para monitorear cuándo se actualizaba el repositorio de CodeCommit. A continuación, invocaba a AWS CloudFormation para crear o actualizar la pila. Sin embargo, en esta tarea, utilizará la CLI de AWS para duplicar los recursos de la red de la cafetería en otra región de AWS. Luego, utilizará la consola de AWS CloudFormation para crear la pila de aplicación de la segunda región.</span></p><ol start='52' ><li><p><span>De vuelta en el IDE de AWS Cloud9, ejecute el siguiente comando para duplicar la </span><em><span>red</span></em><span> de la cafetería en otra región de AWS:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.25px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws cloudformation create-stack <span class="cm-attribute">--stack-name</span> update-cafe-network <span class="cm-attribute">--template-body</span> file:///home/ec2-user/environment/CFTemplatesRepo/templates/cafe-network.yaml <span class="cm-attribute">--region</span> us-west-2</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 69px;"></div><div class="CodeMirror-gutters" style="display: none; height: 69px;"></div></div></div></pre><p><span>Debería devolver un </span><em><span>StackId (ID de pila)</span></em><span>. Tenga en cuenta que pudo sustituir la región predeterminada para la creación de esta pila al especificar la región cuando ejecutó el comando.</span></p></li></ol><p>&nbsp;</p><ol start='53' ><li><p><span>Vaya a la consola de AWS CloudFormation y cambie la región a </span><strong><span>EE. UU. Oeste (Oregón) us-west-2</span></strong><span>.</span></p><ul><li><p><span>Debería aparecer la pila </span><em><span>update-cafe-network</span></em><span> en la lista</span></p></li><li><p><span>Verifique que el estado de la segunda pila </span><em><span>update-cafe-region</span></em><span> eventualmente cambie a </span><em><span>CREATE_COMPLETE (CREACIÓN COMPLETADA)</span></em></p><p><i class="fas fa-info-circle"></i><strong><span>Sugerencia</span></strong><span>: Utilice el icono de </span><i class="fas fa-sync"></i><span> actualización para ver el cambio de estado más rápidamente cuando se complete.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='54' ><li><p><span>Vaya a la página de servicio de Amazon VPC y confirme también que está utilizando la región de </span><strong><span>Oregón</span></strong><span> (</span><em><span>us-west-2</span></em><span>).</span></p><p><span>Debería poder observar los recursos de red que se crearon.</span></p></li></ol><p>&nbsp;</p><ol start='55' ><li><p><span>En la región </span><strong><span>Oregón</span></strong><span> (</span><em><span>us-west-2</span></em><span>), cree un par de claves EC2 denominado </span><code>cafe-oregon</code><span>.</span></p><ul><li><p><span>Diríjase a la consola de Amazon EC2 y verifique que esté en la región de </span><strong><span>Oregón</span></strong><span>.</span></p></li><li><p><span>En el panel de navegación, seleccione </span><strong><span>Network &amp; Security &gt; Key Pairs (Redes y seguridad &gt; Pares de claves)</span></strong><span>.</span></p></li><li><p><span>Seleccione </span><strong><span>Create key pair</span></strong><span> (Crear par de claves).</span></p></li><li><p><span>Asigne un nombre al par de claves </span><code>cafe-oregon</code><span> y vuelva a elegir </span><strong><span>Create key pair</span></strong><span> (Crear par de claves).</span></p><p><strong><span>Sugerencia</span></strong><span>: Opcionalmente, puede guardar el par de claves o puede elegir </span><strong><span>Cancel</span></strong><span> (Cancelar). No necesita utilizar el par de claves en este laboratorio. Sin embargo, en un caso de uso típico, debe guardar el par de claves, no tendrá otra oportunidad para hacerlo.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='56' ><li><p><span>Revise los detalles de la plantilla de aplicación.</span></p><ul><li><span>Vuelva al IDE de AWS Cloud9 y observe los detalles de la plantilla </span><strong><span>cafe-app.yaml</span></strong><span> en el editor de texto.</span></li><li><span>Observe la propiedad </span><strong><span>KeyName</span></strong><span> (Nombre de clave) en la definición de recurso de la instancia EC2. Hace referencia al mapeo de </span><strong><span>RegionMap</span></strong><span> que se define en la plantilla.</span></li><li><span>El mapeo indica que si se lanza la instancia en la </span><em><span>región us-east-1 (Norte de Virginia)</span></em><span>, debe utilizar el </span><em><span>par de claves vockey</span></em><span>. Sin embargo, si la instancia se lanza en la </span><em><span>región us-west-2 (Oregón)</span></em><span>, debe utilizar el </span><em><span>par de claves cafe-oregon</span></em><span> que acaba de crear.</span></li><li><span>Observe también </span><strong><span>InstanceTypeParameter</span></strong><span> (Parámetro de tipo de instancia) que definió anteriormente. Proporciona algunas opciones de tipos de instancias en el área </span><strong><span>AllowedValues</span></strong><span> (Valores permitidos), pero también establece </span><em><span>t2.small</span></em><span> como predeterminado. Utilizará esta configuración en un momento.</span></li></ul></li></ol><p>&nbsp;</p><ol start='57' ><li><p><span>En el IDE de AWS Cloud9, copie el archivo de plantilla en un bucket S3. (En el siguiente comando, reemplace </span>&lt;<em><span>repobucket-bucketname</span></em>&gt;<span> por el nombre real del bucket S3 en su cuenta. Su nombre debe contener la cadena </span><em><span>repobucket</span></em><span>.)</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws s3 <span class="cm-builtin">cp</span> templates/cafe-app.yaml s3://&lt;repobucket-bucketname&gt;/</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre></li></ol><p>&nbsp;</p><ol start='58' ><li><span>En la consola de Amazon S3, copie la </span><strong><span>URL del objeto</span></strong><span>, que es una dirección </span><em><span>https</span></em><span>, del archivo que acaba de cargar.</span></li></ol><p>&nbsp;</p><ol start='59' ><li><span>Vaya a la consola de AWS CloudFormation y cambie la región a </span><strong><span>Oregón</span></strong><span> (</span><em><span>us-west-2</span></em><span>).</span></li></ol><p>&nbsp;</p><ol start='60' ><li><p><span>Cree una pila (con nuevos recursos).</span></p><ul><li><p><span>En la casilla </span><strong><span>Amazon S3 URL (URL de Amazon S3)</span></strong><span> de la pantalla </span><strong><span>Create stack</span></strong><span> (Crear pila), pegue la URL del objeto que acaba de copiar.</span></p></li><li><p><span>En la siguiente pantalla (</span><strong><span>Specify stack details [Especificar los detalles de la pila]</span></strong><span>):</span></p><ul><li><strong><span>Stack name</span></strong><span> (Nombre de la pila): escriba un nombre apropiado</span></li><li><strong><span>InstanceTypeParameter</span></strong><span> (Parámetro de tipo de instancia): </span><em><span>t3.micro</span></em></li></ul><p><span>Observe que puede establecer el tipo de instancia durante la creación de la pila porque lo definió como parámetro en la plantilla de AWS CloudFormation.</span></p></li><li><p><span>Avance por las pantallas restantes (acepte las configuraciones predeterminadas) y finalice la creación de la pila.</span></p></li><li><p><span>Compruebe que la pila se haya creado correctamente.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='61' ><li><p><span>Vaya a la consola de Amazon EC2 y observe los recursos creados.</span></p><ul><li><span>Asegúrese de darle unos minutos al servidor web para que termine el arranque y ejecute el script de datos de usuario.</span></li><li><span>Observe el </span><em><span>par de claves</span></em><span> que utiliza la instancia y el tipo de instancia. Esta configuración es diferente de la configuración del servidor web que se ejecuta en la región </span><em><span>us-east-1</span></em><span>. Utilizó la misma plantilla, </span><em><span>sin modificarla</span></em><span>, para lanzar esta pila.</span></li><li><span>Una vez que el servidor se haya iniciado completamente, debería poder acceder al sitio web en </span><code>http://&lt;public-ip-address&gt;/cafe</code><span> (donde </span>&lt;<em><span>public-ip-address</span></em>&gt;<span> es la dirección IP IPv4 pública de la instancia EC2.</span></li><li><span>Observe que la información del servidor en el sitio web muestra que esta segunda instancia del sitio web de la cafetería se está ejecutando en la región </span><em><span>us-west-2</span></em><span>. El primer servidor web que creó muestra que se está ejecutando en la región </span><em><span>us-east--1</span></em><span>.</span></li></ul></li></ol><p>&nbsp;</p><h2 id='noticias-de-la-cafetería'><span>Noticias de la cafetería</span></h2><p><img src="images/cafe-people.png" alt="Personal del café" width="300"></p><p>&nbsp;</p><p><span>Gracias a lo que aprendió a hacer, ahora Sofía tiene muchas ideas.</span></p><p><span>Utilizó AWS CloudFormation para implementar correctamente una versión estática del sitio web de la cafetería. A continuación, implementó correctamente el sitio web dinámico de la cafetería como aplicación web. Para el sitio web dinámico, Sofía utilizó una canalización de CI/CD que empleaba AWS CodeCommit, AWS CodePipeline y AWS CloudFormation. Además, duplicó rápidamente los recursos de redes y recursos de aplicación de la cafetería a otra región de AWS.</span></p><p><span>Sofía imagina cómo podría utilizar las plantillas de AWS CloudFormation como parte de una solución de </span><em><span>copia de seguridad y recuperación de desastres (DR)</span></em><span>. Acaba de experimentar lo rápido que es posible recrear la infraestructura esencial de la cafetería. Si su implementación de producción alguna vez sufre un error por cualquier motivo, ahora puede recrearla o duplicarla rápidamente.</span></p><p><span>Sofía también piensa que ahora puede crear </span><em><span>entornos de prueba</span></em><span> rápidamente. Puede estar segura de que los detalles de la configuración de los entornos de prueba coincidirán con los del entorno de producción. También puede controlar específicamente la manera en que el entorno de prueba difiere del entorno de producción utilizando características como parámetros y mapeos.</span></p><p><span>Los beneficios de la automatización de DevOps son muchas. Sofía ahora planea hacer que la automatización y las canalizaciones de CI/CD sean centrales en la forma en que su equipo desarrolla, prueba e implementa actualizaciones en los recursos de la nube de la cafetería.</span></p><p>&nbsp;</p><h2 id='envío-del-trabajo'><span>Envío del trabajo</span></h2><ol start='62' ><li><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_blue"><span>Submit</span></span><span> (Enviar) para registrar su progreso y, cuando se le indique, elija </span><strong><span>Yes</span></strong><span> (Sí).</span></li></ol><ol start='63' ><li><p><span>Si los resultados no se muestran después de algunos minutos, vuelva a la parte superior de estas instrucciones y elija </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Resultados).</span></p><p><strong><span>Sugerencia</span></strong><span>: Puede enviar su trabajo varias veces. Después de realizar las modificaciones pertinentes, vuelva a elegir </span><strong><span>Submit</span></strong><span> (Enviar). Su último envío es el que se registrará para este laboratorio.</span></p></li></ol><ol start='64' ><li><span>Para encontrar comentarios detallados sobre su trabajo, elija </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalles) seguido de </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Ver informe de envío).</span></li></ol><p>&nbsp;</p><h2 id='fin-del-laboratorio'><span>Fin del laboratorio</span></h2><p><i class="icon-flag-checkered"></i><span> ¡Felicitaciones! Ha completado el laboratorio.</span></p><ol start='65' ><li><p><span>Para confirmar que desea finalizar el laboratorio, haga clic en </span><strong><span id="ssb_voc_grey"><span>End Lab</span></span><span> (Finalizar laboratorio)</span></strong><span> en la parte superior de esta página y, a continuación, elija </span><strong><span id="ssb_blue"><span>Yes</span></span><span> (Sí)</span></strong><span>.</span></p><p><span>Debería aparecer un panel con el siguiente mensaje: </span><em><span>DELETE has been initiated… You may close this message box now (Se ha iniciado la ELIMINACIÓN… Ya puede cerrar este cuadro de mensaje).</span></em></p></li></ol><p>&nbsp;</p><ol start='66' ><li><span>Para cerrar el panel, haga clic en la </span><strong><span>X</span></strong><span> de la esquina superior derecha.</span></li></ol><p>&nbsp;</p><p><em><span>© 2020 Amazon Web Services, Inc. y sus empresas afiliadas. Todos los derechos reservados. Este contenido no puede reproducirse ni redistribuirse, total ni parcialmente, sin el permiso previo por escrito de Amazon Web Services, Inc. Queda prohibida la copia, el préstamo y la venta de carácter comercial.</span></em></p></div></div>
+</body>
+</html>

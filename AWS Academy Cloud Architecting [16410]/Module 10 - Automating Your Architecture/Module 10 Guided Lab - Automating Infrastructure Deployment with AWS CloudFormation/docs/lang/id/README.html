@@ -1,0 +1,1237 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; white-space: nowrap; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; border: none !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; background-position: 0px 0px; background-repeat: initial initial; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-style: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-style: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background-color: rgba(255, 255, 0, 0.4); background-position: initial initial; background-repeat: initial initial; }
+@media print { 
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='modul-10---lab-terpandu-mengotomatisasi-deployment-infrastruktur-dengan-aws-cloudformation'><span>Modul 10 - Lab Terpandu: Mengotomatisasi Deployment Infrastruktur dengan AWS CloudFormation</span></h1><h2 id='gambaran-umum-dan-tujuan-lab'><span>Gambaran umum dan tujuan lab</span></h2><p><span>Men-deploy infrastruktur secara konsisten dan dapat diandalkan itu sulit. Kita harus mengikuti prosedur terdokumentasi tanpa mengambil jalan pintas yang tidak terdokumentasi. Kita juga akan sulit untuk men-deploy infrastruktur di luar jam kerja ketika hanya mempunyai sedikit staf. AWS CloudFormation mengubah situasi ini dengan menetapkan infrastruktur dalam sebuah templat yang dapat di-deploy secara otomatis—bahkan dalam jadwal yang terotomatisasi.</span></p><p><span>Pada lab ini, Anda akan mempelajari bagaimana men-deploy beberapa lapisan infrastruktur dengan AWS CloudFormation, memperbarui tumpukan CloudFormation, dan menghapus tumpukan (dengan tetap mempertahankan beberapa sumber daya).</span></p><p><span>Setelah menyelesaikan lab ini, Anda akan mampu:</span></p><ul><li><span>Menggunakan AWS CloudFormation untuk men-deploy lapisan jaringan virtual private cloud (VPC)</span></li><li><span>Menggunakan AWS CloudFormation untuk men-deploy lapisan aplikasi yang mereferensikan lapisan jaringan</span></li><li><span>Mengeksplorasi templat menggunakan AWS CloudFormation Designer</span></li><li><span>Menghapus tumpukan yang memiliki kebijakan penghapusan</span></li></ul><br><h2 id='durasi'><span>Durasi</span></h2><p><span>Diperlukan waktu sekitar </span><strong><span>20 menit</span></strong><span> untuk menyelesaikan lab ini.</span></p><br><h2 id='pembatasan-layanan-aws'><span>Pembatasan layanan AWS</span></h2><p><span>Dalam lingkungan lab ini, akses ke layanan AWS dan tindakan layanan mungkin dibatasi untuk orang-orang yang diperlukan untuk menyelesaikan instruksi lab. Anda mungkin akan mengalami error jika mencoba mengakses layanan lain atau melakukan tindakan di luar yang dijelaskan di lab ini.</span></p><br><h2 id='mengakses-konsol-manajemen-aws'><span>Mengakses Konsol Manajemen AWS</span></h2><ol start='' ><li><p><span>Di bagian atas instruksi ini, pilih </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Mulai Lab) untuk meluncurkan lab Anda.</span></p><p><span>Panel </span><strong><span>Start Lab</span></strong><span> (Mulai Lab) terbuka dan menampilkan status lab.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Tip</span></strong><span>: Jika Anda memerlukan lebih banyak waktu untuk menyelesaikan lab, mulai ulang pengatur waktu untuk lingkungan dengan memilih tombol </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Mulai Lab) lagi.</span></p></li><li><p><span>Tunggu hingga panel </span><strong><span>Start Lab</span></strong><span> (Mulai Lab) menampilkan pesan </span><em><span>Lab status: ready</span></em><span> (Status lab: siap), lalu tutup panel dengan memilih </span><strong><span>X</span></strong><span>.</span></p></li><li><p><span>Di bagian atas instruksi ini, pilih </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>Tindakan ini akan membuka Konsol Manajemen AWS di tab browser baru. Anda akan masuk ke sistem secara otomatis.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Tip</span></strong><span>: Jika tab browser baru tidak terbuka, banner atau ikon biasanya berada di bagian atas browser Anda dengan pesan bahwa browser Anda mencegah situs membuka jendela sembulan. Pilih banner atau ikon, lalu pilih </span><strong><span>Allow pop-ups</span></strong><span> (Izinkan sembulan).</span></p></li><li><p><span>Atur tab </span><strong><span>AWS Management Console</span></strong><span>(Konsol Manajemen AWS) agar ditampilkan bersama instruksi ini. Idealnya, Anda perlu membuka kedua tab browser secara bersamaan, sehingga Anda dapat mengikuti langkah-langkah lab dengan lebih mudah.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Jangan mengubah Wilayah kecuali secara khusus diperintahkan untuk melakukannya</span></strong><span>.</span></p></li></ol><br><h2 id='tugas-1-men-deploy-lapisan-jaringan'><span>Tugas 1: Men-deploy lapisan jaringan</span></h2><p><span>Men-deploy infrastruktur dalam </span><em><span>lapisan</span></em><span> merupakan praktik terbaik. Lapisan-lapisan yang umum yaitu:</span></p><ul><li><span>Jaringan (Amazon VPC)</span></li><li><span>Basis Data</span></li><li><span>Aplikasi</span></li></ul><p><span>Dengan cara ini, templat dapat digunakan kembali di antara</span>
+<span>sistem. Misalnya, Anda dapat men-deploy topologi jaringan umum di antara lingkungan pengembangan, pengujian, dan produksi, atau men-deploy suatu basis data standar untuk beberapa aplikasi.</span></p><p><span>Dalam tugas ini, Anda akan men-deploy templat AWS CloudFormation yang membuat </span><em><span>lapisan jaringan</span></em><span> dengan menggunakan Amazon VPC.</span></p><ol start='5' ><li><p><span>Klik kanan tautan berikut dan unduh templat ke komputer Anda: </span><a href='../../../scripts/lab-network.yaml'><span>lab-network.yaml</span></a></p><p><i class="fas fa-comment"></i><span> Jika Anda mau, Anda dapat membuka templat di editor teks untuk melihat bagaimana sumber daya AWS ditetapkan.</span></p><p><span>Templat dapat ditulis dalam JavaScript Object Notation (JSON) atau YAML Ain&#39;t Markup Language (YAML). YAML merupakan bahasa markup yang mirip dengan JSON, tetapi lebih mudah dibaca dan diedit.</span></p></li><li><p><span>Di </span><strong><span>AWS Management Console</span></strong><span> (Konsol Manajemen AWS), dari menu </span><span id="ssb_services"><span>Services</span><i class="fas fa-angle-down"></i></span><span> (Layanan), pilih </span><strong><span>CloudFormation</span></strong><span>.</span></p></li><li><p><span>Jika Anda melihat pesan ini, klik </span><span style="color:blue"><span>Try it out now and provide us feedback</span></span><span> (Coba sekarang dan berikan umpan balik kepada kami):</span></p><p><img src="images/new-console.png" referrerpolicy="no-referrer" alt="Konsol Baru"></p></li><li><p><span>Pilih </span><span id="ssb_orange"><span>Create stack</span></span><span> (Buat tumpukan), lalu konfigurasikan pengaturan berikut:</span></p><p><strong><span>Langkah 1: Tentukan templat</span></strong></p><ul><li><strong><span>Template source</span></strong><span> (Sumber templat): </span><span id="ssbox_cloudformation_blue"><i class="far fa-dot-circle" style="color:#007dbc;"></i><span> Upload a template file</span></span><span> (Unggah file templat)</span></li><li><strong><span>Upload a template file</span></strong><span> (Unggah file templat): Klik </span><span id="ssb_ssm_white"><span>Choose file</span></span><span> (Pilih file), lalu pilih file </span><strong><span>lab-network.yaml</span></strong><span> yang Anda unduh.</span></li><li><span>Pilih </span><span id="ssb_orange"><span>Next</span></span><span> (Berikutnya)</span></li></ul><p><strong><span>Langkah 2: Buat Tumpukan</span></strong></p><ul><li><strong><span>Stack name</span></strong><span> (Nama tumpukan): </span><code>lab-network</code></li><li><span>Pilih </span><span id="ssb_orange"><span>Next</span></span><span> (Berikutnya)</span></li></ul><p><strong><span>Langkah 3: Konfigurasikan opsi tumpukan</span></strong></p><ul><li><p><span>Di bagian </span><strong><span>Tags</span></strong><span> (Tanda), masukkan nilai-nilai ini.</span></p><ul><li><strong><span>Key</span></strong><span> (Kunci): </span><code>application</code><span> (aplikasi)</span></li><li><strong><span>Value</span></strong><span> (Nilai): </span><code>inventory</code><span> (inventaris)</span></li></ul></li><li><p><span>Pilih </span><span id="ssb_orange"><span>Next</span></span><span> (Berikutnya)</span></p></li></ul><p><strong><span>Langkah 4: Tinjau jaringan lab</span></strong></p><ul><li><span>Pilih </span><span id="ssb_orange"><span>Create stack</span></span><span> (Buat tumpukan)</span></li></ul><p><span>Sekarang </span><em><span>templat</span></em><span> tersebut akan digunakan oleh AWS CloudFormation untuk menghasilkan </span><em><span>tumpukan</span></em><span> sumber daya di akun AWS.</span></p><p><em><span>Tanda</span></em><span> yang ditentukan akan secara otomatis disebarkan ke sumber daya yang dibuat, sehingga lebih mudah untuk mengidentifikasi sumber daya yang digunakan oleh aplikasi tertentu.</span></p></li><li><p><span>Pilih tab </span><strong><span>Stack info</span></strong><span> (Info tumpukan).</span></p></li><li><p><span>Tunggu </span><strong><span>Status</span></strong><span> berubah menjadi </span><span style="color: green;"><i class="far fa-check-circle"></i><span>CREATE_COMPLETE</span></span><span>.</span></p></li></ol><p><i class="fas fa-comment"></i><span> Pilih </span><strong><span>Refresh</span></strong><span> </span><i class="fas fa-redo"></i><span> (Segarkan) setiap 15 detik untuk memperbarui tampilan, jika perlu.</span></p><p><span>Sekarang Anda dapat memeriksa sumber daya yang telah dibuat.</span></p><ol start='11' ><li><span>Pilih tab </span><strong><span>Resources</span></strong><span> (Sumber Daya).</span></li></ol><p><span>Anda akan melihat daftar sumber daya yang telah dibuat oleh templat tersebut.</span></p><p><i class="fas fa-comment"></i><span> Jika daftarnya kosong, perbarui daftar dengan memilih </span><strong><span>Refresh</span></strong><span> </span><i class="fas fa-redo"></i><span> (Segarkan).</span></p><ol start='12' ><li><span>Pilih tab </span><strong><span>Events</span></strong><span> (Kejadian) dan gulir ke seluruh log kejadian.</span></li></ol><p><span>Log kejadian menunjukkan (dari yang terbaru ke yang lama) aktivitas-aktivitas yang dilakukan oleh AWS CloudFormation. Contoh kejadian termasuk mulai membuat sumber daya kemudian menyelesaikan pembuatan sumber daya. Kesalahan apa pun yang ditemukan selama pembuatan tumpukan tersebut akan dicantumkan di tab ini.</span></p><ol start='13' ><li><span>Pilih tab </span><strong><span>Outputs</span></strong><span> (Output).</span></li></ol><p><span>Tumpukan CloudFormation dapat menyediakan </span><em><span>informasi output</span></em><span>, seperti ID sumber daya tertentu dan tautan ke sumber daya.</span></p><p><span>Dua output terdaftar.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19995px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  - **PublicSubnet:**  ID subnet publik yang telah dibuat (misalnya: _subnet-08aafd57f745035f1__</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  - **VPC:** ID VPC yang telah dibuat (misalnya: _vpc-08e2b7d1272ee9fb4_)</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><p><span>Output juga dapat digunakan untuk memberikan nilai ke tumpukan lainnya. Ini dapat dilihat di kolom </span><strong><span>Export name</span></strong><span> (Nama ekspor). Dalam hal ini, ID VPC dan subnet diberikan nama ekspor, sehingga tumpukan-tumpukan lain dapat mengambil nilai-nilainya. Tumpukan-tumpukan lain ini kemudian dapat membangun sumber daya di dalam VPC dan subnet yang baru saja dibuat. Anda akan menggunakan nilai ini pada tugas berikutnya.</span></p><ol start='14' ><li><span>Pilih tab </span><strong><span>Template</span></strong><span> (Templat).</span></li></ol><p><span>Tab ini menampilkan templat yang digunakan untuk membuat tumpukan—yaitu templat yang Anda unggah ketika membuat tumpukan. Jangan ragu untuk memeriksa templat tersebut dan melihat sumber daya yang telah dibuat. Jangan ragu juga untuk mengeksplorasi bagian </span><strong><span>Outputs</span></strong><span> (Output) di bagian akhir (bagian ini menentukan nilai mana yang akan diekspor).</span></p><br><h2 id='tugas-2-men-deploy-lapisan-aplikasi'><span>Tugas 2: Men-deploy lapisan aplikasi</span></h2><p><span>Karena telah men-deploy </span><em><span>lapisan jaringan</span></em><span>, kini Anda akan men-deploy </span><em><span>lapisan aplikasi</span></em><span> yang berisi instans Amazon Elastic Compute Cloud (Amazon EC2) dan grup keamanan.</span></p><p><span>Templat AWS CloudFormation akan </span><em><span>mengimpor</span></em><span> VPC dan subnet ID dari </span><em><span>Outputs</span></em><span> (Output) tumpukan CloudFormation yang sudah ada. Templat tersebut kemudian akan menggunakan informasi ini untuk membuat grup keamanan di VPC dan instans EC2 di subnet.</span></p><ol start='15' ><li><span>Klik kanan tautan berikut dan unduh templat ke komputer Anda: </span><a href='../../../scripts/lab-application.yaml'><span>lab-application.yaml</span></a></li></ol><p><i class="fas fa-comment"></i><span> Jika Anda mau, Anda dapat membuka templat di editor teks untuk melihat bagaimana sumber daya ditetapkan.</span></p><ol start='16' ><li><span>Di panel navigasi kiri, pilih </span><strong><span>Stacks</span></strong><span> (Tumpukan).</span></li><li><span>Pilih </span><strong><span>Create stack &gt; With new resources (standard)</span></strong><span> (Buat tumpukan &gt; Dengan sumber daya baru (standar)), lalu konfigurasikan pengaturan ini.</span></li></ol><p><strong><span>Langkah 1: Tentukan templat</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.20007px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- **Template source (Sumber templat):** &lt;span id="ssbox_cloudformation_blue"&gt;&lt;i class="far fa-dot-circle" style="color:#007dbc;"&gt;&lt;/i&gt; Unggah file templat&lt;/span&gt;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- **Upload a template file (Unggah file templat):** Klik &lt;span id="ssb_ssm_white"&gt;Choose file&lt;/span&gt; (Pilih file) lalu pilih file **lab-application.yaml** yang telah Anda unduh.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Pilih &lt;span id="ssb_orange"&gt;Next&lt;/span&gt; (Berikutnya)</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 179px;"></div><div class="CodeMirror-gutters" style="display: none; height: 179px;"></div></div></div></pre><p><strong><span>Langkah 2: Buat Tumpukan</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- **Stack nama (Nama tumpukan):** `lab-application`</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- **NetworkStackName:** `lab-network`</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Pilih &lt;span id="ssb_orange"&gt;Next&lt;/span&gt; (Berikutnya)</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p><i class="fas fa-comment"></i><span> Parameter </span><em><span>Network Stack Name</span></em><span> (Nama Tumpukan Jaringan) memberi tahu kepada templat nama tumpukan pertama yang Anda buat (</span><em><span>lab-network</span></em><span>), sehingga templat tersebut dapat mengambil nilai dari </span><em><span>Outputs</span></em><span> (Output).</span></p><p><strong><span>Langkah 3: Konfigurasikan opsi tumpukan</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Di bagian **Tags (Tanda)**, masukkan nilai-nilai ini.</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  - **Key (Kunci):** `application`</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  - **Value (Nilai):** `inventory`</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Pilih &lt;span id="ssb_orange"&gt;Next&lt;/span&gt; (Berikutnya)</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><p><strong><span>Langkah 4: Meninjau aplikasi lab</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.20001px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">- Pilih &lt;span id="ssb_orange"&gt;Create stack&lt;/span&gt; (Buat tumpukan)</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><p><span>Sementara tumpukan sedang dibuat, periksa detail di tab </span><strong><span>Events</span></strong><span> (Kejadian) dan tab </span><strong><span>Resources</span></strong><span> (Sumber daya). Anda dapat memantau kemajuan proses pembuatan sumber daya dan status sumber daya.</span></p><ol start='18' ><li><span>Pada tab </span><strong><span>Stack info</span></strong><span> (Info tumpukan), tunggu </span><strong><span>Status</span></strong><span> berubah menjadi </span><span style="color: green;"><i class="far fa-check-circle"></i><span>CREATE_COMPLETE</span></span><span>.</span></li></ol><p><span>Aplikasi Anda kini telah siap!</span></p><ol start='19' ><li><p><span>Pilih tab </span><strong><span>Outputs</span></strong><span> (Output).</span></p></li><li><p><span>Salin </span><strong><span>URL</span></strong><span> yang ditampilkan, lalu buka tab browser web baru, tempel URL, dan tekan ENTER.</span></p><p><span>Tab browser akan membuka aplikasi tersebut, yang berjalan di server web yang telah dibuat oleh tumpukan CloudFormation yang baru ini.</span></p><p><span>Tumpukan CloudFormation juga dapat mereferensikan nilai dari tumpukan CloudFormation lainnya. Misalnya,bagian dari templat </span><em><span>lab-application</span></em><span> ini mereferensikan templat </span><em><span>lab-network</span></em><span>:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  WebServerSecurityGroup</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Type</span><span class="cm-meta">: </span>AWS<span class="cm-meta">::</span>EC2<span class="cm-meta">::</span>SecurityGroup</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Properties</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  GroupDescription</span><span class="cm-meta">: </span>Enable HTTP ingress</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  VpcId</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp;  Fn::ImportValue</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  !Sub $<span class="cm-meta">{</span>NetworkStackName<span class="cm-meta">}</span>-VPCID</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 157px;"></div><div class="CodeMirror-gutters" style="display: none; height: 157px;"></div></div></div></pre><p><span>Baris terakhir menggunakan </span><em><span>nama tumpukan jaringan</span></em><span> yang Anda sediakan (</span><em><span>lab-network</span></em><span>) ketika tumpukan tersebut dibuat. Baris ini mengimpor nilai </span><em><span>lab-network-VPCID_dari _Outputs</span></em><span> (Output) tumpukan pertama. Baris tersebut kemudian memasukkan nilai ke dalam bidang ID VPC definisi grup keamanan. Hasilnya adalah bahwa grup keamanan dibuat di VPC yang dibuat oleh tumpukan pertama.</span></p><p><span>Berikut adalah contoh lainnya, yang ada di templat CloudFormation yang baru saja Anda gunakan untuk membuat tumpukan aplikasi. Kode templat ini menempatkan instans EC2 ke dalam subnet yang dibuat oleh tumpukan jaringan:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  SubnetId</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Fn::ImportValue</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  !Sub $<span class="cm-meta">{</span>NetworkStackName<span class="cm-meta">}</span>-SubnetID</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre></li></ol><p><span>Kode templat tersebut mengambil </span><em><span>ID subnet</span></em><span> dari tumpukan </span><em><span>lab-network</span></em><span> dan menggunakannya dalam tumpukan </span><em><span>lab-application</span></em><span> untuk meluncurkan instans ke subnet publik, yang telah dibuat oleh tumpukan pertama.</span></p><br><h2 id='tugas-3-memperbarui-tumpukan'><span>Tugas 3: Memperbarui Tumpukan</span></h2><p><span>AWS CloudFormation juga dapat </span><em><span>memperbarui</span></em><span> tumpukan yang telah di-deploy. Ketika memperbarui tumpukan, AWS CloudFormation hanya akan memodifikasi atau mengganti sumber daya yang sedang diubah. Sumber daya lainnya yang tidak diubah akan dibiarkan apa adanya.</span></p><p><span>Dalam tugas ini, Anda akan memperbarui tumpukan </span><em><span>aplikasi lab</span></em><span> untuk memodifikasi pengaturan di grup keamanan.</span></p><p><span>Pertama, Anda akan memeriksa pengaturan saat ini untuk grup keamanan.</span></p><ol start='21' ><li><span>Di </span><strong><span>AWS Management Console</span></strong><span> (Konsol Manajemen AWS), dari menu </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span> (Layanan), pilih </span><strong><span>EC2</span></strong><span>.</span></li><li><span>Di panel navigasi kiri, pilih </span><strong><span>Security Groups</span></strong><span> (Grup Keamanan).</span></li><li><span>Pilih kotak centang untuk </span><i class="far fa-check-square"></i><span> </span><strong><span>lab-application-WebServerSecurityGroup...</span></strong><span>.</span></li><li><span>Pilih tab </span><strong><span>Inbound rules</span></strong><span> (Aturan masuk).</span></li></ol><p><span>Saat ini, hanya satu aturan yang ada di grup keamanan. Aturan tersebut mengizinkan lalu lintas </span><em><span>HTTP</span></em><span>.</span></p><p><span>Anda sekarang akan kembali ke AWS CloudFormation untuk memperbarui tumpukan.</span></p><ol start='25' ><li><p><span>Dari menu </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span> (Layanan), pilih </span><strong><span>CloudFormation</span></strong><span>.</span></p></li><li><p><span>Klik kanan tautan berikut dan unduh templat yang telah diperbarui ke komputer Anda: </span><a href='../../../scripts/lab-application2.yaml'><span>lab-application2.yaml</span></a></p><p><span>Templat ini memiliki satu konfigurasi tambahan untuk mengizinkan lalu lintas Secure Shell (SSH) yang masuk di port 22:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">  - </span><span class="cm-atom">IpProtocol</span><span class="cm-meta">: </span>tcp</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  FromPort</span><span class="cm-meta">: </span><span class="cm-number">22</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  ToPort</span><span class="cm-meta">: </span><span class="cm-number">22</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  CidrIp</span><span class="cm-meta">: </span>0.0.0.0/0</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre></li><li><p><span>Di daftar </span><strong><span>Stacks</span></strong><span> (Tumpukan) </span><strong><span>konsol AWS CloudFormation</span></strong><span>, pilih </span><strong><span>lab-application</span></strong><span>.</span></p></li><li><p><span>Pilih </span><span id="ssb_ssm_white"><span>Update</span></span><span> (Perbarui) dan konfigurasikan pengaturan ini.</span></p></li></ol><ul><li><span>Pilih </span><span id="ssbox_cloudformation_blue"><i class="far fa-dot-circle" style="color:#007dbc;"></i><span> Replace current template</span></span><span> (Ganti templat saat ini)</span></li><li><strong><span>Template source</span></strong><span> (Sumber templat): </span><span id="ssbox_cloudformation_blue"><i class="far fa-dot-circle" style="color:#007dbc;"></i><span> Upload a template file</span></span><span> (Unggah file templat)</span></li><li><strong><span>Unggah a template file</span></strong><span> (Unggah file templat): Klik</span><span id="ssb_ssm_white"><span>Choose file</span></span><span> (Pilih file), lalu pilih file </span><strong><span>lab-application2.yaml</span></strong><span> yang telah Anda unduh.</span></li></ul><ol start='29' ><li><span>Pilih </span><span id="ssb_orange"><span>Next</span></span><span> (Berikutnya) pada masing-masing dari </span><em><span>tiga</span></em><span> layar berikutnya untuk melanjutkan ke halaman </span><strong><span>Review lab-application</span></strong><span> (Tinjauan aplikasi lab).</span></li></ol><p><span>   Di bagian </span><strong><span>Change set preview</span></strong><span> (Ubah pratinjau set) di bawah halaman, AWS CloudFormation menampilkan sumber daya yang akan diperbarui:</span></p><p><span>   </span><img src="images/change-set-preview.png" referrerpolicy="no-referrer" alt="Ubah pratinjau set"></p><p><span>   Perubahan pratinjau set ini menunjukkan bahwa AWS CloudFormation akan </span><em><span>Memodifikasi</span></em><span> </span><em><span>WebServerSecurityGroup</span></em><span> tanpa perlu menggantinya (</span><em><span>Penggantian = False</span></em><span>). Set perubahan ini berarti bahwa grup keamanan akan mengalami perubahan kecil yang diterapkan padanya, dan tidak ada referensi ke grup keamanan yang perlu diubah.</span></p><ol start='30' ><li><span>Pilih </span><span id="ssb_orange"><span>Update stack</span></span><span> (Perbarui tumpukan)</span></li><li><span>Pada tab </span><strong><span>Stack info</span></strong><span> (Info tumpukan), tunggu hingga </span><strong><span>Status</span></strong><span> berubah menjadi </span><span style="color: green;"><i class="far fa-check-circle"></i><span>UPDATE_COMPLETE</span></span><span>.</span></li></ol><p><span>   </span><i class="fas fa-comment"></i><span> Perbarui status dengan memilih </span><strong><span>Refresh</span></strong><span> </span><i class="fas fa-redo"></i><span> (Segarkan) setiap 15 detik, jika perlu.</span></p><p><span>   Sekarang Anda dapat memverifikasi perubahan tersebut.</span></p><ol start='32' ><li><span>Kembali ke </span><strong><span>konsol Amazon EC2</span></strong><span> dan dari panel navigasi kiri, pilih </span><strong><span>Security Groups</span></strong><span> (Grup Keamanan).</span></li><li><span>Di daftar </span><strong><span>Security Groups</span></strong><span> (Grup Keamanan), pilih </span><strong><span>lab-application-WebServerSecurityGroup</span></strong><span>.</span></li></ol><p><span>   Tab </span><strong><span>Inbound rules</span></strong><span> (Aturan masuk) seharusnya akan menampilkan aturan tambahan yang mengizinkan lalu lintas </span><em><span>SSH</span></em><span> melalui _TCP port _22__.</span></p><p><span>   Subtugas ini menunjukkan bagaimana perubahan dapat di-deploy dalam suatu proses yang dapat diulang dan terdokumentasi. Templat AWS CloudFormation dapat disimpan dalam repositori kode sumber (seperti AWS CodeCommit). Dengan cara ini, Anda dapat mempertahankan versi dan riwayat templat serta infrastruktur yang di-deploy.</span></p><br><h2 id='tugas-4-mengeksplorasi-templat-dengan-aws-cloudformation-designer'><span>Tugas 4: Mengeksplorasi templat dengan AWS CloudFormation Designer.</span></h2><p><em><span>AWS CloudFormation Designer</span></em><span> merupakan alat grafis untuk membuat, melihat, dan memodifikasi templat AWS CloudFormation. Dengan Designer, Anda dapat membuat diagram sumber daya templat Anda dengan menggunakan antarmuka drag-and-drop (seret-dan-lepas), kemudian mengedit detailnya melalui editor JSON dan YAML yang terintegrasi.</span></p><p><span>Baik Anda baru mengenal AWS CloudFormation maupun seorang pengguna AWS CloudFormation yang sudah berpengalaman, Designer dapat membantu Anda untuk melihat dengan cepat keterkaitan antar sumber daya templat. Designer juga memungkinkan Anda untuk memodifikasi templat dengan mudah.</span></p><p><span>Dalam tugas ini, Anda akan memperoleh beberapa pengalaman langsung dengan Designer.</span></p><ol start='34' ><li><span>Dari menu </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span> (Layanan), pilih </span><strong><span>CloudFormation</span></strong><span>.</span></li><li><span>Di panel navigasi kiri, pilih </span><strong><span>Designer</span></strong><span>.</span></li></ol><p><strong><span>Tip:</span></strong><span> Anda mungkin perlu memperluas panel navigasi kiri dengan memilih ikon menu.</span></p><ol start='36' ><li><span>Pilih menu </span><strong><span>File</span></strong><span> </span><i class="fas fa-file"></i><span>, pilih </span><strong><span>Open (Buka) &gt; Local file (File</span></strong><span> lokal)</span><strong></strong><span>, dan pilih templat </span><strong><span>lab-application2.yaml</span></strong><span> yang telah Anda unduh sebelumnya.</span></li></ol><p><span>Designer akan menampilkan representasi grafis dari templat tersebut:</span></p><p><img src="images/designer.png" referrerpolicy="no-referrer" alt="CloudFormation Designer"></p><p><span>Designer tidak menggambar diagram arsitektur khusus, tapi merupakan editor visual untuk templat AWS CloudFormation. Designer menggambar sumber daya yang ditentukan dalam suatu templat dan hubungan antar sumber daya tersebut.</span></p><ol start='37' ><li><span>Bereksperimen dengan fitur Designer. Beberapa hal yang dapat dicoba yaitu:</span></li></ol><ul><li><span>Klik pada sumber daya yang ditampilkan. Panel bawah kemudian akan menampilkan bagian templat yang menentukan sumber daya.</span></li><li><span>Coba seret sebuah sumber daya baru dari panel —dari panel </span><strong><span>Resource types</span></strong><span> (Jenis sumber daya) di sebelah kiri—ke area desain. Definisi sumber daya akan secara otomatis dimasukkan ke templat.</span></li><li><span>Coba seret lingkaran penghubung sumber daya untuk membuat hubungan antar sumber daya.</span></li><li><span>Buka templat </span><strong><span>lab-network.yaml</span></strong><span> yang telah Anda unduh sebelumnya di lab dan eksplorasi sumber dayanya juga di dalam Designer</span></li></ul><br><h2 id='tugas-5-menghapus-tumpukan'><span>Tugas 5: Menghapus tumpukan</span></h2><p><span>Ketika sumber daya sudah tidak lagi dibutuhkan, AWS CloudFormation dapat menghapus sumber daya yang dibangun untuk tumpukan.</span></p><p><em><span>Kebijakan penghapusan</span></em><span> juga dapat dikhususkan menurut sumber daya. Kebijakan tersebut dapat mempertahankan atau (dalam beberapa kasus) mencadangkan sumber daya ketika tumpukan dihapus. Fitur ini berguna untuk mempertahankan basis data, volume disk, atau sumber daya yang mungkin diperlukan setelah tumpukan dihapus.</span></p><p><span>Tumpukan </span><em><span>lab-application</span></em><span> telah dikonfigurasi untuk mengambil snapshot volume disk Amazon Elastic Block Store (Amazon EBS) sebelum dihapus. Kode pada templat yang menyelesaikan konfigurasi tersebut adalah:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  DiskVolume</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Type</span><span class="cm-meta">: </span>AWS<span class="cm-meta">::</span>EC2<span class="cm-meta">::</span>Volume</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Properties</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  Size</span><span class="cm-meta">: </span><span class="cm-number">100</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  AvailabilityZone</span><span class="cm-meta">: </span>!GetAtt WebServerInstance.AvailabilityZone</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  Tags</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta"> &nbsp; &nbsp; &nbsp;  - </span><span class="cm-atom">Key</span><span class="cm-meta">: </span>Name</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp; &nbsp;  Value</span><span class="cm-meta">: </span>Web Data</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  DeletionPolicy</span><span class="cm-meta">: </span>Snapshot</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 224px;"></div><div class="CodeMirror-gutters" style="display: none; height: 224px;"></div></div></div></pre><p><em><span>DeletionPolicy</span></em><span> pada baris terakhir memerintahkan AWS CloudFormation untuk membuat snapshot volume disk sebelum dihapus.</span></p><p><span>Sekarang Anda akan menghapus tumpukan </span><em><span>aplikasi lab</span></em><span> dan melihat hasil kebijakan penghapusan ini.</span></p><ol start='38' ><li><span>Kembali ke </span><strong><span>konsol AWS CloudFormation</span></strong><span> utama dengan memilih tautan </span><span style="color:#1166bb"><span>Close</span></span><span> (Tutup) di bagian atas halaman Designer (pilih </span><strong><span>Leave page</span></strong><span> (Tinggalkan halaman) jika diminta).</span></li><li><span>Pada daftar tumpukan, pilih tautan </span><strong><span>lab-application</span></strong><span> (aplikasi lab).</span></li><li><span>Pilih </span><span id="ssb_ssm_white"><span>Delete</span></span><span> (Hapus)</span></li><li><span>Pilih </span><span id="ssb_orange"><span>Delete stack</span></span><span> (Hapus tumpukan)</span></li></ol><p><span>Anda dapat memantau proses penghapusan di tab </span><strong><span>Events</span></strong><span> (Kejadian) dan memperbarui layar dengan sesekali memilih </span><strong><span>Refresh</span></strong><span> </span><i class="fas fa-redo"></i><span> (Segarkan). Anda mungkin juga melihat entri log kejadian yang menunjukkan bahwa snapshot EBS sedang dibuat.</span></p><ol start='42' ><li><span>Tunggu hingga tumpukan berhasil dihapus. Tumpukan akan hilang dari daftar tumpukan.</span></li></ol><p><span>Tumpukan aplikasi__ telah dihapus, tetapi tumpukan jaringan tetap tidak tersentuh. Skenario ini memperkuat gagasan bahwa tim yang berbeda (misalnya, tim jaringan atau tim aplikasi) dapat mengelola tumpukannya masing-masing.</span></p><p><span>Sekarang Anda akan memverifikasi bahwa snapshot dari volume EBS dibuat sebelum volume EBS dihapus.</span></p><ol start='43' ><li><span>Dari menu </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span> (Layanan), pilih </span><strong><span>EC2</span></strong><span>.</span></li><li><span>Di panel navigasi kiri, pilih </span><strong><span>Snapshots</span></strong><span> (Snapshot).</span></li></ol><p><span>Anda akan melihat snapshot dengan waktu </span><strong><span>Mulai</span></strong><span> pada beberapa menit terakhir.</span></p><p>&nbsp;</p><br><h2 id='mengirimkan-pekerjaan-anda'><span>Mengirimkan pekerjaan Anda</span></h2><ol start='45' ><li><span>Di bagian atas instruksi ini, pilih </span><span id="ssb_blue"><span>Submit</span></span><span> (Kirim) untuk merekam kemajuan Anda dan saat diminta, pilih </span><strong><span>Yes</span></strong><span> (Ya).</span></li><li><span>Jika hasilnya tidak muncul setelah beberapa menit, kembali ke bagian atas instruksi ini dan pilih </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Nilai)</span></li></ol><p><span>   </span><strong><span>Tip</span></strong><span>: Anda dapat mengirimkan pekerjaan Anda beberapa kali. Setelah Anda mengubah pekerjaan, pilih </span><strong><span>Submit</span></strong><span> (Kirim) lagi. Apa yang akan direkam untuk lab ini adalah pengiriman terakhir Anda.</span></p><ol start='47' ><li><span>Untuk menemukan detail umpan balik tentang pekerjaan Anda, pilih </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detail) diikuti oleh </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Lihat Laporan Pengiriman).</span></li></ol><br><h2 id='lab-selesai-i-classfas-fa-graduation-capi'><span>Lab selesai </span><i class="fas fa-graduation-cap"></i></h2><p><i class="fas fa-flag-checkered"></i><span> Selamat! Anda telah menyelesaikan lab.</span></p><ol start='48' ><li><span>Pilih </span><span id="ssb_voc_grey"><span>End Lab</span></span><span> (Akhiri Lab) di bagian atas halaman ini, lalu pilih </span><span id="ssb_blue"><span>Yes</span></span><span> (Ya) untuk mengonfirmasi bahwa Anda ingin mengakhiri lab.</span></li></ol><p><span>   Sebuah panel menunjukkan bahwa *DELETE has been initiated... * (Penghapusan sudah dimulai...) </span><em><span>You may close this message box now.</span></em><span> (Anda dapat menutup kotak pesan ini sekarang.)</span></p><ol start='49' ><li><span>Pilih </span><strong><span>X</span></strong><span> di sudut kanan atas untuk menutup panel.</span></li></ol><p>&nbsp;</p><p><em><span>©2020 Amazon Web Services, Inc. dan afiliasinya. Hak cipta dilindungi undang-undang. Karya ini tidak boleh direproduksi atau didistribusikan ulang, seluruhnya atau sebagian, tanpa izin tertulis sebelumnya dari Amazon Web Services, Inc. Dilarang menyalin, meminjamkan, atau menjual secara komersial.</span></em></p><p>&nbsp;</p></div></div>
+</body>
+</html>

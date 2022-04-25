@@ -1,0 +1,1163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='模块-10----挑战实验实现基础设施部署自动化'><span>模块 10 – 挑战实验：实现基础设施部署自动化</span></h1><h2 id='场景'><span>场景</span></h2><p><span>目前为止，咖啡馆员工主要通过使用 AWS 管理控制台来手动创建 AWS 资源和配置应用程序。这种方法有效帮助咖啡馆快速展开了网络业务。但是，他们发现将其部署复制到新的 AWS 区域，以便能够支持多个国家/地区的新咖啡馆运营点颇具挑战。此外，他们还希望拥有独立的、具有可靠匹配配置的开发和生产环境。</span></p><p><span>在本挑战实验中，您将扮演 Sofía 的角色，完成咖啡馆的自动部署，并将其复制到另一个 AWS 区域。</span></p><p>&nbsp;</p><h2 id='实验概览和目标'><span>实验概览和目标</span></h2><p><span>在本实验中，您将体验如何创建 AWS CloudFormation 模板。您将使用这些模板创建和更新 AWS CloudFormation 堆栈。这些堆栈会创建和管理 AWS 账户中多个 AWS 服务领域中的资源更新。您将练习使用 AWS CodeCommit 来控制模板版本。您还将了解如何使用 AWS CodePipeline 来自动执行堆栈更新。</span></p><p><span>完成本实验后，您应能够：</span></p><ul><li><span>使用 AWS CloudFormation 模板部署 Virtual Private Cloud (VPC) 网络层</span></li><li><span>使用 AWS CloudFormation 模板部署应用程序层</span></li><li><span>使用 Git 调用 AWS CodePipeline，并通过存储在 AWS CodeCommit 中的模板创建或更新堆栈</span></li><li><span>使用 AWS CloudFormation 将网络和应用程序资源复制到另一个 AWS 区域</span></li></ul><p>&nbsp;</p><p><span>当您</span><em><span>启动</span></em><span>实验时，以下资源已经在 AWS 账户中为您创建好了：</span></p><p><img src="images/start-arch.png" referrerpolicy="no-referrer" alt="起始架构"></p><p><span>请注意，在本挑战实验中，部分任务并没有提供分步说明。您必须自己弄清楚如何完成这些任务。</span></p><p>&nbsp;</p><h2 id='持续时间'><span>持续时间</span></h2><p><span>完成本实验大约需要 </span><strong><span>90 分钟</span></strong><span>。</span></p><p>&nbsp;</p><h2 id='aws-服务限制'><span>AWS 服务限制</span></h2><p><span>在本实验环境中，对 AWS 服务和服务操作的访问可能仅限于完成实验说明所需的服务和服务操作。如果您尝试访问其他服务或执行本实验中所述之外的操作，可能会遇到错误。</span></p><p>&nbsp;</p><h2 id='访问-aws-管理控制台'><span>访问 AWS 管理控制台</span></h2><ol start='' ><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）即可启动您的实验。</span></p><p><strong><span>Start Lab</span></strong><span>（启动实验）面板随即会打开，其中显示了实验状态。</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>提示</span></strong><span>：如果您需要延长计时器上显示的实验完成时间，请再次选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）按钮，以重新启动环境计时器。这一操作不会删除您已创建的资源。</span></p></li><li><p><span>请耐心等待，直到您看到消息 </span><em><span>Lab status: ready</span></em><span>（实验状态：就绪），然后选择 </span><strong><span>X</span></strong><span> 关闭 </span><strong><span>Start Lab</span></strong><span>（启动实验）面板。</span></p></li><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_voc_grey"><span>AWS</span></span><span>。</span></p><p><span>AWS 管理控制台将会在一个新的浏览器选项卡中打开。您将自动登录系统。</span></p><p><strong><span>提示</span></strong><span>：如果未打开新的浏览器选项卡，您的浏览器顶部通常会出现一个横幅或图标，并显示一条消息，指明您的浏览器阻止该了网站打开弹出窗口。请选择横幅或图标，然后选择 </span><strong><span>Allow pop-ups</span></strong><span>（允许弹出窗口）。</span></p></li><li><p><span>排列 AWS 管理控制台选项卡，使其与这些说明一起显示。理想情况下，您将同时打开两个浏览器选项卡，以便能够更轻松地执行实验步骤。</span></p><p><strong><span>注意</span></strong><span>：您也可以通过清除屏幕顶部的 </span><strong><span>Terminal</span></strong><span>（终端）框来隐藏终端窗口。</span></p></li></ol><p>&nbsp;</p><h2 id='业务请求使用-aws-cloudformation-为咖啡馆创建一个静态网站挑战-1）'><span>业务请求：使用 AWS CloudFormation 为咖啡馆创建一个静态网站（挑战 1）</span></h2><p><span>咖啡馆希望开始使用 AWS CloudFormation 在 AWS 账户中创建和维护资源。在此流程的初次简单尝试中，您将扮演 Sofía 的角色，创建一个简单的 AWS CloudFormation 模板，以便用于创建 Amazon Simple Storage Service (Amazon S3) 存储桶。然后，您将向模板添加更多细节，以便在更新堆栈时，它会对存储桶进行配置，以托管咖啡馆的静态网站。</span></p><p>&nbsp;</p><h3 id='任务-1从头创建-aws-cloudformation-模板'><span>任务 1：从头创建 AWS CloudFormation 模板</span></h3><p><span>在这第一个任务中，您将创建一个 AWS CloudFormation 模板，以用来创建 S3 存储桶。然后，您将运行创建 AWS CloudFormation 堆栈的 AWS 命令行界面 (AWS CLI) 命令。（堆栈是用于创建存储桶的资源。）</span></p><p>&nbsp;</p><ol start='5' ><li><span>导航到 AWS Cloud9 服务并打开现有 AWS Cloud9 实例的集成开发环境 (IDE)。</span></li></ol><p>&nbsp;</p><ol start='6' ><li><span>在 AWS Cloud9 IDE 中，选择 </span><strong><span>File &gt; New File</span></strong><span>（文件 &gt; 新建文件），然后选择 </span><strong><span>File &gt; Save</span></strong><span>（文件 &gt; 保存），并将新文件另存为：</span><code>S3.yaml</code></li></ol><p>&nbsp;</p><ol start='7' ><li><p><span>在文件顶部，添加以下两行内容：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; AWSTemplateFormatVersion</span><span class="cm-meta">: </span><span class="cm-string">"2010-09-09"</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; Description</span><span class="cm-meta">:</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre></li></ol><p>&nbsp;</p><ol start='8' ><li><p><span>接下来，将以下三行添加到您的模板中：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; Resources</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; S3Bucket</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp; Type</span><span class="cm-meta">: </span>AWS<span class="cm-meta">::</span>S3<span class="cm-meta">::</span>Bucket</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p><strong><span>提示</span></strong><span>：请确保为每个缩进级别保留正确的空格数。</span><code>Resources:</code><span> 行不应缩进。</span><code>S3Bucket:</code><span> 行应缩进 2 个空格。最后，</span><code>Type: AWS::S3::Bucket</code><span> 行应缩进 4 个空格。</span></p><p><i class="fas fa-info-circle"></i><span> AWS CloudFormation 支持 YAML 1.1 版规范，但也有少数例外。有关 YAML 的更多信息，请访问 </span><a href='http://www.yaml.org/'><span>YAML 网站</span></a><span>。</span></p></li></ol><p>&nbsp;</p><ol start='9' ><li><p><span>在 </span><strong><span>Description:</span></strong><span> 行中添加描述（例如</span><code>“cafe S3 template”</code><span>）。在开始添加描述之前，请确保冒号 (:) </span><em><span>后面</span></em><span>留有一个空格。输入描述后，请将更改</span><strong><span>保存</span></strong><span>到文件中。</span></p><p><i class="fas fa-info-circle"></i><span> 在本模块前面的指导实验中，您使用 AWS 管理控制台创建了一个 AWS CloudFormation 堆栈。在这里，您要改用 AWS CLI。</span></p></li></ol><p>&nbsp;</p><ol start='10' ><li><p><span>在 Bash 终端，运行以下两行代码：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; aws configure <span class="cm-builtin">get</span> region</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; aws cloudformation create-stack <span class="cm-attribute">--stack-name</span> CreateBucket <span class="cm-attribute">--template-body</span> file://S3.yaml</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p><span>您运行的第一行代码返回了安装在 AWS Cloud9 实例上的 AWS CLI 客户端的默认 AWS 区域。您可以通过运行 </span><code>aws configure</code><span> 来修改默认 AWS 区域。但是，在本实验中，您应保留默认区域。</span></p><p><span>您运行的第二行代码创建了一个使用您定义的模板的堆栈。由于您未在命令中指定区域，因此堆栈将在默认区域中创建。</span></p><p><span>如果 </span><code>create-stack</code><span> 命令成功运行，您应该会看到一些 JavaScript 对象表示法 (JSON) 格式的输出。此输出应指明 </span><em><span>StackId</span></em><span>。</span></p><p><span>下图显示了您刚刚完成的操作。</span></p><p><img src="images/s3stack.png" referrerpolicy="no-referrer" alt="codepipeline"></p></li><li><p><span>在 AWS 管理控制台中，导航到 AWS CloudFormation 服务并查看 </span><em><span>CreateBucket</span></em><span> 堆栈的详细信息。</span></p><p><span>例如，查看 </span><strong><span>Events</span></strong><span>（事件）、</span><strong><span>Resources</span></strong><span>（资源）、</span><strong><span>Outputs</span></strong><span>（输出）和 </span><strong><span>Template</span></strong><span>（模板）选项卡中的信息。</span></p></li></ol><p>&nbsp;</p><ol start='12' ><li><span>导航到 Amazon S3 服务页面，查看模板创建的存储桶。</span></li></ol><p><span>   </span><strong><span>提示</span></strong><span>：存储桶的名称为 </span><em><span>createbucket-s3bucket-</span>&lt;<span>random-string</span>&gt;</em><span>。</span></p><p>&nbsp;</p><h4 id='回答有关-aws-cloudformation-堆栈的问题'><span>回答有关 AWS CloudFormation 堆栈的问题</span></h4><p><span>完成实验后，选择蓝色的 </span><strong><span>Submit</span></strong><span>（提交）按钮，答案将被记录下来。</span></p><p>&nbsp;</p><ol start='13' ><li><p><span>查看本实验中的问题。</span></p><ul><li><span>选择 </span><span id="ssb_voc_grey"><span>Details </span><i class="fas fa-angle-down"></i></span><span>（详细信息）菜单，然后选择 </span><span id="ssb_voc_grey"><span>Show</span></span><span>（显示）。</span></li><li><span>选择页面底部的 </span><strong><span>Access the multiple choice questions</span></strong><span>（查看多项选择题）链接。</span></li></ul></li></ol><p>&nbsp;</p><ol start='14' ><li><p><span>在您加载的页面中，提交以下每个问题的答案：</span></p><ul><li><strong><span>问题 1</span></strong><span>：即使您没有为 S3 存储桶指定名称，是否也已创建存储桶？如果是，存储桶的名称是什么？</span></li><li><strong><span>问题 2</span></strong><span>：存储桶是在哪个区域中创建的，为什么在此区域中创建存储桶？</span></li><li><strong><span>问题 3</span></strong><span>：要定义 S3 存储桶，您需要在模板文件的 </span><code>Resources:</code><span> 部分输入多少行代码？</span></li></ul><p><strong><span>注意</span></strong><span>：请将显示问题的浏览器选项卡保持打开状态，以便稍后在实验中返回查看。</span></p></li></ol><p>&nbsp;</p><h3 id='任务-2将存储桶配置为网站并更新堆栈'><span>任务 2：将存储桶配置为网站并更新堆栈</span></h3><p><span>在下一个任务中，您将更新 AWS CloudFormation 模板。此更新将配置 S3 存储桶来托管静态网站。此任务与模块 3 挑战实验的结果相似。在模块 3 挑战实验中，您使用 AWS 管理控制台手动创建和配置了 S3 存储桶。但是，在本实验中，您将改用 AWS CloudFormation 模板来配置存储桶。</span></p><p>&nbsp;</p><ol start='15' ><li><p><span>将静态网站资产上传到存储桶。</span></p><p><span>要执行此任务，请在 Bash 终端运行以下命令（将 </span>&lt;<em><span>bucket-name</span></em><span>&amp;gt 替换为您的实际存储桶名称）：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19995px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; <span class="cm-builtin">wget</span> https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod10-challenge/static-website.zip</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; unzip static-website.zip <span class="cm-attribute">-d</span> static</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; <span class="cm-builtin">cd</span> static</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; aws s3 <span class="cm-builtin">cp</span> <span class="cm-attribute">--recursive</span> . s3://&lt;bucket-name&gt;/ <span class="cm-attribute">--acl</span> public-read</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 112px;"></div><div class="CodeMirror-gutters" style="display: none; height: 112px;"></div></div></div></pre><p><span>如果成功完成这些操作，您应该会在命令输出中看到许多 </span><em><span>upload:</span>&lt;<span>file_name</span>&gt;</em><span> 消息。</span></p></li></ol><p>&nbsp;</p><ol start='16' ><li><p><span>在新的浏览器选项卡中，打开用于定义 S3 存储桶资源的 AWS CloudFormation 模板文档。</span></p><ul><li><span>转到</span><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html"><span>AWS 资源和属性类型参考</span></a><span>文档</span></li><li><span>向下滚动，选择 </span><strong><span>Amazon S3</span></strong><span>，然后选择 </span><strong><span>AWS::S3::Bucket</span></strong><span> 资源类型。</span></li></ul></li></ol><p>&nbsp;</p><ol start='17' ><li><p><span>参考文档，修改您的 S3.yaml 模板，以在 S3 存储桶资源上设置以下特征：</span></p><ul><li><p><span>附加将保留存储桶的</span><em><span>删除策略</span></em></p></li><li><p><span>配置存储桶，以托管将 </span><em><span>index.html</span></em><span> 设置为索引文档的静态网站，</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>提示</span></strong><span>：您可以通过向模板额外添加两行代码来完成此任务。请参阅您在上一步中打开的文档页面的 </span><em><span>Examples</span></em><span>（示例）部分中的代码。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='18' ><li><p><span>在 AWS CloudFormation 模板中，添加可提供网站 URL 的 </span><em><span>output</span></em><span>。</span></p><p><span>请再次参阅文档的 </span><strong><span>Examples</span></strong><span>（示例）部分。</span></p></li></ol><p>&nbsp;</p><ol start='19' ><li><span>将更改保存到 S3.yaml 文件中。</span></li></ol><p>&nbsp;</p><ol start='20' ><li><p><span>验证模板</span></p><p><span>返回 Bash 终端，将目录更改回 S3.yaml 文件的位置，然后运行以下命令验证您的模板。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; <span class="cm-builtin">cd</span> ../</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; aws cloudformation validate-template <span class="cm-attribute">--template-body</span> file://S3.yaml</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><p><span>如果输出显示模板存在语法或其他错误，请更正它们，然后再次运行命令，验证错误是否已得到解决。</span></p></li></ol><p>&nbsp;</p><ol start='21' ><li><p><span>运行以下命令，更新堆栈：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19995px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; aws cloudformation update-stack <span class="cm-attribute">--stack-name</span> CreateBucket <span class="cm-attribute">--template-body</span> file://S3.yaml</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><p><strong><span>提示</span></strong><span>：正确的 YAML 语法非常重要。如果您在运行 </span><code>update-stack</code><span> 时收到 </span><em><span>ValidationError</span></em><span>，请检查冒号的使用是否正确并确认是否对每行进行了正确缩进。文档中的示例模板为结构良好的 YAML 模板提供了很好的参考。</span></p></li></ol><p>&nbsp;</p><ol start='22' ><li><p><span>浏览到 AWS CloudFormation 服务并确认您的堆栈更新已成功完成。</span></p><ul><li><p><span>堆栈状态应显示为 </span><em><span>UPDATE_COMPLETE</span></em><span>。</span></p></li><li><p><span>如果堆栈未达到 </span><em><span>UPDATE_COMPLETE</span></em><span> 状态，请尝试执行以下问题排查技巧。</span></p><ul><li><span>如果您看到堆栈具有类似 </span><em><span>ROLLBACK</span></em><span> 的状态，请转到 </span><strong><span>Events</span></strong><span>（事件）选项卡并搜索 </span><em><span>UPDATE_FAILED</span></em><span> 条目。（阅读该事件的 </span><em><span>Status</span></em><span>（状态）原因，了解堆栈为何更新失败。）</span></li><li><span>在您认为已解决所有错误后，请再次运行 </span><code>update-stack</code><span> 命令。在控制台中，返回 AWS CloudFormation 堆栈，然后转到 </span><strong><span>Events</span></strong><span>（事件）选项卡，确认是否已成功更新堆栈。</span></li><li><span>如果需要，请重复这些步骤。</span></li></ul></li></ul></li></ol><p>&nbsp;</p><ol start='23' ><li><p><span>验证成功。</span></p><ul><li><p><span>堆栈的 </span><strong><span>Outputs</span></strong><span>（输出）选项卡是否列出了带有 URL 值的输出？如果已列出，请选择链接。</span></p></li><li><p><span>静态网站是否已打开？（您之前已将网站资产复制到存储桶中。）</span></p><p><span>如果已打开，恭喜您！</span></p><p><strong><span>注意：</span></strong><span>如果堆栈没有任何输出，或者输出超链接未显示咖啡馆网站的内容，您可以尝试执行以下问题排查技巧。</span></p><ul><li><p><span>浏览到 Amazon S3 控制台并选择您的存储桶。</span><strong><span>Overview</span></strong><span>（概览）选项卡应列出 index.html 文件以及两个名为 </span><em><span>css</span></em><span> 和 </span><em><span>images</span></em><span> 的文件夹。如果这些资源未列出，您可能需要重新查看本挑战实验的第一步。</span></p></li><li><p><span>选择 </span><strong><span>index.html</span></strong><span> 文件，然后选择 </span><strong><span>Permissions</span></strong><span>（权限）。在 </span><strong><span>Public access</span></strong><span>（公共访问）下，</span><strong><span>Read object</span></strong><span>（读取对象）的值应为 </span><em><span>Yes</span></em><span>（是）。</span></p></li><li><p><span>返回存储桶视图。在 </span><strong><span>Properties</span></strong><span>（属性）选项卡中，确认 </span><i class="fas fa-check-circle" style="color:purple"></i><span> </span><strong><span>Static website hosting</span></strong><span>（静态网站托管）已启用，</span><strong><span>Hosting type</span></strong><span>（托管类型）为 </span><em><span>Bucket hosting</span></em><span>（存储桶托管）。</span></p></li><li><p><span>应在 S3.yaml 模板中对此列表中描述的所有权限和属性进行设置。如有必要，请调整模板中的详细信息，并再次运行 </span><code>update-stack</code><span> AWS CLI 命令。</span></p><p><strong><span>注意：</span></strong><span>在第一个挑战中，您将网站文件手动复制到了存储桶中。此外，您还可以使用 AWS CloudFormation 中的自定义资源并结合 AWS Lambda 函数来执行此操作。这两种资源都可以在 AWS CloudFormation 模板中进行定义。这种方法是 AWS CloudFormation 的更高级用法，不在本实验范畴之内。但是，如果您对此主题感兴趣，可以参阅 AWS 文档中的 </span><a href='https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources-lambda.html'><span>AWS Lambda 支持的自定义资源</span></a><span>页面。</span></p></li></ul></li></ul></li></ol><p>&nbsp;</p><h2 id='新业务要求将模板存储在版本控制系统中挑战-2）'><span>新业务要求：将模板存储在版本控制系统中（挑战 2）</span></h2><p><span>Sofía 使用 AWS CloudFormation 模板配置了整个静态网站，这给咖啡馆团队留下了深刻印象。鉴于这一成功，该团队决定扩大基础设施即代码 (IaC) 的使用范围，在 AWS 账户中构建其他应用程序资源。</span></p><p><span>该团队发现最佳实践是将 IaC 模板存储在版本控制系统中，因此他们请 Sofía 接受这项挑战。Mateo 路过咖啡馆时，Sofía 与他讨论了这项新的业务要求。Mateo 提到，对于存储模板和管理模板的版本控制，AWS CodeCommit 会是个不错的选择。Mateo 创建了一个 CodeCommit 存储库，其中包含一些 AWS CloudFormation 示例模板。Sofía 迫切希望使用这个代码存储库。</span></p><p>&nbsp;</p><h3 id='任务-3克隆包含-aws-cloudformation-模板的-codecommit-存储库'><span>任务 3：克隆包含 AWS CloudFormation 模板的 CodeCommit 存储库</span></h3><p><span>在此任务中，您将以 Sofía 的身份克隆 CodeCommit 存储库。咖啡馆团队将使用存储库来存储和控制 AWS CloudFormation 模板的版本。</span></p><p>&nbsp;</p><ol start='24' ><li><span>浏览到 CodeCommit 服务，然后在您的账户中，您会看到名为 </span><em><span>CFTemplatesRepo</span></em><span> 的存储库。</span></li></ol><p><img src="images/code-commit.png" referrerpolicy="no-referrer" alt="codecommit"></p><p><i class="fas fa-info-circle"></i><span> CodeCommit 是一项源代码控制服务，可用于托管基于 Git 的存储库。它的使用方法类似于 GitHub 存储库。有关 AWS CodeCommit 的详细信息，请参阅 </span><a href='https://aws.amazon.com/codecommit/'><span>AWS 文档</span></a><span>。</span></p><p>&nbsp;</p><ol start='25' ><li><p><span>选择 </span><strong><span>CFTemplatesRepo</span></strong><span>，然后选择 </span><strong><span>templates</span></strong><span> 文件夹。</span></p><p><span>请注意，其中包含 AWS CloudFormation 模板。</span></p><p><i class="fas fa-info-circle"></i><span> 在本实验的这一部分中，您要将 IaC AWS CloudFormation 模板存储在 CodeCommit 中。</span></p></li></ol><p>&nbsp;</p><ol start='26' ><li><p><span>打开 </span><em><span>CFTemplatesRepo/templates/</span><strong><span>start-lab.yaml</span></strong></em><span> 文件并分析内容。</span></p><ul><li><p><span>请注意，此模板定义了您在此 AWS 账户中看到的一些资源。</span></p></li><li><p><span>例如：</span></p><ul><li><span>从第 6 行开始，此模板定义了一个 </span><em><span>AWS Cloud9 实例</span></em></li><li><span>从第 12 行开始，此模板定义了您现在已经打开的 </span><em><span>CodeCommit 存储库</span></em></li></ul><p><i class="fas fa-info-circle"></i><span> 选择 </span><strong><span>Start Lab</span></strong><span>（启动实验）后，托管此实验的实验平台即会创建一个 AWS CloudFormation 堆栈。它运行的 AWS CloudFormation 模板包括此模板中包含的资源定义。但是，此示例模板并不包含用于启动此实验的</span><em><span>实际</span></em><span>模板中的所有资源定义。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='27' ><li><p><span>在页面顶部的面包屑导航中，选择 </span><strong><span>Repositories</span></strong><span>（存储库），然后在 </span><strong><span>Clone URL</span></strong><span>（克隆 URL）列中选择 </span><strong><span>HTTPS</span></strong><span>。</span></p><p><i class="fas fa-info-circle"></i><span> 这一操作会将 CodeCommit 存储库的 HTTPS 克隆 URL 复制到剪贴板中。</span></p></li></ol><p>&nbsp;</p><ol start='28' ><li><p><span>返回 AWS Cloud9 IDE 并将现有 CodeCommit 存储库克隆到您的工作区（将 </span>&lt;<em><span>url</span></em><span>&amp;gt 替换为您复制的克隆 URL）</span></p><p><span>在 AWS Cloud9 IDE 的 Bash 终端，输入以下命令：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; <span class="cm-builtin">git</span> clone &lt;url&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>此命令会克隆您刚才看到的 CodeCommit 存储库的副本。该命令会创建一个 </span><em><span>CFTemplatesRepo</span></em><span> 目录；现在，该目录应显示在导航窗格（即 IDE 中的左窗格）中。</span></p><p><span>使用 Git 客户端软件分析存储库的本地副本。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; <span class="cm-builtin">cd</span> CFTemplatesRepo</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; <span class="cm-builtin">git</span> status</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><p><img src="images/git-clone.png" referrerpolicy="no-referrer" alt="git status"></p><p><code>git status</code><span> 命令显示了您连接到的存储库的分支。它还显示您的本地副本随 CodeCommit 中的源分支保持最新版本。</span></p></li></ol><p>&nbsp;</p><h2 id='新业务要求使用持续交付服务为咖啡馆创建网络和应用程序层挑战-3）'><span>新业务要求：使用持续交付服务，为咖啡馆创建网络和应用程序层（挑战 3）</span></h2><p><span>Sofía 要接受的下一项挑战是使用 AWS CloudFormation 来创建动态网站咖啡馆应用程序可以部署到的所有网络资源。然后，她必须部署咖啡馆应用程序本身。</span></p><p><span>此外，Sofía 希望找到一种更简单的方法来在更新 AWS CloudFormation 模板时更新堆栈。她现在定期更新模板，她认为应该可以自动更新堆栈。</span></p><p><span>Sofía 与 Mateo 讨论了这个问题。Mateo 表示，AWS CodePipeline 可以提供她想要的持续集成和持续交付 (CI/CD) 服务功能。然后，Mateo 为 Sofía 创建了两条管道，她迫切希望开始使用。</span></p><p><span>在这项挑战中，您将以 Sofía 的身份使用这些管道。您还将在 AWS CloudFormation 模板中定义部署动态咖啡馆网站所需的所有资源。</span></p><p>&nbsp;</p><h3 id='任务-4使用-aws-cloudformationcodecommit-和-codepipeline-创建新的网络层'><span>任务 4：使用 AWS CloudFormation、CodeCommit 和 CodePipeline 创建新的网络层</span></h3><p><span>在此任务中，您将使用 AWS CloudFormation 模板创建 VPC 及公有子网和其他网络资源。您将体验如何使用 CI/CD 管道。当您使用 Git 将模板推送到 CodeCommit 存储库时，它将触发创建 AWS CloudFormation 堆栈的管道。</span></p><p>&nbsp;</p><ol start='29' ><li><p><span>创建一个新的 AWS CloudFormation 模板，该模板将创建 VPC、公有子网和其他资源。</span></p><ul><li><span>在 AWS Cloud9 IDE 的导航窗格中，展开 </span><strong><span>CFTemplatesRepo/templates</span></strong><span> 目录。</span></li><li><span>在 </span><strong><span>templates</span></strong><span> 目录中，右键单击 </span><code>template1.yaml</code><span> 并创建一个副本。</span></li><li><span>将副本重命名为：</span><code>cafe-network.yaml</code></li><li><span>在文本编辑器中，打开 cafe-network.yaml 并将描述设置为：</span><code>Network layer for the cafe</code></li><li><span>查看此模板创建的七个资源的详细信息。</span></li></ul></li></ol><p>&nbsp;</p><ol start='30' ><li><p><span>查看在您的账户中预配置的 AWS CodePipeline 详细信息。</span></p><ul><li><p><span>在 AWS 管理控制台中，从 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单中选择 </span><strong><span>CodePipeline</span></strong><span>。</span></p></li><li><p><span>选择 </span><strong><span>Pipelines</span></strong><span>（管道）。</span></p></li><li><p><span>请注意，已为您预定义了两条管道：</span></p><ul><li><span>CafeAppPipeline</span></li><li><span>CafeNetworkPipeline</span></li></ul><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>重要提示</span></strong><span>：在最近尝试运行时，每个管道的状态都显示失败。不过，这种状态在预料之中。管道引用的 AWS CloudFormation 模板文件不在预期位置。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='31' ><li><p><span>分析 CafeNetworkPipeline 的 </span><em><span>Source</span></em><span>（源）阶段。</span></p><ul><li><p><span>选择 </span><strong><span>CafeNetworkPipeline</span></strong><span> 并查看管道详细信息。</span></p><p><span>在 </span><strong><span>Source</span></strong><span>（源）区域中，您可以看到此管道的 </span><strong><span>SourceAction</span></strong><span> 是 </span><em><span>AWS CodeCommit</span></em><span>。</span></p></li><li><p><span>在 </span><strong><span>SourceAction</span></strong><span> 标题的右侧，选择 </span><i class="fas fa-info-circle"></i></p><p><strong><span>Configuration</span></strong><span>（配置）窗口中的详细信息显示源是 </span><em><span>CFTemplatesRepo</span></em><span> CodeCommit 存储库。</span></p></li><li><p><span>要返回 </span><strong><span>CafeNetworkPipeline</span></strong><span> 页面，请选择 </span><strong><span>Done</span></strong><span>（完成）。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='32' ><li><p><span>分析 CafeNetworkPipeline 的 </span><em><span>Deploy</span></em><span>（部署）阶段。</span></p><ul><li><p><span>请注意，通过使用 AWS CloudFormation 来执行 </span><em><span>Deploy</span></em><span>（部署）操作。</span></p></li><li><p><span>在 </span><strong><span>RunChangeSet</span></strong><span> 标题的右侧，选择 </span><i class="fas fa-info-circle"></i></p><p><strong><span>分析</span></strong><span>：</span><strong><span>Configuration</span></strong><span>（配置）窗口中的详细信息显示将运行或更新名为 </span><em><span>update-cafe-network</span></em><span> 的堆栈。要执行这些操作，堆栈将使用 cafe-network.yaml AWS CloudFormation 模板。此 </span><em><span>Deploy</span></em><span>（部署）操作从 </span><em><span>Source</span></em><span>（源）阶段接收模板，后者在 CodeCommit 存储库中找到该模板。</span></p><p><span>下图说明了您将如何触发此管道以及管道将执行哪些操作。它还显示了生成的 AWS CloudFormation 堆栈将创建或更新的一些 AWS 账户资源。</span></p></li></ul><p><img src="images/code-pipeline.png" referrerpolicy="no-referrer" alt="codepipeline"></p><p><i class="fas fa-info-circle"></i><span> 有关 AWS CodePipeline 的更多详细信息，请参阅 </span><a href='https://aws.amazon.com/codepipeline/'><span>AWS 文档</span></a><span>。</span></p></li></ol><p>&nbsp;</p><ol start='33' ><li><p><span>返回 AWS Cloud9 实例，通过将 AWS CloudFormation 模板签入 CodeCommit 来触发 </span><em><span>update-cafe-network</span></em><span> 的创建。</span></p><ul><li><span>观察存储库本地副本与源存储库的不同。在 Bash 终端，运行以下命令：</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">git</span> status</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>输出应显示当前在 Git 中未跟踪您创建的 cafe-network.yaml 文件。</span></p><ul><li><span>运行这两个命令以将新文件添加到存储库，然后将其提交到存储库并添加注释。</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">git</span> add templates/cafe-network.yaml</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">git</span> commit <span class="cm-attribute">-m</span> <span class="cm-string">'initial commit of network template'</span> templates/cafe-network.yaml</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><ul><li><span>检查存储库本地副本的状态：</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">git</span> status</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>返回的信息应报告您的分支比源存储库多一个提交。</span></p><ul><li><span>最后，将提交推送到远程存储库（此命令实际上会将文件复制到 CodeCommit）：</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">git</span> push</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li></ol><p>&nbsp;</p><ol start='34' ><li><p><span>返回 CodePipeline 控制台，然后选择 </span><strong><span>CafeNetworkPipeline</span></strong><span>。</span></p><ul><li><span>注意堆栈创建操作是自动触发的。</span></li></ul><p><strong><span>注意：*</span></strong><span>Source</span><em><span>（源）阶段可能需要一两分钟才能更新，</span></em><span>Deploy</span><em><span>（部署）阶段可能需要一两分钟时间才会显示</span></em><span>正在进行</span><em><span>。最终，</span></em><span>Deploy*（部署）阶段状态应显示为 </span><em><span>Succeeded</span></em><span>（成功）。</span></p><ul><li><span>请注意，</span><em><span>Source</span></em><span>（源）和 </span><em><span>Deploy</span></em><span>（部署）的详细信息显示了运行 </span><code>git push</code><span> 时返回的提交编号。详细信息还显示了您添加到提交中的注释。</span></li></ul></li></ol><p>&nbsp;</p><p><img src="images/pipeline-success.png" referrerpolicy="no-referrer" alt="管道成功"></p><p>&nbsp;</p><p><span>问题排查技巧：</span></p><ul><li><p><span>如果 </span><em><span>Deploy</span></em><span>（部署）步骤的状态为 </span><em><span>Failed - Just now</span></em><span>（失败 – 刚刚），请打开 </span><strong><span>Details</span></strong><span>（详细信息）链接，查看错误详细信息。例如，可能模板格式存在错误，必须解决。</span></p></li><li><p><span>更新模板后，您可以通过再次运行相应的 </span><code>git commit</code><span> 和 </span><code>git push</code><span> 命令来更新堆栈。</span></p><ul><li><strong><span>Release change</span></strong><span>（发布更改）按钮还可以触发管道再次运行。即使您未对 CodeCommit 存储库进行更改（例如发出 </span><code>git push</code><span> 命令），它也会如此操作。</span></li><li><span>同样，您可以在管道的 </span><em><span>Deploy</span></em><span>（部署）阶段使用 </span><strong><span>Retry</span></strong><span>（重试）按钮。它将重试 </span><em><span>Deploy</span></em><span>（部署）阶段，而不会重试 </span><em><span>Source</span></em><span>（源）阶段。</span></li></ul></li><li><p><span>如果堆栈无法回滚，并且阻止您对堆栈执行其他更新，则可以删除堆栈。为此，请转到 AWS CloudFormation 控制台中的堆栈页面，删除堆栈。如果删除网络堆栈，请向 Git 推送一个新的更新。此操作将触发堆栈的重新创建。</span></p></li></ul><p>&nbsp;</p><ol start='35' ><li><span>在 AWS CloudFormation 控制台中，确认 </span><em><span>update-cafe-network</span></em><span> 堆栈已运行。它的状态应为 </span><em><span>CREATE_COMPLETE</span></em><span> 或 </span><em><span>UPDATE_COMPLETE</span></em><span>。</span></li></ol><p><span>   此外，请查看堆栈的 </span><strong><span>Outputs</span></strong><span>（输出）选项卡。它目前显示没有任何输出。但是，您将很快更新堆栈，以便它创建输出。</span></p><p>&nbsp;</p><ol start='36' ><li><p><span>在 Amazon VPC 控制台中，您会注意到 cafe-network.yaml 模板中定义的资源是在 AWS 账户中创建的。</span></p><p><span>例如，控制台应列出名为 </span><em><span>Cafe VPC</span></em><span> 的 VPC 和名为 </span><em><span>Cafe Public Subnet</span></em><span> 的子网。</span></p><p><span>恭喜！您已成功创建运行咖啡馆网站所需的网络资源。</span></p></li></ol><p>&nbsp;</p><h3 id='任务-5更新网络堆栈'><span>任务 5：更新网络堆栈</span></h3><p><span>在此任务中，您将更新网络堆栈，以便它导出自己创建的两个资源的基本信息。您稍后创建的应用程序堆栈可以引用这两个输出。</span></p><p>&nbsp;</p><ol start='37' ><li><span>在 </span><em><span>cafe-network.yaml</span></em><span> 底部添加以下行：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="YAML" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">Outputs</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  PublicSubnet</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Description</span><span class="cm-meta">: </span>The subnet ID to use for public web servers</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Value</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  Ref</span><span class="cm-meta">: </span>PublicSubnet</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Export</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  Name</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp;  'Fn::Sub'</span><span class="cm-meta">: </span><span class="cm-string">'${AWS::StackName}-SubnetID'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom">  VpcId</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Description</span><span class="cm-meta">: </span>The VPC ID</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Value</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  Ref</span><span class="cm-meta">: </span>VPC</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp;  Export</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  Name</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp;  'Fn::Sub'</span><span class="cm-meta">: </span><span class="cm-string">'${AWS::StackName}-VpcID'</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 336px;"></div><div class="CodeMirror-gutters" style="display: none; height: 336px;"></div></div></div></pre><p>&nbsp;</p><ol start='38' ><li><span>保存更改并在 Bash 终端添加和提交代码，然后使用 Git 将其推送到 CodeCommit。</span></li></ol><p>&nbsp;</p><ol start='39' ><li><span>验证 AWS CloudFormation 堆栈是否已更新。另请验证 </span><strong><span>Outputs</span></strong><span>（输出）选项卡现在列出了两个带有导出名称的键。</span></li></ol><figure><table><thead><tr><th><span>名称</span></th><th><span>导出名称</span></th></tr></thead><tbody><tr><td><em><span>PublicSubnet</span></em></td><td><em><span>update-cafe-network-SubnetID</span></em></td></tr><tr><td><em><span>VpcId</span></em></td><td><em><span>update-cafe-network-VpcID</span></em></td></tr></tbody></table></figure><p>&nbsp;</p><p><img src="images/export-name.png" referrerpolicy="no-referrer" alt="exportvalue"></p><p>&nbsp;</p><h3 id='任务-6定义-ec2-实例资源并创建应用程序堆栈'><span>任务 6：定义 EC2 实例资源并创建应用程序堆栈</span></h3><p><span>在此任务中，您将创建一个新的 AWS CloudFormation 模板，以用于创建堆栈。新堆栈会为咖啡馆部署一个动态网站。当您将 cafe-app.yam 模板推送到 CodeCommit 存储库时，</span><em><span>CafeAppPipeline</span></em><span> 管道（您之前看到过）会创建或更新 </span><em><span>update-cafe-app</span></em><span> 堆栈。</span></p><p>&nbsp;</p><ol start='40' ><li><span>返回 AWS Cloud9，复制模板目录中的 </span><strong><span>template2.yaml</span></strong><span> 文件，然后将副本重命名为 </span><code>cafe-app.yaml</code><span>。</span></li></ol><p>&nbsp;</p><ol start='41' ><li><p><span>在 cafe-app.yaml 模板中，分析现有模板内容：</span></p><ul><li><span>在 </span><strong><span>Parameters</span></strong><span>（参数）区域中，</span><strong><span>LatestAmiId</span></strong><span> 将执行查找。它在您创建堆栈的 AWS 区域中查找最新的 Amazon Linux 2 Amazon 系统映像 (AMI) ID。在定义 Amazon Elastic Compute Cloud (Amazon EC2) 实例时，您可以引用它。</span></li><li><span>同样在 </span><strong><span>Parameters</span></strong><span>（参数）区域中，</span><strong><span>CafeNetworkParameter</span></strong><span> 定义了一个字符串值。它的默认值是您在运行 cafe-network.yaml AWS CloudFormation 模板时创建的堆栈的名称。如果必须引用另一个堆栈中的资源，将此字符串设置为参数可让您灵活地指向不同的堆栈名称。</span></li><li><span>在 </span><strong><span>Mappings</span></strong><span>（映射）区域中，定义 EC2 实例时可以引用 </span><strong><span>RegionMap</span></strong><span> 映射。使用此映射可以帮助确保实例使用正确的密钥对。但是，此功能的使用取决于运行模板时所在的 AWS 区域。</span></li><li><span>在 </span><strong><span>Resources</span></strong><span>（资源）区域中，定义了一个 </span><strong><span>EC2 安全组</span></strong><span>。它可为入站网络流量打开 TCP 端口 80 和 22。它是在 </span><em><span>update-cafe-network</span></em><span> 堆栈创建的 VPC 中创建的。</span></li><li><span>在 </span><strong><span>Outputs</span></strong><span>（输出）区域中，名为 </span><strong><span>WebServerPublicIP</span></strong><span> 的输出将返回您接下来要定义的 EC2 实例的公有 IPv4 地址。</span></li></ul></li></ol><p>&nbsp;</p><ol start='42' ><li><p><span>在 cafe-app.yaml 模板中，定义第三个</span><em><span>参数</span></em><span>，以便用户在启动 EC2 实例时可以选择不同的实例类型。</span></p><ul><li><span>浏览到 </span><a href='https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html'><span>AWS 文档</span></a><span>。在</span><em><span>在模板中定义参数</span></em><span>部分下，复制示例 YAML 参数。</span></li><li><span>将参数粘贴到模板中。然后修改参数，使允许的实例类型为 </span><em><span>t2.micro</span></em><span>、</span><em><span>t2.small</span></em><span>、</span><em><span>t3.micro</span></em><span> 和 </span><em><span>t3.small</span></em><span>。此外，将默认值设置为 </span><code>t2.small</code><span> 并更新描述，以便显示用户可以选择的选项。</span></li></ul></li></ol><p>&nbsp;</p><ol start='43' ><li><span>在新的浏览器选项卡中，打开 </span><a href='https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html'><span>AWS 文档</span></a><span>并将该页面中的信息作为参考。</span></li></ol><p>&nbsp;</p><ol start='44' ><li><p><span>回到 cafe-app.yaml 模板，创建具有以下特征的新 </span><em><span>EC2 实例</span></em><span>资源：</span></p><ul><li><p><span>将 </span><strong><span>Logical ID</span></strong><span>（逻辑 ID）设置为 </span><code>CafeInstance</code><span>（如果需要，请参考 </span><a href='https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html' target='_blank' class='url'>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html</a><span>）</span></p></li><li><p><span>包括一个引用 </span><em><span>LatestAmiId</span></em><span> 参数的 </span><strong><span>ImageId</span></strong></p></li><li><p><span>对于 </span><strong><span>instance type</span></strong><span>（实例类型），请参考您在之前步骤中定义的实例类型参数。</span></p></li><li><p><span>对于 </span><strong><span>KeyName</span></strong><span>，请使用以下代码行，其中引用了模板中已定义的 RegionMap 映射：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  KeyName</span><span class="cm-meta">: </span>!FindInMap <span class="cm-meta">[</span>RegionMap<span class="cm-meta">,</span> !Ref <span class="cm-string">"AWS::Region"</span><span class="cm-meta">,</span> keypair<span class="cm-meta">]</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>对于 </span><strong><span>instance profile</span></strong><span>（实例配置文件）（AWS Identity and Access Management (IAM)，附加到实例的角色），请指定 </span><code>CafeRole</code></p><p><strong><span>注意</span></strong><span>：您的账户中已存在 CafeRole IAM 角色。附加它将授予 EC2 实例从 AWS Systems Manager 检索参数仓库值的权限。</span></p></li><li><p><span>在 </span><strong><span>Properties</span></strong><span>（属性）部分中，包括以下代码行：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp;  NetworkInterfaces</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta"> &nbsp; &nbsp; &nbsp;  - </span><span class="cm-atom">DeviceIndex</span><span class="cm-meta">: </span><span class="cm-string">'0'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp; &nbsp;  AssociatePublicIpAddress</span><span class="cm-meta">: </span><span class="cm-string">'true'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp; &nbsp;  SubnetId</span><span class="cm-meta">: </span>!ImportValue</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  'Fn::Sub'</span><span class="cm-meta">: </span><span class="cm-string">'${CafeNetworkParameter}-SubnetID'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp; &nbsp;  GroupSet</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  - </span>!Ref CafeSG</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 157px;"></div><div class="CodeMirror-gutters" style="display: none; height: 157px;"></div></div></div></pre><ul><li><strong><span>分析</span></strong><span>：前面的几行有助于确保将实例部署到运行咖啡馆网络堆栈时创建的</span><em><span>公有子网</span></em><span>中。请注意，在此任务开始时，您更新了网络堆栈以定义带有</span><em><span>导出</span></em><span>名称的输出。在上述代码中，您</span><em><span>导入</span></em><span>了 </span><strong><span>SubnetId</span></strong><span> 的值。上述代码还有助于确保您创建的实例位于已在此模板中为您定义的 </span><em><span>CafeSG</span></em><span> 安全组中。</span></li></ul></li><li><p><span>设置一个</span><em><span>键</span></em><span>为 </span><em><span>Name</span></em><span>、</span><em><span>值</span></em><span>为 </span><em><span>Cafe Web Server</span></em><span> 的</span><strong><span>标签</span></strong></p><ul><li><strong><span>提示：</span></strong><span>了解如何将 </span><em><span>Name</span></em><span> 标签应用于已在模板中定义的安全组资源。</span></li></ul></li><li><p><span>在 </span><strong><span>Properties</span></strong><span>（属性）部分中，包括以下附加 </span><strong><span>UserData</span></strong><span> 代码：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="yaml" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="yaml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp;  UserData</span><span class="cm-meta">:</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-atom"> &nbsp; &nbsp; &nbsp; &nbsp;  Fn::Base64</span><span class="cm-meta">:</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  !Sub |</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment">#!/bin/bash</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  yum -y update</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  yum install -y httpd mariadb-server wget</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  systemctl enable httpd</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  systemctl start httpd</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  systemctl enable mariadb</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  systemctl start mariadb</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  wget https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod10-challenge/cafe-app.sh</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  chmod +x cafe-app.sh</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  ./cafe-app.sh</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 336px;"></div><div class="CodeMirror-gutters" style="display: none; height: 336px;"></div></div></div></pre><p><strong><span>分析</span></strong><span>：上述代码在启动过程结束时在实例上运行。它会在 Amazon Linux 实例上安装 Apache HTTP Web 服务器、MariaDB 数据库和 PHP。接下来，它启动 Web 服务器和数据库。然后，下载一个名为 cafe-app.sh 的脚本并运行它。cafe-app 脚本对数据库进行配置并安装使咖啡馆网站正常运行的 PHP 代码。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='45' ><li><span>当您对模板更新感到满意后，保存更改。要在 Bash 终端验证模板格式，请运行以下命令：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2002px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  aws cloudformation validate-template <span class="cm-attribute">--template-body</span> file:///home/ec2-user/environment/CFTemplatesRepo/templates/cafe-app.yaml</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2002px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">如果您收到 JSON 格式的响应，而且其中包含在模板顶部定义的三个参数，则表明模板已通过验证。但是，如果您收到 *ValidationError* 响应（或其他某种错误响应），则必须纠正此问题。然后，保存更改并再次运行 `validate-template` 命令。</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p>&nbsp;</p><ol start='46' ><li><p><span>如果模板已通过验证检查，请将文件添加到 CodeCommit。在 Bash 终端，运行 </span><code>git</code><span> 命令来添加文件、提交文件并将其推送到存储库。</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>提示</span></strong><span>：请参阅任务 3 中的 Git 命令，这或许能为您提供帮助。但是，请记住，在此任务中，您想要推送到 CodeCommit 的模板的名称是不同的。</span></p></li></ol><p>&nbsp;</p><ol start='47' ><li><p><span>返回 CodePipeline 控制台并选择 </span><strong><span>CafeAppPipeline</span></strong><span>。</span></p><p><strong><span>注意</span></strong><span>：Source（源）阶段可能需要一两分钟才能更新，Deploy（部署）阶段可能需要一两分钟时间才会显示</span><em><span>正在进行</span></em><span>。最终，Deploy（部署）阶段状态应显示为 </span><em><span>Succeeded - Just now</span></em><span>（成功 – 刚刚）。</span></p><ul><li><p><span>如果状态显示失败，请尝试以下问题排查技巧。</span></p><ul><li><span>如果您看到 </span><em><span>Deploy</span></em><span>（部署）阶段的状态为</span><em><span>Failed - Just now</span></em><span>（失败 – 刚刚），请选择 </span><strong><span>Details</span></strong><span>（详细链接）来打开错误信息。它可能会提供一个链接，供您查看 AWS CloudFormation 堆栈详细信息。（转到 </span><strong><span>Events</span></strong><span>（事件）选项卡，找出导致堆栈回滚的第一个错误）。</span></li><li><span>如果堆栈无法回滚，或者堆栈状态为 </span><em><span>ROLLBACK_COMPLETE</span></em><span>，并阻止您使用管道更新堆栈，则您可以从 AWS CloudFormation 堆栈页面中删除堆栈。然后，将新的更新推送到 Git，触发重新创建堆栈。</span></li></ul></li></ul></li></ol><p>&nbsp;</p><ol start='48' ><li><span>在 AWS CloudFormation 控制台中，确认 </span><em><span>update-cafe-app</span></em><span> 堆栈已成功运行，且状态为 </span><em><span>CREATE_COMPLETE</span></em><span>。</span></li></ol><p>&nbsp;</p><ol start='49' ><li><span>转到 Amazon EC2 控制台。您会看到已经创建了 EC2 实例和安全组资源（在 cafe-app.yaml 模板中定义）。</span></li></ol><p>&nbsp;</p><ol start='50' ><li><span>EC2 实例启动并通过两个状态检查后，测试咖啡馆网站。在浏览器选项卡中，加载以下 URL，其中 </span>&lt;<em><span>public-ip-address</span></em>&gt;<span> 是您定义的 EC2 实例的</span><em><span>公有 IPv4 地址</span></em><span>：</span><code>http://&lt;public-ip-address&gt;/cafe</code></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">您应该可以看到咖啡馆网站。</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">提示：您定义的用户数据脚本详细信息可能需要 2 分钟左右的时间才能完成运行。如果您没有立即看到网站，请耐心等待。</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">请注意，网站会显示服务器信息，例如正在运行 Web 服务器的区域和可用区。</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">恭喜！您已使用 CI/CD 管道和 IaC 方法部署了网络层和应用程序层。</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 179px;"></div><div class="CodeMirror-gutters" style="display: none; height: 179px;"></div></div></div></pre><p>&nbsp;</p><h4 id='回答有关创建应用程序层的结果的问题'><span>回答有关创建应用程序层的结果的问题</span></h4><ol start='51' ><li><p><span>返回显示本实验多项选择题的浏览器选项卡，并回答以下问题。</span></p><ul><li><strong><span>问题 4：</span></strong><span>转到 </span><em><span>update-cafe-app</span></em><span> 堆栈的 </span><strong><span>Parameters</span></strong><span>（参数）选项卡。您看到的 </span><strong><span>LatestAmiId</span></strong><span> 值是什么？</span></li><li><strong><span>问题 5：</span></strong><span>转到 </span><em><span>update-cafe-app</span></em><span> 堆栈的 </span><strong><span>Stack info</span></strong><span>（堆栈信息）选项卡。授权“创建和更新 </span><em><span>update-cafe-app</span></em><span> 堆栈”的 IAM 角色的 Amazon 资源名称 (ARN) 是什么？</span></li><li><strong><span>问题 6：</span></strong><span>在 AWS 管理控制台中，导航到存储 AWS CloudFormation 模板的 CodeCommit 存储库。选择 </span><strong><span>Commits</span></strong><span>（提交），然后在 </span><strong><span>Commits</span></strong><span>（提交）列表中，选择一个提交 ID，打开提交。您看到了什么？</span></li></ul></li></ol><p>&nbsp;</p><h2 id='新业务要求在另一个-aws-区域中复制网络和应用程序资源挑战-4）'><span>新业务要求：在另一个 AWS 区域中复制网络和应用程序资源（挑战 4）</span></h2><p><span>对于能够使用 AWS CloudFormation 为动态咖啡馆网站创建网络层和应用程序层，Sofía 感到非常高兴。让她更开心的是，她刚刚获悉咖啡馆员工还希望她将这些资源复制到另一个 AWS 区域。</span></p><p><span>Sofía 很快就会体验到她为在 AWS CloudFormation 模板中定义资源和配置付出的努力带来的好处。她还会发现，通过 IaC 方法复制环境比手动创建所有资源要更轻松。</span></p><p>&nbsp;</p><h3 id='任务-7将咖啡馆网络和网站复制到另一个-aws-区域'><span>任务 7：将咖啡馆网络和网站复制到另一个 AWS 区域</span></h3><p><span>在这个最后的实验任务中，您将体验到复制部署的速度有多快。之所以可以实现快速部署，是因为您在 AWS CloudFormation 模板中定义了所有资源。</span></p><p><span>在任务 4、5 和 6 中，AWS CloudFormation 堆栈的创建或更新都是自动进行的。定义了一个管道来监控 CodeCommit 存储库的更新时间。然后，它调用 AWS CloudFormation 来创建或更新堆栈。但是，在此任务中，您将使用 AWS CLI 在另一个 AWS 区域中复制咖啡馆网络资源。然后，您将使用 AWS CloudFormation 控制台在另一个区域中创建应用程序堆栈。</span></p><ol start='52' ><li><p><span>返回 AWS Cloud9 IDE，运行以下命令，以将咖啡馆</span><em><span>网络</span></em><span>复制到另一个 AWS 区域：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2002px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; aws cloudformation create-stack <span class="cm-attribute">--stack-name</span> update-cafe-network <span class="cm-attribute">--template-body</span> file:///home/ec2-user/environment/CFTemplatesRepo/templates/cafe-network.yaml <span class="cm-attribute">--region</span> us-west-2</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p><span>它应该返回一个 </span><em><span>StackID</span></em><span>。请注意，您可以通过在运行命令时指定区域来覆盖用于创建此堆栈的默认区域。</span></p></li></ol><p>&nbsp;</p><ol start='53' ><li><p><span>浏览到 AWS CloudFormation 控制台，将区域更改为 </span><strong><span>US West (Oregon) us-west-2</span></strong><span>（美国西部（俄勒冈）us-west-2）。</span></p><ul><li><p><span>应该会列示 </span><em><span>update-cafe-network</span></em><span> 堆栈</span></p></li><li><p><span>验证第二个 </span><em><span>update-cafe-region</span></em><span> 堆栈的状态最终是否更改为 </span><em><span>CREATE_COMPLETE</span></em></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>提示</span></strong><span>：使用 </span><i class="fas fa-sync"></i><span> 刷新图标，可以在操作完成后，更快地看到状态更改。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='54' ><li><p><span>浏览导 Amazon VPC 服务页面，并确认您使用的是</span><strong><span>俄勒冈</span></strong><span>区域 (</span><em><span>us-west-2</span></em><span>)。</span></p><p><span>您应该能够看到创建的网络资源。</span></p></li></ol><p>&nbsp;</p><ol start='55' ><li><p><span>在</span><strong><span>俄勒冈</span></strong><span>区域 (</span><em><span>us-west-2</span></em><span>) 中，创建一个名为 </span><code>cafe-oregon</code><span> 的 EC2 密钥对。</span></p><ul><li><p><span>浏览到 Amazon EC2 控制台并确认您处于</span><strong><span>俄勒冈</span></strong><span>区域。</span></p></li><li><p><span>在导航窗格中，选择 </span><strong><span>Network &amp; Security &gt; Key Pairs</span></strong><span>（网络与安全 &gt; 密钥对）</span></p></li><li><p><span>选择 </span><strong><span>Create key pair</span></strong><span>（创建密钥对）。</span></p></li><li><p><span>将密钥对命名为 </span><code>cafe-oregon</code><span>，然后再次选择 </span><strong><span>Create key pair</span></strong><span>（创建密钥对）。</span></p><p><strong><span>提示</span></strong><span>：您可以选择保存密钥对，也可以选择 </span><strong><span>Cancel</span></strong><span>（取消）。在本实验中，无需使用密钥对。但是，在典型的使用案例中，您必须保存密钥对，否则之后将无法保存。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='56' ><li><p><span>再次查看应用程序模板详细信息。</span></p><ul><li><span>返回 AWS Cloud9 IDE 并在文本编辑器中查看 </span><strong><span>cafe-app.yaml</span></strong><span> 模板的详细信息。</span></li><li><span>请注意 EC2 实例资源定义中的 </span><strong><span>KeyName</span></strong><span> 属性。它引用在模板中定义的 </span><strong><span>RegionMap</span></strong><span> 映射。</span></li><li><span>映射表明，如果实例在 </span><em><span>us-east-1（弗吉尼亚北部）区域</span></em><span>启动，则应使用 </span><em><span>vockey 密钥对</span></em><span>。但是，如果实例在 </span><em><span>us-west-2（俄勒冈）区域</span></em><span>启动，则应使用您刚刚创建的 </span><em><span>cafe-oregon 密钥对</span></em><span>。</span></li><li><span>另请注意您之前定义的 </span><strong><span>InstanceTypeParameter</span></strong><span>。它在 </span><strong><span>AllowedValues</span></strong><span> 区域提供了一些实例类型选项，但它也将默认值设置为 </span><em><span>t2.small</span></em><span>。稍后您将用到这一配置。</span></li></ul></li></ol><p>&nbsp;</p><ol start='57' ><li><p><span>在 AWS Cloud9 IDE 中，将模板文件复制到 S3 存储桶。（在以下命令中，将 </span>&lt;<em><span>repobucket-bucketname</span></em>&gt;<span> 替换为您账户中 S3 存储桶的实际名称。它的名称应该包含字符串 </span><em><span>repobucket</span></em><span>。）</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; aws s3 <span class="cm-builtin">cp</span> templates/cafe-app.yaml s3://&lt;repobucket-bucketname&gt;/</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li></ol><p>&nbsp;</p><ol start='58' ><li><span>在 Amazon S3 控制台中，复制刚上传的文件的 </span><strong><span>Object URL</span></strong><span>（对象 URL）（这是一个 </span><em><span>https</span></em><span> 地址）。</span></li></ol><p>&nbsp;</p><ol start='59' ><li><span>在 AWS CloudFormation 控制台中，将区域更改为 </span><strong><span>俄勒冈</span></strong><span> (</span><em><span>us-west-2</span></em><span>)。</span></li></ol><p>&nbsp;</p><ol start='60' ><li><p><span>创建堆栈（使用新资源）。</span></p><ul><li><p><span>在 </span><strong><span>Create stack</span></strong><span>（创建堆栈）界面的 </span><strong><span>Amazon S3 URL</span></strong><span> 框中，粘贴刚刚复制的对象 URL。</span></p></li><li><p><span>在下一个界面（</span><strong><span>Specify stack details</span></strong><span>（指定堆栈详细信息））–</span></p><ul><li><strong><span>Stack name</span></strong><span>（堆栈名称）：输入相应的名称</span></li><li><strong><span>InstanceTypeParameter</span></strong><span>：</span><em><span>t3.micro</span></em></li></ul><p><span>请注意，您可以在创建堆栈时设置实例类型，因为您在 AWS CloudFormation 模板中将其定义为参数。</span></p></li><li><p><span>进入其余界面（接受所有默认设置），然后完成堆栈的创建。</span></p></li><li><p><span>验证是否已成功创建堆栈。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='61' ><li><p><span>浏览到 Amazon EC2 控制台并查看创建的资源。</span></p><ul><li><span>务必给 Web 服务器几分钟时间来完成启动并运行用户数据脚本。</span></li><li><span>请注意实例使用的</span><em><span>密钥对</span></em><span>和实例类型。这些设置与在 </span><em><span>us-east-1</span></em><span> 区域中运行的 Web 服务器上的设置不同。您使用了同一模板来启动此堆栈，</span><em><span>但未对其进行修改</span></em><span>。</span></li><li><span>完全启动服务器后，您应该能够访问网站 </span><code>http://&lt;public-ip-address&gt;/cafe</code><span>（其中 </span>&lt;<em><span>public-ip-address</span></em>&gt;<span> 是 EC2 实例的公有 IPv4 IP 地址）。</span></li><li><span>请注意，网站上的服务器信息显示咖啡馆网站的第二个实例正在 </span><em><span>us-west-2</span></em><span> 区域运行。您创建的第一个 Web 服务器显示它正在 </span><em><span>us-east-1</span></em><span> 区域中运行。</span></li></ul></li></ol><p>&nbsp;</p><h2 id='咖啡馆更新'><span>咖啡馆更新</span></h2><p><img src="images/cafe-people.png" alt="咖啡馆员工" width="300"></p><p>&nbsp;</p><p><span>由于刚刚学会如何操作，Sofía 思如泉涌！</span></p><p><span>她使用 AWS CloudFormation 成功部署了咖啡馆网站的静态版本。然后，她成功地将动态咖啡馆网站部署为 Web 应用程序。对于动态网站，Sofía 采用了使用 AWS CodeCommit、AWS CodePipeline 和 AWS CloudFormation 的 CI/CD 管道。此外，她还将网络资源和咖啡馆应用程序资源复制到了另一个 AWS 区域。</span></p><p><span>Sofía 想象着如何将 AWS CloudFormation 模板应用于</span><em><span>备份和灾难恢复 (DR)</span></em><span> 解决方案。她刚刚体验了如何快速地重建基本的咖啡馆基础设施。如果她的生产部署出于任何原因失败，她现在可以快速重建或复制。</span></p><p><span>Sofía 还考虑了现在如何快速启动</span><em><span>测试环境</span></em><span>的问题。她确信测试环境的配置详细信息可与生产环境相匹配。她还可以通过使用参数和映射等功能来专门控制测试环境与生产环境的不同之处。</span></p><p><span>实现开发运维的自动化将带来诸多好处。Sofía 现在计划将自动化和 CI/CD 管道作为其团队开发、测试和部署咖啡馆云资源更新的核心。</span></p><p>&nbsp;</p><h2 id='提交作业'><span>提交作业</span></h2><ol start='62' ><li><span>在这些说明的顶部，选择 </span><span id="ssb_blue"><span>Submit</span></span><span>（提交）记录您的进度，在出现提示时，选择 </span><strong><span>Yes</span></strong><span>（是）。</span></li></ol><ol start='63' ><li><p><span>如果在几分钟后仍未显示结果，请返回到这些说明的顶部，并选择 </span><span id="ssb_voc_grey"><span>Grades</span></span><span>（成绩）</span></p><p><strong><span>提示</span></strong><span>：您可以多次提交作业。更改作业后，再次选择 </span><strong><span>Submit</span></strong><span>（提交）即可。您最后一次提交的作业将记录为本实验的成绩。</span></p></li></ol><ol start='64' ><li><span>要查找有关您作业的详细反馈，请选择 </span><span id="ssb_voc_grey"><span>Details</span></span><span>（详细信息），然后选择 </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span>（查看提交报告）。</span></li></ol><p>&nbsp;</p><h2 id='实验完成'><span>实验完成</span></h2><p><i class="icon-flag-checkered"></i><span> 恭喜！您已完成实验。</span></p><ol start='65' ><li><p><span>若要确认您想结束实验，请选择此页面顶部的 </span><span id="ssb_voc_grey"><span>End Lab</span></span><span>（结束实验），然后选择 </span><span id="ssb_blue"><span>Yes</span></span><span>（是）。</span></p><p><span>此时应显示一个面板，并显示消息：</span><em><span>DELETE has been initiated... You may close this message box now.</span></em><span>（删除操作已启动...您现在可以关闭此消息框。）</span></p></li></ol><p>&nbsp;</p><ol start='66' ><li><span>选择右上角的 </span><strong><span>X</span></strong><span> 关闭面板。</span></li></ol><p>&nbsp;</p><p><em><span>©2020 Amazon Web Services, Inc. 及其附属公司。保留所有权利。未经 Amazon Web Services, Inc. 事先书面许可，不得复制或转载本文的部分或全部内容。禁止商业性复制、出租或出售。</span></em></p></div></div>
+</body>
+</html>

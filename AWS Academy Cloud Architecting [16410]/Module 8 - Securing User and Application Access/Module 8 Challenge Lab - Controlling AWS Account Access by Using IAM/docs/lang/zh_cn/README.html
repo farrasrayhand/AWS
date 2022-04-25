@@ -1,0 +1,1163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='模块-8----挑战实验使用-iam-控制-aws-账户访问'><span>模块 8 – 挑战实验：使用 IAM 控制 AWS 账户访问</span></h1><h2 id='场景'><span>场景</span></h2><p><span>在与 Mateo 讨论咖啡馆的 AWS 基础设施后，Sofía 意识到，她必须解决有关咖啡馆员工使用 AWS 账户方式的一些基本安全问题。</span></p><p><span>现在，咖啡馆规模很大，负责在 AWS 上构建、维护或访问应用程序的团队成员可以专注于具体的角色（例如开发人员或数据库管理员）。到目前为止，他们还没有开始根据每个用户的角色和责任明确定义他们应具有的访问权限级别。</span></p><p><span>Sofía 花了一些时间思考每个人应该能够在账户中执行什么操作，尤其是使用 AWS Cloud9、Amazon Elastic Compute Cloud (Amazon EC2) 和 Amazon Relational Database Service (Amazon RDS)。她做了一些决策并创建了该图表，其中描述了她希望如何定义 AWS 账户中的访问权限：</span></p><figure><table><thead><tr><th><span>IAM 组</span></th><th><span>IAM 用户</span></th><th><span>AWS 服务访问权限</span></th><th><span>原因</span></th></tr></thead><tbody><tr><td><span>AppDevelopers</span></td><td><span>Nikhil</span></td><td><strong><span>AWS Cloud9</span></strong><span> 对 Amazon EC2 开发环境的访问权限。</span><br><span>以及，对 </span><strong><span>Amazon EC2</span></strong><span> 的只读访问权限。</span></td><td><span>Nikhil 经常以应用程序开发人员的身份工作。他应该能够访问咖啡馆 Web 应用程序的开发环境 AWS Cloud9 环境。但是，他应该不能访问生产环境。他还应该能够查看所有 Amazon EC2 资源和配置详细信息，但他不应该能够修改它们。</span></td></tr><tr><td><span>DBAdministrators</span></td><td><span>Olivia</span></td><td><span>对 </span><strong><span>Amazon RDS</span></strong><span> 的完全访问权限。</span><br><span>以及，对 </span><strong><span>AWS Systems Manager</span></strong><span> 的完全访问权限。</span></td><td><span>Olivia 被聘为合同制数据库管理员，帮助管理咖啡馆 Web 应用程序使用的数据库。因此，她应该拥有完全的 Amazon RDS 访问权限。她还需要访问存储数据库连接信息的 AWS Systems Manager。但是，除了访问这两项服务之外，Sofía 无法想出 Olivia 需要访问更多 AWS 资源的理由。</span></td></tr></tbody></table></figure><p><span>请注意，Soofía 已决定要定义 </span><em><span>IAM 组</span></em><span>，而不是直接向用户分配权限。接下来，她将附加授予这些组访问权限的 IAM 策略。然后，她计划将用户分配给相应的组。如果咖啡馆聘请了更多的开发人员或数据库管理员，她可以将他们作为新用户添加到组。这些新用户将继承他们的角色在开发和维护 AWS 账户基础设施方面的正确权限。这种方法将随着咖啡馆的扩张而不断扩展。</span></p><p><span>现在 Sofía 知道她想要向哪些用户分配哪些访问权限，她已准备好开始使用了！</span></p><p>&nbsp;</p><h2 id='实验概览和目标'><span>实验概览和目标</span></h2><p><span>在本实验中，您将使用 AWS Identity and Access Management (IAM) 为不同用户定义不同的访问权限。您将测试并调整访问权限。您还将观察您授予的访问权限如何影响 IAM 用户可以对 AWS 账户资源执行哪些操作。</span></p><p><span>完成本实验后，您应能够：</span></p><ul><li><span>创建 IAM 用户和 IAM 组，并将 IAM 策略与 IAM 组关联</span></li><li><span>指明受限的访问权限如何影响 IAM 用户可以访问哪些资源，以及他们可以执行哪些操作</span></li><li><span>使用 AWS 托管的 IAM 策略修改用户访问权限并观察结果</span></li><li><span>使用 IAM 策略模拟器观察不同策略授予的访问权限范围</span></li><li><span>访问 IAM Access Advisor，观察不同用户正在利用哪些访问权限</span></li><li><span>使用可视化编辑器创建自定义 IAM 策略</span></li></ul><p>&nbsp;</p><p><span>当您</span><em><span>启动</span></em><span>实验时，以下资源已经在 AWS 账户中为您创建好了：</span></p><p><img src="images/arch-after-task-1.png" referrerpolicy="no-referrer" alt="起始架构"></p><p><span>在本实验</span><em><span>结束</span></em><span>时，您的架构将包括以下资源和配置：</span></p><p><img src="images/arch-end-lab.png" referrerpolicy="no-referrer" alt="最终架构"></p><p>&nbsp;</p><h2 id='持续时间'><span>持续时间</span></h2><p><span>完成本实验大约需要 </span><strong><span>80 分钟</span></strong><span>。</span></p><p>&nbsp;</p><h2 id='aws-服务限制'><span>AWS 服务限制</span></h2><p><span>在本实验环境中，对 AWS 服务和服务操作的访问可能仅限于完成实验说明所需的服务和服务操作。如果您尝试访问其他服务或执行本实验中所述之外的操作，可能会遇到错误。</span></p><p>&nbsp;</p><h2 id='访问-aws-管理控制台'><span>访问 AWS 管理控制台</span></h2><ol start='' ><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）即可启动您的实验。</span></p><p><strong><span>Start Lab</span></strong><span>（启动实验）面板随即会打开，其中显示了实验状态。</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>提示</span></strong><span>：如果您需要延长计时器上显示的实验完成时间，请再次选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）按钮，以重新启动环境计时器。这一操作不会删除您已创建的资源。</span></p></li></ol><p>&nbsp;</p><ol start='2' ><li><span>请耐心等待，直到您看到消息 </span><em><span>Lab status: ready</span></em><span>（实验状态：就绪），然后选择 </span><strong><span>X</span></strong><span> 关闭 </span><strong><span>Start Lab</span></strong><span>（启动实验）面板。</span></li></ol><ol start='3' ><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_voc_grey"><span>AWS</span></span><span>。</span></p><p><span>AWS 管理控制台将会在一个新的浏览器选项卡中打开。您将自动登录系统。</span></p><p><strong><span>提示</span></strong><span>：如果未打开新的浏览器选项卡，您的浏览器顶部通常会出现一个横幅或图标，并显示一条消息，指明您的浏览器阻止该了网站打开弹出窗口。请选择横幅或图标，然后选择 </span><strong><span>Allow pop-ups</span></strong><span>（允许弹出窗口）。</span></p></li><li><p><span>排列 AWS 管理控制台选项卡，使其与这些说明一起显示。理想情况下，您将同时打开两个浏览器选项卡，以便能够更轻松地执行实验步骤。</span></p><p><strong><span>注意</span></strong><span>：您也可以取消选中屏幕顶部 Terminal（终端）旁边的复选框，将其从视图中隐藏。</span></p></li></ol><p>&nbsp;</p><h2 id='业务请求为应用程序开发人员配置-aws-账户访问权限挑战-1）'><span>业务请求：为应用程序开发人员配置 AWS 账户访问权限（挑战 1）</span></h2><p><span>咖啡馆想要配置适合应用程序开发人员的访问权限。您将担任 Sofía 的角色来配置访问权限。然后，您将担任 Nikhil 的角色并测试应用程序开发人员的访问权限。</span></p><p>&nbsp;</p><h3 id='任务-1使用策略和-iam-用户配置-iam-组'><span>任务 1：使用策略和 IAM 用户配置 IAM 组</span></h3><p><span>在实验的第一项任务中，您将以 AWS 账户管理员 Sofía 的身份工作。</span></p><p><span>作为 Sofía，您将创建一个 IAM 组并将 AWS 托管策略分配给该组。然后，您将创建一个新的 IAM 用户，并将该用户添加为该组的成员。接下来，您将在运行咖啡馆 Web 应用程序开发版本的现有 EC2 实例上创建 AWS Cloud9 环境。最后，您将与新用户共享开发环境。</span></p><p><strong><span>注意</span></strong><span>：</span><em><span>您登录的用户将显示在网页的右上角区域</span></em><span>。它当前应该显示您的登录身份为 </span><em><span>voclabs</span></em><span> 用户。在本实验中，将 </span><em><span>voclabs</span></em><span> 用户想成 Sofía。</span></p><p>&nbsp;</p><ol start='5' ><li><span>在控制台中，打开 IAM 服务页面。</span></li></ol><p>&nbsp;</p><ol start='6' ><li><p><span>创建一个名为 </span><code>AppDevelopers</code><span> 的 </span><strong><span>IAM 组</span></strong><span>，然后将以下 IAM 策略附加到该组：</span></p><ul><li><strong><span>AmazonEC2ReadOnlyAccess</span></strong></li><li><strong><span>AWSCloud9EnvironmentMember</span></strong></li></ul></li></ol><p>&nbsp;</p><ol start='7' ><li><p><span>创建 </span><strong><span>IAM 用户</span></strong><span>并将该用户添加到 </span><em><span>AppDevelopers</span></em><span> 群组。</span></p><ul><li><strong><span>User name</span></strong><span>（用户名）：</span><code>Nikhil</code></li><li><strong><span>Access type</span></strong><span>（访问类型）：</span><em><span>AWS Management Console access</span></em><span>（AWS 管理控制台访问）</span></li><li><strong><span>Custom password</span></strong><span>（自定义密码）：</span><code>@ppD3veloper2020!</code></li><li><strong><span>Require password reset</span></strong><span>（需要重置密码）：清除此复选框</span></li><li><span>将 Nikhil 添加到 </span><em><span>AppDevelopers</span></em><span> 组</span></li><li><strong><span>注意</span></strong><span>：您不需要添加任何标签</span></li><li><span>在 </span><strong><span>Success</span></strong><span>（成功）屏幕中，您可以</span><em><span>根据需要</span></em><span>选择 </span><strong><span>Download .csv</span></strong><span>（下载 .csv）并将该文件保存到计算机</span></li><li><span>选择 </span><strong><span>Close</span></strong><span>（关闭）。</span></li></ul></li></ol><p>&nbsp;</p><ol start='8' ><li><p><span>在仍以 </span><em><span>voclabs</span></em><span> 用户 (Sofía) 身份登录的情况下，连接到 AWS Cloud9 IDE 并设置咖啡馆 Web 应用程序。</span></p><ul><li><p><span>打开 </span><strong><span>AWS Cloud9</span></strong><span> 服务页面，然后在 </span><strong><span>DEVCafeServer</span></strong><span> 下，选择 </span><strong><span>Open IDE</span></strong><span>（打开 IDE）。</span></p><p><span>系统现在应显示在 EC2 实例上运行的 AWS Cloud9 IDE。</span></p></li><li><p><span>在屏幕底部的 Bash 终端窗口中，粘贴并运行以下三个命令：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19995px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-builtin">wget</span> https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod8-challenge/install-cafe-app.sh</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-builtin">chmod</span> <span class="cm-operator">+</span>x install-cafe-app.sh</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  ./install-cafe-app.sh</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><p><i class="fas fa-info-circle"></i><span> </span><strong><span>注意</span></strong><span>：您</span><em><span>不</span></em><span>需要等到脚本完成运行。请直接进入下一步。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='9' ><li><p><span>与 </span><em><span>Nikhil</span></em><span> 用户共享 AWS Cloud9 环境。</span></p><ul><li><p><span>在 AWS Cloud9 IDE 的右上角，选择 </span><strong><span>Share</span></strong><span>（共享）。</span></p></li><li><p><span>在 </span><strong><span>Share this environment</span></strong><span>（共享此环境）面板的 </span><strong><span>Invite Members</span></strong><span>（邀请成员）下，输入 </span><code>Nikhil</code><span> 并选择 </span><strong><span>Invite</span></strong><span>（邀请）。</span></p></li><li><p><span>选择 </span><strong><span>OK</span></strong><span>（确定），再次选择 </span><strong><span>OK</span></strong><span>，然后选择 </span><strong><span>Done</span></strong><span>（完成）。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>重要提示</span></strong><span>：关闭 AWS Cloud9 IDE 浏览器选项卡，但将您以 </span><em><span>voclabs</span></em><span> 用户 (Sofía) 的身份登录到 AWS 管理控制台的至少一个浏览器选项卡保持打开状态。</span></p></li></ul></li></ol><p>&nbsp;</p><h3 id='任务-2以-nikhil-的身份登录并测试访问'><span>任务 2：以 Nikhil 的身份登录并测试访问</span></h3><p><span>在此任务中，您将以 Nikhil 的身份来测试 Sofía 配置的访问权限。</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>提示</span></strong><span>：我们建议您打开无痕或隐私浏览器选项卡，以 </span><em><span>Nikhil</span></em><span> 身份登录。</span></p><ul><li><span>例如，如果您使用的是 </span><em><span>Chrome</span></em><span>，请选择 </span><strong><span>File</span></strong><span>（文件）&gt; </span><strong><span>New Incognito Window</span></strong><span>（打开新的无痕窗口）。如果您使用 </span><em><span>Firefox</span></em><span>，请选择 </span><strong><span>File</span></strong><span>（文件）&gt; </span><strong><span>New Private Window</span></strong><span>（新建隐私窗口）。</span></li><li><span>或者，使用不同的浏览器（例如，如果您使用 Chrome 完成任务 1，可使用 Firefox、Edge 或 Safari 执行任务 2）。</span></li></ul><p><strong><span>注意</span></strong><span>：使用无痕会话、隐私会话或不同的浏览器非常方便。您可以同时以 </span><em><span>voclabs</span></em><span> 用户和其他用户（例如 </span><em><span>Nikhil</span></em><span>）的身份保持登录状态。因此，您可以在这两个用户访问级别之间切换，而无需重复注销或登录。不同浏览器选项卡中经过身份验证的会话信息彼此隔离。</span></p><p>&nbsp;</p><ol start='10' ><li><p><span>以 </span><em><span>Nikhil</span></em><span> 身份登录 AWS 管理控制台。</span></p><ul><li><p><span>在您以 </span><em><span>voclabs</span></em><span> 用户 (Sofía) 身份登录的浏览器选项卡中，打开 </span><strong><span>IAM</span></strong><span> 控制台，选择 </span><strong><span>Users</span></strong><span>（用户），然后选择 </span><strong><span>Nikhil</span></strong><span>。</span></p></li><li><p><span>选择 </span><strong><span>Security credentials</span></strong><span>（安全证书）选项卡，然后在 </span><strong><span>Sign-in credentials</span></strong><span>（登录证书）区域中复制 </span><strong><span>Console sign-in link</span></strong><span>（控制台登录链接）。</span></p></li><li><p><span>将链接粘贴到无痕或隐私浏览器选项卡（或上述提示中提到的其他浏览器）中。</span></p></li><li><p><span>在 </span><strong><span>Sign in as IAM user</span></strong><span>（以 IAM 用户身份登录）屏幕中，输入 Nikhil 的凭证，然后选择 </span><strong><span>Sign in</span></strong><span>（登录）。</span></p><ul><li><strong><span>IAM user name</span></strong><span>（IAM 用户名）：</span><code>Nikhil</code></li><li><strong><span>Password</span></strong><span>（密码）：</span><code>@ppD3veloper2020!</code></li></ul></li></ul></li></ol><p>&nbsp;</p><ol start='11' ><li><p><span>打开 </span><strong><span>Amazon EC2</span></strong><span> 控制台，然后在浏览器选项卡中加载咖啡馆 Web 应用程序。</span></p><ul><li><p><span>确认您位于正确的 </span><strong><span>Region</span></strong><span>（区域）（例如，</span><em><span>弗吉尼亚北部</span></em><span>），如果没有，则切换到正确的区域。</span></p></li><li><p><span>您应该能够查看 EC2 实例的所有详细信息。</span></p></li><li><p><span>找到并复制 </span><strong><span>aws-cloud9-DEVCafeServer</span></strong><span> 实例的 </span><strong><span>IPv4 公有 IP 地址</span></strong><span>。</span></p></li><li><p><span>在新的浏览器选项卡中，加载 </span><code>http://&lt;dev-public-ip-address&gt;/cafe</code><span>，其中 </span>&lt;<em><span>dev-public-ip-address</span></em>&gt;<span> 是您复制的 IP 地址。</span></p><p><span>此时，浏览器中应该会显示咖啡馆网站。将此浏览器选项卡保持打开状态，以便稍后用于实验。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='12' ><li><p><span>尝试重新启动 Web 服务器，进一步测试您的 Amazon EC2 访问权限。</span></p><ul><li><p><span>尝试重启 </span><em><span>aws-cloud9-DEVCafeServer</span></em><span> 实例</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>提示</span></strong><span>：要找到 </span><strong><span>Reboot</span></strong><span>（重启）选项，请选择实例并在 </span><strong><span>Actions</span></strong><span>（操作）菜单中查看。</span></p></li></ul></li></ol><p>&nbsp;</p><h4 id='回答有关-nikhil-的-amazon-ec2-访问权限的问题'><span>回答有关 Nikhil 的 Amazon EC2 访问权限的问题</span></h4><p><span>完成实验后点击蓝色的 </span><strong><span>Submit</span></strong><span>（提交）按钮，即可检查答案。</span></p><ol start='13' ><li><p><span>查看本实验中的问题。</span></p><ul><li><p><span>在这些说明上方，选择 </span><span id="ssb_voc_grey"><span>Details </span><i class="fas fa-angle-down"></i></span><span>（详细信息）菜单，然后选择 </span><span id="ssb_voc_grey"><span>Show</span></span><span>（显示）。</span></p></li><li><p><span>选择页面底部的 </span><strong><span>Access the multiple choice questions</span></strong><span>（查看多项选择题）链接。</span></p><p><span>这些问题会在新的浏览器选项卡中加载。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='14' ><li><p><span>在刚刚打开的网页中，回答前两个问题：</span></p><ul><li><p><strong><span>问题 1</span></strong><span>：Nikhil 尝试重新启动 EC2 实例时发生了什么情况？</span></p></li><li><p><strong><span>问题 2</span></strong><span>：哪项 IAM 策略允许 Nikhil 访问 AWS Cloud9 环境？</span></p><p><strong><span>注意</span></strong><span>：请将浏览器选项卡中的问题页面保持打开状态，以便稍后在实验中返回查看。</span></p></li></ul></li></ol><p>&nbsp;</p><h4 id='以-nikhil-身份访问开发服务器'><span>以 Nikhil 身份访问开发服务器</span></h4><ol start='15' ><li><p><span>返回您以 </span><em><span>Nikhil</span></em><span> 身份登录到 AWS 管理控制台的浏览器选项卡。</span></p><p><strong><span>提示</span></strong><span>：请记住，您可以在浏览器界面的右上角区域查看您当前登录所使用的用户身份。</span></p></li></ol><p>&nbsp;</p><ol start='16' ><li><p><span>浏览到 </span><strong><span>AWS Cloud9</span></strong><span> 控制台，然后连接到 </span><em><span>DEVCafeServer</span></em><span> EC2 实例上的 AWS Cloud9 IDE。</span></p><ul><li><p><span>从 </span><strong><span>Services</span></strong><span>（服务）菜单中，选择 </span><strong><span>AWS Cloud9</span></strong><span>。</span></p></li><li><p><span>在左侧，通过选择 </span><i class="fas fa-bars"></i><span>（菜单图标）展开菜单，选择 </span><strong><span>Shared with you</span></strong><span>（与您共享），然后确认 </span><strong><span>DEVCafeServer</span></strong><span> 环境是否可用。</span></p></li><li><p><span>选择 </span><strong><span>Open IDE</span></strong><span>（打开 IDE）。</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>注意</span></strong><span>：您刚连接到 </span><em><span>aws-cloud9-DEVCafeServer</span></em><span> EC2 实例的来宾操作系统。您刚才在 Amazon EC2 控制台中观察到了此实例。您可以使用 IDE 浏览和编辑 Web 服务器上的文件。它还提供了在实例上运行的 Bash 终端。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='17' ><li><p><span>在咖啡馆网站的开发实例中，修改网页的主标题。</span></p><ul><li><span>在编辑器中打开主网页，方法是前往文件浏览器，浏览到 </span><code>DEVCafeServer/www/html/cafe</code><span> 目录，然后双击 </span><strong><span>index.php</span></strong><span>。</span></li><li><span>修改</span><strong><span>第 13 行</span></strong><span>，将其更改为：</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="html"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="html"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"center"</span><span class="cm-tag cm-bracket">&gt;</span>Caf<span class="cm-atom">&amp;eacute;</span> DEV Site<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><ul><li><p><span>要保存更改，请选择 </span><strong><span>File &gt; Save</span></strong><span>（文件 &gt; 保存），然后在浏览器中刷新 </span><code>http://dev-public-ip-address/cafe/</code><span> 网页。</span></p><p><span>请注意，在担任 Nikhil 身份时，您在开发环境中更改了网页的主要标题。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='18' ><li><p><span>测试 Web 应用程序数据库的连接性。</span></p><ul><li><span>在咖啡馆网站中，选择 </span><strong><span>Menu</span></strong><span>（菜单）。</span></li><li><span>显示了什么消息？</span></li></ul></li></ol><p>&nbsp;</p><ol start='19' ><li><p><span>返回显示本实验多项选择题的浏览器选项卡，并回答以下问题。</span></p><ul><li><p><strong><span>问题 3</span></strong><span>：咖啡厅网站开发实例的 </span><strong><span>Menu</span></strong><span>（菜单）页面上显示了哪条消息？</span></p><p><i class="fas fa-comment"></i><span> Nikhil 回顾说，数据库连接参数存储在 AWS Systems Manager Parameter Store 中。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='20' ><li><p><span>以 </span><em><span>Nikhil</span></em><span> 身份打开 Systems Manager Parameter Store。</span></p><ul><li><span>在控制台中，打开 </span><strong><span>Systems Manager</span></strong><span> 服务。</span></li><li><span>从左侧的菜单中，选择 </span><strong><span>Application Management &gt; Parameter Store</span></strong><span>（应用程序管理 &gt; 参数仓库）。</span></li><li><span>显示了什么消息？</span></li></ul></li></ol><p>&nbsp;</p><ol start='21' ><li><p><span>返回显示本实验多项选择题的浏览器选项卡，并回答以下问题。</span></p><ul><li><strong><span>问题 4</span></strong><span>：Nikhil 在控制台中打开 Systems Manager Parameter Store 页面时显示了哪条消息？</span></li></ul><p><span>Nikhil 提醒 Sofía 注意开发服务器上的问题，该问题导致他无法改进咖啡馆 Web 应用程序。Sofía 很担心。她让 Nikhil 检查该网站的</span><em><span>生产</span></em><span>版本是否遇到同样的问题。</span></p></li></ol><p>&nbsp;</p><ol start='22' ><li><p><span>以 </span><em><span>Nikhil</span></em><span> 身份验证咖啡馆生产版本 Web 应用程序是否正常工作。</span></p><ul><li><span>打开 </span><strong><span>Amazon EC2</span></strong><span> 控制台并复制 </span><strong><span>PRODCafeServer</span></strong><span> 实例的 </span><strong><span>IPv4 公有 IP 地址</span></strong><span>。</span></li><li><span>在新的浏览器窗口中，加载 </span><code>http://prod-public-ip-address/cafe/menu.php</code><span>。</span></li><li><span>网页显示正确吗？您能下订单吗？</span></li></ul></li></ol><p>&nbsp;</p><h2 id='新的业务要求为数据库管理员配置-aws-账户访问权限挑战-2）'><span>新的业务要求：为数据库管理员配置 AWS 账户访问权限（挑战 2）</span></h2><p><span>Nikhil 向 Sofía 报告了测试结果。知道生产网站仍然运行良好，这让她很高兴。但是，Sofía 希望在开发网站上纠正这个问题。</span></p><p><span>Sofía 决定她将要求 Olivia 解决这个问题。但是，Sofía 必须首先为数据库管理员定义 AWS 账户访问权限。然后，她必须创建 IAM 用户资源，这样 Olivia 才能登录到该账户。</span></p><p>&nbsp;</p><h3 id='任务-3为数据库管理员配置用户访问-iam'><span>任务 3：为数据库管理员配置用户访问 IAM</span></h3><p><span>在此任务中，您将以 </span><em><span>Sofía</span></em><span> 身份工作，为 Olivia 启用 AWS 访问权限。</span></p><ol start='23' ><li><p><span>回到您以 </span><em><span>voclabs</span></em><span> 用户 (Sofía) 身份登录的浏览器中，创建一个名为 </span><code>DBAdministrators</code><span> 的 </span><strong><span>IAM 组</span></strong><span>，该组具有以下权限：</span></p><ul><li><strong><span>AmazonRDSReadOnlyAccess</span></strong></li><li><strong><span>AmazonSSMFullAccess</span></strong></li></ul><p><strong><span>注意</span></strong><span>：在实际情况中，Sofía 需要向其数据库管理员授予的不仅仅是只读的 RDS 访问权限。但是，此实验环境中的权限不允许您附加 AmazonRDSFullAccess 策略。对于本实验，您应改用 AmazonRDSReadOnlyAccess 策略。</span></p></li></ol><p>&nbsp;</p><ol start='24' ><li><p><span>创建一个名为 </span><code>Olivia</code><span> 的 IAM 用户，该用户可以访问 </span><strong><span>AWS 管理控制台</span></strong><span>。</span></p><ul><li><span>设置自定义密码：</span><code>Db@dministrat0r2020!</code></li><li><span>清除重置密码的要求</span></li></ul></li></ol><p>&nbsp;</p><ol start='25' ><li><span>将 Olivia 添加到 </span><strong><span>DBAdministrators</span></strong><span> 组。</span></li></ol><p>&nbsp;</p><h3 id='任务-4以数据库管理员的身份登录并解决数据库连接问题'><span>任务 4：以数据库管理员的身份登录并解决数据库连接问题</span></h3><p><span>在此任务中，您将以 </span><em><span>Olivia</span></em><span> 身份解决 Nikhil 确定的数据库问题。您还将以 </span><em><span>Sofía</span></em><span> 身份协助 Olivia 解决一些问题。</span></p><ol start='26' ><li><p><span>以 </span><em><span>Olivia</span></em><span> 身份登录到 AWS 管理控制台。</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>提示</span></strong><span>：以 Nikhil 身份登录并使用无痕会话、隐私会话或其他浏览器类型。为此：</span></p><ul><li><p><span>在控制台右上角区域中选择 </span><strong><span>Nikhil @ </span>&lt;<em><span>account-number</span></em>&gt;</strong><span>，然后选择 </span><strong><span>Sign Out</span></strong><span>（注销）。</span></p></li><li><p><span>然后，选择 </span><strong><span>Log back in</span></strong><span>（重新登录）。</span></p><p><span>此时应显示 </span><strong><span>Sign in as IAM user</span></strong><span>（以 IAM 用户身份登录）屏幕，且 </span><em><span>Account ID</span></em><span>（账户 ID）已预先填充。</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>注意</span></strong><span>：如果登录屏幕未显示账户 ID，请返回到您仍以 </span><em><span>voclabs</span></em><span> 用户 (Sofía) 身份登录的浏览器选项卡。在 IAM 控制台中，选择 </span><strong><span>Users</span></strong><span>（用户），然后选择 </span><strong><span>Olivia</span></strong><span>。选择 </span><strong><span>Security credentials</span></strong><span>（安全证书）选项卡。在 </span><strong><span>Sign-in credentials</span></strong><span>（登录证书）区域中复制 </span><strong><span>Console sign-in link</span></strong><span>（控制台登录链接）。</span></p></li><li><p><span>使用 Olivia 的凭证登录：</span></p><ul><li><strong><span>IAM user name</span></strong><span>（IAM 用户名）：</span><code>Olivia</code></li><li><strong><span>Password</span></strong><span>（密码）：</span><code>Db@dministrat0r2020!</code></li></ul></li></ul></li></ol><p>&nbsp;</p><ol start='27' ><li><p><span>确认 RDS 数据库是否正在运行。</span></p><ul><li><span>打开 </span><strong><span>Amazon RDS</span></strong><span> 服务页面，然后选择 </span><strong><span>Databases</span></strong><span>（数据库）。</span></li><li><span>确认数据库实例的 </span><strong><span>Status</span></strong><span>（状态）为 </span><em><span>Available</span></em><span>（可用）。</span></li></ul><p><span>Olivia 观察到数据库正在运行。</span></p><p><span>她回顾说，开发环境使用存储在 Systems Manager Parameter Store 中的参数连接到数据库。Olivia 想知道 </span><em><span>DEVCafeServer</span></em><span> EC2 实例是否有权限从该 Parameter Store 中读取参数。</span></p></li></ol><p>&nbsp;</p><ol start='28' ><li><span>打开 </span><strong><span>Amazon EC2</span></strong><span> 控制台，然后选择 </span><strong><span>Running Instances</span></strong><span>（正在运行的实例）。</span></li></ol><p>&nbsp;</p><ol start='29' ><li><p><span>返回显示本实验多项选择题的浏览器选项卡，并回答以下问题。</span></p><ul><li><strong><span>问题 5</span></strong><span>：为什么 Olivia 无法访问 EC2 实例的详细信息？</span></li></ul><p><span>Olivia 告诉 Sofía，她无法访问 EC2 实例，于是 Sofía 返回控制台排查此问题。</span></p><p><span>您现在将以 </span><em><span>Sofía</span></em><span> 身份，检查和更新 Olivia 对 AWS 资源的访问权限。</span></p></li></ol><p>&nbsp;</p><ol start='30' ><li><span>返回到您以 </span><em><span>voclabs</span></em><span> 用户 (Sofía) 身份登录的浏览器选项卡。</span></li></ol><p>&nbsp;</p><ol start='31' ><li><p><span>打开 </span><strong><span>DBAdministrators</span></strong><span> 组，然后附加以下策略：</span></p><ul><li><strong><span>AmazonEC2ReadOnlyAccess</span></strong></li><li><strong><span>IAMReadOnlyAccess</span></strong></li></ul><p><strong><span>注意</span></strong><span>：Sofía 意识到，如果 Olivia 必须访问附加到 EC2 实例的 IAM 角色的详细信息，则 Olivia 需要一些 IAM 权限。</span></p></li></ol><p>&nbsp;</p><ol start='32' ><li><p><span>仍以 </span><em><span>voclabs</span></em><span> 用户 (Sofía) 身份，检查 Olivia 使用了哪些服务和功能。</span></p><ul><li><p><span>在 IAM 控制台中，打开 </span><strong><span>Olivia</span></strong><span> 用户，然后选择 </span><strong><span>Access Advisor</span></strong><span> 选项卡</span></p></li><li><p><span>请注意，您可以看到 Olivia 访问了哪些服务区。系统通常会显示最近 4 小时内的服务活动（如 Access Advisor 详细信息中所述）。您可能还没有看到 Olivia 的任何 </span><strong><span>Last accessed data</span></strong><span>（上次访问的数据）。</span></p><p><i class="fas fa-info-circle"></i><span> 使用此视图，您可以深入了解用户的权限开放程度如何比其应有的程度更高。此信息使您能够更紧密地将访问权限与</span><a href='https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege'><span>最小特权原则</span></a><span>保持一致。</span></p><p><span>Sofía 要求 Olivia 检查她的 Amazon EC2 访问权限。</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='33' ><li><p><span>以 </span><em><span>Olivia</span></em><span> 身份返回 Olivia 用户登录的浏览器选项卡，然后刷新 </span><strong><span>Amazon EC2</span></strong><span> 控制台的实例页面。</span></p><ul><li><span>Olivia 现在应该能够访问两个正在运行的 EC2 实例。</span></li><li><span>选择 </span><strong><span>aws-cloud9-DEVCafeServer</span></strong><span> 实例。</span></li><li><span>在 </span><strong><span>Description</span></strong><span>（描述）选项卡中，找到 </span><strong><span>IAM role</span></strong><span>（IAM 角色），然后选择 </span><strong><span>CafeRole</span></strong><span>。</span></li><li><span>在 </span><strong><span>Permissions</span></strong><span>（权限）选项卡中，展开 </span><strong><span>AmazonSSMManagedInstanceCore</span></strong><span> 策略，然后选择 </span><strong><span>JSON</span></strong><span> 视图选项。</span></li><li><span>查看策略权限。</span></li></ul></li></ol><p>&nbsp;</p><ol start='34' ><li><p><span>返回显示本实验多项选择题的浏览器选项卡，并回答以下问题。</span></p><ul><li><strong><span>问题 6</span></strong><span>：指出策略中允许此实例上的咖啡馆 Web 应用程序访问参数仓库中数据库凭证的两个特定操作。</span></li></ul><p><span>Olivia 现在确信开发 EC2 实例上的 Web 应用程序可以访问 Parameter Store。问题可能不在这里。Olivia 与 Sofía 讨论了这个问题。</span></p><p><span>经过讨论后，Sofía 记得开发环境之前使用本地数据库，但它现在使用 Amazon RDS。本地数据库具有不同的用户名，允许 Web 应用程序连接到数据库。连接到 Amazon RDS 上的数据库需要不同的数据库用户名。那肯定正是问题所在！</span></p><p><span>Sofía 让 Olivia 检查数据库用户名是否是问题的根源并更新它。</span></p></li></ol><p>&nbsp;</p><ol start='35' ><li><span>以 </span><em><span>Olivia</span></em><span> 的身份更新 Systems Manager Parameter Store 中的 </span><strong><span>dbUser</span></strong><span> 值。</span></li></ol><p>&nbsp;</p><ol start='36' ><li><p><span>在咖啡馆开发服务器上的 Web 应用程序中，刷新 </span><strong><span>Menu</span></strong><span>（菜单）页面。</span></p><ul><li><span>如果此网页尚未打开，请在浏览器中加载 </span><code>http://&lt;dev-public-ip-address&gt;/cafe/menu.php</code><span>（其中 </span>&lt;<em><span>dev-public-ip-address</span></em>&gt;<span> 是</span><strong><span>aws-cloud9-DEVCafeServer</span></strong><span> 实例的实际 IPv4 公有 IP 地址）。</span></li><li><span>整页内容现在是否全部显示正确？您能成功提交订单吗？</span></li></ul><p><span>恭喜！您以 </span><em><span>DBAdministrators</span></em><span> 组成员的身份成功修复了网站。Nikhil 感谢 Olivia 解决了这个问题，Olivia 还通知 Sofía 这个问题已经解决了。</span></p></li></ol><p>&nbsp;</p><h2 id='新的业务要求完善-iam-用户访问权限挑战-3）'><span>新的业务要求：完善 IAM 用户访问权限（挑战 3）</span></h2><p><span>Frank 和 Martha 很高兴 Sofía 和团队提高了 AWS 账户的安全性。同时，Sofía 很高兴她能够为其应用程序开发人员和数据库管理员配置不同的权限。她喜欢为每个角色分配单独的权限，这样每个团队成员可以在其核心能力和分配的职责范围内处理专门的工作，最终实现团队整体同心协力开发和解决问题。</span></p><p><span>Sofía 花一分钟时间来和她的朋友一起放松身心。但是，她已经在考虑进一步自定义分配给不同用户的安全设置了。某些权限仍然过于开放，没有完全遵循最小特权原则。在实验的最后一个挑战中，您将扮演 Sofía 的角色。您将努力定义自定义 IAM 策略，以减少允许授予数据库管理员组成员的 IAM 操作的数量。但是，您还必须授予他们足够的 IAM 访问权限来完成其工作职责。</span></p><p>&nbsp;</p><h3 id='任务-5使用-iam-策略模拟器并使用可视化编辑器创建自定义-iam-策略'><span>任务 5：使用 IAM 策略模拟器并使用可视化编辑器创建自定义 IAM 策略</span></h3><ol start='37' ><li><p><span>返回到您以 </span><em><span>voclabs</span></em><span> 用户 (Sofía) 身份登录的浏览器窗口，然后在新的浏览器选项卡中加载此 URL：</span><a href='https://policysim.aws.amazon.com/' target='_blank' class='url'>https://policysim.aws.amazon.com/</a></p><p><span>此时 IAM 策略模拟器页面应打开。</span></p></li></ol><p>&nbsp;</p><ol start='38' ><li><span>选择 </span><strong><span>Olivia</span></strong><span> 用户。</span></li></ol><p>&nbsp;</p><ol start='39' ><li><span>在 </span><strong><span>IAM Policies</span></strong><span>（IAM 策略）列表中，确保选择了 </span><strong><span>IAMReadOnlyAccess</span></strong><span> 策略。但是，请</span><em><span>清除</span></em><span>其他策略的复选框。</span></li></ol><p>&nbsp;</p><ol start='40' ><li><span>在 </span><strong><span>Policy Simulator</span></strong><span>（策略模拟器）部分中，选择 </span><strong><span>Select service</span></strong><span>（选择服务）。在 </span><strong><span>Filter</span></strong><span>（筛选条件）搜索框中，输入 </span><code>Ident</code><span>，然后选择 </span><strong><span>Identity and Access Management</span></strong><span>。</span></li></ol><p>&nbsp;</p><ol start='41' ><li><p><span>选择 </span><strong><span>Select All</span></strong><span>（全选）选项（位于 </span><strong><span>Select actions</span></strong><span>（选择操作）菜单的右侧），然后选择 </span><strong><span>Run Simulation</span></strong><span>（运行模拟）。</span></p><ul><li><span>在 </span><strong><span>Action Settings and Results</span></strong><span>（操作设置和结果）面板中，应显示操作列表。</span></li><li><strong><span>Permission</span></strong><span>（权限）列显示 Olivia 对每个操作的权限。</span><em><span>IAMReadOnlyAccess</span></em><span> 策略拒绝 Olivia 执行 </span><strong><span>Add</span></strong><span>（添加）或 </span><strong><span>Create</span></strong><span>（创建）操作的权限。但是，请滚动页面以查找她</span><em><span>可以</span></em><span>执行的操作。</span></li><li><span>摘要（位于列表顶部）显示，目前允许 Olivia 采取 </span><em><span>57 项 IAM 操作</span></em><span>。</span></li></ul></li></ol><p><img src="images/policy-simulator.png" referrerpolicy="no-referrer" alt="咖啡馆团队"></p><p>&nbsp;</p><p><span>索菲亚想起了她授予 Olivia </span><em><span>IAMReadOnlyAccess</span></em><span> 策略权限的唯一原因。她想授予 Olivia 观察某些策略详细信息的权限。这些策略附加到 IAM 角色，而此角色附加到两个咖啡馆服务器实例。Sofía 决定为 </span><em><span>DBAdministrators</span></em><span> 组的成员编写新的、更严格的 IAM 策略。</span></p><p><span>在接下来的步骤中，您将以 Sofía 身份创建这项新策略。</span></p><p>&nbsp;</p><ol start='42' ><li><span>返回到您以 </span><strong><span>voclabs</span></strong><span> 用户 (Sofía) 身份登录的浏览器选项卡。</span></li></ol><p>&nbsp;</p><ol start='43' ><li><span>在 </span><strong><span>IAM</span></strong><span> 控制台中，选择 </span><strong><span>Policies</span></strong><span>（策略），然后选择 </span><strong><span>Create policy</span></strong><span>（创建策略）。</span></li></ol><p>&nbsp;</p><ol start='44' ><li><p><span>在 </span><strong><span>Visual editor</span></strong><span>（可视化编辑器）选项卡中，配置以下设置。</span></p><ul><li><p><span>单击 </span><strong><span>Choose a service</span></strong><span>（选择服务）。搜索并选择 </span><strong><span>EC2</span></strong><span>。</span></p><ul><li><span>在 </span><strong><span>Actions</span></strong><span>（操作）搜索框中，搜索 </span><strong><span>IAM</span></strong><span>，然后选择 </span><strong><span>DescribeIamInstanceProfileAssociations</span></strong><span>。</span></li></ul><p><img src="images/visual-editor.png" referrerpolicy="no-referrer" alt="IAM 可视化编辑器"></p></li><li><p><span>在屏幕底部，选择 </span><strong><span>Add additional permissions</span></strong><span>（添加其他权限）。</span></p></li><li><p><span>单击 </span><strong><span>Choose a service</span></strong><span>（选择服务）。搜索并选择 </span><strong><span>IAM</span></strong><span>。</span></p><ul><li><p><span>在 </span><strong><span>Actions</span></strong><span>（操作）搜索框中，搜索 </span><strong><span>Get</span></strong><span> 并选择以下操作：</span></p><ul><li><strong><span>GetPolicyVersion</span></strong></li><li><strong><span>GetRole</span></strong></li><li><strong><span>GetRolePolicy</span></strong></li></ul></li><li><p><span>回到搜索框中，搜索 </span><strong><span>List</span></strong><span> 并选择以下操作：</span></p><ul><li><strong><span>ListAttachedRolePolicies</span></strong></li><li><strong><span>ListInstanceProfiles</span></strong></li><li><strong><span>ListInstanceProfilesForRole</span></strong></li><li><strong><span>ListPolicies</span></strong></li><li><strong><span>ListRolePolicies</span></strong></li><li><strong><span>ListRoles</span></strong></li></ul></li></ul></li><li><p><span>展开 </span><strong><span>Resources</span></strong><span>（资源）部分，然后对于所有三种资源类型（</span><em><span>实例配置文件</span></em><span>、</span><em><span>策略</span></em><span>和</span><em><span>角色</span></em><span>），选择 </span><strong><span>Any in this account</span></strong><span>（此账户中的任何一个）。</span></p></li><li><p><span>回到屏幕顶部，选择 </span><strong><span>JSON</span></strong><span> 选项卡</span></p><p><span>此视图显示了您刚使用可视化编辑器编写的 JSON 文档。</span></p></li><li><p><span>确认策略文档的详细信息是否与以下示例中显示的内容匹配：</span></p></li></ul></li></ol><p><img src="images/policy.png" referrerpolicy="no-referrer" alt="IAM 策略"></p><p><span>遗憾的是，在此实验环境中，我们无法授予您创建 IAM 策略的权限。如果选择 </span><strong><span>Review policy</span></strong><span>（查看策略），为策略指定名称，然后选择 </span><strong><span>Create policy</span></strong><span>（创建策略），则会出现权限错误。</span></p><p><span>但是，在您开始本实验时，我们已为您创建了一个与示例策略完全匹配的策略，而且现在您已经获得了使用可视化编辑器的经验。您还体验了它如何提供一种创建精细策略而无需从头开始编写 JSON 策略文档的方法。</span></p><p>&nbsp;</p><ol start='45' ><li><span>通过选择 </span><strong><span>Cancel</span></strong><span>（取消）退出 </span><strong><span>Create policy</span></strong><span>（创建策略）向导。</span></li></ol><p>&nbsp;</p><ol start='46' ><li><p><span>在 </span><strong><span>Policies</span></strong><span>（策略）搜索框中，搜索 </span><code>LimitedIamPolicy</code><span>。</span></p><p><span>观察该策略详细信息是否与您构建的策略的详细信息匹配，如上一屏幕截图所示。</span></p><p><strong><span>注意</span></strong><span>：策略中的 </span><em><span>Sid</span></em><span> 元素是可选的。此外，</span><em><span>Effect</span></em><span>（效果）、</span><em><span>Action</span></em><span>（操作）和 </span><em><span>Resource</span></em><span>（资源）在策略文档中的显示顺序不会影响策略的工作方式。</span></p></li></ol><p>&nbsp;</p><ol start='47' ><li><p><span>编辑 </span><strong><span>DBAdministrators</span></strong><span> IAM 组。</span></p><ul><li><strong><span>附加 LimitedIamPolicy</span></strong><span> 策略</span></li><li><strong><span>分离 IAMReadOnlyAccess</span></strong><span> 策略</span></li></ul><p><span>Sofía 让 Olivia 确认，即使现在授予她的 IAM 访问权限更加有限，但她仍然可以访问 </span><em><span>CafeRole</span></em><span> IAM 角色的详细信息。</span></p></li></ol><p>&nbsp;</p><ol start='48' ><li><p><span>返回您以 </span><em><span>Olivia</span></em><span> 身份登录的浏览器选项卡，然后确认您仍然可以访问 </span><em><span>CafeRole</span></em><span> 的详细信息。</span></p><ul><li><span>在 </span><strong><span>Amazon EC2</span></strong><span> 控制台中，选择 </span><strong><span>aws-cloud9-DEVCafeServer</span></strong><span> 实例。</span></li><li><span>在 </span><strong><span>Description</span></strong><span>（描述）选项卡中，选择 </span><strong><span>IAM role &gt; CafeRole</span></strong><span>（IAM 角色 &gt; CafeRole）。</span></li><li><span>展开 </span><strong><span>AmazonSSMManagedInstanceCore</span></strong><span> 策略，并确认您仍能看到 JSON 文档的详细信息。</span></li></ul></li></ol><p>&nbsp;</p><ol start='49' ><li><p><strong><span>（可选）</span></strong><span>返回您以 </span><em><span>voclabs</span></em><span> 用户 (Sofía) 身份登录的 </span><strong><span>IAM 策略模拟器</span></strong><span>浏览器选项卡。再次运行模拟（针对 Olivia 可以执行的 IAM 操作）。</span></p><ul><li><i class="fas fa-info-circle"></i><span> </span><strong><span>提示</span></strong><span>：要显示适用于 Olivia 的新 IAM 策略，请刷新浏览器页面。</span></li><li><span>在更改为 </span><em><span>DBAdministrators</span></em><span> IAM 组之前，Olivia 被允许执行 57 项与 IAM 服务相关的操作。但是，在更改之后，她对 IAM 服务的访问权限现在更加有限了。</span></li><li><span>新策略授予的 IAM 权限较少，但 Olivia 仍然拥有履行工作职能所需的访问权限。</span></li></ul></li></ol><p>&nbsp;</p><h2 id='咖啡馆更新'><span>咖啡馆更新</span></h2><p><img src="images/team.png" referrerpolicy="no-referrer" alt="咖啡馆团队"></p><p><span>Sofía 认为她现在越来越擅长管理用户对 AWS 账户的访问权限！</span></p><p><span>她知道如何使用 </span><em><span>AWS 托管的 IAM 策略</span></em><span>来控制访问，还知道如何使用 </span><em><span>IAM 策略模拟器</span></em><span>来观察不同策略授予的权限范围。她知道如何使用 </span><em><span>IAM Access Analyzer</span></em><span> 来观察不同用户正在使用哪些访问权限。最后，她还练习了使用 IAM 策略可视化编辑器创建</span><em><span>自定义 IAM 策略</span></em><span>。</span></p><p>&nbsp;</p><h2 id='提交作业'><span>提交作业</span></h2><ol start='50' ><li><span>在这些说明的顶部，选择 </span><span id="ssb_blue"><span>Submit</span></span><span>（提交）记录您的进度，在出现提示时，选择 </span><strong><span>Yes</span></strong><span>（是）。</span></li></ol><p>&nbsp;</p><ol start='51' ><li><p><span>如果在几分钟后仍未显示结果，请返回到这些说明的顶部，并选择 </span><span id="ssb_voc_grey"><span>Grades</span></span><span>（成绩）</span></p><p><strong><span>提示</span></strong><span>：您可以多次提交作业。更改作业后，再次选择 </span><strong><span>Submit</span></strong><span>（提交）即可。您最后一次提交的作业将记录为本实验的成绩。</span></p></li></ol><p>&nbsp;</p><ol start='52' ><li><span>要查找有关您作业的详细反馈，请选择 </span><span id="ssb_voc_grey"><span>Details</span></span><span>（详细信息），然后选择 </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span>（查看提交报告）。</span></li></ol><p>&nbsp;</p><h2 id='实验完成'><span>实验完成</span></h2><p><i class="icon-flag-checkered"></i><span> 恭喜！您已完成实验。</span></p><ol start='53' ><li><p><span>若要确认您想结束实验，请选择此页面顶部的 </span><span id="ssb_voc_grey"><span>End Lab</span></span><span>（结束实验），然后选择 </span><span id="ssb_blue"><span>Yes</span></span><span>（是）。</span></p><p><span>此时应显示一个面板，并显示消息：</span><em><span>DELETE has been initiated... You may close this message box now.</span></em><span>（删除操作已启动...您现在可以关闭此消息框。）</span></p></li></ol><p>&nbsp;</p><ol start='54' ><li><span>选择右上角的 </span><strong><span>X</span></strong><span> 关闭面板。</span></li></ol><p>&nbsp;</p><p><em><span>©2020 Amazon Web Services, Inc. 及其附属公司。保留所有权利。未经 Amazon Web Services, Inc. 事先书面许可，不得复制或转载本文的部分或全部内容。禁止商业性复制、出租或出售。</span></em></p></div></div>
+</body>
+</html>

@@ -1,0 +1,1163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='laboratorio-de-desafíos-del-módulo 8-control-del-acceso-a-cuentas-de-aws-mediante-iam'><span>Laboratorio de desafíos del módulo 8: Control del acceso a cuentas de AWS mediante IAM</span></h1><h2 id='caso'><span>Caso</span></h2><p><span>Después de hablar con Mateo sobre la infraestructura de AWS de la cafetería, Sofía se dio cuenta de que debía abordar algunos problemas de seguridad básicos respecto de la forma en que el personal de la cafetería ha estado utilizando la cuenta de AWS.</span></p><p><span>La cafetería ya es lo suficientemente grande como para que los miembros del equipo que crean, mantienen o acceden a las aplicaciones en AWS se especialicen en torno a roles (como desarrollador o administrador de base de datos). Hasta el momento, no se han esforzado en definir con claridad qué nivel de acceso debería tener cada usuario en función de sus roles y responsabilidades.</span></p><p><span>Sofía pasó cierto tiempo pensando en lo que cada persona debería poder hacer en la cuenta, especialmente con AWS Cloud9, Amazon Elastic Compute Cloud (Amazon EC2) y Amazon Relational Database Service (Amazon RDS). Tomó algunas decisiones y creó este gráfico, que describe cómo le gustaría definir los derechos de acceso en la cuenta de AWS:</span></p><figure><table><thead><tr><th><span>Grupo de IAM</span></th><th><span>Usuario de IAM</span></th><th><span>Acceso a los servicios de AWS</span></th><th><span>Motivo</span></th></tr></thead><tbody><tr><td><span>AppDevelopers</span></td><td><span>Nikhil</span></td><td><span>Acceso de </span><strong><span>AWS Cloud9</span></strong><span> al entorno de desarrollo de Amazon EC2. </span><br><span>Además, acceso de solo lectura a </span><strong><span>Amazon EC2</span></strong><span>.</span></td><td><span>Nikhil suele trabajar como desarrollador de aplicaciones. Debe ser capaz de acceder al entorno de AWS Cloud9 correspondiente al entorno de desarrollo de la aplicación web de la cafetería. Sin embargo, no debería tener acceso al entorno de producción. También debe ser capaz de ver todos los recursos y los detalles de configuración de Amazon EC2, pero no debería contar con la capacidad de modificarlos.</span></td></tr><tr><td><span>DBAdministrators</span></td><td><span>Olivia</span></td><td><span>Acceso completo a </span><strong><span>Amazon RDS</span></strong><span>. </span><br><span>Además, acceso completo a </span><strong><span>AWS Systems Manager</span></strong><span>.</span></td><td><span>Olivia fue contratada como administradora de base de datos para ayudar a administrar la base de datos que utiliza la aplicación web de la cafetería. Por lo tanto, debe tener todos los derechos de acceso a Amazon RDS. También necesitará acceso a AWS Systems Manager, donde se almacena la información de conexión a la base de datos. Sin embargo, además del acceso a estos dos servicios, Sofía no puede pensar en ninguna razón por la que Olivia necesite más acceso a recursos de AWS.</span></td></tr></tbody></table></figure><p><span>Observe que, en lugar de asignar permisos directamente a los usuarios, Sofía decidió definir </span><em><span>grupos de IAM</span></em><span>. A continuación, asociará las políticas de IAM que otorgan acceso a esos grupos. Luego, planea asignar los usuarios a los grupos correspondientes. Si la cafetería contrata a más desarrolladores o administradores de bases de datos, puede agregarlos como nuevos usuarios a los grupos. Los nuevos usuarios heredarán los permisos correctos que correspondan a sus roles en el desarrollo y el mantenimiento de la infraestructura de cuentas de AWS. Este enfoque se ampliará a medida que la cafetería también lo haga.</span></p><p><span>Ahora que Sofía sabe qué derechos de acceso quiere asignar a cada usuario, está lista para comenzar.</span></p><p>&nbsp;</p><h2 id='información-general-y-objetivos-del-laboratorio'><span>Información general y objetivos del laboratorio</span></h2><p><span>En este laboratorio, utilizará AWS Identity and Access Management (IAM) para definir diferentes derechos de acceso correspondientes a usuarios distintos. Deberá probar el acceso y ajustarlo. También observará cómo los derechos de acceso que concede afectan a cada acción que los usuarios de IAM pueden realizar en los recursos de la cuenta de AWS.</span></p><p><span>Después de completar este laboratorio, debería ser capaz de lo siguiente:</span></p><ul><li><span>crear usuarios y grupos de IAM, además de asociar las políticas de IAM a dichos grupos</span></li><li><span>indicar cómo los derechos de acceso limitados afectan a los recursos a los que pueden acceder los usuarios de IAM y a las acciones que pueden realizar</span></li><li><span>utilizar las políticas de IAM administradas por AWS para modificar los derechos de acceso de los usuarios y observar los resultados</span></li><li><span>utilizar el simulador de políticas de IAM para observar el alcance del acceso otorgado por diferentes políticas</span></li><li><span>acceder a Access Advisor de IAM para observar qué derechos de acceso aprovechan los diferentes usuarios</span></li><li><span>crear políticas de IAM personalizadas con el editor visual</span></li></ul><p>&nbsp;</p><p><span>Cuando </span><em><span>inicie</span></em><span> el laboratorio, ya estarán creados los siguientes recursos en la cuenta de AWS:</span></p><p><img src="images/arch-after-task-1.png" referrerpolicy="no-referrer" alt="arquitectura inicial"></p><p><span>Una vez que </span><em><span>finalice</span></em><span> este laboratorio, su arquitectura incluirá los siguientes recursos y configuraciones:</span></p><p><img src="images/arch-end-lab.png" referrerpolicy="no-referrer" alt="arquitectura final"></p><p>&nbsp;</p><h2 id='duración'><span>Duración</span></h2><p><span>Para completar este laboratorio, se necesitan aproximadamente </span><strong><span>80 minutos</span></strong><span>.</span></p><p>&nbsp;</p><h2 id='restricciones-de-los-servicios-de-aws'><span>Restricciones de los servicios de AWS</span></h2><p><span>En este entorno de laboratorio, el acceso a los servicios y las acciones de los servicios de AWS puede restringirse a los que se necesiten para cumplir las instrucciones del laboratorio. Es posible que se produzcan errores si intenta acceder a otros servicios o hacer acciones que no sean las que se describen en este laboratorio.</span></p><p>&nbsp;</p><h2 id='acceso-a-la-consola-de-administración-de-aws'><span>Acceso a la consola de administración de AWS</span></h2><ol start='' ><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratorio) y comience a trabajar en él.</span></p><p><span>Se abrirá el panel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratorio), donde se muestra el estado del laboratorio.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Sugerencia</span></strong><span>:Si alguna vez necesita más tiempo para completar el laboratorio que el que se muestra en el temporizador, elija el botón </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratorio) de nuevo para reiniciar el temporizador del entorno. Esta acción no eliminará los recursos que haya creado.</span></p></li></ol><p>&nbsp;</p><ol start='2' ><li><span>Espere hasta que aparezca el mensaje </span><em><span>Lab status: ready (Estado del laboratorio: listo)</span></em><span> y, a continuación, haga clic en </span><strong><span>X</span></strong><span> para cerrar el panel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratorio).</span></li></ol><ol start='3' ><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>Esto abrirá la consola de administración de AWS en una nueva pestaña del navegador y el sistema iniciará su sesión de forma automática.</span></p><p><strong><span>Sugerencia</span></strong><span>: Si no se abre una nueva pestaña del navegador, por lo general habrá un aviso o un icono en la parte superior, el cual indicará que el navegador impide que el sitio abra ventanas emergentes. Haga clic en el aviso o el icono y elija </span><strong><span>Allow pop ups</span></strong><span> (Permitir ventanas emergentes).</span></p></li><li><p><span>Ubique la pestaña de la consola de administración de AWS de modo que aparezca junto con estas instrucciones. El método más óptimo sería tener ambas pestañas del navegador abiertas al mismo tiempo para que pueda seguir los pasos del laboratorio más fácilmente.</span></p><p><strong><span>Nota</span></strong><span>: También puede desmarcar la casilla situada junto a “Terminal” en la parte superior de la pantalla para ocultarla.</span></p></li></ol><p>&nbsp;</p><h2 id='solicitud-empresarial-configuración-del-acceso-a-cuentas-de-aws-para-desarrolladores-de-aplicaciones-desafío-n° 1'><span>Solicitud empresarial: configuración del acceso a cuentas de AWS para desarrolladores de aplicaciones (Desafío n.° 1)</span></h2><p><span>La cafetería desea configurar permisos de acceso adecuados para los desarrolladores de aplicaciones. Usted asumirá el papel de Sofía para configurar el acceso. Luego, asumirá el papel de Nikhil y probará el acceso para desarrolladores de aplicaciones.</span></p><p>&nbsp;</p><h3 id='tarea 1-configurar-un-grupo-de-iam-con-políticas-y-un-usuario-de-iam'><span>Tarea 1: Configurar un grupo de IAM con políticas y un usuario de IAM</span></h3><p><span>En esta primera tarea en el laboratorio, trabajará como Sofía, la administradora de cuenta de AWS.</span></p><p><span>Como Sofía, creará un grupo de IAM y le asignará políticas administradas por AWS. A continuación, creará un nuevo usuario de IAM y lo agregará como miembro al grupo. Luego, creará un entorno de AWS Cloud9 en la instancia EC2 existente donde se ejecuta la versión de desarrollo de la aplicación web de la cafetería. Finalmente, compartirá el entorno de desarrollo con el nuevo usuario.</span></p><p><strong><span>Nota</span></strong><span>: </span><em><span>El usuario con el que inició sesión aparece en el área superior derecha de la página web</span></em><span>. Actualmente, debería indicar que inició sesión como el usuario </span><em><span>voclabs</span></em><span>. En este laboratorio, suponga que el usuario </span><em><span>voclabs</span></em><span> corresponde a Sofía.</span></p><p>&nbsp;</p><ol start='5' ><li><span>En la consola, abra la página del servicio IAM.</span></li></ol><p>&nbsp;</p><ol start='6' ><li><p><span>Cree un </span><strong><span>grupo de IAM</span></strong><span> denominado </span><code>AppDevelopers</code><span> y asóciele las siguientes políticas de IAM:</span></p><ul><li><p><strong><span>AmazonEC2ReadOnlyAccess</span></strong></p></li><li><p><strong><span>AWSCloud9EnvironmentMember</span></strong></p><p>&nbsp;</p></li></ul></li></ol><ol start='7' ><li><p><span>Cree un </span><strong><span>usuario de IAM</span></strong><span> y agréguelo al grupo </span><em><span>AppDevelopers</span></em><span>.</span></p><ul><li><strong><span>User name</span></strong><span> (Nombre de usuario): </span><code>Nikhil</code></li><li><strong><span>Access Type</span></strong><span> (Tipo de acceso): </span><em><span>AWS Management Console access (Acceso a la consola de administración de AWS)</span></em></li><li><strong><span>Custom password</span></strong><span> (Contraseña personalizada): </span><code>@ppD3veloper2020!</code></li><li><strong><span>Require password reset</span></strong><span> (Requerir restablecimiento de contraseña): desmarque esta casilla</span></li><li><span>Agregue a Nikhil al grupo </span><em><span>AppDevelopers</span></em><span>.</span></li><li><strong><span>Nota</span></strong><span>: No es necesario agregar etiquetas.</span></li><li><span>En la pantalla </span><strong><span>Success</span></strong><span> (Correcto), puede elegir </span><em><span>de forma opcional</span></em><span> </span><strong><span>Download .cvs (Descargar .csv)</span></strong><span> y guardar el archivo en el equipo.</span></li><li><span>Elija </span><strong><span>Close</span></strong><span> (Cerrar).</span></li></ul></li></ol><p>&nbsp;</p><ol start='8' ><li><p><span>Mientras esté registrado como el usuario </span><em><span>voclabs</span></em><span> (Sofía), conéctese al IDE de AWS Cloud9 y configure la aplicación web de la cafetería.</span></p><ul><li><p><span>Abra la página del servicio </span><strong><span>AWS Cloud9</span></strong><span> y, en </span><strong><span>DEVCafeServer</span></strong><span>, elija </span><strong><span>Open IDE</span></strong><span> (Abrir IDE).</span></p><p><span>Ahora debería aparecer el IDE de AWS Cloud9 que se ejecuta en una instancia EC2.</span></p></li><li><p><span>En la ventana del terminal Bash, en la parte inferior de la pantalla, pegue y ejecute estos tres comandos:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19995px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod8-challenge/install-cafe-app.sh</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">chmod</span> <span class="cm-operator">+</span>x install-cafe-app.sh</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">./install-cafe-app.sh</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Nota</span></strong><span>: </span><em><span>No</span></em><span> es necesario esperar a que el script termine de ejecutarse. Puede continuar con el siguiente paso.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='9' ><li><p><span>Comparta el entorno de AWS Cloud9 con el usuario </span><em><span>Nikhil</span></em><span>.</span></p><ul><li><p><span>En la esquina superior derecha del IDE de AWS Cloud9, elija </span><strong><span>Share</span></strong><span> (Compartir).</span></p></li><li><p><span>En el panel </span><strong><span>Share this environment</span></strong><span> (Compartir este entorno), en </span><strong><span>Invite Members</span></strong><span> (Invitar miembros), escriba </span><code>Nikhil</code><span> y elija </span><strong><span>Invite</span></strong><span> (Invitar).</span></p></li><li><p><span>Elija </span><strong><span>OK</span></strong><span> (Aceptar), vuelva a elegir </span><strong><span>OK</span></strong><span> (Aceptar) y, a continuación, </span><strong><span>Done</span></strong><span> (Listo).</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Importante</span></strong><span>: Cierre la pestaña del navegador correspondiente al IDE de AWS Cloud9, pero deje abierta al menos otra pestaña del navegador donde haya iniciado sesión en la consola de administración de AWS como el usuario </span><em><span>voclabs</span></em><span> (Sofía).</span></p></li></ul></li></ol><p>&nbsp;</p><h3 id='tarea 2-iniciar-sesión-como-nikhil-y-probar-el-acceso'><span>Tarea 2: Iniciar sesión como Nikhil y probar el acceso</span></h3><p><span>En esta tarea, trabajará como Nikhil para probar los permisos de acceso que configuró Sofía.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Sugerencia</span></strong><span>: Recomendamos abrir una pestaña del navegador de incógnito o privada para iniciar sesión como </span><em><span>Nikhil</span></em><span>.</span></p><ul><li><span>Por ejemplo, si utiliza </span><em><span>Chrome</span></em><span>, elija </span><strong><span>File</span></strong><span> (Archivo) &gt; </span><strong><span>New Incognito Window</span></strong><span> (Nueva ventana de incógnito). Si está usando </span><em><span>Firefox</span></em><span>, elija </span><strong><span>File</span></strong><span> (Archivo) &gt; </span><strong><span>New Private Window (Nueva ventana privada).</span></strong></li><li><span>También puede usar otro navegador (por ejemplo, si usó Chrome para completar la tarea 1, use Firefox, Edge o Safari para la tarea 2).</span></li></ul><p><strong><span>Nota</span></strong><span>: Utilizar una sesión de incógnito, una sesión privada o un navegador diferente resulta conveniente. Puede mantener sus sesiones como el usuario </span><em><span>voclabs</span></em><span> y otro usuario (por ejemplo, </span><em><span>Nikhil</span></em><span>) abiertas simultáneamente. Por lo tanto, puede cambiar entre estos dos niveles de acceso de usuario sin necesidad de cerrar sesión o iniciar sesión repetidas veces. La información de sesión autenticada en las diferentes pestañas del navegador se aislará entre sesiones.</span></p><p>&nbsp;</p><ol start='10' ><li><p><span>Como </span><em><span>Nikhil</span></em><span>, inicie sesión en la consola de administración de AWS.</span></p><ul><li><p><span>En la pestaña del navegador donde inició sesión como el usuario </span><em><span>voclabs</span></em><span> (Sofía), abra la consola de </span><strong><span>IAM</span></strong><span>, elija </span><strong><span>Users</span></strong><span> (Usuarios) y, a continuación, elija </span><strong><span>Nikhil</span></strong><span>.</span></p></li><li><p><span>Elija la pestaña </span><strong><span>Security credentials</span></strong><span> (Credenciales de seguridad) y, en la sección </span><strong><span>Sign-in credentials</span></strong><span> (Credenciales de inicio de sesión), copie el </span><strong><span>enlace de inicio de sesión de la consola</span></strong><span>.</span></p></li><li><p><span>Pegue el enlace en una pestaña del navegador de incógnito o privada (u otro navegador como se explicó en la sugerencia anterior).</span></p></li><li><p><span>En la pantalla </span><strong><span>Sign in as IAM user</span></strong><span> (Iniciar sesión como usuario de IAM), escriba las credenciales de Nikhil y elija </span><strong><span>Sign in</span></strong><span> (Iniciar sesión).</span></p><ul><li><strong><span>IAM user name</span></strong><span> (Nombre de usuario de IAM): </span><code>Nikhil</code></li><li><strong><span>Password</span></strong><span> (Contraseña): </span><code>@ppD3veloper2020!</code></li></ul></li></ul></li></ol><p>&nbsp;</p><ol start='11' ><li><p><span>Abra la consola de </span><strong><span>Amazon EC2</span></strong><span> y, en una pestaña del navegador, cargue la aplicación web de la cafetería.</span></p><ul><li><p><span>Verifique que se encuentra en la </span><strong><span>región</span></strong><span> correcta (por ejemplo, </span><em><span>Norte de Virginia</span></em><span>) y cambie por dicha región, si es necesario.</span></p></li><li><p><span>Debería ser capaz de ver todos los detalles de las instancias EC2.</span></p></li><li><p><span>Busque y copie la </span><strong><span>dirección IP pública IPv4</span></strong><span> de la instancia </span><strong><span>aws-cloud9-DEVCafeServer</span></strong><span>.</span></p></li><li><p><span>En una nueva pestaña del navegador, cargue </span><code>http://&lt;dev-public-ip-address&gt;/cafe</code><span>, donde </span>&lt;<em><span>dev-public-ip-address</span></em>&gt;<span> es la dirección IP que copió.</span></p><p><span>Debería aparecer el sitio web de la cafetería. Mantenga esta pestaña del navegador abierta para una sección posterior del laboratorio.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='12' ><li><p><span>Pruebe más su acceso a Amazon EC2 intentando reiniciar el servidor web.</span></p><ul><li><p><span>Intente reiniciar la instancia </span><em><span>aws-cloud9-DEVCafeServer</span></em><span>.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Sugerencia</span></strong><span>: Para encontrar la opción </span><strong><span>Reboot</span></strong><span> (Reiniciar), seleccione la instancia y busque en el menú </span><strong><span>Actions</span></strong><span> (Acciones).</span></p></li></ul></li></ol><p>&nbsp;</p><h4 id='respuesta-a-preguntas-sobre-el-acceso-a-amazon ec2-de-nikhil'><span>Respuesta a preguntas sobre el acceso a Amazon EC2 de Nikhil</span></h4><p><span>Las respuestas se comprobarán cuando haga clic el botón azul </span><strong><span>Submit</span></strong><span> (Enviar) al final del laboratorio.</span></p><ol start='13' ><li><p><span>Acceda a las preguntas de este laboratorio.</span></p><ul><li><p><span>Arriba de estas instrucciones, elija el menú </span><span id="ssb_voc_grey"><span>Details (Detalles) </span><i class="fas fa-angle-down"></i></span><span> y, a continuación, </span><span id="ssb_voc_grey"><span>Show</span></span><span> (Mostrar).</span></p></li><li><p><span>Elija el enlace </span><strong><span>Access the multiple choice questions</span></strong><span> (Acceder a las preguntas de opción múltiple) que aparece en la parte inferior de la página.</span></p><p><span>Las preguntas deberían cargarse en una nueva pestaña del navegador.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='14' ><li><p><span>En la página web que acaba de abrir, responda las dos primeras preguntas:</span></p><ul><li><p><strong><span>Pregunta 1</span></strong><span>: ¿Qué sucedió cuando Nikhil intentó reiniciar la instancia EC2?</span></p></li><li><p><strong><span>Pregunta 2</span></strong><span>: ¿Qué política de IAM permitió a Nikhil acceder al entorno de AWS Cloud9?</span></p><p><strong><span>Nota</span></strong><span>: Deje abierta la página web con las preguntas en la pestaña de su navegador. Volverá a ella más adelante en este laboratorio.</span></p></li></ul></li></ol><p>&nbsp;</p><h4 id='acceso-al-servidor-de-desarrollo-como-nikhil'><span>Acceso al servidor de desarrollo como Nikhil</span></h4><ol start='15' ><li><p><span>Vuelva a la pestaña del navegador donde inició sesión en la consola de administración de AWS como </span><em><span>Nikhil</span></em><span>.</span></p><p><strong><span>Sugerencia</span></strong><span>: Recuerde que puede ver qué usuario está utilizando en la parte superior derecha de la interfaz del navegador.</span></p></li></ol><p>&nbsp;</p><ol start='16' ><li><p><span>Vaya a la consola de </span><strong><span>AWS Cloud9</span></strong><span> y conéctese al IDE de AWS Cloud9 en la instancia EC2 </span><em><span>DEVCafeServer</span></em><span>.</span></p><ul><li><p><span>En el menú </span><strong><span>Services</span></strong><span> (Servicios), elija </span><strong><span>AWS Cloud9</span></strong><span>.</span></p></li><li><p><span>A la izquierda, expanda el menú seleccionando </span><i class="fas fa-bars"></i><span> (ícono de menú), elija </span><strong><span>Shared with you</span></strong><span> (Compartido con usted) y compruebe que el entorno de </span><strong><span>DEVCafeServer</span></strong><span> esté disponible.</span></p></li><li><p><span>Elija </span><strong><span>Open IDE</span></strong><span> (Abrir IDE).</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Nota</span></strong><span>: Acaba de conectarse al sistema operativo invitado correspondiente a la instancia EC2 </span><em><span>aws-cloud9-DEVCafeServer</span></em><span>. Observó esta instancia en la consola de Amazon EC2 hace un momento. Puede utilizar el IDE para examinar y editar archivos en el servidor web. También proporciona un terminal Bash que se ejecuta en la instancia.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='17' ><li><p><span>En la instancia de desarrollo del sitio web de la cafetería, modifique el encabezado principal de la página web.</span></p><ul><li><span>Abra la página web principal en el editor dirigiéndose al navegador de archivos, buscando el directorio </span><code>DEVCafeServer/www/html/cafe</code><span> y haciendo doble clic en </span><strong><span>index.php</span></strong><span>.</span></li><li><span>Modifique la </span><strong><span>línea 13</span></strong><span> de modo que enuncie lo siguiente:</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="html"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="html"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"center"</span><span class="cm-tag cm-bracket">&gt;</span>Caf<span class="cm-atom">&amp;eacute;</span> DEV Site<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><ul><li><p><span>Para guardar el cambio, elija </span><strong><span>File (Archivo) &gt; Save (Guardar)</span></strong><span> y, en el navegador, actualice la página web </span><code>http://dev-public-ip-address/cafe/</code><span>.</span></p><p><span>Tenga en cuenta que, mientras actuaba como Nikhil, cambió el encabezado principal de la página web en el entorno de desarrollo.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='18' ><li><p><span>Pruebe la conectividad de la base de datos de la aplicación web.</span></p><ul><li><span>En el sitio web de la cafetería, elija </span><strong><span>Menu</span></strong><span> (Menú).</span></li><li><span>¿Qué mensaje aparece?</span></li></ul></li></ol><p>&nbsp;</p><ol start='19' ><li><p><span>Regrese a la pestaña del navegador con las preguntas de opción múltiple correspondientes a este laboratorio y responda la siguiente pregunta.</span></p><ul><li><p><strong><span>Pregunta 3</span></strong><span>: ¿Qué mensaje se mostró en la página </span><strong><span>Menu</span></strong><span> (Menú) de la instancia de desarrollo del sitio web de la cafetería?</span></p><p><i class="fas fa-comment"></i><span> Nikhil recuerda que los parámetros de conexión de la base de datos se guardaron en AWS Systems Manager Parameter Store.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='20' ><li><p><span>Como </span><em><span>Nikhil</span></em><span>, abra Systems Manager Parameter Store.</span></p><ul><li><span>En la consola, abra el servicio </span><strong><span>Systems Manager</span></strong><span>.</span></li><li><span>En el menú de la izquierda, elija </span><strong><span>Application Management</span></strong><span> (Administración de aplicaciones) &gt; </span><strong><span>Parameter Store</span></strong><span>.</span></li><li><span>¿Qué mensaje aparece?</span></li></ul></li></ol><p>&nbsp;</p><ol start='21' ><li><p><span>Regrese a la pestaña del navegador con las preguntas de opción múltiple correspondientes a este laboratorio y responda la siguiente pregunta.</span></p><ul><li><strong><span>Pregunta 4</span></strong><span>: ¿Qué mensaje apareció cuando Nikhil abrió la página de Systems Manager Parameter Store en la consola?</span></li></ul><p><span>Nikhil alerta a Sofía sobre el problema en el servidor de desarrollo que le impide mejorar la aplicación web de la cafetería. Sofía está preocupada. Le pide a Nikhil que compruebe si la versión de </span><em><span>producción</span></em><span> del sitio web presenta el mismo problema.</span></p></li></ol><p>&nbsp;</p><ol start='22' ><li><p><span>Como </span><em><span>Nikhil</span></em><span>, verifique que la aplicación web de la cafetería correspondiente a producción esté funcionando correctamente.</span></p><ul><li><span>Abra la consola de </span><strong><span>Amazon EC2</span></strong><span> y copie la </span><strong><span>dirección IP pública IPv4</span></strong><span> de la instancia </span><strong><span>PRODCafeServer</span></strong><span>.</span></li><li><span>En una nueva ventana del navegador, cargue </span><code>http://prod-public-ip-address/cafe/menu.php</code><span>.</span></li><li><span>¿Aparece correctamente la página web y puede realizar pedidos en ella?</span></li></ul></li></ol><p>&nbsp;</p><h2 id='nuevo-requisito-empresarial-configuración-del-acceso-a-cuentas-de-aws-para-administradores-de-bases-de-datos-desafío-n° 2'><span>Nuevo requisito empresarial: configuración del acceso a cuentas de AWS para administradores de bases de datos (Desafío n.° 2)</span></h2><p><span>Nikhil informa los resultados de su prueba a Sofía. Ella se alegra de saber que el sitio de producción sigue funcionando bien. Sin embargo, quiere corregir el problema en el sitio de desarrollo.</span></p><p><span>Decide que le pedirá a Olivia que solucione el problema. Sin embargo, debe definir primero los derechos de acceso a la cuenta de AWS para los administradores de bases de datos. Luego, debe crear un recurso de usuario de IAM para que Olivia pueda iniciar sesión en la cuenta.</span></p><p>&nbsp;</p><h3 id='tarea 3-configurar-iam-para-permitir-el-acceso-de-usuarios-administradores-de-bases-de-datos'><span>Tarea 3: Configurar IAM para permitir el acceso de usuarios administradores de bases de datos</span></h3><p><span>En esta tarea, trabajará como </span><em><span>Sofía</span></em><span> para habilitar el acceso a AWS de Olivia.</span></p><ol start='23' ><li><p><span>Regrese al navegador donde inició sesión como el usuario </span><em><span>voclabs</span></em><span> (Sofía) y cree un </span><strong><span>grupo de IAM</span></strong><span> denominado </span><code>DBAdministrators</code><span> con los siguientes permisos:</span></p><ul><li><strong><span>AmazonRDSReadOnlyAccess</span></strong></li><li><strong><span>AmazonSSMFullAccess</span></strong></li></ul><p><strong><span>Nota</span></strong><span>: En un caso real, Sofía tendría que conceder más que simplemente acceso de solo lectura a RDS a sus administradores de bases de datos. Sin embargo, los permisos en este entorno de laboratorio no permiten asociar la política AmazonRDSFullAccess. En su lugar, para este laboratorio, debe usar la política AmazonRDSReadOnlyAccess como sustituto.</span></p></li></ol><p>&nbsp;</p><ol start='24' ><li><p><span>Cree un usuario de IAM llamado </span><code>Olivia</code><span> con acceso a la </span><strong><span>consola de administración de AWS</span></strong><span>.</span></p><ul><li><span>Establezca una contraseña personalizada: </span><code>Db@dministrat0r2020!</code><span>.</span></li><li><span>Desactive el requisito de restablecer la contraseña.</span></li></ul></li></ol><p>&nbsp;</p><ol start='25' ><li><span>Agregue a Olivia al grupo </span><strong><span>DBAdministrators</span></strong><span>.</span></li></ol><p>&nbsp;</p><h3 id='tarea 4-iniciar-sesión-como-administrador-de-base-de-datos-y-resolver-el-problema-de-conectividad-de-la-base-de-datos'><span>Tarea 4: Iniciar sesión como administrador de base de datos y resolver el problema de conectividad de la base de datos</span></h3><p><span>En esta tarea, trabajará como </span><em><span>Olivia</span></em><span> para resolver el problema de la base de datos que Nikhil identificó. También trabajará como </span><em><span>Sofía</span></em><span> para ayudar a Olivia a resolver algunos problemas.</span></p><ol start='26' ><li><p><span>Como </span><em><span>Olivia</span></em><span>, inicie sesión en la consola de administración de AWS.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Sugerencia</span></strong><span>: Utilice la sesión de incógnito, la sesión privada o el otro tipo de navegador que usó para iniciar sesión como Nikhil. Siga las siguientes instrucciones:</span></p><ul><li><p><span>Elija </span><strong><span>Nikhil @ </span>&lt;<em><span>account-number</span></em>&gt;</strong><span> en la parte superior derecha de la consola y elija </span><strong><span>Sign Out</span></strong><span> (Cerrar sesión).</span></p></li><li><p><span>Luego, elija </span><strong><span>Log back in</span></strong><span> (Iniciar sesión de nuevo).</span></p><p><span>Debe aparecer la pantalla </span><strong><span>Sign in as IAM user</span></strong><span> (Iniciar sesión como usuario de IAM) con el </span><em><span>ID de cuenta</span></em><span> ya ingresado.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Nota</span></strong><span>: Si la pantalla de inicio de sesión no muestra el ID de cuenta, vuelva a la pestaña del navegador donde todavía tiene la sesión abierta del usuario </span><em><span>voclabs</span></em><span> (Sofía). En la consola de IAM, elija </span><strong><span>Users</span></strong><span> (Usuarios) y </span><strong><span>Olivia</span></strong><span>. Elija la pestaña </span><strong><span>Security credentials</span></strong><span> (Credenciales de seguridad). En la sección </span><strong><span>Sign-in credentials</span></strong><span> (Credenciales de inicio de sesión), copie el </span><strong><span>enlace de inicio de sesión de la consola</span></strong><span>.</span></p></li><li><p><span>Inicie sesión con las credenciales de Olivia:</span></p><ul><li><strong><span>IAM user name</span></strong><span> (Nombre de usuario de IAM): </span><code>Olivia</code></li><li><strong><span>Password</span></strong><span> (Contraseña): </span><code>Db@dministrat0r2020!</code></li></ul></li></ul></li></ol><p>&nbsp;</p><ol start='27' ><li><p><span>Verifique que la base de datos de RDS se esté ejecutando.</span></p><ul><li><span>Abra la página del servicio </span><strong><span>Amazon RDS</span></strong><span> y elija </span><strong><span>Databases</span></strong><span> (Bases de datos).</span></li><li><span>Verifique que el </span><strong><span>estado</span></strong><span> de la instancia de base de datos sea </span><em><span>Available (Disponible)</span></em><span>.</span></li></ul><p><span>Olivia observa que la base de datos se está ejecutando.</span></p><p><span>Recuerda que el entorno de desarrollo se conecta a la base de datos mediante parámetros almacenados en Systems Manager Parameter Store. Olivia se pregunta si la instancia EC2 </span><em><span>DEVCafeServer</span></em><span> tiene los permisos necesarios para leer los parámetros en Parameter Store.</span></p></li></ol><p>&nbsp;</p><ol start='28' ><li><span>Abra la consola de </span><strong><span>Amazon EC2</span></strong><span> y elija </span><strong><span>Running Instances</span></strong><span> (Instancias en ejecución).</span></li></ol><p>&nbsp;</p><ol start='29' ><li><p><span>Regrese a la pestaña del navegador con las preguntas de opción múltiple correspondientes a este laboratorio y responda la siguiente pregunta.</span></p><ul><li><strong><span>Pregunta 5</span></strong><span>: ¿Por qué no puede Olivia acceder a los detalles de la instancia EC2?</span></li></ul><p><span>Olivia explica a Sofía que no puede acceder a las instancias EC2 y Sofía vuelve a la consola para solucionar este problema.</span></p><p><span>Ahora, trabajará como </span><em><span>Sofía</span></em><span> para revisar y actualizar el acceso de Olivia a los recursos de AWS.</span></p></li></ol><p>&nbsp;</p><ol start='30' ><li><span>Vuelva a la pestaña del navegador donde inició sesión como el usuario </span><em><span>voclabs</span></em><span> (Sofía).</span></li></ol><p>&nbsp;</p><ol start='31' ><li><p><span>Abra el grupo </span><strong><span>DBAdministrators</span></strong><span> y asocie estas políticas:</span></p><ul><li><strong><span>AmazonEC2ReadOnlyAccess</span></strong></li><li><strong><span>IAMReadOnlyAccess</span></strong></li></ul><p><strong><span>Nota</span></strong><span>: Sofía se da cuenta de que Olivia necesitará algunos permisos de IAM si tiene que acceder a los detalles del rol de IAM que está asociado a la instancia EC2.</span></p></li></ol><p>&nbsp;</p><ol start='32' ><li><p><span>Aún como el usuario </span><em><span>voclabs</span></em><span> (Sofía), compruebe qué servicios y características utilizó Olivia.</span></p><ul><li><p><span>En la consola de IAM, abra la usuaria </span><strong><span>Olivia</span></strong><span> y elija la pestaña </span><strong><span>Access Advisor</span></strong><span>.</span></p></li><li><p><span>Tenga en cuenta que puede ver qué áreas de servicio visitó Olivia. La actividad reciente del servicio suele aparecer en un plazo de 4 horas (como se indica en los detalles de Access Advisor). Es posible que aún no vea ningún </span><strong><span>dato del último acceso</span></strong><span> correspondiente a Olivia.</span></p><p><i class="fas fa-info-circle"></i><span> Puede utilizar esta vista para obtener información acerca de cómo los permisos de un usuario tal vez sean más abiertos de lo que deberían ser. Esta información le permite alinear más estrechamente los derechos de acceso con el </span><a href='https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege'><span>principio de privilegio mínimo</span></a><span>.</span></p><p><span>Sofía le pide a Olivia que compruebe su acceso a Amazon EC2.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='33' ><li><p><span>Como </span><em><span>Olivia</span></em><span>, vuelva a la pestaña del navegador donde la usuaria Olivia inició sesión y actualice la página de instancias de la consola de </span><strong><span>Amazon EC2</span></strong><span>.</span></p><ul><li><span>Olivia ahora debería ser capaz de acceder a ambas instancias EC2 en ejecución.</span></li><li><span>Seleccione la instancia </span><strong><span>aws-cloud9-DEVCafeServer</span></strong><span>.</span></li><li><span>En la pestaña </span><strong><span>Description</span></strong><span> (Descripción), busque el </span><strong><span>rol de IAM</span></strong><span> y elija </span><strong><span>CafeRole</span></strong><span>.</span></li><li><span>En la pestaña </span><strong><span>Permissions</span></strong><span> (Permisos), expanda la política </span><strong><span>AmazonSSMManagedInstanceCore</span></strong><span> y elija la opción de visualización </span><strong><span>JSON</span></strong><span>.</span></li><li><span>Revise los permisos de la política.</span></li></ul></li></ol><p>&nbsp;</p><ol start='34' ><li><p><span>Regrese a la pestaña del navegador con las preguntas de opción múltiple que corresponden a este laboratorio y responda la siguiente pregunta.</span></p><ul><li><strong><span>Pregunta 6</span></strong><span>: Nombre dos acciones específicas en la política que permitan a la aplicación web de la cafetería en esta instancia acceder a las credenciales de la base de datos en Parameter Store.</span></li></ul><p><span>Olivia ahora está convencida de que la aplicación web en la instancia EC2 de desarrollo puede acceder a Parameter Store. Tal vez el problema sea otra cosa. Olivia analiza el tema con Sofía.</span></p><p><span>Después de una conversación, Sofía recuerda que el entorno de desarrollo usaba anteriormente una base de datos local, pero que ahora emplea Amazon RDS. La base de datos local tenía un nombre de usuario diferente que permitía a la aplicación web conectarse a la base de datos. La conexión con la base de datos en Amazon RDS requiere un nombre de usuario de base de datos diferente. ¡Ese debe ser el problema!</span></p><p><span>Sofía pide a Olivia que compruebe si el nombre de usuario de la base de datos es el origen del problema y que lo actualice.</span></p></li></ol><p>&nbsp;</p><ol start='35' ><li><span>Como </span><em><span>Olivia</span></em><span>, actualice el valor </span><strong><span>dbUser</span></strong><span> (Usuario de base de datos) en Systems Manager Parameter Store.</span></li></ol><p>&nbsp;</p><ol start='36' ><li><p><span>En la aplicación web del servidor de la cafetería de desarrollo, actualice la página </span><strong><span>Menu</span></strong><span> (Menú).</span></p><ul><li><span>Si esta página web aún no está abierta, cargue </span><code>http://&lt;dev-public-ip-address&gt;/cafe/menu.php</code><span> en un navegador (donde </span>&lt;<em><span>dev-public-ip-address</span></em>&gt;<span> es la dirección IP pública IPv4 real de la instancia </span><strong><span>aws-cloud9-DEVCafeServer</span></strong><span>).</span></li><li><span>¿Aparece ahora correctamente la página con todo el contenido? ¿Puede enviar un pedido sin problemas?</span></li></ul><p><span>¡Felicitaciones! Actuó como miembro del grupo </span><em><span>DBAdministrators</span></em><span> y corrigió el problema en el sitio web. Nikhil agradece a Olivia por resolver el problema, y Olivia también informa a Sofía que el problema está resuelto.</span></p></li></ol><p>&nbsp;</p><h2 id='nuevo-requisito-empresarial-mejora-del-acceso-de-los-usuarios-de-iam-desafío-n° 3'><span>Nuevo requisito empresarial: mejora del acceso de los usuarios de IAM (Desafío n.° 3)</span></h2><p><span>Frank y Martha están contentos de que Sofía y el equipo mejoraron la seguridad de la cuenta de AWS. Por otra parte, Sofía se alegra de haber podido configurar diferentes permisos para sus desarrolladores de aplicaciones y administradores de bases de datos. Le gusta que asignar permisos independientes a cada rol resulte en que los miembros del equipo trabajen juntos, cada uno dentro de su área de competencia principal y responsabilidad asignada, para potenciar el desarrollo y solucionar problemas.</span></p><p><span>Sofía se toma un minuto para relajarse con sus amigos. Sin embargo, ya está pensando en personalizar aún más la configuración de seguridad que asignó a los diferentes usuarios. Algunos de los permisos todavía están demasiado abiertos y no siguen completamente el principio de privilegio mínimo. En este último desafío del laboratorio, asumirá el papel de Sofía. Trabajará para definir una política de IAM personalizada que reduzca la cantidad de acciones de IAM que se conceden a los miembros del grupo de administradores de bases de datos. Sin embargo, también tendrá que concederles suficiente acceso de IAM para que cumplan sus responsabilidades laborales.</span></p><p>&nbsp;</p><h3 id='tarea 5-usar-el-simulador-de-políticas-de-iam-y-crear-una-política-de-iam-personalizada-con-el-editor-visual'><span>Tarea 5: Usar el simulador de políticas de IAM y crear una política de IAM personalizada con el editor visual</span></h3><ol start='37' ><li><p><span>Vuelva a la ventana del navegador donde inició sesión como el usuario </span><em><span>voclabs</span></em><span> (Sofía) y cargue esta URL en una nueva pestaña del navegador: </span><a href='https://policysim.aws.amazon.com/' target='_blank' class='url'>https://policysim.aws.amazon.com/</a></p><p><span>Debería abrirse la página del simulador de políticas de IAM.</span></p></li></ol><p>&nbsp;</p><ol start='38' ><li><span>Elija a la usuaria </span><strong><span>Olivia</span></strong><span>.</span></li></ol><p>&nbsp;</p><ol start='39' ><li><span>En la lista </span><strong><span>IAM Policies</span></strong><span> (Políticas de IAM), asegúrese de que la política </span><strong><span>IAMReadOnlyAccess</span></strong><span> esté seleccionada. No obstante, </span><em><span>desmarque</span></em><span> las casillas de verificación de las demás políticas.</span></li></ol><p>&nbsp;</p><ol start='40' ><li><span>En la sección </span><strong><span>Policy Simulator</span></strong><span> (Simulador de políticas), elija </span><strong><span>Select service</span></strong><span> (Seleccionar servicio). En el cuadro de búsqueda </span><strong><span>Filter</span></strong><span> (Filtrar), escriba </span><code>Ident</code><span> y seleccione </span><strong><span>Identity and Access Management</span></strong><span>.</span></li></ol><p>&nbsp;</p><ol start='41' ><li><p><span>Elija la opción </span><strong><span>Select All</span></strong><span> (Seleccionar todo) (a la derecha del menú </span><strong><span>Select actions [Seleccionar acciones]</span></strong><span>) y, a continuación, elija </span><strong><span>Run Simulation</span></strong><span> (Ejecutar simulación).</span></p><ul><li><span>En el panel </span><strong><span>Configuración y resultados de acción</span></strong><span>, debe mostrarse una lista de acciones.</span></li><li><span>La columna </span><strong><span>Permission</span></strong><span> (Permiso) muestra los permisos de Olivia para cada acción. La política </span><em><span>IAMReadOnlyAccess</span></em><span> deniega a Olivia los permisos necesarios para realizar acciones </span><strong><span>Add</span></strong><span> (Agregar) o </span><strong><span>Create</span></strong><span> (Crear). No obstante, desplácese para encontrar las acciones que </span><em><span>sí</span></em><span> puede realizar.</span></li><li><span>El resumen (en la parte superior de la lista) muestra que Olivia tiene permitido actualmente realizar </span><em><span>57 acciones de IAM</span></em><span>.</span></li></ul></li></ol><p><img src="images/policy-simulator.png" referrerpolicy="no-referrer" alt="equipo de la cafetería"></p><p>&nbsp;</p><p><span>Sofía recuerda la única razón por la que concedió a Olivia los permisos de la política </span><em><span>IAMReadOnlyAccess</span></em><span>. Quería concederle los permisos necesarios para observar los detalles de ciertas políticas. Estas políticas se han asociado al rol de IAM que está asociado a las dos instancias del servidor de la cafetería. Sofía decide crear una nueva política de IAM más restrictiva para los miembros del grupo </span><em><span>DBAdministrators</span></em><span>.</span></p><p><span>En los siguientes pasos, trabajará como Sofía para crear esta nueva política.</span></p><p>&nbsp;</p><ol start='42' ><li><span>Vuelva a la pestaña del navegador donde inició sesión como el usuario </span><strong><span>voclabs</span></strong><span> (Sofía).</span></li></ol><p>&nbsp;</p><ol start='43' ><li><span>En la consola de </span><strong><span>IAM</span></strong><span>, elija </span><strong><span>Policies</span></strong><span> (Políticas) y, a continuación, </span><strong><span>Create policy</span></strong><span> (Crear política).</span></li></ol><p>&nbsp;</p><ol start='44' ><li><p><span>En la pestaña </span><strong><span>Visual editor</span></strong><span> (Editor visual), configure los siguientes parámetros.</span></p><ul><li><p><span>Haga clic en </span><strong><span>Choose a service</span></strong><span> (Elegir un servicio). Busque </span><strong><span>EC2</span></strong><span> y elíjalo.</span></p><ul><li><span>En el cuadro de búsqueda </span><strong><span>Actions</span></strong><span> (Acciones), busque </span><strong><span>IAM</span></strong><span> y seleccione </span><strong><span>DescribeIamInstanceProfileAssociations</span></strong><span>.</span></li></ul><p><img src="images/visual-editor.png" referrerpolicy="no-referrer" alt="Editor visual de IAM"></p></li><li><p><span>En la parte inferior de la pantalla, seleccione </span><strong><span>Add additional permissions</span></strong><span> (Agregar permisos adicionales).</span></p></li><li><p><span>Haga clic en </span><strong><span>Choose a service</span></strong><span> (Elegir un servicio). Busque </span><strong><span>IAM</span></strong><span> y elíjalo.</span></p><ul><li><p><span>En el cuadro de búsqueda </span><strong><span>Actions</span></strong><span> (Acciones), busque </span><strong><span>Get</span></strong><span> (Obtener) y seleccione las siguientes acciones:</span></p><ul><li><strong><span>GetPolicyVersion</span></strong></li><li><strong><span>GetRole</span></strong></li><li><strong><span>GetRolePolicy</span></strong></li></ul></li><li><p><span>Regrese al cuadro de búsqueda, busque </span><strong><span>List</span></strong><span> (Ubicar en lista) y seleccione las siguientes acciones:</span></p><ul><li><strong><span>ListAttachedRolePolicies</span></strong></li><li><strong><span>ListInstanceProfiles</span></strong></li><li><strong><span>ListInstanceProfilesForRole</span></strong></li><li><strong><span>ListPolicies</span></strong></li><li><strong><span>ListRolePolicies</span></strong></li><li><strong><span>ListRoles</span></strong></li></ul></li></ul></li><li><p><span>Expanda la sección </span><strong><span>Resources</span></strong><span> (Recursos) y, para los tres tipos de recursos (</span><em><span>instance-profile</span></em><span>, </span><em><span>policy</span></em><span> y </span><em><span>role</span></em><span>), seleccione </span><strong><span>Any in this account</span></strong><span> (Cualquiera en esta cuenta).</span></p></li><li><p><span>En la parte superior de la pantalla, elija la pestaña </span><strong><span>JSON</span></strong><span>.</span></p><p><span>Verá el documento JSON que acaba de componer con el editor visual.</span></p></li><li><p><span>Verifique que los detalles del documento de política coincidan con lo que se muestra en el siguiente ejemplo:</span></p></li></ul></li></ol><p><img src="images/policy.png" referrerpolicy="no-referrer" alt="Política de IAM"></p><p><span>Desafortunadamente, en este entorno de laboratorio, no podemos concederle los permisos necesarios para crear una política de IAM. Obtendrá un error de permisos si elige </span><strong><span>Review policy</span></strong><span> (Revisar política), asigna un nombre a la política y, a continuación, elige </span><strong><span>Create policy</span></strong><span> (Crear política).</span></p><p><span>Sin embargo, al iniciar este laboratorio, se creó una política que coincide exactamente con la política de ejemplo, y usted ya adquirió experiencia en el uso del editor visual. También experimentó cómo brinda una forma de crear políticas detalladas sin necesidad de crear un documento de política JSON desde cero.</span></p><p>&nbsp;</p><ol start='45' ><li><span>Salga del asistente </span><strong><span>Create policy</span></strong><span> (Crear política) seleccionando </span><strong><span>Cancel</span></strong><span> (Cancelar).</span></li></ol><p>&nbsp;</p><ol start='46' ><li><p><span>En el cuadro de búsqueda </span><strong><span>Policies</span></strong><span> (Políticas), busque </span><code>LimitedIamPolicy</code><span>.</span></p><p><span>Observe que los detalles de la política coincidan con la que estuvo creando, como se muestra en la captura de pantalla anterior.</span></p><p><strong><span>Nota</span></strong><span>: Los elementos </span><em><span>Sid</span></em><span> de una política son opcionales. Además, el orden en que aparecen </span><em><span>Effect (Efecto)</span></em><span>, </span><em><span>Action (Acción)</span></em><span> y </span><em><span>Resource (Recurso)</span></em><span> en un documento de política no afecta su funcionamiento.</span></p></li></ol><p>&nbsp;</p><ol start='47' ><li><p><span>Edite el grupo de IAM </span><strong><span>DBAdministrators</span></strong><span>.</span></p><ul><li><strong><span>Asocie</span></strong><span> la política </span><strong><span>LimitedIamPolicy</span></strong><span>.</span></li><li><strong><span>Desconecte</span></strong><span> la política </span><strong><span>IAMReadOnlyAccess</span></strong><span>.</span></li></ul><p><span>Sofía pide a Olivia que confirme que todavía puede acceder a los detalles del rol de IAM </span><em><span>CafeRole</span></em><span>, incluso con los derechos de acceso de IAM más limitados que ahora se le conceden.</span></p></li></ol><p>&nbsp;</p><ol start='48' ><li><p><span>Vuelva a la pestaña del navegador donde tiene la sesión abierta de </span><em><span>Olivia</span></em><span> y verifique que todavía puede acceder a los detalles de </span><em><span>CafeRole</span></em><span>.</span></p><ul><li><span>En la consola de </span><strong><span>Amazon EC2</span></strong><span>, seleccione la instancia </span><strong><span>aws-cloud9-DEVCafeServer</span></strong><span>.</span></li><li><span>En la pestaña </span><strong><span>Description</span></strong><span> (Descripción), elija </span><strong><span>IAM role (Rol de IAM) &gt; CafeRole</span></strong><span>.</span></li><li><span>Expanda la política </span><strong><span>AmazonSSMManagedInstanceCore</span></strong><span> y compruebe que todavía puede ver los detalles del documento JSON.</span></li></ul></li></ol><p>&nbsp;</p><ol start='49' ><li><p><strong><span>(Opcional)</span></strong><span> Vuelva a la pestaña del navegador con </span><strong><span>IAM Policy Simulator</span></strong><span> (Simulador de políticas de IAM) donde tiene la sesión abierta del usuario </span><em><span>voclabs</span></em><span> (Sofía). Ejecute la simulación de nuevo (para las acciones de IAM que puede realizar Olivia).</span></p><ul><li><i class="fas fa-info-circle"></i><span> </span><strong><span>Sugerencia</span></strong><span>: Para mostrar las nuevas políticas de IAM que corresponden a Olivia, actualice la página del navegador.</span></li><li><span>Antes del cambio en el grupo de IAM </span><em><span>DBAdministrators</span></em><span>, Olivia tenía permitido realizar 57 acciones relacionadas con el servicio IAM. Sin embargo, después del cambio, su acceso al servicio IAM es mucho más limitado.</span></li><li><span>La nueva política concede menos permisos de IAM. Sin embargo, Olivia todavía cuenta con la capacidad de acceso que necesita para desempeñar sus funciones laborales.</span></li></ul></li></ol><p>&nbsp;</p><h2 id='noticias-de-la-cafetería'><span>Noticias de la cafetería</span></h2><p><img src="images/team.png" referrerpolicy="no-referrer" alt="equipo de la cafetería"></p><p><span>Sofía cree que se está volviendo buena para administrar el acceso de los usuarios a la cuenta de AWS.</span></p><p><span>Sabe cómo utilizar las </span><em><span>políticas de IAM administradas por AWS</span></em><span> para controlar el acceso y también cómo emplear el </span><em><span>simulador de políticas de IAM</span></em><span> para observar el alcance de los permisos que otorgan las diferentes políticas. Conoce cómo acceder al </span><em><span>IAM Access Analyzer</span></em><span> para reconocer qué derechos de acceso están aprovechando los diferentes usuarios. Por último, también practicó el uso del editor visual de políticas de IAM para crear </span><em><span>políticas de IAM personalizadas</span></em><span>.</span></p><p>&nbsp;</p><h2 id='envío-del-trabajo'><span>Envío del trabajo</span></h2><ol start='50' ><li><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_blue"><span>Submit</span></span><span> (Enviar) para registrar su progreso y, cuando se le indique, elija </span><strong><span>Yes</span></strong><span> (Sí).</span></li></ol><p>&nbsp;</p><ol start='51' ><li><p><span>Si los resultados no se muestran después de algunos minutos, vuelva a la parte superior de estas instrucciones y elija </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Resultados).</span></p><p><strong><span>Sugerencia</span></strong><span>: Puede enviar su trabajo varias veces. Después de realizar las modificaciones pertinentes, vuelva a elegir </span><strong><span>Submit</span></strong><span> (Enviar). Su último envío es el que se registrará para este laboratorio.</span></p></li></ol><p>&nbsp;</p><ol start='52' ><li><span>Para encontrar comentarios detallados sobre su trabajo, elija </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalles) seguido de </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Ver informe de envío).</span></li></ol><p>&nbsp;</p><h2 id='fin-del-laboratorio'><span>Fin del laboratorio</span></h2><p><i class="icon-flag-checkered"></i><span> ¡Felicitaciones! Ha completado el laboratorio.</span></p><ol start='53' ><li><p><span>Para confirmar que desea finalizar el laboratorio, haga clic en </span><strong><span id="ssb_voc_grey"><span>End Lab</span></span></strong><span> (Finalizar laboratorio), en la parte superior de esta página y, a continuación, elija </span><strong><span id="ssb_blue"><span>Yes</span></span></strong><span> (Sí).</span></p><p><span>Debería aparecer un panel con el siguiente mensaje: </span><em><span>DELETE has been initiated… You may close this message box now (Se ha iniciado la ELIMINACIÓN… Ya puede cerrar este cuadro de mensaje).</span></em></p></li></ol><p>&nbsp;</p><ol start='54' ><li><span>Para cerrar el panel, haga clic en la </span><strong><span>X</span></strong><span> de la esquina superior derecha.</span></li></ol><p>&nbsp;</p><p><em><span>© 2020 Amazon Web Services, Inc. y sus empresas afiliadas. Todos los derechos reservados. Este contenido no puede reproducirse ni redistribuirse, total ni parcialmente, sin el permiso previo por escrito de Amazon Web Services, Inc. Queda prohibida la copia, el préstamo y la venta de carácter comercial.</span></em></p></div></div>
+</body>
+</html>
