@@ -1,0 +1,680 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) { 
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) { 
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; white-space: nowrap; background-position: inherit; background-repeat: inherit; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; border: none !important; background-position: 0px 0px !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; background-position: 0px 0px; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-style: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-style: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background-color: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print { 
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>README</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='モジュール-5---課題ラボ-amazon-rds-へのデータベースの移行'><span>モジュール 5 - 課題ラボ: Amazon RDS へのデータベースの移行</span></h1><!--Lab borrows from ACOv1 activity 6, but is significantly modified and extended--><h2 id='シナリオ'><span>シナリオ</span></h2><p><span>このカフェでは現在、単一の EC2 インスタンスでウェブサーバー、データベース、アプリケーションコードをホストしています。</span></p><p><span>一方、カフェビジネスは成長しています。データベースに保存されている注文履歴は、カフェスタッフが失いたくない貴重なビジネス情報となります。Martha はこのデータを会計処理に使用し、Frank は時々このデータを見て、焼く必要がある各種のデザートの個数を計画します。</span></p><p><span>Sofía にはさらに懸念があります。データベースには継続的なアップグレードとパッチ適用が必要であり、このようなタスクを実行する時間が常にあるとは限りません。また、データベースの管理は特殊なスキルです。彼女は、データベース管理を行うために他の人を訓練することに時間を費やしたくありません。一方、Sofía はまた、カフェがデータのバックアップが必要な頻度で行われていないことも懸念しています。</span></p><p><span>最後に、Martha は、データベースを管理するために必要な技術学習への投資に伴う人件費を削減したいと考えています。</span></p><p>&nbsp;</p><h2 id='ラボの概要と目標'><span>ラボの概要と目標</span></h2><p><span>このラボでは、Amazon Elastic Compute Cloud (Amazon EC2) インスタンス上のデータベースから Amazon Relational Database Service (Amazon RDS) にデータを移行します。具体的には、EC2 インスタンス上で実行されている MariaDB データベースを、Amazon RDS で実行される MariaDB データベースに移行します。また、カフェのウェブアプリケーションを、将来のすべての注文データを新しいデータベースに格納するように更新します。</span></p><p><span>このラボを完了すると、次のことができるようになります。</span></p><ul><li><span>RDS データベースインスタンスを作成する</span></li><li><span>mysqldump を使用して MariaDB データベースからデータをエクスポートする</span></li><li><span>SQL クライアントを RDS データベースに接続する</span></li><li><span>EC2 インスタンス上で実行されている MariaDB データベースから RDS データベースインスタンスにデータを移行する</span></li><li><span>新しい RDS データベースインスタンスにデータを格納するようにウェブアプリケーションを設定する</span></li></ul><p>&nbsp;</p><p><span>ラボを</span><strong><span>開始</span></strong><span>すると、AWS のアカウントに次のリソースがすでに作成されています。</span></p><p><img src="images/m5ch-lab-start-arch.png" referrerpolicy="no-referrer" alt="開始時のアーキテクチャ"></p><p><span>ラボの</span><strong><span>終了時</span></strong><span>のアーキテクチャは次の例のようになります。</span></p><p><img src="images/m5ch-lab-end-arch.png" referrerpolicy="no-referrer" alt="最終的なアーキテクチャ"></p><p>&nbsp;</p><h2 id='所要時間'><span>所要時間</span></h2><p><span>このラボの所要時間は約 </span><strong><span>80 分</span></strong><span>です。</span></p><p>&nbsp;</p><h2 id='aws-サービスの制限事項'><span>AWS サービスの制限事項</span></h2><p><span>このラボ環境では、AWS のサービスとサービスアクションへのアクセスが、ラボの手順を完了するために必要なものに制限される場合があります。他のサービスへのアクセスや、このラボで説明されているサービス以外のアクションを実行しようとすると、エラーが発生することがあります。</span></p><p>&nbsp;</p><h2 id='aws-マネジメントコンソールにアクセスする'><span>AWS マネジメントコンソールにアクセスする</span></h2><ol start='' ><li><p><span>この手順の上部にある </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> をクリックし、ラボを起動します。</span></p><p><span>[</span><strong><span>Start Lab</span></strong><span>] パネルが開き、ラボのステータスが表示されます。</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>ヒント</span></strong><span>: ラボの完了までにさらに時間が必要な場合は、</span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> ボタンをもう一度選択して、この環境のタイマーを再開します。</span></p></li><li><p><span>[</span><strong><span>Start Lab</span></strong><span>] パネルに </span><strong><span>Lab status: ready</span></strong><span> というメッセージが表示されたら [</span><strong><span>X</span></strong><span>] をクリックしてパネルを閉じます。</span></p></li><li><p><span>この手順の上部にある </span><span id="ssb_voc_grey"><span>AWS</span></span><span> をクリックします。</span></p><p><span>このアクションにより、新しいブラウザタブで AWS マネジメントコンソールが開き、ユーザーは自動的にログインします。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>ヒント</span></strong><span>: 新しいブラウザタブが開かない場合、通常、ブラウザによってサイトのポップアップウィンドウの表示がブロックされたというメッセージが表示されたバナーまたはアイコンがブラウザの上部に表示されます。バナーまたはアイコンを選択して [</span><strong><span>ポップアップを許可</span></strong><span>] を選択してください。</span></p></li><li><p><strong><span>AWS マネジメントコンソール</span></strong><span>タブがこの手順と並べて表示されるようにします。両方のブラウザタブを同時に開いておくと、ラボのステップを実行しやすくなります。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>特に指示がない限り、リージョンを変更しないでください</span></strong><span>。</span></p><p><strong><span>ヒント</span></strong><span>: ターミナルを非表示にするには、画面上部の [</span><strong><span>Terminal</span></strong><span>] チェックボックスをオフにします。</span></p></li></ol><p>&nbsp;</p><h2 id='ビジネスニーズ-カフェアプリケーション用の-rds-インスタンスを作成する課題-1）'><span>ビジネスニーズ: カフェアプリケーション用の RDS インスタンスを作成する（課題 1）</span></h2><p><span>Sofía は、頻繁にコーヒーを飲みに来る AWS ソリューションアーキテクトである Olivia と話した後、カフェにはメンテナンスが容易なデータベースソリューションが必要であると判断しました。さらに、データベースは、耐久性、スケーラビリティ、ハイパフォーマンスなどの必須機能を備えている必要があります。</span></p><p><img src="images/olivia.png" alt="Olivia" width="300" class="centered_image"></p><p><span>このラボの最初の部分では、Sofía の役割を担い、カフェがカフェウェブサイトのデータストレージレイヤーとして使用できる RDS インスタンスを作成します。また、EC2 インスタンスに接続し、カフェウェブアプリケーションの詳細を分析します。</span></p><p>&nbsp;</p><h3 id='タスク-1-rds-インスタンスを作成する'><span>タスク 1: RDS インスタンスを作成する</span></h3><p><span>このラボの最初の課題は、RDS インスタンスを作成することです。</span></p><ol start='5' ><li><p><span>以下の仕様に準拠する RDS インスタンスを作成します（このラボの最後に作業内容を送信すると、これらの設定の多くがチェックされます。満点を取るために、以下のガイドラインに従ってください）。</span></p><ul><li><p><strong><span>エンジンのタイプ</span></strong><span>: </span><strong><span>MariaDB</span></strong></p></li><li><p><strong><span>テンプレート</span></strong><span>: </span><strong><span>開発/テスト</span></strong></p></li><li><p><strong><span>DB インスタンス識別子</span></strong><span>: </span><code>CafeDatabase</code></p></li><li><p><strong><span>マスターユーザー名</span></strong><span>: </span><code>admin</code></p></li><li><p><strong><span>マスターパスワード</span></strong><span>: </span><code>Caf3DbPassw0rd!</code></p><ul><li><i class="fas fa-exclamation-triangle"></i><span>この正確なパスワードを使用する必要があります。</span></li><li><strong><span>ヒント</span></strong><span>: パスワードをコピーして貼り付けて設定します。</span></li></ul></li><li><p><strong><span>DB インスタンスクラス</span></strong><span>: </span><strong><span>db.t2.micro</span></strong></p></li><li><p><strong><span>ストレージタイプ</span></strong><span>: </span><strong><span>汎用 (SSD)</span></strong></p></li><li><p><strong><span>ストレージ割り当て</span></strong><span>: </span><code>20</code><span> GiB</span></p></li><li><p><span>スタンバイインスタンスは</span><strong><span>作成しない</span></strong><span>でください。</span></p></li><li><p><span>これを </span><strong><span>Lab VPC</span></strong><span> に配置します。</span></p></li><li><p><strong><span>サブネットグループ</span></strong><span>: </span><code>lab-db-subnet-group</code><span>。ここにはデータベースはパブリックにアクセス</span><strong><span>できません</span></strong><span>。</span></p></li><li><p><code>dbSG</code><span> という名前の既存の </span><strong><span>VPC セキュリティグループ</span></strong><span>を選択し、</span><code>default</code><span> のセキュリティグループを</span><strong><span>選択解除</span></strong><span>します。</span></p></li><li><p><strong><span>アベイラビリティーゾーン</span></strong><span>: </span><code>a</code><span>で終了するリスト内の最初のアベイラビリティーゾーンをクリックします。例えば、リージョンが </span><strong><span>us-east-1</span></strong><span> の場合は、</span><strong><span>us-east-1a</span></strong><span> をクリックします。</span></p></li><li><p><strong><span>データベースポート</span></strong><span>: デフォルトの TCP ポートの </span><em><span>3306</span></em><span> のままにします。</span></p></li><li><p><span>ラボ環境では、拡張モニタリングはサポート</span><strong><span>されません</span></strong><span>。デフォルト設定をオフにしてください。</span></p></li></ul></li></ol><p><img src="images/db-creating.png" referrerpolicy="no-referrer" alt="DB 作成中"></p><p>&nbsp;</p><p><strong><span>重要</span></strong><span>: データベースの作成プロセスが完了するのを待たないでください。代わりに、データベースの作成プロセスを正しく開始したら、次のステップに進んでください。</span></p><p>&nbsp;</p><h3 id='タスク-2-既存のカフェアプリケーションのデプロイを分析する'><span>タスク 2: 既存のカフェアプリケーションのデプロイを分析する</span></h3><p><span>このタスクでは、現在のカフェアプリケーションを実行している既存の EC2 インスタンスに接続します。</span></p><ol start='6' ><li><p><span>EC2 コンソールにアクセスし、</span><strong><span>実行中のインスタンス</span></strong><span>をクリックします。</span></p><p><strong><span>CafeServer</span></strong><span> という名前の実行中のインスタンスに注目してください。この EC2 インスタンスは、ラボを開始したときに作成されたものです。</span></p></li><li><p><span>カフェアプリケーションをテストします。</span></p><ul><li><p><span>新しいブラウザタブを開き、</span><code>http://&lt;public-ip-address&gt;/cafe</code><span> にあるカフェアプリケーションをロードします。</span></p><p><strong><span>注意</span></strong><span>: &lt;</span><em><span>public-ip-address</span></em><span>&gt; は、</span><strong><span>CafeServer</span></strong><span> インスタンスの実際の IPv4 パブリック IP アドレスに置き換えてください。</span></p></li><li><p><span>[</span><strong><span>Menu</span></strong><span>] ページにアクセスし、注文をテストします。</span></p><p><span>これを行うには、少なくとも 1 つのメニュー項目の数量を </span><strong><span>1</span></strong><span> 以上に変更し、[</span><strong><span>Submit Order</span></strong><span>] をクリックします。</span></p><p><strong><span>Order Confirmation</span></strong><span> ページが表示されます。これはカフェウェブサイトが意図したとおりに動作していることを示しています。</span></p></li><li><p><span>[</span><strong><span>Order History</span></strong><span>] をクリックします。</span></p><p><span>このページには、過去の多数の注文が表示されます。現在のデータベースには、顧客の過去の注文が格納されており、これらの注文をAmazon RDS でホストされるデータベースに移行します。</span></p></li></ul></li></ol><ol start='8' ><li><p><span>AWS Systems Manager を使用して EC2 インスタンスに接続し、ブラウザーでターミナルセッションにアクセスします。</span></p><ul><li><p><span>AWS マネジメントコンソールに戻って </span><strong><span>Systems Manager</span></strong><span> コンソールに移動し、[</span><strong><span>セッションマネージャー</span></strong><span>] をクリックします。</span></p></li><li><p><span>セッションを開始し、</span><strong><span>CafeServer</span></strong><span> に接続します。</span></p><p><span>新しいブラウザタブが開き、EC2 インスタンスに接続されたターミナルセッションが表示されます。</span></p></li><li><p><span>プロンプトで、次のコマンドを入力します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> <span class="cm-builtin">bash</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> <span class="cm-builtin">su</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> <span class="cm-builtin">su</span> ec2-user</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">whoami</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> <span class="cm-builtin">cd</span> /home/ec2-user/</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 110px;"></div><div class="CodeMirror-gutters" style="display: none; height: 110px;"></div></div></div></pre><p><strong><span>分析</span></strong><span>: 最初のコマンドで、Bash シェルを開きました。2 番目のコマンドは、EC2 インスタンスで root ユーザーアカウントを使用するようにセッションを切り替えました。3 番目のコマンドは、</span><strong><span>ec2-user</span></strong><span> アカウントを使用するように切り替えました。4 番目のコマンドは、ec2-user として接続していることを確認する出力を返したはずです。最後のコマンドは、ターミナルを ec2-user のホームディレクトリに切り替えます。</span></p></li></ul></li></ol><p><img src="images/sess-mgr.png" alt="セッションマネージャーのスクリーンショット" width="400"></p><p><strong><span>注意</span></strong><span>: Systems Manager エージェント（</span><strong><span>ssm エージェント</span></strong><span>）は、デフォルトですべての Amazon Linux 2 インスタンス（およびその他いくつかの OS タイプ）にインストールされます。ラボを開始し、EC2 インスタンスが作成されたときに、インスタンスで ssm エージェントサービスを開始する必要があることをユーザーデータで指定しました。また、</span><strong><span>AmazonSSMManagedInstanceCore</span></strong><span> という名前の IAM ポリシーを含む AWS Identity and Access Management (IAM) ロールを EC2 インスタンスにアタッチしました。これら 2 つのアクションにより、Systems Manager セッションマネージャーからインスタンスにアクセスできるようになりました。</span></p><p>&nbsp;</p><h2 id='新しいビジネス要件-古いデータベースからデータをエクスポートし新しいデータベースへの接続を確立する課題-2）'><span>新しいビジネス要件: 古いデータベースからデータをエクスポートし、新しいデータベースへの接続を確立する（課題 2）</span></h2><p><span>新しい RDS インスタンスを作成したので、カフェのデータベース移行計画の次のステップに進むことができます。次に、カフェアプリケーションが現在使用しているデータベースからデータをエクスポートします。また、アプリケーションが実行されている EC2 インスタンスから新しい RDS データベースインスタンスへのネットワーク接続を確立します。</span></p><p><span>この課題では、Sofía としてこれらのタスクを実行します。</span></p><h3 id='タスク-3-ec2-インスタンスでデータベースを操作する'><span>タスク 3: EC2 インスタンスでデータベースを操作する</span></h3><p><span>このタスクでは、EC2 インスタンスで実行されている MariaDB データベースの詳細を確認します。次に、</span><strong><span>mysqldump</span></strong><span> ユーティリティを使用して、データベースから既存の注文履歴データをエクスポートします。</span></p><ol start='9' ><li><p><span>EC2 インスタンスで実行されているデータベースの詳細を確認します。</span></p><p><span>ターミナルで、次のコマンドを実行します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-builtin">service</span> mariadb status</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  mysql <span class="cm-attribute">--version</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 44px;"></div><div class="CodeMirror-gutters" style="display: none; height: 44px;"></div></div></div></pre><p><span>出力には、この EC2 インスタンスにローカルにインストールされた MariaDB データベースが実行中であることが示されます。また、データベースのバージョン番号も表示されます。</span></p><p><span>このブラウザタブは開いたままにします。このラボを通して使用します。</span></p></li></ol><ol start='10' ><li><strong><span>AWS Systems Manager</span></strong><span> コンソールが開いているブラウザタブに戻ります。</span></li></ol><ol start='11' ><li><span>左側のナビゲーションペインの [</span><strong><span>アプリケーション管理</span></strong><span>] で [</span><strong><span>パラメータストア</span></strong><span>] をクリックします。</span></li></ol><p><span>   ここには 7 つのパラメータが格納されています。カフェアプリケーションの PHP コードは、データベースの接続情報を取得したりする際にこれらの値を参照します。</span></p><ul><li><code>/cafe/dbPassword</code><span> パラメータを選択し、[</span><strong><span>値</span></strong><span>] をクリップボードにコピーします。この値はすぐ後で使用します。</span></li></ul><ol start='12' ><li><span>EC2 インスタンスで実行されているデータベースに接続します。</span></li></ol><p><span>   Bash ターミナルが表示されているブラウザタブで、次のコマンドを実行してターミナルベースの MySQL クライアントをデータベースに接続します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  mysql <span class="cm-attribute">-u</span> root <span class="cm-attribute">-p</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>   データベースパスワードの入力を求められたら、先ほどコピーした </span><strong><span>dbPassword</span></strong><span> パラメータの値を貼り付けます。</span></p><p><span>   </span><code>mariadb&gt;</code><span> プロンプトが表示されます。このプロンプトは、この EC2 インスタンスで実行されている MariaDB データベースに接続していることを示します。</span></p><p><img src="images/db-client.png" referrerpolicy="no-referrer" alt="database-client"></p><ol start='13' ><li><span>既存のデータベースのデータを確認します。</span></li></ol><p><span>   データベースの内容を確認するには、次のコマンドを入力します。特に、カフェのウェブアプリケーションをサポートするテーブルを確認します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="sql"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="sql"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">show</span> <span class="cm-keyword">databases</span><span class="cm-punctuation">;</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">use</span> cafe_db<span class="cm-punctuation">;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">show</span> <span class="cm-keyword">tables</span><span class="cm-punctuation">;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">select</span> <span class="cm-operator">*</span> <span class="cm-keyword">from</span> <span class="cm-variable-2">`order`</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 88px;"></div><div class="CodeMirror-gutters" style="display: none; height: 88px;"></div></div></div></pre><p><span>   これらのコマンドは、少し前に行った注文を含む、これまでに行われたすべての注文を表示します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="sql"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="sql"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">select</span> <span class="cm-operator">*</span> <span class="cm-keyword">from</span> <span class="cm-variable-2">`order_item`</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>   このコマンドは、注文品目を表示します。各注文番号には、注文された品目の種類ごとに行があり、各品目の数量と価格の詳細が表示されます。</span></p><p><span>   このデータをすべて新しいデータベースに移行する必要があります。</span></p><ol start='14' ><li><span>SQL クライアントを終了します。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="sql"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="sql"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">exit</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><ol start='15' ><li><strong><span>mysqldump</span></strong><span> ユーティリティを使用して、ファイル内の既存のデータをキャプチャします。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  mysqldump <span class="cm-attribute">--databases</span> cafe_db <span class="cm-attribute">-u</span> root <span class="cm-attribute">-p</span> &gt; CafeDbDump.sql</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>   データベースパスワードの入力を求められたら、Systems Manager のパラメータストアの </span><strong><span>dbPassword</span></strong><span> 値を貼り付けます。</span></p><ol start='16' ><li><strong><span>mysqldump</span></strong><span> が成功したことを確認します。</span></li></ol><ul><li><p><span>ターミナルで </span><code>ls</code><span> コマンドを実行します。出力には、</span><code>CafeDbDump.sql</code><span> ファイルが作成されたことが示されます。</span></p></li><li><p><code>cat CafeDbDump.sql</code><span> コマンドを実行して、ファイルの内容を確認します。</span></p><p><span>ラボの次のセクションでは、このデータを新しい RDS データベースにインポートします。</span></p></li></ul><p>&nbsp;</p><h3 id='タスク-4-rds-データベースを操作する'><span>タスク 4: RDS データベースを操作する</span></h3><p><span>このタスクでは、最初に、作成した RDS インスタンスに関するいくつかの問題に解答します。次に、RDS インスタンスに接続できることを確認します。</span></p><ol start='17' ><li><span>AWS マネジメントコンソールで、</span><strong><span>RDS</span></strong><span> サービスコンソールに戻り、作成した </span><strong><span>cafetabase RDS</span></strong><span> インスタンスが使用可能であることを確認します。</span></li></ol><p>&nbsp;</p><h4 id='rds-インスタンスに関する問題に解答する'><span>RDS インスタンスに関する問題に解答する</span></h4><p><span>ラボの最後に、青い [</span><strong><span>Submit</span></strong><span>] ボタンをクリックすると、解答が記録されます。</span></p><ol start='18' ><li><span>このラボの問題にアクセスします。</span></li></ol><ul><li><span>手順の上にある [</span><strong><span>Details</span></strong><span>] ドロップダウンメニューから [</span><strong><span>Show</span></strong><span>] を選択します。</span></li><li><span>[</span><strong><span>Access the multiple choice questions</span></strong><span>] リンクをクリックします。</span></li></ul><ol start='19' ><li><span>読み込んだページで、最初の 4 つの問題に解答します。</span></li></ol><ul><li><span>質問 1: RDS インスタンスはどこで実行されていますか?（Question 1: Where is the RDS instance running? Choose the answer that is true and that is the most specific.）</span></li><li><span>質問 2: RDS インスタンスには IPv4 パブリック IP アドレスが割り当てられていますか?（Question 2: Does the RDS instance have an IPv4 Public IP address assigned to it?）</span></li><li><span>問題 3: RDS インスタンスが実行されているサブネットに適用される </span><strong><span>Name</span></strong><span> タグは何ですか?（Question 3: What is the Name tag value applied to the subnet in which the RDS instance is running?）</span></li><li><span>質問 4: RDS インスタンスに対して定義されているセキュリティグループのルールはいくつありますか?（Question 4: How many security group rules are defined for the RDS instance?）</span></li></ul><p>&nbsp;</p><ol start='20' ><li><span>EC2 インスタンスで実行されているターミナルから新しい RDS インスタンスへのネットワーク接続を確立します。</span></li></ol><p><span>このステップに取り組むうえで役に立つヒントをいくつかご紹介します。</span></p><details></details><p><span>  </span><summary></p><p><span>  </span><b><span>ヒント #1</span></b><span>（クリックすると展開します）</span></p><p><span>  </span></summary></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">接続に使用できる構文は次のとおりです。</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">&lt;code&gt; mysql -u admin -p --host &amp;lt;rds-endpoint&gt;&lt;/code&gt;</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 66px;"></div><div class="CodeMirror-gutters" style="display: none; height: 66px;"></div></div></div></pre><p><br>&lt;<span>rds-endpoint&gt; を RDS インスタンスの実際の RDS エンドポイントに置き換えます。</span><br><span>コマンドを実行した後、RDS インスタンスのパスワードを入力するように求められます。このパスワードは、RDS インスタンスを作成したときに定義したものです。</span></p><p></details></p><br><details></details><p><span>  </span><summary></p><p><span>  </span><b><span>ヒント #2</span></b><span>（クリックすると展開します）</span></p><p><span>  </span></summary></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">RDS エンドポイントとデータベースのパスワードを正しく入力しても、まだ接続できません。RDS インスタンスが実行されているセキュリティグループのインバウンドルールを更新する必要があります。MySQL クライアントソフトウェアは、TCP ポート 3306 でデータベースに接続しようとします。</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 66px;"></div><div class="CodeMirror-gutters" style="display: none; height: 66px;"></div></div></div></pre><p></details></p><br><details></details><p><span>  </span><summary></p><p><span>  </span><b><span>ヒント #3</span></b><span>（クリックすると展開します）</span></p><p><span>  </span></summary></p><p><span>  ポート 3306 を</span><i><span>すべての</span></i><span>送信元 IP アドレスに対して開くことは避けてください。それは安全ではありません。代わりに、接続元の EC2 インスタンスで使用されているセキュリティグループのサーバーに対してのみ開いてください（オプションを表示するには、ソースフィールドに </span><code><span>sg-</span></code><span> と入力してください）。</span></p><p></details></p><br><details></details><p><span>  </span><summary></p><p><span>  </span><b><span>ヒント #4</span></b><span>（クリックすると展開します）</span></p><p><span>  </span></summary><span>   </span></p><p><span>  セキュリティグループ設定で EC2 インスタンスからデータベースへのトラフィックが TCP ポート 3306 で許可されていることを確認できます。Systems Manager のセッションマネージャーターミナルで次のコマンドを実行してください（</span><rds-endpoint><span> 実際の RDS エンドポイントに置き換えてください）。</span><br><code><span>nmap -Pn </span>&lt;<span>rds-endpoint&gt;</span></code><br><span> コマンドの出力で </span><strong><span>mysql</span></strong><span> サービスに対してポート 3306 が開いていることが示された場合は、セキュリティグループ設定でトラフィックが許可されていることを示しています。</span><br><i><span>nmap</span></i><span> でポートが</span><b><span>開いている</span></b><span>ことが示された場合は、</span><code><span>mysql -u admin -p --host </span>&lt;<span>rds-endpoint&gt;</span></code><span> コマンドも動作します（ただし、データベースパスワードを正しく入力する必要があります。このパスワードは、インスタンスを作成したときに設定したパスワードです）。</span></p><p></details><span>  </span></p><br><p><strong><span>注意</span></strong><span>: それでも問題を解決できない場合は、このラボの説明の最後にある「作業内容を送信する」セクションに記載されている手順に従って作業内容を送信すると役立つことがあります。生成される</span><strong><span>送信レポート</span></strong><span>には、正しく完了できなかったラボのパートに関する追加のヒントが記載されている場合があります。作業内容は何度でも送信できます。前回の送信で達成したスコアのみが保持されます。</span></p><p><span>次の手順に進む前に、RDS MariaDB に接続できることを確認することが重要です。すでに接続できているのであればこの手順は終了です。お疲れ様でした。</span></p><ol start='21' ><li><code>show databases;</code><span> コマンドを実行します。次の出力が表示されます。</span></li></ol><p><span>   </span><img src="images/rds-client.png" referrerpolicy="no-referrer" alt="rds-client"></p><ul><li><strong><span>cafe_db</span></strong><span> データベースはまだリストにないことに注意してください。この状況は予想通りです。データをまだインポートしていないからです。</span></li><li><span>切断するには、</span><code>exit;</code><span> コマンドを実行します。</span></li></ul><p>&nbsp;</p><h2 id='新しいビジネス要件-データをインポートしアプリケーションを新しいデータベースに接続する課題-3）'><span>新しいビジネス要件: データをインポートし、アプリケーションを新しいデータベースに接続する（課題 3）</span></h2><p><span>前の課題では、カフェアプリケーションが現在使用しているデータベースからデータをエクスポートしました。また、EC2 インスタンスから RDS インスタンスへのネットワーク接続を確立しました。これで、次のビジネス要件に取り組むことができます。</span></p><p><span>この課題では、引き続き Sofía の役割を担い、カフェのデータを RDS データベースインスタンスにインポートします。インポートが完了したら、新しいデータベースを使用するようにアプリケーションを設定します。</span></p><p>&nbsp;</p><h3 id='タスク-5-データを-rds-データベースインスタンスにインポートする'><span>タスク 5: データを RDS データベースインスタンスにインポートする</span></h3><ol start='22' ><li><span>タスク 3 でエクスポートしたデータを RDS データベースインスタンスにインポートします。</span></li></ol><ul><li><p><span>データをインポートするには、ターミナルで次のコマンドを実行します（</span><code>&lt;rds-endpoint&gt;</code><span> は実際のエンドポイントです）。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  mysql <span class="cm-attribute">-u</span> admin <span class="cm-attribute">-p</span> <span class="cm-attribute">--host</span> &lt;rds-endpoint&gt; &lt; CafeDbDump.sql</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>パスワードプロンプトで、RDS インスタンスのパスワードを入力します。</span></p><p><span>エラーが表示されない場合、コマンドはおそらく成功しています。</span></p></li></ul><ol start='23' ><li><span>データがインポートされたことを確認します。</span></li></ol><ul><li><p><span>RDS データベースに接続するには、次のコマンドを実行します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  mysql -u admin -p --host &lt;rds-endpoint&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>パスワードプロンプトで、RDS インスタンスのパスワードを入力します。</span></p></li><li><p><span>データがインポートされたことを確認するには、次のコマンドを実行します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="sql"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="sql"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-keyword">show</span> <span class="cm-keyword">databases</span><span class="cm-punctuation">;</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-keyword">use</span> cafe_db<span class="cm-punctuation">;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-keyword">show</span> <span class="cm-keyword">tables</span><span class="cm-punctuation">;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-keyword">select</span> <span class="cm-operator">*</span> <span class="cm-keyword">from</span> <span class="cm-variable-2">`order`</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 88px;"></div><div class="CodeMirror-gutters" style="display: none; height: 88px;"></div></div></div></pre></li></ul><p><span>   </span><strong><span>select</span></strong><span> ステートメントの出力には、データベース内の少なくとも 24 件の注文が表示されるはずです。</span></p><ul><li><p><span>SQL クライアントを終了します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="sql"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="sql"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-keyword">exit</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li></ul><p>&nbsp;</p><h3 id='タスク-6-カフェアプリケーションを新しいデータベースに接続する'><span>タスク 6: カフェアプリケーションを新しいデータベースに接続する</span></h3><p><span>ラボのこの最後のタスクでは、カフェアプリケーションを新しいデータベースに接続します。また、EC2 インスタンスでローカルで実行されているデータベースを停止します。</span></p><ol start='24' ><li><strong><span>AWS Systems Manager</span></strong><span> コンソールのブラウザタブに戻ります。</span></li></ol><ol start='25' ><li><span>左側のパネルで、[</span><strong><span>パラメータストア</span></strong><span>] をクリックします。</span></li></ol><p><span>   以前の課題ラボから、カフェアプリケーションの PHP コードがこれらの値を参照することを思い出してください。例えばデータベースの接続情報を取得するために、これらの値を使用します。</span></p><ol start='26' ><li><span>カフェアプリケーションを RDS インスタンスに接続します。</span></li></ol><p><span>   データベース接続情報が変更されたため、EC2 インスタンスで実行されているデータベースではなく、新しい RDS データベースインスタンスにアプリケーションを接続するには、これらの値を更新する必要があります。</span></p><details></details><p><span>  </span><summary></p><p><span>  </span><b><span>ヒント #1</span></b><span>（クリックすると展開します）</span></p><p><span>  </span></summary></p><p><span>アプリケーションが接続しているデータベースを更新した後、</span><code><a href='http://&amp;lt;public-ip' target='_blank' class='url'>http://&lt;public-ip</a><span>&gt;/cafe/menu.php</span></code><span> ページを使用して、接続が正常に更新されたかどうかをテストします。</span></p><p></details></p><br><details></details><p><span>  </span><summary></p><p><span>  </span><b><span>ヒント #2</span></b><span>（クリックすると展開します）</span></p><p><span>  </span></summary></p><p><span>PHP コードを更新する必要はありません。また、このラボで前の課題を正常に完了した場合、ネットワーク構成に追加の変更を加える必要はありません。更新する必要があるのは、Systems Manager のパラメータストアの一部の値だけです。</span></p><p></details></p><br><details></details><p><span>  </span><summary></p><p><span>  </span><b><span>ヒント #3</span></b><span>（クリックすると展開します）</span></p><p><span>  </span></summary></p><p><i><span>currency</span></i><span>、</span><i><span>dbName</span></i><span>、</span><i><span>timeZone</span></i><span>、</span><i><span>showServerInfo</span></i><span> の値を更新する必要はありません。</span></p><p></details></p><br><details></details><p><span>  </span><summary></p><p><span>  </span><b><span>ヒント #4</span></b><span>（クリックすると展開します）</span></p><p><span>  </span></summary></p><p><i><span>dbUrl</span></i><span> は RDS エンドポイント値である必要があります。</span></p><p></details></p><br><ol start='27' ><li><span>ウェブアプリケーションが新しいデータベースを使用していることを確認します。</span></li></ol><ul><li><p><span>EC2 インスタンスでまだ実行されているデータベースを停止します。ターミナルで、次のコマンドを使用します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-builtin">sudo</span> <span class="cm-builtin">service</span> mariadb <span class="cm-builtin">stop</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><code>http://&lt;public-ip&gt;/cafe/menu.php</code><span> ページをロードし、注文を行ってアプリケーションがまだ動作していることを確認します。</span></p></li><li><p><span>[</span><strong><span>Order History</span></strong><span>] をクリックします。あなたの最新の注文とそれ以外の過去のすべての注文が表示されるはずです。これらの注文は、新しいデータベースに移行したデータです。</span></p></li></ul><p>&nbsp;</p><h2 id='カフェの近況'><span>カフェの近況</span></h2><p><img src="images/cafe-team.png" alt="カフェのチーム" width="500" class="centered_image"></p><p><span>カフェの誰もがデータベース移行の結果に満足しています。Sofía と Nikhil は週末の空き時間が増えました。これは、Frank と Martha にとっては人件費の節約を意味しています。</span></p><p><span>Sofía は友人とくつろいでいます。しかし、彼女はすでに改善策を考えています。次の良いステップは、EC2 インスタンスが使用する EBS ボリュームのサイズを減らすことです。また、EC2 インスタンスタイプを小さなサイズに変更して経費を減らすこともできます。データベースはもう EC2 インスタンス上で実行されていないため、インスタンスのハードドライブ空き容量が増えており、インスタンスに必要な CPU やメモリリソースの量も減少していると思われます。</span></p><p>&nbsp;</p><h2 id='作業内容を送信する'><span>作業内容を送信する</span></h2><ol start='28' ><li><span>この手順の上部にある</span><span id="ssb_blue"><span>Submit</span></span><span> をクリックして進捗情報を記録し、プロンプトが表示されたら [</span><strong><span>Yes</span></strong><span>] をクリックします。</span></li><li><span>数分経っても結果が表示されない場合は、この手順の上部に戻り、</span><span id="ssb_voc_grey"><span>Grades</span></span><span> をクリックします。</span></li></ol><p><span>   </span><strong><span>ヒント</span></strong><span>: 作業内容は何度も送信できます。作業内容を変更したら、再度 [</span><strong><span>Submit</span></strong><span>] をクリックします。最終送信分がこのラボの作業内容として記録されます。</span></p><ol start='30' ><li><span>作業に関する詳細なフィードバックを参照するには、</span><span id="ssb_voc_grey"><span>Details</span></span><span> ドロップダウンメニューから </span><i class="fas fa-caret-right"></i><span> [</span><strong><span>View Submission Report</span></strong><span>] を選択します。</span></li></ol><p>&nbsp;</p><h2 id='ラボの終了'><span>ラボの終了</span></h2><p><i class="icon-flag-checkered"></i><span>お疲れ様でした。以上でラボは終了です。</span></p><ol start='31' ><li><span>ラボを終了するには、このページの上部にある </span><span id="ssb_voc_grey"><span>End Lab</span></span><span> をクリックし、</span><span id="ssb_blue"><span>Yes</span></span><span> をクリックします。</span></li></ol><p><span>   パネルに </span><strong><span>DELETE has been initiated... You may close this message box now</span></strong><span> というメッセージが表示されます。</span></p><ol start='32' ><li><span>右上隅の [</span><strong><span>X</span></strong><span>] をクリックしてパネルを閉じます。</span></li></ol><p>&nbsp;</p><p><strong><span>©2020 Amazon Web Services, Inc. and its affiliates. All rights reserved. このトレーニング内容の全体または一部を複製または再配布することは、Amazon Web Services, Inc. の書面による事前の許可がある場合を除き、禁じられています。商業目的のコピー、貸与、または販売を禁止します。</span></strong></p></div></div>
+</body>
+</html>
