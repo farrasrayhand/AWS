@@ -1,0 +1,549 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+
+</style>
+</head>
+<body class='typora-export os-windows'>
+<div id='write'  class=''><h1><a name="实验-5构建数据库服务器并使用应用程序与数据库交互" class="md-header-anchor"></a><span>实验 5：构建数据库服务器并使用应用程序与数据库交互</span></h1><!-- Note to translators: This is based on Technical Essentials Lab 2. Copy the translation from there. Do not re-translate the whole document. --><p>&nbsp;&nbsp;</p><p><strong><span>版本 4.6.6 (TESS2)</span></strong></p><p><span>本实验旨在强化利用 AWS 托管数据库实例解决关系数据库需求这一概念。</span></p><p><strong><em><span>Amazon Relational Database Service</span></em></strong><span> (Amazon RDS) 让您能够在云中轻松设置、操作和扩展关系数据库。它在承担耗时的数据库管理任务的同时，又可提供经济高效的可调容量，使您能够腾出时间专注于应用程序和业务。Amazon RDS 有六种常见的数据库引擎供您选择，包括：Amazon Aurora、Oracle、Microsoft SQL Server、PostgreSQL、MySQL 和 MariaDB。</span></p><p>&nbsp;</p><p><strong><span>目标</span></strong></p><p><span>完成本实验后，您可以：</span></p><ul><li><span>启动高度可用的 Amazon RDS 数据库实例。</span></li><li><span>配置数据库实例以允许来自 Web 服务器的连接。</span></li><li><span>打开 Web 应用程序并与数据库交互。</span></li></ul><p>&nbsp;</p><p><strong><span>持续时间</span></strong></p><p><span>本实验大约需要 </span><strong><span>30 分钟</span></strong><span>。</span></p><p>&nbsp;</p><p><strong><span>场景</span></strong></p><p><span>您将从以下基础设施开始：</span>
+<img src="images/lab-5-starting-lab-architecture.png" width="800"></p><p>&nbsp;&nbsp;</p><p><span>实验结束时的基础设施如下：</span></p><p>&nbsp;</p><p><img src="images/lab-5-final-lab-architecture.png" width="800"></p><p>&nbsp;&nbsp;</p><hr /><h2><a name="访问-aws-管理控制台" class="md-header-anchor"></a><span>访问 AWS 管理控制台</span></h2><ol start='' ><li><p><span>在这些说明的顶部，单击 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）启动您的实验。</span></p><p><span>“Start Lab”（启动实验）面板随即会打开，其中显示了实验状态。</span></p></li><li><p><span>请耐心等待，直到您看到“</span><strong><span>Lab status: ready</span></strong><span>”（实验状态：就绪）消息，然后单击 </span><strong><span>X</span></strong><span> 关闭“Start Lab”（启动实验）面板。</span></p></li><li><p><span>在这些说明的顶部，单击 </span><span id="ssb_voc_grey"><span>AWS</span></span></p><p><span>在您执行此操作后，AWS 管理控制台将会在一个新的浏览器标签页中打开。您将自动登录系统。</span></p><p><strong><span>提示：</span></strong><span>如果未打开新的浏览器选项卡，则您的浏览器顶部通常会出现一个横幅或图标，表明您的浏览器阻止该网站打开弹出窗口。单击横幅或图标，然后选择“Allow pop ups”（允许弹出窗口）。</span></p></li><li><p><span>排列 AWS 管理控制台选项卡，使其与这些说明一起显示。理想情况下，您将能够同时看到这两个浏览器选项卡，以便更轻松地执行实验步骤。</span></p></li></ol><p>&nbsp;</p><hr /><h2><a name="任务-1为-rds-数据库实例创建安全组" class="md-header-anchor"></a><span>任务 1：为 RDS 数据库实例创建安全组</span></h2><p><span>在此任务中，您将创建一个安全组，以支持 Web 服务器访问您的 RDS 数据库实例。您将在启动数据库实例时使用此安全组。</span></p><ol start='5' ><li><p><span>在 </span><strong><span>AWS 管理控制台</span></strong><span>的 </span><span id="ssb_services"><span>Services</span><i class="fas fa-angle-down"></i></span><span>（服务）菜单上，单击 </span><strong><span>VPC</span></strong><span>。</span></p></li><li><p><span>在左侧导航窗格中，单击 </span><strong><span>Security Groups</span></strong><span>（安全组）。</span></p></li><li><p><span>单击 </span><span id="ssb_orange"><span>Create security group</span></span><span>（创建安全组），然后进行以下配置：</span></p><ul><li><strong><span>Security group name</span></strong><span>（安全组名称）：</span><code>DB Security Group</code><span>（数据库安全组）</span></li><li><strong><span>Description</span></strong><span>（描述）：</span><code>Permit access from Web Security Group</code><span>（允许从 Web 安全组访问）</span></li><li><strong><span>VPC</span></strong><span>：</span><em><span>Lab VPC</span></em></li></ul><p><span>现在，您将向安全组添加规则以允许入站数据库请求。</span></p></li><li><p><span>在 </span><strong><span>Inbound rules</span></strong><span>（入站规则）窗格中，选择 </span><span id="ssb_white"><span>Add rule</span></span><span>（添加规则）</span></p><p><span>此安全组当前没有规则。您将添加一个规则以允许从 </span><em><span>Web 安全组</span></em><span>访问。</span></p></li><li><p><span>配置以下设置：</span></p><ul><li><strong><span>Type</span></strong><span>（类型）：</span><em><span>MySQL/Aurora (3306)</span></em></li><li><strong><span>CIDR, IP, Security Group or Prefix List</span></strong><span>（CIDR、IP、安全组或前缀列表）：键入 </span><code>sg</code><span>，然后选择 </span><em><span>Web Security Group</span></em><span>（Web 安全组）。</span></li></ul><p><span>此操作将对数据库安全组进行配置，以允许 3306 端口上的入站流量，这些流量来自与 </span><em><span>Web 安全组</span></em><span>关联的任何 EC2 实例。</span></p></li><li><p><span>选择 </span><span id="ssb_orange"><span>Create security group</span></span><span>（创建安全组）。</span></p></li></ol><p><span>   您将在启动 Amazon RDS 数据库时使用此全组。</span></p><p>&nbsp;</p><hr /><h2><a name="任务-2创建数据库子网组" class="md-header-anchor"></a><span>任务 2：创建数据库子网组</span></h2><p><span>在此任务中，您将创建一个</span><em><span>数据库子网组</span></em><span>，用于告知 RDS 哪些子网可用于数据库。每个数据库子网组需要至少位于两个可用区中的子网。</span></p><ol start='11' ><li><span>在 </span><span id="ssb_services"><span>Services</span><i class="fas fa-angle-down"></i></span><span>（服务）菜单上，单击 </span><strong><span>RDS</span></strong><span>。</span></li><li><span>在左侧导航窗格中，单击 </span><strong><span>Subnet groups</span></strong><span>（子网组）。</span></li></ol><p><span>   </span><i class="fas fa-exclamation-triangle"></i><span>如果导航窗格未显示，请单击左上角的 </span><i class="fas fa-bars"></i><span> 菜单图标。</span></p><ol start='13' ><li><span>单击 </span><span id="ssb_orange"><span>Create DB Subnet Group</span></span><span>（创建数据库子网组），然后进行以下配置：</span></li></ol><ul><li><strong><span>Name</span></strong><span>（名称）：</span><code>DB-Subnet-Group</code></li><li><strong><span>Description</span></strong><span>（描述）：</span><code>DB Subnet Group</code><span>（数据库子网组）</span></li><li><strong><span>VPC</span></strong><span>：</span><em><span>Lab VPC</span></em></li></ul><ol start='14' ><li><span>下翻至 </span><strong><span>Add Subnets</span></strong><span>（添加子网）部分。</span></li><li><span>展开 </span><strong><span>Availability Zones</span></strong><span>（可用区）下的值列表，然后选择前两个可用区：</span><strong><span>us-east-1a</span></strong><span> 和 </span><strong><span>us-east-1b</span></strong><span>。</span></li><li><span>展开 </span><strong><span>Subnets</span></strong><span>（子网）下的值列表，然后选择与 CIDR 范围 </span><strong><span>10.0.1.0/24</span></strong><span> 和 </span><strong><span>10.0.3.0/24</span></strong><span> 关联的子网。</span></li></ol><p><span>   此时这些子网应会在</span><strong><span>Subnets selected</span></strong><span>（已选定的子网）表中显示。</span></p><ol start='17' ><li><span>单击 </span><span id="ssb_orange"><span>Create</span></span><span>（创建）</span></li></ol><p><span>   在下个任务中创建数据库时，您将使用此数据库子网组。</span></p><p>&nbsp;</p><hr /><h2><a name="任务-3创建-amazon-rds-数据库实例" class="md-header-anchor"></a><span>任务 3：创建 Amazon RDS 数据库实例</span></h2><p><span>在此任务中，您将配置并启动一个多可用区 Amazon RDS for MySQL 数据库实例。</span></p><p><span>Amazon RDS </span><strong><em><span>多可用区</span></em></strong><span>部署为数据库 (DB) 实例提供更高可用性和持久性，使其成为了生产数据库工作负载的理想之选。当您预置多可用区数据库实例时，Amazon RDS 会自动创建一个主数据库实例，并将数据同步复制到其他可用区 (AZ) 的备用实例中。</span></p><ol start='18' ><li><span>在左侧导航窗格中，单击 </span><strong><span>Databases</span></strong><span>（数据库）。</span></li><li><span>单击 </span><span id="ssb_orange"><span>Create database</span></span><span>（创建数据库）</span></li></ol><p><span>   </span><i class="fas fa-exclamation-triangle"></i><span>如果您在屏幕顶部看到 </span><strong><span>Switch to the new database creation flow</span></strong><span>（切换到新的数据库创建流程），请单击它。</span></p><ol start='20' ><li><span>选择 </span><i class="far fa-dot-circle"></i><span> </span><strong><span>MySQL</span></strong><span>。</span></li><li><span>在 </span><strong><span>Settings</span></strong><span>（设置）下，进行以下配置：</span></li></ol><ul><li><strong><span>DB instance identifier（数据库实例标识符）</span></strong><span>：</span><code>lab-db</code></li><li><strong><span>Master username</span></strong><span>（主用户名）：</span><code>main</code></li><li><strong><span>Master password</span></strong><span>（主密码）：</span><code>lab-password</code></li><li><strong><span>Confirm password</span></strong><span>（确认密码）：</span><code>lab-password</code></li></ul><ol start='22' ><li><span>在 </span><strong><span>DB instance size</span></strong><span>（数据库实例大小）下，进行以下配置：</span></li></ol><ul><li><span>选择 </span><i class="far fa-dot-circle"></i><span> </span><strong><span>Burstable classes (includes t classes)</span></strong><span>（可突增类（包括 t 类））</span></li><li><span>选择 </span><em><span>db.t3.micro</span></em></li></ul><ol start='23' ><li><span>在 </span><strong><span>Storage</span></strong><span>（存储）下，进行以下配置：</span></li></ol><ul><li><strong><span>Storage type</span></strong><span>（存储类型）：</span><em><span>General Purpose (SSD)</span></em><span>（通用型 (SSD)）</span></li><li><strong><span>Allocated storage</span></strong><span>（分配的存储）：</span><em><span>20</span></em></li></ul><ol start='24' ><li><span>在 </span><strong><span>Connectivity</span></strong><span>（连接）下，进行以下配置：</span></li></ol><ul><li><strong><span>Virtual Private Cloud (VPC):</span></strong><span> </span><em><span>Lab VPC</span></em></li></ul><ol start='25' ><li><span>在 </span><strong><span>Existing VPC security groups</span></strong><span>（现有 VPC 安全组）下，从下拉列表中：</span></li></ol><ul><li><span>选择</span><em><span>数据库安全组</span></em><span>。</span></li><li><span>取消选择 </span><em><span>default</span></em><span>（默认）。</span></li></ul><ol start='26' ><li><span>展开 </span><i class="fas fa-caret-right"></i><span> </span><strong><span>Additional configuration</span></strong><span>（其他配置），然后进行以下配置：</span></li></ol><ul><li><strong><span>Initial database name</span></strong><span>（初始数据库名称）：</span><code>lab</code></li><li><span>取消选中 </span><strong><span>Enable automatic backups</span></strong><span>（启用自动备份）。</span></li><li><span>取消选中 </span><strong><span>Enable Enhanced monitoring</span></strong><span>（启用增强监控）</span></li></ul><p><span>   </span><i class="fas fa-comment"></i><span>此操作将关闭备份，通常不建议这样做，但在本实验中这样做可以更快地部署数据库。</span></p><ol start='27' ><li><span>单击 </span><span id="ssb_orange"><span>Create database</span></span><span>（创建数据库）</span></li></ol><p><span>   您的数据库将立即启动。</span></p><p><span>   </span><i class="fas fa-comment"></i><span>如果您收到错误消息，提示您“not authorized to perform: iam:CreateRole”（无权执行： iam:CreateRole），请确保在上一步骤中取消选中 </span><em><span>Enable Enhanced monitoring</span></em><span>（启用增强监控）。</span></p><ol start='28' ><li><span>单击 </span><strong><span>lab-db</span></strong><span>（单击链接本身）。</span></li></ol><p><span>   现在，您需要等待</span><strong><span>大约 4 分钟</span></strong><span>，数据库才可使用。该部署过程是在两个不同的可用区中部署数据库。</span></p><p><span>   </span><i class="fas fa-info-circle"></i><span>在等待时，您可以查看 </span><a href='https://aws.amazon.com/rds/faqs/'><span>Amazon RDS 常见问题</span></a><span>或喝杯咖啡。</span></p><ol start='29' ><li><span>请耐心等待，直到 </span><strong><span>Info</span></strong><span>（信息）更改为 </span><strong><span>Modifying</span></strong><span>（正在修改）或 </span><strong><span>Available</span></strong><span>（可用）。</span></li><li><span>向下滚动到 </span><strong><span>Connectivity &amp; security</span></strong><span>（连接和安全）部分，并复制 </span><strong><span>Endpoint</span></strong><span>（终端节点）字段。</span></li></ol><p><span>   该值类似于：</span><em><span>lab-db.cggq8lhnxvnv.us-west-2.rds.amazonaws.com</span></em></p><ol start='31' ><li><span>将终端节点的值粘贴到文本编辑器。您稍后将在实验中用到它。</span></li></ol><p>&nbsp;</p><hr /><h2><a name="任务-4与数据库交互" class="md-header-anchor"></a><span>任务 4：与数据库交互</span></h2><p><span>在此任务中，您将打开在 Web 服务器上运行的 Web 应用程序，并配置它以使用数据库。</span></p><ol start='32' ><li><span>要复制 </span><strong><span>WebServer</span></strong><span> IP 地址，请单击这些说明上方的 </span><span id="ssb_voc_grey"><span>Details</span></span><span>（详细信息）下拉菜单，然后单击 </span><span id="ssb_voc_grey"><span>Show</span></span><span>（显示）。</span></li><li><span>打开一个新的 Web 浏览器选项卡、粘贴该 </span><em><span>WebServer</span></em><span> IP 地址，然后按 Enter 键。</span></li></ol><p><span>   此时将显示 Web 应用程序，其中显示有关 EC2 实例的信息。</span></p><ol start='34' ><li><span>单击页面顶部的 </span><strong><span>RDS</span></strong><span> 链接。</span></li></ol><p><span>   现在，您将配置应用程序，以连接到您的数据库。</span></p><ol start='35' ><li><span>配置以下设置：</span></li></ol><ul><li><strong><span>Endpoint（终端节点）</span></strong><span>：将您之前复制的终端节点粘贴到文本编辑器</span></li><li><strong><span>Database（数据库）</span></strong><span>：</span><code>lab</code></li><li><strong><span>Username</span></strong><span>（用户名）：</span><code>main</code></li><li><strong><span>Password</span></strong><span>（密码）：</span><code>lab-password</code></li><li><span>单击 </span><strong><span>Submit</span></strong><span>（提交）</span></li></ul><p><span>   此时将显示一条消息，说明应用程序正在执行将信息复制到数据库的命令。几秒钟后，应用程序将显示一个</span><strong><span>地址簿</span></strong><span>。</span></p><p><span>   “地址簿”应用程序将使用 RDS 数据库来存储信息。</span></p><ol start='36' ><li><span>通过添加、编辑和删除联系人来测试 Web 应用程序。</span></li></ol><p><span>   数据将持久保存在数据库中，并自动复制到第二个可用区。</span></p><p>&nbsp;</p><hr /><h2><a name="实验完成" class="md-header-anchor"></a><span>实验完成</span></h2><p><i class="icon-flag-checkered"></i><span>恭喜！您已完成本实验。</span></p><ol start='37' ><li><span>单击此页面顶部的 </span><span id="ssb_voc_grey"><span>End Lab</span></span><span>（结束实验），然后单击 </span><span id="ssb_blue"><span>Yes</span></span><span>（是）确认您要结束实验。</span></li></ol><p><span>   此时将显示一个面板，指示“DELETE has been initiated...You may close this message box now.”（删除操作已启动...您现在可以关闭此消息框。）</span></p><ol start='38' ><li><span>单击右上角的 </span><strong><span>X</span></strong><span> 关闭面板。</span></li></ol><p><span>如有反馈、建议或更正，请发送电子邮件至：</span><em><a href='mailto:aws-course-feedback@amazon.com' target='_blank' class='url'>aws-course-feedback@amazon.com</a></em></p><p>&nbsp;</p><hr /><h3><a name="署名" class="md-header-anchor"></a><span>署名</span></h3><p><strong><span>Bootstrap v3.3.5 - </span><a href='http://getbootstrap.com' title='http://getbootstrap.com'><span>http://getbootstrap.com</span></a><span>/</span></strong></p><p><span>MIT 许可证 (MIT)</span></p><p><span>版权所有 (c) 2011-2016 Twitter, Inc.</span></p><p><span>特此免费授予任何人获得本软件及相关文档文件（“软件”）的副本，以无限制地处理本软件，包括但不限于使用、复制、修改、合并、发布、分发、再许可和/或销售本软件的副本，并允许具有本软件上述权利的人员遵守以下条件：</span></p><p><span>上述版权声明和本许可声明应包含在本软件的所有副本或主要部分中。</span></p><p><span>此软件按“原样”提供，无任何明示或暗示的保证，包括但不限于有关适销性、针对特定目的的适用性和不侵权的保证。任何情况下，作者或版权所有者都不应承担任何索赔、损害赔偿或其他责任，无论是因软件或使用或其他软件处理引起的或与其相关的合同行为、侵权行为或其他行为。</span></p></div>
+</body>
+</html>

@@ -1,0 +1,1164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'>
+<div id='write'  class=''><h1><a name="실습-5-앱을-사용하여-db-서버-구축-및-db와-상호-작용" class="md-header-anchor"></a><span>실습 5: 앱을 사용하여 DB 서버 구축 및 DB와 상호 작용</span></h1><!-- Note to translators: This is based on Technical Essentials Lab 2. Copy the translation from there. Do not re-translate the whole document. --><p>&nbsp;&nbsp;</p><p><strong><span>버전 4.6.6(TESS2)</span></strong></p><p><span>이 실습은 AWS 관리형 데이터베이스 인스턴스를 활용하여 관계형 데이터베이스 요구 사항을 해결하는 개념을 보강하도록 설계되었습니다.</span></p><p><strong><em><span>Amazon Relational Database Service</span></em></strong><span>(Amazon RDS)를 사용하면 클라우드에서 관계형 데이터베이스를 더욱 간편하게 설정, 운영 및 확장할 수 있습니다. 시간 소모적인 데이터베이스 관리 작업을 관리하는 한편, 효율적인 비용으로 크기 조정이 가능한 용량을 제공하므로 고객은 애플리케이션과 비즈니스에 집중할 수 있습니다. Amazon RDS에서는 Amazon Aurora, Oracle, Microsoft SQL Server, PostgreSQL, MySQL, MariaDB와 같은 익숙한 6개 데이터베이스 엔진 중에서 선택할 수 있습니다.</span></p><p>&nbsp;</p><p><strong><span>목표</span></strong></p><p><span>본 실습을 완료하면 다음을 할 수 있습니다.</span></p><ul><li><span>고가용성을 갖춘 Amazon RDS DB 인스턴스 시작</span></li><li><span>웹 서버의 연결을 허용하도록 DB 인스턴스 구성</span></li><li><span>웹 애플리케이션을 열고 데이터베이스와 상호 작용</span></li></ul><p>&nbsp;</p><p><strong><span>소요 시간</span></strong></p><p><span>이 실습은 완료까지 약 </span><strong><span>30분</span></strong><span>이 소요됩니다.</span></p><p>&nbsp;</p><p><strong><span>시나리오</span></strong></p><p><span>다음 인프라로 시작합니다.</span>
+<img src="images/lab-5-starting-lab-architecture.png" width="800"></p><p>&nbsp;&nbsp;</p><p><span>이 실습을 마친 후 인프라는 다음과 같습니다.</span></p><p>&nbsp;</p><p><img src="images/lab-5-final-lab-architecture.png" width="800"></p><p>&nbsp;&nbsp;</p><hr /><h2><a name="aws-management-console-액세스" class="md-header-anchor"></a><span>AWS Management Console 액세스</span></h2><ol start='' ><li><p><span>지침의 맨 위에서 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>을 클릭하여 실습을 시작합니다.</span></p><p><span>Start Lab 패널이 열리고 실습 상태가 표시됩니다.</span></p></li><li><p><span>“</span><strong><span>Lab status: ready</span></strong><span>” 메시지가 표시되면 </span><strong><span>X</span></strong><span>를 클릭하여 Start Lab 패널을 닫습니다.</span></p></li><li><p><span>지침의 맨 위에서 </span><span id="ssb_voc_grey"><span>AWS</span></span><span>를 클릭합니다.</span></p><p><span>그러면 새 브라우저 탭에서 AWS Management Console이 열립니다. 시스템에서 자동으로 로그인합니다.</span></p><p><strong><span>팁</span></strong><span>: 새 브라우저 탭이 열리지 않는 경우 일반적으로 브라우저에서 팝업 창을 열 수 없음을 나타내는 배너 또는 아이콘이 브라우저 상단에 표시됩니다. 배너 또는 아이콘을 클릭하고 Allow pop ups를 선택합니다.</span></p></li><li><p><span>이러한 지침이 나란히 표시되도록 AWS Management Console 탭을 정렬합니다. 두 브라우저 탭이 동시에 표시되어 실습 단계를 보다 쉽게 수행할 수 있게 됩니다.</span></p></li></ol><p>&nbsp;</p><hr /><h2><a name="과제-1-rds-db-인스턴스에-대한-보안-그룹-생성" class="md-header-anchor"></a><span>과제 1: RDS DB 인스턴스에 대한 보안 그룹 생성</span></h2><p><span>이 과제에서는 RDS DB 인스턴스에 대한 웹 서버 액세스를 허용하는 보안 그룹을 생성합니다. 이 보안 그룹은 데이터베이스 인스턴스를 시작할 때 사용됩니다.</span></p><ol start='5' ><li><p><strong><span>AWS Management Console</span></strong><span>의 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span> 메뉴에서 </span><strong><span>VPC</span></strong><span>를 클릭합니다.</span></p></li><li><p><span>왼쪽 탐색 창에서 </span><strong><span>Security Groups</span></strong><span>을 클릭합니다.</span></p></li><li><p><span id="ssb_orange"><span>Create security group</span></span><span>을 클릭하고 다음을 구성합니다.</span></p><ul><li><strong><span>Security group name</span></strong><span>: </span><code>DB Security Group</code></li><li><strong><span>Description</span></strong><span>: </span><code>Permit access from Web Security Group</code></li><li><strong><span>VPC</span></strong><span>: </span><em><span>Lab VPC</span></em></li></ul><p><span>이제 보안 그룹에 인바운드 데이터베이스 요청을 허용하는 규칙을 추가합니다.</span></p></li><li><p><strong><span>Inbound rules</span></strong><span> 창에서 </span><span id="ssb_white"><span>Add rule</span></span><span>을 선택합니다.</span></p><p><span>현재 보안 그룹에는 규칙이 없습니다. </span><em><span>Web Security Group</span></em><span>의 액세스를 허용하는 규칙을 추가합니다.</span></p></li><li><p><span>다음 설정을 구성합니다.</span></p><ul><li><strong><span>Type</span></strong><span>: </span><em><span>MySQL/Aurora (3306)</span></em></li><li><strong><span>CIDR, IP, Security Group or Prefix List</span></strong><span>: </span><code>sg</code><span>를 입력하고 </span><em><span>Web Security Group</span></em><span>을 선택합니다.</span></li></ul><p><em><span>Web Security Group</span></em><span>에 연결된 모든 EC2 인스턴스의 포트 3306 기반 인바운드 트래픽을 허용하는 데이터베이스 보안 그룹이 구성됩니다.</span></p></li><li><p><span id="ssb_orange"><span>Create security group</span></span><span>을 선택합니다.</span></p></li></ol><p><span>   Amazon RDS 데이터베이스를 시작할 때 이 보안 그룹을 사용합니다.</span></p><p>&nbsp;</p><hr /><h2><a name="과제-2-db-서브넷-그룹-생성" class="md-header-anchor"></a><span>과제 2: DB 서브넷 그룹 생성</span></h2><p><span>이 과제에서는 데이터베이스에 사용할 수 있는 서브넷을 RDS에 알리는 데 사용되는 </span><em><span>DB 서브넷 그룹</span></em><span>을 생성합니다. 각 DB 서브넷 그룹의 서브넷은 2개 이상의 가용 영역에 있어야 합니다.</span></p><ol start='11' ><li><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span> 메뉴에서 </span><strong><span>RDS</span></strong><span>를 클릭합니다.</span></li><li><span>왼쪽 탐색 창에서 [</span><strong><span>서브넷 그룹</span></strong><span>]을 클릭합니다.</span></li></ol><p><span>   </span><i class="fas fa-exclamation-triangle"></i><span> 탐색 창이 보이지 않으면 왼쪽 상단의 </span><i class="fas fa-bars"></i><span> 메뉴 아이콘을 클릭합니다.</span></p><ol start='13' ><li><span>[</span><span id="ssb_orange"><span>DB 서브넷 그룹 생성</span></span><span>]을 클릭하고 다음을 구성합니다.</span></li></ol><ul><li><strong><span>이름:</span></strong><span> </span><code>DB-Subnet-Group</code></li><li><strong><span>설명:</span></strong><span> </span><code>DB 서브넷 그룹</code></li><li><strong><span>VPC:</span></strong><span> </span><em><span>Lab VPC</span></em></li></ul><ol start='14' ><li><span>[</span><strong><span>서브넷 추가</span></strong><span>] 섹션까지 아래로 스크롤합니다.</span></li><li><span>[</span><strong><span>가용 영역</span></strong><span>] 아래에서 값 목록을 확장하고 처음 두 개 영역인 [</span><strong><span>us-east-1a</span></strong><span>]와 [</span><strong><span>us-east-1b</span></strong><span>]를 선택합니다.</span></li><li><span>[</span><strong><span>서브넷</span></strong><span>] 아래에서 값 목록을 확장하고 CIDR 범위 </span><strong><span>10.0.1.0/24</span></strong><span> 및 </span><strong><span>10.0.3.0/24</span></strong><span>에 연결된 서브넷을 선택합니다.</span></li></ol><p><span>   이제 이러한 서브넷이 [선택한 서브넷] 테이블에 표시됩니다.</span></p><ol start='17' ><li><span>[</span><span id="ssb_orange"><span>생성</span></span><span>]을 클릭합니다.</span></li></ol><p><span>   다음 과제에서 데이터베이스를 생성할 때 이 DB 서브넷 그룹을 사용합니다.</span></p><p>&nbsp;</p><hr /><h2><a name="과제-3-amazon-rds-db-인스턴스-생성" class="md-header-anchor"></a><span>과제 3: Amazon RDS DB 인스턴스 생성</span></h2><p><span>이 과제에서는 다중 AZ Amazon RDS for MySQL 데이터베이스 인스턴스를 구성하고 시작합니다.</span></p><p><span>Amazon RDS </span><strong><em><span>다중 AZ</span></em></strong><span> 배포는 DB(데이터베이스) 인스턴스의 가용성 및 내구성을 높여주므로 프로덕션 데이터베이스 워크로드에 적합합니다. 다중 AZ DB 인스턴스를 프로비저닝하는 경우 Amazon RDS는 기본 DB 인스턴스를 자동으로 생성하고, 다른 AZ(가용 영역)에 있는 대기 인스턴스에 데이터를 동기식으로 복제합니다.</span></p><ol start='18' ><li><span>왼쪽 탐색 창에서 </span><strong><span>Databases</span></strong><span>를 클릭합니다.</span></li><li><span id="ssb_orange"><span>Create database</span></span><span>를 클릭합니다.</span></li></ol><p><span>   </span><i class="fas fa-exclamation-triangle"></i><span> 화면 상단에 </span><strong><span>Switch to the new database creation flow</span></strong><span>가 표시되면.</span></p><ol start='20' ><li><i class="far fa-dot-circle"></i><span> </span><strong><span>MySQL</span></strong><span>클릭합니다.</span></li><li><strong><span>Settings</span></strong><span>에서 다음을 구성합니다.</span></li></ol><ul><li><strong><span>DB instance identifier</span></strong><span>: </span><code>lab-db</code></li><li><strong><span>Master username:</span></strong><span> </span><code>master</code></li><li><strong><span>Master password</span></strong><span>: </span><code>lab-password</code></li><li><strong><span>Confirm password:</span></strong><span> </span><code>lab-password</code></li></ul><ol start='22' ><li><strong><span>DB instance size</span></strong><span>에서 다음을 구성합니다.</span></li></ol><ul><li><i class="far fa-dot-circle"></i><span> </span><strong><span>Burstable classes(includes t classes)</span></strong><span>를 선택합니다.</span></li><li><em><span>db.t3.micro</span></em><span>를 선택합니다.</span></li></ul><ol start='23' ><li><strong><span>Storage</span></strong><span>에서 다음을 구성합니다.</span></li></ol><ul><li><strong><span>Storage type</span></strong><span>: </span><em><span>General Purpose (SSD)</span></em></li><li><strong><span>Allocated storage</span></strong><span>: </span><em><span>20</span></em></li></ul><ol start='24' ><li><strong><span>Connectivity</span></strong><span>에서 다음을 구성합니다.</span></li></ol><ul><li><strong><span>Virtual private cloud (VPC):</span></strong><span> </span><em><span>Lab VPC</span></em></li></ul><ol start='25' ><li><strong><span>기존 VPC 보안 그룹</span></strong><span>의 드롭다운 목록에서 다음을 수행합니다.</span></li></ol><ul><li><em><span>DB Security Group</span></em><span>을 선택합니다.</span></li><li><em><span>default</span></em><span>를 선택 취소합니다.</span></li></ul><ol start='26' ><li><i class="fas fa-caret-right"></i><span> </span><strong><span>Additional configuration</span></strong><span>를 확장하고 다음을 구성합니다.</span></li></ol><ul><li><strong><span>Initial database name</span></strong><span>: </span><code>lab</code></li><li><strong><span>Enable automatic backups</span></strong><span>를 선택 취소합니다.</span></li><li><strong><span>Enable Enhanced monitoring</span></strong><span> 선택을 취소합니다.</span></li></ul><p><span>   </span><i class="fas fa-comment"></i><span> 이렇게 하면 백업이 비활성화됩니다. 이는 일반적으로 권장되지 않지만 이 실습에서는 데이터베이스 빠르게 배포하기 위해 이러한 설정을 사용합니다.</span></p><ol start='27' ><li><span id="ssb_orange"><span>Create database</span></span><span>를 클릭합니다.</span></li></ol><p><span>   이제 데이터베이스가 시작됩니다.</span></p><p><span>   </span><i class="fas fa-comment"></i><span> &quot;not authorized to perform: iam:CreateRole&quot;이라는 오류가 표시되는 경우 이전 단계에서 </span><em><span>Enable Enhanced monitoring</span></em><span>을 선택 취소했는지 확인하십시오.</span></p><ol start='28' ><li><strong><span>lab-db</span></strong><span>를 클릭합니다(링크 자체 클릭).</span></li></ol><p><span>   이제 데이터베이스를 사용할 수 있을 때까지 </span><strong><span>약 4분</span></strong><span> 동안 기다려야 합니다. 이 배포 프로세스는 2개의 다른 가용 영역에 데이터베이스를 배포합니다.</span></p><p><span>   </span><i class="fas fa-info-circle"></i><span> 기다리는 동안 </span><a href='https://aws.amazon.com/rds/faqs/'><span>Amazon RDS FAQ</span></a><span>를 검토하거나 잠시 쉬는 시간을 가지십시오.</span></p><ol start='29' ><li><strong><span>Info</span></strong><span>가 </span><strong><span>Modifying</span></strong><span> 또는 </span><strong><span>Available</span></strong><span>로 변경될 때까지 기다립니다.</span></li><li><span>아래로 스크롤하여 </span><strong><span>Connectivity &amp; security</span></strong><span> 섹션으로 이동하고 </span><strong><span>Endpoint</span></strong><span> 필드를 복사합니다.</span></li></ol><p><span>   이 필드는 다음과 유사합니다. </span><em><span>lab-db.cggq8lhnxvnv.us-west-2.rds.amazonaws.com</span></em></p><ol start='31' ><li><span>엔드포인트 값을 텍스트 편집기에 붙여 넣습니다. 나중에 실습에서 이 값을 사용하게 됩니다.</span></li></ol><p>&nbsp;</p><hr /><h2><a name="과제-4-데이터베이스와-상호-작용" class="md-header-anchor"></a><span>과제 4: 데이터베이스와 상호 작용</span></h2><p><span>이 과제에서는 웹 서버에서 실행 중인 웹 애플리케이션을 열고 데이터베이스를 사용하도록 구성합니다.</span></p><ol start='32' ><li><strong><span>WebServer</span></strong><span> IP 주소를 복사하려면 이러한 지침 위에 있는 </span><span id="ssb_voc_grey"><span>Details</span></span><span> 드롭다운 메뉴를 클릭하고 </span><span id="ssb_voc_grey"><span>Show</span></span><span>를 클릭합니다.</span></li><li><span>새 웹 브라우저 탭을 열어 </span><em><span>WebServer</span></em><span> IP 주소를 붙여 넣고 Enter 키를 누릅니다.</span></li></ol><p><span>   EC2 인스턴스에 대한 정보를 표시하는 웹 애플리케이션이 나타납니다.</span></p><ol start='34' ><li><span>페이지 상단에서 </span><strong><span>RDS</span></strong><span> 링크를 클릭합니다.</span></li></ol><p><span>   이제 데이터베이스에 연결하도록 애플리케이션을 구성합니다.</span></p><ol start='35' ><li><span>다음 설정을 구성합니다.</span></li></ol><ul><li><strong><span>Endpoint</span></strong><span>: 앞에서 복사한 엔드포인트를 텍스트 편집기에 붙여 넣습니다.</span></li><li><strong><span>Database:</span></strong><span> </span><code>lab</code></li><li><strong><span>Username:</span></strong><span> </span><code>main</code></li><li><strong><span>Password:</span></strong><span> </span><code>lab-password</code></li><li><strong><span>Submit</span></strong><span>을 클릭합니다.</span></li></ul><p><span>   애플리케이션이 데이터베이스에 정보를 복사하는 명령을 실행 중임을 나타내는 메시지가 나타납니다. 몇 초 후 애플리케이션이 </span><strong><span>Address Book</span></strong><span>을 표시합니다.</span></p><p><span>   Address Book 애플리케이션은 RDS 데이터베이스에 저장된 정보를 사용하고 있습니다.</span></p><ol start='36' ><li><span>연락처를 추가, 편집 및 제거하여 웹 애플리케이션을 테스트합니다.</span></li></ol><p><span>   데이터가 데이터베이스에 유지되고 두 번째 가용 영역에 자동으로 복제됩니다.</span></p><p>&nbsp;</p><hr /><h2><a name="실습-완료" class="md-header-anchor"></a><span>실습 완료</span></h2><p><i class="icon-flag-checkered"></i><span> 축하합니다! 실습을 마쳤습니다.</span></p><ol start='37' ><li><span>이 페이지의 상단에서 </span><span id="ssb_voc_grey"><span>End Lab</span></span><span>을 클릭하고 </span><span id="ssb_blue"><span>Yes</span></span><span>를 클릭하여 실습 종료를 확인합니다.</span></li></ol><p><span>   &quot;DELETE has been initiated... You may close this message box now&quot;라는 내용의 패널이 표시됩니다.</span></p><ol start='38' ><li><span>오른쪽 상단 모서리에 있는 </span><strong><span>X</span></strong><span>를 클릭하여 패널을 닫습니다.</span></li></ol><p><span>피드백 또는 제안 사항이 있거나 수정이 필요한 내용이 있는 경우 </span><em><a href='mailto:aws-course-feedback@amazon.com' target='_blank' class='url'>aws-course-feedback@amazon.com</a></em><span>으로 이메일을 보내 주십시오.</span></p><p>&nbsp;</p><hr /><h3><a name="출처" class="md-header-anchor"></a><span>출처</span></h3><p><strong><span>Bootstrap v3.3.5 - </span><a href='http://getbootstrap.com' title='http://getbootstrap.com'><span>http://getbootstrap.com</span></a><span>/</span></strong></p><p><span>MIT 라이선스(MIT)</span></p><p><span>Copyright (c) 2011-2016 Twitter, Inc.</span></p><p><span>사용, 복사, 수정, 병합할 수 있는 권한을 포함하되 이에 국한되지 않고 소프트웨어를 취급하기 위해 이 소프트웨어 및 관련 문서 파일(이하 &quot;소프트웨어&quot;)의 사본을 얻는 모든 사람에게 사용 권한이 무료로 부여되며 다음 조건에 따라 소프트웨어의 사본을 게시, 배포, 재라이센스 및/또는 판매할 수 있고 소프트웨어를 제공받는 사람에게 허용할 수 있습니다.</span></p><p><span>위의 저작권 고지 및 이 허가 고지는 소프트웨어의 모든 사본 또는 상당 부분에 포함되어야 합니다.</span></p><p><span>소프트웨어는 상품성, 특정 목적에의 적합성 및 비침해에 대한 보증을 포함하지만 이에 국한되지 않고 묵시적이든 명시적이든 어떠한 종류의 보증 없이 &quot;있는 그대로&quot; 제공됩니다. 저자 또는 저작권 보유자는 어떠한 경우에도 소프트웨어 또는 소프트웨어의 기타 사용과 관련하여 발생했거나 계약 위반, 기타로 인해 발생하는 청구 또는 기타 책임에 대해 책임을 지지 않습니다.</span></p></div>
+</body>
+</html>
