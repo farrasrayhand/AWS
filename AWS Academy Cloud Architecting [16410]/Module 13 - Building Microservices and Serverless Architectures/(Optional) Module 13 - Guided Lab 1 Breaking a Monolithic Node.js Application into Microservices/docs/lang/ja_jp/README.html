@@ -1,0 +1,1164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='オプション）モジュール-13---ガイド付きラボ-1-モノリシックな-nodejs-アプリケーションをマイクロサービスに分解する'><span>（オプション）モジュール 13 - ガイド付きラボ 1: モノリシックな Node.js アプリケーションをマイクロサービスに分解する</span></h1><h2 id='ラボの概要と目標'><span>ラボの概要と目標</span></h2><p><span>従来のモノリシックなアーキテクチャは、スケーリングが難しい場合があります。アプリケーションのコードベースが大きくなると、更新や維持のプロセスが複雑になります。新しい機能、言語、フレームワーク、テクノロジーなどの導入が複雑で難しくなり、イノベーションや新しいアイデアの妨げになることもあります。</span></p><p><span>マイクロサービスアーキテクチャでは、それぞれのアプリケーションのコンポーネントが独自のサービスとして実行されます。これらはビジネス機能を主軸として構築され、それぞれのサービスが 1 つの関数を実行します。マイクロサービスは、さまざまなフレームワークやプログラミング言語を使って記述でき、明確に定義されたアプリケーションプログラミングインターフェイス (API) を使って他のサービスと通信します。また、単一のサービスやサービスのグループとして、個別にデプロイできます。</span></p><p><span>このオプションラボでは、標準の Node.js サーバーで実行されるモノリシックなアプリケーションをコンテナ化した Docker 環境に移行します。次に、アプリケーションをマイクロサービスにリファクタリングし、Amazon Elastic Container Service (Amazon ECS) で調整したコンテナ化環境にデプロイします。この Node.js アプリケーションには、</span><strong><span>ユーザー</span></strong><span>がトピックの</span><strong><span>スレッド</span></strong><span>を作成し、それぞれのスレッドに</span><strong><span>メッセージ</span></strong><span>を投稿することのできるシンプルなメッセージボードの機能が実装されています。</span></p><p>&nbsp;</p><p><span>このラボを完了すると、次のことができるようになります。</span></p><ul><li><span>モノリシックな Node.js アプリケーションを移行して Docker コンテナで実行する</span></li><li><span>Node.js アプリケーションを、モノリシックな設計からマイクロサービスアーキテクチャにリファクタリングする</span></li><li><span>コンテナ化した Node.js マイクロサービスアプリケーションを Amazon ECS にデプロイする</span></li></ul><p>&nbsp;</p><p><span>次の図は、アプリケーション設計をモノリシックなものからマイクロサービスをベースとしたものに移行する過程を表しています。</span></p><p><img src="images/Application-design-monolith-to-microservices.png" width="600" alt="ラボアーキテクチャ"></p><p>&nbsp;</p><p>&nbsp;</p><p><span>この図は、モノリシックなアプローチとマイクロサービス設計の次のような違いを示しています。</span></p><ul><li><span>モノリシックな設計では、Node.js アプリケーションのすべての関数がパッケージ化され、1 つのサービスとして実行されます。1 つの関数が失敗すると、アプリケーション全体が機能しなくなります。同様に、1 つの関数の需要が急増した場合、サービス内の他の関数もすべて一緒にスケーリングする必要があります。</span></li><li><span>マイクロサービスアーキテクチャでは、Node.js アプリケーションの各関数は、個別のサービスとして実行されます。サービスは、個別にスケーリングしたり更新したりできます。</span></li></ul><br><h2 id='所要時間'><span>所要時間</span></h2><p><span>このラボの所要時間は、約 </span><strong><span>3 時間</span></strong><span>です。</span></p><br><h2 id='aws-サービスの制限事項'><span>AWS サービスの制限事項</span></h2><p><span>このラボ環境では、AWS のサービスとサービスアクションへのアクセスが、ラボの手順を完了するために必要なものに制限されています。他のサービスへのアクセスや、このラボで説明されているサービス以外のアクションを実行しようとすると、エラーが発生することがあります。</span></p><br><h2 id='aws-マネジメントコンソールにアクセスする'><span>AWS マネジメントコンソールにアクセスする</span></h2><ol start='' ><li><p><span>この手順の上部にある </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> をクリックし、ラボを起動します。</span></p><p><span>[</span><strong><span>Start Lab</span></strong><span>] パネルが開き、ラボのステータスが表示されます。</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>ヒント</span></strong><span>: ラボの完了までにさらに時間が必要な場合は、</span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> ボタンをもう一度選択して、この環境のタイマーを再開します。</span></p></li><li><p><span>[</span><strong><span>Start Lab</span></strong><span>] パネルに </span><strong><span>Lab status: ready</span></strong><span> というメッセージが表示されたら [</span><strong><span>X</span></strong><span>] をクリックしてパネルを閉じます。</span></p></li><li><p><span>この手順の上部にある </span><span id="ssb_voc_grey"><span>AWS</span></span><span> をクリックします。</span></p><p><span>このアクションにより、新しいブラウザタブで AWS マネジメントコンソールが開き、ユーザーは自動的にログインします。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>ヒント</span></strong><span>: 新しいブラウザタブが開かない場合、通常、ブラウザによってサイトのポップアップウィンドウの表示がブロックされたというメッセージが表示されたバナーまたはアイコンがブラウザの上部に表示されます。バナーまたはアイコンを選択して [</span><strong><span>ポップアップを許可</span></strong><span>] を選択してください。</span></p></li><li><p><strong><span>AWS マネジメントコンソール</span></strong><span>タブがこの手順と並べて表示されるようにします。両方のブラウザタブを同時に開いておくと、ラボのステップを実行しやすくなります。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>特に指示がない限り、リージョンを変更しないでください</span></strong><span>。</span></p></li></ol><br><h2 id='タスク-1-開発環境を整える'><span>タスク 1: 開発環境を整える</span></h2><p><span>AWS Cloud9 環境は、ラボ環境作成時に作成されています。AWS Cloud9 は、コードをブラウザで記述、実行、デバッグできるクラウドベースの統合開発環境 (IDE) です。一般的なプログラミング言語に不可欠なツールがあらかじめパッケージされており、ターミナルセッションタブから AWS コマンドラインインターフェイス (AWS CLI) にアクセスできます。AWS Cloud9 環境は、AWS マネジメントコンソールへのログインに使用したユーザー ID に対して承認された AWS リソースにアクセスできます。</span></p><p>&nbsp;</p><p><span>開発環境のセットアップを行うには、AWS Cloud9 IDE を開き、必要な</span><strong><span>ラボファイル</span></strong><span>をダウンロードして抽出します。</span></p><ol start='5' ><li><p><span>[</span><strong><span>サービス</span></strong><span>] で [</span><strong><span>Cloud9</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>Open IDE</span></strong><span>] をクリックします。</span></p><p><span>IDE が新しいブラウザタブで開き、[</span><strong><span>Welcome</span></strong><span>] タブなどいくつかのタブが表示されます。</span></p><p><span>次に、必要なラボファイルをダウンロードして抽出します。</span></p></li><li><p><span>IDE の一番下のペインで、</span><strong><span>bash - &quot;ip-nnn-nnn-nnn-nnn&quot;</span></strong><span> というラベルの付いたターミナルタブに次のコマンドを入力します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.25px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">curl</span> <span class="cm-attribute">-s</span> https://aws-tc-largeobjects.s3.amazonaws.com/ILT-TF-100-TUHAWA-1/lab-four/lab-files-ms-node-js.tar.gz | tar <span class="cm-attribute">-zxv</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div><div class="CodeMirror-gutters" style="display: none; height: 46px;"></div></div></div></pre><p><span>このコマンドは、ラボファイルの入った圧縮アーカイブファイルを取得します。また、AWS Cloud9 の </span><strong><span>~/environment</span></strong><span> フォルダ内のファイルの内容を抽出します。コマンドの出力は次のような出力になります。</span></p></li></ol><p><img src="images/Install-lab-files.png" width="800" alt="出力例"></p><p><span>   </span>&nbsp;</p><p><span>   ダウンロードして抽出したファイルは、[</span><strong><span>Environment</span></strong><span>] ウィンドウ（左ペイン）に表示されます。</span></p><p><img src="images/Environment-window.png" width="400" alt="環境ウィンドウ"></p><p><span>   </span>&nbsp;</p><p><span>   次のフォルダが表示されます。</span></p><ul><li><strong><span>1-no-container</span></strong><span> – アプリケーションの</span><strong><span>モノリシック</span></strong><span>実装に関連するファイルが入っています。この実装は、Node.js サーバーで直接実行されます。</span></li><li><strong><span>2-containerized-monolith</span></strong><span> – アプリケーションの</span><strong><span>モノリシック</span></strong><span>実装に関連するファイルが入っています。この実装は、Amazon ECS により調整されたコンテナ化 Docker 環境で実行されます。</span></li><li><strong><span>3-containerized-microservices</span></strong><span> – アプリケーションの</span><strong><span>マイクロサービス</span></strong><span>実装に関連するファイルが入っています。この実装は、Amazon ECS により調整されたコンテナ化 Docker 環境で実行されます。</span></li></ul><p><span>   AWS Cloud9 の IDE タブは頻繁に使用するので、ラボの間は開いたままにしておきます。</span></p><br><h2 id='タスク-2-ベーシックな-nodejs-サーバーでアプリケーションを実行する'><span>タスク 2: ベーシックな Node.js サーバーでアプリケーションを実行する</span></h2><p><span>ベースとなる Node.js アプリケーションは、コンテナを使わず、サーバーで直接実行するように設計されたモノリシックなサービスです。このタスクでは、AWS Cloud9 環境を実行しているインスタンスにインストールされた Node.js サーバーにアプリケーションをデプロイします。次に、AWS CLI ターミナルを使用してアプリケーションをテストし、RESTful API メソッドを呼び出します。</span></p><p><span>次の図は、デプロイのアーキテクチャとリクエストのフローを示しています。</span></p><p><img src="images/Architecture-monolithic-no-container.png" width="800" alt="モノリスデプロイメントのアーキテクチャ"></p><p>&nbsp;</p><p><strong><span>注</span></strong><span>: アプリケーションのモノリシック実装では、Node.js の </span><strong><span>クラスター</span></strong><span>機能を使用し、各 CPU コアに対し 1 つのワーカープロセスを生成します。これらのプロセスは 1 つのポートを共有し、Node.js に組み込まれたロードバランサーによって順繰りに呼び出されます。これによって、複数の CPU コアを持つサーバーのスケーラビリティが向上します。</span></p><p><span>このタスクでは以下の作業を行います。</span></p><ul><li><span>アプリケーションで必要な Node.js モジュールをインストールする</span></li><li><span>アプリケーションの設計とコードを確認する</span></li><li><span>アプリケーションを実行する</span></li></ul><br><h3 id='タスク-21-必要な-nodejs-モジュールをインストールする'><span>タスク 2.1: 必要な Node.js モジュールをインストールする</span></h3><p><span>このメッセージボードアプリケーションは、実装に Node.js の </span><strong><span>koa</span></strong><span> フレームワークの 2 つのモジュール、</span><strong><span>koa</span></strong><span> および </span><strong><span>koa-router</span></strong><span> を使用します。</span><strong><span>Koa.js</span></strong><span> は広く使われている Node.js のウェブアプリケーションフレームワークで、非同期サーバー側の JavaScript アプリケーションの構築を容易にします。</span></p><ol start='8' ><li><p><span>ターミナルタブに次のコマンドを入力し、</span><strong><span>koa</span></strong><span> モジュールと </span><strong><span>koa-router</span></strong><span> モジュールをインストールします。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> ~/environment/1-no-container</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">npm</span> install koa</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">npm</span> install koa-router</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 69px;"></div><div class="CodeMirror-gutters" style="display: none; height: 69px;"></div></div></div></pre></li></ol><p><img src="images/Install-node-modules.png" width="600" alt="koa のインストール"></p><p><span>   </span>&nbsp;</p><p><span>   モジュールは AWS Cloud9 の </span><strong><span>~/environment</span></strong><span> フォルダの </span><strong><span>1-no-container/node_modules</span></strong><span> フォルダにインストールされます。出力に含まれる通知、警告、更新メッセージは無視してかまいません。</span></p><br><h3 id='タスク-22-アプリケーションの設計とコードを確認する'><span>タスク 2.2: アプリケーションの設計とコードを確認する</span></h3><p><span>モノリシックなメッセージボードアプリケーションを実装するコンポーネントは、</span><strong><span>1-no-container</span></strong><span> フォルダにあります。これらを確認し、アプリケーションの設計とコードについて理解を深めます。</span></p><ol start='9' ><li><p><span>左側の [</span><strong><span>Environment</span></strong><span>] ウィンドウで、</span><strong><span>1-no-container</span></strong><span> フォルダを展開します。以下のコンポーネントがあります。</span></p><ul><li><strong><span>node_modules</span></strong><span> フォルダ – このフォルダは、前のサブタスクで、必要な JavaScript モジュールをインストールした際に作成されたもので、モジュールのソースコードが含まれています。</span></li><li><strong><span>db.json</span></strong><span> – メッセージボードデータベースをシミュレートする JavaScript Object Notation (JSON) オブジェクト。</span><strong><span>ユーザー</span></strong><span>、</span><strong><span>スレッド</span></strong><span>、</span><strong><span>投稿</span></strong><span>を表す属性と、対応するサンプル値が含まれています。</span></li><li><strong><span>index.js</span></strong><span> – アプリケーションのエントリポイントである JavaScript プログラム。</span></li><li><strong><span>package.json</span></strong><span> – アプリケーション、アプリケーションのエントリポイント、アプリケーションの依存関係を記述した JSON オブジェクト。</span></li><li><strong><span>package-lock.json</span></strong><span> – 必要な JavaScript モジュールを </span><strong><span>node_modules</span></strong><span> フォルダにインストールした際に自動生成された JSON オブジェクト。インストールユーティリティである </span><strong><span>npm</span></strong><span> によって、フォルダに加えられた変更の追跡に使用されます。</span></li><li><strong><span>server.js</span></strong><span> –アプリケーションの RESTful API メソッドを定義し、各メソッドのハンドラーを実装する JavaScript プログラム。</span></li></ul></li><li><p><strong><span>package.json</span></strong><span> オブジェクトの内容を確認します。[</span><strong><span>Environment</span></strong><span>] ウィンドウで </span><strong><span>package.json</span></strong><span> をダブルクリックしてエディタタブで開きます。JSON オブジェクトの次の属性を確認してください。</span></p><ul><li><strong><span>2～5 行目</span></strong><span> – この </span><strong><span>dependencies</span></strong><span> 属性は、アプリケーションの JavaScript モジュールの依存関係を定義しています。前のサブタスクでインストールした </span><strong><span>koa</span></strong><span> モジュールと </span><strong><span>koa-router</span></strong><span> モジュールが表示されています。</span></li><li><strong><span>6～8 行目</span></strong><span> – この </span><strong><span>scripts</span></strong><span> 属性は </span><strong><span>index.js</span></strong><span> プログラムをアプリケーションへのエントリポイントとして宣言しています。</span></li></ul></li><li><p><strong><span>db.json</span></strong><span> オブジェクトの内容を確認します。[</span><strong><span>Environment</span></strong><span>] ウィンドウで、</span><strong><span>db.json</span></strong><span> をダブルクリックしてエディタタブで開きます。JSON オブジェクトの次の属性を確認してください。</span></p><ul><li><p><strong><span>2～27 行目</span></strong><span> – ここでは、メッセージボードの登録ユーザーを表す </span><strong><span>users</span></strong><span> 属性を定義しています。属性値は、</span><strong><span>Marcerline Singer</span></strong><span>、</span><strong><span>Finn Alberts</span></strong><span>、</span><strong><span>Paul Barium</span></strong><span>、</span><strong><span>Jake Storm</span></strong><span> という </span><strong><span>4</span></strong><span> 人のサンプルユーザーのリストです。</span></p></li><li><p><strong><span>29～45 行目</span></strong><span> – ここでは、メッセージボードで現在アクティブなスレッドを表す </span><strong><span>threads</span></strong><span> 属性を定義しています。属性値は、次のタイトルのついた </span><strong><span>3</span></strong><span> つのサンプルスレッドのリストです。</span></p><ul><li><strong><span>Did you see the Brazil game? (ブラジル戦見た?)</span></strong></li><li><strong><span>New French bakery opening in the neighborhood tomorrow (フレンチベーカリーが明日近所にオープンします)</span></strong></li><li><strong><span>In search of a new guitar (新しいギターを探して)</span></strong></li><li><strong><span>47～78 行目</span></strong><span> – ここでは、アクティブなスレッドに投稿されたメッセージを表す </span><strong><span>posts</span></strong><span> 属性を定義しています。属性値は、</span><strong><span>6</span></strong><span> 件のサンプルメッセージ投稿のリストです。</span></li></ul></li></ul></li><li><p><strong><span>index.js</span></strong><span> のコードを確認します。[</span><strong><span>Environment</span></strong><span>] ウィンドウで、</span><strong><span>index.js</span></strong><span> をダブルクリックしてエディタタブで開きます。次の情報を確認してください。</span></p><ul><li><strong><span>1～3 行目</span></strong><span> – ここでは、プログラムに必要な JavaScript モジュール、</span><strong><span>cluster</span></strong><span>、</span><strong><span>http</span></strong><span>、</span><strong><span>os</span></strong><span> をインポートしています。</span></li><li><strong><span>3 行目</span></strong><span> – ここでは </span><strong><span>os</span></strong><span> モジュールを使用し、サーバーで利用可能な CPU コアの数を尋ねています。</span></li><li><strong><span>5～15 行目</span></strong><span> – これらの行は、プログラムの初回起動時 (アプリケーションの起動時) に実行されます。クラスターの </span><strong><span>Leader</span></strong><span> スレッドと、サーバーで利用可能な各 CPU コアの</span><strong><span>ワーカー</span></strong><span> スレッドを 1 つ作成します。</span></li><li><strong><span>16～19 行目</span></strong><span> – 現在の</span><strong><span>ワーカー</span></strong><span> スレッドで </span><strong><span>server.js</span></strong><span> プログラムを呼び出し、アプリケーションに対する各リクエストを処理します。</span></li></ul></li><li><p><span>最後に </span><strong><span>server.js</span></strong><span> のコードを確認します。[</span><strong><span>Environment</span></strong><span>] ウィンドウで、</span><strong><span>server.js</span></strong><span> をクリックしてエディタタブで開きます。コードに記載されているコメントを参考にしながら、ロジックを理解します、特に、次の情報を確認してください。</span></p><ul><li><p><strong><span>3 行目</span></strong><span> – データベースをシミュレートする JSON オブジェクト、</span><strong><span>db.json</span></strong><span> をインポートします。</span></p></li><li><p><strong><span>6～11 行目</span></strong><span> – 各リクエストに対して実行されるジェネレーター関数を定義します。その目的は、処理される各リクエストの</span><strong><span>HTTP メソッド</span></strong><span>、</span><strong><span>リソースパス URL</span></strong><span>、</span><strong><span>経過時間</span></strong><span>を含む行を出力することです。</span></p></li><li><p><strong><span>13～47 行目</span></strong><span> – ここでは、アプリケーションの RESTful API メソッドとその実装を定義しています。具体的には、アプリケーションは次の RESTful 呼び出しに応答できます。</span></p><ul><li><code>GET /api/users</code><span>: データベース内の</span><strong><span>ユーザー</span></strong><span>のコレクションを返します。</span></li><li><code>GET /api/users/:userId</code><span>: </span><strong><span>:userId</span></strong><span> によって識別される</span><strong><span>ユーザー</span></strong><span>の情報を返します。</span></li><li><code>GET /api/threads</code><span>: データベース内の</span><strong><span>スレッド</span></strong><span>のコレクションを返します。</span></li><li><code>GET /api/threads/:threadId</code><span>: </span><strong><span>:threadId</span></strong><span> によって識別される</span><strong><span>スレッド</span></strong><span>の情報を返します。</span></li><li><code>GET /api/posts/in-thread/:threadId</code><span>: </span><strong><span>:threadId</span></strong><span> によって識別される</span><strong><span>スレッド</span></strong><span>の</span><strong><span>投稿メッセージ</span></strong><span>のコレクションを返します。</span></li><li><code>GET /api/posts/by-user/:userId</code><span>: </span><strong><span>:userId</span></strong><span> によって識別される</span><strong><span>ユーザー</span></strong><span>の</span><strong><span>投稿メッセージ</span></strong><span>のコレクションを返します。</span></li><li><code>GET /api/</code><span>: </span><strong><span>API ready to receive requests</span>
+</strong><span> というメッセージを返します。</span></li><li><code>GET /</code><span>: </span><strong><span>Ready to receive requests</span></strong><span> というメッセージを返します。</span></li></ul></li><li><p><strong><span>52 行目</span></strong><span> – アプリケーションがリクエストをリッスンする</span><strong><span>ポート番号</span></strong><span>を定義します。</span></p></li></ul></li></ol><br><h3 id='タスク-23-アプリケーションを実行する'><span>タスク 2.3: アプリケーションを実行する</span></h3><p><span>このサブタスクでは、Node.js サーバーを起動してメッセージボードアプリケーションを実行します。次に、アプリケーションの RESTful API メソッドをいつかテストします。</span></p><ol start='14' ><li><p><span>ターミナルタブで、次のコマンドを入力して Node.js とアプリケーションを起動します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">npm</span> <span class="cm-builtin">start</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><p><img src="images/Start-node-js.png" width="600" alt="NPM の起動"></p><p>&nbsp;</p><p><span>サーバーが起動し、アプリケーションのエントリポイントである** index.js </span><strong><span>が実行されます。</span></strong><span>index.js** が初めて呼び出されると、リクエストを処理するための 2 つのクラスタースレッド、</span><strong><span>Leader</span></strong><span> と </span><strong><span>Worker</span></strong><span> が作成されます。</span></p><p><span>次に、現在のターミナルセッションがアクティブな状態のままで、2 つ目のターミナルタブを開き、アプリケーションの RESTful API をテストします。</span></p></li><li><p><span>下部のペインで </span><strong><span>(+)</span></strong><span> をクリックて [</span><strong><span>New Terminal</span></strong><span>] を選択し、新しいターミナルタブを開きます。これで、コマンドを入力できるターミナルが 2 つになりました。</span></p></li><li><p><strong><span>右側のターミナルタブ</span></strong><span>で、次のコマンドを入力して </span><code>/api/users</code><span> リソースを取得します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">curl</span> localhost:3000/api/users</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><p><span>RESTful の呼び出しが、メッセージボードのデータベース内の</span><strong><span>ユーザー</span></strong><span>のリストを含む JSON オブジェクトを返します。</span></p></li></ol><p><img src="images/Curl-get-users-on-direct-server.png" width="1000" alt="ユーザーリスト"></p><p>&nbsp;</p><ol start='17' ><li><strong><span>左側のターミナルタブ</span></strong><span>をクリックします。パス </span><code>/api/users</code><span> によって識別されるリソースの GET メソッドのリクエストを処理したという、server.js からの出力メッセージが表示されます。リクエストの処理には </span><strong><span>4</span></strong><span> ミリ秒かかりました。</span></li></ol><p><img src="images/Curl-get-users-on-direct-server-message.png" width="600" alt="ユーザー GET リクエスト"></p><p><span>   </span>&nbsp;</p><ol start='18' ><li><p><span>データベース内の </span><strong><span>4</span></strong><span> 番目のユーザーの情報のみを取得します。</span><strong><span>右側のターミナルタブ</span></strong><span>に次のコマンドを入力します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">curl</span> localhost:3000/api/users/4</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><p><span>データベース内の 4 番目のユーザーである </span><strong><span>Jake Storm</span></strong><span> の情報が返されます。</span></p></li></ol><p>&nbsp;</p><p><img src="images/Curl-get-one-user-on-direct-server.png" width="1000" alt="4 番目のユーザー"></p><p>&nbsp;</p><ol start='19' ><li><p><span>次に、現在データベースにあるすべての</span><strong><span>スレッド</span></strong><span>を取得します。</span><strong><span>右側のターミナルタブ</span></strong><span>に次のコマンドを入力します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">curl</span> localhost:3000/api/threads</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><p><span>データベース内のすべてのスレッドを含む JSON オブジェクトが返されます。</span></p></li></ol><p><img src="images/Curl-get-threads-on-direct-server.png" width="1000" alt="スレッド"></p><p><span>   </span>&nbsp;</p><ol start='20' ><li><p><span>最後に、データベース内の** 1 つ目** のスレッドの</span><strong><span>投稿</span></strong><span>をすべて取得します。</span><strong><span>右側のターミナルタブ</span></strong><span>に次のコマンドを入力します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">curl</span> localhost:3000/api/posts/in-thread/1</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><p><span>2 つのメッセージ投稿を含む JSON オブジェクトが返されます。</span></p></li></ol><p><img src="images/Curl-get-posts-in-thread-on-direct-server.png" width="1000" alt="投稿"></p><p><span>   </span>&nbsp;</p><ol start='21' ><li><span>Node.js サーバーを停止します。</span><strong><span>左側のターミナルタブ</span></strong><span>で </span><strong><span>Ctrl + C</span></strong><span> キーを押してサーバープロセスを終了します。</span></li></ol><p><span>これで、アプリケーションが GET リクエストに正しく応答することを確認できました。次のタスクでは、アプリケーションをコンテナ化します。</span></p><br><h2 id='タスク-3-モノリスを-amazon-ecs-用にコンテナ化する'><span>タスク 3: モノリスを Amazon ECS 用にコンテナ化する</span></h2><p><span>コンテナは、アプリケーションコードをデプロイメント単位でラップし、コードとその依存関係のスナップショットをキャプチャします。コンテナを使うことで、デプロイ環境にかかわらず、アプリケーションを迅速かつ確実に一貫性を持ってデプロイすることができます。</span></p><p><span>このタスクでは、モノリシックなメッセージボードのアプリケーションのコンテナイメージを作成し、それを Amazon Elastic Container Registry (Amazon ECR) にプッシュします。これにより、アプリケーションが Amazon ECS へのデプロイ用に処理されます。</span></p><p><span>具体的には、次の手順を実行します。</span></p><ul><li><span>アプリケーションを Docker コンテナ化用に処理する</span></li><li><span>リポジトリをプロビジョニングする</span></li><li><span>Docker イメージを構築してリポジトリにプッシュする</span></li></ul><br><h3 id='タスク-31-アプリケーションを-docker-コンテナ化用に処理する'><span>タスク 3.1: アプリケーションを Docker コンテナ化用に処理する</span></h3><p><span>メッセージボードアプリケーションを Docker コンテナに配置するには、アプリケーションに対して次の変更を行う必要があります。</span></p><ul><li><span>Node.js の</span><strong><span>クラスター</span></strong><span>機能を削除し、アプリケーションを単一プロセスの設計に変換します。Docker コンテナを使用することで、プロセスのクラスターではなく、コンテナごとに 1 つのプロセスを実行することが最終的な目的です。</span></li><li><span>アプリケーションの </span><strong><span>Dockerfile</span></strong><span> を作成します。このファイルは基本的に、アプリケーションの</span><strong><span>コンテナイメージ</span></strong><span>の構築手順を記述したビルドスクリプトです。</span></li></ul><p><span>AWS Cloud9 環境の </span><strong><span>2 つのコンテナに変換されたモノリス</span></strong><span> のフォルダに、コンテナ対応バージョンのアプリケーションが提供されます。数分かけてファイルを確認し、アプリケーションをコンテナ化するために、どのような変更が加えられたのかを把握します。</span></p><ol start='22' ><li><p><span>左側の [</span><strong><span>Environment</span></strong><span>] ウィンドウで </span><strong><span>2-containerized-monolith</span></strong><span> フォルダを展開し、</span><strong><span>package.json</span></strong><span> をダブルクリックしてエディタタブで開きます。</span></p><p><strong><span>7 行目</span></strong><span>を確認すると、アプリケーションのエントリポイントが </span><strong><span>index.js</span></strong><span> から </span><strong><span>server.js</span></strong><span> に変更されたことがわかります。</span><strong><span>index.js</span></strong><span> ファイルがアプリケーションフォルダからなくなっています。この </span><strong><span>index.js</span></strong><span> ファイルには Node.js の</span><strong><span>クラスター</span></strong><span>機能が含まれていましたが、この機能はもう使いません。</span></p></li><li><p><span>[</span><strong><span>Environment</span></strong><span>] ウィンドウで </span><strong><span>2-containerized-monolith</span></strong><span> フォルダを展開し、</span><strong><span>server.js</span></strong><span> ファイルをダブルクリップしてエディタタブで開きます。</span></p><p><span>コンテナ化されていないバージョンとの唯一の違いは、</span><strong><span>54 行目</span></strong><span>が追加されたことです。この行は、</span><strong><span>Worker が起動された</span></strong><span> というメッセージをアプリケーションの初回起動時に出力します。</span></p></li><li><p><span>[</span><strong><span>Environment</span></strong><span>] ウィンドウで </span><strong><span>2-containerized-monolith</span></strong><span> フォルダを展開し、</span><strong><span>Dockerfile</span></strong><span> をダブルクリックしてエディタタブで開きます。</span></p><p><span>このファイルには、アプリケーションのコンテナイメージの構築手順が含まれています。</span></p></li></ol><p><img src="images/Dockerfile-monolith.png" width="800" alt="Dockerfile"></p><p>&nbsp;</p><p><span>次の情報を確認してください。</span></p><ul><li><strong><span>1 行目</span></strong><span> – コンテナイメージが構築されるベースイメージ。ここでは、Node.js イメージである </span><strong><span>alpine-node</span></strong><span> です。</span></li><li><strong><span>3 行目</span></strong><span> – イメージ上のファイルシステムの作業ディレクトリを </span><strong><span>/srv</span></strong><span> に設定します。</span></li><li><strong><span>4 行目</span></strong><span> – </span><strong><span>2-containerized-monolith</span></strong><span> フォルダ (アプリケーションフォルダ) のコンテンツを、イメージのファイルシステムの (前の行で設定した) 現在の作業ディレクトリに追加します。</span></li><li><strong><span>5 行目</span></strong><span> – </span><strong><span>npm install</span></strong><span> コマンドを呼び出し、</span><strong><span>package.json</span></strong><span> ファイルで宣言したアプリケーションのライブラリ依存関係をすべてインストールします。</span></li><li><strong><span>7 行目</span></strong><span> - この行で、コンテナは実行時にポート 3000 をリッスンすることが Docker に通知されます。</span></li><li><strong><span>8 行目</span></strong><span> - この行で </span><strong><span>node server.js</span></strong><span> コマンドを実行するよう Docker に求めます。このコマンドによって、イメージ起動時にアプリケーションが起動されます。</span></li></ul><p><span>アプリケーションのコンテナイメージが構築される仕組みを理解したところで、ビルド後にイメージを配置する場所について詳しく見ていきます。</span></p><br><h3 id='タスク-32-リポジトリのプロビジョニング'><span>タスク 3.2: リポジトリのプロビジョニング</span></h3><p><span>Docker コンテナイメージは共有、バージョン管理、管理の簡易化を目指してリポジトリに保存するよう意図されています。デベロッパーは </span><strong><span>Amazon ECR</span></strong><span> を使用することで、Docker コンテナイメージを簡単に保存、管理、デプロイできます。さらに、Amazon ECR は Amazon ECS と統合されているため、Amazon ECS は本番デプロイ用のコンテナイメージを直接プルできます。</span></p><p><span>このサブタスクでは、メッセージボードアプリケーション用の Docker コンテナイメージを保存するリポジトリを Amazon ECR 内に作成します。</span></p><ol start='25' ><li><span>ブラウザの [</span><strong><span>Your environments</span></strong><span>] タブをクリックし [</span><strong><span>サービス</span></strong><span>] で [</span><strong><span>Elastic Container Registry</span></strong><span>] をクリックします。</span></li></ol><p><span>   Amazon ECR コンソールが開きます。</span></p><ol start='26' ><li><p><span>[</span><strong><span>リポジトリの作成</span></strong><span>] で [</span><strong><span>使用方法</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>リポジトリ名</span></strong><span>] ボックスに </span><code>mb-repo</code><span> と入力します。</span></p></li><li><p><span>[</span><strong><span>リポジトリを作成</span></strong><span>] をクリックします。</span></p><p><span>目的のリポジトリが正常に作成されたことを示すメッセージが、ページ上部に表示されます。</span></p><p><strong><span>注意:</span></strong><span> </span><strong><span>このメッセージが表示されているウィンドウを閉じないでください。</span></strong><span>次のサブタスクで使用します。</span></p></li></ol><br><h3 id='タスク-33-docker-イメージをビルドしてプッシュする'><span>タスク 3.3: Docker イメージをビルドしてプッシュする</span></h3><p><span>以上で、アプリケーションのコンテナイメージをビルドし、先ほど作成した Amazon ECR リポジトリにプッシュする準備ができました。</span></p><p><span>Amazon ECR コンソールの便利な特徴の 1 つは、コマンドテンプレートが用意されていて、イメージをビルドして新しいリポジトリにプッシュするためにすぐに使用できる点です。この用意された AWS CLI コマンドを次のステップで使用します。</span></p><ol start='29' ><li><p><span>次の手順を正常に実行するには、先に AWS CLI を更新しておく必要があります。具体的な手順は、ブラウザの [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに移動し、</span><strong><span>左の [Terminal] タブ</span></strong><span>に次のコマンドを入力します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">pip3 install awscli <span class="cm-attribute">--upgrade</span> <span class="cm-attribute">--user</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">export</span> <span class="cm-def">PATH</span><span class="cm-operator">=</span><span class="cm-def">$HOME</span>/.local/bin:<span class="cm-def">$PATH</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div><div class="CodeMirror-gutters" style="display: none; height: 46px;"></div></div></div></pre></li><li><p><span>ブラウザの [</span><strong><span>Amazon ECR</span></strong><span>] タブに戻り、ページ上部のメッセージウィンドウで、[</span><strong><span>プッシュコマンドの表示</span></strong><span>] をクリックします。</span></p><p><span>[</span><strong><span>mb-repo のプッシュコマンド</span></strong><span>] ポップアップウィンドウが開きます。このウィンドウには、</span><strong><span>mb-repo</span></strong><span> 用にカスタマイズされた AWS CLI コマンドが 4 つ一覧表示されます。これらは次を意図して作成されています。</span></p><ul><li><span>Amazon ECR レジストリに Docker クライアントを認証する</span></li><li><span>Docker イメージをビルドする</span></li><li><span>Docker イメージにタグを付ける</span></li><li><span>Docker イメージをリポジトリにプッシュする</span></li></ul></li></ol><p><span>ポップアップウィンドウでは、</span><strong><span>macOS/Linux</span></strong><span> 用と、</span><strong><span>Microsoft Windows</span></strong><span> 用の 2 つのバージョンのコマンドが提供されます。</span></p><ol start='31' ><li><p><span>これらのコマンドは AWS Cloud9 環境で実行することになるため、[</span><strong><span>macOS/Linux</span></strong><span>] タブが選択されていることを確認します。</span></p><p><span>まず Docker クライアントにログインするコマンドをレジストリにコピーして実行します。</span></p></li><li><p><span>ポップアップウィンドウで </span><strong><span>1 つ目</span></strong><span>のコマンドを見つけ、</span><strong><span>コピー</span></strong><span>アイコンをクリックして、そのコマンドをクリップボードにコピーします。</span></p><p><span>このコマンドは次の例のような形式です。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.25px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">$ aws</span> ecr get-login-password <span class="cm-attribute">--region</span> us-east-1 | docker login <span class="cm-attribute">--username</span> AWS <span class="cm-attribute">--password-stdin</span> <span class="cm-number">01234567890</span>.dkr.ecr.us-east-1.amazonaws.com/mb-repo</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div><div class="CodeMirror-gutters" style="display: none; height: 46px;"></div></div></div></pre></li><li><p><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></p></li><li><p><span>左の Terminal タブにコピーしたコマンドを貼り付け、</span><strong><span>Enter</span></strong><span> キーを押して実行します。</span></p><p><img src="images/Docker-client-login.png" width="800" alt="Docker クライアントにログイン"></p><p>&nbsp;</p><p><span>コマンドが正常に実行されると、</span><strong><span>Login Succeeded</span></strong><span> というメッセージが表示されます。表示される警告はすべて無視してかまいません。</span></p><p><span>次に、アプリケーションの Docker イメージをビルドします。</span></p><p><strong><span>注意</span></strong><span>: 手順のステップで特定の Terminal タブが記載されていない場合、</span><strong><span>左</span></strong><span>の Terminal タブを使用します。</span></p></li><li><p><span>Terminal タブで次のコマンドを実行し、ディレクトリを </span><strong><span>2-containerized-monolith</span></strong><span> フォルダに変更します。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> ~/environment/2-containerized-monolith</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre></li><li><p><span>[</span><strong><span>Amazon ECR</span></strong><span>] ブラウザタブに切り替えます。</span></p></li><li><p><span>[</span><strong><span>mb-repo プッシュコマンド</span></strong><span>] ウィンドウで、</span><strong><span>2 つ目</span></strong><span>のコマンドを見つけ、</span><strong><span>コピー</span></strong><span>アイコンをクリックしてそのコマンドをコピーします。</span></p><p><span>このコマンドは次の例のような形式です。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">docker build <span class="cm-attribute">-t</span> mb-repo .</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><p><span>コマンドの末尾に必ずピリオド (.) を打ってください。</span></p></li><li><p><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></p></li><li><p><span>Terminal タブでコピーしたコマンドを貼り付け、</span><strong><span>Enter</span></strong><span> キーを押して以下を実行します。</span></p><p><img src="images/Docker-build-mb-repo.png" width="600" alt="Docker イメージをビルドする"></p><p>&nbsp;</p><p><strong><span>build</span></strong><span> コマンドを使用すると、アプリケーションの </span><strong><span>Dockerfile</span></strong><span> に記載された手順が実行され、複数行の結果が出力されます。完了すると、</span><strong><span>Successfully built nnnnnnnnnn</span></strong><span>、</span><strong><span>Successfully tagged mb-repo:latest</span></strong><span>というメッセージが表示されます。</span></p><p><span>次に、イメージをリポジトリにプッシュできるように、イメージにリポジトリ URI のタグを付けます。</span></p></li><li><p><span>[</span><strong><span>Amazon ECR</span></strong><span>] ブラウザタブに切り替えます。</span></p></li><li><p><span>[</span><strong><span>mb-repo のプッシュコマンド</span></strong><span>] ウィンドウで </span><strong><span>3 つ目</span></strong><span>のコマンドを見つけ、</span><strong><span>コピー</span></strong><span>アイコンをクリックします。</span></p><p><span>このコマンドは次の例のような形式です。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">docker tag mb-repo:latest <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre></li><li><p><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></p></li><li><p><span>Terminal タブで、コピーしたコマンドを貼り付けて実行します。</span></p><p><img src="images/Docker-tag-mb-repo.png" width="1000" alt="イメージにタグを付ける"></p><p>&nbsp;</p><p><span>コマンドが正常に完了した場合、何も返されません。</span></p><p><span>最後に、コンテナイメージをアプリケーションのリポジトリにプッシュします。</span></p></li><li><p><span>[</span><strong><span>Amazon ECR</span></strong><span>] ブラウザタブに切り替えます。</span></p></li><li><p><span>[</span><strong><span>mb-repo のプッシュコマンド</span></strong><span>] ウィンドウで </span><strong><span>4 つ目</span></strong><span>のコマンドを見つけ、コピーします。</span></p><p><span>このコマンドは次の例のような形式です。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">docker push <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre></li><li><p><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></p></li><li><p><span>Terminal タブで、コピーしたコマンドを貼り付けて実行します。</span></p><p><img src="images/Docker-push-mb-repo.png" width="800" alt="コンテナをリポジトリにプッシュする"></p><p>&nbsp;</p><p><span>このコマンドは、イメージの各レイヤーがリポジトリにプッシュされるたびに、複数のメッセージを出力します。</span></p><p><span>次に、イメージが正常にアップロードされたことを確認します。</span></p></li><li><p><span>[</span><strong><span>Amazon ECR</span></strong><span>] ブラウザタブに切り替えます。</span></p></li><li><p><span>[</span><strong><span>mb-repo のプッシュコマンド</span></strong><span>] ウィンドウを閉じます。</span></p></li><li><p><span>[</span><strong><span>リポジトリ</span></strong><span>] の一覧で </span><strong><span>mb-repo</span></strong><span> をクリックします。</span></p><p><span>[</span><strong><span>イメージ</span></strong><span>] の一覧に、プッシュしたコンテナイメージが表示されます。イメージは </span><strong><span>latest</span></strong><span> タグで識別できます。</span></p><p><img src="images/ECR-mb-repo-images.png" width="600" alt="最新のイメージ"></p><p>&nbsp;</p></li><li><p><span>[</span><strong><span>イメージの URI</span></strong><span>] をメモします。[</span><strong><span>イメージ</span></strong><span>] の一覧でイメージの</span><strong><span>最新</span></strong><span>バージョンの [</span><strong><span>イメージ URI</span></strong><span>] を見つけ、</span><strong><span>コピー</span></strong><span>アイコンをクリックします。値をテキストエディタに貼り付けます。貼り付けた値は、後のステップで使用します。</span></p><p><span>メッセージボードアプリケーションのコンテナイメージが正常に作成され、Amazon ECR リポジトリにプッシュされました。</span></p></li></ol><br><h2 id='タスク-4-モノリスを-amazon-ecs-にデプロイする'><span>タスク 4: モノリスを Amazon ECS にデプロイする</span></h2><p><span>このタスクでは、コンテナ化されたモノリシックアプリケーションを Amazon ECS ランタイム環境にデプロイします。具体的には、Amazon ECS を使用して、Amazon Elastic Cloud (Amazon EC2) インスタンスのマネージドクラスターを作成します。このクラスターにアプリケーションコンテナをデプロイします。クラスターは Application Load Balancer のターゲットグループとして設定され、フェイルオーバーとスケーラビリティを実現します。</span></p><p><span>次の図は、コンテナ化されたモノリシックアプリケーションのデプロイメントアーキテクチャを示しています。また、このタスクで作成するリソースも示されています。</span></p><p><img src="images/Architecture-containerized-monolith.png" width="800" alt="コンテナ化されたモノリス"></p><p>&nbsp;</p><p><span>このタスクでは次の手順を実行します。</span></p><ul><li><span>Amazon ECS クラスターを作成する。</span></li><li><span>アプリケーションコンテナイメージのタスク定義を作成する。</span></li><li><span>Application Load Balancer を作成する。</span></li><li><span>モノリシックアプリケーションを ECS サービスとしてデプロイする。</span></li><li><span>コンテナ化されたモノリシックアプリケーションをテストする。</span></li></ul><br><h3 id='タスク-41-amazon-ecs-クラスターを作成する'><span>タスク 4.1: Amazon ECS クラスターを作成する</span></h3><p><span>Amazon ECS クラスターは EC2 インスタンスの論理的グループです。コンテナ化されたアプリケーションの構成要素であるタスクやサービスを実行できます。</span></p><p><span>このサブタスクでは、Amazon ECS コンソールを使用して ECS クラスターを作成します。コンソールのクラスター作成ウィザードを使用すると、ECS クラスター環境の作成に必要なインフラストラクチャコンポーネントをすべて作成できます。これらのコンポーネントには、Virtual Private Cloud (VPC)、サブネット、セキュリティグループ、インターネットゲートウェイ、AWS Identity and Access Management (IAM) ロールなどがあります。</span></p><ol start='52' ><li><p><strong><span>AWS マネジメントコンソール</span></strong><span>に戻り、[</span><strong><span>サービス</span></strong><span>] で [</span><strong><span>Elastic Container Service</span></strong><span>] をクリックします。</span></p></li><li><p><span>ナビゲーションペインで、[</span><strong><span>Amazon ECS</span></strong><span>] の下の [</span><strong><span>クラスター</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>クラスター</span></strong><span>] ページで、[</span><strong><span>クラスターの作成</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>クラスターテンプレートの選択</span></strong><span>] ページで、[</span><strong><span>EC2 Linux + ネットワーキング</span></strong><span>] カードをクリックします。</span></p></li><li><p><span>[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>クラスターの設定</span></strong><span>] ウィザードで以下を設定します。</span></p><ul><li><strong><span>クラスター名</span></strong><span>: </span><code>mb-ecs-cluster</code></li><li><strong><span>プロビジョニングモデル</span></strong><span>: </span><strong><span>オンデマンドインスタンス</span></strong></li><li><strong><span>ECS インスタンスタイプ</span></strong><span>: </span><strong><span>t2.micro</span></strong></li><li><strong><span>インスタンス数</span></strong><span>: </span><code>2</code></li><li><strong><span>VPC</span></strong><span>: </span><strong><span>新しい VPC の作成</span></strong></li><li><strong><span>CIDR ブロック</span></strong><span>: </span><code>10.32.0.0/16</code></li><li><strong><span>サブネット 1</span></strong><span>: </span><code>10.32.0.0/24</code></li><li><strong><span>サブネット 2</span></strong><span>: </span><code>10.32.1.0/24</code></li><li><strong><span>セキュリティグループ</span></strong><span>: </span><strong><span>新しいセキュリティグループを作成</span></strong></li><li><strong><span>セキュリティグループのインバウンドルール</span></strong><span>: デフォルト設定（ポート 80 へのあらゆる IP アドレスからのインバウンドトラフィックを許可）をそのまま使用します。</span></li></ul><p><strong><span>注意</span></strong><span>: [</span><strong><span>コンテナインスタンス IAM ロール</span></strong><span>] セクションに、</span><strong><span>ecsInstanceRole</span></strong><span> を作成して使用するアクセス許可を Amazon ECS に付与しようとしているというメッセージが表示されます。このロールは、EC2 インスタンスがさまざまな Amazon ECS アクションを呼び出すことを許可します。</span></p></li><li><p><span>[</span><strong><span>作成</span></strong><span>] をクリックします。</span></p><p><span>[</span><strong><span>起動ステータス</span></strong><span>] ページが開き、ウィザードが実行するタスクが表示されます。</span></p></li><li><p><span>すべてのタスクに、完了したことを示すチェックマークが入るまで待ちます。</span></p><p><img src="images/Cluster-creation-complete.png" width="800" alt="作成完了"></p></li></ol><p><span>   </span>&nbsp;</p><p><span>   ウィザードで作成されるリソースのリストは、[</span><strong><span>クラスターリソース</span></strong><span>] セクションに表示されます。</span></p><ol start='60' ><li><p><span>[</span><strong><span>クラスターの表示</span></strong><span>] をクリックします。</span></p><p><strong><span>mb-ecs-cluster</span></strong><span> の詳細のページが開きます。[</span><strong><span>ステータス</span></strong><span>] フィールドに [</span><strong><span>ACTIVE</span></strong><span>] という値が表示されます。</span></p></li><li><p><span>[</span><strong><span>ECS インスタンス</span></strong><span>] タブをクリックします。</span></p><p><span>クラスターの EC2 インスタンスが 2 つ（ウィザードで作成したもの）一覧表示されます。</span></p><p><strong><span>注意</span></strong><span>: 2 つの EC2 インスタンスがリストに表示されるまでに数分かかる場合があります。両方のインスタンスが表示されない場合は </span><strong><span>更新</span></strong><span> をクリックします。</span></p><p><img src="images/Cluster-EC2-instances.png" width="600" alt="クラスターの EC2 インスタンス"></p></li></ol><p>&nbsp;</p><ol start='62' ><li><p><span>[</span><strong><span>タスク</span></strong><span>] タブをクリックします。</span></p><p><span>クラスターにはまだタスクがデプロイされていません。タスクは次に作成します。</span></p></li></ol><br><h3 id='タスク-42-アプリケーションコンテナイメージのタスク定義を作成する'><span>タスク 4.2: アプリケーションコンテナイメージのタスク定義を作成する</span></h3><p><span>タスク定義は、Amazon ECS で Docker コンテナを実行する方法に関する構成設定のリストです。Amazon ECS に次のような多様な情報が通知されます。</span></p><ul><li><span>実行するコンテナイメージ</span></li><li><span>コンテナが必要とする CPU とメモリの分量</span></li><li><span>コンテナがトラフィックをリスニングするポート</span></li></ul><p><span>このサブタスクでは、メッセージボードアプリケーションのコンテナイメージのタスク定義を作成します。</span></p><ol start='63' ><li><span>[</span><strong><span>Amazon ECS</span></strong><span>] ブラウザタブのナビゲーションペインで [</span><strong><span>タスク定義</span></strong><span>] をクリックします。</span></li><li><span>[</span><strong><span>新しいタスク定義の作成</span></strong><span>] をクリックします。</span></li><li><span>[</span><strong><span>起動タイプの互換性の選択</span></strong><span>] ページで、[</span><strong><span>EC2</span></strong><span>] カードをクリックします。</span></li><li><span>[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></li></ol><p><span>   [</span><strong><span>タスクとコンテナ定義の設定</span></strong><span>] ページが開きます。</span></p><ol start='67' ><li><p><span>[</span><strong><span>タスク定義名</span></strong><span>] ボックスに </span><code>mb-task</code><span> と入力します。</span></p></li><li><p><span>[</span><strong><span>コンテナの定義</span></strong><span>] まで下へスクロールし [</span><strong><span>コンテナの追加</span></strong><span>] をクリックします。</span></p><p><span>[</span><strong><span>コンテナの追加</span></strong><span>] ウィンドウが開きます。</span></p></li><li><p><span>以下のように設定します。</span></p><ul><li><strong><span>コンテナ名</span></strong><span>: </span><code>mb-container</code></li><li><strong><span>イメージ</span></strong><span>: 前のステップでテキストエディタに貼り付けておいたアプリケーションコンテナイメージの</span><strong><span>イメージ URI</span></strong><span> を貼り付けます。</span></li><li><strong><span>メモリ制限</span></strong><span>: [</span><strong><span>ハード制限</span></strong><span>] を選択し、</span><code>256</code><span> と入力します（この設定でコンテナが使用できるメモリの上限を指定します）。</span></li><li><span>[</span><strong><span>ポートマッピング</span></strong><span>] &gt; [</span><strong><span>コンテナポート</span></strong><span>]: </span><code>3000</code><span>（この設定で、コンテナがリクエストを受け取るポートを指定します。[</span><strong><span>ホストポート</span></strong><span>] に値を入力する必要はありません）。</span></li></ul><p><span>[</span><strong><span>コンテナの追加</span></strong><span>] ウィンドウは、次のような表示となります。</span></p><p><img src="images/Create-task-definition-add-container.png" width="600" alt="コンテナの追加"></p></li></ol><p><span>   </span>&nbsp;</p><ol start='70' ><li><p><span>[</span><strong><span>追加</span></strong><span>] をクリックします。</span></p></li><li><p><span>下へスクロールして [</span><strong><span>作成</span></strong><span>] をクリックします。警告はすべて無視してかまいません。</span></p><p><span>タスク定義が正常に作成されたことを伝えるメッセージが表示されます。この定義が自動的にバージョン番号 </span><strong><span>1</span></strong><span> に割り当てられていることがわかります。</span></p><p><img src="images/Create-task-definition-complete.png" width="800" alt="タスク定義完了"></p><p>&nbsp;</p><p><span>以上で、クラスター全体にアプリケーションコンテナをデプロイする方法を Amazon ECS に示すタスク定義ができました。</span></p></li></ol><br><h3 id='タスク-43-application-load-balancer-を作成する'><span>タスク 4.3: Application Load Balancer を作成する</span></h3><p><span>次に、ECS クラスターで実行される EC2 インスタンスに受信リクエストを分散させる Application Load Balancer を作成します。このロードバランサーは ECS クラスターと同じ VPC に常駐し、ECS クラスターと同じセキュリティグループを使用します。</span></p><ol start='72' ><li><p><span>[</span><strong><span>Amazon ECS</span></strong><span>] ブラウザタブの [</span><strong><span>サービス</span></strong><span>] で [</span><strong><span>EC2</span></strong><span>] をクリックします。</span></p></li><li><p><span>ナビゲーションペインで [</span><strong><span>ロードバランサー</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ロードバランサーの作成</span></strong><span>] をクリックします。</span></p><p><span>[</span><strong><span>ロードバランサーの種類の選択</span></strong><span>] ページが開きます。</span></p></li><li><p><span>[</span><strong><span>Application Load Balancer</span></strong><span>] の [</span><strong><span>作成</span></strong><span>] をクリックします。</span></p><p><span>Application Load Balancer の作成ウィザードが開きます。</span></p></li><li><p><span>[</span><strong><span>手順 1: ロードバランサーの設定</span></strong><span>] で次のように設定します。</span></p><ul><li><p><strong><span>名前</span></strong><span>: </span><code>mb-load-balancer</code></p></li><li><p><span>[</span><strong><span>アベイラビリティーゾーン</span></strong><span>] セクションまでスクロールし、以下の設定値を入力します。</span></p><ul><li><strong><span>VPC</span></strong><span>: </span><strong><span>Amazon ECS クラスター VPC ID</span></strong><span> を選択します。この ID は </span><strong><span>vpc-nnnnnnnnnn (10.32.0.0/16)</span></strong><span> ような形式です</span></li><li><strong><span>アベイラビリティーゾーン</span></strong><span>: 両方のアベイラビリティーゾーンのチェックボックスをオンにします。</span></li></ul></li></ul></li><li><p><span>[</span><strong><span>次の手順: セキュリティ設定の構成</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>手順 2: セキュリティ設定の構成</span></strong><span>] で表示される、ロードバランサーがセキュアなリスナーを使用していないという警告は無視してかまいません。[</span><strong><span>次の手順: セキュリティグループの設定</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>手順 3: セキュリティグループの設定</span></strong><span>] で次のように設定します。</span></p><ul><li><p><strong><span>セキュリティグループの割り当て</span></strong><span>: </span><strong><span>既存のセキュリティグループを選択する</span></strong></p></li><li><p><strong><span>セキュリティグループ ID</span></strong><span>:</span></p><ul><li><strong><span>default</span></strong><span> を選択解除します。</span></li><li><strong><span>EC2ContainerService-mb-ecs-cluster-EcsSecurityGroup</span></strong><span> を選択します（これは ECS クラスターのセキュリティグループです）。</span></li></ul></li></ul></li><li><p><span>[</span><strong><span>次の手順: ルーティングの設定</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>手順 4: ルーティングの設定]</span></strong><span> で、次のように設定します。</span></p><ul><li><p><strong><span>ターゲットグループ</span></strong><span>: </span><strong><span>新しいターゲットグループ</span></strong><span> (ウィザードでロードバランサー用に新しいターゲットグループを作成します)</span></p></li><li><p><strong><span>名前</span></strong><span>: </span><code>mb-load-balancer-target-group</code></p></li><li><p><strong><span>プロトコル</span></strong><span> と </span><strong><span>ポート</span></strong><span>: これらの設定は、デフォルト値のまま [</span><strong><span>HTTP</span></strong><span>] と [</span><strong><span>80</span></strong><span>] を使用します。アプリケーションは RESTful HTTP リクエストを介したアクセスを想定しています。</span></p></li><li><p><span>[</span><strong><span>ヘルスチェックの詳細設定</span></strong><span>] を展開し、次の設定値を入力します。</span></p><ul><li><strong><span>正常のしきい値</span></strong><span>: </span><code>2</code><span>（この設定により、ロードバランサーは、ターゲットがロードバランサーからヘルスチェックの正常な結果を 2 つ連続で受信した場合を正常とみなします）</span></li><li><strong><span>間隔</span></strong><span>: </span><code>6</code><span>（この設定でヘルスチェックの頻度が 6 秒間に 1 回に増やされます）。</span></li></ul></li></ul></li><li><p><span>[</span><strong><span>次の手順: ターゲットの登録</span></strong><span>] をクリックします。</span></p></li><li><p><span>後のステップで </span><strong><span>ECS service</span></strong><span> をターゲットとして登録するため、[</span><strong><span>手順 5: ターゲットの登録</span></strong><span>] は飛ばしてかまいません。[</span><strong><span>次の手順: 確認</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>手順 6: 確認</span></strong><span>] ページで設定が正しいことを確認してから、[</span><strong><span>作成</span></strong><span>] をクリックします。</span></p><p><span>ロードバランサーが正常に作成されたことを示すメッセージが表示されます。</span></p></li><li><p><span>[</span><strong><span>閉じる</span></strong><span>] をクリックします</span></p><p><span>以上で </span><strong><span>mb-load-balancer</span></strong><span> がロードバランサーリストに登録されました。</span></p></li><li><p><span>しばらく待ってから、</span><strong><span>更新</span></strong><span>アイコンをクリックします。ロードバランサーの [</span><strong><span>状態</span></strong><span>] が [</span><strong><span>active</span></strong><span>] に変わります。</span></p></li></ol><p><img src="images/Create-load-balancer-complete.png" width="800" alt="ロードバランサーの作成完了"></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">&amp;nbsp;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">ロードバランサーの設定の仕上げとして、セキュリティグループを変更して、ロードバランサーと ECS クラスターにあるインスタンス間で内部通信を許可するポートを開きます。</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 92px;"></div><div class="CodeMirror-gutters" style="display: none; height: 92px;"></div></div></div></pre><ol start='87' ><li><p><span>下部の [</span><strong><span>説明</span></strong><span>] タブで [</span><strong><span>セキュリティ</span></strong><span>] セクションまで下へスクロールします。</span></p></li><li><p><span>[</span><strong><span>セキュリティグループ</span></strong><span>] の横にあるセキュリティグループ ID リンクをクリックします。このリンクは </span><strong><span>sg-nnnnnnnnnn</span></strong><span> と似た形式です。</span></p><p><span>ロードバランサーのセキュリティグループの詳細ページが開きます。</span></p></li><li><p><span>セキュリティグループ ID をクリップボードにコピーするには、[</span><strong><span>詳細</span></strong><span>] タブ（下部ペイン内）に移動し、目的の</span><strong><span>セキュリティグループ ID</span></strong><span> にカーソルを合わせて</span><strong><span>コピー</span></strong><span>アイコンをクリックします。</span></p><p><span>この ID は後のステップで使用します。</span></p></li><li><p><span>下部ペインで [</span><strong><span>インバウンドルール</span></strong><span>] タブをクリックします。</span></p><p><span>セキュリティグループのインバウンドルールが表示されます。</span></p></li><li><p><span>[</span><strong><span>インバウンドのルールを編集</span></strong><span>] をクリックします。</span></p><p><span>[</span><strong><span>インバウンドルールを編集</span></strong><span>] ダイアログウィンドウが開きます。</span></p></li><li><p><span>[</span><strong><span>ルールを追加</span></strong><span>] をクリックします。</span></p><p><span>ルールリストに新しい行が表示され、新しいルールを追加できます。この行は追加しようとしている</span><strong><span>カスタム TCP ルール</span></strong><span>が事前設定されています。</span></p></li><li><p><span>この新しい行に次の設定を追加します。</span></p><ul><li><strong><span>ポート範囲</span></strong><span>: </span><code>31000-61000</code></li><li><strong><span>リソースタイプ</span></strong><span>: </span><strong><span>カスタム</span></strong><span>。クリップボードのセキュリティグループ ID を貼り付けます。</span></li></ul></li><li><p><span>[</span><strong><span>ルールを保存</span></strong><span>] をクリックします。</span></p><p><span>セキュリティグループのインバウンドルールのリストに、新しく追加した行が表示されます。</span></p></li></ol><p><img src="images/Security-group-add-rule.png" width="800" alt="新しいルール"></p><p>&nbsp;</p><br><h3 id='タスク-44-ecs-サービスとしてモノリスをデプロイする'><span>タスク 4.4: ECS サービスとしてモノリスをデプロイする</span></h3><p><span>これまでに Amazon ECS インフラストラクチャに必要なコンポーネントはすべて作成しました。このサブタスクでは、コンテナ化されたモノリスアプリケーションを Amazon ECS サービスとしてクラスターにデプロイします。</span></p><p><span>ECS サービスを使用すると、ECS クラスターで指定された数のタスク定義インスタンスの実行、維持が同時にできます。何らかの理由でタスクの 1 つが失敗したり停止したりした場合、ECS サービススケジューラが、別のタスク定義インスタンスを起動して置き換えます。このため、サービスで指定されたタスクの数が維持されます。</span></p><p><span>今度は Amazon ECS コンソールを使用して、メッセージボードアプリケーションのタスク定義用の ECS サービスを作成します。</span></p><ol start='95' ><li><strong><span>AWS マネジメントコンソール</span></strong><span>の [</span><strong><span>サービス</span></strong><span>] で [</span><strong><span>Elastic Container Service</span></strong><span>] をクリックします。</span></li><li><span>ナビゲーションペインで [</span><strong><span>タスク定義</span></strong><span>] をクリックします。</span></li><li><span>[</span><strong><span>タスク定義</span></strong><span>] の一覧から </span><strong><span>mb-task</span></strong><span> リンクをクリックします。</span></li></ol><p><span>   ページが開かれ、タスク定義の使用可能な改訂が表示されます。</span></p><ol start='98' ><li><p><strong><span>mb-task:1</span></strong><span> を選択し、[</span><strong><span>アクション</span></strong><span>] ドロップダウンメニューから [</span><strong><span>サービスの作成</span></strong><span>] を選択します。</span></p></li><li><p><span>[</span><strong><span>ステップ 1: サービスの設定</span></strong><span>] で次のように設定します。</span></p><ul><li><strong><span>起動タイプ</span></strong><span>: </span><strong><span>EC2</span></strong><span>（あなたはコンテナ化されたアプリケーションを直接 EC2 インスタンスのクラスターで実行しています）。</span></li><li><strong><span>サービス名</span></strong><span>: </span><code>mb-ecs-service</code></li><li><strong><span>サービスタイプ</span></strong><span>: </span><strong><span>REPLICA</span></strong><span>（この設定で、必要なタスク数を ECS クラスター全体に対して指定、維持するスケジュール設定方式を確立します）</span></li><li><strong><span>タスク数</span></strong><span>: </span><code>1</code><span>（通常、クラスターを最大限まで活用するには、予想されるリクエストの負担を考慮しつつ大きめの数を入力します。ただし、この演習をシンプルにするため、クラスターで常に 1 つのタスクを起動し、維持するよう指定します）</span></li></ul></li><li><p><span>[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 2: ネットワーク構成</span></strong><span>] で次のように設定します。</span></p><ul><li><strong><span>ロードバランサーの種類</span></strong><span>: </span><strong><span>Application Load Balancer</span></strong><span>（先ほど設定した </span><strong><span>mb-load-balancer</span></strong><span> を使用してサービス内でタスクの負荷を調整します）</span></li><li><strong><span>サービス用の IAM ロールの選択</span></strong><span>: </span><strong><span>新しいロールの作成</span></strong></li><li><strong><span>ロードバランサー名</span></strong><span>: </span><strong><span>mb-load-balancer</span></strong></li><li><strong><span>コンテナの選択</span></strong><span>: このフィールドには、タスク定義と関連付けられた適切なコンテナ情報が事前入力されています。[</span><strong><span>ロードバランサーに追加</span></strong><span>] をクリックします（この設定でコンテナとロードバランサーのリスナーの 1 つが関連付けられます）。</span></li><li><strong><span>プロダクションリスナーポート</span></strong><span>: </span><strong><span>80:HTTP</span></strong><span>（この設定で、ポート 80 での HTTP トラフィックに対するロードバランサーリスナーとコンテナが関連付けられます）</span></li><li><strong><span>ターゲットグループ名</span></strong><span>: </span><strong><span>mb-load-balancer-target-group</span></strong></li></ul></li><li><p><span>[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 3: Auto Scaling (オプション)</span></strong><span>] では [</span><strong><span>次のステップ</span></strong><span>] をクリックします。追加で自動スケーリングを設定する必要はありません。</span></p></li><li><p><span>[</span><strong><span>確認</span></strong><span>] ページで設定が正しいことを確認し、[</span><strong><span>サービスの作成</span></strong><span>] をクリックします。</span></p><p><span>[</span><strong><span>起動ステータス</span></strong><span>] ページが開き、ウィザードが実行するタスクが表示されます。</span></p></li><li><p><span>すべてのタスクに、完了したことを示すチェックマークが入るまで待ちます。</span></p><p><img src="images/Create-ecs-service-complete.png" width="600" alt="サービス作成完了"></p><p>&nbsp;</p></li><li><p><strong><span>mb-ecs-service</span></strong><span> の詳細ページを開くには、[</span><strong><span>サービスの表示</span></strong><span>] をクリックします。</span></p><p><span>[</span><strong><span>タスク</span></strong><span>] タブに、現在コンテナを実行しているタスクが 1 つあり、そのタスクの </span><strong><span>ACTIVE</span></strong><span> ステータスが表示されます。</span></p></li><li><p><span>少し時間をおいて</span><strong><span>更新</span></strong><span>アイコンをクリックすると、タスクの [</span><strong><span>前回のステータス</span></strong><span>] が [</span><strong><span>RUNNING</span></strong><span>] になります。</span></p><p><img src="images/Create-ecs-service-task-running.png" width="600" alt="サービスタスク実行中"></p><p>&nbsp;</p><p><span>これで、コンテナ化したモノリスを ECS サービスとしてクラスターにデプロイできました。</span></p></li></ol><br><h3 id='タスク-45-コンテナ化したモノリスをテストする'><span>タスク 4.5: コンテナ化したモノリスをテストする</span></h3><p><span>ここからは、メッセージボードアプリケーションの RESTful API メソッドをウェブブラウザからテストして、デプロイを検証します。</span></p><p><span>最初に、ロードバランサーの URL を探してメモします。</span></p><ol start='108' ><li><p><span>[</span><strong><span>Amazon ECS</span></strong><span>コンソール] のブラウザタブの [</span><strong><span>サービス</span></strong><span>] で [</span><strong><span>EC2</span></strong><span>] をクリックします。</span></p></li><li><p><span>ナビゲーションペインで [</span><strong><span>ロードバランサー</span></strong><span>] をクリックします。</span></p><p><span>ロードバランサーの一覧に </span><strong><span>mb-load-balancer</span></strong><span> が表示されます。</span></p></li><li><p><span>下の [</span><strong><span>説明</span></strong><span>] タブで [</span><strong><span>DNS 名</span></strong><span>] の</span><strong><span>コピー</span></strong><span>アイコンをクリックします。</span></p></li><li><p><span>DNS 名の値をテキストエディタに貼り付け、</span><code>Load Balancer DNS Name</code><span> というラベルを付けておきます。この値は後の手順で複数回使用します。</span></p></li><li><p><span>新しいブラウザタブを開いて DNS 名をアドレスバーに貼り付け、</span><strong><span>Enter</span></strong><span> キーを押します。</span></p></li></ol><p><img src="images/Containerized-monolith-test-root.png" width="600" alt="コンテナ化されたモノリスのルート"></p><p>&nbsp;</p><p><span>ページが開き、</span><strong><span>Ready to receive requests</span></strong><span> というメッセージが表示されます。このメッセージは、GET リクエストにリソースのパスが含まれていない場合に、メッセージボードアプリケーションによって返されます。</span></p><p><strong><span>トラブルシューティングのヒント</span></strong><span>: サーバー関連の HTTP エラーコードが表示された場合は、しばらく待ってからもう一度お試しください。コンテナの状態が正常であることを登録し、トラフィックの受信が開始するまで数分かかる場合があります。</span></p><ol start='113' ><li><span>ブラウザのアドレスバーで、URL の末尾に </span><code>/api</code><span> を追加し、</span><strong><span>Enter</span></strong><span> キーを押します。</span></li></ol><p><img src="images/Containerized-monolith-test-api.png" width="600" alt="コンテナ化されたモノリスの API"></p><p>&nbsp;</p><p><span>アプリケーションから、</span><strong><span>API ready to receive requests</span></strong><span> というメッセージが返されます。</span></p><ol start='114' ><li><span>データベースのすべての</span><strong><span>ユーザー</span></strong><span>を取得できるかテストします。ブラウザのアドレスバーで、URL の末尾に </span><code>/users</code><span> を追加して </span><strong><span>Enter</span></strong><span> キーを押します。</span></li></ol><p><img src="images/Containerized-monolith-test-users.png" width="600" alt="コンテナ化されたモノリスのユーザー"></p><p>&nbsp;</p><p><span>アプリケーションが、データベース内の 4 人のユーザーをリストした JSON オブジェクトを返します。</span></p><ol start='115' ><li><span>データベースの </span><strong><span>1 人目のユーザー</span></strong><span>の情報を取得します。ブラウザのアドレスバーで、URL の末尾に </span><code>/1</code><span> を追加し、</span><strong><span>Enter</span></strong><span> キーを押します。</span></li></ol><p><img src="images/Containerized-monolith-test-user-1.png" width="600" alt="コンテナ化されたモノリスのユーザー 1"></p><p>&nbsp;</p><p><span>アプリケーションから、データベースの 1 人目として保存されたユーザー </span><strong><span>Marcerline Singer</span></strong><span> の情報を含む JSON オブジェクトが返されます。</span></p><ol start='116' ><li><span>次に、データベース内すべての</span><strong><span>スレッド</span></strong><span>を取得します。ブラウザのアドレスバーで、ロードバランサー DNS 名の後の URI を </span><code>/api/threads</code><span> に変更し、</span><strong><span>Enter</span></strong><span> キーを押します。</span></li></ol><p><img src="images/Containerized-monolith-test-threads.png" width="600" alt="コンテナ化されたモノリスのスレッド"></p><p>&nbsp;</p><p><span>アプリケーションが、データベース内の 3 つのスレッドを含む JSON オブジェクトを返します。</span></p><ol start='117' ><li><span>最後に、データベースの </span><strong><span>2 つ目のスレッド</span></strong><span>の</span><strong><span>投稿</span></strong><span>を取得します。ブラウザのアドレスバーで、ロードバランサー DNS 名の後の URI を </span><code>/api/posts/in-thread/2</code><span> に変更し、</span><strong><span>Enter</span></strong><span> キーを押します。</span></li></ol><p><img src="images/Containerized-monolith-test-posts-in-thread-2.png" width="600" alt="コンテナ化されたモノリスのスレッド 2 の投稿"></p><p>&nbsp;</p><p><span>アプリケーションから、データベースの 2 つ目のスレッドに投稿されたメッセージを含む JSON オブジェクトが返されます。これらのメッセージはベーカリーに関するものです。</span></p><ol start='118' ><li><p><span>必要に応じて、アプリケーションが提供できる他のリソースパスを呼び出します。テストが終了したら、アプリケーションのブラウザタブを閉じます。</span></p><p><span>これで、モノリシックなメッセージボードアプリケーションをコンテナ化し、Amazon ECS 環境にデプロイすることができました。</span></p></li></ol><br><h2 id='タスク-5-モノリスをリファクタリングする'><span>タスク 5: モノリスをリファクタリングする</span></h2><p><span>このタスクでは、コンテナ化されたモノリシックなメッセージボードアプリケーションを、相互接続された複数のマイクロサービスに分割します。次に、各マイクロサービスのイメージを Amazon ECR リポジトリにプッシュします。各マイクロサービスは、アプリケーションの単一のビジネス機能を実行し、他のマイクロサービスから独立してスケーリングできます。アプリケーションは、アプリケーションの API が提供するオブジェクトの最上位クラスとなる以下のマイクロサービスに分割されます。</span></p><ul><li><strong><span>Users</span></strong><span> マイクロサービス – すべての</span><strong><span>ユーザー</span></strong><span>関連の REST パス (</span><code>/api/users/**</code><span>) のサービス</span></li><li><strong><span>Threads</span></strong><span> マイクロサービス – すべての</span><strong><span>スレッド</span></strong><span>関連の REST パス (</span><code>/api/threads/**</code><span>) のサービス</span></li><li><strong><span>Posts</span></strong><span> マイクロサービス – すべての</span><strong><span>投稿</span></strong><span>関連の REST パス (</span><code>/api/posts/**</code><span>) のサービス</span></li></ul><p><span>リファクタリングにかかる時間を短縮するため、お使いの AWS Cloud9 環境の </span><strong><span>3-containerized-microservices</span></strong><span> フォルダに、マイクロサービスバージョンのアプリケーションが用意されています。</span></p><p><span>このタスクでは次の手順を実行します。</span></p><ul><li><span>リファクタリングされたマイクロサービスアプリケーションを確認する</span></li><li><span>マイクロサービスごとに Amazon ECR リポジトリをプロビジョニングする</span></li><li><span>各マイクロサービスのイメージをビルドしてプッシュする</span></li></ul><br><h3 id='タスク-51-リファクタリングされたマイクロサービスアプリケーションを確認する'><span>タスク 5.1: リファクタリングされたマイクロサービスアプリケーションを確認する</span></h3><p><span>このサブタスクでは、数分時間をとって、ファイルを確認し、アプリケーションをマイクロサービスにリファクタリングするためにどのような変更が行われたのかを把握します。</span></p><ol start='119' ><li><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></li><li><span>左側の [</span><strong><span>Environment</span></strong><span>] ペインで </span><strong><span>3-containerized-microservices</span></strong><span> フォルダを展開します。</span></li></ol><p><span>   このフォルダには、3 つのアプリケーションマイクロサービスを表す </span><strong><span>posts</span></strong><span>、</span><strong><span>threads</span></strong><span>、</span><strong><span>users</span></strong><span>という 3 つのサブフォルダがあります。各サブフォルダには、対応するマイクロサービスの実装ファイルが含まれています。</span></p><ol start='121' ><li><strong><span>posts</span></strong><span>、</span><strong><span>threads</span></strong><span>、</span><strong><span>users</span></strong><span> サブフォルダを展開します。</span></li></ol><p><img src="images/Environment-window-containerized-microservices.png" width="400" alt="マイクロサービスのサブフォルダ"></p><p>&nbsp;</p><p><span>各サブフォルダには、コンテナ化されたモノリスのアプリケーションファイルと同じもののコピーが含まれていることが分かります。各サブフォルダ内の </span><strong><span>db.json</span></strong><span>、</span><strong><span>Dockerfile</span></strong><span>、</span><strong><span>package.json</span></strong><span> ファイルは、コンテナ化されたモノリスのファイルと同じものです。</span><strong><span>server.js</span></strong><span> ファイルは、リファクタリングにより変更された唯一のファイルです。</span></p><ol start='122' ><li><strong><span>users</span></strong><span> サブフォルダで、</span><strong><span>server.js</span></strong><span> をダブルクリックして Editor タブで開きます。</span></li></ol><p><span>   </span><strong><span>13～20 行目</span></strong><span>は、プログラムが</span><strong><span>ユーザー</span></strong><span>のリソースパスに関連する API メソッドと実装のみを定義しているという点で、コンテナ化されたモノリスとは異なります。</span></p><ol start='123' ><li><strong><span>threads</span></strong><span> サブフォルダで、</span><strong><span>server.js</span></strong><span> をダブルクリックして Editor タブで開きます。</span></li></ol><p><span>   </span><strong><span>13～20 行目</span></strong><span>は、プログラムが</span><strong><span>スレッド</span></strong><span>のリソースパスに関連する API メソッドと実装のみを定義しているという点で、コンテナ化されたモノリスとは異なります。</span></p><ol start='124' ><li><strong><span>posts</span></strong><span> サブフォルダで、</span><strong><span>server.js</span></strong><span> をダブルクリックして Editor タブで開きます。</span></li></ol><p><span>   </span><strong><span>13～21 行目</span></strong><span>は、プログラムが</span><strong><span>投稿</span></strong><span>のリソースパスに関連する API メソッドと実装のみを定義しているという点で、コンテナ化されたモノリスとは異なります。</span></p><p><span>   つまり、アプリケーションをリファクタリングに唯一変更する必要があるのは、モノリシックバージョンの </span><strong><span>server.js</span></strong><span> のRESTful API メソッドハンドラーを、3 つの個別の </span><strong><span>server.js</span></strong><span> ファイルに分割することです。それぞれの </span><strong><span>server.js</span></strong><span> ファイルには、API メソッドハンドラーの関連サブセットが含まれています。</span></p><br><h3 id='タスク-52-マイクロサービスごとに-amazon-ecr-リポジトリをプロビジョニングする'><span>タスク 5.2: マイクロサービスごとに Amazon ECR リポジトリをプロビジョニングする</span></h3><p><span>コンテナ化されたモノリスと同様の手順で、アプリケーションマイクロサービスそれぞれに Amazon ECR リポジトリを作成します。</span></p><p><span>ここからは、</span><strong><span>Users</span></strong><span>、</span><strong><span>Threads</span></strong><span>、</span><strong><span>Posts</span></strong><span> マイクロサービスのコンテナイメージのリポジトリを作成します。</span></p><ol start='125' ><li><span>Amazon ECR コンソールを開くには、</span><strong><span>AWS マネジメントコンソール</span></strong><span>のタブに移動し、[</span><strong><span>サービス</span></strong><span>] で [</span><strong><span>Elastic Container Registry</span></strong><span>] をクリックします。</span></li><li><span>[</span><strong><span>リポジトリを作成</span></strong><span>] をクリックします。</span></li><li><span>[</span><strong><span>リポジトリ名</span></strong><span>] に </span><code>mb-users-repo</code><span> と入力します。</span></li><li><span>[</span><strong><span>リポジトリを作成</span></strong><span>] をクリックします。ページ上部に、リポジトリが正常に作成されたことを示すメッセージが表示されます。</span></li><li><span>前の手順を繰り返して、残り 2 つのマイクロサービス用にさらに 2 つのリポジトリを作成します。その際、次のリポジトリ情報を使用します。</span></li></ol><ul><li><strong><span>Threads</span></strong><span> のリポジトリ名: </span><code>mb-threads-repo</code></li><li><strong><span>Posts</span></strong><span> のリポジトリ名: </span><code>mb-posts-repo</code></li></ul><p><span>   3 つのマイクロサービスのリポジトリを作成すると、リポジトリの一覧は次の例のようになります。</span></p><p><img src="images/Create-microservice-repositories.png" width="600" alt="マイクロサービスのリポジトリ"></p><br><h3 id='タスク-53-各マイクロサービスのイメージをビルドしてプッシュする'><span>タスク 5.3: 各マイクロサービスのイメージをビルドしてプッシュする</span></h3><p><span>次に、各マイクロサービスのコンテナイメージを構築し、対応するリポジトリにプッシュします。以下の手順では、そのまま使えるコマンドを Amazon ECR コンソールで使ってタスクを完了します。</span></p><br><h4 id='users-マイクロサービスをビルドしてプッシュする'><strong><span>Users</span></strong><span> マイクロサービスをビルドしてプッシュする</span></h4><p><span>まず、</span><strong><span>Users</span></strong><span> マイクロサービスのコンテナイメージを構築します。</span></p><ol start='130' ><li><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></li><li><span>Terminal タブに次のコマンドを入力し、ディレクトリを </span><strong><span>3-containerized-microservices/users</span></strong><span> フォルダに変更します。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> ~/environment/3-containerized-microservices/users</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><ol start='132' ><li><span>[</span><strong><span>Amazon ECR</span></strong><span>] ブラウザタブに切り替えます。</span></li><li><span>リポジトリの一覧で </span><strong><span>mb-users-repo</span></strong><span> をクリックします。</span></li><li><span>ページ上部にある [</span><strong><span>プッシュコマンドの表示</span></strong><span>] をクリックします。</span></li></ol><p><span>   [</span><strong><span>mb-users-repo のプッシュコマンド</span></strong><span>] ポップアップウィンドウが開きます。</span></p><p><span>   まず、マイクロサービスの Docker イメージをビルドします。</span></p><ol start='135' ><li><span>[</span><strong><span>mb-users-repo のプッシュコマンド</span></strong><span>] ウィンドウで、</span><strong><span>2 つ目</span></strong><span>のコマンドの横にある</span><strong><span>コピー</span></strong><span>アイコンを選択して、コマンドをクリップボードにコピーします。コマンドは次のようになります。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">docker build <span class="cm-attribute">-t</span> mb-users-repo .</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><p><strong><span>注</span></strong><span>: コマンドの末尾に必ずピリオド (.) を打ってください。</span></p><ol start='136' ><li><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></li><li><span>Terminal タブでコピーしたコマンドを貼り付け、</span><strong><span>Enter</span></strong><span> キーを押して実行します。</span></li></ol><p><span>   コマンドが終了すると、</span><strong><span>Successfully built nnnnnnnnnn </span></strong><span>、</span><strong><span>Successfully tagged mb-users-repo:latest</span></strong><span> というメッセージが表示されます。</span></p><p><span>   次に、イメージをリポジトリにプッシュできるように、イメージにリポジトリ URI のタグを付けます。</span></p><ol start='138' ><li><span>[</span><strong><span>Amazon ECR</span></strong><span>] ブラウザタブに切り替えます。</span></li><li><span>[</span><strong><span>mb-users-repo のプッシュコマンド</span></strong><span>] ウィンドウで、</span><strong><span>3 つ目</span></strong><span>のコマンドの横にある</span><strong><span>コピー</span></strong><span>アイコンを選択して、コマンドをクリップボードにコピーします。コマンドは次のようになります。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.25px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">docker tag mb-users-repo:latest <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-users-<span class="cm-tab" role="presentation" cm-text="	">    </span>repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div><div class="CodeMirror-gutters" style="display: none; height: 46px;"></div></div></div></pre><ol start='140' ><li><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></li><li><span>Terminal タブでコピーしたコマンドを貼り付け、</span><strong><span>Enter</span></strong><span> キーを押して実行します。</span></li></ol><p><span>   コマンドが正常に完了した場合、何も返されません。</span></p><p><span>   最後に、コンテナイメージをマイクロサービスリポジトリにプッシュします。</span></p><ol start='142' ><li><span>[</span><strong><span>Amazon ECR</span></strong><span>] ブラウザタブに切り替えます。</span></li><li><span>[</span><strong><span>mb-users-repo のプッシュコマンド</span></strong><span>] ウィンドウで、</span><strong><span>4 つ目</span></strong><span>のコマンドの横にある</span><strong><span>コピー</span></strong><span>アイコンを選択して、コマンドをクリップボードにコピーします。コマンドは次のようになります。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">docker push <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-users-repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><ol start='144' ><li><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></li><li><span>Terminal タブでコピーしたコマンドを貼り付け、</span><strong><span>Enter</span></strong><span> キーを押して実行します。</span></li></ol><p><span>   このコマンドは、イメージの各レイヤーがリポジトリにプッシュされるたびに、複数のメッセージを出力します。</span></p><p><span>   イメージが正常にアップロードされたことを確認します。</span></p><ol start='146' ><li><span>[</span><strong><span>Amazon ECR コンソール</span></strong><span>] ブラウザタブに切り替えて、[</span><strong><span>mb-users-repo のプッシュコマンド</span></strong><span>] ポップアップウィンドウを閉じます。</span></li><li><strong><span>更新</span></strong><span>アイコンをクリックします。</span></li></ol><p><span>   [</span><strong><span>イメージ</span></strong><span>] の一覧に、プッシュしたコンテナイメージが表示されます。イメージは </span><strong><span>latest</span></strong><span> タグで識別できます。</span></p><ol start='148' ><li><strong><span>イメージ URI</span></strong><span> をメモします。[</span><strong><span>イメージ</span></strong><span>] の一覧</span><strong><span>最新</span></strong><span>バージョンの </span><strong><span>イメージ URI</span></strong><span> を見つけ、その横にある</span><strong><span>コピー</span></strong><span>アイコンをクリックします。</span></li><li><span>テキストエディタに値を貼り付け、</span><code>Users Image URI</code><span> というラベルを付けます。この値は後の手順で使用します。</span></li></ol><br><h4 id='threads-マイクロサービスをビルドしてプッシュする'><strong><span>Threads</span></strong><span> マイクロサービスをビルドしてプッシュする</span></h4><p><span>次に、</span><strong><span>Threads</span></strong><span> マイクロサービスのコンテナイメージをビルドしてプッシュします。</span></p><ol start='150' ><li><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></li><li><span>Terminal タブで次のコマンドを入力し、ディレクトリを </span><strong><span>3-containerized-microservices//threads</span></strong><span> フォルダに変更します。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> ~/environment/3-containerized-microservices/threads</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><ol start='152' ><li><span>[</span><strong><span>Amazon ECR</span></strong><span>] ブラウザタブに切り替えます。</span></li><li><span>ナビゲーションペインで [</span><strong><span>Repositories</span></strong><span>] をクリックし、リポジトリの一覧から </span><strong><span>mb-threads-repo</span></strong><span> をクリックします。</span></li><li><span>[</span><strong><span>プッシュコマンドの表示</span></strong><span>] をクリックします。</span></li></ol><p><span>   [</span><strong><span>mb-threads-repo のプッシュコマンド</span></strong><span>] ポップアップウィンドウが開きます。</span></p><p><span>   まず、マイクロサービスの Docker イメージをビルドします。</span></p><ol start='155' ><li><span>ポップアップウィンドウで、</span><strong><span>コピー</span></strong><span>アイコンを選択して </span><strong><span>2 つ目</span></strong><span>のコマンドをコピーします。コマンドは次のようになります。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">docker build <span class="cm-attribute">-t</span> mb-threads-repo .</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><p><strong><span>注</span></strong><span>: コマンドの末尾に必ずピリオド (.) を打ってください。</span></p><ol start='156' ><li><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></li><li><span>Terminal タブで、コピーしたコマンドを貼り付けて実行します。</span></li></ol><p><span>   コマンドが終了すると、</span><strong><span>Successfully built nnnnnnnnnn</span></strong><span>、</span><strong><span>Successfully tagged mb-threads-repo:latest</span></strong><span> というメッセージが表示されます。</span></p><p><span>   次に、イメージをリポジトリにプッシュできるように、イメージにリポジトリ URI のタグを付けます。</span></p><ol start='158' ><li><span>[</span><strong><span>Amazon ECR</span></strong><span>] ブラウザタブに切り替えます。</span></li><li><span>ポップアップウィンドウで、</span><strong><span>コピー</span></strong><span>アイコンを選択して </span><strong><span>3 つ目</span></strong><span>のコマンドをコピーします。コマンドは次のようになります。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.25px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">docker tag mb-threads-repo:latest <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-threads-repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div><div class="CodeMirror-gutters" style="display: none; height: 46px;"></div></div></div></pre><ol start='160' ><li><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></li><li><span>Terminal タブで、コピーしたコマンドを貼り付けて実行します。</span></li></ol><p><span>   コマンドが正常に完了した場合、何も返されません。</span></p><p><span>   最後に、コンテナイメージをマイクロサービスのリポジトリにプッシュします。</span></p><ol start='162' ><li><span>[</span><strong><span>Amazon ECR</span></strong><span>] ブラウザタブに切り替えます。</span></li><li><span>ポップアップウィンドウで、</span><strong><span>コピー</span></strong><span>アイコンを選択して </span><strong><span>4 つ目</span></strong><span>のコマンドをコピーします。コマンドは次のようになります。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">docker push <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-threads-repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><ol start='164' ><li><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></li><li><span>[</span><strong><span>Terminal</span></strong><span>] タブで、コピーしたコマンドを貼り付けて実行します。</span></li></ol><p><span>   このコマンドは、イメージの各レイヤーがリポジトリにプッシュされるたびに、複数のメッセージを出力します。</span></p><p><span>   イメージが正常にアップロードされたことを確認します。</span></p><ol start='166' ><li><span>[</span><strong><span>Amazon ECR</span></strong><span> コンソール] のブラウザタブに切り替えて、[</span><strong><span>mb-threads-repo のプッシュコマンド</span></strong><span>] ポップアップウィンドウを閉じます。</span></li><li><strong><span>更新</span></strong><span>アイコンをクリックします。</span></li></ol><p><span>   [</span><strong><span>イメージ</span></strong><span>] の一覧に、プッシュしたコンテナイメージが表示されます。イメージは </span><strong><span>latest</span></strong><span> タグで識別できます。</span></p><ol start='168' ><li><strong><span>イメージ URI</span></strong><span>をメモします。[</span><strong><span>イメージ</span></strong><span>] の一覧で、</span><strong><span>最新</span></strong><span>バージョンの</span><strong><span>イメージ URI</span></strong><span> に移動し、</span><strong><span>コピー</span></strong><span>アイコンをクリックします。</span></li><li><span>テキストエディタに値を貼り付け、</span><code>Threads Image URI</code><span> というラベルを付けておきます。この値は後の手順で使用します。</span></li></ol><br><h4 id='posts-マイクロサービスをビルドしてプッシュする'><strong><span>Posts</span></strong><span> マイクロサービスをビルドしてプッシュする</span></h4><p><span>最後に、</span><strong><span>Posts</span></strong><span>マイクロサービスのコンテナイメージをビルドしてプッシュします。</span></p><ol start='170' ><li><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></li><li><span>Terminal タブに次のコマンドを入力し、ディレクトリを </span><strong><span>3-containerized-microservices/posts</span></strong><span> フォルダに変更します。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> ~/environment/3-containerized-microservices/posts</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><ol start='172' ><li><span>[</span><strong><span>Amazon ECR</span></strong><span>] ブラウザタブに切り替えます。</span></li><li><span>ナビゲーションペインで、[</span><strong><span>Repositories</span></strong><span>] をクリックします。</span></li><li><span>リポジトリの一覧で </span><strong><span>mb-posts-repo</span></strong><span> をクリックします。</span></li><li><span>[</span><strong><span>プッシュコマンドを表示</span></strong><span>] をクリックします。</span></li></ol><p><span>   [</span><strong><span>mb-posts-repo のプッシュコマンド</span></strong><span>] ポップアップウィンドウが開きます。</span></p><p><span>   まず、マイクロサービスの Docker イメージをビルドします。</span></p><ol start='176' ><li><span>ポップアップウィンドウで </span><strong><span>2 つ目</span></strong><span>のコマンドをコピーします。コマンドは次のようになります。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">docker build <span class="cm-attribute">-t</span> mb-posts-repo .</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><p><strong><span>注</span></strong><span>: コマンドの末尾に必ずピリオド (.) を打ってください。</span></p><ol start='177' ><li><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></li><li><span>Terminal タブで、コピーしたコマンドを貼り付けて実行します。</span></li></ol><p><span>   コマンドが終了すると、</span><strong><span>Successfully built nnnnnnnnnn </span></strong><span>、</span><strong><span>Successfully tagged mb-posts-repo:latest</span></strong><span> というメッセージが表示されます。</span></p><p><span>   次に、イメージをリポジトリにプッシュできるように、イメージにリポジトリ URI のタグを付けます。</span></p><ol start='179' ><li><span>[</span><strong><span>Amazon ECR</span></strong><span>] ブラウザタブに切り替えます。</span></li><li><span>ポップアップウィンドウで </span><strong><span>3 つ目</span></strong><span>のコマンドをコピーします。コマンドは次のようになります。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.25px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">docker tag mb-posts-repo:latest <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-posts-repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 46px;"></div><div class="CodeMirror-gutters" style="display: none; height: 46px;"></div></div></div></pre><ol start='181' ><li><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></li><li><span>[</span><strong><span>Terminal</span></strong><span>] タブで、コピーしたコマンドを貼り付けて実行します。</span></li></ol><p><span>   コマンドが正常に完了した場合、何も返されません。</span></p><p><span>   最後に、コンテナイメージをマイクロサービスのリポジトリにプッシュします。</span></p><ol start='183' ><li><span>[</span><strong><span>Amazon ECR</span></strong><span>] ブラウザタブに切り替えます。</span></li><li><span>ポップアップウィンドウで </span><strong><span>4 つ目</span></strong><span>のコマンドをコピーします。コマンドは次のようになります。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">docker push <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-posts-repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre><ol start='185' ><li><span>ブラウザを [</span><strong><span>AWS Cloud9 IDE</span></strong><span>] タブに切り替えます。</span></li><li><span>[</span><strong><span>Terminal</span></strong><span>] タブで、コピーしたコマンドを貼り付けて実行します。</span></li></ol><p><span>   このコマンドは、イメージの各レイヤーがリポジトリにプッシュされるたびに、複数のメッセージを出力します。</span></p><p><span>   イメージが正常にアップロードされたことを確認します。</span></p><ol start='187' ><li><span>[</span><strong><span>Amazon ECR</span></strong><span>] ブラウザタブに切り替えます。</span></li><li><span>[</span><span>** (mb-posts-repo のプッシュコマンド**] ポップアップウィンドウを閉じます。</span></li><li><strong><span>更新</span></strong><span>アイコンをクリックします。</span></li></ol><p><span>   [</span><strong><span>イメージ</span></strong><span>] の一覧に、プッシュしたコンテナイメージが表示されます。イメージは </span><strong><span>latest</span></strong><span> タグが付いています。</span></p><ol start='190' ><li><span>イメージ URI をメモします。[</span><strong><span>イメージ</span></strong><span>] の一覧で、イメージの</span><strong><span>最新</span></strong><span>バージョンの</span><strong><span>イメージ URI</span></strong><span> をコピーします。</span></li><li><span>テキストエディタに値を貼り付け、</span><code>Posts Image URI</code><span> というラベルを付けておきます。この値は後の手順で使用します。</span></li></ol><p><span>   これで、アプリケーション内にマイクロサービスのコンテナイメージをビルドし、Amazon ECR にプッシュすることができました。</span></p><br><h2 id='タスク-6-コンテナ化されたマイクロサービスをデプロイする'><span>タスク 6: コンテナ化されたマイクロサービスをデプロイする</span></h2><p><span>このタスクでは、コンテナ化されたマイクロサービスから構成されるメッセージボードアプリケーションを、コンテナ化されたモノリスで使用したのと同じ ECS クラスターにデプロイします。また、Application Load Balancer も同じものを使用します。ただし、このタスクでは、リクエスト URI パスに基づき、リクエストが異なるターゲットグループ（各マイクロサービスコンテナにつき 1 つ）にルーティングされるよう設定します。</span></p><p><span>次の図は、コンテナ化されたマイクロサービスアプリケーションのデプロイメントアーキテクチャを示しています。また、これから作成するリソースも示されています。</span></p><p><img src="images/Architecture-containerized-microservices.png" width="800" alt="マイクロサービスのアーキテクチャ"></p><p>&nbsp;</p><p><span>このタスクでは次の手順を実行します。</span></p><ul><li><span>各マイクロサービスのタスク定義を作成する。</span></li><li><span>Application Load Balancer を設定する。</span></li><li><span>マイクロサービスを ECS サービスとしてデプロイする。</span></li><li><span>デプロイを検証する。</span></li></ul><br><h3 id='タスク-61-各マイクロサービスのタスク定義を作成する'><span>タスク 6.1: 各マイクロサービスのタスク定義を作成する</span></h3><p><span>アプリケーション内のマイクロサービスは互いに独立して実行されるよう設計されています。そのため、それぞれに独自のタスク定義が必要です。このサブタスクでは、個々のマイクロサービスのコンテナイメージを実行する 3 つのタスク定義を作成します。</span></p><br><h4 id='users-コンテナのタスク定義を作成する'><strong><span>Users</span></strong><span> コンテナのタスク定義を作成する</span></h4><p><span>まずは、</span><strong><span>Users</span></strong><span> マイクロサービスコンテナのタスク定義から作成していきます。</span></p><ol start='192' ><li><p><strong><span>Amazon ECR</span></strong><span> コンソールのナビゲーションペインで [</span><strong><span>Task definitions</span></strong><span>] をクリックし、次に [</span><strong><span>新しいタスク定義の作成</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 1: 起動タイプの互換性の選択</span></strong><span>] ページで、[</span><strong><span>EC2</span></strong><span>] カードをクリックします。</span></p></li><li><p><span>[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 2: タスクとコンテナの定義の設定</span></strong><span>] で、次のように設定します。</span></p><ul><li><p><strong><span>タスク定義名</span></strong><span>: </span><code>mb-users-task</code></p></li><li><p><span>[</span><strong><span>コンテナの定義</span></strong><span>] セクションまでスクロールし、[</span><strong><span>コンテナの追加</span></strong><span>] をクリックします。[</span><strong><span>コンテナの追加</span></strong><span>] ページで次の設定を入力します。</span></p><ul><li><strong><span>コンテナ名</span></strong><span>: </span><code>mb-users-container</code></li><li><strong><span>イメージ</span></strong><span>: 前の手順でテキストエディタにコピーした </span><strong><span>Users のイメージ URI</span></strong><span> を貼り付けます。</span></li><li><strong><span>メモリ制限</span></strong><span>: [</span><strong><span>ハード制限</span></strong><span>]が選択されていることを確認し、</span><code>256</code><span> と入力します（この設定でコンテナが使用できるメモリの上限を指定します）。</span></li><li><span>[</span><strong><span>ポートマッピング</span></strong><span>] &gt; [</span><strong><span>コンテナポート</span></strong><span>]: </span><code>3000</code><span>（この設定で、コンテナがリクエストを受信するポートを指定します）</span></li></ul></li><li><p><span>[</span><strong><span>追加</span></strong><span>] をクリックします。</span></p></li></ul></li><li><p><span>下にスクロールして [</span><strong><span>作成</span></strong><span>] をクリックします。</span></p><p><span>タスク定義が正常に作成されたことを伝えるメッセージが表示されます。この定義が自動的にバージョン番号 </span><strong><span>1</span></strong><span> に割り当てられていることがわかります。</span></p></li></ol><br><h4 id='threads-コンテナのタスク定義を作成する'><strong><span>Threads</span></strong><span> コンテナのタスク定義を作成する</span></h4><p><span>次に、</span><strong><span>Threads</span></strong><span> マイクロコンテナのタスク定義を作成します。</span></p><ol start='197' ><li><p><span>ナビゲーションペインで [</span><strong><span>タスク定義</span></strong><span>] をクリックし、次に [</span><strong><span>新しいタスク定義の作成</span></strong><span>] の順にクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 1: 起動タイプの互換性の選択</span></strong><span>] で [</span><strong><span>EC2</span></strong><span>] カードをクリックします。</span></p></li><li><p><span>[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 2: タスクとコンテナ定義の設定</span></strong><span>] で、次のように設定します。</span></p><ul><li><p><strong><span>タスク定義名</span></strong><span>: </span><code>mb-threads-task</code></p></li><li><p><span>[</span><strong><span>コンテナの定義</span></strong><span>] セクションまでスクロールし、[</span><strong><span>コンテナの追加</span></strong><span>] をクリックします。開いた [</span><strong><span>コンテナの追加</span></strong><span>] ページで次の設定を入力します。</span></p><ul><li><strong><span>コンテナ名</span></strong><span>: </span><code>mb-threads-container</code></li><li><strong><span>イメージ</span></strong><span>: テキストエディタにコピーした </span><strong><span>Threads のイメージ URI</span></strong><span> を貼り付けます。</span></li><li><strong><span>メモリ制限</span></strong><span>: [</span><strong><span>ハード制限</span></strong><span>] が選択されていることを確認し、</span><code>256</code><span>と入力します。</span></li><li><span>[</span><strong><span>ポートマッピング</span></strong><span>] &gt; [</span><strong><span>コンテナポート</span></strong><span>]: </span><code>3000</code></li></ul></li><li><p><span>[</span><strong><span>追加</span></strong><span>] をクリックします。</span></p></li></ul></li><li><p><span>下にスクロールして [</span><strong><span>作成</span></strong><span>] をクリックします。</span></p><p><span>タスク定義が正常に作成されたことを伝えるメッセージが表示されます。タスク定義に自動的にバージョン番号 </span><strong><span>1</span></strong><span> が割り当てられます。</span></p></li></ol><br><h4 id='posts-コンテナのタスク定義を作成する'><strong><span>Posts</span></strong><span> コンテナのタスク定義を作成する</span></h4><p><span>最後に、</span><strong><span>Posts</span></strong><span> マイクロサービスコンテナのタスク定義を作成します。</span></p><ol start='202' ><li><p><span>ナビゲーションペインで [</span><strong><span>タスク定義</span></strong><span>] を選択し、次に [</span><strong><span>新しいタスク定義の作成</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 1: 起動タイプの互換性の選択</span></strong><span>] で [</span><strong><span>EC2</span></strong><span>] カードをクリックします。</span></p></li><li><p><span>[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 2: タスクとコンテナ定義の設定</span></strong><span>] で、次のように設定します。</span></p><ul><li><p><strong><span>タスク定義名</span></strong><span>: </span><code>mb-posts-task</code></p></li><li><p><span>[</span><strong><span>コンテナの定義</span></strong><span>] セクションまでスクロールし、[</span><strong><span>コンテナの追加</span></strong><span>] をクリックします。[</span><strong><span>コンテナの追加</span></strong><span>] ページで次の設定を入力します。</span></p><ul><li><strong><span>コンテナ名</span></strong><span>: </span><code>mb-posts-container</code></li><li><strong><span>イメージ</span></strong><span>: コピーした </span><strong><span>Posts のイメージ URI</span></strong><span> を貼り付けます。</span></li><li><strong><span>メモリ制限</span></strong><span>: [</span><strong><span>ハード制限</span></strong><span>] が選択されていることを確認し、</span><code>256</code><span> と入力します</span></li><li><span>[</span><strong><span>ポートマッピング</span></strong><span>] &gt; [</span><strong><span>コンテナポート</span></strong><span>]: </span><code>3000</code></li><li><span>[</span><strong><span>追加</span></strong><span>] をクリックします。</span></li></ul></li></ul></li><li><p><span>下にスクロールして [</span><strong><span>作成</span></strong><span>] をクリックします。</span></p><p><span>タスク定義が正常に作成されたことを伝えるメッセージが表示されます。タスク定義に自動的にバージョン番号 </span><strong><span>1</span></strong><span> が割り当てられます。</span></p></li></ol><br><h3 id='タスク-62-application-load-balancer-を設定する'><span>タスク 6.2: Application Load Balancer を設定する</span></h3><p><span>このサブタスクでは、リクエストをそれぞれコンテナにルーティングできるように、マイクロサービスごとに新しいロードバランサーターゲットグループを作成します。また、リクエストの URI パスに基づき、正しいターゲットグループにリクエストが転送されるようにロードバランサーリスナールールを設定します。</span></p><br><h4 id='users-マイクロサービスのターゲットグループを作成する'><strong><span>Users</span></strong><span> マイクロサービスのターゲットグループを作成する</span></h4><ol start='207' ><li><p><span>[</span><strong><span>Amazon ECS コンソール</span></strong><span>] ブラウザタブの [</span><strong><span>サービス</span></strong><span>] で [</span><strong><span>EC2</span></strong><span>] をクリックします。</span></p></li><li><p><span>ナビゲーションペインで  [</span><strong><span>ターゲットグループ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ターゲットグループの作成</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>グループの詳細の指定</span></strong><span>] で次のように設定します。</span></p><ul><li><p><strong><span>ターゲットグループ名</span></strong><span>: </span><code>mb-lb-users-target-group</code></p></li><li><p><strong><span>VPC</span></strong><span>: </span><strong><span>ロードバランサー VPC ID</span></strong><span> を選択します。これは </span><strong><span>vpc-nnnnnnnnnn (10.32.0.0/16)</span></strong><span> のような形式で表されます。</span></p></li><li><p><span>下にスクロールして [</span><strong><span>ヘルスチェックの詳細設定</span></strong><span>] を展開し、次の設定値を入力します。</span></p><ul><li><strong><span>正常のしきい値</span></strong><span>: </span><code>2</code><span>（ターゲットから正常なヘルスチェックを 2 つ連続で受信した場合、そのターゲットを正常とみなすようロードバランサーに指定します）</span></li><li><strong><span>間隔</span></strong><span>: </span><code>6</code><span>（ヘルスチェックの頻度が 6 秒間に 1 回に増やされます）</span></li></ul></li></ul></li><li><p><span>[</span><strong><span>次へ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ターゲットの登録</span></strong><span>] で、[</span><strong><span>ターゲットグループの作成</span></strong><span>] をクリックします。</span></p><p><span>ウィンドウが開き、ターゲットグループが正常に作成されたことを示すメッセージが表示されます。</span></p></li><li><p><span>メッセージウィンドウを閉じます。</span></p><p><strong><span>mb-lb-users-target-group</span></strong><span> がターゲットグループリストに表示されます。</span></p></li></ol><br><h4 id='threads-マイクロサービスのターゲットグループを作成する'><strong><span>Threads</span></strong><span> マイクロサービスのターゲットグループを作成する</span></h4><p><span>次に、</span><strong><span>Threads</span></strong><span> マイクロサービスのターゲットグループを作成します。</span></p><ol start='214' ><li><p><span>[</span><strong><span>ターゲットグループの作成</span></strong><span>] を選択し、[</span><strong><span>グループの詳細の指定</span></strong><span>] で次のように設定します。</span></p><ul><li><p><strong><span>ターゲットグループ名</span></strong><span>: </span><code>mb-lb-threads-target-group</code></p></li><li><p><strong><span>VPC</span></strong><span>: </span><strong><span>ロードバランサー VPC ID</span></strong><span> を選択します。これは、</span><strong><span>vpc-nnnnnnnnnn (10.32.0.0/16)</span></strong><span> のような形式で表されます</span></p></li><li><p><span>[</span><strong><span>ヘルスチェックの詳細設定</span></strong><span>] セクションで、次の設定値を入力します。</span></p><ul><li><strong><span>正常のしきい値</span></strong><span>: </span><code>2</code></li><li><strong><span>間隔</span></strong><span>: </span><code>6</code></li></ul></li></ul></li><li><p><span>[</span><strong><span>次へ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ターゲットの登録</span></strong><span>] で、[</span><strong><span>ターゲットグループの作成</span></strong><span>] をクリックします。</span></p><p><span>ウィンドウが開き、ターゲットグループが正常に作成されたことを示すメッセージが表示されます。</span></p></li><li><p><span>メッセージウィンドウを閉じます。</span></p><p><strong><span>mb-lb-threads-target-group</span></strong><span> がターゲットグループリストに表示されます。</span></p></li></ol><p>&nbsp;</p><br><h4 id='posts-マイクロサービスのターゲットグループを作成する'><strong><span>Posts</span></strong><span> マイクロサービスのターゲットグループを作成する</span></h4><p><span>最後に、</span><strong><span>Posts</span></strong><span> マイクロサービスのターゲットグループを作成します。</span></p><ol start='218' ><li><p><span>[</span><strong><span>ターゲットグループの作成</span></strong><span>] をクリックし、次のように設定します。</span></p><ul><li><p><strong><span>ターゲットグループ名</span></strong><span>: </span><code>mb-lb-posts-target-group</code></p></li><li><p><strong><span>VPC</span></strong><span>: </span><strong><span>ロードバランサー VPC ID</span></strong><span> を選択します。これは、</span><strong><span>vpc-nnnnnnnnnn (10.32.0.0/16)</span></strong><span> のような形式で表されます。</span></p></li><li><p><span>[</span><strong><span>ヘルスチェックの詳細設定</span></strong><span>] セクションで、次の設定値を入力します。</span></p><ul><li><strong><span>正常のしきい値</span></strong><span>: </span><code>2</code></li><li><strong><span>間隔</span></strong><span>: </span><code>6</code></li></ul></li></ul></li><li><p><span>[</span><strong><span>次へ</span></strong><span>] をクリックしてから、[</span><strong><span>ターゲットグループの作成</span></strong><span>] をクリックします。</span></p><p><span>ウィンドウが開き、ターゲットグループが正常に作成されたことを示すメッセージが表示されます。</span></p></li><li><p><span>メッセージウィンドウを閉じます。</span></p><p><strong><span>mb-lb-posts-target-group</span></strong><span> がターゲットグループリストに表示されます。</span></p></li></ol><br><h4 id='ロードバランサーのリスナールールを作成する'><strong><span>ロードバランサーのリスナールールを作成する</span></strong></h4><p><span>これで、各マイクロサービスのターゲットグループを作成できました。ここからは、ロードバランサーのリスナールールを変更します。これらのルールは、リクエスト URI パスに基づいて、各ロードバランサーにトラフィックをルーティングします。</span></p><ol start='221' ><li><span>ナビゲーションペインの [</span><strong><span>ロードバランサー</span></strong><span>] をクリックし、</span><strong><span>mb-load-balancer</span></strong><span> の詳細ページを開きます。</span></li><li><span>下部のペインで、[</span><strong><span>リスナー</span></strong><span>] タブをクリックします。</span></li><li><strong><span>HTTP:80</span></strong><span> リスナーの行で、[</span><strong><span>ルールの表示/編集</span></strong><span>] をクリックします。</span></li></ol><p><span>ルールエディタが開きます。</span></p><p><span>ここで、リクエスト URI が </span><code>/api/users**</code><span> のパターンに一致した場合は、リクエストを </span><strong><span>Users</span></strong><span> ターゲットグループに転送するという新しいルールを作成します。</span></p><ol start='224' ><li><span>エディタ上部のツールバーで、</span><strong><span>ルールの追加</span></strong><span>アイコン (</span><strong><span>+</span></strong><span>) をクリックして新しいルールを追加します。</span></li></ol><p><span>[</span><strong><span>ルールの挿入</span></strong><span>] 行がルールリストに表示されます。</span></p><ol start='225' ><li><span>[</span><strong><span>ルールの挿入</span></strong><span>] をクリックします。</span></li></ol><p><strong><span>IF</span></strong><span> 条件と </span><strong><span>THEN</span></strong><span> アクションを追加できるルールボックスが表示されます。</span></p><ol start='226' ><li><p><span>次のようにルールを設定します。</span></p><ul><li><strong><span>条件の追加</span></strong><span>: </span><strong><span>パス</span></strong></li><li><strong><span>=</span></strong><span>: </span><code>/api/users**</code></li><li><strong><span>アクションの追加</span></strong><span>: </span><strong><span>転送先</span></strong></li><li><strong><span>ターゲットグループ</span></strong><span>: </span><strong><span>mb-lb-users-target-group</span></strong></li></ul></li></ol><p><span>ルールボックスは、次の例のようになります。</span></p><p><img src="images/Create-listener-rule-users.png" width="800" alt="ユーザーのリスナールール"></p><p>&nbsp;</p><ol start='227' ><li><p><span>[</span><strong><span>保存</span></strong><span>] をクリックします。</span></p><p><span>ルールが、ルール </span><strong><span>1</span></strong><span> としてリストに追加されます。</span></p><p><span>次に、リクエスト URI が </span><code>/api/threads**</code><span> のパターンに一致した場合は、リクエストを </span><strong><span>Threads</span></strong><span> ターゲットグループに転送するというルールを作成します。</span></p></li><li><p><strong><span>ルール 1</span></strong><span> の下の行で、[</span><strong><span>ルールの挿入</span></strong><span>] をクリックします。</span></p><p><span>ルールエディタが開きます。</span></p></li><li><p><span>次のようにルールを設定します。</span></p><ul><li><strong><span>条件の追加</span></strong><span>: </span><strong><span>パス</span></strong></li><li><strong><span>=</span></strong><span>: </span><code>/api/threads**</code></li><li><strong><span>アクションの追加</span></strong><span>: </span><strong><span>転送先</span></strong></li><li><strong><span>ターゲットグループ</span></strong><span>: </span><strong><span>mb-lb-threads-target-group</span></strong></li></ul></li><li><p><span>[</span><strong><span>保存</span></strong><span>] をクリックします。</span></p><p><span>ルールが、ルール </span><strong><span>2</span></strong><span> としてリストに追加されます。</span></p><p><span>次に、リクエスト URI が </span><code>/api/posts**</code><span> のパターンに一致した場合は、リクエストを </span><strong><span>Posts</span></strong><span> ターゲットグループに転送するという新しいルールを作成します。</span></p></li><li><p><strong><span>ルール 2</span></strong><span> の下の行で、[</span><strong><span>ルールの挿入</span></strong><span>] をクリックします。</span></p></li><li><p><span>ルールエディタで、次のように設定します。</span></p><ul><li><strong><span>条件の追加</span></strong><span>: </span><strong><span>パス</span></strong></li><li><strong><span>=</span></strong><span>: </span><code>/api/posts**</code></li><li><strong><span>アクションの追加</span></strong><span>: </span><strong><span>転送先</span></strong></li><li><strong><span>ターゲットグループ</span></strong><span>: </span><strong><span>mb-lb-posts-target-group</span></strong></li></ul></li><li><p><span>[</span><strong><span>保存</span></strong><span>] をクリックします。</span></p><p><span>ルールが、ルール </span><strong><span>3</span></strong><span> としてリストに追加されます。</span></p><p><span>次に、リクエスト URI が </span><code>/</code><span> または </span><code>/api</code><span> のパターンと一致する場合は、リクエストを </span><strong><span>Users</span></strong><span> ターゲットグループに転送する新しいルールを作成します。ターゲットグループに対応するマイクロサービスによりどちらのタイプのリクエストも処理できるため、アプリケーションのどのターゲットグループでも選択できます。</span></p></li><li><p><strong><span>ルール 3</span></strong><span> の下の行で、[</span><strong><span>ルールの挿入</span></strong><span>] をクリックします。</span></p></li><li><p><span>ルールエディタで、次のように設定します。</span></p><ul><li><strong><span>条件の追加</span></strong><span>: </span><strong><span>パス</span></strong></li><li><strong><span>=</span></strong><span>: </span><code>/</code></li><li><strong><span>または</span></strong><span>: </span><code>/api</code></li><li><strong><span>アクションの追加</span></strong><span>: </span><strong><span>転送先</span></strong></li><li><strong><span>ターゲットグループ]</span></strong><span>: </span><strong><span>mb-lb-users-target-group</span></strong></li></ul></li><li><p><span>[</span><strong><span>保存</span></strong><span>] をクリックします。</span></p><p><span>ルールが、ルール </span><strong><span>4</span></strong><span> としてリストに追加されます。</span></p><p><span>最後に、</span><strong><span>最後</span></strong><span>というデフォルトのルールのアクションを変更して、その他のリクエスト URI が </span><strong><span>Invalid request</span></strong><span> というメッセージを表示するエラーページを返すようにします。</span></p></li><li><p><span>上部のツールバーで、</span><strong><span>ルールの編集</span></strong><span>アイコン (鉛筆) をクリックします。</span></p><p><span>ルールエディタが編集モードに切り替わります。</span></p></li><li><p><strong><span>最後</span></strong><span>ルールまでスクロールして、</span><strong><span>ルールの編集</span></strong><span>アイコン (鉛筆) をクリックします。</span></p></li><li><p><span>ルールエディタで、次のように設定します。</span></p><ul><li><strong><span>Then</span></strong><span>: </span><strong><span>削除</span></strong><span>アイコン (ゴミ箱) をクリックして、既存の [</span><strong><span>転送先</span></strong><span>] アクションを削除します。</span></li><li><strong><span>アクションの追加</span></strong><span>: </span><strong><span>固定レスポンスを返す</span></strong></li><li><strong><span>レスポンスコード</span></strong><span>: </span><code>200</code></li><li><strong><span>レスポンス本文</span></strong><span>: </span><code>Invalid request</code></li></ul></li></ol><p><span>ルールエディタは、次の例のようになります。</span></p><p><img src="images/Create-listener-rule-invalid-request.png" width="800" alt="無効なリクエスト"></p><p>&nbsp;</p><ol start='240' ><li><span>[</span><strong><span>更新</span></strong><span>] をクリックします。</span></li></ol><p><span>ルールが正常に更新されたことを示すメッセージが表示されます。</span></p><p><span>ロードバランサーの最終的なリスナールールは次の例のようになります。</span></p><p><img src="images/Create-listener-rules-final.png" width="800" alt="最終的なリスナールール"></p><p>&nbsp;</p><ol start='241' ><li><p><span>ロードバランサーの詳細ページに戻るには、ウィンドウの左上にある</span><strong><span>戻る矢印</span></strong><span>アイコンをクリックします。</span></p><p><span>ロードバランサーの設定の変更が完了しました。</span></p></li></ol><br><h3 id='タスク-63-マイクロサービスを-ecs-サービスとしてデプロイする'><span>タスク 6.3: マイクロサービスを ECS サービスとしてデプロイする</span></h3><p><span>このサブタスクでは、3 つのマイクロサービスを ECS サービスとしてクラスターにデプロイします。</span></p><h4 id='users-の-ecs-サービスを作成する'><strong><span>Users</span></strong><span> の ECS サービスを作成する</span></h4><p><span>ここで、</span><strong><span>Users</span></strong><span> マイクロサービスのタスク定義用の ECS サービスを作成します。</span></p><ol start='242' ><li><p><span>[</span><strong><span>Amazon EC2 コンソール</span></strong><span>] ブラウザタブの [</span><strong><span>サービス</span></strong><span>] で [</span><strong><span>Elastic Container Service</span></strong><span>] をクリックします。</span></p></li><li><p><span>クラスターの一覧から </span><strong><span>mb-ecs-cluster</span></strong><span> をクリックします。</span></p></li><li><p><span>[</span><strong><span>サービス</span></strong><span>] タブで [</span><strong><span>作成</span></strong><span>] をクリックして、[</span><strong><span>サービスの作成</span></strong><span>] ウィザードを開きます。</span></p></li><li><p><span>[</span><strong><span>ステップ 1: サービスの設定</span></strong><span>] で次のように設定します。</span></p><ul><li><strong><span>起動タイプ</span></strong><span>: </span><strong><span>EC2</span></strong><span>（EC2 インスタンスのクラスターで、コンテナ化されたマイクロサービスを直接実行します）</span></li><li><strong><span>タスク定義</span></strong><span>の</span><strong><span>ファミリー</span></strong><span>: </span><strong><span>mb-users-sk</span></strong></li><li><strong><span>サービス名</span></strong><span>: </span><code>mb-users-ecs-service</code></li><li><strong><span>サービスタイプ</span></strong><span>: </span><strong><span>REPLICA</span></strong><span>（必要なタスク数を ECS クラスター全体に対して指定、維持するスケジュール設定方式を確立します）</span></li><li><strong><span>タスクの数</span></strong><span>: </span><code>1</code><span>（この演習では、常に 1 つのタスクをクラスターで起動、維持します）</span></li></ul></li><li><p><span>[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 2: ネットワーク構成</span></strong><span>] で次のように設定します。</span></p><ul><li><strong><span>ロードバランサーの種類</span></strong><span>: </span><strong><span>Application Load Balancer</span></strong><span>（設定した </span><strong><span>mb-load-balancer</span></strong><span> を使用してサービス内でタスクの負荷を調整します）</span></li><li><strong><span>サービス用の IAM ロールの選択</span></strong><span>: </span><strong><span>ecsServiceRole</span></strong></li><li><strong><span>ロードバランサー名</span></strong><span>: </span><strong><span>mb-load-balancer</span></strong></li><li><strong><span>ロードバランス用のコンテナ</span></strong><span>: [</span><strong><span>Add to load balancロードバランサーに追加</span></strong><span>] をクリック</span></li><li><strong><span>プロダクションリスナーポート</span></strong><span>: </span><strong><span>80:HTTP</span></strong><span>（この設定で、ポート 80 での HTTP トラフィックに対するロードバランサーリスナーとコンテナが関連付けられます）</span></li><li><strong><span>ターゲットグループ名</span></strong><span>: </span><strong><span>mb-lb-users-target-group</span></strong></li></ul></li><li><p><span>[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>Auto Scaling (オプション)</span></strong><span>] では [</span><strong><span>次のステップ</span></strong><span>] をクリックします。追加で自動スケーリングを設定する必要はありません。</span></p></li><li><p><span>[</span><strong><span>ステップ 4: 確認</span></strong><span>] ページで設定が正しいことを確認し、[</span><strong><span>サービスの作成</span></strong><span>] をクリックします。</span></p><p><span>[</span><strong><span>起動ステータス</span></strong><span>] ページが開き、ウィザードが実行するタスクが表示されます。</span></p></li><li><p><span>すべてのタスクに、完了したことを示すチェックマークが入るまで待ちます。</span></p></li><li><p><span>[</span><strong><span>サービスの表示</span></strong><span>] をクリックします。</span></p><p><strong><span>mb-users-ecs-service</span></strong><span> の詳細ページが開きます。[</span><strong><span>タスク</span></strong><span>] タブに、コンテナを実行するタスクが現在 1 つあることが表示されます。</span></p></li><li><p><span>しばらくしてから、</span><strong><span>更新</span></strong><span>ボタンをクリックします。</span></p><p><span>タスクの [</span><strong><span>前回のステータス</span></strong><span>] に [</span><strong><span>RUNNING</span></strong><span>] という値が表示されます。</span></p></li></ol><br><h4 id='threads-の-ecs-サービスを作成する'><strong><span>Threads</span></strong><span> の ECS サービスを作成する</span></h4><p><span>次に、</span><strong><span>Threads</span></strong><span> マイクロサービスのタスク定義用の ECS サービスを作成します。</span></p><ol start='254' ><li><p><span>クラスターの詳細ページに戻るには、ページ上部で </span><strong><span>mb-ecs-cluster</span></strong><span> をクリックします。</span></p></li><li><p><span>[</span><strong><span>サービス</span></strong><span>] タブで [</span><strong><span>作成</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 1: サービスの設定</span></strong><span>] で次のように設定します。</span></p><ul><li><strong><span>起動タイプ</span></strong><span>: </span><strong><span>EC2</span></strong></li><li><strong><span>タスク定義</span></strong><span>の</span><strong><span>ファミリー</span></strong><span>: </span><strong><span>mb-threads-task</span></strong></li><li><strong><span>サービス名</span></strong><span>: </span><code>mb-threads-ecs-service</code></li><li><strong><span>サービスタイプ</span></strong><span>: </span><strong><span>REPLICA</span></strong></li><li><strong><span>タスクの数</span></strong><span>: </span><code>1</code></li></ul></li><li><p><span>[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 2: ネットワーク構成</span></strong><span>] で次のように設定します。</span></p><ul><li><strong><span>[</span></strong><span>ロードバランシング</span><strong><span>] &gt; [</span></strong><span>ロードバランサーの種類</span><strong><span>]</span></strong><span>: </span><strong><span>Application Load Balancer</span></strong></li><li><strong><span>ロードバランサー名</span></strong><span>: </span><strong><span>mb-load-balancer</span></strong></li><li><strong><span>ロードバランス用のコンテナ</span></strong><span>: [</span><strong><span>ロードバランサーに追加</span></strong><span>] をクリック</span></li><li><strong><span>プロダクションリスナーポート</span></strong><span>: </span><strong><span>80:HTTP</span></strong></li><li><strong><span>ターゲットグループ名</span></strong><span>: </span><strong><span>mb-lb-threads-target-group</span></strong></li></ul></li><li><p><span>[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 3: Auto Scaling (オプション)</span></strong><span>] ページで、[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 4: 確認</span></strong><span>] ページで設定が正しいことを確認し、[</span><strong><span>サービスの作成</span></strong><span>] をクリックします。</span></p><p><span>[</span><strong><span>起動ステータス</span></strong><span>] ページが開き、ウィザードが実行するタスクが表示されます。</span></p></li><li><p><span>すべてのタスクに、完了したことを示すチェックマークが入るまで待ちます。</span></p></li><li><p><span>[</span><strong><span>サービスの表示</span></strong><span>] をクリックします。</span></p><p><strong><span>mb-threads-ecs-service</span></strong><span> の詳細ページが開きます。[</span><strong><span>タスク</span></strong><span>] タブに、コンテナを実行するタスクが 1 つあることが表示されます。</span></p></li><li><p><span>少し時間をおいて</span><strong><span>更新</span></strong><span>を選択すると、タスクの [</span><strong><span>前回のステータス</span></strong><span>] が [</span><strong><span>RUNNING</span></strong><span>] という値になっています。</span></p></li></ol><br><h4 id='posts-の-ecs-サービスを作成する'><strong><span>Posts</span></strong><span> の ECS サービスを作成する</span></h4><p><span>最後に、</span><strong><span>Posts</span></strong><span> マイクロサービスのタスク定義用の ECS サービスを作成します。</span></p><ol start='265' ><li><p><strong><span>mb-ecs-cluster</span></strong><span> のクラスター詳細ページに戻ります。</span></p></li><li><p><span>[</span><strong><span>サービス</span></strong><span>] タブで [</span><strong><span>作成</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 1: サービスの設定</span></strong><span>] で次のように設定します。</span></p><ul><li><strong><span>起動タイプ</span></strong><span>: </span><strong><span>EC2</span></strong></li><li><strong><span>タスク定義</span></strong><span>の</span><strong><span>ファミリー</span></strong><span>: </span><strong><span>mb-posts-task</span></strong></li><li><strong><span>サービス名</span></strong><span>: </span><code>mb-posts-ecs-service</code></li><li><strong><span>サービスタイプ</span></strong><span>: </span><strong><span>REPLICA</span></strong></li><li><strong><span>タスクの数</span></strong><span>: </span><code>1</code></li></ul></li><li><p><span>[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 2: ネットワーク構成</span></strong><span>] で次のように設定します。</span></p><ul><li><strong><span>[</span></strong><span>ロードバランシング</span><strong><span>] &gt; [</span></strong><span>ロードバランサーの種類</span><strong><span>]</span></strong><span>: </span><strong><span>Application Load Balancer</span></strong></li><li><strong><span>ロードバランサー名</span></strong><span>: </span><strong><span>mb-load-balancer</span></strong></li><li><strong><span>ロードバランス用のコンテナ</span></strong><span>: [</span><strong><span>ロードバランサーに追加</span></strong><span>] をクリック</span></li><li><strong><span>プロダクションリスナーポート</span></strong><span>: </span><strong><span>80:HTTP</span></strong></li><li><strong><span>ターゲットグループ名</span></strong><span>: </span><strong><span>mb-lb-posts-target-group</span></strong></li></ul></li><li><p><span>[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 3: Auto Scaling (オプション)</span></strong><span>] で、[</span><strong><span>次のステップ</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 4: 確認</span></strong><span>] ページで設定が正しいことを確認し、[</span><strong><span>サービスの作成</span></strong><span>] をクリックします。</span></p><p><span>[</span><strong><span>起動ステータス</span></strong><span>] ページが開き、ウィザードが実行するタスクが表示されます。</span></p></li><li><p><span>すべてのタスクに、完了したことを示すチェックマークが入るまで待ちます。</span></p></li><li><p><span>[</span><strong><span>サービスの表示</span></strong><span>] をクリックします。</span></p><p><strong><span>mb-posts-ecs-service</span></strong><span> の詳細ページが開きます。[</span><strong><span>タスク</span></strong><span>] タブに、コンテナを実行するタスクが 1 つあることが表示されます。</span></p></li><li><p><span>しばらくしてから、</span><strong><span>更新</span></strong><span>をクリックします。</span></p><p><span>タスクの [</span><strong><span>前回のステータス</span></strong><span>] には、[</span><strong><span>RUNNING</span></strong><span>] という値が表示されます。</span></p></li><li><p><strong><span>mb-ecs-cluster</span></strong><span> のクラスター詳細ページに戻ります。</span></p><p><span>作成した 3 つの新しいサービスが [</span><strong><span>サービス</span></strong><span>] の一覧に表示されるようになりました。</span></p></li></ol><p><img src="images/Create-ecs-service-microservices-complete.png" width="800" alt="マイクロサービス用の ECS サービス"></p><p>&nbsp;</p><p><span>数秒ですべてのサービスを起動できます。次のタスクに進むまえに、すべてのサービスとタスクが実行され、正常であることを再度確認してください。</span></p><br><h3 id='タスク-64-デプロイを検証する'><span>タスク 6.4: デプロイを検証する</span></h3><p><span>ここでは、メッセージボードアプリケーションの RESTful API メソッドをウェブブラウザでテストします。また、マイクロサービスベースの実装が正しく機能することを検証します。</span></p><p><span>最初に、コンテナ化されたモノリスアプリケーションの ECS サービスをシャットダウンして、モノリスがリクエストを処理しないようにします。</span></p><ol start='277' ><li><p><span>[</span><strong><span>サービス</span></strong><span>] の一覧から </span><strong><span>mb-ecs-service</span></strong><span> を選択し、[</span><strong><span>更新</span></strong><span>] をクリックします。</span></p><p><span>[</span><strong><span>サービスの更新</span></strong><span>] ウィザードが開きます。</span></p></li><li><p><span>[</span><strong><span>タスクの数</span></strong><span>] の値を </span><code>0</code><span> に変更します（Amazon ECS がサービスのタスクを実行しないようにします）。</span></p></li><li><p><span>[</span><strong><span>Skip to review</span></strong><span>] をクリックします。</span></p></li><li><p><span>[</span><strong><span>ステップ 4: 確認</span></strong><span>] ページで [</span><strong><span>サービスの更新</span></strong><span>] をクリックします。</span></p><p><span>[</span><strong><span>起動ステータス</span></strong><span>] ページが開き、サービスが更新されたことを示すメッセージが表示されます。</span></p></li><li><p><span>[</span><strong><span>サービスの表示</span></strong><span>] をクリックします。</span></p><p><strong><span>mb-ecs-service</span></strong><span> の詳細ページが開きます。[</span><strong><span>デプロイメント</span></strong><span>] タブには、サービスの [</span><strong><span>実行中の数</span></strong><span>] が </span><strong><span>0</span></strong><span> であることが表示されます。</span></p><p><strong><span>注</span></strong><span>: 変更がすぐに表示されない場合は、数秒待ってから [</span><strong><span>更新</span></strong><span>] をクリックします。</span></p></li></ol><p><img src="images/Shut-down-monolith-service.png" width="800" alt="モノリスのシャットダウン"></p><p>&nbsp;</p><ol start='282' ><li><p><span>新しいブラウザタブを開いて以前にメモした</span><strong><span>ロードバランサーの DNS 名</span></strong><span>を貼り付けて、</span><strong><span>Enter</span></strong><span> キーを押します。</span></p><p><span>このアクションは、</span><strong><span>Ready to receive requests</span></strong><span> というメッセージを返します。アプリケーションは、GET リクエストにリソースパスが含まれていない場合にこのメッセージを返します。このタイプのリクエストは </span><strong><span>Users</span></strong><span> マイクロサービスに送信されるようにリスナールールで設定されています。</span></p></li><li><p><code>/api</code><span> を URL の末尾に追加して </span><strong><span>Enter</span></strong><span> キーを押します。</span></p><p><span>アプリケーション（具体的には </span><strong><span>Users</span></strong><span> マイクロサービス）が、</span><strong><span>API ready to receive requests</span></strong><span> というメッセージを返します。</span></p></li><li><p><span>データベースのすべての</span><strong><span>ユーザー</span></strong><span>を取得できるかテストします。URL の末尾に </span><code>/users</code><span> を追加して </span><strong><span>Enter</span></strong><span> キーを押します。</span></p><p><strong><span>Users</span></strong><span> マイクロサービスが、データベース内の 4 人のユーザーをリストした JSON オブジェクトを返します。</span></p></li><li><p><span>データベースの </span><strong><span>1 人目のユーザー</span></strong><span>の情報を取得します。URL の末尾に </span><code>/1</code><span> を追加し、</span><strong><span>Enter</span></strong><span> キーを押します。</span></p><p><strong><span>Users</span></strong><span> マイクロサービスが、データベースの 1 人目として保存されたユーザー </span><strong><span>Marcerline Singer</span></strong><span> の情報を含む JSON オブジェクトを返します。</span></p></li><li><p><span>次に、データベース内のすべての</span><strong><span>スレッド</span></strong><span>を取得します。ロードバランサー DNS 名の後の URI を </span><code>/api/threads</code><span> に変更し、</span><strong><span>Enter</span></strong><span> キーを押します。</span></p><p><strong><span>Threads</span></strong><span> マイクロサービスが、データベース内の 3 つのスレッドすべてを含む JSON オブジェクトを返します。</span></p></li><li><p><span>データベースの </span><strong><span>2 つ目のスレッド</span></strong><span>の</span><strong><span>投稿</span></strong><span>を取得します。ロードバランサー DNS 名の後の URI を </span><code>/api/posts/in-thread/2</code><span> に変更し、</span><strong><span>Enter</span></strong><span> キーを押します。</span></p><p><strong><span>Posts</span></strong><span> マイクロサービスは、データベースの 2 番目の（ベーカリー関連の）スレッドの投稿メッセージを含む JSON オブジェクトを返します。</span></p></li><li><p><span>最後に、無効な URI を使ってリクエストの送信をテストします。ロードバランサー DNS 名の後の URI を </span><code>/xyz</code><span> に変更し、</span><strong><span>Enter</span></strong><span> キーを押します。</span></p><p><span>リクエストはロードバランサーのリスナールール内のデフォルトハンドラーに転送され、</span><strong><span>Invalid request</span></strong><span> というメッセージが返されます。</span></p><p><span>これで、モノリシックな Node.js アプリケーションをマイクロサービスアーキテクチャに変換することができました。元のアプリケーションは、コンテナ化を行わず、インスタンス上で直接実行されていました。一方、マイクロサービスベースのアプリケーションは、Amazon ECS によって調整されたコンテナ化環境にデプロイされます。</span></p></li></ol><br><h2 id='作業内容を送信する'><span>作業内容を送信する</span></h2><ol start='289' ><li><span>この手順の上部にある </span><span id="ssb_blue"><span>Submit</span></span><span> をクリックして進捗情報を記録し、プロンプトが表示されたら [</span><strong><span>Yes</span></strong><span>] をクリックします。</span></li></ol><p>&nbsp;</p><ol start='290' ><li><p><span>数分経っても結果が表示されない場合は、この手順の上部に戻り、</span><span id="ssb_voc_grey"><span>Grades</span></span><span> をクリックします。</span></p><p><strong><span>ヒント</span></strong><span>: 作業内容は何度も送信できます。作業内容を変更したら、再度 [</span><strong><span>Submit</span></strong><span>] をクリックします。最終送信分がこのラボの作業内容として記録されます。</span></p></li></ol><p>&nbsp;</p><ol start='291' ><li><span>作業に関する詳細なフィードバックを参照するには、</span><span id="ssb_voc_grey"><span>Details</span></span><span> ドロップダウンメニューから </span><i class="fas fa-caret-right"></i><span> [</span><strong><span>View Submission Report</span></strong><span>] を選択します。</span></li></ol><br><h2 id='ラボの終了i-classfas-fa-graduation-capi'><span>ラボの終了</span><i class="fas fa-graduation-cap"></i></h2><p><i class="fas fa-flag-checkered"></i><span>お疲れ様でした。以上でラボは終了です。</span></p><ol start='292' ><li><span>ラボを終了するには、このページの上部にある </span><span id="ssb_voc_grey"><span>End Lab</span></span><span> をクリックし、</span><span id="ssb_blue"><span>Yes</span></span><span> をクリックします。</span></li></ol><p><span>   パネルに </span><strong><span>DELETE has been initiated... You may close this message box now</span></strong><span> というメッセージが表示されます。</span></p><ol start='293' ><li><span>右上隅の [</span><strong><span>X</span></strong><span>] をクリックしてパネルを閉じます。</span></li></ol><p>&nbsp;</p><p><strong><span>©2020 Amazon Web Services, Inc. and its affiliates. All rights reserved. このトレーニング内容の全体または一部を複製または再配布することは、Amazon Web Services, Inc. の書面による事前の許可がある場合を除き、禁じられています。商業目的のコピー、貸与、または販売を禁止します。</span></strong></p></div></div>
+</body>
+</html>

@@ -1,0 +1,1163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='módulo-13-----laboratório-guiado-2-implementação-de-uma-arquitetura-sem-servidor-na-aws'><span>Módulo 13 — Laboratório guiado 2: implementação de uma arquitetura sem servidor na AWS</span></h1><h2 id='cenário'><span>Cenário</span></h2><p><span>Você está criando um sistema de rastreamento de inventário. Lojas de todo o mundo carregarão um arquivo de inventário para o Amazon S3. Sua equipe quer ser capaz de visualizar os níveis de inventário e enviar uma notificação quando os níveis de inventário são baixos.</span></p><p><span>Neste laboratório, você:</span></p><ul><li><span>Você fará </span><em><span>upload</span></em><span> de um </span><em><span>arquivo de inventário</span></em><span> para um bucket do Amazon S3.</span></li><li><span>Esse upload </span><em><span>acionará uma função do Lambda</span></em><span> que lerá o arquivo e inserirá itens em uma </span><em><span>tabela do Amazon DynamoDB</span></em><span>.</span></li><li><span>Uma aplicação de painel baseada na Web sem servidor usa o Amazon Cognito para autenticar na AWS e, em seguida, obter acesso à tabela do DynamoDB para exibir os níveis de inventário.</span></li><li><span>Outra função do Lambda receberá atualizações da tabela do DynamoDB. Esta função enviará uma mensagem para um </span><em><span>tópico do SNS</span></em><span> quando um item de inventário estiver fora de estoque.</span></li><li><span>O Amazon SNS </span><em><span>enviará uma notificação por meio do serviço de mensagens curtas (SMS) ou por e-mail</span></em><span> que solicite inventário adicional.</span></li></ul><br><h3 id='visão-geral-do-laboratório'><span>Visão geral do laboratório</span></h3><p><span>Tradicionalmente, os aplicações são executados em servidores. Esses servidores podem ser físicos (ou bare metal). Eles também podem ser ambientes virtuais que são executados em cima de servidores físicos. No entanto, você deve comprar e provisionar todos esses tipos de servidores, e você também deve gerenciar sua capacidade. Em contraste, você pode executar seu código no AWS Lambda sem precisar pré-alocar servidores. Com o Lambda, você só precisa fornecer o código e definir um gatilho. A função Lambda pode ser executada quando for necessária, seja uma vez por semana ou centenas de vezes por segundo. Você só paga pelo que usa.</span></p><p><span>Este laboratório demonstra como acionar uma função do Lambda quando um arquivo é carregado no Amazon Simple Storage Service (Amazon S3). O arquivo será carregado em uma tabela do Amazon DynamoDB. Os dados estarão disponíveis para você visualizar em uma página do painel que recupera os dados diretamente do DynamoDB. Essa solução </span><em><span>não usa o Amazon Elastic Compute Cloud (Amazon EC2)</span></em><span>. É uma </span><em><span>solução sem servidor</span></em><span> que </span><em><span>escala automaticamente quando é usada</span></em><span>. Também incorre </span><em><span>pouco custo</span></em><span> quando está em uso. Quando está ocioso, </span><em><span>praticamente não há nenhum custo</span></em><span> porque você só será cobrado pelo armazenamento de dados.</span></p><p>&nbsp;</p><p><span>Depois de concluir este laboratório, você deverá ser capaz de:</span></p><ul><li><span>Implementar uma arquitetura sem servidor na AWS</span></li><li><span>Acionar funções do AWS Lambda do Amazon S3 e do Amazon DynamoDB</span></li><li><span>Configurar o Amazon Simple Notification Service (Amazon SNS) para enviar notificações</span></li></ul><p>&nbsp;</p><p><span>No </span><strong><span>final</span></strong><span> deste laboratório, sua arquitetura será semelhante ao seguinte exemplo:</span></p><p><img src="images/module-13-guided-lab-architecture.png" referrerpolicy="no-referrer" alt="Fluxo de trabalho"></p><br><h2 id='duração'><span>Duração</span></h2><p><span>O laboratório levará aproximadamente </span><strong><span>40 minutos</span></strong><span> para ser concluído.</span></p><br><h2 id='restrições-de-serviço-da-aws'><span>Restrições de serviço da AWS</span></h2><p><span>Neste ambiente de laboratório, o acesso aos serviços e ações de serviço da AWS pode estar restrito àqueles necessários para concluir as instruções do laboratório. Você poderá encontrar erros se tentar acessar outros serviços ou executar ações além do que está descrito neste laboratório.</span></p><br><h2 id='acessar-o-console-de-gerenciamento-da-aws'><span>Acessar o Console de Gerenciamento da AWS</span></h2><ol start='' ><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratório) para iniciar o laboratório.</span></p><p><span>Um painel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratório) é aberto com o status do laboratório.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Dica</span></strong><span>: se você precisar de mais tempo para concluir o laboratório, escolha novamente o botão </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratório) para reiniciar o cronômetro do ambiente.</span></p></li><li><p><span>Aguarde até que o painel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratório) exiba a mensagem </span><em><span>Lab status: ready (Status do laboratório: pronto)</span></em><span> e, em seguida, escolha </span><strong><span>X</span></strong><span> para fechar o painel.</span></p></li><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>Essa ação abrirá o Console de Gerenciamento da AWS em uma nova guia do navegador. O sistema fará seu login automaticamente.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Dica</span></strong><span>: se uma nova guia do navegador não for aberta, normalmente você verá uma faixa ou um ícone na parte superior do navegador com uma mensagem informando que o navegador está impedindo que o site abra janelas pop-up. Escolha a faixa ou o ícone e depois </span><strong><span>Allow pop ups</span></strong><span> (Permitir pop-ups).</span></p></li><li><p><span>Organize a guia do </span><strong><span>Console de Gerenciamento da AWS</span></strong><span> para que ela seja exibida com essas instruções. O ideal é ver as duas guias do navegador abertas ao mesmo tempo, para facilitar o acompanhamento das etapas do laboratório.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Não altere a região, a menos que seja especificamente instruído a fazer isso</span></strong><span>.</span></p></li></ol><br><h2 id='tarefa-1-criar-uma-função-do-lambda-para-carregar-dados'><span>Tarefa 1: criar uma função do Lambda para carregar dados</span></h2><p><span>Nesta tarefa, você criará </span><em><span>uma função do Lambda</span></em><span> que processará um arquivo de inventário. A função do Lambda lerá o arquivo e inserirá informações em uma tabela do DynamoDB.</span></p><p><img src="images/module-13-guided-lab-task-1.png" referrerpolicy="no-referrer" alt="Função do Lambda"></p><ol start='5' ><li><p><span>No </span><strong><span>Console de Gerenciamento da AWS</span></strong><span>, no menu </span><span id="ssb_services"><span>Services (Serviços)</span><i class="fas fa-angle-down"></i></span><span>, escolha </span><strong><span>Lambda</span></strong><span>.</span></p></li><li><p><span>Escolha </span><span id="ssb_lambda_orange"><span>Create function</span></span><span> (Criar função)</span></p><p><i class="fas fa-info-circle"></i><span> Os </span><em><span>esquemas</span></em><span> são modelos de código para escrever funções do Lambda. Os esquemas são fornecidos como triggers padrão do Lambda, como a criação de habilidades do Alexa e o processamento de streamings do Amazon Kinesis Data Firehose. Este laboratório oferece uma função pré-pronta do Lambda, então você irá </span><strong><span>Author from scratch (Começar do zero)</span></strong><span>.</span></p></li><li><p><span>Defina as seguintes configurações:</span></p><ul><li><strong><span>Function name (Nome da função)</span></strong><span>: </span><code>Load-Inventory</code></li><li><strong><span>Runtime (Ambiente de execução)</span></strong><span>: </span><em><span>Python 3.7</span></em></li><li><span>Expanda </span><i class="fas fa-caret-right"></i><span> </span><strong><span>Choose or create an execution role (Escolher ou criar uma função de execução)</span></strong><span>.</span></li><li><strong><span>Execution role (Função de execução):</span></strong><span> </span><em><span>Use an existing role (Usar uma função existente)</span></em></li><li><strong><span>Existing role (Função existente)</span></strong><span>: </span><em><span>Lambda-Load-Inventory-Role</span></em></li></ul><p><span>Essa função dá à função do Lambda permissões para que ela possa acessar o Amazon S3 e o DynamoDB.</span></p></li><li><p><span>Escolha </span><span id="ssb_lambda_orange"><span>Create function</span></span><span> (Criar função)</span></p></li><li><p><span>Role para baixo até a seção </span><strong><span>Código de função</span></strong><span> e, em seguida, no editor de código, exclua todo o código.</span></p></li><li><p><span>No Editor de </span><strong><span>código de função</span></strong><span>, copie o seguinte código:</span></p></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Load-Inventory Lambda function</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">#</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># This function is triggered by an object being created in an Amazon S3 bucket.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># The file is downloaded and each line is inserted into a DynamoDB table.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">import json, urllib, boto3, csv</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Connect to S3 and DynamoDB</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">s3 <span class="cm-operator">=</span> boto3.resource(<span class="cm-string">'s3'</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">dynamodb <span class="cm-operator">=</span> boto3.resource(<span class="cm-string">'dynamodb'</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Connect to the DynamoDB tables</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">inventoryTable <span class="cm-operator">=</span> dynamodb.Table(<span class="cm-string">'Inventory'</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># This handler is run every time the Lambda function is triggered</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">def lambda_handler(event, context):</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># Show the incoming event in the debug log</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  print(<span class="cm-string">"Event received by Lambda function: "</span> <span class="cm-operator">+</span> json.dumps(event, <span class="cm-def">indent</span><span class="cm-operator">=</span><span class="cm-number">2</span>))</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># Get the bucket and object key from the Event</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  bucket <span class="cm-operator">=</span> event[<span class="cm-string">'Records'</span>][0][<span class="cm-string">'s3'</span>][<span class="cm-string">'bucket'</span>][<span class="cm-string">'name'</span>]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  key <span class="cm-operator">=</span> urllib.parse.unquote_plus(event[<span class="cm-string">'Records'</span>][0][<span class="cm-string">'s3'</span>][<span class="cm-string">'object'</span>][<span class="cm-string">'key'</span>])</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  localFilename <span class="cm-operator">=</span> <span class="cm-string">'/tmp/inventory.txt'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># Download the file from S3 to the local filesystem</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  try:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  s3.meta.client.download_file(bucket, key, localFilename)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  except Exception as e:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  print(e)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  print(<span class="cm-string">'Error getting object {} from bucket {}. Make sure they exist and your bucket is in the same region as this function.'</span>.format(key, bucket))</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  raise e</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># Read the Inventory CSV file</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  with open(localFilename) as csvfile:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  reader <span class="cm-operator">=</span> csv.DictReader(csvfile, <span class="cm-def">delimiter</span><span class="cm-operator">=</span><span class="cm-string">','</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-comment"># Read each row in the file</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  rowCount <span class="cm-operator">=</span> <span class="cm-number">0</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">for</span> row <span class="cm-keyword">in</span> reader:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  rowCount <span class="cm-operator">+=</span> <span class="cm-number">1</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-comment"># Show the row in the debug log</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  print(row[<span class="cm-string">'store'</span>], row[<span class="cm-string">'item'</span>], row[<span class="cm-string">'count'</span>])</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  try:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment"># Insert Store, Item and Count into the Inventory table</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  inventoryTable.put_item(</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-def">Item</span><span class="cm-operator">=</span>{</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-string">'Store'</span>:  row[<span class="cm-string">'store'</span>],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-string">'Item'</span>: &nbsp; row[<span class="cm-string">'item'</span>],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-string">'Count'</span>:  int(row[<span class="cm-string">'count'</span>])})</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  except Exception as e:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; print(e)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; print(<span class="cm-string">"Unable to insert data into DynamoDB table"</span>.format(e))</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-comment"># Finished!</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  return <span class="cm-string">"%d counts inserted"</span> % rowCount</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 1053px;"></div><div class="CodeMirror-gutters" style="display: none; height: 1053px;"></div></div></div></pre><p><span>Examine o código. Ele executa as seguintes etapas:</span></p><ul><li><span>Fazer download do arquivo do Amazon S3 que acionou o evento</span></li><li><span>Executar loop em cada linha no arquivo.</span></li><li><span>Insira os dados na tabela </span><em><span>Inventory (Inventário)</span></em><span> do DynamoDB.</span></li></ul><ol start='11' ><li><span>Na parte superior da página, escolha </span><span id="ssb_lambda_orange"><span>Save</span></span><span> (Salvar).</span></li></ol><p><span>   Em seguida, você vai configurar o Amazon S3 para acionar a função do Lambda quando um arquivo for carregado.</span></p><br><h2 id='tarefa-2-configurar-um-evento-do-amazon-s3'><span>Tarefa 2: configurar um evento do Amazon S3</span></h2><p><span>Lojas de todo o mundo fornecem arquivos de inventário para carregar no sistema de rastreamento de inventário. Em vez de fazer upload de seus arquivos via FTP, as lojas podem enviá-los diretamente para o Amazon S3. Eles podem fazer upload dos arquivos através de uma página da Web, um script ou como parte de um programa. Quando um arquivo é recebido, ele aciona a função do Lambda. Essa função do Lambda carregará o inventário em uma tabela do DynamoDB.</span></p><p><img src="images/module-13-guided-lab-task-2.png" referrerpolicy="no-referrer" alt="Função do Lambda"></p><p><span>Nesta tarefa, você cria um bucket do Amazon S3 e o configura para acionar a função do Lambda.</span></p><ol start='12' ><li><span>No menu </span><span id="ssb_services"><span>Services (Serviços)</span><i class="fas fa-angle-down"></i></span><span>, escolha </span><strong><span>S3</span></strong><span>.</span></li><li><span>Escolha </span><span id="ssb_s3_blue"><i class="fas fa-plus"></i><span>Create bucket</span></span><span> (Criar bucket)</span></li></ol><p><span>   Cada bucket deve ter um nome exclusivo, então você adicionará um número aleatório ao nome do bucket. Por exemplo: </span><em><span>inventory-123</span></em></p><ol start='14' ><li><span>Para </span><strong><span>Bucket name</span></strong><span> (Nome do bucket), digite: </span><code>inventory-&lt;número&gt;</code><span> (Substitua </span><em><number></em><span> por um número aleatório)</span></li><li><span>Escolha </span><span id="ssb_s3_white"><span>Create bucket</span></span><span> (Criar Bucket)</span></li></ol><p><span>   </span><i class="fas fa-comment"></i><span> Você pode receber um erro que indica: </span><em><span>O nome do bucket solicitado não está disponível</span></em><span>. Se você receber esse erro, escolha o primeiro link </span><strong><span>Editar</span></strong><span>, altere o nome do bucket e tente novamente até que o nome do bucket seja aceito.</span></p><p><span>   Agora, configure o bucket para acionar automaticamente a função do Lambda sempre que um arquivo for enviado por upload.</span></p><ol start='16' ><li><p><span>Escolha o nome do bucket do seu </span><em><span>inventory-</span><number></em><span>.</span></p></li><li><p><span>Escolha a guia </span><strong><span>Properties</span></strong><span> (Propriedades).</span></p></li><li><p><span>Role para baixo até </span><strong><span>Advanced settings (Configurações avançadas)</span></strong><span> e clique em </span><strong><span>Events</span></strong><span> (Eventos).</span></p><p><span>Você vai configurar um evento para ser acionado quando um objeto for criado no bucket do S3.</span></p></li><li><p><span>Clique em </span><span style="color:#00a0d2"><i class="fas fa-plus"></i><span> Adicionar notificação</span></span><span> e configure estes ajustes:</span></p></li></ol><ul><li><strong><span>Name</span></strong><span> (Nome): </span><code>Load-Inventory</code></li><li><strong><span>Events</span></strong><span> (Eventos): </span><i class="far fa-check-square"></i><span> </span><em><span>Todos os eventos de criação de objetos</span></em></li><li><strong><span>Send to</span></strong><span> (Enviar para): </span><em><span>Lambda Function (Função do Lambda)</span></em></li><li><strong><span>Lambda:</span></strong><span> </span><em><span>Load-Inventory</span></em></li><li><span>Escolha </span><span id="ssb_s3_blue"><span>Save</span></span><span> (Salvar)</span></li></ul><p><span>   Quando um objeto é criado no bucket, essa configuração informa o Amazon S3 para acionar a função </span><em><span>Load-Inventory</span></em><span> Lambda criada anteriormente.</span></p><p><span>   Seu bucket agora está pronto para receber arquivos de inventário.</span></p><br><h2 id='tarefa-3-testar-o-processo-de-carregamento'><span>Tarefa 3: testar o processo de carregamento</span></h2><p><span>Agora você está pronto para testar o processo de carregamento. Você enviará um arquivo de inventário e, em seguida, verifique se ele foi carregado com sucesso.</span></p><p><img src="images/module-13-guided-lab-task-3-1.png" referrerpolicy="no-referrer" alt="Teste de carga"></p><ol start='20' ><li><p><span>Faça download dos arquivos de inventário abrindo o menu de contexto (clique com o botão direito do mouse) para estes links:</span></p><p><a href='../../../scripts/inventory-berlin.csv'><span>inventory-berlin.csv</span></a></p><p><a href='../../../scripts/inventory-calcutta.csv'><span>inventory-calcutta.csv</span></a></p><p><a href='../../../scripts/inventory-karachi.csv'><span>inventory-karachi.csv</span></a></p><p><a href='../../../scripts/inventory-pusan.csv'><span>inventory-pusan.csv</span></a></p><p><a href='../../../scripts/inventory-shanghai.csv'><span>inventory-shanghai.csv</span></a></p><p><a href='../../../scripts/inventory-springfield.csv'><span>inventory-springfield.csv</span></a></p></li></ol><p>&nbsp;</p><p><span>Esses arquivos são os arquivos de inventário que você pode usar para testar o sistema. Eles são arquivos de valores separados por vírgulas (CSV). O exemplo a seguir mostra o conteúdo do arquivo de Berlim:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  store,item,count</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  Berlin,Echo Dot,12</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  Berlin,Echo (2nd Gen),19</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  Berlin,Echo Show,18</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  Berlin,Echo Plus,0</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  Berlin,Echo Look,10</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  Berlin,Amazon Tap,15</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 157px;"></div><div class="CodeMirror-gutters" style="display: none; height: 157px;"></div></div></div></pre><ol start='21' ><li><span>No console, volte ao bucket do S3 escolhendo a guia </span><strong><span>Overview (Visão geral)</span></strong><span>.</span></li><li><span>Escolha </span><span id="ssb_s3_blue"><i class="fas fa-upload"></i><span>Fazer upload</span></span><span> e fazer upload de um dos arquivos CSV para o bucket. (Você pode escolher qualquer arquivo de inventário.)</span></li></ol><p><span>   O Amazon S3 acionará automaticamente a função do Lambda, que carregará os dados em uma tabela do DynamoDB.</span></p><p><span>   Uma aplicação de painel sem servidor foi fornecida para que você visualize os resultados.</span></p><ol start='23' ><li><span>Na parte superior dessas instruções, escolha o botão </span><strong><span>Details</span></strong><span> (Detalhes) e, à direita da </span><strong><span>AWS</span></strong><span>, escolha o botão </span><strong><span>Show</span></strong><span> (Mostrar).</span></li><li><span>Na janela </span><strong><span>Credentials</span></strong><span> (Credenciais), copie o URL do </span><strong><span>Dashboard</span></strong><span> (Painel).</span></li><li><span>Abra uma nova guia do navegador da Web, cole o URL copiado e pressione ENTER.</span></li></ol><p><span>   O aplicação do painel abrirá e exibirá os dados de inventário que você carregou no bucket. Os dados são recuperados do DynamoDB, o que prova que o upload acionou com êxito a função Lambda.</span></p><p><img src="images/module-13-guided-lab-task-3-2.png" referrerpolicy="no-referrer" alt="Painel"></p><p>&nbsp;</p><p><i class="fas fa-exclamation-triangle"></i><span> Se o aplicação do painel não exibir nenhuma informação, peça ao instrutor para ajudá-lo a diagnosticar o problema.</span></p><p><span>O aplicação de painel é servido como uma página da Web estática do Amazon S3. O painel é autenticado por meio do Amazon Cognito como um </span><em><span>usuário anônimo</span></em><span>, que fornece permissões suficientes para que o painel recupere dados do DynamoDB.</span></p><p><span>Você também pode visualizar os dados diretamente na tabela do DynamoDB.</span></p><ol start='26' ><li><span>No menu </span><span id="ssb_services"><span>Services (Serviços)</span><i class="fas fa-angle-down"></i></span><span>, escolha </span><strong><span>DynamoDB</span></strong><span>.</span></li><li><span>No painel de navegação à esquerda, selecione </span><strong><span>Tables</span></strong><span> (Tabelas).</span></li><li><span>Escolha a tabela </span><strong><span>Inventory</span></strong><span> (Inventário).</span></li><li><span>Selecione a guia </span><strong><span>Items</span></strong><span> (Itens).</span></li></ol><p><span>   Os dados do arquivo de inventário serão exibidos. Ele mostra a contagem de loja, item e inventário.</span></p><br><h2 id='tarefa-4-configurar-notificações'><span>Tarefa 4: configurar notificações</span></h2><p><span>Você deseja notificar a equipe de gerenciamento de inventário quando uma loja ficar sem estoque para um item. Para esta funcionalidade de notificação sem servidor, você usará o </span><strong><span>Amazon SNS</span></strong><span>.</span></p><p><img src="images/module-13-guided-lab-task-4.png" referrerpolicy="no-referrer" alt="Teste de carga"></p><p><span>O Amazon SNS é um serviço flexível e totalmente gerenciado de mensagens de publicação/assinatura e notificações móveis. Ele entrega mensagens aos endpoints e clientes de inscrição. Com o Amazon SNS, você pode distribuir mensagens para um grande número de assinantes, incluindo sistemas e serviços distribuídos e dispositivos móveis.</span></p><ol start='30' ><li><p><span>No menu </span><span id="ssb_services"><span>Services (Serviços)</span><i class="fas fa-angle-down"></i></span><span>, escolha </span><strong><span>Simple Notification Service</span></strong><span> (Serviço simples de notificação).</span></p></li><li><p><span>Na caixa </span><strong><span>Create topic</span></strong><span> (Criar tópico), para </span><strong><span>Topic name</span></strong><span> (Nome do tópico), digite </span><code>NoStock</code></p></li><li><p><span>Escolha </span><span id="ssb_orange"><span>Next step</span></span><span> (Próxima etapa)</span></p></li><li><p><span>Role até a parte inferior da página.</span></p></li><li><p><span>Escolha </span><span id="ssb_orange"><span>Create topic</span></span><span> (Criar tópico)</span></p><p><span>Para receber notificações, você deve se inscrever* no tópico. Você pode optar por receber notificações através de vários métodos, como SMS e e-mail. </span></p></li><li><p><span>Na metade inferior da página, escolha </span><span id="ssb_orange"><span>Criar assinatura</span></span><span> e defina estas configurações:</span></p></li></ol><ul><li><strong><span>Protocol</span></strong><span> (Protocolo): </span><em><span>SMS</span></em></li><li><strong><span>Endpoint:</span></strong><span> insira seu número de telefone celular no formato internacional (por exemplo, </span><em><span>+14155550135</span></em><span> ou </span><em><span>+9175550190</span></em><span>)</span></li><li><span>Escolha </span><span id="ssb_orange"><span>Create subscription</span></span><span> (Criar assinatura)</span></li></ul><p><i class="fas fa-comment"></i><span> Se você não quiser receber uma mensagem SMS, você pode se inscrever por </span><em><span>e-mail</span></em><span>. Você deve fornecer um endereço de e-mail que você pode acessar enquanto trabalha neste laboratório. Depois de criar uma assinatura de e-mail, você receberá uma mensagem de e-mail de confirmação. Abra a mensagem e escolha o link </span><em><span>Confirmar assinatura</span></em><span>.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2002px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">Qualquer mensagem enviada para o tópico do SNS será encaminhada para você por SMS ou e-mail.</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><br><h2 id='tarefa-5-criar-uma-função-do-lambda-para-enviar-notificações'><span>Tarefa 5: criar uma função do Lambda para enviar notificações</span></h2><p><span>Você pode modificar a função </span><em><span>Load-Inventory</span></em><span> Lambda existente para verificar os níveis de inventário enquanto o arquivo está sendo carregado. No entanto, esta configuração não é uma boa prática arquitetônica. Em vez de sobrecarregar a função </span><em><span>Load-Inventory</span></em><span> com a lógica de negócios, você criará outra função do Lambda que é acionada quando os dados são carregados na tabela do DynamoDB. Essa função será acionada por um </span><em><span>stream do DynamoDB</span></em><span>.</span></p><p><span>Esta abordagem arquitetônica oferece vários benefícios:</span></p><ul><li><span>Cada função do Lambda executa uma única função específica. Essa prática torna o código mais simples e mais sustentável.</span></li><li><span>A lógica de negócios adicional pode ser adicionada criando funções adicionais do Lambda. Cada função opera de forma independente, de modo que a funcionalidade existente não é afetada.</span></li></ul><p><span>Nesta tarefa, você criará outra função do Lambda que examina o inventário enquanto ele é carregado na tabela do DynamoDB. Se a função do Lambda perceber que um item está fora de estoque, ele enviará uma notificação por meio do tópico SNS que você criou anteriormente.</span></p><p><img src="images/module-13-guided-lab-task-5.png" referrerpolicy="no-referrer" alt="Teste de carga"></p><ol start='36' ><li><span>No menu </span><span id="ssb_services"><span>Services</span><i class="fas fa-angle-down"></i></span><span>  (Serviços), escolha </span><strong><span>Lambda</span></strong><span>.</span></li><li><span>Escolha </span><span id="ssb_lambda_orange"><span>Create function</span></span><span> e configure estes ajustes:</span></li></ol><ul><li><p><strong><span>Nome da função:</span></strong><span> </span><code>Check-Stock</code></p></li><li><p><strong><span>Runtime</span></strong><span> (Ambiente de execução): </span><em><span>Python 3.7</span></em></p></li><li><p><span>Expanda </span><i class="fas fa-caret-right"></i><span> </span><strong><span>Choose or create an execution role</span></strong><span> (Escolher ou criar uma função de execução).</span></p></li><li><p><strong><span>Execution role</span></strong><span> (Função de execução): </span><em><span>Use an existing role (Usar uma função existente)</span></em></p></li><li><p><strong><span>Existing role</span></strong><span> (Função existente): </span><em><span>Lambda-Check-Stock-Role</span></em></p></li><li><p><span>Escolha </span><span id="ssb_lambda_orange"><span>Create function</span></span><span> (Criar função)</span></p><p><span>Essa função foi configurada com permissões para enviar uma notificação ao Amazon SNS.</span></p></li></ul><ol start='38' ><li><p><span>Role para baixo até a seção </span><strong><span>Function code</span></strong><span> (Código de função) e, em seguida, no editor de código, exclua todo o código.</span></p></li><li><p><span>Copie o código a seguir e, no editor </span><strong><span>Function code</span></strong><span> (Código de função), cole o código copiado:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Stock Check Lambda function</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">#</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># This function is triggered when values are inserted into the Inventory DynamoDB table.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Inventory counts are checked and if an item is out of stock, a notification is sent to an SNS Topic.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">import json, boto3</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># This handler is run every time the Lambda function is triggered</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">def lambda_handler(event, context):</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># Show the incoming event in the debug log</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  print(<span class="cm-string">"Event received by Lambda function: "</span> <span class="cm-operator">+</span> json.dumps(event, <span class="cm-def">indent</span><span class="cm-operator">=</span><span class="cm-number">2</span>))</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># For each inventory item added, check if the count is zero</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">for</span> record <span class="cm-keyword">in</span> event[<span class="cm-string">'Records'</span>]:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  newImage <span class="cm-operator">=</span> record[<span class="cm-string">'dynamodb'</span>].get(<span class="cm-string">'NewImage'</span>, None)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">if</span> newImage: &nbsp; &nbsp; &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  count <span class="cm-operator">=</span> int(record[<span class="cm-string">'dynamodb'</span>][<span class="cm-string">'NewImage'</span>][<span class="cm-string">'Count'</span>][<span class="cm-string">'N'</span>]) &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span> count <span class="cm-operator">==</span> <span class="cm-number">0</span>:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  store <span class="cm-operator">=</span> record[<span class="cm-string">'dynamodb'</span>][<span class="cm-string">'NewImage'</span>][<span class="cm-string">'Store'</span>][<span class="cm-string">'S'</span>]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  item &nbsp;<span class="cm-operator">=</span> record[<span class="cm-string">'dynamodb'</span>][<span class="cm-string">'NewImage'</span>][<span class="cm-string">'Item'</span>][<span class="cm-string">'S'</span>] &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment"># Construct message to be sent</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  message <span class="cm-operator">=</span> store <span class="cm-operator">+</span> <span class="cm-string">' is out of stock of '</span> <span class="cm-operator">+</span> item</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  print(message) &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment"># Connect to SNS</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  sns <span class="cm-operator">=</span> boto3.client(<span class="cm-string">'sns'</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  alertTopic <span class="cm-operator">=</span> <span class="cm-string">'NoStock'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  snsTopicArn <span class="cm-operator">=</span> [t[<span class="cm-string">'TopicArn'</span>] <span class="cm-keyword">for</span> t <span class="cm-keyword">in</span> sns.list_topics()[<span class="cm-string">'Topics'</span>]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span> t[<span class="cm-string">'TopicArn'</span>].lower().endswith(<span class="cm-string">':'</span> <span class="cm-operator">+</span> alertTopic.lower())][0] &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment"># Send message to SNS</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  sns.publish(</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-def">TopicArn</span><span class="cm-operator">=</span>snsTopicArn,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-def">Message</span><span class="cm-operator">=</span>message,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-def">Subject</span><span class="cm-operator">=</span><span class="cm-string">'Inventory Alert!'</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-def">MessageStructure</span><span class="cm-operator">=</span><span class="cm-string">'raw'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  )</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># Finished!</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  return <span class="cm-string">'Successfully processed {} records.'</span>.format(len(event[<span class="cm-string">'Records'</span>]))</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 829px;"></div><div class="CodeMirror-gutters" style="display: none; height: 829px;"></div></div></div></pre><p><span>Examine o código. Ele executa as seguintes etapas:</span></p><ul><li><span>Loop nos registros recebidos</span></li><li><span>Se a contagem de inventário for zero, enviar uma mensagem para o tópico do SNS </span><em><span>NoStock</span></em></li></ul><p><span>Agora você configurará a função para que ela seja acionada quando os dados forem adicionados à tabela </span><em><span>Inventory</span></em><span> no DynamoDB.</span></p></li><li><p><span>Role até a seção </span><strong><span>Designer</span></strong><span> na parte superior da página.</span></p></li><li><p><span>Escolha </span><span id="ssb_lambda_white"><i class="fas fa-plus"></i><span>Add trigger</span></span><span> (Adicionar trigger) e defina estas configurações:</span></p></li></ol><ul><li><strong><span>Select a trigger</span></strong><span> (Selecionar um trigger): </span><em><span>DynamoDB</span></em></li><li><strong><span>DynamoDB Table</span></strong><span> (Tabela do DynamoDB): </span><em><span>Inventory (Inventário)</span></em></li><li><span>Escolha </span><span id="ssb_lambda_orange"><span>Add</span></span><span> (Adicionar).</span></li></ul><ol start='42' ><li><span>Na parte superior da página, escolha </span><span id="ssb_lambda_orange"><span>Save</span></span><span> (Salvar).</span></li></ol><p><span>   Agora, você está pronto para testar o sistema.</span></p><br><h2 id='tarefa-6-testando-o-sistema'><span>Tarefa 6: testando o sistema</span></h2><p><span>Agora você fará o upload de um arquivo de inventário para o Amazon S3, que acionará a função </span><em><span>Load-Inventory</span></em><span> original. Essa função carregará dados no DynamoDB, que acionará a nova função </span><em><span>Check-Stock</span></em><span> Lambda. Se a função do Lambda detectar um item com inventário zero, ela enviará uma mensagem para o Amazon SNS. Em seguida, o Amazon SNS notificará você por SMS ou e-mail.</span></p><ol start='43' ><li><span>No menu </span><span id="ssb_services"><span>Services (Serviços)</span><i class="fas fa-angle-down"></i></span><span>, escolha </span><strong><span>S3</span></strong><span>.</span></li><li><span>Escolha o nome do bucket do seu </span><em><span>inventory-</span><number></em><span>.</span></li><li><span>Escolha </span><strong><span>Carregar e fazer</span></strong><span> upload de um arquivo de inventário diferente.</span></li><li><span>Retorne ao </span><strong><span>Painel do Sistema de Inventário</span></strong><span> e atualize </span><i class="fas fa-sync"></i><span> a página.</span></li></ol><p><span>   Agora você deve ser capaz de usar o menu suspenso </span><strong><span>Store</span></strong><span> (Armazenamento) para visualizar o inventário de ambas as lojas.</span></p><p><span>   Além disso, você deve receber uma </span><em><span>notificação por SMS ou e-mail</span></em><span> de que a loja tem um item fora de estoque (cada arquivo de inventário tem um item que está fora de estoque).</span></p><p><span>   </span><i class="fas fa-comment"></i><span> Se você não recebeu uma notificação, aguarde alguns minutos e carregue um arquivo de inventário diferente. Às vezes, o acionador do DynamoDB pode levar alguns minutos para habilitar.</span></p><ol start='47' ><li><span>Tente fazer upload de vários arquivos de inventário ao mesmo tempo. O que você acha que vai acontecer?</span></li></ol><br><h2 id='enviar-o-trabalho'><span>Enviar o trabalho</span></h2><ol start='48' ><li><span>Na parte superior destas instruções, escolha </span><span id="ssb_blue"><span>Submit</span></span><span> (Enviar) para gravar seu progresso e, quando solicitado, escolha </span><strong><span>Yes</span></strong><span> (Sim).</span></li><li><span>Se os resultados não forem exibidos após alguns minutos, volte ao topo destas instruções e escolha </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Notas).</span></li></ol><p><span>   </span><strong><span>Dica</span></strong><span>: você pode enviar seu trabalho várias vezes. Depois de alterar o trabalho, escolha </span><strong><span>Submit</span></strong><span> (Enviar) novamente. Seu último envio é o que será gravado para este laboratório.</span></p><ol start='50' ><li><span>Para ver o feedback detalhado do seu trabalho, escolha </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalhes) e depois </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Visualizar relatório de envio).</span></li></ol><br><h2 id='laboratório-concluído-i-classfas-fa-graduation-capi'><span>Laboratório concluído </span><i class="fas fa-graduation-cap"></i></h2><p><i class="fas fa-flag-checkered"></i><span> Parabéns! Você concluiu o laboratório.</span></p><ol start='51' ><li><span>Escolha </span><span id="ssb_voc_grey"><span>End Lab</span></span><span> (Encerrar laboratório) na parte superior desta página e, em seguida, selecione </span><span id="ssb_blue"><span>Yes</span></span><span> (Sim) para confirmar que você deseja encerrar o laboratório.</span></li></ol><p><span>   Um painel indica que </span><em><span>DELETE has been initiated... You may close this message box now (A EXCLUSÃO foi iniciada... Você pode fechar esta caixa de mensagem agora)</span></em><span>.</span></p><ol start='52' ><li><span>Escolha o </span><strong><span>X</span></strong><span> no canto superior direito para fechar o painel.</span></li></ol><p>&nbsp;</p><p>&nbsp;</p><p><em><span>©2020, Amazon Web Services, Inc. e suas afiliadas. Todos os direitos reservados. Este trabalho não pode ser reproduzido ou redistribuído, no todo ou em parte, sem permissão prévia por escrito da Amazon Web Services, Inc. É proibido copiar, emprestar ou vender para fins comerciais.</span></em></p></div></div>
+</body>
+</html>

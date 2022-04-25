@@ -1,0 +1,1164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='可选）模块-13----指导实验-1将整体式-nodejs-应用程序拆分为微服务'><span>（可选）模块 13 – 指导实验 1：将整体式 Node.js 应用程序拆分为微服务</span></h1><h2 id='实验概览和目标'><span>实验概览和目标</span></h2><p><span>传统的整体式架构很难扩展。随着应用程序代码库的增长，更新和维护工作会变得越来越复杂。引入新功能、语言、框架和技术会既困难又复杂，从而会限制创新和新想法。</span></p><p><span>在微服务架构中，每个应用程序组件都作为自己的服务运行。它们围绕业务功能构建，每项服务执行单一功能。可以使用不同的框架和编程语言编写微服务，它们通过明确定义的应用程序编程接口 (API) 与其他服务进行通信。最后，您可以将它们作为单个服务单独部署，也可以作为一组服务进行部署。</span></p><p><span>在本可选实验中，您需要将在标准 Node.js 服务器中运行的整体式应用程序迁移到容器化 Docker 环境中。然后，您需要将应用程序重构为微服务，并部署到由 Amazon Elastic Container Service (Amazon ECS) 编排的容器化环境中。Node.js 应用程序实现了一个简单的留言板的功能，</span><em><span>用户</span></em><span>可以在留言板中创建主题</span><em><span>线程</span></em><span>并在每个线程中发布</span><em><span>消息</span></em><span>。</span></p><p>&nbsp;</p><p><span>完成本实验后，您应能够：</span></p><ul><li><span>将整体式 Node.js 应用程序迁移到 Docker 容器中运行</span></li><li><span>将 Node.js 应用程序从整体式设计重构为微服务架构</span></li><li><span>将容器化 Node.js 微服务应用程序部署到 Amazon ECS</span></li></ul><p>&nbsp;</p><p><span>下图演示了应用程序设计从整体式到微服务式的演变。</span></p><p><img src="images/Application-design-monolith-to-microservices.png" width="600" alt="实验架构"></p><p>&nbsp;</p><p>&nbsp;</p><p><span>该图突出显示了整体式方法和微服务设计之间的以下区别：</span></p><ul><li><span>在整体式设计中，将 Node.js 应用程序的所有功能打包并作为单个服务运行。如果一项功能发生故障，则整个应用程序将发生故障。同样，如果一个应用程序功能遇到需求激增，则必须同时扩展服务中的所有功能。</span></li><li><span>在微服务架构中，Node.js 应用程序的每个功能都作为单独的服务运行。这些服务可以彼此独立扩展和更新。</span></li></ul><br><h2 id='持续时间'><span>持续时间</span></h2><p><span>完成本实验大约需要 </span><strong><span>3 小时</span></strong><span>。</span></p><br><h2 id='aws-服务限制'><span>AWS 服务限制</span></h2><p><span>在本实验环境中，对 AWS 服务和服务操作的访问可能仅限于完成实验说明所需的服务和服务操作。如果您尝试访问其他服务或执行本实验中所述之外的操作，可能会遇到错误。</span></p><br><h2 id='访问-aws-管理控制台'><span>访问 AWS 管理控制台</span></h2><ol start='' ><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）即可启动您的实验。</span></p><p><strong><span>Start Lab</span></strong><span>（启动实验）面板随即会打开，其中显示了实验状态。</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>提示</span></strong><span>：如果您需要更多时间来完成实验，请再次选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）按钮，重新启动环境计时器。</span></p></li><li><p><span>请耐心等待，直到 </span><strong><span>Start Lab</span></strong><span>（启动实验）面板显示消息 </span><em><span>Lab status: ready</span></em><span>（实验状态：就绪），然后选择 </span><strong><span>X</span></strong><span> 关闭此面板。</span></p></li><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_voc_grey"><span>AWS</span></span><span>。</span></p><p><span>此操作将在一个新的浏览器选项卡中打开 AWS 管理控制台。您将自动登录系统。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>提示</span></strong><span>：如果未打开新的浏览器选项卡，您的浏览器顶部通常会出现一个横幅或图标，并显示一条消息，指明您的浏览器阻止该了网站打开弹出窗口。请选择横幅或图标，然后选择 </span><strong><span>Allow pop-ups</span></strong><span>（允许弹出窗口）。</span></p></li><li><p><span>排列 </span><strong><span>AWS 管理控制台</span></strong><span>选项卡，使其与这些说明一起显示。理想情况下，您将同时打开两个浏览器选项卡，以便能够更轻松地执行实验步骤。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>除非特别要求，否则请勿更改区域</span></strong><span>。</span></p></li></ol><br><h2 id='任务-1准备开发环境'><span>任务 1：准备开发环境</span></h2><p><span>在创建实验环境的过程中，系统已为您创建 AWS Cloud9 环境。AWS Cloud9 是基于云的集成开发环境 (IDE)，您可以使用它在浏览器上编写、运行和调试代码。它预先打包了适用于常用编程语言的基本工具，并可在终端会话选项卡中访问 AWS 命令行界面 (AWS CLI)。您的 AWS Cloud9 环境可以访问用于登录 AWS 管理控制台的用户 ID 获得授权的所有 AWS 资源。</span></p><p>&nbsp;</p><p><span>要设置开发环境，您需要打开 AWS Cloud9 IDE，然后下载并提取所需的</span><em><span>实验文件</span></em><span>。</span></p><ol start='5' ><li><p><span>在 </span><strong><span>AWS 管理控制台</span></strong><span>浏览器选项卡中，展开 </span><strong><span>All services</span></strong><span>（所有服务），然后选择 </span><strong><span>Developer Tools &gt; Cloud9</span></strong><span>（开发人员工具 &gt; Cloud9）。</span></p></li><li><p><span>在 </span><strong><span>Cloud9-IDE</span></strong><span> 卡片中，选择 </span><strong><span>Open IDE</span></strong><span>（打开 IDE）</span></p><p><span>IDE 会在新浏览器选项卡中打开，并显示多个选项卡，包括 </span><strong><span>Welcome</span></strong><span>（欢迎）选项卡。</span></p><p><span>接下来，您将下载并提取所需的实验文件。</span></p></li><li><p><span>在 IDE 的底部窗格中，在标有 </span><strong><span>bash - &quot;ip-nnn-nnn-nnn-nnn&quot;</span></strong><span> 的终端选项卡中输入以下命令：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19995px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-builtin">curl</span> <span class="cm-attribute">-s</span> https://aws-tc-largeobjects.s3.amazonaws.com/ILT-TF-100-TUHAWA-1/lab-four/lab-files-ms-node-js.tar.gz | tar <span class="cm-attribute">-zxv</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><p><span>该命令会检索包含实验文件的压缩存档文件。它还会提取 AWS Cloud9 </span><strong><span>~/environment</span></strong><span> 文件夹中的文件内容。命令输出应类似以下示例：</span></p></li></ol><p><img src="images/Install-lab-files.png" width="800" alt="示例输出"></p><p><span>   </span>&nbsp;</p><p><span>   </span><strong><span>Environment</span></strong><span>（环境）窗口（位于左窗格中）中会显示下载的文件和提取的文件。</span></p><p><img src="images/Environment-window.png" width="400" alt="环境窗口"></p><p><span>   </span>&nbsp;</p><p><span>   您会看到以下文件夹：</span></p><ul><li><strong><span>1-no-container</span></strong><span> – 包含与应用程序的</span><em><span>整体式</span></em><span>实施相关的文件。此实施旨在直接在 Node.js 服务器上运行。</span></li><li><strong><span>2-containerized-monolith</span></strong><span> – 包含与应用程序的</span><em><span>整体式</span></em><span>实施相关的文件。此实施旨在在 Amazon ECS 编排的容器化 Docker 环境中运行。</span></li><li><strong><span>3-containerized-microservices</span></strong><span> – 包含与应用程序的</span><em><span>微服务</span></em><span>实施相关的文件。此实施旨在在 Amazon ECS 编排的容器化 Docker 环境中运行。</span></li></ul><p><span>   在整个实验过程中，AWS Cloud9 IDE 选项卡需始终保持打开状态，因为您会经常使用它。</span></p><br><h2 id='任务-2在基本-nodejs-服务器上运行应用程序'><span>任务 2：在基本 Node.js 服务器上运行应用程序</span></h2><p><span>基本 Node.js 应用程序是一向整体式服务，可直接在服务器上运行，无需容器。在此任务中，您要将应用程序部署到在运行 AWS Cloud9 环境的实例上安装的 Node.js 服务器。然后，您可以通过 AWS CLI 终端调用它的 RESTful API 方法，从而测试应用程序。</span></p><p><span>部署架构和请求流程如下图所示。</span></p><p><img src="images/Architecture-monolithic-no-container.png" width="800" alt="整体式部署架构"></p><p>&nbsp;</p><p><strong><span>注意</span></strong><span>：应用程序的整体式部署使用 Node.js </span><em><span>集群</span></em><span>功能为每个 CPU 内核生成一个工作进程。这些进程共用一个端口，并由内置在 Node.js 中的负载均衡器以轮询方式调用。这一功能提高了具有多个 CPU 内核的服务器的可扩展性。</span></p><p><span>在此任务中，您将：</span></p><ul><li><span>安装应用程序所需的 Node.js 模块</span></li><li><span>查看应用程序设计和代码</span></li><li><span>运行应用程序</span></li></ul><br><h3 id='任务-21安装所需的-nodejs-模块'><span>任务 2.1：安装所需的 Node.js 模块</span></h3><p><span>留言板应用程序在实施中使用 Node.js </span><em><span>koa</span></em><span> 框架中的两个模块：</span><em><span>koa</span></em><span> 和 </span><em><span>koa-router</span></em><span>。</span><em><span>Koa.js</span></em><span> 是一个应用广泛的 Node.js Web 应用程序框架，它可以帮助构建异步服务器端 JavaScript 应用程序。</span></p><ol start='8' ><li><p><span>在 Terminal（终端）选项卡中，输入以下命令以安装 </span><em><span>koa</span></em><span> 和 </span><em><span>koa-router</span></em><span> 模块：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-builtin">cd</span> ~/environment/1-no-container</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-builtin">npm</span> install koa</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-builtin">npm</span> install koa-router</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre></li></ol><p><img src="images/Install-node-modules.png" width="600" alt="koa 安装"></p><p><span>   </span>&nbsp;</p><p><span>   这两个模块将下载并安装到 AWS Cloud9 </span><strong><span>~/environment</span></strong><span> 文件夹的 </span><strong><span>1-no-container/node_modules</span></strong><span> 文件夹中。您可以忽略输出中的通知、警告和更新消息。</span></p><br><h3 id='任务-22查看应用程序设计和代码'><span>任务 2.2：查看应用程序设计和代码</span></h3><p><span>实施整体式留言板应用程序的组件位于 </span><strong><span>1-no-container</span></strong><span> 文件夹中。查看它们，以了解应用程序设计和代码。</span></p><ol start='9' ><li><p><span>在左侧的 </span><strong><span>Environment</span></strong><span>（环境）窗口中，展开 </span><strong><span>1-no-container</span></strong><span> 文件夹。应用程序的组件包括：</span></p><ul><li><strong><span>node_modules</span></strong><span> 文件夹 – 此文件夹是在之前的子任务中安装所需的 JavaScript 模块时创建的，其中包含它们的源代码。</span></li><li><strong><span>db.json</span></strong><span> – 一个 JavaScript 对象表示法 (JSON) 对象，用于模拟留言板数据库。它包含表示</span><em><span>用户</span></em><span>、</span><em><span>线程</span></em><span>和</span><em><span>帖子</span></em><span>的属性及相应的示例值。</span></li><li><strong><span>index.js</span></strong><span> – JavaScript 程序，是应用程序的入口点。</span></li><li><strong><span>package.json</span></strong><span> – 描述应用程序、应用程序入口点以及应用程序依赖项的 JSON 对象。</span></li><li><strong><span>package-lock.json</span></strong><span> – 在 </span><strong><span>node_modules</span></strong><span> 文件夹中安装所需的 JavaScript 模块时自动生成的 JSON 对象，供安装实用程序 </span><em><span>npm</span></em><span> 用来跟踪文件夹的修改。</span></li><li><strong><span>server.js</span></strong><span> – JavaScript 程序，用于定义应用程序的 RESTful API 方法和实施各自的处理程序。</span></li></ul></li><li><p><span>检查 </span><em><span>package.json</span></em><span> 对象。在 </span><strong><span>Environment</span></strong><span>（环境）窗口中，双击打开编辑器选项卡中的 </span><strong><span>package.json</span></strong><span>。请注意 JSON 对象的以下属性：</span></p></li></ol><ul><li><strong><span>第 2 行至第 5 行</span></strong><span> – </span><em><span>dependencies</span></em><span> 属性定义了应用程序的 JavaScript 模块依赖项。请注意，此处列出了您在之前的子任务中安装的 </span><em><span>koa</span></em><span> 和 </span><em><span>koa-router</span></em><span> 模块。</span></li><li><strong><span>第 6 行至第 8 行</span></strong><span> – </span><em><span>scripts</span></em><span> 属性将 </span><em><span>index.js</span></em><span> 程序声明为应用程序的入口点。</span></li></ul><ol start='11' ><li><span>检查 </span><strong><span>db.json</span></strong><span> 对象。在 </span><strong><span>Environment</span></strong><span>（环境）窗口中，双击打开编辑器选项卡中的 </span><strong><span>db.json</span></strong><span>。请注意 JSON 对象的以下属性：</span></li></ol><ul><li><p><strong><span>第 2 行至第 27 行</span></strong><span> – 这些行定义了表示留言板的注册用户的 </span><em><span>users</span></em><span> 属性。属性值是具有以下名称的</span><em><span>四个</span></em><span>示例用户的列表：</span><em><span>Marcerline Singer</span></em><span>、</span><em><span>Finn Alberts</span></em><span>、</span><em><span>Paul Barium</span></em><span> 和 </span><em><span>Jake Storm</span></em><span>。</span></p></li><li><p><strong><span>第 29 行至第 45 行</span></strong><span> – 这些行定义了表示留言板上当前活动线程的 </span><em><span>threads</span></em><span> 属性。属性值是具有以下标题的</span><em><span>三个</span></em><span>示例线程的列表：</span></p><ul><li><em><span>Did you see the Brazil game?</span></em></li><li><em><span>New French bakery opening in the neighborhood tomorrow</span></em></li><li><em><span>In search of a new guitar</span></em></li><li><strong><span>第 47 行至 78 行</span></strong><span> – 这些行定义了表示活动线程上发布的留言的 </span><em><span>posts</span></em><span> 属性。属性值是</span><em><span>六个</span></em><span>示例留言帖子的列表。</span></li></ul></li></ul><ol start='12' ><li><span>查看 </span><em><span>index.js</span></em><span> 的代码。在 </span><strong><span>Environment</span></strong><span>（环境）窗口中，双击打开编辑器选项卡中的 </span><strong><span>index.js</span></strong><span>。请注意以下信息：</span></li></ol><ul><li><strong><span>第 1 行至第 3 行</span></strong><span> – 这些行导入程序所需的 JavaScript 模块，特别是：</span><em><span>cluster</span></em><span>、</span><em><span>http</span></em><span> 和 </span><em><span>os</span></em><span>。</span></li><li><strong><span>第 3 行</span></strong><span> – 此行使用 </span><em><span>os</span></em><span> 模块询问服务器上可用的 CPU 内核数。</span></li><li><strong><span>第 5 行至第 15 行</span></strong><span> – 这些行在第一次调用程序时（应用程序启动时）运行。它们为集群创建一个 </span><em><span>Leader</span></em><span> 主题，为服务器上可用的每个 CPU 内核创建一个 </span><em><span>worker</span></em><span> 主题。</span></li><li><strong><span>第 16 行至第 19 行</span></strong><span> – 这些行通过调用当前 </span><em><span>worker</span></em><span> 主题中的 </span><em><span>server.js</span></em><span> 程序来处理向应用程序发出的每个请求。</span></li></ul><ol start='13' ><li><span>最后，查看 </span><em><span>server.js</span></em><span> 的代码。在 </span><strong><span>Environment</span></strong><span>（环境）窗口中，双击打开编辑器选项卡中的 </span><strong><span>server.js</span></strong><span>。使用代码中提供的注释来帮助您理解逻辑。请特别注意以下信息：</span></li></ol><ul><li><p><strong><span>第 3 行</span></strong><span> – 此行可导入 </span><em><span>db.json</span></em><span>，即用于模拟数据库的 JSON 对象。</span></p></li><li><p><strong><span>第 6 行至第 11 行</span></strong><span> – 这些行定义了为每个请求运行的生成器函数。目的是为每个已经处理的请求打印包含 </span><em><span>HTTP 方法</span></em><span>、</span><em><span>资源路径 URL</span></em><span> 和</span><em><span>运行时间</span></em><span>的行。</span></p></li><li><p><strong><span>第 13 行至第 47 行</span></strong><span> – 这些行定义了应用程序的 RESTful API 方法及实施。具体而言，应用程序可以响应以下 RESTful 调用。</span></p><ul><li><code>GET /api/users</code><span>：返回数据库中的</span><em><span>用户</span></em><span>集合</span></li><li><code>GET /api/users/:userId</code><span>：返回由 </span><em><span>:userId</span></em><span> 标识的</span><em><span>用户</span></em><span>信息</span></li><li><code>GET /api/threads</code><span>：返回数据库中的</span><em><span>线程</span></em><span>集合</span></li><li><code>GET /api/threads/:threadId</code><span>：返回由 </span><em><span>:threadId</span></em><span> 标识的</span><em><span>线程</span></em><span>信息</span></li><li><code>GET /api/posts/in-thread/:threadId</code><span>：返回由 </span><em><span>:threadId</span></em><span> 标识的</span><em><span>主题</span></em><span>的</span><em><span>帖子消息</span></em><span>集合</span></li><li><code>GET /api/posts/by-user/:userId</code><span>：返回由 </span><em><span>:userId</span></em><span> 标识的</span><em><span>用户</span></em><span>的</span><em><span>帖子消息</span></em><span>集合</span></li><li><code>GET /api/</code><span>：返回消息 </span><em><span>API ready to receive requests</span></em><span>（API 已准备好接收请求）</span></li><li><code>GET /</code><span>：返回消息 </span><em><span>Ready to receive requests</span></em><span>（准备好接收请求）</span></li></ul></li><li><p><strong><span>第 52 行</span></strong><span> – 此行定义了应用程序用于侦听请求的</span><em><span>端口号</span></em></p></li></ul><br><h3 id='任务-23运行应用程序'><span>任务 2.3：运行应用程序</span></h3><p><span>在此子任务中，您将启动 Node.js 服务器并运行留言板应用程序。然后，您将测试它的一些 RESTful API 方法。</span></p><ol start='14' ><li><span>在 Terminal（终端）选项卡中，输入以下命令，启动 Node.js 和应用程序：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-builtin">npm</span> <span class="cm-builtin">start</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><img src="images/Start-node-js.png" width="600" alt="NPM 启动"></p><p><span>   </span>&nbsp;</p><p><span>   服务器启动，应用程序的入口点 </span><em><span>index.js</span></em><span> 开始运行。第一次调用 </span><em><span>index.js</span></em><span> 时，它会创建两个集群线程（</span><em><span>Leader</span></em><span> 和 </span><em><span>Worker</span></em><span>）来处理请求。</span></p><p><span>   接下来，让当前终端会话保持活动状态，然后打开第二个终端选项卡来测试应用程序的 RESTful API。</span></p><ol start='15' ><li><span>在底部窗格中，选择 </span><strong><span>(+)</span></strong><span> 并选择 </span><strong><span>New Terminal</span></strong><span>（新终端），打开一个新的终端选项卡。现在有两个可以输入命令的终端了。</span></li><li><span>在</span><strong><span>右侧的终端选项卡</span></strong><span>中，输入以下命令来检索 </span><code>/api/users</code><span> 资源：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-builtin">curl</span> localhost:3000/api/users</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>   RESTful 调用返回一个 JSON 对象，其中包含留言板数据库中的</span><em><span>用户</span></em><span>列表。</span></p><p><img src="images/Curl-get-users-on-direct-server.png" width="1000" alt="用户列表"></p><p>&nbsp;</p><ol start='17' ><li><span>选择</span><strong><span>左侧的终端选项卡</span></strong><span>。您会看到 server.js 的输出消息，消息显示它处理了对资源的 GET 方法请求，该请求由路径 </span><code>/api/users</code><span> 标识。处理该请求需 </span><em><span>4</span></em><span> 毫秒。</span></li></ol><p><img src="images/Curl-get-users-on-direct-server-message.png" width="600" alt="用户 GET 请求"></p><p><span>   </span>&nbsp;</p><ol start='18' ><li><span>仅检索数据库中</span><em><span>第四个</span></em><span>用户的信息。在</span><strong><span>右侧的终端选项卡</span></strong><span>中，输入以下命令：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-builtin">curl</span> localhost:3000/api/users/4</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>   返回数据库中的第四个用户 </span><em><span>Jake Storm</span></em><span> 的信息：</span></p><p>&nbsp;</p><p><img src="images/Curl-get-one-user-on-direct-server.png" width="1000" alt="第四个用户"></p><p>&nbsp;</p><ol start='19' ><li><span>接下来，检索当前数据库中的所有</span><em><span>线程</span></em><span>。在</span><strong><span>右侧的终端选项卡</span></strong><span>中，输入以下命令：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-builtin">curl</span> localhost:3000/api/threads</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>   系统将返回一个 JSON 对象，其中包含数据库中的所有线程：</span></p><p><img src="images/Curl-get-threads-on-direct-server.png" width="1000" alt="线程"></p><p><span>   </span>&nbsp;</p><ol start='20' ><li><span>最后，检索数据库中</span><em><span>第一个</span></em><span>主题的所有</span><em><span>帖子</span></em><span>。在</span><strong><span>右侧的终端选项卡</span></strong><span>中，输入以下命令：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-builtin">curl</span> localhost:3000/api/posts/in-thread/1</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>   系统将返回一个 JSON 对象，其中包含两个留言帖子：</span></p><p><img src="images/Curl-get-posts-in-thread-on-direct-server.png" width="1000" alt="帖子"></p><p><span>   </span>&nbsp;</p><ol start='21' ><li><span>停止运行 Node.js 服务器。在</span><strong><span>左侧的终端选项卡</span></strong><span>中，按 CTRL+C 终止服务器进程。</span></li></ol><p><span>您已验证应用程序可正确响应 GET 请求。在下一个任务中，您将对应用程序进行容器化。</span></p><br><h2 id='任务-3容器化的整体式应用程序以部署到-amazon-ecs'><span>任务 3：容器化的整体式应用程序以部署到 Amazon ECS</span></h2><p><span>容器将应用程序代码封装在一个部署单元中，该单元会拍摄代码及其依赖项的快照。无论部署环境如何，它们都可以帮助确保应用程序快速、可靠、一致地部署。</span></p><p><span>在此任务中，您将为整体式留言板应用程序构建容器映像，然后将其推送到 Amazon Elastic Container Registry (Amazon ECR)。此步骤将为应用程序部署到 Amazon ECS 做好准备。</span></p><p><span>具体而言，您将执行以下步骤：</span></p><ul><li><span>为 Docker 容器化准备应用程序</span></li><li><span>预置存储库</span></li><li><span>构建 Docker 映像并将其推送到存储库</span></li></ul><br><h3 id='任务-31为-docker-容器化准备应用程序'><span>任务 3.1：为 Docker 容器化准备应用程序</span></h3><p><span>要将留言板应用程序放入 Docker 容器中，必须对应用程序进行以下更改：</span></p><ul><li><span>不使用 Node.js </span><em><span>集群</span></em><span>特性，将应用程序转换为单进程设计。使用 Docker 容器，目的是每个容器运行一个进程，而不是一组进程。</span></li><li><span>为应用程序创建 </span><em><span>Dockerfile</span></em><span>。此文件本质上是一个构建脚本，其中包含有关如何为应用程序构建</span><em><span>容器映像</span></em><span>的说明。</span></li></ul><p><span>AWS Cloud9 环境的 </span><strong><span>2-containerized-monolith</span></strong><span> 文件夹中提供了容器就绪版本的应用程序。花几分钟时间查看文件并了解为准备对应用程序进行容器化需要做的更改。</span></p><ol start='22' ><li><span>在左侧的 </span><strong><span>Environment</span></strong><span>（环境）窗口中，展开 </span><strong><span>2-containerized-monolith</span></strong><span> 文件夹，然后双击打开编辑器选项卡中的 </span><strong><span>package.json</span></strong><span>。</span></li></ol><p><span>   在</span><strong><span>第 7 行</span></strong><span>中，请注意应用程序的入口点已从 </span><em><span>index.js</span></em><span> 更改为 </span><em><span>server.js</span></em><span>。应用程序文件夹中已不存在 </span><em><span>index.js</span></em><span> 文件。</span><em><span>index.js</span></em><span> 文件包含 Node.js </span><em><span>集群</span></em><span>特性的初始化逻辑，您将无需再使用该特性。</span></p><ol start='23' ><li><span>在 </span><strong><span>Environment</span></strong><span>（环境）窗口中，展开 </span><strong><span>2-containerized-monolith</span></strong><span> 文件夹，然后双击打开编辑器选项卡中的 </span><strong><span>server.js</span></strong><span> 文件。</span></li></ol><p><span>   与非容器化版本的唯一区别是添加了</span><strong><span>第 54 行</span></strong><span>，在第一次启动应用程序时，它会打印消息 </span><em><span>Worker started</span></em><span>（已启动 Worker）。</span></p><ol start='24' ><li><span>在 </span><strong><span>Environment</span></strong><span>（环境）中，展开 </span><strong><span>2-containerized-monolith</span></strong><span> 文件夹，然后双击打开编辑器选项卡中的 </span><strong><span>Dockerfile</span></strong><span>。</span></li></ol><p><span>   此文件包含有关如何为应用程序构建容器映像的说明。</span></p><p><img src="images/Dockerfile-monolith.png" width="800" alt="Dockerfile"></p><p>&nbsp;</p><p><span>请注意以下信息：</span></p><ul><li><strong><span>第 1 行</span></strong><span> – 将在其中构建容器映像的基础映像。在这里，它是一个 </span><em><span>alpine-node</span></em><span>，即 Node.js 映像。</span></li><li><strong><span>第 3 行</span></strong><span> – 此行将映像上的文件系统工作目录设置为 </span><em><span>/srv</span></em><span>。</span></li><li><strong><span>第 4 行</span></strong><span> – 此行将 </span><strong><span>2-containerized-monolith</span></strong><span> 文件夹（应用程序文件夹）的内容添加到映像文件系统的当前工作目录（在上一行中设置）。</span></li><li><strong><span>第 5 行</span></strong><span> – 此行调用 </span><em><span>npm install</span></em><span> 命令来安装 </span><em><span>package.json</span></em><span> 文件中声明的所有应用程序库依赖项。</span></li><li><strong><span>第 7 行</span></strong><span> – 此行通知 Docker，容器运行时会侦听端口 3000。</span></li><li><strong><span>第 8 行</span></strong><span> – 此行要求 Docker 运行命令 </span><em><span>node server.js</span></em><span>，在映像启动时启动应用程序。</span></li></ul><p><span>现在您已了解如何构建应用程序的容器映像，接下来您将了解映像构建完成后将放置在哪里。</span></p><p><br>
+<span>###任务 3.2：预置存储库</span></p><p><span>将 Docker 容器映像存储在存储库中，以便实现共享、版本控制和更轻松的管理。借助 </span><em><span>Amazon ECR</span></em><span>，开发人员可以轻松存储、管理和部署 Docker 容器映像。此外，还可以将 Amazon ECR 与 Amazon ECS 集成，让 Amazon ECS 直接拉取容器映像进行生产部署。</span></p><p><span>在此子任务中，您将在 Amazon ECR 中创建一个存储库来存放留言板应用程序的 Docker 容器映像。</span></p><ol start='25' ><li><span>在 </span><strong><span>Your environments</span></strong><span>（您的环境）浏览器选项卡中，选择 </span><strong><span>Services</span></strong><span>（服务），然后选择 </span><strong><span>Container &gt; Elastic Container Registry</span></strong><span>（容器 &gt; Elastic Container Registry）。</span></li></ol><p><span>   此时系统将打开 Amazon ECR 控制台。</span></p><ol start='26' ><li><span>在 </span><strong><span>Create a repository</span></strong><span>（创建存储库）中，选择 </span><strong><span>Get Started</span></strong><span>（入门）。</span></li><li><span>在 </span><strong><span>Repository name</span></strong><span>（存储库名称）框中，输入 </span><code>mb-repo</code><span>。</span></li><li><span>选择 </span><strong><span>Create repository</span></strong><span>（创建存储库）。</span></li></ol><p><span>   页面顶部显示一条消息，表明已成功创建存储库。</span></p><p><span>   </span><strong><span>注意：*</span></strong><span>请勿关闭显示消息的窗口。*您会在下一个子任务中用到它。</span></p><br><h3 id='任务-33构建和推送-docker-映像'><span>任务 3.3：构建和推送 Docker 映像</span></h3><p><span>现在，您可以为应用程序构建容器映像并将其推送到您创建的 Amazon ECR 存储库了。</span></p><p><span>Amazon ECR 控制台的一个实用功能是它提供了即用型命令模板，用于构建映像并将其推送到新存储库。在接下来的步骤中，您将使用它提供的这些 AWS CLI 命令。</span></p><ol start='29' ><li><span>要成功运行后续步骤，必须先升级 AWS CLI。为此，请转到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡，然后在</span><strong><span>左侧的终端选项卡</span></strong><span>中输入以下命令：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  pip3 install awscli <span class="cm-attribute">--upgrade</span> <span class="cm-attribute">--user</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-keyword">export</span> <span class="cm-def">PATH</span><span class="cm-operator">=</span><span class="cm-def">$HOME</span>/.local/bin:<span class="cm-def">$PATH</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><ol start='30' ><li><span>返回 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡，然后在页面顶部的消息窗口中，选择 </span><strong><span>View push commands</span></strong><span>（查看推送命令）。</span></li></ol><p><span>   系统将打开 </span><strong><span>Push commands for mb-repo</span></strong><span>（mb-repo 的推送命令）弹出窗口。此窗口列出了为 </span><em><span>mb-repo</span></em><span> 自定义的四个 AWS CLI 命令，这些命令专门用于：</span></p><ul><li><span>针对 Amazon ECR 注册表验证 Docker 客户端的身份</span></li><li><span>构建 Docker 映像</span></li><li><span>标记 Docker 映像</span></li><li><span>将 Docker 映像推送到存储库</span></li></ul><p><span>弹出窗口提供了两个版本的命令：一个用于 </span><em><span>macOS/linux</span></em><span>，另一个用于 </span><em><span>Microsoft Windows</span></em><span>。</span></p><ol start='31' ><li><span>请确保已选择 </span><strong><span>macOS/linux</span></strong><span> 选项卡，因为您将在 AWS Cloud9 环境中运行这些命令。</span></li></ol><p><span>   首先，您将复制并运行命令，将 Docker 客户端登录到注册表。</span></p><ol start='32' ><li><span>在弹出窗口中，找到</span><em><span>第一个</span></em><span>命令然后选择 </span><strong><span>Copy</span></strong><span>（复制）图标，将命令复制到剪贴板。</span></li></ol><p><span>   该命令类似于以下示例：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19998px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-def">$ aws</span> ecr get-login-password <span class="cm-attribute">--region</span> us-east-1 | docker login <span class="cm-attribute">--username</span> AWS <span class="cm-attribute">--password-stdin</span> <span class="cm-number">01234567890</span>.dkr.ecr.us-east-1.amazonaws.com/mb-repo</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><ol start='33' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在</span><strong><span>左侧的终端选项卡</span></strong><span>中，粘贴复制的命令，然后按 Enter 键运行：</span></li></ol><p><img src="images/Docker-client-login.png" width="800" alt="Docker 客户端登录"></p><p><span>   </span>&nbsp;</p><p><span>   如果命令运行成功，它将返回消息 </span><em><span>Login Succeeded</span></em><span>（登录成功）。您可以忽略所显示的警告。</span></p><p><span>   接下来，您将为应用程序构建 Docker 映像。</span></p><p><span>   </span><strong><span>注意</span></strong><span>：如果指令步骤中未指定终端选项卡，请使用</span><em><span>左侧</span></em><span>的终端选项卡。</span></p><ol start='35' ><li><span>在 Terminal（终端）选项卡中，输入以下命令，将目录更改为 </span><strong><span>2-containerized-monolith</span></strong><span> 文件夹：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-builtin">cd</span> ~/environment/2-containerized-monolith</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><ol start='36' ><li><span>切换到 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡。</span></li><li><span>在 </span><strong><span>Push commands for mb-repo</span></strong><span>（mb-repo 的推送命令）窗口中，找到</span><em><span>第二个</span></em><span>命令，然后选择 </span><strong><span>Copy</span></strong><span>（复制）图标，复制命令。</span></li></ol><p><span>   该命令类似于以下示例：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  docker build <span class="cm-attribute">-t</span> mb-repo .</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>   确保命令末尾包含句点 (.)。</span></p><ol start='38' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 Terminal（终端）选项卡中，粘贴复制的命令，然后按 Enter 键运行：</span></li></ol><p><img src="images/Docker-build-mb-repo.png" width="600" alt="构建 Docker 映像"></p><p><span>   </span>&nbsp;</p><p><span>   *build *命令在运行应用程序的 </span><em><span>Dockerfile</span></em><span> 中的指令时生成多行输出。完成后，会显示消息 </span><em><span>Successfully built nnnnnnnnnn</span></em><span>（已成功构建 nnnnnnnnnn）和 </span><em><span>Successfully tagged mb-repo:latest</span></em><span>（已成功标记 mb-repo:latest）。</span></p><p><span>   接下来，您将使用存储库 URI 来标记映像，以便将映像推送到存储库。</span></p><ol start='40' ><li><span>切换到 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡。</span></li><li><span>在 </span><strong><span>Push commands for mb-repo</span></strong><span>（mb-repo 的推送命令）窗口中，找到</span><em><span>第三个</span></em><span>命令，然后选择 </span><strong><span>Copy</span></strong><span>（复制）图标。</span></li></ol><p><span>   该命令类似于以下示例：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.20001px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  docker tag mb-repo:latest <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><ol start='42' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 Terminal（终端）选项卡中，粘贴并运行复制的命令：</span></li></ol><p><img src="images/Docker-tag-mb-repo.png" width="1000" alt="标记映像"></p><p><span>   </span>&nbsp;</p><p><span>   如果成功完成，命令不会返回任何内容。</span></p><p><span>   最后，您要将容器映像推送到应用程序的存储库中。</span></p><ol start='44' ><li><span>切换到 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡。</span></li><li><span>在 </span><strong><span>Push commands for mb-repo</span></strong><span>（mb-repo 的推送命令）窗口中，找到</span><em><span>第四个</span></em><span>命令并进行复制。</span></li></ol><p><span>   该命令类似于以下示例：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  docker push <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><ol start='46' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 Terminal（终端）选项卡中，粘贴并运行复制的命令：</span></li></ol><p><img src="images/Docker-push-mb-repo.png" width="800" alt="将容器推送到存储库"></p><p><span>   </span>&nbsp;</p><p><span>   将映像的每一层推送到存储库后，命令会输出多条消息。</span></p><p><span>   接下来，您将验证是否已成功上传映像。</span></p><ol start='48' ><li><span>切换到 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡。</span></li><li><span>关闭 </span><strong><span>Push commands for mb-repo</span></strong><span>（mb-repo 的推送命令）窗口。</span></li><li><span>在 </span><strong><span>Repositories</span></strong><span>（存储库）列表中，选择 </span><strong><span>mb-repo</span></strong><span>。</span></li></ol><p><span>   在 </span><strong><span>Images</span></strong><span>（映像）列表中，您应该会看到推送的容器映像，您可以通过 </span><em><span>latest</span></em><span> 标签来识别。</span></p><p><img src="images/ECR-mb-repo-images.png" width="600" alt="最新映像"></p><p><span>   </span>&nbsp;</p><ol start='51' ><li><span>记录</span><em><span>映像 URI</span></em><span>。在 </span><strong><span>Images</span></strong><span>（映像）列表中，找到</span><em><span>最新</span></em><span>版本的</span><strong><span>映像 URI</span></strong><span>，然后选择 </span><strong><span>Copy</span></strong><span>（复制）图标。将值粘贴到文本编辑器中。您会在后续步骤中用到它。</span></li></ol><p><span>   您已成功为留言板应用程序创建容器映像，并推送到 Amazon ECR 存储库。</span></p><br><h2 id='任务-4将整体式应用程序部署到-amazon-ecs'><span>任务 4：将整体式应用程序部署到 Amazon ECS</span></h2><p><span>在此任务中，您要将容器化的整体式应用程序部署到 Amazon ECS 运行时环境中。具体来说，您使用 Amazon ECS 创建 Amazon Elastic Compute Cloud (Amazon EC2) 实例的托管集群。您将应用程序容器映像部署到此集群。将集群配置为 Application Load Balancer 的目标组，提供故障转移功能和可扩展性。</span></p><p><span>下图显示了容器化的整体式应用程序的部署架构。它还显示了您将在此任务中创建的资源。</span></p><p><img src="images/Architecture-containerized-monolith.png" width="800" alt="容器化的整体式应用程序"></p><p>&nbsp;</p><p><span>在此任务中，您需执行以下步骤：</span></p><ul><li><span>创建 Amazon ECS 集群。</span></li><li><span>为应用程序容器映像创建任务定义。</span></li><li><span>创建 Application Load Balancer。</span></li><li><span>将整体式应用程序部署为 ECS 服务。</span></li><li><span>测试容器化的整体式应用程序。</span></li></ul><br><h3 id='任务-41创建-amazon-ecs-集群'><span>任务 4.1：创建 Amazon ECS 集群</span></h3><p><span>Amazon ECS 集群是 EC2 实例的逻辑分组，您可以在其中运行代表容器化应用程序的任务或服务。</span></p><p><span>在此子任务中，您将使用 Amazon ECS 控制台创建 ECS 集群。通过控制台的集群创建向导，您可以为构建 ECS 集群环境创建所需的所有基础设施组件。这些组件包括 Virtual Private Cloud (VPC)、子网、安全组、互联网网关以及 AWS Identity and Access Management (IAM) 角色。</span></p><ol start='52' ><li><span>返回 </span><strong><span>AWS 管理控制台</span></strong><span>浏览器选项卡，选择 </span><strong><span>Services</span></strong><span>（服务），然后选择 </span><strong><span>Containers &gt; Elastic Container Service</span></strong><span>（容器 &gt; Elastic Container Service）。</span></li><li><span>在导航窗格中，选择 </span><strong><span>Amazon ECS &gt; Clusters</span></strong><span>（Amazon ECS &gt; 集群）。</span></li><li><span>在 </span><strong><span>Clusters</span></strong><span>（集群）页面上，选择 </span><strong><span>Create Cluster</span></strong><span>（创建集群）。</span></li><li><span>在 </span><strong><span>Select cluster template</span></strong><span>（选择集群模板）页面上，选择 </span><strong><span>EC2 Linux + Networking</span></strong><span>（EC2 Linux + 联网）卡片。</span></li><li><span>选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Configure cluster</span></strong><span>（配置集群）向导中，配置以下设置。</span></li></ol><ul><li><strong><span>Cluster name</span></strong><span>（集群名称）：</span><code>mb-ecs-cluster</code></li><li><strong><span>Provisioning Model</span></strong><span>（预置模型）：</span><em><span>On-Demand Instance</span></em><span>（按需实例）</span></li><li><strong><span>EC2 instance type</span></strong><span>（EC2 实例类型）：</span><em><span>t2.micro</span></em></li><li><strong><span>Number of instances</span></strong><span>（实例的数量）：</span><code>2</code></li><li><strong><span>VPC</span></strong><span>：</span><em><span>Create a new VPC</span></em><span>（创建新 VPC）</span></li><li><strong><span>CIDR block</span></strong><span>（CIDR 块）：</span><code>10.32.0.0/16</code></li><li><strong><span>Subnet 1</span></strong><span>（子网 1）：</span><code>10.32.0.0/24</code></li><li><strong><span>Subnet 2</span></strong><span>（子网 2）：</span><code>10.32.1.0/24</code></li><li><strong><span>Security group</span></strong><span>（安全组）：</span><em><span>Create a new security group</span></em><span>（创建新安全组）</span></li><li><strong><span>Security group inbound rules</span></strong><span>（安全组入站规则）：保留默认设置，允许端口 80 上的所有 IP 地址的入站流量。</span></li></ul><p><span>   </span><strong><span>注意</span></strong><span>：</span><strong><span>Container instance IAM role</span></strong><span>（容器实例 IAM 角色）部分中的消息显示您正在向 Amazon ECS 授予创建和使用 </span><strong><span>ecsInstanceRole</span></strong><span> 的权限。此角色授予集群中的 EC2 实例调用 Amazon ECS 操作的权限。</span></p><ol start='58' ><li><span>选择 </span><strong><span>Create</span></strong><span>（创建）。</span></li></ol><p><span>   系统将打开 </span><strong><span>Launch Status</span></strong><span>（启动状态）页面，并显示向导执行的任务。</span></p><ol start='59' ><li><span>等待所有任务都标有复选标记，这表明任务已完成。</span></li></ol><p><img src="images/Cluster-creation-complete.png" width="800" alt="完成创建"></p><p><span>   </span>&nbsp;</p><p><span>   向导创建的资源会在 </span><strong><span>Cluster Resources</span></strong><span>（集群资源）部分列出。</span></p><ol start='60' ><li><span>选择 </span><strong><span>View cluster</span></strong><span>（查看集群）。</span></li></ol><p><span>   系统将打开 </span><em><span>mb-ecs-cluster</span></em><span> 的详细信息页面。</span><strong><span>Status</span></strong><span>（状态）字段显示 </span><em><span>ACTIVE</span></em><span> 值。</span></p><ol start='61' ><li><span>选择 </span><strong><span>ECS Instances</span></strong><span>（ECS 实例）选项卡。</span></li></ol><p><span>   系统将列出集群的两个 EC2 实例（由向导创建）。</span></p><p><span>   </span><strong><span>注意</span></strong><span>：两个 EC2 实例可能需要几分钟才能显示在列表中。如果看不到这两个实例，请选择 </span><strong><span>Refresh</span></strong><span>（刷新）。</span></p><p><img src="images/Cluster-EC2-instances.png" width="600" alt="集群 EC2 实例"></p><p>&nbsp;</p><ol start='62' ><li><span>选择 </span><strong><span>Tasks</span></strong><span>（任务）选项卡。</span></li></ol><p><span>   尚未向集群部署任务。接下来您将创建一个。</span></p><br><h3 id='任务-42为应用程序容器映像创建任务定义'><span>任务 4.2：为应用程序容器映像创建任务定义</span></h3><p><span>任务定义是一个配置设置列表，用于设置如何在 Amazon ECS 上运行 Docker 容器。它会将各种信息告知 Amazon ECS，例如：</span></p><ul><li><span>要运行什么容器映像</span></li><li><span>容器需要多少 CPU 和内存</span></li><li><span>容器侦听哪些端口的流量</span></li></ul><p><span>在此子任务中，您将为留言板应用程序的容器映像创建任务定义。</span></p><ol start='63' ><li><span>在 </span><strong><span>Amazon ECS</span></strong><span> 控制台浏览器选项卡的导航窗格中，选择 </span><strong><span>Task Definitions</span></strong><span>（任务定义）。</span></li><li><span>选择 </span><strong><span>Create new Task Definition</span></strong><span>（创建新任务定义）。</span></li><li><span>在 </span><strong><span>Select launch type compatibility</span></strong><span>（选择启动类型兼容性）页面中，选择 </span><strong><span>EC2</span></strong><span> 卡片。</span></li><li><span>选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li></ol><p><span>   系统将打开 </span><strong><span>Configure task and container definitions</span></strong><span>（配置任务和容器定义）页面。</span></p><ol start='67' ><li><span>在 </span><strong><span>Task Definition Name</span></strong><span>（任务定义名称）框中，输入 </span><code>mb-task</code><span>。</span></li><li><span>向下滚动到 </span><strong><span>Container Definitions</span></strong><span>（容器定义），然后选择 </span><strong><span>Add container</span></strong><span>（添加容器）。</span></li></ol><p><span>   系统将打开 </span><strong><span>Add container</span></strong><span>（添加容器）窗口。</span></p><ol start='69' ><li><span>配置以下设置。</span></li></ol><ul><li><strong><span>Container name</span></strong><span>（容器名称）：</span><code>mb-container</code></li><li><strong><span>Image</span></strong><span>（映像）：粘贴应用程序容器映像的</span><strong><span>映像 URI</span></strong><span>；在此前的步骤中，您将此 URI 复制到了文本编辑器中。</span></li><li><strong><span>Memory Limits</span></strong><span>（内存限制）：选择 </span><em><span>Hard limit</span></em><span>（硬限制）并输入 </span><code>256</code><span>。（此设置用于定义容器可使用的最大内存量。）</span></li><li><strong><span>Port mappings &gt; Container port</span></strong><span>（端口映射 &gt; 容器端口）：</span><code>3000</code><span>（此设置用于指定容器接收请求的端口。您无需在 </span><strong><span>Host port</span></strong><span>（主机端口）中输入值。）</span></li></ul><p><span>   </span><strong><span>Add container</span></strong><span>（添加容器）窗口应类似于以下示例：</span></p><p><img src="images/Create-task-definition-add-container.png" width="600" alt="添加容器"></p><p><span>   </span>&nbsp;</p><ol start='70' ><li><span>选择 </span><strong><span>Add</span></strong><span>（添加）。</span></li><li><span>向下滚动并选择 </span><strong><span>Create</span></strong><span>（创建）。您可以忽略所有警告消息。</span></li></ol><p><span>   系统将显示一条消息，表明已成功创建任务定义。请注意，定义将自动分配有版本号 </span><em><span>1</span></em><span>。</span></p><p><img src="images/Create-task-definition-complete.png" width="800" alt="完成任务定义"></p><p><span>   </span>&nbsp;</p><p><span>   现在，您具有一个任务定义，它可以告知 Amazon ECS 如何在集群中部署应用程序容器。</span></p><br><h3 id='任务-43创建-application-load-balancer'><span>任务 4.3：创建 Application Load Balancer</span></h3><p><span>接下来，您将创建 Application Load Balancer，用于将传入的请求分配到 ECS 集群中运行的 EC2 实例。该负载均衡器与 ECS 集群位于同一 VPC 中，并使用与之相同的安全组。</span></p><ol start='72' ><li><span>在 </span><strong><span>Amazon ECS</span></strong><span> 控制台浏览器选项卡中，选择 </span><strong><span>Services</span></strong><span>（服务），然后选择 </span><strong><span>Compute &gt; EC2</span></strong><span>（计算 &gt; EC2）。</span></li><li><span>在导航窗格中，向下滚动并选择 </span><strong><span>Load Balancers</span></strong><span>（负载均衡器）。</span></li><li><span>选择 </span><strong><span>Create Load Balancer</span></strong><span>（创建负载均衡器）。</span></li></ol><p><span>   系统将打开 </span><strong><span>Select load balancer type</span></strong><span>（选择负载均衡器类型）页面。</span></p><ol start='75' ><li><span>在 </span><strong><span>Application Load Balancer</span></strong><span> 卡片中，选择 </span><strong><span>Create</span></strong><span>（创建）。</span></li></ol><p><span>   系统将打开 Application Load Balancer 创建向导。</span></p><ol start='76' ><li><span>在 </span><strong><span>Step 1: Configure Load Balancer</span></strong><span>（步骤 1: 配置负载均衡器）中，配置以下设置。</span></li></ol><ul><li><p><strong><span>Name</span></strong><span>（名称）：</span><code>mb-load-balancer</code></p></li><li><p><span>滚动到 </span><strong><span>Availability Zones</span></strong><span>（可用区）部分并输入以下设置。</span></p><ul><li><strong><span>VPC</span></strong><span>：选择 </span><em><span>Amazon ECS cluster VPC ID</span></em><span>（Amazon ECS 集群 VPC ID）。该 ID 类似于 </span><em><span>vpc-nnnnnnnnnn (10.32.0.0/16)</span></em></li><li><strong><span>Availability Zones</span></strong><span>（可用区）：选择两个可用区。</span></li></ul></li></ul><ol start='77' ><li><span>选择 </span><strong><span>Next: Configure Security Settings</span></strong><span>（步骤 2: 配置安全设置）。</span></li><li><span>在 </span><strong><span>Step 2: Configure Security Settings</span></strong><span>（步骤 2: 配置安全设置）中，您可以忽略负载均衡器未使用安全侦听器的警告信息。选择 </span><strong><span>Next: Configure Security Groups</span></strong><span>（下一步：配置安全组）。</span></li><li><span>在 </span><strong><span>Step 3: Configure Security Groups</span></strong><span>（步骤 3: 配置安全组）中，配置以下设置。</span></li></ol><ul><li><p><strong><span>Assign a security group</span></strong><span>（分配安全组）：</span><em><span>Select an existing security group</span></em><span>（选择一个现有的安全组）。</span></p></li><li><p><strong><span>Security Group ID</span></strong><span>（安全组 ID）：</span></p><ul><li><span>清除 </span><em><span>default</span></em><span>（默认设置）。</span></li><li><span>选择 </span><em><span>EC2ContainerService-mb-ecs-cluster-EcsSecurityGroup</span></em><span>。（这是您 ECS 集群的安全组。）</span></li></ul></li></ul><ol start='80' ><li><span>选择 </span><strong><span>Next: Configure Routing</span></strong><span>（下一步：配置路由）。</span></li><li><span>在 </span><strong><span>Step 4: Configure Routing</span></strong><span>（步骤 4：配置路由）中，配置以下设置。</span></li></ol><ul><li><p><strong><span>Target group</span></strong><span>（目标组）：</span><em><span>New target group</span></em><span>（新建目标组）（您希望向导为负载均衡器创建一个新目标组。)</span></p></li><li><p><strong><span>Name</span></strong><span>（名称）：</span><code>mb-load-balancer-target-group</code></p></li><li><p><strong><span>Protocol</span></strong><span>（协议）和 </span><strong><span>Port</span></strong><span>（端口）：将这些设置保留默认值 </span><em><span>HTTP</span></em><span> 和 </span><em><span>80</span></em><span>。应用程序希望通过 RESTful HTTP 请求进行访问。</span></p></li><li><p><span>展开 </span><strong><span>Advanced health check settings</span></strong><span>（高级运行状况检查设置）并输入以下设置。</span></p><ul><li><strong><span>Healthy threshold</span></strong><span>（正常阈值）：</span><code>2</code><span>（此设置告知负载均衡器，如果目标连续两次成功通过运行状况检查，则认为该目标运行状况正常。）</span></li><li><strong><span>Interval</span></strong><span>（间隔）：</span><code>6</code><span>（此设置将运行状况检查的频率增加到每 6 秒一次。）</span></li></ul></li></ul><ol start='82' ><li><span>选择 </span><strong><span>Next: Register Targets</span></strong><span>（下一步：注册目标）。</span></li><li><span>您可以跳过 </span><strong><span>Step 5: Register Targets</span></strong><span>（步骤 5：注册目标），因为在后续步骤中，您会将 </span><em><span>ECS 服务</span></em><span>注册为目标。选择 </span><strong><span>Next: Review</span></strong><span>（下一步：审核）。</span></li><li><span>在 </span><strong><span>Review</span></strong><span>（审核）页面中，确保您的设置正确无误，然后选择 </span><strong><span>Create</span></strong><span>（创建）。</span></li></ol><p><span>   系统会显示一条消息，表明已成功创建负载均衡器。</span></p><ol start='85' ><li><span>选择 </span><strong><span>Close</span></strong><span>（关闭）。</span></li></ol><p><span>   现在，</span><em><span>mb-load-balancer</span></em><span> 已显示在负载均衡器列表中。</span></p><ol start='86' ><li><span>稍等片刻，然后选择 </span><strong><span>Refresh</span></strong><span>（刷新）图标。负载均衡器的 </span><strong><span>State</span></strong><span>（状态）应更改为 </span><em><span>active</span></em><span>（活动）。</span></li></ol><p><img src="images/Create-load-balancer-complete.png" width="800" alt="已创建负载均衡器"></p><p><span>   </span>&nbsp;</p><p><span>   要完成负载均衡器配置，您需要修改它的安全组，以打开端口，允许负载均衡器和 ECS 集群中的实例进行内部通信。</span></p><ol start='87' ><li><span>在底部的 </span><strong><span>Description</span></strong><span>（描述）选项卡中，向下滚动到 </span><strong><span>Security</span></strong><span>（安全性）部分。</span></li><li><span>在 </span><strong><span>Security Groups</span></strong><span>（安全组）旁边，选择安全组 ID 链接，链接应类似于 </span><em><span>sg-nnnnnnnnnn</span></em><span>。</span></li></ol><p><span>   系统将打开负载均衡器安全组的详细信息页面。</span></p><ol start='89' ><li><span>要将安全组 ID 复制到剪贴板，请转到 </span><strong><span>Details</span></strong><span>（详细信息）选项卡（位于底部窗格中），将指针悬停在 </span><strong><span>security group ID</span></strong><span>（安全组 ID）上，然后选择 </span><strong><span>Copy</span></strong><span>（复制）图标。</span></li></ol><p><span>   您会在后续步骤中用到此 ID。</span></p><ol start='90' ><li><span>在底部窗格中，选择 </span><strong><span>Inbound rules</span></strong><span>（入站规则）选项卡。</span></li></ol><p><span>   系统将显示安全组的入站规则。</span></p><ol start='91' ><li><span>选择 </span><strong><span>Edit inbound rules</span></strong><span>（编辑入站规则）。</span></li></ol><p><span>   系统将打开 </span><strong><span>Edit inbound rules</span></strong><span>（编辑入站规则）对话窗口。</span></p><ol start='92' ><li><span>选择 </span><strong><span>Add rule</span></strong><span>（添加规则）。</span></li></ol><p><span>   规则列表中将增加一行，以便添加新规则。它已经针对 </span><em><span>Custom TCP Rule</span></em><span>（自定义 TCP 规则）（即您想要添加的类型）进行了预配置。</span></p><ol start='93' ><li><span>在新行中，添加以下配置。</span></li></ol><ul><li><strong><span>Port Range</span></strong><span>（端口范围）：</span><code>31000-61000</code></li><li><strong><span>Source &gt; Custom</span></strong><span>（源 &gt; 自定义）：从剪贴板粘贴安全组 ID。</span></li></ul><ol start='94' ><li><span>选择 </span><strong><span>Save rules</span></strong><span>（保存规则）。</span></li></ol><p><span>   安全组的入站规则列表将显示您添加的新规则。</span></p><p><img src="images/Security-group-add-rule.png" width="800" alt="新规则"></p><p>&nbsp;</p><br><h3 id='任务-44将整体式应用程序部署为-ecs-服务'><span>任务 4.4：将整体式应用程序部署为 ECS 服务</span></h3><p><span>您已创建所有必需的 Amazon ECS 基础设施组件。在此子任务中，您要将容器化的整体式应用程序作为 Amazon ECS 服务部署到集群。</span></p><p><span>借助 ECS 服务，您可以在 ECS 集群中同时运行和维护指定数量的任务定义实例。如果其中一个任务因任何原因失败或停止，ECS 服务计划程序将启动另一个任务定义实例来替换它。因此，它会一直保持服务中指定的所需任务数量。</span></p><p><span>现在，您将使用 Amazon ECS 控制台为留言板应用程序的任务定义创建 ECS 服务。</span></p><ol start='95' ><li><span>在 </span><strong><span>AWS 管理控制台</span></strong><span>浏览器选项卡中，选择 </span><strong><span>Services</span></strong><span>（服务），然后选择 </span><strong><span>Containers &gt; Elastic Container Service</span></strong><span>（容器 &gt; Elastic Container Service）。</span></li><li><span>在导航窗格中，选择 </span><strong><span>Task Definitions</span></strong><span>（任务定义）。</span></li><li><span>在 </span><strong><span>Task Definitions</span></strong><span>（任务定义）列表中，选择 </span><strong><span>mb-task</span></strong><span> 链接。</span></li></ol><p><span>   系统将打开一个页面，其中提供了任务定义的修订版本。</span></p><ol start='98' ><li><span>选择 </span><strong><span>mb-task:1</span></strong><span>，然后选择 </span><strong><span>Actions &gt; Create Service</span></strong><span>（操作 &gt; 创建服务）。</span></li><li><span>在 </span><strong><span>Step 1: Configure service</span></strong><span>（步骤 1：配置服务）中，配置以下设置。</span></li></ol><ul><li><strong><span>Launch type</span></strong><span>（启动类型）：</span><em><span>EC2</span></em><span>（您要在 EC2 实例的集群上直接运行容器化的整体式应用程序。）</span></li><li><strong><span>Service name</span></strong><span>（服务名称）：</span><code>mb-ecs-service</code></li><li><strong><span>Service type</span></strong><span>（服务类型）：</span><em><span>REPLICA</span></em><span>（此设置可建立计划策略，在整个 ECS 集群中放置并维护所需数量的任务。）</span></li><li><strong><span>Number of tasks</span></strong><span>（任务数）：</span><code>1</code><span>（通常，要充分利用集群，您需要输入更高的数字，具体取决于预计的请求负载。但是，为了简单起见，在此练习中，您可以明确规定希望始终在集群上启动和维护一个任务。）</span></li></ul><ol start='100' ><li><span>选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Step 2: Configure network</span></strong><span>（步骤 2：配置网络）中，配置以下设置。</span></li></ol><ul><li><strong><span>Load balancer type</span></strong><span>（负载均衡器类型）：</span><em><span>Application Load Balancer</span></em><span>（您希望服务中的任务由您之前设置的 </span><em><span>mb-load-balancer</span></em><span> 进行负载均衡）</span></li><li><strong><span>Service IAM role</span></strong><span>（服务 IAM 角色）：</span><em><span>Create new role</span></em><span>（创建新角色）</span></li><li><strong><span>Load balancer name</span></strong><span>（负载均衡器名称）：</span><em><span>mb-load-balancer</span></em></li><li><strong><span>Container name:port</span></strong><span>（容器名称：端口）：此字段已填入与任务定义关联的正确容器信息。选择 </span><strong><span>Add to load balancer</span></strong><span>（添加到负载均衡器）。（此设置会将容器与负载均衡器的一个侦听器相关联。）</span></li><li><strong><span>Production listener port</span></strong><span>（生产侦听器端口）：</span><em><span>80: HTTP</span></em><span>（此设置会将容器与端口 80 上 HTTP 流量的负载均衡器侦听器关联起来）</span></li><li><strong><span>Target group name</span></strong><span>（目标组名称）：</span><em><span>mb-load-balancer-target-group</span></em></li></ul><ol start='102' ><li><span>选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Step 3: Set Auto Scaling (optional)</span></strong><span>（步骤 3：设置 Auto Scaling（可选））中，选择 </span><strong><span>Next step</span></strong><span>（下一步）。您不希望配置任何额外的自动扩展。</span></li><li><span>在 </span><strong><span>Review</span></strong><span>（审核）页面中，确保设置正确无误，然后选择 </span><strong><span>Create Service</span></strong><span>（创建服务）。</span></li></ol><p><span>   系统将打开 </span><strong><span>Launch Status</span></strong><span>（启动状态）页面，并显示向导执行的任务。</span></p><ol start='105' ><li><span>等待所有任务都显示复选标记，这表明任务已完成。</span></li></ol><p><img src="images/Create-ecs-service-complete.png" width="600" alt="完成创建服务"></p><p>&nbsp;</p><ol start='106' ><li><span>要打开 </span><em><span>mb-ecs-service</span></em><span> 的详细信息页面，请选择 </span><strong><span>View Service</span></strong><span>（查看服务）。</span></li></ol><p><span>   </span><strong><span>Tasks</span></strong><span>（任务）选项卡显示现在有一个任务正在运行容器，状态为 </span><em><span>ACTIVATING</span></em><span>（正在激活）。</span></p><ol start='107' ><li><span>片刻之后，选择 </span><strong><span>Refresh</span></strong><span>（刷新）。任务的</span><strong><span>最终状态</span></strong><span>应显示为 </span><em><span>RUNNING</span></em><span>（正在运行）。</span></li></ol><p><img src="images/Create-ecs-service-task-running.png" width="600" alt="正在运行服务任务"></p><p>&nbsp;</p><p><span>您已成功将容器化的整体式应用程序作为 ECS 服务部署到集群中。</span></p><br><h3 id='任务-45测试容器化的整体式应用程序'><span>任务 4.5：测试容器化的整体式应用程序</span></h3><p><span>现在，您将通过以下方法验证部署：从 Web 浏览器测试留言板应用程序的 RESTful API 方法。</span></p><p><span>首先，您要找到负载均衡器的 URL 并记录下来。</span></p><ol start='108' ><li><span>在 </span><strong><span>Amazon ECS</span></strong><span> 控制台浏览器选项卡中，选择 </span><strong><span>Services</span></strong><span>（服务），然后选择 </span><strong><span>Compute &gt; EC2</span></strong><span>（计算 &gt; EC2）。</span></li><li><span>在导航窗格中，向下滚动并选择 </span><strong><span>Load Balancers</span></strong><span>（负载均衡器）。</span></li></ol><p><span>   负载均衡器列表将显示 </span><strong><span>mb-load-balancer</span></strong><span>。</span></p><ol start='110' ><li><span>在底部的 </span><strong><span>Description</span></strong><span>（描述）选项卡中，转到 </span><strong><span>DNS name</span></strong><span>（DNS 名称），然后选择 </span><strong><span>Copy</span></strong><span>（复制）图标。</span></li><li><span>将 DNS 名称值粘贴到文本编辑器中，然后将其标记为 </span><code>Load Balancer DNS Name</code><span>（负载均衡器 DNS 名称）。您会在之后的步骤中多次用到该值。</span></li><li><span>打开一个新浏览器选项卡，将 DNS 名称粘贴到地址栏中，并按下 Enter 键。</span></li></ol><p><img src="images/Containerized-monolith-test-root.png" width="600" alt="容器化的整体式根"></p><p>&nbsp;</p><p><span>系统将打开一个页面，显示 </span><em><span>Ready to receive requests</span></em><span>（已准备好接收请求）消息。GET 请求中未包含资源路径时，留言板应用程序将返回此消息。</span></p><p><strong><span>问题排查技巧</span></strong><span>：如果您收到与服务器相关的 HTTP 错误代码，请稍等片刻，然后重试。容器可能需要几分钟才能注册为正常状态并开始接收流量。</span></p><ol start='113' ><li><span>在浏览器地址栏中，在 URL 末尾添加 </span><code>/api</code><span>，然后按 Enter 键。</span></li></ol><p><img src="images/Containerized-monolith-test-api.png" width="600" alt="容器化的整体式 API"></p><p>&nbsp;</p><p><span>应用程序应返回消息 </span><em><span>API ready to receive requests</span></em><span>（API 已准备好接收请求）。</span></p><ol start='114' ><li><span>测试对数据库中所有</span><em><span>用户</span></em><span>的检索。在浏览器地址栏中，在 URL 末尾添加 </span><code>/users</code><span>，然后按 Enter 键。</span></li></ol><p><img src="images/Containerized-monolith-test-users.png" width="600" alt="容器化的整体式用户"></p><p>&nbsp;</p><p><span>应用程序返回一个 JSON 对象，其中列出了数据库中的四个用户。</span></p><ol start='115' ><li><span>检索数据库中</span><em><span>第一个用户</span></em><span>的信息。在浏览器地址栏中，在 URL 末尾添加 </span><code>/1</code><span>，然后按 </span><strong><span>Enter</span></strong><span>键。</span></li></ol><p><img src="images/Containerized-monolith-test-user-1.png" width="600" alt="容器化的整体式用户 1"></p><p>&nbsp;</p><p><span>应用程序返回一个 JSON 对象，其中包含 </span><em><span>Marcerline Singer</span></em><span>（数据库中的第一个用户）的信息。</span></p><ol start='116' ><li><span>接下来，您将检索数据库中的所有</span><em><span>线程</span></em><span>。在浏览器地址栏中，将负载均衡器 DNS 名称之后的 URI 更改为 </span><code>/api/thread</code><span>，然后按 Enter 键。</span></li></ol><p><img src="images/Containerized-monolith-test-threads.png" width="600" alt="容器化的整体式线程"></p><p>&nbsp;</p><p><span>应用程序返回一个 JSON 对象，其中包含数据库中的三个线程。</span></p><ol start='117' ><li><span>最后，检索数据库中</span><em><span>第二个主题</span></em><span>的</span><em><span>帖子</span></em><span>。在浏览器地址栏中，将负载均衡器 DNS 名称之后的 URI 更改为 </span><code>/api/posts/in-thread/2</code><span>，然后按 Enter 键。</span></li></ol><p><img src="images/Containerized-monolith-test-posts-in-thread-2.png" width="600" alt="容器化的整体式主题 2 帖子"></p><p>&nbsp;</p><p><span>应用程序返回一个 JSON 对象，其中包含数据库中第二个主题的已发布留言。这些留言与面包店有关。</span></p><ol start='118' ><li><span>或者，调用应用程序可以提供的其他资源路径。完成测试后，关闭应用程序浏览器选项卡。</span></li></ol><p><span>   现在，您已成功容器化的整体式留言板应用程序，并将它部署到 Amazon ECS 环境中。</span></p><br><h2 id='任务-5重构整体式应用程序'><span>任务 5：重构整体式应用程序</span></h2><p><span>在此任务中，您要将容器化的整体式留言板应用程序拆分为多个互联的微服务。然后，您将每个微服务映像推送到 Amazon ECR 存储库。每个微服务执行单一应用程序业务功能，并可以独立于其他微服务进行扩展。将应用程序拆分为以下微服务，它们代表应用程序的 API 服务的顶级对象类：</span></p><ul><li><em><span>Users</span></em><span> 微服务 – 该服务适用于所有与</span><em><span>用户</span></em><span>相关的 REST 路径 (</span><code>/api/users/*</code><span>)</span></li><li><em><span>Threads</span></em><span> 微服务 – 该服务适用于所有与</span><em><span>线程</span></em><span>相关的 REST 路径 (</span><code>/api/threads/*</code><span>)</span></li><li><em><span>Posts</span></em><span> 微服务 – 该服务适用于所有与</span><em><span>帖子</span></em><span>相关的 REST 路径 (</span><code>/api/posts/*</code><span>)</span></li></ul><p><span>为加速重构，我们将在 AWS Cloud9 环境的 </span><strong><span>3-containerized-microservices</span></strong><span> 文件夹中为您提供应用程序的微服务版本。</span></p><p><span>在此任务中，您需执行以下步骤：</span></p><ul><li><span>查看重构的微服务应用程序</span></li><li><span>为每个微服务预置 Amazon ECR 存储库</span></li><li><span>为每个微服务构建和推送映像</span></li></ul><br><h3 id='任务-51查看重构的微服务应用程序'><span>任务 5.1：查看重构的微服务应用程序</span></h3><p><span>在此子任务中，您需要花费几分钟时间查看文件，以帮助您理解将应用程序重构为微服务需要做出的更改。</span></p><ol start='119' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在左侧的 </span><strong><span>Environment</span></strong><span>（环境）窗格中，展开 </span><strong><span>3-containerized-microservices</span></strong><span> 文件夹。</span></li></ol><p><span>   此文件夹现在有三个独立的子文件夹，名称分别为 </span><strong><span>posts</span></strong><span>、</span><strong><span>threads</span></strong><span> 和 </span><strong><span>users</span></strong><span>，它们代表三个应用程序微服务。每个子文件夹都包含相应微服务的实施文件。</span></p><ol start='121' ><li><span>展开 </span><strong><span>posts</span></strong><span>、</span><strong><span>threads</span></strong><span> 和 </span><strong><span>users</span></strong><span> 子文件夹。</span></li></ol><p><img src="images/Environment-window-containerized-microservices.png" width="400" alt="微服务子文件夹"></p><p>&nbsp;</p><p><span>请注意，每个子文件夹都包含与容器化的整体式应用程序相同的应用程序文件的副本。每个子文件夹中的 </span><em><span>db.json</span></em><span>、</span><em><span>Dockerfile</span></em><span> 和 </span><em><span>package.json</span></em><span> 文件与容器化的整体式应用程序文件完全相同。</span><em><span>server.js</span></em><span> 文件是重构中唯一一个发生更改的文件。</span></p><ol start='122' ><li><span>在 </span><strong><span>users</span></strong><span> 子文件夹中，双击打开编辑器选项卡中的 </span><strong><span>server.js</span></strong><span>。</span></li></ol><p><span>   </span><strong><span>第 13 行至第 20 行</span></strong><span>与容器化的整体式版本不同，因为该程序只定义了与</span><em><span>用户</span></em><span>资源路径相关的 API 方法和实施。</span></p><ol start='123' ><li><span>在 </span><em><span>threads</span></em><span> 子文件夹中，双击打开编辑器选项卡中的 </span><strong><span>server.js</span></strong><span>。</span></li></ol><p><span>   </span><strong><span>第 13 行至第 20 行</span></strong><span>与容器化的整体式版本不同，因为该程序只定义了与</span><em><span>线程</span></em><span>资源路径相关的 API 方法和实施。</span></p><ol start='124' ><li><span>在 </span><em><span>posts</span></em><span> 子文件夹中，双击打开辑器选项卡中的 </span><strong><span>server.js</span></strong><span>。</span></li></ol><p><span>   </span><strong><span>第 13 行至第 21 行</span></strong><span>与容器化的整体式版本不同，因为该程序只定义了与</span><em><span>帖子</span></em><span>资源路径相关的 API 方法和实施。</span></p><p><span>   总之，重构应用程序所需的唯一更改是将 </span><em><span>server.js</span></em><span> 的整体式版本中的 RESTful API 方法处理程序拆分为三个独立的 </span><em><span>server.js</span></em><span> 文件。每个单独的 </span><em><span>server.js</span></em><span> 文件都包含 API 方法处理程序的相关子集。</span></p><br><h3 id='任务-52为每个微服务预置-amazon-ecr-存储库'><span>任务 5.2：为每个微服务预置 Amazon ECR 存储库</span></h3><p><span>与对容器化的整体式版本执行的操作类似，现在您将为每个应用程序微服务创建一个 Amazon ECR 存储库。</span></p><p><span>现在，您将为 </span><em><span>Users</span></em><span>、</span><em><span>Threads</span></em><span> 和</span><em><span>Posts</span></em><span> 微服务容器映像创建存储库。</span></p><ol start='125' ><li><span>要打开 Amazon ECR 控制台，请转到 </span><strong><span>AWS 管理控制台</span></strong><span>浏览器选项卡，选择 </span><strong><span>Services</span></strong><span>（服务），然后选择 </span><strong><span>Containers &gt; Elastic Container Registry</span></strong><span>（容器 &gt; Elastic Container Registry）。</span></li><li><span>选择 </span><strong><span>Create repository</span></strong><span>（创建存储库）。</span></li><li><span>在 </span><strong><span>Repository name</span></strong><span>（存储库名称）中，输入 </span><code>mb-users-repo</code><span>。</span></li><li><span>选择 </span><strong><span>Create repository</span></strong><span>（创建存储库）。页面顶部将显示一条消息，表明已经成功创建存储库。</span></li><li><span>重复上述步骤，为另外两个微服务创建两个包含以下存储库信息的存储库。</span></li></ol><ul><li><em><span>Threads</span></em><span> 存储库名称：</span><code>mb-threads-repo</code></li><li><em><span>posts</span></em><span> 存储库名称：</span><code>mb-posts-repo</code></li></ul><p><span>   为所有三个微服务创建存储库后，</span><em><span>存储库</span></em><span>列表应如下例所示：</span></p><p><img src="images/Create-microservice-repositories.png" width="600" alt="微服务存储库"></p><br><h3 id='任务-53为每个微服务构建和推送映像'><span>任务 5.3：为每个微服务构建和推送映像</span></h3><p><span>接下来，您将为每个微服务构建容器映像并推送到相应的存储库。在以下步骤中，您将使用 Amazon ECR 控制台提供的即用型命令来完成任务。</span></p><br><h4 id='构建并推送-users-微服务'><strong><span>构建并推送 </span><em><span>Users</span></em><span> 微服务</span></strong></h4><p><span>您将从 </span><em><span>Users</span></em><span> 微服务的容器映像开始。</span></p><ol start='130' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 Terminal（终端）选项卡中，输入以下命令，将目录更改为 </span><strong><span>3-containerized-microservices/users</span></strong><span> 文件夹：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-builtin">cd</span> ~/environment/3-containerized-microservices/users</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><ol start='132' ><li><span>切换到 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡。</span></li><li><span>在</span><strong><span>存储库</span></strong><span>列表中，选择 </span><strong><span>mb-users-repo</span></strong><span>。</span></li><li><span>在页面顶部，选择 </span><strong><span>View push commands</span></strong><span>（查看推送命令）。</span></li></ol><p><span>   系统将打开 </span><strong><span>Push commands for mb-users-repo</span></strong><span>（mb-users-repo 的推送命令）弹出窗口。</span></p><p><span>   首先，您需要为微服务构建 Docker 映像。</span></p><ol start='135' ><li><span>在 </span><strong><span>Push commands for mb-users-repo</span></strong><span>（mb-users-repo 的推送命令）窗口中，选择</span><em><span>第二个</span></em><span>命令旁边的 </span><strong><span>Copy</span></strong><span>（复制）图标，将其复制到剪贴板。该命令应如下所示：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  docker build <span class="cm-attribute">-t</span> mb-users-repo .</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><strong><span>注意</span></strong><span>：确保命令末尾包含句点 (.)。</span></p><ol start='136' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 Terminal（终端）选项卡中，粘贴复制的命令并按 ENTER 键运行。</span></li></ol><p><span>   命令运行结束后，您应该会看到消息 </span><em><span>Successfully built nnnnnnnnnn</span></em><span>（已成功构建 nnnnnnnnnn）和 </span><em><span>Successfully tagged mb-users-repo::latest</span></em><span>（已成功标记 mb-users-repo:latest）。</span></p><p><span>   接下来，您将使用存储库 URI 来标记映像，以便将映像推送到存储库。</span></p><ol start='138' ><li><span>切换到 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡。</span></li><li><span>在 </span><strong><span>Push commands for mb-users-repo</span></strong><span>（mb-users-repo 的推送命令）窗口中，选择</span><em><span>第三个</span></em><span>命令旁边的 </span><strong><span>Copy</span></strong><span>（复制）图标，将其复制到剪贴板。该命令应如下所示：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19998px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  docker tag mb-users-repo:latest <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-users-<span class="cm-tab" role="presentation" cm-text="	">  </span>repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><ol start='140' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 Terminal（终端）选项卡中，粘贴复制的命令并按 ENTER 键运行。</span></li></ol><p><span>   如果成功完成，命令不会返回任何内容。</span></p><p><span>   最后，将容器映像推送到微服务存储库。</span></p><ol start='142' ><li><span>切换到 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡。</span></li><li><span>在 </span><strong><span>Push commands for mb-users-repo</span></strong><span>（mb-users-repo 的推送命令）窗口中，选择</span><em><span>第四个</span></em><span>命令旁边的 </span><strong><span>Copy</span></strong><span>（复制）图标，将其复制到剪贴板。该命令应如下所示：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.20001px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  docker push <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-users-repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><ol start='144' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 Terminal（终端）选项卡中，粘贴复制的命令并按 ENTER 键运行。</span></li></ol><p><span>   将映像的每一层推送到存储库后，命令会输出多条消息。</span></p><p><span>   现在，您将验证是否已成功上传映像。</span></p><ol start='146' ><li><span>切换到 </span><strong><span>Amazon ECR </span></strong><span> 控制台浏览器选项卡，然后关闭 </span><strong><span>Push commands for mb-users-repo</span></strong><span>（mb-users-repo 的推送命令）弹出窗口。</span></li><li><span>选择 </span><strong><span>Refresh</span></strong><span>（刷新）图标。</span></li></ol><p><span>   在</span><strong><span>映像</span></strong><span>列表中，您会看到您推送的容器映像，可通过 </span><em><span>latest</span></em><span> 标签来识别。</span></p><ol start='148' ><li><span>记录</span><em><span>图像 URI</span></em><span>。在</span><strong><span>映像</span></strong><span>列表中，找到</span><em><span>最新</span></em><span>版本映像的</span><em><span>映像 URI</span></em><span>，然后选择旁边的 </span><strong><span>Copy</span></strong><span>（复制）图标。</span></li><li><span>将值粘贴到文本编辑器中，并标记为 </span><code>Users Image URI</code><span>。在稍后的步骤中，您会用到它。</span></li></ol><br><h4 id='构建和推送-threads-微服务'><strong><span>构建和推送 </span><em><span>Threads</span></em><span> 微服务</span></strong></h4><p><span>接下来，您将构建并推送 </span><em><span>Threads</span></em><span> 微服务的容器映像。</span></p><ol start='150' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 Terminal（终端）选项卡中，输入以下命令，将目录更改为 </span><strong><span>3-containerized-microservices/threads</span></strong><span> 文件夹：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-builtin">cd</span> ~/environment/3-containerized-microservices/threads</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><ol start='152' ><li><span>切换到 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡。</span></li><li><span>在导航窗格中，选择 </span><strong><span>Repositories</span></strong><span>（存储库），然后在</span><strong><span>存储库</span></strong><span>列表中选择 </span><strong><span>mb-threads-repo</span></strong><span>。</span></li><li><span>选择 </span><strong><span>View push commands</span></strong><span>（查看推送命令）。</span></li></ol><p><span>   系统将打开 </span><strong><span>Push commands for mb-threads-repo</span></strong><span>（mb-threads-repo 的推送命令）弹出窗口。</span></p><p><span>   首先，您需要为微服务构建 Docker 映像。</span></p><ol start='155' ><li><span>在弹出窗口中，通过选择 </span><strong><span>Copy</span></strong><span>（复制）图标来复制</span><em><span>第二个</span></em><span>命令。该命令应如下所示：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  docker build <span class="cm-attribute">-t</span> mb-threads-repo .</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><strong><span>注意</span></strong><span>：确保命令末尾包含句点 (.)。</span></p><ol start='156' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 Terminal（终端）选项卡中，粘贴并运行复制的命令。</span></li></ol><p><span>   命令运行结束后，您会看到消息 </span><em><span>Successfully built nnnnnnnnnn</span></em><span>（已成功构建 nnnnnnnnnn）和 </span><em><span>Successfully tagged mb-threads-repo:latest</span></em><span>（已成功标记 mb-threads-repo:latest）。</span></p><p><span>   接下来，您将使用存储库 URI 来标记映像，以便将映像推送到存储库。</span></p><ol start='158' ><li><span>切换到 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡。</span></li><li><span>在弹出窗口中，通过选择 </span><strong><span>Copy</span></strong><span>（复制）图标来复制</span><em><span>第三个</span></em><span>命令。该命令应如下所示：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.20001px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">docker tag mb-threads-repo:latest <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-threads-repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><ol start='160' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 Terminal（终端）选项卡中，粘贴并运行复制的命令。</span></li></ol><p><span>   如果成功完成，命令不会返回任何内容。</span></p><p><span>   最后，您要将容器映像推送到微服务存储库。</span></p><ol start='162' ><li><span>切换到 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡。</span></li><li><span>在弹出窗口中，通过选择 </span><strong><span>Copy</span></strong><span>（复制）图标来复制</span><em><span>第四个</span></em><span>命令。该命令应如下所示：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19998px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">docker push <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-threads-repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><ol start='164' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 </span><strong><span>Terminal</span></strong><span>（终端）选项卡中，粘贴并运行复制的命令。</span></li></ol><p><span>   将映像的每一层推送到存储库后，命令会输出多条消息。</span></p><p><span>   现在，您将验证是否已成功上传映像。</span></p><ol start='166' ><li><span>切换到 </span><strong><span>Amazon ECR </span></strong><span> 控制台浏览器选项卡，然后关闭 </span><strong><span>Push commands for mb-threads-repo</span></strong><span>（mb-threads-repo 的推送命令）弹出窗口。</span></li><li><span>选择 </span><strong><span>Refresh</span></strong><span>（刷新）图标。</span></li></ol><p><span>   在</span><strong><span>映像</span></strong><span>列表中，您应该会看到推送的容器映像，可通过 </span><em><span>latest</span></em><span> 标签来识别。</span></p><ol start='168' ><li><span>记录</span><em><span>图像 URI</span></em><span>。在</span><strong><span>图像</span></strong><span>列表中，转到</span><em><span>最新</span></em><span>版本的</span><em><span>映像 URI</span></em><span>，然后选择旁边的 </span><strong><span>Copy</span></strong><span>（复制）图标。</span></li><li><span>将值粘贴到文本编辑器中，并标记为 </span><code>Threads Image URI</code><span>。在稍后的步骤中，您会用到它。</span></li></ol><br><h4 id='构建并推送-posts-微服务'><strong><span>构建并推送 </span><em><span>Posts</span></em><span> 微服务</span></strong></h4><p><span>最后，您将为 </span><em><span>Posts</span></em><span> 微服务构建并推送容器映像。</span></p><ol start='170' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 Terminal（终端）选项卡中，输入以下命令，将目录更改为 </span><strong><span>3-containerized-microservices/posts</span></strong><span> 文件夹：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-builtin">cd</span> ~/environment/3-containerized-microservices/posts</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><ol start='172' ><li><span>切换到 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡。</span></li><li><span>在导航窗格中，选择 </span><strong><span>Repositories</span></strong><span>（存储库）。</span></li><li><span>在</span><strong><span>存储库</span></strong><span>列表中，选择 </span><strong><span>mb-posts-repo</span></strong><span>。</span></li><li><span>选择 </span><strong><span>View push commands</span></strong><span>（查看推送命令）。</span></li></ol><p><span>   系统将打开 </span><strong><span>Push commands for mb-posts-repo</span></strong><span>（mb-posts-repo 的推送命令）弹出窗口。</span></p><p><span>   首先，您需要为微服务构建 Docker 映像。</span></p><ol start='176' ><li><span>在弹出窗口中，复制</span><em><span>第二个</span></em><span>命令。该命令应如下所示：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  docker build <span class="cm-attribute">-t</span> mb-posts-repo .</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><strong><span>注意</span></strong><span>：确保命令末尾包含句点 (.)。</span></p><ol start='177' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 Terminal（终端）选项卡中，粘贴并运行复制的命令。</span></li></ol><p><span>   命令运行结束后，您应该会看到消息 </span><em><span>Successfully built nnnnnnnnnn</span></em><span>（已成功构建 nnnnnnnnnn）和 </span><em><span>Successfully tagged mb-posts-repo:latest</span></em><span>（已成功标记 mb-posts-repo:latest）。</span></p><p><span>   接下来，您将使用存储库 URI 来标记映像，以便将映像推送到存储库。</span></p><ol start='179' ><li><span>切换到 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡。</span></li><li><span>在弹出窗口中，复制</span><em><span>第三个</span></em><span>命令。该命令应如下所示：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19998px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  docker tag mb-posts-repo:latest <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-posts-repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><ol start='181' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 </span><strong><span>Terminal</span></strong><span>（终端）选项卡中，粘贴并运行复制的命令：</span></li></ol><p><span>   如果成功完成，命令不会返回任何内容。</span></p><p><span>   最后，您要将容器映像推送到微服务存储库。</span></p><ol start='183' ><li><span>切换到 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡。</span></li><li><span>在弹出窗口中，复制</span><em><span>第四个</span></em><span>命令。该命令应如下所示：</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19998px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  docker push <span class="cm-number">1234567890</span>.dkr.ecr.us-east-2.amazonaws.com/mb-posts-repo:latest</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><ol start='185' ><li><span>切换到 </span><strong><span>AWS Cloud9 IDE</span></strong><span> 浏览器选项卡。</span></li><li><span>在 </span><strong><span>Terminal</span></strong><span>（终端）选项卡中，粘贴并运行复制的命令：</span></li></ol><p><span>   将映像的每一层推送到存储库后，命令会输出多条消息。</span></p><p><span>   现在，您将验证是否已成功上传映像。</span></p><ol start='187' ><li><span>切换到 </span><strong><span>Amazon ECR</span></strong><span> 控制台浏览器选项卡。</span></li><li><span>关闭 </span><strong><span>Push commands for mb-posts-repo</span></strong><span>（mb-posts-repo 的推送命令）弹出窗口。</span></li><li><span>选择 </span><strong><span>Refresh</span></strong><span>（刷新）图标。</span></li></ol><p><span>   在</span><strong><span>映像</span></strong><span>列表中，您应该会看到推送的容器映像，其应具有 </span><em><span>latest</span></em><span> 标签。</span></p><ol start='190' ><li><span>记录映像 URI。在</span><strong><span>映像</span></strong><span>列表中，复制</span><em><span>最新</span></em><span>版本映像的</span><em><span>映像 URI</span></em><span>。</span></li><li><span>将值粘贴到文本编辑器中，并标记为 </span><code>Posts Image URI</code><span>。在稍后的步骤中，您会用到它。</span></li></ol><p><span>   您已成功为应用程序中的微服务构建容器映像并将其推送到 Amazon ECR。</span></p><br><h2 id='任务-6部署容器化微服务'><span>任务 6：部署容器化微服务</span></h2><p><span>在此任务中，您要将容器化微服务留言板应用程序部署到用于容器化的整体式应用程序的同一 ECS 集群中。您还需使用之前的同一 Application Load Balancer。但是，在此任务中，您需将其配置为根据请求 URI 路径将请求路由到不同的目标组（每个微服务容器一个）。</span></p><p><span>下图显示了容器化微服务应用程序的部署架构。它还显示了您将创建的资源。</span></p><p><img src="images/Architecture-containerized-microservices.png" width="800" alt="微服务架构"></p><p>&nbsp;</p><p><span>在此任务中，您需执行以下步骤：</span></p><ul><li><span>为每个微服务创建任务定义。</span></li><li><span>配置 Application Load Balancer</span></li><li><span>将微服务部署为 ECS 服务。</span></li><li><span>验证部署。</span></li></ul><br><h3 id='任务-61为每个微服务创建任务定义'><span>任务 6.1：为每个微服务创建任务定义</span></h3><p><span>由于应用程序中的微服务旨在彼此独立运行，所以它们各自需要自己的任务定义。在此子任务中，您要创建三个任务定义，用于运行每个微服务的容器映像。</span></p><br><h4 id='为-users-容器创建任务定义'><strong><span>为 </span><em><span>Users</span></em><span> 容器创建任务定义</span></strong></h4><p><span>您将首先为 </span><em><span>Users</span></em><span> 微服务容器创建任务定义。</span></p><ol start='192' ><li><span>在 </span><strong><span>Amazon ECR</span></strong><span> 控制台的导航窗格中，选择 </span><strong><span>Task definitions</span></strong><span>（任务定义），然后选择 </span><strong><span>Create new Task Definition</span></strong><span>（创建新任务定义）。</span></li><li><span>在 </span><strong><span>Step 1: Select launch type compatibility</span></strong><span>（步骤 1：选择启动类型兼容性）页面中，选择 </span><strong><span>EC2</span></strong><span> 卡片。</span></li><li><span>选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Step 2: Configure task and container definitions</span></strong><span>（步骤 2：配置任务和容器定义）中，配置以下设置：</span></li></ol><ul><li><p><strong><span>Task Definition Name</span></strong><span>（任务定义名称）：</span><code>mb-users-task</code></p></li><li><p><span>滚动到 </span><strong><span>Container Definitions</span></strong><span>（容器定义）部分并选择 </span><strong><span>Add container</span></strong><span>（添加容器）。在 </span><strong><span>Add container</span></strong><span>（添加容器）页面中，输入以下设置。</span></p><ul><li><strong><span>Container name</span></strong><span>（容器名称）：</span><code>mb-users-container</code></li><li><strong><span>Image</span></strong><span>（映像）：粘贴在先前步骤中复制到文本编辑器的</span><em><span>用户映像 URI</span></em><span>。</span></li><li><strong><span>Memory Limits</span></strong><span>（内存限制）：确保已选择 </span><em><span>Hard limit</span></em><span>（硬限制），并输入 </span><code>256</code><span>。（这用于定义容器可使用的最大内存量。）</span></li><li><strong><span>Port mappings &gt; Container port</span></strong><span>（端口映射 &gt; 容器端口）：</span><code>3000</code><span>（此设置用于指定容器用于接收请求的端口。）</span></li></ul></li><li><p><span>选择 </span><strong><span>Add</span></strong><span>（添加）。</span></p></li></ul><ol start='196' ><li><span>向下滚动并选择 </span><strong><span>Create</span></strong><span>（创建）。</span></li></ol><p><span>   系统将显示一条消息，表明已成功创建任务定义。请注意，定义将自动分配有版本号 </span><em><span>1</span></em><span>。</span></p><br><h4 id='为-threads-容器创建任务定义'><strong><span>为 </span><em><span>Threads</span></em><span> 容器创建任务定义</span></strong></h4><p><span>接下来，您将为 </span><em><span>Threads</span></em><span> 微服务容器创建任务定义。</span></p><ol start='197' ><li><span>在导航窗格中，选择 </span><strong><span>Task Definitions</span></strong><span>（任务定义），然后选择 </span><strong><span>Create new Task Definition</span></strong><span>（创建新任务定义）。</span></li><li><span>在 </span><strong><span>Step 1: Select launch type compatibility</span></strong><span>（步骤 1：选择启动类型兼容性）中，选择 </span><strong><span>EC2</span></strong><span> 卡片。</span></li><li><span>选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Step 2: Configure task and container definitions</span></strong><span>（步骤 2：配置任务和容器定义）中，配置以下设置。</span></li></ol><ul><li><p><strong><span>Task Definition Name</span></strong><span>（任务定义名称）：</span><code>mb-threads-task</code></p></li><li><p><span>滚动到 </span><strong><span>Container Definitions</span></strong><span>（容器定义）部分，然后选择 </span><strong><span>Add container</span></strong><span>（添加容器）。在打开的 </span><strong><span>Add container</span></strong><span>（添加容器）页面中，输入以下设置。</span></p><ul><li><strong><span>Container name</span></strong><span>（容器名称）：</span><code>mb-threads-container</code></li><li><strong><span>Image</span></strong><span>（映像）：粘贴复制到文本编辑器的</span><strong><span>线程映像 URI</span></strong><span>。</span></li><li><strong><span>Memory Limits</span></strong><span>（内存限制）：确保已选择 </span><em><span>Hard limit</span></em><span>（硬限制），并输入 </span><code>256</code><span>。</span></li><li><strong><span>Port mappings &gt; Container port</span></strong><span>（端口映射 &gt; 容器端口）：</span><code>3000</code></li></ul></li><li><p><span>选择 </span><strong><span>Add</span></strong><span>（添加）。</span></p></li></ul><ol start='201' ><li><span>向下滚动并选择 </span><strong><span>Create</span></strong><span>（创建）。</span></li></ol><p><span>   系统将显示一条消息，表明已成功创建任务定义。定义会自动分配有版本号 </span><em><span>1</span></em><span>。</span></p><br><h4 id='为-posts-容器创建任务定义'><strong><span>为 </span><em><span>Posts</span></em><span> 容器创建任务定义</span></strong></h4><p><span>最后，您将为 </span><em><span>Posts</span></em><span> 微服务容器创建任务定义。</span></p><ol start='202' ><li><span>在导航窗格中，选择 </span><strong><span>Task Definitions</span></strong><span>（任务定义），然后选择 </span><strong><span>Create new Task Definition</span></strong><span>（创建新任务定义）。</span></li><li><span>在 </span><strong><span>Step 1: Select launch type compatibility</span></strong><span>（步骤 1：选择启动类型兼容性）中，选择 </span><strong><span>EC2</span></strong><span> 卡片。</span></li><li><span>选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Step 2: Configure task and container definitions</span></strong><span>（步骤 2：配置任务和容器定义）中，配置以下设置。</span></li></ol><ul><li><p><strong><span>Task Definition Name</span></strong><span>（任务定义名称）：</span><code>mb-posts-task</code></p></li><li><p><span>向下滚动到 </span><strong><span>Container Definitions</span></strong><span>（容器定义）部分，然后选择 </span><strong><span>Add container</span></strong><span>（添加容器）。在打开的 </span><strong><span>Add container</span></strong><span>（添加容器）页面中，输入以下设置。</span></p><ul><li><strong><span>Container name</span></strong><span>（容器名称）：</span><code>mb-posts-container</code></li><li><strong><span>Image</span></strong><span>（映像）：粘贴您之前复制的</span><em><span>帖子映像 URI</span></em><span>。</span></li><li><strong><span>Memory Limits</span></strong><span>（内存限制）：确保已选择 </span><em><span>Hard limit</span></em><span>（硬限制），并输入 </span><code>256</code></li><li><strong><span>Port mappings &gt; Container port</span></strong><span>（端口映射 &gt; 容器端口）：</span><code>3000</code></li><li><span>选择 </span><strong><span>Add</span></strong><span>（添加）。</span></li></ul></li></ul><ol start='206' ><li><span>向下滚动并选择 </span><strong><span>Create</span></strong><span>（创建）。</span></li></ol><p><span>   系统将显示一条消息，表明已成功创建任务定义。定义会自动分配有版本号 </span><em><span>1</span></em><span>。</span></p><br><h3 id='任务-62配置-application-load-balancer'><span>任务 6.2：配置 Application Load Balancer</span></h3><p><span>在此子任务中，您将为每个微服务创建一个新的负载均衡器目标组，以便将请求路由到各自的容器。您还需将负载均衡器侦听器规则配置为根据请求 URI 路径将请求转发到正确的目标组。</span></p><br><h4 id='为-users-微服务创建目标组'><strong><span>为 </span><em><span>Users</span></em><span> 微服务创建目标组</span></strong></h4><ol start='207' ><li><span>在 </span><strong><span>Amazon ECS</span></strong><span> 控制台浏览器选项卡中，选择 </span><strong><span>Services</span></strong><span>（服务），然后选择 </span><strong><span>Compute &gt; EC2</span></strong><span>（计算 &gt; EC2）。</span></li><li><span>在导航窗格中，向下滚动并选择 </span><strong><span>Target Groups</span></strong><span>（目标群组）。</span></li><li><span>选择 </span><strong><span>Create target group</span></strong><span>（创建目标组）</span></li><li><span>在 </span><strong><span>Step 1: Specify group details</span></strong><span>（步骤 1：指定组详细信息）中，配置以下设置。</span></li></ol><ul><li><p><strong><span>Target group name</span></strong><span>（目标组名称）：</span><code>mb-lb-users-target-group</code></p></li><li><p><strong><span>VPC</span></strong><span>：选择 </span><em><span>load balancer VPC ID</span></em><span>（负载均衡器 VPC ID），它应类似于 </span><em><span>vpc-nnnnnnnnnn (10.32.0.0/16)</span></em><span>。</span></p></li><li><p><span>向下滚动，展开 </span><strong><span>Advanced health check settings</span></strong><span>（高级运行状况检查设置），然后输入以下设置。</span></p><ul><li><strong><span>Healthy threshold</span></strong><span>（正常阈值）：</span><code>2</code><span>（此设置告知负载均衡器，如果目标连续两次通过运行状况检查，则认为该目标运行状况正常。）</span></li><li><strong><span>Interval</span></strong><span>（间隔）：</span><code>6</code><span>（此设置将运行状况检查的频率增加到每 6 秒一次）</span></li></ul></li></ul><ol start='211' ><li><span>选择 </span><strong><span>Next</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Step 2: Register targets</span></strong><span>（步骤 2：注册目标）中，选择 </span><strong><span>Create target group</span></strong><span>（创建目标组）。</span></li></ol><p><span>   系统将打开一个窗口，并显示一条消息，表明已成功创建目标组。</span></p><ol start='213' ><li><span>关闭消息窗口。</span></li></ol><p><span>   </span><em><span>mb-lb-users-target-group</span></em><span> 将会显示在目标组列表中。</span></p><br><h4 id='为-threads-微服务创建目标组'><strong><span>为 </span><em><span>Threads</span></em><span> 微服务创建目标组</span></strong></h4><p><span>接下来，您将为 </span><em><span>Threads</span></em><span> 微服务创建目标组。</span></p><ol start='214' ><li><span>选择 </span><strong><span>Create target group</span></strong><span>（创建目标组），然后在 </span><strong><span>Step 1: Specify group details</span></strong><span>（步骤 1：指定组详细信息）中，配置以下设置。</span></li></ol><ul><li><p><strong><span>Target group name</span></strong><span>（目标组名称）：</span><code>mb-lb-threads-target-group</code></p></li><li><p><strong><span>VPC</span></strong><span>：选择 </span><em><span>load balancer VPC ID</span></em><span>（负载均衡器 VPC ID），它应类似于 </span><em><span>vpc-nnnnnnnnnn (10.32.0.0/16)</span></em><span>。</span></p></li><li><p><span>在 </span><strong><span>Advanced health check settings</span></strong><span>（高级运行状况检查设置）部分中，输入以下设置。</span></p><ul><li><strong><span>Healthy threshold</span></strong><span>（正常阈值）：</span><code>2</code></li><li><strong><span>Interval</span></strong><span>（间隔）：</span><code>6</code></li></ul></li></ul><ol start='215' ><li><span>选择 </span><strong><span>Next</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Step 2: Register targets</span></strong><span>（步骤 2：注册目标）中，选择 </span><strong><span>Create target group</span></strong><span>（创建目标组）。</span></li></ol><p><span>   系统将打开一个窗口，并显示一条消息，表明已成功创建目标组。</span></p><ol start='217' ><li><span>关闭消息窗口。</span></li></ol><p><span>   </span><em><span>mb-lb-threads-target-group</span></em><span> 将会显示在目标组列表中。</span></p><p>&nbsp;</p><br><h4 id='为-posts-微服务创建目标组'><strong><span>为 </span><em><span>Posts</span></em><span> 微服务创建目标组</span></strong></h4><p><span>最后，您将为 </span><em><span>Posts</span></em><span> 微服务创建目标组。</span></p><ol start='218' ><li><span>选择 </span><strong><span>Create target group</span></strong><span>（创建目标组）并配置以下设置：</span></li></ol><ul><li><p><strong><span>Target group name</span></strong><span>（目标组名称）：</span><code>mb-lb-posts-target-group</code></p></li><li><p><strong><span>VPC</span></strong><span>：选择 </span><em><span>load balancer VPC ID</span></em><span>（负载均衡器 VPC ID），它应类似于 </span><em><span>vpc-nnnnnnnnnn (10.32.0.0/16)</span></em><span>。</span></p></li><li><p><span>在 </span><strong><span>Advanced health check settings</span></strong><span>（高级运行状况检查设置）部分中，输入以下设置。</span></p><ul><li><strong><span>Healthy threshold</span></strong><span>（正常阈值）：</span><code>2</code></li><li><strong><span>Interval</span></strong><span>（间隔）：</span><code>6</code></li></ul></li></ul><ol start='219' ><li><span>选择 </span><strong><span>Next</span></strong><span>（下一步），然后选择 </span><strong><span>Create target group</span></strong><span>（创建目标组）。</span></li></ol><p><span>   系统将打开一个窗口，并显示一条消息，表明已成功创建目标组。</span></p><ol start='220' ><li><span>关闭消息窗口。</span></li></ol><p><span>   </span><em><span>mb-lb-posts-target-group</span></em><span> 将会显示在目标组列表中。</span></p><br><h4 id='为负载均衡器创建侦听器规则'><strong><span>为负载均衡器创建侦听器规则</span></strong></h4><p><span>您已为每个微服务创建了目标组。您将修改负载均衡器的侦听器规则。这些规则将根据请求 URI 路径将流量路由到每个负载均衡器。</span></p><ol start='221' ><li><span>转到导航窗格，然后选择 </span><strong><span>Load Balancers</span></strong><span>（负载均衡器），打开 </span><em><span>mb-load-balancer</span></em><span> 的详细信息页面。</span></li><li><span>在底部窗格中，选择 </span><strong><span>Listeners</span></strong><span>（侦听器）选项卡。</span></li><li><span>在 </span><strong><span>HTTP: 80</span></strong><span> 侦听器行，选择 </span><strong><span>View/edit rule</span></strong><span>（查看/编辑规则）。</span></li></ol><p><span>系统将打开规则编辑器。</span></p><p><span>现在，如果请求 URI 与模式 </span><code>/api/users*</code><span> 匹配，您将创建一个新规则，以将请求转发给到到 </span><em><span>Users</span></em><span> 目标组。</span></p><ol start='224' ><li><span>在编辑器顶部的工具栏中，通过选择 </span><strong><span>Add rules</span></strong><span>（添加规则）(</span><strong><span>+</span></strong><span>) 图标来添加新规则。</span></li></ol><p><span>规则列表中将显示 </span><em><span>Insert Rule</span></em><span>（插入规则）行。</span></p><ol start='225' ><li><span>选择 </span><strong><span>Insert Rule</span></strong><span>（插入规则）。</span></li></ol><p><span>系统将显示一个规则框，允许您添加 </span><em><span>IF</span></em><span> 条件和 </span><em><span>THEN</span></em><span> 操作。</span></p><ol start='226' ><li><span>为此规则配置以下设置。</span></li></ol><ul><li><strong><span>Add condition</span></strong><span>（添加条件）：</span><em><span>Path</span></em><span>（路径）</span></li><li><strong><span>is &gt; Value（值）</span></strong><span>：</span><code>/api/users*</code></li><li><strong><span>Add action</span></strong><span>（添加操作）：</span><em><span>Forward to</span></em><span>（转发至）</span></li><li><strong><span>Forward to &gt; Target group</span></strong><span>（转发到 &gt; 目标组）：</span><em><span>mb-lb-users-target-group</span></em></li></ul><p><span>规则框应该类似于以下示例：</span></p><p><img src="images/Create-listener-rule-users.png" width="800" alt="用户的侦听器规则"></p><p>&nbsp;</p><ol start='227' ><li><span>选择 </span><strong><span>Save</span></strong><span>（保存）。</span></li></ol><p><span>   该规则将作为规则 </span><em><span>1</span></em><span> 添加到列表中。</span></p><p><span>   现在，如果请求 URI 与模式 </span><code>/api/threads*</code><span> 匹配，您将创建一个规则，以将请求转发到 </span><strong><span>Threads</span></strong><span> 目标组。</span></p><ol start='228' ><li><span>在 </span><em><span>rule 1</span></em><span> 下面的行中，选择 </span><strong><span>Insert Rule</span></strong><span>（插入规则）。</span></li></ol><p><span>   系统将打开规则编辑器。</span></p><ol start='229' ><li><span>为此规则配置以下设置。</span></li></ol><ul><li><strong><span>Add condition</span></strong><span>（添加条件）：</span><em><span>Path</span></em><span>（路径）</span></li><li><strong><span>is &gt; Value（值）</span></strong><span>：</span><code>/api/threads*</code></li><li><strong><span>Add action</span></strong><span>（添加操作）：</span><em><span>Forward to</span></em><span>（转发至）</span></li><li><strong><span>Forward to &gt; Target group</span></strong><span>（转发到 &gt; 目标组）：</span><em><span>mb-lb-threads-target-group</span></em></li></ul><ol start='230' ><li><span>选择 </span><strong><span>Save</span></strong><span>（保存）。</span></li></ol><p><span>   该规则将作为规则 </span><em><span>2</span></em><span> 添加到列表中。</span></p><p><span>   现在，如果请求 URI 与模式 </span><code>/api/posts*</code><span> 匹配，您将创建一个新规则，以将请求转发到 </span><strong><span>Posts</span></strong><span> 目标组。</span></p><ol start='231' ><li><span>在 </span><em><span>rule 2</span></em><span> 下面的行中，选择 </span><strong><span>Insert Rule</span></strong><span>（插入规则）。</span></li><li><span>在规则编辑器中，配置以下设置：</span></li></ol><ul><li><strong><span>Add condition</span></strong><span>（添加条件）：</span><em><span>Path</span></em><span>（路径）</span></li><li><strong><span>is &gt; Value（值）</span></strong><span>：</span><code>/api/posts*</code></li><li><strong><span>Add action</span></strong><span>（添加操作）：</span><em><span>Forward to</span></em><span>（转发至）</span></li><li><strong><span>Forward to &gt; Target group</span></strong><span>（转发到 &gt; 目标组）：</span><em><span>mb-lb-posts-target-group</span></em></li></ul><ol start='233' ><li><span>选择 </span><strong><span>Save</span></strong><span>（保存）。</span></li></ol><p><span>   该规则将作为规则 </span><em><span>3</span></em><span> 添加到列表中。</span></p><p><span>   现在，如果请求 URI 与模式 </span><code>/</code><span> 或 </span><code>/api</code><span> 匹配，您将创建一个新规则，以将请求转发到 </span><strong><span>Users</span></strong><span> 目标组。您可以选择应用程序的任何目标组，因为它们对应的微服务可以处理这两种类型的请求。</span></p><ol start='234' ><li><span>在 </span><em><span>rule 3</span></em><span> 下面的行中，选择 </span><strong><span>Insert Rule</span></strong><span>（插入规则）。</span></li><li><span>在规则编辑器中，配置以下设置。</span></li></ol><ul><li><strong><span>Add condition</span></strong><span>（添加条件）：</span><em><span>Path</span></em><span>（路径）</span></li><li><strong><span>is &gt; Value（值）</span></strong><span>：</span><code>/</code></li><li><strong><span>or &gt; Value</span></strong><span>：</span><code>/api</code></li><li><strong><span>Add action</span></strong><span>（添加操作）：</span><em><span>Forward to</span></em><span>（转发至）</span></li><li><strong><span>Forward to &gt; Target group</span></strong><span>（转发到 &gt; 目标组）：</span><em><span>mb-lb-users-target-group</span></em></li></ul><ol start='236' ><li><span>选择 </span><strong><span>Save</span></strong><span>（保存）。</span></li></ol><p><span>   该规则将作为规则 </span><em><span>4</span></em><span> 添加到列表中。</span></p><p><span>   最后，您将更改</span><em><span>最后一个</span></em><span>（默认）规则的操作，以便任何其他请求 URI 返回包含消息 </span><em><span>Invalid request</span></em><span>（请求无效）的错误页面。</span></p><ol start='237' ><li><span>在顶部的工具栏中，选择 </span><strong><span>Edit rules</span></strong><span>（编辑规则）（铅笔）图标。</span></li></ol><p><span>   规则编辑器将切换到编辑模式。</span></p><ol start='238' ><li><span>滚动到</span><em><span>最后一个</span></em><span>规则，然后选择 </span><strong><span>Edit rules</span></strong><span>（编辑规则）（铅笔）图标。</span></li><li><span>在规则编辑器中，配置以下设置。</span></li></ol><ul><li><strong><span>Then</span></strong><span>（然后）：选择 </span><strong><span>Delete</span></strong><span>（删除）（垃圾桶）图标，删除现有的 </span><em><span>Forward to</span></em><span>（转发到）操作。</span></li><li><strong><span>Add action</span></strong><span>（添加操作）：</span><em><span>Return fixed response</span></em></li><li><strong><span>Response code</span></strong><span>（响应代码）：</span><code>200</code></li><li><strong><span>Response body</span></strong><span>（响应正文）：</span><code>Invalid request</code></li></ul><p><span>规则编辑器应类似于以下示例：</span></p><p><img src="images/Create-listener-rule-invalid-request.png" width="800" alt="请求无效"></p><p>&nbsp;</p><ol start='240' ><li><span>选择 </span><strong><span>Update</span></strong><span>（更新）。</span></li></ol><p><span>系统会显示一条消息，表明规则已成功更新。</span></p><p><span>负载均衡器的最终侦听器规则应如下例所示：</span></p><p><img src="images/Create-listener-rules-final.png" width="800" alt="最终侦听器规则"></p><p>&nbsp;</p><ol start='241' ><li><span>要返回到负载均衡器详细信息页面，请选择</span><strong><span>后退箭头</span></strong><span>图标（位于窗口左上角区域）。</span></li></ol><p><span>   您已完成对负载均衡器配置的必要更改。</span></p><br><h3 id='任务-63将微服务部署为-ecs-服务'><span>任务 6.3：将微服务部署为 ECS 服务</span></h3><p><span>在这一子任务中，您需要将三个微服务作为 ECS 服务部署到集群中。</span></p><p><strong><span>为 </span><em><span>Users</span></em><span> 创建 ECS 服务</span></strong></p><p><span>现在，您将为 </span><em><span>Users</span></em><span> 微服务任务定义创建 ECS 服务。</span></p><ol start='242' ><li><span>在 </span><strong><span>Amazon EC2 控制台</span></strong><span>浏览器选项卡中，选择 </span><strong><span>Services</span></strong><span>（服务），然后选择 </span><strong><span>Containers &gt; Elastic Container Service</span></strong><span>（容器 &gt; Elastic Container Service）。</span></li><li><span>在集群列表中，选择 </span><strong><span>mb-ecs-cluster</span></strong><span>。</span></li><li><span>在 </span><strong><span>Services</span></strong><span>（服务）选项卡中，选择 </span><strong><span>Create</span></strong><span>（创建），打开创建服务向导。</span></li><li><span>在 </span><strong><span>Step 1: Configure service</span></strong><span>（步骤 1：配置服务）中，配置以下设置。</span></li></ol><ul><li><strong><span>Launch type</span></strong><span>（启动类型）：</span><em><span>EC2</span></em><span>（您要在 EC2 实例集群上直接运行容器化微服务。）</span></li><li><strong><span>Task Definition &gt; Family</span></strong><span>（任务定义 &gt; 系列）：</span><em><span>mb-users-task</span></em></li><li><strong><span>Service name</span></strong><span>（服务名称）：</span><code>mb-users-ecs-service</code></li><li><strong><span>Service type</span></strong><span>（服务类型）：</span><em><span>REPLICA</span></em><span>（此设置可建立计划策略，在整个 ECS 集群中放置并维护所需数量的任务）</span></li><li><strong><span>Number of tasks</span></strong><span>（任务数）：</span><code>1</code><span>（在此练习中，您希望始终在集群上启动和维护一个任务）</span></li></ul><ol start='246' ><li><span>选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Step 2: Configure network</span></strong><span>（步骤 2：配置网络）中，配置以下设置。</span></li></ol><ul><li><strong><span>Load balancer type</span></strong><span>（负载均衡器类型）：</span><em><span>Application Load Balancer</span></em><span>（您希望服务中的任务由您设置的 </span><em><span>mb-load-balancer</span></em><span> 进行负载均衡）</span></li><li><strong><span>Service IAM role</span></strong><span>（服务 IAM 角色）：</span><em><span>ecsServiceRole</span></em></li><li><strong><span>Load balancer name</span></strong><span>（负载均衡器名称）：</span><em><span>mb-load-balancer</span></em></li><li><strong><span>Container to load balance</span></strong><span>（需要负载均衡的容器）：</span><em><span>Add to load balancer</span></em></li><li><strong><span>Production listener port</span></strong><span>（生产侦听器端口）：</span><em><span>80: HTTP</span></em><span>（您要将容器与侦听端口 80 上的 HTTP 流量的负载均衡器侦听器关联）</span></li><li><strong><span>Target group name</span></strong><span>（目标组名称）：</span><em><span>mb-lb-users-target-group</span></em></li></ul><ol start='248' ><li><span>选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Step 3: Set Auto Scaling (optional)</span></strong><span>（步骤 3：设置 Auto Scaling（可选））中，选择 </span><strong><span>Next step</span></strong><span>（下一步）。您不希望配置任何额外的自动扩展。</span></li><li><span>在 </span><strong><span>Review</span></strong><span>（审核）页面中，确保设置正确无误，然后选择 </span><strong><span>Create Service</span></strong><span>（创建服务）。</span></li></ol><p><span>   系统将打开 </span><strong><span>Launch Status</span></strong><span>（启动状态）页面，并显示向导执行的任务。</span></p><ol start='251' ><li><span>等待所有任务都显示复选标记，这表明任务已完成。</span></li><li><span>选择 </span><strong><span>View Service</span></strong><span>（查看服务）。</span></li></ol><p><span>   系统将打开 </span><em><span>mb-users-ecs-service</span></em><span> 的详细信息页面。</span><strong><span>Tasks</span></strong><span>（任务）选项卡显示目前有一个正在运行容器的任务。</span></p><ol start='253' ><li><span>片刻之后，选择 </span><strong><span>Refresh</span></strong><span>（刷新）按钮。</span></li></ol><p><span>   任务的 </span><strong><span>Last status</span></strong><span>（最后状态）应显示 </span><em><span>RUNNING</span></em><span>（正在运行）值。</span></p><br><h3 id='为-threads-创建-ecs-服务'><strong><span>为 </span><em><span>Threads</span></em><span> 创建 ECS 服务</span></strong></h3><p><span>接下来，您将为 </span><em><span>Threads</span></em><span> 微服务任务定义创建 ECS 服务。</span></p><ol start='254' ><li><span>要返回到集群详细信息页面，请在页面顶部的面包屑导航中，选择 </span><strong><span>mb-ecs-cluster</span></strong><span>。</span></li><li><span>在 </span><strong><span>Services</span></strong><span>（服务）选项卡中，选择 </span><strong><span>Create</span></strong><span>（创建）。</span></li><li><span>在 </span><strong><span>Step 1: Configure service</span></strong><span>（步骤 1：配置服务）中，配置以下设置。</span></li></ol><ul><li><strong><span>Launch type</span></strong><span>（启动类型）：</span><em><span>EC2</span></em></li><li><strong><span>Task Definition &gt; Family</span></strong><span>（任务定义 &gt; 系列）：</span><em><span>mb-threads-task</span></em></li><li><strong><span>Service name</span></strong><span>（服务名称）：</span><code>mb-threads-ecs-service</code></li><li><strong><span>Service type</span></strong><span>（服务类型）：</span><em><span>REPLICA</span></em></li><li><strong><span>Number of tasks</span></strong><span>（任务数）：</span><code>1</code></li></ul><ol start='257' ><li><span>选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Step 2: Configure network</span></strong><span>（步骤 2：配置网络）中，配置以下设置。</span></li></ol><ul><li><strong><span>Load balancing &gt; Load balancer type</span></strong><span>（负载均衡 &gt; 负载均衡器类型）：</span><em><span>Application Load Balancer</span></em></li><li><strong><span>Load balancer name</span></strong><span>（负载均衡器名称）：</span><em><span>mb-load-balancer</span></em></li><li><strong><span>Container to load balance</span></strong><span>（需要负载均衡的容器）：</span><em><span>Add to load balancer</span></em></li><li><strong><span>Production listener port</span></strong><span>（生产侦听器端口）：</span><em><span>80:HTTP</span></em></li><li><strong><span>Target group name</span></strong><span>（目标组名称）：</span><em><span>mb-lb-threads-target-group</span></em></li></ul><ol start='259' ><li><span>选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Step 3: Set Auto Scaling (optional)</span></strong><span>（步骤 3：设置自动扩展（可选））页面中，选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Review</span></strong><span>（审核）页面中，确保设置正确无误，然后选择 </span><strong><span>Create Service</span></strong><span>（创建服务）。</span></li></ol><p><span>   系统将打开 </span><strong><span>Launch Status</span></strong><span>（启动状态）页面，并显示向导执行的任务。</span></p><ol start='262' ><li><span>等待所有任务都显示复选标记，这表明任务已完成。</span></li><li><span>选择 </span><strong><span>View Service</span></strong><span>（查看服务）。</span></li></ol><p><span>   系统将打开 </span><em><span>mb-threads-ecs-service</span></em><span> 的详细信息页面。</span><strong><span>Tasks</span></strong><span>（任务）选项卡显示有一个正在运行容器的任务。</span></p><ol start='264' ><li><span>片刻之后，选择 </span><strong><span>Refresh</span></strong><span>（刷新）。任务的 </span><em><span>Last status</span></em><span>（最后状态）应显示 </span><strong><span>RUNNING</span></strong><span>（正在运行）值。</span></li></ol><br><h3 id='为-posts-创建-ecs-服务'><strong><span>为 </span><em><span>Posts</span></em><span> 创建 ECS 服务</span></strong></h3><p><span>最后，为 </span><em><span>Posts</span></em><span> 微服务任务定义创建 ECS 服务。</span></p><ol start='265' ><li><span>返回 </span><em><span>mb-ecs-cluster</span></em><span> 的集群详细信息页面。</span></li><li><span>在 </span><strong><span>Services</span></strong><span>（服务）选项卡中，选择 </span><strong><span>Create</span></strong><span>（创建）。</span></li><li><span>在 </span><strong><span>Step 1: Configure service</span></strong><span>（步骤 1：配置服务）中，配置以下设置。</span></li></ol><ul><li><strong><span>Launch type</span></strong><span>（启动类型）：</span><em><span>EC2</span></em></li><li><strong><span>Task Definition &gt; Family</span></strong><span>（任务定义 &gt; 系列）：</span><em><span>mb-posts-task</span></em></li><li><strong><span>Service name</span></strong><span>（服务名称）：</span><code>mb-posts-ecs-service</code></li><li><strong><span>Service type</span></strong><span>（服务类型）：</span><em><span>REPLICA</span></em></li><li><strong><span>Number of tasks</span></strong><span>（任务数）：</span><code>1</code></li></ul><ol start='268' ><li><span>选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Step 2: Configure network</span></strong><span>（步骤 2：配置网络）中，配置以下设置。</span></li></ol><ul><li><strong><span>Load balancing &gt; Load balancer type</span></strong><span>（负载均衡 &gt; 负载均衡器类型）：</span><em><span>Application Load Balancer</span></em></li><li><strong><span>Load balancer name</span></strong><span>（负载均衡器名称）：</span><em><span>mb-load-balancer</span></em></li><li><strong><span>Container to load balance</span></strong><span>（需要负载均衡的容器）：</span><em><span>Add to load balancer</span></em></li><li><strong><span>Production listener port</span></strong><span>（生产侦听器端口）：</span><em><span>80:HTTP</span></em></li><li><strong><span>Target group name</span></strong><span>（目标组名称）：</span><em><span>mb-lb-posts-target-group</span></em></li></ul><ol start='270' ><li><span>选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Step 3 Set Auto Scaling</span></strong><span> (optional)（步骤 3：设置 Auto Scaling（可选））中，选择 </span><strong><span>Next step</span></strong><span>（下一步）。</span></li><li><span>在 </span><strong><span>Review</span></strong><span>（审核）页面中，确保设置正确无误，然后选择 </span><strong><span>Create Service</span></strong><span>（创建服务）。</span></li></ol><p><span>   系统将打开 </span><strong><span>Launch Status</span></strong><span>（启动状态）页面，并显示向导执行的任务。</span></p><ol start='273' ><li><span>等待所有任务都显示复选标记，这表明任务已完成。</span></li><li><span>选择 </span><strong><span>View Service</span></strong><span>（查看服务）。</span></li></ol><p><span>   系统将打开 </span><em><span>mb-posts-ecs-service</span></em><span> 的详细信息页面。</span><strong><span>Tasks</span></strong><span>（任务）选项卡显示有一个正在运行容器的任务。</span></p><ol start='275' ><li><span>片刻之后，选择 </span><strong><span>Refresh</span></strong><span>（刷新）。</span></li></ol><p><span>   任务的 </span><strong><span>Last status</span></strong><span>（最后状态）应显示 </span><em><span>RUNNING</span></em><span>（正在运行）值。</span></p><ol start='276' ><li><span>返回 </span><em><span>mb-ecs-cluster</span></em><span> 的集群详细信息页面。</span></li></ol><p><span>   现在，</span><strong><span>服务</span></strong><span>列表中会显示您创建的三项新服务。</span></p><p><img src="images/Create-ecs-service-microservices-complete.png" width="800" alt="微服务的 ECS 服务"></p><p>&nbsp;</p><p><span>仅需几秒钟，所有服务便可启动。请仔细检查所有服务和任务，确认都正在运行且运行状况良好后，再继续执行操作。</span></p><br><h3 id='任务-64验证部署'><span>任务 6.4：验证部署</span></h3><p><span>现在，您将通过 Web 浏览器测试留言板应用程序的 RESTful API 方法。您还将验证基于微服务的实施是否正常运行。</span></p><p><span>首先，您将关闭容器化的整体式应用程序版本的 ECS 服务。您不希望它为任何请求提供服务。</span></p><ol start='277' ><li><span>在 </span><strong><span>Services</span></strong><span>（服务）列表中，选择 </span><strong><span>mb-ecs-service</span></strong><span>，然后选择 </span><strong><span>Update</span></strong><span>（更新）。</span></li></ol><p><span>   系统将打开</span><strong><span>Update Service</span></strong><span>（更新服务）向导。</span></p><ol start='278' ><li><span>将 </span><strong><span>Number of tasks</span></strong><span>（任务数）的值更改为 </span><code>0</code><span>。（此设置指示 Amazon ECS 不为该服务运行任何任务。）</span></li><li><span>选择 </span><strong><span>Skip to review</span></strong><span>（跳到审核）。</span></li><li><span>在 </span><strong><span>Review</span></strong><span>（审核）页面中，选择 </span><strong><span>Update Service</span></strong><span>（更新服务）。</span></li></ol><p><span>   系统将打开 </span><em><span>Launch Status</span></em><span>（启动状态）页面，并显示一条消息，表明服务已更新。</span></p><ol start='281' ><li><span>选择 </span><strong><span>View Service</span></strong><span>（查看服务）。</span></li></ol><p><span>   系统将打开 </span><em><span>mb-ecs-service</span></em><span> 的详细信息页面。</span><strong><span>Deployments</span></strong><span>（部署）选项卡显示服务的 </span><strong><span>Running count</span></strong><span>（正在运行数量）为 </span><em><span>0</span></em><span>。</span></p><p><span>   </span><strong><span>注意</span></strong><span>：如果您没有立即看到更改，请等待几秒钟，然后选择 </span><strong><span>Refresh</span></strong><span>（刷新）。</span></p><p><img src="images/Shut-down-monolith-service.png" width="800" alt="关闭整体式应用程序"></p><p>&nbsp;</p><ol start='282' ><li><span>打开一个新的浏览器选项卡，粘贴之前记录的</span><em><span>负载均衡器 DNS 名称</span></em><span>，然后按 Enter 键。</span></li></ol><p><span>   此操作将返回消息 </span><em><span>Ready to receive requests</span></em><span>（已准备好接收请求）。GET 请求中未包含任何资源路径时，应用程序会返回此消息。回想一下，在侦听器规则配置中，这种类型的请求已被发送到 </span><em><span>Users</span></em><span> 微服务。</span></p><ol start='283' ><li><span>在 URL 末尾添加 </span><code>/api</code><span>，然后按 Enter 键。</span></li></ol><p><span>   应用程序（具体来说是 </span><em><span>Users</span></em><span> 微服务）返回消息 </span><em><span>API ready to receive requests</span></em><span>（API 已准备好接收请求）。</span></p><ol start='284' ><li><span>测试对数据库中所有</span><em><span>用户</span></em><span>的检索。在 URL 末尾添加 </span><code>/users</code><span>，然后按 Enter 键。</span></li></ol><p><span>   </span><em><span>Users</span></em><span> 微服务会返回一个 JSON 对象，其中列出了数据库中的四个用户。</span></p><ol start='285' ><li><span>检索数据库中</span><em><span>第一个用户</span></em><span>的信息。在 URL 末尾添加 </span><code>/1</code><span>，然后按 Enter 键。</span></li></ol><p><span>   </span><em><span>Users</span></em><span> 微服务会返回一个 JSON 对象，其中包含 </span><em><span>Marcerline Singer</span></em><span>（数据库中的第一个用户）的信息。</span></p><ol start='286' ><li><span>接下来，检索数据库中的所有</span><em><span>线程</span></em><span>。将负载均衡器 DNS 名称之后的 URI 更改为 </span><code>/api/threads</code><span>，然后按 Enter 键。</span></li></ol><p><span>   </span><em><span>Threads</span></em><span> 微服务会返回一个 JSON 对象，其中包含数据库中的所有三个线程。</span></p><ol start='287' ><li><span>检索数据库中</span><em><span>第二个主题线程</span></em><span>的</span><em><span>帖子</span></em><span>。将负载均衡器 DNS 名称之后的 URI 更改为 </span><code>/api/posts/in-thread/2</code><span>，然后按 Enter 键。</span></li></ol><p><span>   </span><em><span>Posts</span></em><span> 微服务会返回一个 JSON 对象，其中包含数据库中第二个主题（与面包店相关）的已发布留言。</span></p><ol start='288' ><li><span>最后，对具有无效 URI 的请求提交进行测试。将负载均衡器 DNS 名称之后的 URI 更改为 </span><code>/xyz</code><span>，然后按 Enter 键。</span></li></ol><p><span>   系统会将请求转发到负载均衡器侦听器规则（返回消息 </span><em><span>Invalid request</span></em><span>（请求无效））中的默认处理程序。</span></p><p><span>   您已成功将整体式 Node.js 应用程序转换为微服务架构。原始应用程序在未容器化的情况下直接在实例上运行。基于微服务的应用程序则部署在由 Amazon ECS 编排的容器化环境中。</span></p><br><h2 id='提交作业'><span>提交作业</span></h2><ol start='289' ><li><span>在这些说明的顶部，选择 </span><span id="ssb_blue"><span>Submit</span></span><span>（提交）记录您的进度，在出现提示时，选择 </span><strong><span>Yes</span></strong><span>（是）。</span></li><li><span>如果在几分钟后仍未显示结果，请返回到这些说明的顶部，并选择 </span><span id="ssb_voc_grey"><span>Grades</span></span><span>（成绩）</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.20001px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">**提示**：您可以多次提交作业。更改作业后，再次选择 **Submit**（提交）。您最后一次提交的作业将作为本次实验的记录。</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><ol start='291' ><li><span>要查找有关您作业的详细反馈，请选择 </span><span id="ssb_voc_grey"><span>Details</span></span><span>（详细信息），然后选择 </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span>（查看提交报告）。</span></li></ol><br><h2 id='实验完成-i-classfas-fa-graduation-capi'><span>实验完成 </span><i class="fas fa-graduation-cap"></i></h2><p><i class="fas fa-flag-checkered"></i><span> 恭喜！您已完成实验。</span></p><ol start='292' ><li><span>选择此页面顶部的 </span><span id="ssb_voc_grey"><span>End Lab</span></span><span>（结束实验），然后选择 </span><span id="ssb_blue"><span>Yes</span></span><span>（是）确认您要结束实验。</span></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.20001px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">此时将显示一个面板，表明 *DELETE has been initiated... You may close this message box now.*（删除操作已启动...您现在可以关闭此消息框。）</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><ol start='293' ><li><span>选择右上角的 </span><strong><span>X</span></strong><span> 以关闭面板。</span></li></ol><p>&nbsp;</p><p><em><span>©2020 Amazon Web Services, Inc. 及其附属公司。保留所有权利。未经 Amazon Web Services, Inc. 事先书面许可，不得复制或转载本文的部分或全部内容。禁止商业性复制、出租或出售。</span></em></p></div></div>
+</body>
+</html>

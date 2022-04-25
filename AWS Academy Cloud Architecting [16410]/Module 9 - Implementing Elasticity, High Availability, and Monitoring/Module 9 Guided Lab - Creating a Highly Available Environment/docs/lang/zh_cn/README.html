@@ -1,0 +1,1164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='模块-9----指导实验创建高度可用的环境'><span>模块 9 – 指导实验：创建高度可用的环境</span></h1><h2 id='实验概览和目标'><span>实验概览和目标</span></h2><p><span>关键业务系统应部署为</span><em><span>高度可用的应用程序</span></em><span>，这意味着即使在某些组件发生故障的情况下，应用程序也可以保持运行。为了在 Amazon Web Services (AWS) 中实现高可用性，我们建议您</span><em><span>跨多个可用区运行服务</span></em><span>。</span></p><p><span>许多 AWS 服务本身就具有高可用性（例如负载均衡器）。还可以通过配置很多 AWS 服务来实现高可用性，例如在多个可用区中部署 Amazon Elastic Compute Cloud (Amazon EC2) 实例。</span></p><p><span>在本实验中，您将从在单个 EC2 实例上运行的应用程序开始入手，然后将其转变为高度可用的应用程序。</span></p><p><span>完成本实验后，您应能够：</span></p><ul><li><span>检查提供的 Virtual Private Cloud (VPC)</span></li><li><span>创建 Application Load Balancer</span></li><li><span>创建 Auto Scaling 组</span></li><li><span>测试应用程序是否实现了</span><em><span>高可用性</span></em></li></ul><p>&nbsp;</p><p><span>在本实验</span><strong><span>结束</span></strong><span>时，您的架构将如下例所示：</span></p><p><img src="images/module-9-guided-lab-architecture.png" referrerpolicy="no-referrer" alt="架构"></p><br><h2 id='持续时间'><span>持续时间</span></h2><p><span>完成本实验大约需要 </span><strong><span>40 分钟</span></strong><span>。</span></p><p>&nbsp;</p><br><h2 id='aws-服务限制'><span>AWS 服务限制</span></h2><p><span>在本实验环境中，对 AWS 服务和服务操作的访问可能仅限于完成实验说明所需的服务和服务操作。如果您尝试访问其他服务或执行本实验中所述之外的操作，可能会遇到错误。</span></p><br><h2 id='访问-aws-管理控制台'><span>访问 AWS 管理控制台</span></h2><ol start='' ><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）即可启动您的实验。</span></p><p><strong><span>Start Lab</span></strong><span>（启动实验）面板随即会打开，其中显示了实验状态。</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>提示</span></strong><span>：如果您需要更多时间来完成实验，请再次选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）按钮，重新启动环境计时器。</span></p></li><li><p><span>请耐心等待，直到 </span><strong><span>Start Lab</span></strong><span>（启动实验）面板显示消息 </span><em><span>Lab status: ready</span></em><span>（实验状态：就绪），然后选择 </span><strong><span>X</span></strong><span> 关闭此面板。</span></p></li><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_voc_grey"><span>AWS</span></span><span>。</span></p><p><span>此操作将在一个新的浏览器选项卡中打开 AWS 管理控制台。您将自动登录系统。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>提示</span></strong><span>：如果未打开新的浏览器选项卡，您的浏览器顶部通常会出现一个横幅或图标，并显示一条消息，指明您的浏览器阻止该了网站打开弹出窗口。请选择横幅或图标，然后选择 </span><strong><span>Allow pop-ups</span></strong><span>（允许弹出窗口）。</span></p></li><li><p><span>排列 </span><strong><span>AWS 管理控制台</span></strong><span>选项卡，使其与这些说明一起显示。理想情况下，您将同时打开两个浏览器选项卡，以便能够更轻松地执行实验步骤。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>除非特别要求，否则请勿更改区域</span></strong><span>。</span></p></li></ol><br><h2 id='任务-1检查您的-vpc'><span>任务 1：检查您的 VPC</span></h2><p><span>本实验从一个已通过 AWS CloudFormation 部署的环境开始，其中包含：</span></p><ul><li><span>一个 VPC</span></li><li><span>位于两个可用区内的公有子网和私有子网</span></li><li><span>与公有子网关联的一个互联网网关（未显示）</span></li><li><span>其中一个公有子网中的网络地址转换 (NAT) 网关</span></li><li><span>位于其中一个私有子网内的 Amazon Relational Database Service (Amazon RDS) 实例</span></li></ul><p><img src="images/module-9-guided-lab-task-1.png" referrerpolicy="no-referrer" alt="任务 1"></p><p><span>在此任务中，您将查看已为此实验创建的 VPC 的配置。</span></p><ol start='5' ><li><p><span>在 </span><strong><span>AWS 管理控制台</span></strong><span>中的 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单中，选择 </span><strong><span>VPC</span></strong><span>。</span></p></li><li><p><span>在左侧导航窗格中的 </span><strong><span>Filter by VPC</span></strong><span>（用 VPC 筛选）下，单击 </span><i class="fas fa-search"></i><span> </span><strong><span>Select a VPC</span></strong><span>（选择 VPC）框，然后选择 </span><strong><span>Lab VPC</span></strong><span>。</span></p><p><span>此设置将使控制台仅显示与 </span><em><span>Lab VPC</span></em><span> 关联的资源。</span></p></li><li><p><span>从左侧导航窗格中，选择 </span><strong><span>Your VPCs</span></strong><span>（您的 VPC）。</span></p><p><span>在这里，您可以访问为您创建的 </span><strong><span>Lab VPC</span></strong><span> 的相关信息。</span></p><p><strong><span>CIDR</span></strong><span> 列的值为 </span><em><span>10.0.0.0/16</span></em><span>，这意味着此 VPC 包括以 </span><em><span>10.0.x.x</span></em><span> 开头的所有 IP 地址。</span></p></li><li><p><span>在左侧导航窗格中，选择 </span><strong><span>Subnets</span></strong><span>（子网）。</span></p><p><span>在这里，您可以访问有关 </span><strong><span>Public Subnet 1</span></strong><span>（公有子网 1）的信息：</span></p><ul><li><strong><span>VPC</span></strong><span> 列显示此子网存在于 </span><em><span>Lab VPC</span></em><span> 内。</span></li><li><strong><span>IPv4 CIDR</span></strong><span> 列的值为 </span><em><span>10.0.0.0/24</span></em><span>，这意味着该子网包括介于 </span><em><span>10.0.0.0</span></em><span> 和 </span><em><span>10.0.0.255</span></em><span> 之间的 256 个 IP 地址。其中有五个保留地址，无法使用。</span></li><li><strong><span>Availability Zone</span></strong><span>（可用区）列列出了此子网所在的可用区。</span></li></ul></li><li><p><span>要在页面底部显示更多详细信息，请选择 </span><i class="far fa-check-square"></i><span> </span><strong><span>Public Subnet 1</span></strong><span>（公有子网 1）。</span></p><p><strong><span>提示：</span></strong><span>要调整下方窗格的大小，可以拖动分隔线。</span></p></li><li><p><span>选择页面下半部分中的 </span><strong><span>Route Table</span></strong><span>（路由表）选项卡。</span></p></li></ol><p><span>此选项卡包含有关此子网的详细路由信息：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.20007px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">– 第一个条目指定目标在 VPC (10.0.0.0/16) 无类域间路由 (CIDR) 范围内的流量将在该 VPC (本地) 内路由。</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">– 第二个条目指定任何流向互联网 (0.0.0.0/0) 的流量都将路由到互联网网关 (igw-)。此设置使该子网成为公有子网。</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><ol start='11' ><li><p><span>选择 </span><strong><span>Network ACL</span></strong><span>（网络 ACL）选项卡。</span></p><p><span>此选项卡包含与子网关联的网络访问控制列表（网络 ACL）的信息。这些规则目前允许</span><em><span>所有流量</span></em><span>进出子网，但可以通过使用安全组进一步限制这些规则。</span></p></li><li><p><span>在左侧导航窗格中，选择 </span><strong><span>Internet Gateways</span></strong><span>（互联网网关）。</span></p><p><span>请注意，一个互联网网关已经与 </span><strong><span>Lab VPC</span></strong><span> 关联。</span></p></li><li><p><span>在左侧导航窗格中，选择 </span><strong><span>Security Groups</span></strong><span>（安全组）。</span></p></li><li><p><span>选择 </span><i class="far fa-check-square"></i><span> </span><strong><span>Inventory DB</span></strong><span>（库存数据库）。</span></p><p><span>此安全组控制数据库的入站流量。</span></p></li><li><p><span>选择页面下半部分中的 </span><strong><span>Inbound Rules</span></strong><span>（入站规则）选项卡。</span></p><p><span>这些规则允许来自 VPC（</span><em><span>10.0.0.0/16</span></em><span>）中任何位置的入站 MySQL 或 Aurora 流量（端口 3306）。稍后您将修改此设置，使其只接受来自应用程序服务器的流量。</span></p></li><li><p><span>选择 </span><strong><span>Outbound Rules</span></strong><span>（出站规则）选项卡。</span></p><p><span>默认情况下，安全组允许所有出站流量。但是，可以根据需要修改此设置。</span></p></li></ol><br><h2 id='任务-2创建-application-load-balancer'><span>任务 2：创建 Application Load Balancer</span></h2><p><span>要构建高度可用的应用程序，最佳实践是在</span><em><span>多个可用区</span></em><span>中启动资源。可用区是同一区域中物理上分离的数据中心（或数据中心组）。如果跨多个可用区运行应用程序，则可以在数据中心遇到故障时提供更高的</span><em><span>可用性</span></em><span>。</span></p><p><span>由于应用程序在多个应用程序服务器上运行，因此您需要在这些服务器之间分配流量的方法。您可以使用</span><em><span>负载均衡器</span></em><span>来实现此目标。此负载均衡器还将对实例执行运行状况检查，并仅向运行良好的实例发送请求。</span></p><p><img src="images/module-9-guided-lab-task-2.png" referrerpolicy="no-referrer" alt="任务 2"></p><ol start='17' ><li><p><span>在 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单上，选择 </span><strong><span>EC2</span></strong><span>。</span></p></li><li><p><span>在左侧导航窗格中，选择 </span><strong><span>Load Balancers</span></strong><span>（负载均衡器）（您可能需要向下滚动才能找到）。</span></p></li><li><p><span>选择 </span><span id="ssb_blue"><span>Create Load Balancer</span></span><span>（创建负载均衡器）。</span></p><p><span>此时将显示几种类型的负载均衡器。请阅读每种类型的描述，了解它们的功能。</span></p></li><li><p><span>在 </span><strong><span>Application Load Balancer</span></strong><span> 下，选择 </span><span id="ssb_blue"><span>Create</span></span><span>（创建）。</span></p></li><li><p><span>在 </span><strong><span>Name</span></strong><span>（名称）中输入 </span><code>Inventory-LB</code></p></li><li><p><span>向下滚动到 </span><strong><span>Availability Zones</span></strong><span>（可用区）部分，然后在 </span><strong><span>VPC</span></strong><span> 中选择 </span><strong><span>Lab VPC</span></strong><span>。</span></p><p><span>您现在将指定负载均衡器应使用的</span><em><span>子网</span></em><span>。它将是一个公有负载均衡器，因此您需要同时选择两个公有子网。</span></p></li><li><p><span>选择</span><strong><span>第一个</span></strong><span>可用区，然后选择显示的 </span><strong><span>Public Subnet</span></strong><span>（公有子网）。</span></p></li><li><p><span>选择</span><strong><span>第二个</span></strong><span>可用区，然后选择显示的 </span><strong><span>Public Subnet</span></strong><span>（公有子网）。</span></p><p><span>现在，您应该选择了两个子网：</span><strong><span>Public Subnet 1</span></strong><span>（公有子网 1）和 </span><strong><span>Public Subnet 2</span></strong><span>（公有子网 2）。（如果不是，请返回并尝试再次配置。）</span></p></li><li><p><span>选择 </span><span id="ssb_grey"><span>Next: Configure Security Settings</span></span><span>（步骤 2: 配置安全设置）</span></p><p><span>此时将显示一条警告，建议您使用 Secure HTTP (HTTPS) 来提高安全性。这是很好的建议，但是在本实验中没有必要。</span></p></li><li><p><span>选择 </span><span id="ssb_grey"><span>Next: Configure Security Groups</span></span><span>（下一步：配置安全组）</span></p><p><span>现在，您将创建一个接受所有入站 </span><em><span>HTTP</span></em><span> 和 </span><em><span>HTTPS</span></em><span> 流量的安全组。</span></p></li><li><p><span>选择 </span><i class="far fa-dot-circle"></i><span> </span><strong><span>Create a </span><em><span>new</span></em><span> security group</span></strong><span>（创建新安全组），然后进行以下配置：</span></p><ul><li><strong><span>Security group name:</span></strong><span>（安全组名称）：</span><code>Inventory-LB</code></li><li><strong><span>Description</span></strong><span>（描述）：</span><code>Enable web access to load balancer</code></li></ul></li><li><p><span>将现有规则（已在该页面上）配置为：</span></p><ul><li><strong><span>Type</span></strong><span>（类型）：</span><em><span>HTTP</span></em></li><li><strong><span>Source</span></strong><span>（来源）：</span><em><span>任何位置</span></em></li></ul></li><li><p><span>选择 </span><span id="ssb_grey"><span>Add Rule</span></span><span>（添加规则），然后进行以下配置：</span></p><ul><li><strong><span>Type</span></strong><span>（类型）：</span><em><span>HTTPS</span></em></li><li><strong><span>Source</span></strong><span>（来源）：</span><em><span>任何位置</span></em></li></ul><p><span>这些设置将会接受所有 HTTP 和 HTTPS 入站请求。</span></p></li><li><p><span>选择 </span><span id="ssb_grey"><span>Next: Configure Routing</span></span><span>（下一步：配置路由）</span></p><p><em><span>目标组</span></em><span>定义要将进入负载均衡器的流量</span><em><span>发送</span></em><span>到哪里。Application Load Balancer 可以根据传入请求的 URL 向多个目标组发送流量。例如，将来自移动应用程序的请求发送到与其它类型请求不同的另一组服务器。您的 Web 应用程序将只会使用一个目标组。</span></p></li><li><p><span>在 </span><strong><span>Name</span></strong><span>（名称）中输入 </span><code>Inventory-App</code></p></li><li><p><span>展开 </span><i class="fas fa-caret-right"></i><span> </span><strong><span>Advanced health check settings</span></strong><span>（高级运行状况检查设置）。</span></p><p><span>Application Load Balancer 会自动在全部实例上执行</span><em><span>运行状况检查</span></em><span>，以确保它们对请求做出响应。建议使用默认设置，但您需要稍微加快其速度以便在本实验中使用。</span></p></li><li><p><span>配置以下值：</span></p><ul><li><strong><span>Healthy threshold</span></strong><span>（正常阈值）：</span><code>2</code></li><li><strong><span>Interval</span></strong><span>（间隔）：</span><code>10</code></li></ul><p><span>这些设置表示每 10 秒执行一次运行状况检查，如果实例连续两次正确响应，则视为其运行状况良好。</span></p></li><li><p><span>选择 </span><span id="ssb_grey"><span>Next: Register Targets</span></span><span>（下一步：注册目标）</span></p><p><em><span>目标</span></em><span>是响应来自负载均衡器的请求的各个实例。您目前没有任何 Web 应用程序实例，因此可以跳过此步骤。</span></p></li><li><p><span>选择 </span><span id="ssb_grey"><span>Next: Review</span></span><span>（下一步：审核）</span></p></li><li><p><span>查看设置，选择 </span><span id="ssb_blue"><span>Create</span></span><span>（创建），然后选择 </span><span id="ssb_blue"><span>Close</span></span><span>（关闭）</span></p><p><span>现在，系统将在后台预置您的负载均衡器。您不需要等待。</span></p></li></ol><br><h2 id='任务-3创建-auto-scaling-组'><span>任务 3：创建 Auto Scaling 组</span></h2><p><em><span>Amazon EC2 Auto Scaling</span></em><span> 是一项旨在根据用户定义的策略、计划和运行状况检查来自动</span><em><span>启动</span></em><span>或</span><em><span>终止</span></em><span> Amazon EC2 实例的服务。它还</span><em><span>会自动跨多个可用区分配实例</span></em><span>，以</span><em><span>提高应用程序的可用性</span></em><span>。</span></p><p><span>在此任务中，您将创建一个 Auto Scaling 组，该组跨</span><em><span>私有子网</span></em><span>部署 EC2 实例，这是应用程序安全部署的一项最佳实践。用户无法通过互联网访问私有子网中的实例，而是将请求发送到负载均衡器，负载均衡器将请求转发到私有子网中的 EC2 实例。</span></p><p><img src="images/module-9-guided-lab-task-3.png" referrerpolicy="no-referrer" alt="任务 3"><span>。</span></p><br><h3 id='为-auto-scaling-创建-ami'><span>为 Auto Scaling 创建 AMI</span></h3><p><span>您将从现有的 </span><em><span>Web 服务器 1</span></em><span> 创建 AMI。这将保存启动盘的内容，以便可以使用相同的内容启动新实例。</span></p><ol start='37' ><li><p><span>在 </span><strong><span>AWS 管理控制台</span></strong><span>的 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单上，单击 </span><strong><span>EC2</span></strong><span>。</span></p></li><li><p><span>在左侧导航窗格中，单击 </span><strong><span>Instances</span></strong><span>（实例）。</span></p><p><span>首先，您将确认该实例正在运行。</span></p></li><li><p><span>请耐心等待，直到 </span><strong><span>Web Server 1</span></strong><span> 的 </span><strong><span>Status Checks</span></strong><span>（状态检查）显示 </span><em><span>2/2 checks passed</span></em><span>（2/2 检查已通过）。单击刷新 </span><i class="fas fa-sync"></i><span> 进行更新。</span></p><p><span>接下来，您将根据此实例创建 AMI。</span></p></li><li><p><span>选择 </span><i class="far fa-check-square"></i><span> </span><strong><span>Web Server 1</span></strong><span>（Web 服务器 1）。</span></p></li><li><p><span>在 </span><span id="ssb_grey"><span>Actions </span><i class="fas fa-angle-down"></i></span><span>（操作）菜单中，单击 </span><strong><span>Image</span></strong><span>（映像和模板）</span>&gt;<span> </span><strong><span>Create Image</span></strong><span>（创建映像），然后进行以下配置：</span></p><ul><li><strong><span>Image name</span></strong><span>（映像名称）：</span><code>Web Server AMI</code></li><li><strong><span>Image description</span></strong><span>（映像描述）：</span><code>Lab AMI for Web Server</code></li></ul></li><li><p><span>单击 </span><span id="ssb_orange"><span>Create Image</span></span><span>（创建映像）</span></p><p><span>确认屏幕将显示新 AMI 的 </span><strong><span>AMI ID</span></strong><span>。</span></p></li><li><p><span>单击 </span><span id="ssb_blue"><span>Close</span></span><span>（关闭）</span></p><p><span>您稍后在实验中启动 Auto Scaling 组时将使用此 AMI。</span></p></li></ol><br><h3 id='创建启动配置和-auto-scaling-组'><span>创建启动配置和 Auto Scaling 组。</span></h3><p><span>您将首先创建</span><em><span>启动配置</span></em><span>，该配置定义 Amazon EC2 Auto Scaling 应启动的实例类型。界面看起来类似于启动 EC2 实例时的界面。但是，它不是启动实例，而是</span><em><span>存储</span></em><span>启动配置供以后使用。</span></p><ol start='44' ><li><p><span>在左侧导航窗格中，选择 </span><strong><span>Launch Configurations</span></strong><span>（启动配置）。</span></p></li><li><p><span>选择 </span><span id="ssb_orange"><span>Create launch configuration</span></span><span>（创建启动配置）。</span></p></li><li><p><span>配置以下设置：</span></p><ul><li><p><strong><span>Launch configuration name</span></strong><span>（启动配置名称）：</span><code>Inventory-LC</code></p></li><li><p><strong><span>Amazon Machine Image</span></strong><span> (AMI)（Amazon 系统映像 (AMI)）：选择 </span><em><span>Web Server AMI</span></em><span>（Web 服务器 AMI）</span></p></li><li><p><strong><span>Instance type</span></strong><span>（实例类型）：</span></p><ul><li><span>选择 </span><span id="ssb_white"><span>Choose instance type</span></span><span>（选择实例类型）</span></li><li><span>选择 </span><em><span>t3.micro</span></em></li><li><span>选择 </span><span id="ssb_orange"><span>Choose</span></span><span>（选择）</span></li></ul><p><strong><span>注意</span></strong><span>：如果您在 us-east-1 区域启动了实验，请选择 </span><strong><span>t2.micro</span></strong><span> 实例类型。要查找区域，请查看 Amazon EC2 控制台的右上角。</span></p><p><strong><span>注意</span></strong><span>：如果您收到错误消息 Something went wrong. Please refresh and try again.（出错了。请刷新后重试。），您可以忽略它并继续练习。</span></p></li><li><p><strong><span>其他配置</span></strong></p><ul><li><strong><span>IAM instance profile</span></strong><span>（IAM 实例配置文件）：选择 </span><em><span>Inventory-App-Role</span></em></li><li><strong><span>Monitoring</span></strong><span>（监控）：选择 </span><i class="far fa-check-square"></i><span> </span><em><span>Enable EC2 instance detailed monitoring within CloudWatch（启动 CloudWatch 中的 EC2 实例详细监控）</span></em></li></ul><p><span>这让 Auto Scaling 能够快速响应不断变化的利用率。</span></p></li></ul></li><li><p><span>展开 </span><i class="fas fa-caret-right"></i><span> </span><strong><span>Advanced details</span></strong><span>（高级详细信息）。在 </span><strong><span>User data</span></strong><span>（用户数据）下，复制并粘贴以下脚本：</span></p></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">#!/bin/bash</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Install Apache Web Server and PHP</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">yum install <span class="cm-attribute">-y</span> httpd mysql</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">amazon-linux-extras install <span class="cm-attribute">-y</span> php7.2</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Download Lab files</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod9-guided/scripts/inventory-app.zip</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">unzip inventory-app.zip <span class="cm-attribute">-d</span> /var/www/html/</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Download and install the AWS SDK for PHP</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> https://github.com/aws/aws-sdk-php/releases/download/3.62.3/aws.zip</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">unzip aws <span class="cm-attribute">-d</span> /var/www/html</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Turn on web server</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">chkconfig httpd on</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">service</span> httpd <span class="cm-builtin">start</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 314px;"></div><div class="CodeMirror-gutters" style="display: none; height: 314px;"></div></div></div></pre><ol start='48' ><li><p><span>在 </span><strong><span>Security groups</span></strong><span>（安全组）下</span></p><ul><li><strong><span>Select an existing security group:</span></strong><span>（选择一个现有安全组）：</span><em><span>Inventory-App</span></em></li></ul><p><i class="fas fa-comment"></i><span> 您将收到一条警告，告知 </span><em><span>You will not able to connect to the instance</span></em><span>（您将无法连接到实例 ）。您可以忽略此警告，因为您不会连接到实例。所有配置都通过用户数据脚本完成。</span></p></li><li><p><span>在 </span><strong><span>Key pair</span></strong><span> (login)（密钥对（登录））下：</span></p><ul><li><span>选择 </span><strong><span>Proceed without a key pair</span></strong><span>（在没有密钥对的情况下继续）</span></li><li><span>选择 </span><i class="far fa-check-square"></i><span> </span><em><span>I acknowledge that...</span></em><span>（我确认...）</span></li></ul></li><li><p><span>选择 </span><span id="ssb_orange"><span>Create launch configuration</span></span><span>（创建启动配置）。</span></p><p><em><span>启动配置</span></em><span>定义了</span><em><span>要启动什么资源</span></em><span>，而 </span><em><span>Auto Scaling 组</span></em><span>定义了</span><em><span>在哪里启动</span></em><span>资源。</span></p></li></ol><ol start='51' ><li><p><span>在 </span><strong><span>Launch configurations</span></strong><span>（启动配置）表中，选择 </span><i class="far fa-check-square"></i><span> </span><em><span>Inventory-LC</span></em><span>。</span></p></li><li><p><span>从 </span><span id="ssb_white"><span>Actions </span><i class="fas fa-caret-down"></i></span><span>（操作）菜单中，选择 </span><em><span>Create Auto Scaling group</span></em><span>（创建 Auto Scaling 组）</span></p></li><li><p><span>输入 Auto Scaling 组名称：</span></p><ul><li><strong><span>Name</span></strong><span>（名称）：</span><code>Inventory-ASG</code><span>（</span><em><span>ASG</span></em><span> 代表 </span><em><span>Auto Scaling 组</span></em><span>）</span></li></ul></li><li><p><span>选择 </span><span id="ssb_orange"><span>Next</span></span><span>（下一步）</span></p></li><li><p><span>在 </span><strong><span>Network</span></strong><span>（网络）页面上配置</span></p><ul><li><strong><span>VPC</span></strong><span>：</span><em><span>Lab VPC</span></em></li><li><strong><span>Subnet</span></strong><span>（子网）：选择 </span><em><span>Private Subnet 1</span></em><span>（私有子网 1）</span><strong><span>和</span></strong><span> </span><em><span>Private Subnet 2</span></em><span>（私有子网 2）</span></li></ul><p><i class="fas fa-comment"></i><span> 您可以忽略警告 </span><em><span>No public IP addresses will be assigned</span></em><span>（不分配任何公有 IP 地址）。EC2 实例将在</span><em><span>私有子网</span></em><span>中启动，因此它们不需要公有 IP 地址。</span></p><p><span>此操作将在两个可用区的私有子网中都启动 EC2 实例。</span></p></li><li><p><span>选择 </span><span id="ssb_orange"><span>Next</span></span><span>（下一步）</span></p></li><li><p><span>在 </span><strong><span>Load balancing</span></strong><span>（负载均衡）下：</span></p><ul><li><span>选择 </span><i class="far fa-check-square"></i><span> </span><strong><span>Attach to an existing load balancer</span></strong><span>（附加到现有负载均衡器）</span></li><li><span>选择 </span><strong><span>Choose from your load balancer target groups</span></strong><span>（从您的负载均衡器目标组中进行选择）</span></li><li><strong><span>Existing load balancer target groups</span></strong><span>（现有的负载均衡器目标组）：</span><em><span>Inventory-App</span></em></li></ul><p><span>这些设置会告诉 Auto Scaling 组将新的 EC2 实例注册为您之前创建的 </span><em><span>Inventory-App</span></em><span> 目标组的一部分。负载均衡器将向此目标组中的实例发送流量。</span></p></li><li><p><span>在 </span><strong><span>Health checks</span></strong><span>（运行状况检查）下：</span></p><ul><li><span>选择 </span><i class="far fa-check-square"></i><span> </span><strong><span>ELB</span></strong></li><li><strong><span>Health check grace period</span></strong><span>（运行状况检查宽限期）：90</span></li></ul></li><li><p><span>在 </span><strong><span>Additional settings</span></strong><span>（其他设置）下：</span></p><ul><li><span>选择 </span><i class="far fa-check-square"></i><span> </span><strong><span>Enable group metrics collection within CloudWatch（在 CloudWatch 中启用组指标收集）</span></strong></li></ul></li><li><p><span>选择 </span><span id="ssb_orange"><span>Next</span></span><span>（下一步）</span></p></li><li><p><span>在 </span><strong><span>Group Size</span></strong><span>（组大小）下配置：</span></p><ul><li><strong><span>Desired capacity</span></strong><span>（所需容量）：2</span></li><li><strong><span>Minimum capacity</span></strong><span>（最小容量）：2</span></li><li><strong><span>Maximum capacity</span></strong><span>（最大容量）：2</span></li></ul></li><li><p><span>在 </span><strong><span>Scaling policies</span></strong><span>（扩展策略）下，选择 </span><em><span>None</span></em><span>（无）。</span></p><p><span>对于本实验，您将</span><em><span>始终维护两个实例</span></em><span>，以确保</span><em><span>高可用性</span></em><span>。如果应用程序预计接收不同的流量负载，您还可以创建</span><em><span>扩展策略</span></em><span>来定义何时启动或终止实例。但是，您无需在本实验中为库存应用程序创建扩展策略。</span></p></li><li><p><span>选择 </span><span id="ssb_orange"><span>Next</span></span><span>（下一步）</span></p></li><li><p><span>在 </span><strong><span>Add notifications</span></strong><span>（添加通知）页面上，选择 </span><span id="ssb_orange"><span>Next</span></span><span>（下一步）。您无需配置任何这些设置。</span></p></li><li><p><span>在 </span><strong><span>Add Tags</span></strong><span>（添加标签）页面上，选择 </span><span id="ssb_white"><span>Add Tag</span></span><span>（添加标签）。</span></p><ul><li><strong><span>Key</span></strong><span>（键）：</span><code>Name</code></li><li><strong><span>Value</span></strong><span>（值）：</span><code>Inventory-App</code></li><li><span>选择 </span><i class="far fa-check-square"></i><span id="ssb_orange"><span>Next</span></span><span>（下一步）</span></li></ul><p><span>这些设置将使用 </span><em><span>Name</span></em><span> 来</span><em><span>标记</span></em><span> Auto Scaling 组，该 Name 也将显示在由 Auto Scaling 组启动的 EC2 实例上。您可以使用标签来确定哪些 Amazon EC2 实例与哪个应用程序相关联。您还可以添加 </span><em><span>Cost Center</span></em><span>（成本中心）等标签，以在账单文件中分配应用程序成本。</span></p></li><li><p><span>在 </span><strong><span>Review</span></strong><span>（审核）页面上：</span></p><ul><li><span>选择 </span><span id="ssb_orange"><span>Create Auto Scaling group</span></span><span>（创建 Auto Scaling 组）。</span></li></ul><p><em><span>Inventory-ASG</span></em><span> 将显示在控制台中：</span></p><p><img src="images/asg-console.png" referrerpolicy="no-referrer" alt="Auto Scaling 组控制台"></p><p><span>审核结果显示：</span></p><ul><li><span>该组目前</span><em><span>没有实例</span></em><span>，但 </span><i class="fas fa-info-circle"></i><span> 信息图标表明实例正在启动。（将鼠标悬停在该图标上查看更多详细信息。）</span></li><li><strong><span>Desired</span></strong><span>（所需）数量为 </span><em><span>2 个实例</span></em><span>。Amazon EC2 Auto Scaling 将尝试启动两个实例，以便实现所需数量。</span></li><li><strong><span>Min</span></strong><span>（最少）和 </span><strong><span>Max</span></strong><span>（最多）也设置为 </span><em><span>2 个实例</span></em><span>。Amazon EC2 Auto Scaling 会尝试始终提供两个实例，即使发生故障也一样。</span></li></ul><p><span>您的应用程序很快就会在两个可用区中运行。Amazon EC2 Auto Scaling 会保持该配置，即使一个实例或可用区发生故障也一样。</span></p><p><span>一分钟后，选择 </span><i class="fas fa-sync"></i><span> </span><strong><span>Refresh</span></strong><span>（刷新）以更新显示。它应该显示 </span><em><span>2 个实例</span></em><span>正在运行。</span></p></li></ol><br><h2 id='任务-4更新安全组'><span>任务 4：更新安全组</span></h2><p><span>您部署的应用程序是一个</span><em><span>三层架构</span></em><span>。现在，您将配置安全组来强制执行以下层：</span></p><p><img src="images/module-9-guided-lab-task-4.png" referrerpolicy="no-referrer" alt="任务 4"></p><br><h3 id='负载均衡器安全组'><span>负载均衡器安全组</span></h3><p><span>您已经在创建负载均衡器时配置了</span><em><span>负载均衡器安全组</span></em><span>。它接受所有传入 </span><em><span>HTTP</span></em><span> 和 </span><em><span>HTTPS</span></em><span> 流量。</span></p><p><span>负载均衡器已配置为将传入请求转发到</span><em><span>目标组</span></em><span>。Auto Scaling 在启动新实例时，会自动将这些实例添加到目标组。</span></p><br><h3 id='应用程序安全组'><span>应用程序安全组</span></h3><p><em><span>应用程序安全组</span></em><span>作为实验设置的一部分提供。现在，您会将其配置为仅接受来自负载均衡器的传入流量。</span></p><ol start='67' ><li><span>在左侧导航窗格中，选择 </span><strong><span>Security Groups</span></strong><span>（安全组）。</span></li><li><span>选择 </span><i class="far fa-check-square"></i><span> </span><strong><span>Inventory-App</span></strong><span>。</span></li><li><span>选择页面下半部分中的 </span><strong><span>Inbound Rules</span></strong><span>（入站规则）选项卡。</span></li></ol><p><span>安全组当前为空。现在，您将添加规则以接受从负载均衡器传入的 </span><em><span>HTTP</span></em><span> 流量。您无需配置 </span><em><span>HTTPS</span></em><span> 流量，因为负载均衡器已配置为通过 HTTP 转发 HTTPS 请求。这种做法将安全性负担分流到负载均衡器，从而减少了各个应用程序服务器所需的工作量。</span></p><ol start='70' ><li><span>选择 </span><span id="ssb_grey"><span>Edit inbound rules</span></span><span>（编辑入站规则）</span></li><li><span>在 </span><strong><span>Edit inbound rules</span></strong><span>（编辑入站规则）页面上，选择 </span><span id="ssb_grey"><span>Add rule</span></span><span>（添加规则）并配置这些设置：</span></li></ol><ul><li><p><strong><span>Type</span></strong><span>（类型）：</span><em><span>HTTP</span></em></p></li><li><p><strong><span>Source</span></strong><span>（来源）：</span></p><ul><li><span>点击 </span><strong><span>Custom</span></strong><span>（自定义）旁边的搜索框</span></li><li><span>删除当前的内容</span></li><li><span>输入 </span><code>sg</code></li><li><span>从显示的列表中选择 </span><strong><span>Inventory-LB</span></strong></li></ul></li><li><p><strong><span>Description:</span></strong><span>（描述）：</span><code>Traffic from load balancer</code></p></li><li><p><span>选择 </span><span id="ssb_orange"><span>Save rules</span></span><span>（保存规则）</span></p></li></ul><p><span>应用程序服务器现在可以接收从负载均衡器传入的流量。这包括负载均衡器自动执行的</span><em><span>运行状况检查</span></em><span>。</span></p><br><h3 id='数据库安全组'><span>数据库安全组</span></h3><p><span>现在，您要将</span><em><span>数据库安全组</span></em><span>配置为仅接受从应用程序服务器传入的流量。</span></p><ol start='72' ><li><span>选择 </span><i class="far fa-check-square"></i><span> </span><strong><span>Inventory-DB</span></strong><span>（同时确保未选中其他安全组）。</span></li></ol><p><span>现有规则允许来自 VPC 内任何 IP 地址的流量通过端口 3306（由 MySQL 使用）。这是一条很好的规则，但可以进一步限制安全性。</span></p><ol start='73' ><li><p><span>在 </span><strong><span>Inbound rules</span></strong><span>（入站规则）选项卡中，选择 </span><span id="ssb_grey"><span>Edit inbound rules</span></span><span>（编辑入站规则）并配置以下设置：</span></p><ul><li><span>点击 </span><strong><span>Custom</span></strong><span>（自定义）旁边的搜索框</span></li><li><span>删除当前的内容</span></li><li><span>键入 </span><code>sg</code></li><li><span>从显示的列表中选择 </span><strong><span>Inventory-App</span></strong></li><li><strong><span>描述：</span></strong><code>Traffic from application servers</code></li><li><span>选择 </span><span id="ssb_orange"><span>Save rules</span></span><span>（保存规则）</span></li></ul><p><span>您已经配置了 </span><em><span>3 层安全性</span></em><span>。各层中的每个元素只接受来自上层的流量。</span></p><p><span>此外，使用私有子网意味着互联网和您的应用程序资源之间存在两个安全屏障。此架构遵循应用多层安全的最佳实践。</span></p></li></ol><br><h2 id='任务-5测试应用程序'><span>任务 5：测试应用程序</span></h2><p><span>您的应用程序现已准备就绪，可以进行测试。</span></p><p><span>在此任务中，您将确认您的 Web 应用程序正在运行，并测试它是否高度可用。</span></p><ol start='74' ><li><p><span>在左侧导航窗格中，选择 </span><strong><span>Target Groups</span></strong><span>（目标群组）。</span></p><p><span>此时将显示 </span><em><span>Inventory-App</span></em><span> 实例组。</span></p></li><li><p><span>选择页面下半部分中的 </span><strong><span>Targets</span></strong><span>（目标）选项卡。</span></p><p><span>此选项卡应显示两个</span><em><span>已注册的目标</span></em><span>。</span><strong><span>Status</span></strong><span>（状态）列显示针对实例执行的负载均衡器运行状况检查的结果。</span></p></li><li><p><span>在右上角区域，偶尔选择 </span><i class="fas fa-sync"></i><span> </span><strong><span>Refresh</span></strong><span>（刷新），直到两个实例的 </span><strong><span>Status</span></strong><span>（状态）显示为 </span><em><span>healthy</span></em><span>（正常）。</span></p><p><span>如果状态最终没有变为 </span><em><span>healthy</span></em><span>（正常），请向讲师寻求帮助诊断配置。将鼠标悬停在 </span><strong><span>Status</span></strong><span>（状态）列中的 </span><i class="fas fa-info-circle"></i><span> 图标上，查看更多状态信息。</span></p><p><span>您将通过连接到负载均衡器来测试应用程序，然后负载均衡器将您的请求发送到其中一个 EC2 实例。您首先需要检索负载均衡器的域名系统 (DNS) 名称。</span></p></li><li><p><span>在左侧导航窗格中，选择 </span><strong><span>Load Balancers</span></strong><span>（负载均衡器）。</span></p></li><li><p><span>在窗口下半部分的 </span><strong><span>Description</span></strong><span>（描述）选项卡中，将 </span><strong><span>DNS Name</span></strong><span>（DNS 名称）复制到您的剪贴板。</span></p><p><span>该名称应类似于：</span><em><span>inventory-LB-xxxx.elb.amazonaws.com</span></em></p></li><li><p><span>打开新的 Web 浏览器选项卡，粘贴复制到剪贴板的 DNS 名称，然后按 Enter 键。</span></p><p><span>负载均衡器将您的请求转发到了其中一个 EC2 实例。实例 ID 和可用区显示在网页底部。</span></p></li><li><p><span>在 Web 浏览器中重新加载 </span><i class="fas fa-sync"></i><span> 页面。您应该注意到，实例 ID 和可用区有时会在两个实例之间发生变化。</span></p><p><span>显示此 Web 应用程序时，信息流为：</span></p><p><img src="images/module-9-guided-lab-task-5.png" referrerpolicy="no-referrer" alt="任务 5"></p><p><span>– 您将请求发送到</span><em><span>负载平衡器</span></em><span>，它位于连接到互联网的</span><em><span>公有子网</span></em><span>中。</span></p><p><span>– 负载均衡器选择了一个位于</span><em><span>私有子网</span></em><span>中的 </span><em><span>EC2 实例</span></em><span>，并将请求转发给它。</span></p><p><span>– 然后 EC2 实例将网页返回给负载均衡器，负载均衡器再将其返回给您的 Web 浏览器。</span></p></li></ol><br><h2 id='任务-6测试高可用性'><span>任务 6：测试高可用性</span></h2><p><span>您的应用程序已配置为高度可用。您可以通过终止其中一个 EC2 实例来证明应用程序的高可用性。</span></p><ol start='81' ><li><p><span>返回 Web 浏览器中的 </span><strong><span>Amazon EC2 console</span></strong><span>（Amazon EC2 控制台）选项卡（但不要关闭 Web 应用程序选项卡，您很快还要返回）。</span></p></li><li><p><span>在左侧导航窗格中，选择 </span><strong><span>Instances</span></strong><span>（实例）。</span></p><p><span>现在，您将终止其中一个 Web 应用程序实例来模拟故障。</span></p></li><li><p><span>选中 </span><i class="far fa-check-square"></i><span> 其中一个 </span><strong><span>Inventory-App</span></strong><span> 实例（选中哪个都可以）。</span></p></li><li><p><span>选择 </span><span id="ssb_grey"><span>Actions </span><i class="fas fa-angle-down"></i></span><span>（操作），然后选择 </span><strong><span>Instance State &gt; Terminate</span></strong><span>（实例状态 &gt; 终止实例）。</span></p></li><li><p><span>选择 </span><strong><span>Yes, Terminate</span></strong><span>（是，请终止）</span></p><p><span>负载均衡器运行状况检查很快就会发现实例没有响应。然后负载均衡器会自动将所有请求路由到其余的实例。</span></p></li><li><p><span>返回 Web 浏览器中的 Web 应用程序选项卡，然后多次重新加载 </span><i class="fas fa-sync"></i><span> 页面。</span></p><p><span>您应该注意到，页面底部显示的 </span><em><span>Availability Zone</span></em><span>（可用区）保持不变。尽管实例除了故障，但您的应用程序仍然可用。</span></p><p><span>几分钟后，Amazon EC2 Auto Scaling 也会注意到实例故障。它被配置保持两个实例运行，因此 Amazon EC2 Auto Scaling 将</span><em><span>自动启动替代实例</span></em><span>。</span></p></li><li><p><span>返回 Web 浏览器中的 </span><strong><span>Amazon EC2 console</span></strong><span>（Amazon EC2 控制台）选项卡。在右上角区域，每 30 秒选择刷新 </span><i class="fas fa-sync"></i><span>，直到出现新的 EC2 实例。</span></p><p><span>几分钟后，新实例的运行状况检查结果应变为正常。负载均衡器将继续在两个可用区之间发送流量。您可以重新加载 Web 应用程序选项卡以查看这种情况是否发生。</span></p><p><span>此任务证明您的应用程序现在具有</span><em><span>高可用性</span></em><span>。</span></p></li></ol><br><h2 id='可选任务-1使数据库高度可用'><span>可选任务 1：使数据库高度可用</span></h2><p><i class="fas fa-comment"></i><span> </span><em><span>此任务是</span><strong><span>可选</span></strong><span>任务。如果您有剩余的实验时间，可以继续执行此任务。</span></em></p><p><span>应用程序架构现在具有高可用性。但是，Amazon RDS 数据库仅从一个数据库实例运行。</span></p><p><span>在此可选任务中，您会通过将数据库配置为跨多个可用区（即在</span><em><span>多可用区部署</span></em><span>）中运行来使数据库高度可用。</span></p><p><img src="images/module-9-guided-lab-challenge-1.png" referrerpolicy="no-referrer" alt="可选任务 1"></p><ol start='88' ><li><p><span>在 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单上，选择 </span><strong><span>RDS</span></strong><span>。</span></p></li><li><p><span>在左侧导航窗格中，选择 </span><strong><span>Databases</span></strong><span>（数据库）。</span></p></li><li><p><span>单击 </span><span style="color:blue;"><span>inventory-db</span></span></p><p><span>您可以随意浏览有关数据库的信息。</span></p></li><li><p><span>选择 </span><span id="ssb_rds_white"><span>Modify</span></span><span>（修改）</span></p></li><li><p><span>对于 </span><strong><span>Availability &amp; durability</span></strong><span>（可用性与持久性），选中 </span><i class="far fa-dot-circle"></i><span> </span><strong><span>Create a standby instance</span></strong><span> (recommended for production usage)（创建备用实例（建议用于生产用途））。</span></p><p><span>您只需执行这一个步骤，即可将数据库转换为跨多个数据中心（可用区）运行。</span></p><p><span>此选项并不意味着数据库</span><em><span>分布</span></em><span>在多个实例之间。相反，一个实例是</span><em><span>主</span></em><span>实例，它处理所有请求。另一个实例将作为</span><em><span>备用</span></em><span>实例启动，如果主实例出故障，该实例将接管主实例的工作。您的应用程序继续对数据库使用相同的 DNS 名称。但是，连接将自动重定向到当前活动的数据库服务器。</span></p><p><span>您可以通过更改属性来扩展 EC2 实例，也可以通过这种方式扩展 RDS 数据库。接下来，您要扩展数据库。</span></p></li><li><p><span>对于 </span><strong><span>DB instance class</span></strong><span>（数据库实例类），选择 </span><strong><span>db.t3.small</span></strong><span>。</span></p><p><span>此操作将实例的大小增加一倍。</span></p></li><li><p><span>对于 </span><strong><span>Allocated storage</span></strong><span>（分配的存储空间），输入：</span><code>10</code></p><p><span>此操作将分配给数据库的空间大小增加一倍。</span></p><p><span>您可以随意浏览页面上的其他选项，但请勿更改任何值。</span></p></li><li><p><span>在页面底部，选择 </span><span id="ssb_orange"><span>Continue</span></span><span>（继续）</span></p><p><span>这些更改将影响数据库性能。因此，可以将这些更改安排为在定义的维护时段内运行，也可以立即运行。</span></p></li><li><p><span>在 </span><strong><span>Scheduling of Modifications</span></strong><span>（修改计划）下，选中 </span><i class="far fa-dot-circle"></i><span> </span><strong><span>Apply immediately</span></strong><span>（立即应用）。</span></p></li><li><p><span>选择 </span><span id="ssb_orange"><span>Modify DB instance</span></span><span>（修改数据库实例）。</span></p><p><span>数据库在应用更改时进入 </span><em><span>modifying</span></em><span>（修改中）状态。您不需要等待它完成。</span></p></li></ol><br><h2 id='可选任务-2配置高度可用的-nat-网关'><span>可选任务 2：配置高度可用的 NAT 网关</span></h2><p><i class="fas fa-comment"></i><span> </span><em><span>此任务是</span><strong><span>可选</span></strong><span>任务。如果您有剩余的实验时间，可以继续执行此任务。</span></em></p><p><span>应用程序服务器在私有子网中运行。如果服务器必须访问互联网（例如，要下载数据），则必须通过</span><em><span>网络地址转换 (NAT) 网关</span></em><span>重定向请求。（NAT 网关必须位于公有子网中）。</span></p><p><span>当前架构在</span><em><span>Public Subnet 1</span></em><span>（公有子网 1）中只有一个 NAT 网关。因此，如果可用区 1 出现故障，则应用程序服务器将无法与互联网通信。</span></p><p><span>在此可选任务中，您将通过在另一个可用区中启动另一个 NAT 网关来使 NAT 网关高度可用。由此产生的架构将高度可用：</span></p><p><img src="images/module-9-guided-lab-challenge-2.png" referrerpolicy="no-referrer" alt="可选任务 2"></p><ol start='98' ><li><p><span>在 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单中，选择 </span><strong><span>VPC</span></strong><span>。</span></p></li><li><p><span>在左侧导航窗格中，选择 </span><strong><span>NAT Gateways</span></strong><span>（NAT 网关）。</span></p><p><span>此时将显示现有的 NAT 网关。现在，您将为其他可用区创建 NAT 网关。</span></p></li><li><p><span>选择 </span><span id="ssb_orange"><span>Create NAT gateway</span></span><span>（创建 NAT 网关）并配置以下设置：</span></p><ul><li><strong><span>Subnet</span></strong><span>（子网）：</span><em><span>PublicSubnet2</span></em><span>（从列表中选择此选项）</span></li></ul><p><i class="fas fa-comment"></i><em><span>Subnet</span></em><span>（子网）详细信息位于这些说明的开头。选择 </span><strong><span>Details</span></strong><span>（详细信息），然后在 </span><strong><span>AWS</span></strong><span> 右侧选择 </span><strong><span>Show</span></strong><span>（显示）。记下 </span><strong><span>PublicSubnet2</span></strong><span> 和 </span><strong><span>NATGateway1</span></strong><span> 的名称。</span></p><ul><li><span>选择 </span><span id="ssb_grey"><span>Allocate Elastic IP</span></span><span>（分配弹性 IP）</span></li><li><span>选择 </span><span id="ssb_orange"><span>Create NAT gateway</span></span><span>（创建 NAT 网关）</span></li><li><span>选择 </span><span id="ssb_blue"><span>Edit route tables</span></span><span>（编辑路由表）</span></li></ul><p><span>现在，您将为 </span><em><span>Private Subnet 2</span></em><span> 创建一个新的路由表。此路由表将流量重定向到新的 NAT 网关。</span></p></li><li><p><span>选择 </span><span id="ssb_blue"><span>Create route table</span></span><span>（创建路由表）并配置以下设置：</span></p><ul><li><strong><span>Name tag</span></strong><span>（名称标签）：</span><code>Private Route Table 2</code></li><li><strong><span>VPC</span></strong><span>：</span><em><span>Lab VPC</span></em></li><li><span>选择 </span><span id="ssb_blue"><span>Create</span></span><span>（创建安全组），然后选择 </span><span id="ssb_blue"><span>Close</span></span><span>（关闭）</span></li></ul></li><li><p><span>选择 </span><i class="far fa-check-square"></i><span> </span><strong><span>Private Route Table 2</span></strong><span>（私有路由表 2），并确认它是选择的唯一路由表。</span></p></li><li><p><span>选择 </span><strong><span>Routes</span></strong><span>（路由）选项卡。</span></p><p><span>目前，一个路由在本地定向所有流量。</span>
+<span>  </span><br/><span>现在，您将添加一个路由，通过新的 NAT 网关发送流向互联网的流量。</span></p></li><li><p><span>选择 </span><span id="ssb_grey"><span>Edit routes</span></span><span>（编辑路由），然后配置以下设置：</span></p><ul><li><span>选择 </span><span id="ssb_grey"><span>Add route</span></span><span>（添加路由）</span></li><li><strong><span>Destination</span></strong><span>（目标网段）：</span><code>0.0.0.0/0</code></li></ul><ul><li><strong><span>Target</span></strong><span>（目标）：选择 </span><em><span>NAT Gateway</span></em><span>（NAT 网关），然后选择</span><em><span>不是</span></em><span>用于 </span><em><span>NATGateway1</span></em><span> 条目的 </span><em><span>nat-</span></em><span> 条目（位于这些说明上方的 </span><strong><span>Details</span></strong><span>（详细信息）按钮下)</span></li></ul><ul><li><span>选择 </span><span id="ssb_blue"><span>Save routes</span></span><span>（保存路由），然后选择 </span><span id="ssb_blue"><span>Close</span></span><span>（关闭）</span></li></ul><p><i class="fas fa-comment"></i><span> 在 </span><strong><span>Details</span></strong><span>（详细信息）按钮下列出的 NAT 网关（位于这些说明上方）适用于 </span><em><span>Public Subnet 1</span></em><span>（公有子网 1）。您正在配置路由表以使用</span><em><span>另一个</span></em><span> NAT 网关。</span></p></li><li><p><span>选择 </span><strong><span>Subnet Associations</span></strong><span>（子网关联）选项卡。</span></p></li><li><p><span>选择 </span><span id="ssb_grey"><span>Edit subnet associations</span></span><span>（编辑子网关联）</span></p></li><li><p><span>选择 </span><i class="far fa-check-square"></i><span> </span><strong><span>Private Subnet 2</span></strong><span>（私有子网 2）</span></p></li><li><p><span>选择 </span><span id="ssb_blue"><span>Save</span></span><span>（保存）</span></p><p><span>现在，此操作将从私有子网 2 向位于同一可用区中的 NAT 网关发送流向互联网的流量。</span></p><p><span>您的 NAT 网关现在具有高度可用性。一个可用区的故障不会影响另一个可用区中的流量。</span></p></li></ol><br><h2 id='提交作业'><span>提交作业</span></h2><ol start='109' ><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_blue"><span>Submit</span></span><span>（提交）记录您的进度，在出现提示时，选择 </span><strong><span>Yes</span></strong><span>（是）。</span></p></li><li><p><span>如果在几分钟后仍未显示结果，请返回到这些说明的顶部，并选择 </span><span id="ssb_voc_grey"><span>Grades</span></span><span>（成绩）</span></p><p><strong><span>提示</span></strong><span>：您可以多次提交作业。更改作业后，再次选择 </span><strong><span>Submit</span></strong><span>（提交）。您最后一次提交的作业将作为本次实验的记录。</span></p></li><li><p><span>要查找有关您作业的详细反馈，请选择 </span><span id="ssb_voc_grey"><span>Details</span></span><span>（详细信息），然后选择 </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span>（查看提交报告）。</span></p></li></ol><br><h2 id='实验完成-i-classfas-fa-graduation-capi'><span>实验完成 </span><i class="fas fa-graduation-cap"></i></h2><p><i class="fas fa-flag-checkered"></i><span> 恭喜！您已完成实验。</span></p><ol start='112' ><li><p><span>选择此页面顶部的 </span><span id="ssb_voc_grey"><span>End Lab</span></span><span>（结束实验），然后选择 </span><span id="ssb_blue"><span>Yes</span></span><span>（是）确认您要结束实验。</span></p><p><span>此时将显示一个面板，表明 </span><em><span>DELETE has been initiated... You may close this message box now.</span></em><span>（删除操作已启动...您现在可以关闭此消息框。）</span></p></li><li><p><span>选择右上角的 </span><strong><span>X</span></strong><span> 以关闭面板。</span></p></li></ol><p>&nbsp;</p><p><em><span>©2020 Amazon Web Services, Inc. 及其附属公司。保留所有权利。未经 Amazon Web Services, Inc. 事先书面许可，不得复制或转载本文的部分或全部内容。禁止商业性复制、出租或出售。</span></em></p></div></div>
+</body>
+</html>

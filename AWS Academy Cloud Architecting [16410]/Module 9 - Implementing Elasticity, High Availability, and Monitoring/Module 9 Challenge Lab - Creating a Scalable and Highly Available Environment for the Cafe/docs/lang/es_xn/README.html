@@ -1,0 +1,1165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='módulo-9---laboratorio-de-desafíos-creación-de-un-entorno-escalable-y-de-alta-disponibilidad-para-la-cafetería'><span>Módulo 9 - Laboratorio de desafíos: Creación de un entorno escalable y de alta disponibilidad para la cafetería</span></h1><h2 id='caso'><span>Caso</span></h2><p><span>La cafetería pronto aparecerá en un famoso programa televisivo sobre comidas. Respecto de la emisión, Sofía y Nikhil anticipan que el servidor web de la cafetería experimentará un pico temporal en la cantidad de usuarios: tal vez hasta decenas de miles de usuarios más. Actualmente, el servidor web de la cafetería está implementado en una sola zona de disponibilidad, y tienen miedo de que no pueda manejar el aumento de tráfico previsto. Quieren hacer lo necesario para que sus clientes gocen de una experiencia excelente cuando visiten el sitio web y para que no experimenten ningún tipo de problemas, como retrasos o retardos cuando hagan pedidos.</span></p><p><span>Para garantizar la experiencia que desean, el sitio web debe tener capacidad de respuesta, debe tener disponibilidad alta y debe poder hacer un escalado ascendente y descendente para satisfacer la demanda fluctuante de los clientes. Para poder manejar el aumento de la demanda, en lugar de sobrecargar un único servidor, la arquitectura debe distribuir las solicitudes de pedidos de los clientes entre varios servidores de aplicaciones.</span></p><p><span>En este laboratorio, asumirá el rol de Sofía e implementará una arquitectura escalable y de disponibilidad alta para la aplicación web de la cafetería.</span></p><br><h2 id='información-general-y-objetivos-del-laboratorio'><span>Información general y objetivos del laboratorio</span></h2><p><span>En este laboratorio, utilizará Elastic Load Balancing y Amazon EC2 Auto Scaling para crear un entorno escalable y de disponibilidad alta en AWS.</span></p><p><span>Después de completar este laboratorio, debería ser capaz de lo siguiente:</span></p><ul><li><span>Inspeccionar una VPC</span></li><li><span>Actualizar una red para que funcione en varias zonas de disponibilidad</span></li><li><span>Crear un balanceador de carga de aplicaciones</span></li><li><span>Crear una plantilla de lanzamiento</span></li><li><span>Crear un grupo de Auto Scaling</span></li><li><span>Probar el balanceo de carga y el escalado automático</span></li></ul><br><p><span>Cuando comience el laboratorio, la arquitectura se verá como el siguiente ejemplo:</span></p><br><p><img src="images/module-9-challenge-lab-starting-architecture.PNG" referrerpolicy="no-referrer" alt="arquitectura inicial"></p><br><p><span>Una vez que termine este laboratorio, la arquitectura debería verse como el siguiente ejemplo:</span></p><br><p><img src="images/module-9-challenge-lab-final-architecture.PNG" referrerpolicy="no-referrer" alt="arquitectura final"></p><br><p><span>Nota: En este laboratorio de desafíos, no se dan instrucciones paso a paso para la mayoría de las tareas. Debe darse cuenta sin ayuda cómo llevar a cabo las tareas.</span></p><br><h2 id='duración'><span>Duración</span></h2><p><span>Para completar este laboratorio, se necesitan aproximadamente </span><strong><span>90 minutos</span></strong><span>.</span></p><br><h2 id='restricciones-de-los-servicios-de-aws'><span>Restricciones de los servicios de AWS</span></h2><p><span>En este entorno de laboratorio, el acceso a los servicios y las acciones de los servicios de AWS puede restringirse a los que se necesiten para cumplir las instrucciones del laboratorio. Es posible que se produzcan errores si intenta acceder a otros servicios o hacer acciones que no sean las que se describen en este laboratorio.</span></p><br><h2 id='acceso-a-la-consola-de-administración-de-aws'><span>Acceso a la consola de administración de AWS</span></h2><ol start='' ><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratorio) y comience a trabajar en él.</span></p><p><span>Se abrirá el panel </span><strong><span>Start Lab (Iniciar laboratorio),</span></strong><span> donde se muestra el estado del laboratorio.</span></p><blockquote><p><strong><span>Sugerencia</span></strong><span>: Si necesita más tiempo para completar el laboratorio, vuelva a hacer clic en el botón “Start Lab (Iniciar laboratorio)” para reiniciar el temporizador del entorno.</span></p></blockquote></li><li><p><span>Espere hasta que aparezca el mensaje </span><em><span>Lab status: ready (Estado del laboratorio: listo)</span></em><span> y, a continuación, haga clic en </span><strong><span>X</span></strong><span> para cerrar el panel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratorio).</span></p><blockquote><p><strong><span>Nota</span></strong><span>: El tiempo estimado para hacer este laboratorio es de 15 minutos.</span></p></blockquote></li><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>Esto abrirá la consola de administración de AWS en una nueva pestaña del navegador y el sistema iniciará su sesión de forma automática.</span></p><blockquote><p><strong><span>Sugerencia</span></strong><span>: Si no se abre una nueva pestaña del navegador, por lo general habrá un aviso o un icono en la parte superior con un mensaje que indicará que el navegador impide que el sitio abra ventanas emergentes. Haga clic en el aviso o el icono y elija </span><strong><span>Allow pop ups</span></strong><span> (Permitir ventanas emergentes).</span></p></blockquote></li><li><p><span>Ubique la pestaña de la consola de administración de AWS de modo que aparezca junto con estas instrucciones. Idealmente, debería poder ver ambas pestañas del navegador al mismo tiempo para que pueda seguir los pasos del laboratorio fácilmente.</span></p></li></ol><br><h2 id='una-solicitud-de-negocio-para-la-cafetería-implementar-un-entorno-escalable-y-de-disponibilidad-alta-desafío'><span>Una solicitud de negocio para la cafetería: implementar un entorno escalable y de disponibilidad alta (Desafío)</span></h2><p><span>Sofía entiende que debe llevar a cabo algunas tareas para que en la aplicación web de la cafetería se implementen la disponibilidad alta y la escalabilidad. Sin embargo, debe analizar el estado actual de la arquitectura de la aplicación de la cafetería antes de cambiarla.</span></p><p><span>En las siguientes tareas, asumirá el rol de </span><em><span>Sofía</span></em><span> y trabajará para crear y configurar los recursos necesarios para implementar una aplicación escalable y de disponibilidad alta.</span></p><h3 id='tarea-1-inspeccionar-el-entorno'><span>Tarea 1: Inspeccionar el entorno</span></h3><p><span>En esta tarea, analizará el estado actual del entorno del laboratorio.</span></p><ol start='5' ><li><span>Explore el entorno del laboratorio, incluido el modo en que se configura la red.</span></li></ol><blockquote><p><strong><span>Sugerencia</span></strong><span>: Quizá le convenga comenzar en la </span><strong><span>consola de Amazon VPC</span></strong><span>.</span></p></blockquote><p><span>Como ayuda para su exploración, pase a la sección siguiente y responda las preguntas sobre este laboratorio.</span></p><br><h4 id='responder-las-preguntas-sobre-el-laboratorio'><span>Responder las preguntas sobre el laboratorio</span></h4><p><span>Las respuestas se registrarán cuando haga clic en el botón azul </span><strong><span>Submit</span></strong><span> (Enviar), que se encuentra al final del laboratorio.</span></p><ol start='6' ><li><p><span>Acceda a las preguntas de este laboratorio.</span></p><ul><li><span>Elija el menú </span><span id="ssb_voc_grey"><span>Details (Detalles) </span><i class="fas fa-angle-down"></i></span>
+<span>y después </span><span id="ssb_voc_grey"><span>Show</span></span><span> (Mostrar).</span></li><li><span>Elija el enlace </span><strong><span>Access the multiple choice questions</span></strong><span> (Acceder a las preguntas de múltiple opción) que aparece en la parte inferior de la página.</span></li></ul></li><li><p><span>En la página que cargó, responda las siguientes preguntas:</span></p><ul><li><strong><span>Pregunta 1</span></strong><span>: ¿Qué puertos están abiertos en el grupo de seguridad de </span><em><span>CafeSG</span></em><span>?</span></li><li><strong><span>Pregunta 2</span></strong><span>: ¿Puede conectarse desde Internet a instancias de la </span><em><span>Subred pública 1</span></em><span>?</span></li><li><strong><span>Pregunta 3</span></strong><span>: ¿Debería una instancia de la </span><em><span>Subred privada 1</span></em><span> tener acceso a Internet?</span></li><li><strong><span>Pregunta 4</span></strong><span>: ¿Debería una instancia de la </span><em><span>Subred privada 2</span></em><span> tener acceso a Internet?</span></li><li><strong><span>Pregunta 5</span></strong><span>: ¿Puede conectarse a la instancia </span><em><span>CafeWebAppServer</span></em><span> desde Internet?</span></li><li><strong><span>Pregunta 6</span></strong><span>: ¿Cuál es el nombre de la imagen de Amazon Machine (AMI)?</span></li></ul></li></ol><br><h3 id='tarea 2-crear-una-gateway-nat-para-la-segunda-zona-de-disponibilidad'><span>Tarea 2: Crear una gateway NAT para la segunda zona de disponibilidad</span></h3><p><span>Para lograr una disponibilidad alta, la arquitectura debe incluir al menos dos zonas de disponibilidad. Sin embargo, antes de lanzar instancias Amazon Elastic Compute Cloud (Amazon EC2) para los servidores de aplicaciones web en la segunda zona de disponibilidad, debe crear una gateway NAT para ellas. Una gateway NAT permitirá que las instancias que no tengan una dirección IP pública accedan a Internet.</span></p><ol start='8' ><li><span>Cree una gateway NAT en la </span><em><span>subred pública</span></em><span> de la segunda zona de disponibilidad.</span></li><li><span>Configure la red para enviar el tráfico vinculado a Internet desde instancias de la </span><em><span>Subred privada 2</span></em><span> a la gateway NAT que acaba de crear.</span></li></ol><br><h3 id='tarea 3-crear-una-instancia-de-servidor-bastión-en-una-subred-pública'><span>Tarea 3: Crear una instancia de servidor bastión en una subred pública</span></h3><p><span>En esta tarea, creará un servidor bastión en una subred pública. En tareas posteriores, creará una instancia EC2 en una subred privada y se conectará a ella desde este servidor bastión.</span></p><ol start='10' ><li><p><span>Desde la </span><strong><span>consola de Amazon EC2</span></strong><span>, cree una instancia EC2 en una de las subredes públicas de </span><em><span>Lab VPC</span></em><span>. Debe cumplir los siguientes criterios:</span></p><ul><li><p><strong><span>Imagen de Amazon Machine</span></strong><span> (AMI): </span><em><span>AMI de Amazon Linux 2 (HVM)</span></em></p></li><li><p><strong><span>Tipo de instancia</span></strong><span>: </span><em><span>t2.micro</span></em></p></li><li><p><strong><span>Asignación automática de IP pública</span></strong><span>: este parámetro debe estar habilitado</span></p></li><li><p><strong><span>Nombre</span></strong><span>: </span><code>Bastion Host</code></p></li><li><p><span>Solo permite el siguiente tráfico:</span></p><ul><li><strong><span>Tipo</span></strong><span>: </span><em><span>SSH</span></em></li><li><strong><span>Port</span></strong><span> (Puerto): </span><code>22</code></li><li><strong><span>Origen</span></strong><span>: su dirección IP</span></li></ul></li><li><p><span>Utiliza el par de claves </span><strong><span>vockey</span></strong></p></li></ul></li></ol><br><h3 id='tarea 4-crear-una-plantilla-de-lanzamiento'><span>Tarea 4: Crear una plantilla de lanzamiento</span></h3><p><span>Durante la configuración del laboratorio, se creó una Imagen de Amazon Machine (AMI) a partir de la instancia </span><em><span>CafeWebAppServer</span></em><span>. En esta tarea, creará una plantilla de lanzamiento utilizando esta AMI.</span></p><ol start='11' ><li><p><span>Cree una plantilla de lanzamiento mediante la AMI que se creó durante la configuración del laboratorio. Debe cumplir los siguientes criterios.</span></p><ul><li><p><strong><span>AMI</span></strong><span>: </span><code>Cafe WebServer Image</code><span> </span><br/><strong><span>Sugerencia</span></strong><span>: Para localizar la AMI, diríjase al menú desplegable </span><strong><span>AMI</span></strong><span> y escriba: </span><code>Cafe</code></p></li><li><p><strong><span>Tipo de instancia</span></strong><span>: </span><em><span>t2.micro</span></em><span></span><br/><strong><span>Sugerencia</span></strong><span>: Para localizar el tipo de instancia, diríjase al menú desplegable </span><strong><span>Instance Type</span></strong><span> (Tipo de instancia) y escriba: </span><code>t2</code></p></li><li><p><strong><span>Par de claves</span></strong><span> (inicio de sesión): utiliza un </span><em><span>nuevo par de claves</span></em>
+<strong><span>Sugerencia</span></strong><span>: Cree un nuevo par de claves y selecciónelo. No se olvide de descargar el par de claves en el equipo local.</span></p></li><li><p><strong><span>Grupos de seguridad</span></strong><span>: </span><code>CafeSG</code><span></span><br/><strong><span>Sugerencia</span></strong><span>: Para localizar el grupo de seguridad, diríjase al menú desplegable </span><strong><span>Security groups</span></strong><span> (Grupos de seguridad) y escriba: </span><code>CafeSG</code></p></li><li><p><strong><span>Etiquetas de recursos</span></strong><span>:</span></p><ul><li><strong><span>Key</span></strong><span> (Clave): </span><code>Name (Nombre)</code></li><li><strong><span>Value</span></strong><span> (Valor): </span><code>webserver</code></li><li><strong><span>Resource Types</span></strong><span> (Tipos de recursos): </span><em><span>Instances (Instancias)</span></em></li></ul></li><li><p><strong><span>IAM Instance Profile</span></strong><span> (Perfil de instancia de IAM): </span><code>CafeRole</code><span></span><br/><strong><span>Sugerencia</span></strong><span>: Busque este parámetro en </span><strong><span>Advanced Details</span></strong><span> (Detalles avanzados).</span></p></li></ul></li></ol><br><h3 id='tarea 5-crear-un-grupo-de-auto scaling'><span>Tarea 5: Crear un grupo de Auto Scaling</span></h3><p><span>Ahora que la plantilla de lanzamiento está definida, creará un grupo de Auto Scaling para las instancias. En esta tarea, </span><em><span>no</span></em><span> cree un balanceador de carga cuando cree el grupo de Auto Scaling. (Creará un balanceador de carga en la tarea siguiente).</span></p><ol start='12' ><li><p><span>Cree un nuevo grupo de Auto Scaling que cumpla los siguientes criterios:</span></p><ul><li><p><strong><span>Plantilla de lanzamiento</span></strong><span>: se utiliza la plantilla de lanzamiento que creó en la tarea anterior</span></p></li><li><p><strong><span>VPC</span></strong><span>: se utiliza la VPC que se estableció para este laboratorio</span></p></li><li><p><strong><span>Subredes</span></strong><span>: se utiliza </span><code>Private Subnet 1</code><span> y </span><code>Private Subnet 2</code></p></li><li><p><span>Omite </span><em><span>todas</span></em><span> las opciones avanzadas</span></p></li><li><p><span>El </span><strong><span>tamaño de grupo</span></strong><span> está configurado de la siguiente forma:</span></p><ul><li><strong><span>Desired capacity</span></strong><span> (Capacidad deseada): </span><code>2</code></li><li><strong><span>Minimum capacity</span></strong><span> (Capacidad mínima): </span><code>2</code></li><li><strong><span>Maximum capacity</span></strong><span> (Capacidad máxima): </span><code>6</code></li></ul></li><li><p><span>Habilita la </span><strong><span>política de escalado de seguimiento de valores objetivo</span></strong><span> configurada de la siguiente forma:</span></p><ul><li><strong><span>Metric type (Tipo de métrica)</span></strong><span>: </span><em><span>Average CPU Utilization (Utilización media de la CPU)</span></em></li><li><strong><span>Valor objetivo</span></strong><span>: </span><code>25</code></li><li><strong><span>Las instancias necesitan</span></strong><span>: </span><code>60</code></li></ul></li></ul></li><li><p><span>Para confirmar que ha creado el grupo de Auto Scaling correctamente, diríjase a la </span><strong><span>consola de Amazon EC2</span></strong><span>. Debería tener dos instancias: ambas con el nombre que estableció como </span><em><span>etiquetas de recurso</span></em><span> en la tarea anterior.</span></p></li></ol><br><h3 id='tarea 6-crear-un-balanceador-de-carga'><span>Tarea 6: Crear un balanceador de carga</span></h3><p><span>Ahora que las instancias del servidor de aplicaciones web están implementadas en subredes privadas, necesita una forma para que el mundo exterior se conecte a ellas. En esta tarea, creará un balanceador de carga para distribuir el tráfico entre las instancias privadas.</span></p><ol start='14' ><li><p><span>Cree un balanceador de carga de aplicaciones HTTP que cumpla los siguientes criterios:</span></p><ul><li><strong><span>VPC</span></strong><span>: se utiliza la VPC que se estableció para este laboratorio</span></li><li><strong><span>Subredes</span></strong><span>: se utilizan las dos </span><em><span>subredes públicas</span></em></li><li><span>Omite la configuración de la seguridad HTTPS</span></li><li><strong><span>Grupo de seguridad</span></strong><span>: se crea un </span><em><span>nuevo grupo de seguridad</span></em><span> que permite el tráfico HTTP desde cualquier lugar</span></li><li><strong><span>Grupo de destino</span></strong><span>: se crea un </span><em><span>nuevo grupo de destino</span></em></li><li><span>Omite el registro de objetivos</span></li></ul><p><strong><span>Nota</span></strong><span>: </span><em><span>Espere</span></em><span> a que el balanceador de carga esté activo.</span></p></li><li><p><span>Modifique el grupo de Auto Scaling que creó en la tarea anterior agregando este nuevo balanceador de carga.</span></p><blockquote><p><strong><span>Pista</span></strong><span>: Agregue el </span><em><span>grupo de objetivos</span></em><span> que creó en la configuración del balanceador de carga.</span></p></blockquote></li></ol><br><p><span>Sofía ya ha creado y configurado los recursos que la aplicación web necesita para ser escalable y tener disponibilidad alta. Sin embargo, sabe que todavía tiene trabajo por hacer. Para llevar a cabo el proceso de actualización de la arquitectura de la aplicación, Sofía debe probar la aplicación web de la cafetería para asegurarse de que funciona como se espera.</span></p><p><span>En las tareas siguientes, seguirá con el rol de Sofía y comprobará si la aplicación web de la cafetería escala automáticamente bajo carga.</span></p><br><h3 id='tarea 7-probar-la-aplicación-web'><span>Tarea 7: Probar la aplicación web</span></h3><p><span>En esta tarea, probará la aplicación web de la cafetería.</span></p><ol start='16' ><li><span>Para probar la aplicación web de la cafetería, visite el nombre del sistema de nombres de dominio (DNS) del balanceador de carga y agregue </span><code>/cafe</code><span> a la URL.</span></li></ol><p><span>La aplicación de la cafetería debería cargarse.</span></p><p><span>Si no lo hace, vuelva a las tareas del laboratorio y compruebe el trabajo que ha hecho. Preste atención a los siguientes recursos:</span></p><ul><li><em><span>Configuración de la red</span></em><span>: ¿ha agregado correctamente la gateway NAT?</span></li><li><em><span>Tablas de enrutamiento</span></em><span>: ¿actualizó las tablas de enrutamiento con la gateway NAT?</span></li><li><em><span>Plantilla de lanzamiento</span></em><span>: ¿con la instancia se especifica un rol de IAM?</span></li><li><em><span>Balanceador de carga</span></em><span>: ¿el balanceador de carga está en las subredes públicas?</span></li><li><em><span>Instancias</span></em><span>: ¿las instancias están implementadas desde el grupo de Auto Scaling que está en las subredes correctas?</span></li><li><em><span>Grupos de seguridad</span></em><span>: ¿los grupos de seguridad permiten el tráfico HTTP desde Internet?</span></li></ul><br><h3 id='tarea 8-probar-el-escalado-automático-bajo-carga'><span>Tarea 8: Probar el escalado automático bajo carga</span></h3><p><span>En esta tarea, probará si la aplicación de la cafetería puede hacer un </span><em><span>escalado ascendente</span></em><span> automáticamente.</span></p><ol start='17' ><li><span>Mediante el </span><em><span>acceso directo a través de Secure Shell (SSH), a través de la instancia del servidor bastión</span></em><span>, utilice SSH para conectarse a una de las instancias del servidor web en ejecución.</span></li></ol><blockquote><p><span>Sugerencia: Deberá modificar el grupo de seguridad de </span><em><span>CafeSG</span></em><span> para permitir el tráfico SSH a través del puerto 22 desde el servidor bastión.</span></p></blockquote><ol start='18' ><li><p><span>Desde la instancia del servidor web, utilice los siguientes comandos para comenzar una prueba de estrés. Esta prueba aumenta la carga de la CPU del servidor web:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.19995px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> yum install stress <span class="cm-attribute">-y</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">stress <span class="cm-attribute">--cpu</span> <span class="cm-number">1</span> <span class="cm-attribute">--timeout</span> <span class="cm-number">600</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre></li><li><p><span>Confirme que el grupo de Auto Scaling implementa nuevas instancias.</span></p><ul><li><span>Continúe observando la consola de Amazon EC2.</span></li><li><span>Durante la prueba, debería constatar que se implementan más instancias del servidor web.</span></li></ul></li></ol><br><h2 id='noticias-de-la-cafetería'><span>Noticias de la cafetería</span></h2><p><span>Después de que termina de probar el rendimiento de la aplicación web de la cafetería, Sofía cuenta a los padres los cambios: cuando aumenta el tráfico, la aplicación de la cafetería ya logra hacer un escalado ascendente según lo previsto. Frank y Martha están impresionados con que Sofía haya implementado una arquitectura escalable y de disponibilidad alta para la aplicación.</span></p><p><span>Mientras tanto, todo el equipo de la cafetería está emocionado. Están ocupados preparándose para el aumento del volumen de pedidos que anticipan después de la aparición en el programa de televisión. Al tiempo que trabajan en los preparativos, saben que pueden contar con el escalado automático como ayuda para tomar pedidos y deleitar a los clientes nuevos.</span></p><br><h2 id='envío-de-su-trabajo'><span>Envío de su trabajo</span></h2><ol start='20' ><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_blue"><span>Submit</span></span><span> (Enviar) para registrar su progreso y, cuando se le indique, elija </span><strong><span>Yes</span></strong><span> (Sí).</span></p></li><li><p><span>Si los resultados no se muestran después de algunos minutos, vuelva a la parte superior de estas instrucciones y elija </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Resultados).</span></p><p><strong><span>Sugerencia</span></strong><span>: Puede enviar su trabajo varias veces. Después de realizar las modificaciones pertinentes, vuelva a elegir </span><strong><span>Submit</span></strong><span> (Enviar). Su último envío es el que se registrará para este laboratorio.</span></p></li><li><p><span>Para encontrar comentarios detallados sobre su trabajo, elija </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalles) seguido de </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Ver informe de envío).</span></p></li></ol><br><h2 id='fin-del-laboratorio'><span>Fin del laboratorio</span></h2><p><i class="fas fa-flag-checkered"></i><span> ¡Felicitaciones! Ha completado el laboratorio.</span></p><ol start='23' ><li><p><span>Para confirmar que desea completar el laboratorio, haga clic en </span><strong><span id="ssb_voc_grey"><span>End Lab</span></span><span> (Finalizar laboratorio)</span></strong><span>, en la parte superior de esta página, y, a continuación, haga clic en </span><strong><span id="ssb_blue"><span>Yes</span></span><span> (Sí)</span></strong><span>.</span></p><p><span>Debería aparecer un panel con el siguiente mensaje: </span><em><span>DELETE has been initiated… You may close this message box now (Se ha iniciado la ELIMINACIÓN… Ya puede cerrar este cuadro de mensaje).</span></em></p></li><li><p><span>Para cerrar el panel, haga clic en la </span><strong><span>X</span></strong><span> de la esquina superior derecha.</span></p></li></ol><p>&nbsp;</p><p><em><span>© 2020 Amazon Web Services, Inc. y sus empresas afiliadas. Todos los derechos reservados. Este contenido no puede reproducirse ni redistribuirse, total ni parcialmente, sin el permiso previo por escrito de Amazon Web Services, Inc. Queda prohibida la copia, el préstamo y la venta de carácter comercial.</span></em></p></div></div>
+</body>
+</html>

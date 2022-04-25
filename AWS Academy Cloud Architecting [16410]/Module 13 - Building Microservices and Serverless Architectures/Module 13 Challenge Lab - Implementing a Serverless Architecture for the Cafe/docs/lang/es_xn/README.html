@@ -1,0 +1,1166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='laboratorio-de-desafíos-del-módulo 13-implementación-de-una-arquitectura-sin-servidor-para-la-cafetería'><span>Laboratorio de desafíos del módulo 13: Implementación de una arquitectura sin servidor para la cafetería</span></h1><h2 id='caso'><span>Caso</span></h2><p><span>El negocio de la cafetería está prosperando. Frank y Martha quieren obtener informes diarios de las ventas de los productos que se venden en el sitio web de la cafetería. Utilizarán este informe para planificar los pedidos de los ingredientes y monitorear el impacto de las promociones de los productos.</span></p><p><span>La idea inicial de Sofía y Nikhil es utilizar una de las instancias del servidor web de Amazon Elastic Compute Cloud (Amazon EC2) para generar el informe. Sofía configura un trabajo cron en la instancia del servidor web, que envía mensajes por email para informar las ventas diarias. Sin embargo, el trabajo cron reduce el rendimiento del servidor web porque requiere un uso intensivo de los recursos.</span></p><p><span>Nikhil menciona a Olivia el trabajo cron y cómo este reduce el rendimiento de la aplicación web. Olivia aconseja a Sofía y Nikhil separar las tareas de generación de informes que no son fundamentales para el negocio de la instancia de producción del servidor web. Después de que Sofía y Nikhil revisan las ventajas y las desventajas de su enfoque actual, deciden que no quieren ralentizar el servidor web. También consideran ejecutar una instancia EC2 diferente, pero están preocupados por el costo de ejecutar una instancia las 24 horas, los 7 días de la semana, cuando solo se necesita por un breve periodo todos los días.</span></p><p><span>Sofía y Nikhil deciden que ejecutar el código de generación de informes como una función de AWS Lambda funcionaría y, también, reduciría los costos. El informe en sí podría enviarse a la dirección de email de Frank y Martha a través de Amazon Simple Notification Service (Amazon SNS).</span></p><p><span>En este laboratorio, asumirá el rol de Sofía para implementar el código de generación de informes diarios como una función de Lambda.</span></p><br><h2 id='información-general-y-objetivos-del-laboratorio'><span>Información general y objetivos del laboratorio</span></h2><p><span>En este laboratorio, utilizará AWS Lambda para crear un informe de ventas de la cafetería que se enviará por email todos los días a través de Amazon SNS.</span></p><p><span>Después de completar este laboratorio, debería poder implementar una arquitectura sin servidor para generar un informe de ventas diario que incluya lo siguiente:</span></p><ul><li><span>Una función de Lambda dentro de una nube virtual privada (VPC) que se conecta a una base de datos de Amazon Relational Database Service (Amazon RDS) con los datos de las ventas de la cafetería</span></li><li><span>Una función de Lambda que genera y ejecuta el informe de ventas</span></li><li><span>Un evento programado que desencadena la función de Lambda de generación del informe de ventas todos los días</span></li></ul><br><p><span>Cuando </span><em><span>comience</span></em><span> el laboratorio, la arquitectura se verá como el siguiente ejemplo:</span></p><br><p><img src="images/module-13-challenge-lab-starting-architecture.png" referrerpolicy="no-referrer" alt="arquitectura inicial"></p><br><p><span>Una vez que </span><em><span>termine</span></em><span> este laboratorio, la arquitectura debería verse como el siguiente ejemplo:</span></p><br><p><img src="images/module-13-challenge-lab-final-architecture.png" referrerpolicy="no-referrer" alt="arquitectura final"></p><br><p><span>Nota: En este laboratorio de desafíos, no se dan instrucciones paso a paso para la mayoría de las tareas. Debe darse cuenta sin ayuda cómo llevar a cabo las tareas.</span></p><br><h2 id='duración'><span>Duración</span></h2><p><span>Para completar este laboratorio, se necesitan aproximadamente </span><strong><span>90 minutos</span></strong><span>.</span></p><br><h2 id='restricciones-de-los-servicios-de-aws'><span>Restricciones de los servicios de AWS</span></h2><p><span>En este entorno de laboratorio, el acceso a los servicios y las acciones de los servicios de AWS puede restringirse a los que se necesiten para cumplir las instrucciones del laboratorio. Es posible que se produzcan errores si intenta acceder a otros servicios o hacer acciones que no sean las que se describen en este laboratorio.</span></p><br><h2 id='acceso-a-la-consola-de-administración-de-aws'><span>Acceso a la consola de administración de AWS</span></h2><ol start='' ><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratorio) y comience a trabajar en él.</span></p><p><span>Se abrirá el panel </span><strong><span>Start Lab (Iniciar laboratorio),</span></strong><span> donde se muestra el estado del laboratorio.</span></p><blockquote><p><strong><span>Sugerencia</span></strong><span>: Si necesita más tiempo para completar el laboratorio, vuelva a hacer clic en el botón “Start Lab (Iniciar laboratorio)” para reiniciar el temporizador del entorno.</span></p></blockquote></li><li><p><span>Espere hasta que aparezca el mensaje </span><em><span>Lab status: ready (Estado del laboratorio: listo)</span></em><span> y, a continuación, haga clic en </span><strong><span>X</span></strong><span> para cerrar el panel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratorio).</span></p><blockquote><p><strong><span>Nota</span></strong><span>: El tiempo estimado para hacer este laboratorio es de 15 minutos.</span></p></blockquote></li><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>Esto abrirá la consola de administración de AWS en una nueva pestaña del navegador y el sistema iniciará su sesión de forma automática.</span></p><blockquote><p><strong><span>Sugerencia</span></strong><span>: Si no se abre una nueva pestaña del navegador, por lo general habrá un aviso o un icono en la parte superior con un mensaje que indicará que el navegador impide que el sitio abra ventanas emergentes. Haga clic en el aviso o el icono y elija </span><strong><span>Allow pop ups</span></strong><span> (Permitir ventanas emergentes).</span></p></blockquote></li><li><p><span>Ubique la pestaña de la consola de administración de AWS de modo que aparezca junto con estas instrucciones. Idealmente, debería poder ver ambas pestañas del navegador al mismo tiempo para que pueda seguir los pasos del laboratorio fácilmente.</span></p></li></ol><br><h2 id='solicitud-empresarial-de-la-cafetería-implementar-una-arquitectura-sin-servidor-para-generar-un-informe-de-ventas-diario-desafío'><span>Solicitud empresarial de la cafetería: Implementar una arquitectura sin servidor para generar un informe de ventas diario (Desafío)</span></h2><p><span>En las siguientes tareas, asumirá el rol de Sofía para crear y configurar los recursos que necesita para implementar la solución de generación de informes.</span></p><br><h3 id='tarea 1-descargar-el-código-fuente'><span>Tarea 1: Descargar el código fuente</span></h3><p><span>El código para generar el informe ya está escrito, empaquetado y listo para que lo implementen en AWS Lambda.</span></p><ol start='5' ><li><p><span>Descargue los dos archivos siguientes en su equipo local:</span></p><ul><li><a href='https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod13-challenge/salesAnalysisReportDataExtractor.zip'><span>El código para salesAnalysisReportDataExtractor</span></a></li><li><a href='https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod13-challenge/salesAnalysisReport.zip'><span>El código para salesAnalysisReport</span></a></li></ul></li><li><p><span>Descomprima cada uno de los archivos </span><em><span>.zip</span></em><span> y examine el contenido.</span></p></li></ol><br><h4 id='respuesta-a-las-preguntas-sobre-el-laboratorio'><span>Respuesta a las preguntas sobre el laboratorio</span></h4><p><span>Las respuestas se registrarán cuando haga clic en el botón azul </span><strong><span>Submit</span></strong><span> (Enviar), que se encuentra al final del laboratorio.</span></p><ol start='7' ><li><p><span>Acceda a las preguntas de este laboratorio.</span></p><ul><li><span>Elija el menú </span><span id="ssb_voc_grey"><span>Details (Detalles) </span><i class="fas fa-angle-down"></i></span>
+<span>y después </span><span id="ssb_voc_grey"><span>Show</span></span><span> (Mostrar).</span></li><li><span>Elija el enlace </span><strong><span>Access the multiple choice questions</span></strong><span> (Acceder a las preguntas de múltiple opción) que aparece en la parte inferior de la página.</span></li></ul></li><li><p><span>En la página que cargó, responda la primera pregunta:</span></p><ul><li><strong><span>Pregunta 1</span></strong><span>: ¿Por qué el archivo </span><em><span>salesAnalysisReportDataExtractor.zip</span></em><span> tiene una carpeta de paquetes?</span></li></ul></li></ol><p><strong><span>Nota</span></strong><span>: Deje abierta la página web con las preguntas en la pestaña de su navegador. Volverá a ella más adelante en este laboratorio.</span></p><br><h3 id='tarea 2-crear-la-función-de-lambda-dataextractor-en-la-vpc'><span>Tarea 2: Crear la función de Lambda </span><em><span>DataExtractor</span></em><span> en la VPC</span></h3><p><span>En esta tarea, creará la función de Lambda </span><em><span>DataExtractor</span></em><span> que extrae los datos de las ventas de la cafetería de una base de datos de Amazon RDS. Para que la función de Lambda pueda acceder a la instancia de base de datos de RDS, debe actualizar el grupo de seguridad de la base de datos con una regla que permita las conexiones desde la función de Lambda. Para habilitar esta comunicación, creará un grupo de seguridad para la función de Lambda y lo agregará como regla de entrada al grupo de seguridad de la instancia de RDS.</span></p><ol start='9' ><li><p><span>Cree un grupo de seguridad para la función de Lambda con la siguiente configuración:</span></p><ul><li><strong><span>Security group name</span></strong><span> (Nombre del grupo de seguridad): </span><code>LambdaSG</code></li><li><strong><span>VPC</span></strong><span>: </span><em><span>Lab VPC</span></em></li><li><strong><span>Outbound Rules</span></strong><span> (Reglas de salida): </span><em><span>All traffic (Todo el tráfico)</span></em><span> para todas las direcciones</span></li></ul></li><li><p><span>Actualice el grupo de seguridad </span><strong><span>DatabaseSG</span></strong><span> agregando el nuevo grupo de seguridad de la función de Lambda como un segundo origen para la regla de entrada </span><em><span>existente</span></em><span> del puerto TCP 3306.</span></p></li><li><p><span>Cree una función de Lambda con los siguientes ajustes:</span></p><ul><li><p><strong><span>Function name</span></strong><span> (Nombre de la función): </span><code>salesAnalysisReportDataExtractor</code></p></li><li><p><strong><span>Runtime</span></strong><span> (Tiempo de ejecución): </span><em><span>Python 3.8</span></em></p></li><li><p><strong><span>Role</span></strong><span> (Rol): </span><em><span>salesAnalysisReportDERole</span></em></p></li><li><p><strong><span>VPC</span></strong><span>:</span></p><ul><li><strong><span>VPC</span></strong><span>: </span><em><span>Lab VPC</span></em></li><li><strong><span>Subnets</span></strong><span> (Subredes): </span><em><span>Private subnet 1 (Subred privada 1)</span></em><span> y </span><em><span>Private subnet 2 (Subred privada 2)</span></em></li><li><strong><span>Security Group</span></strong><span> (Grupo de seguridad): el grupo de seguridad de la función de Lambda que creó</span></li></ul></li><li><p><strong><span>Sugerencia</span></strong><span>: La función tardará varios minutos en crearse.</span></p></li></ul></li><li><p><span>Configure la función de Lambda </span><em><span>DataExtractor</span></em><span> de la siguiente manera:</span></p><ul><li><strong><span>Code</span></strong><span> (Código): cargue el archivo </span><em><span>salesAnalysisReportDataExtractor.zip</span></em></li><li><strong><span>Description</span></strong><span> (Descripción): </span><code>función de Lambda para extraer los datos de la base de datos</code></li><li><strong><span>Handler</span></strong><span> (Controlador): </span><code>salesAnalysisReportDataExtractor.lambda_handler</code></li><li><strong><span>Memory Size</span></strong><span> (Tamaño de la memoria): </span><em><span>128 MB</span></em></li><li><strong><span>Timeout</span></strong><span> (Tiempo de espera) (en segundos): </span><code>30</code></li></ul></li><li><p><span>Regrese a la pestaña del navegador con las preguntas de opción múltiple que corresponden a este laboratorio y responda la siguiente pregunta:</span></p><ul><li><strong><span>Pregunta 2</span></strong><span>: ¿Por qué la función </span><em><span>salesAnalysisReportDataExtractor</span></em><span> debe estar en una VPC?</span></li></ul></li></ol><br><h3 id='tarea 3-crear-la-función-de-lambda-salesanalysisreport'><span>Tarea 3: Crear la función de Lambda </span><em><span>salesAnalysisReport</span></em></h3><p><span>En esta tarea, creará la función de Lambda que genera y envía el informe diario de análisis de ventas.</span></p><ol start='14' ><li><p><span>Cree una segunda función de Lambda con los siguientes ajustes:</span></p><ul><li><strong><span>Function name</span></strong><span> (Nombre de la función): </span><code>salesAnalysisReport</code></li><li><strong><span>Runtime</span></strong><span> (Tiempo de ejecución): </span><em><span>Python 3.8</span></em></li><li><strong><span>Role</span></strong><span> (Rol): </span><em><span>salesAnalysisReportRole</span></em></li></ul></li><li><p><span>Configure la función de Lambda </span><em><span>salesAnalysisReport</span></em><span> de la siguiente manera:</span></p><ul><li><strong><span>Code</span></strong><span> (Código): cargue el archivo </span><em><span>salesAnalysisReport.zip</span></em></li><li><strong><span>Description</span></strong><span> (Descripción): </span><code>función de Lambda para generar y enviar el informe de ventas diario</code></li><li><strong><span>Handler</span></strong><span> (Controlador): </span><code>salesAnalysisReport.lambda_handler</code></li><li><strong><span>Memory Size</span></strong><span> (Tamaño de la memoria): </span><em><span>128 MB</span></em></li><li><strong><span>Timeout</span></strong><span> (Tiempo de espera) (en segundos): </span><code>30</code></li></ul></li></ol><br><h3 id='tarea 4-crear-un-tema-de-sns'><span>Tarea 4: Crear un tema de SNS</span></h3><p><span>El informe de análisis de ventas utiliza un tema de SNS para enviar el informe a los suscriptores por email. En esta tarea, creará un tema de SNS y actualizará las variables del entorno de la función de Lambda </span><em><span>salesAnalysisReport</span></em><span> para almacenar el Nombre de recurso de Amazon (ARN) del tema.</span></p><ol start='16' ><li><p><span>Cree un tema de SNS estándar con la siguiente configuración:</span></p><ul><li><strong><span>Name</span></strong><span> (Nombre): </span><code>SalesReportTopic</code></li><li><strong><span>Display Name</span></strong><span> (Nombre de visualización): </span><code>Sales Report Topic</code></li></ul></li><li><p><span>Actualice la función de Lambda </span><em><span>salesAnalysisReport</span></em><span> agregando la siguiente variable de entorno:</span></p><ul><li><strong><span>Variable Name</span></strong><span> (Nombre de la variable): </span><code>topicARN (ARN del tema)</code></li><li><strong><span>Variable Value</span></strong><span> (Valor de la variable): el ARN del tema que acaba de crear</span></li></ul></li><li><p><span>Regrese a la pestaña del navegador con las preguntas de opción múltiple que corresponden a este laboratorio y responda la siguiente pregunta:</span></p><ul><li><strong><span>Pregunta 3</span></strong><span>: ¿Podría almacenarse el </span><em><span>topicARN (ARN del tema)</span></em><span> como un parámetro de AWS Systems Manager en lugar de como una variable de entorno (suponiendo que el código se pueda actualizar)?</span></li></ul></li></ol><br><h3 id='tarea 5-crear-una-suscripción-por-email-al-tema-de-sns'><span>Tarea 5: Crear una suscripción por email al tema de SNS</span></h3><p><span>Para recibir el informe de ventas por email, debe crear una suscripción por email al tema que creó en la tarea anterior.</span></p><ol start='19' ><li><p><span>Cree una nueva suscripción por email al tema. Utilice una dirección de email a la que pueda acceder con facilidad para este laboratorio.</span></p></li><li><p><span>Confirme la suscripción por email desde su cliente de email.</span>
+<strong><span>Nota</span></strong><span>: Si no recibe una confirmación por email, revise la carpeta de </span><strong><span>correo no deseado</span></strong><span> o </span><strong><span>spam</span></strong><span>.</span></p></li><li><p><span>Regrese a la pestaña del navegador con las preguntas de opción múltiple que corresponden a este laboratorio y responda la siguiente pregunta:</span></p><ul><li><strong><span>Pregunta 4</span></strong><span>: ¿Recibirá mensajes de email si no confirma la suscripción al tema?</span></li></ul></li></ol><br><h3 id='tarea 6-probar-la-función-de-lambda-salesanalysisreport'><span>Tarea 6: Probar la función de Lambda </span><em><span>salesAnalysisReport</span></em></h3><p><span>Antes de crear el evento de generación de informes diarios, debe probar que la función de Lambda </span><em><span>salesAnalysisReport</span></em><span> funcione de forma correcta.</span></p><ol start='22' ><li><p><span>Cree una prueba para la función de Lambda </span><em><span>salesAnalysisReport</span></em><span>.</span></p><blockquote><p><strong><span>Sugerencia</span></strong><span>: No necesita preocuparse por los parámetros, así que escriba un nombre de evento y acepte el evento de prueba predeterminado </span><code>hello-world</code><span>.</span></p></blockquote></li><li><p><span>Ejecute la prueba de </span><em><span>salesAnalysisReport</span></em><span>. Si la prueba se realiza correctamente, debería recibir un informe por email en un par de minutos.</span></p></li><li><p><span>Si la ejecución de la prueba de la función de Lambda falla, utilice los registros para revisar cualquier error que se haya producido, soluciónelo y ejecute la prueba de nuevo. Estas son algunas </span><em><span>sugerencias para la solución de problemas</span></em><span> que puede probar:</span></p><ul><li><p><span>Revise los registros de Amazon CloudWatch Logs para ambas funciones de Lambda:</span></p><ul><li><span>Si aparece un error sobre la conexión a la base de datos de la cafetería, compruebe que los grupos de seguridad estén configurados de manera correcta.</span></li><li><span>Si aparece un error referido al tiempo de espera, compruebe que esté establecido en </span><em><span>30 segundos</span></em><span>.</span></li><li><span>Si aparece un error del tipo </span><em><span>lambda_function not found (no se pudo encontrar la función de Lambda)</span></em><span>, compruebe si configuró el controlador correcto.</span></li></ul></li><li><p><span>Revise su trabajo para asegurarse de haber completado todos los pasos.</span></p></li><li><p><span>Vaya a la sección </span><em><span>Submitting your job (Envío de su trabajo)</span></em><span> y siga los pasos para enviar su trabajo. El informe del envío mostrará si completó correctamente los pasos anteriores.</span></p></li></ul></li></ol><br><h3 id='tarea 7-configurar-un-evento-de-amazon-eventbridge-para-que-active-la-función-de-lambda-todos-los-días'><span>Tarea 7: Configurar un evento de Amazon EventBridge para que active la función de Lambda todos los días</span></h3><p><span>El último paso de este desafío es configurar un desencadenador que ejecutará el informe todos los días.</span></p><ol start='25' ><li><span>Cree una nueva regla de EventBridge que ejecute la función de Lambda </span><em><span>salesAnalysisReport</span></em><span> todos los días a una hora específica.</span></li></ol><p><strong><span>Ayuda</span></strong><span>: Si se queda atascado, consulte los </span><a href='https://docs.aws.amazon.com/eventbridge/latest/userguide/scheduled-events.html'><span>ejemplos de expresiones cron en la documentación de AWS</span></a><span>.</span>
+<strong><span>Sugerencia</span></strong><span>: Utilice una hora cercana a la hora actual pero recuerde que la hora debe especificarse en tiempo universal coordinado (UTC).</span></p><ol start='26' ><li><p><span>Revise su email para ver si recibió el informe.</span></p></li><li><p><span>Regrese a la pestaña del navegador con las preguntas de opción múltiple que corresponden a este laboratorio y responda la siguiente pregunta:</span></p><ul><li><strong><span>Pregunta 5</span></strong><span>: Frank le dice que no ha recibido el informe por email los últimos días. ¿Qué podría hacer para solucionar este problema?</span></li></ul></li></ol><br><h2 id='noticias-de-la-cafetería'><span>Noticias de la cafetería</span></h2><p><span>Después de que Sofía termina de probar el informe, crea una suscripción por email para Frank y Martha, quienes están encantados de recibir el primer informe diario de la solución sin servidor.</span></p><p><span>Sofía está satisfecha por haber automatizado la generación de informes de ventas de la cafetería, que continuarán ayudando a Frank y Martha a analizar las ventas diarias y a planificar el inventario de la cafetería. También está contenta por haber aprendido con éxito a utilizar AWS Lambda, Amazon SNS y Amazon EventBridge. De hecho, Sofía planea implementar más funciones de generación de informes automatizadas y sin servidor en la aplicación web de la cafetería para ayudarla a crecer y administrar su negocio.</span></p><br><h2 id='envío-de-su-trabajo'><span>Envío de su trabajo</span></h2><ol start='28' ><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_blue"><span>Submit</span></span><span> (Enviar) para registrar su progreso y, cuando se le indique, elija </span><strong><span>Yes</span></strong><span> (Sí).</span></p></li><li><p><span>Si los resultados no se muestran después de algunos minutos, vuelva a la parte superior de estas instrucciones y elija </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Resultados).</span></p><p><strong><span>Sugerencia</span></strong><span>: Puede enviar su trabajo varias veces. Después de realizar las modificaciones pertinentes, vuelva a elegir </span><strong><span>Submit</span></strong><span> (Enviar). Su último envío es el que se registrará para este laboratorio.</span></p></li><li><p><span>Para encontrar comentarios detallados sobre su trabajo, elija </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalles) seguido de </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Ver informe de envío).</span></p></li></ol><br><h2 id='fin-del-laboratorio'><span>Fin del laboratorio</span></h2><p><i class="fas fa-flag-checkered"></i><span> ¡Felicitaciones! Ha completado el laboratorio.</span></p><ol start='31' ><li><p><span>Para confirmar que desea completar el laboratorio, haga clic en </span><strong><span id="ssb_voc_grey"><span>End Lab</span></span></strong><span> (Finalizar laboratorio), en la parte superior de esta página, y, a continuación, haga clic en </span><strong><span id="ssb_blue"><span>Yes</span></span></strong><span> (Sí).</span></p><p><span>Debería aparecer un panel con el siguiente mensaje: </span><em><span>DELETE has been initiated… You may close this message box now (Se ha iniciado la ELIMINACIÓN… Ya puede cerrar este cuadro de mensaje).</span></em></p></li><li><p><span>Para cerrar el panel, haga clic en la </span><strong><span>X</span></strong><span> de la esquina superior derecha.</span></p></li></ol><p>&nbsp;</p><p>&nbsp;</p><p><em><span>© 2020 Amazon Web Services, Inc. y sus empresas afiliadas. Todos los derechos reservados. Este contenido no puede reproducirse ni redistribuirse, total ni parcialmente, sin el permiso previo por escrito de Amazon Web Services, Inc. Queda prohibida la copia, el préstamo y la venta de carácter comercial.</span></em></p></div></div>
+</body>
+</html>

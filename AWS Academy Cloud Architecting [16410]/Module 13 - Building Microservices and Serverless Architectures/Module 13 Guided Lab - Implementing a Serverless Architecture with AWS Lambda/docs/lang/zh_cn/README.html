@@ -1,0 +1,689 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-fences-math .MathJax_SVG_Display, .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: visible; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; zoom: 90%; }
+#math-inline-preview-content { zoom: 1.1; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-math .MathJax_SVG_Display { margin-top: 8px; cursor: default; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+ :root {--mermaid-font-zoom:1.25em ;} 
+</style><title>README</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='模块-13----指导实验-2在-aws-上实施无服务器架构'><span>模块 13 – 指导实验 2：在 AWS 上实施无服务器架构</span></h1><h2 id='场景'><span>场景</span></h2><p><span>您正在创建库存跟踪系统。世界各地的店铺将向 Amazon S3 上传库存文件。您的团队希望能够查看库存水平，并在库存量不足时发送通知。</span></p><p><span>在本实验中，您将：</span></p><ul><li><span>您将</span><em><span>库存文件上传</span></em><span>到 Amazon S3 存储桶。</span></li><li><span>此上传将</span><em><span>触发一个 Lambda 函数</span></em><span>，该函数将读取文件并将项目插入到一个 </span><em><span>Amazon DynamoDB 表</span></em><span>中。</span></li><li><span>一个无服务器、基于 Web 的控制面板应用程序将使用 Amazon Cognito 向 AWS 进行身份验证。然后此应用程序将获得对 DynamoDB 表的访问权限以显示库存水平。</span></li><li><span>另一个 Lambda 函数将从 DynamoDB 表接收更新。此函数将在库存项目出现缺货时，向 </span><em><span>SNS 主题</span></em><span>发送消息。</span></li><li><span>然后，Amazon SNS 将</span><em><span>通过短信服务 (SMS) 或电子邮件向您发送通知</span></em><span>，请求更多库存。</span></li></ul><br><h2 id='实验概览'><span>实验概览</span></h2><p><span>传统上，应用程序运行在服务器上。这些服务器可以是物理服务器（或裸机）。它们也可以是在物理服务器上运行的虚拟环境。但是，您必须购买和预置所有这些类型的服务器，还必须管理它们的容量。相比之下，您可以在 AWS Lambda 上运行代码，而无需预先分配服务器。使用 Lambda，您只需提供代码并定义触发器。Lambda 函数可以在需要时运行，无论是每周一次还是每秒数百次。您只需为使用量付费即可。</span></p><p><span>此实验演示在将文件上传到 Amazon Simple Storage Service (Amazon S3) 时如何触发 Lambda 函数。此文件将加载到一个 Amazon DynamoDB 表中。您可以在控制面板页面上查看表中的数据，控制面板可以直接从 DynamoDB 检索数据。此解决方案</span><em><span>不使用 Amazon Elastic Compute Cloud (Amazon EC2)</span></em><span>。它是一个</span><em><span>无服务器解决方案</span></em><span>，</span><em><span>在使用时可以自动扩展</span></em><span>。使用此解决方案产生的</span><em><span>费用很少</span></em><span>。此解决方案处于闲置状态时，几乎</span><em><span>没有任何费用</span></em><span>，因为您只需为数据存储付费。</span></p><p>&nbsp;</p><p><span>完成本实验后，您应能够：</span></p><ul><li><span>在 AWS 上实施无服务器架构</span></li><li><span>从 Amazon S3 和 Amazon DynamoDB 触发 Lambda 函数</span></li><li><span>配置 Amazon Simple Notification Service (Amazon SNS) 以发送通知</span></li></ul><p>&nbsp;</p><p><span>在本实验</span><strong><span>结束</span></strong><span>时，您的架构将如下例所示：</span></p><p><img src="images/module-13-guided-lab-architecture.png" referrerpolicy="no-referrer" alt="工作流"></p><br><h2 id='持续时间'><span>持续时间</span></h2><p><span>完成本实验大约需要 </span><strong><span>40 分钟</span></strong><span>。</span></p><br><h2 id='aws-服务限制'><span>AWS 服务限制</span></h2><p><span>在本实验环境中，对 AWS 服务和服务操作的访问可能仅限于完成实验说明所需的服务和服务操作。如果您尝试访问其他服务或执行本实验中所述之外的操作，可能会遇到错误。</span></p><br><h2 id='访问-aws-管理控制台'><span>访问 AWS 管理控制台</span></h2><ol start='' ><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）即可启动您的实验。</span></p><p><strong><span>Start Lab</span></strong><span>（启动实验）面板随即会打开，其中显示了实验状态。</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>提示</span></strong><span>：如果您需要更多时间来完成实验，请再次选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）按钮，重新启动环境计时器。</span></p></li><li><p><span>请耐心等待，直到 </span><strong><span>Start Lab</span></strong><span>（启动实验）面板显示消息 </span><em><span>Lab status: ready</span></em><span>（实验状态：就绪），然后选择 </span><strong><span>X</span></strong><span> 关闭此面板。</span></p></li><li><p><span>在这些说明的顶部，选择 </span><span id="ssb_voc_grey"><span>AWS</span></span><span>。</span></p><p><span>此操作将在一个新的浏览器选项卡中打开 AWS 管理控制台。您将自动登录系统。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>提示</span></strong><span>：如果未打开新的浏览器选项卡，您的浏览器顶部通常会出现一个横幅或图标，并显示一条消息，指明您的浏览器阻止该了网站打开弹出窗口。请选择横幅或图标，然后选择 </span><strong><span>Allow pop-ups</span></strong><span>（允许弹出窗口）。</span></p></li><li><p><span>排列 </span><strong><span>AWS 管理控制台</span></strong><span>选项卡，使其与这些说明一起显示。理想情况下，您将同时打开两个浏览器选项卡，以便能够更轻松地执行实验步骤。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>除非特别要求，否则请勿更改区域</span></strong><span>。</span></p></li></ol><br><h2 id='任务-1创建-lambda-函数以加载数据'><span>任务 1：创建 Lambda 函数以加载数据</span></h2><p><span>在此任务中，您将创建一个处理库存文件的 </span><em><span>Lambda 函数</span></em><span>。该 Lambda 函数将读取此文件并将信息插入 DynamoDB 表中。</span></p><p><img src="images/module-13-guided-lab-task-1.png" referrerpolicy="no-referrer" alt="Lambda 函数"></p><ol start='5' ><li><p><span>在 </span><strong><span>AWS 管理控制台</span></strong><span>的 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单中，选择 </span><strong><span>Lambda</span></strong><span>。</span></p></li><li><p><span>选择 </span><span id="ssb_lambda_orange"><span>Create function</span></span><span>（创建函数）</span></p><p><i class="fas fa-info-circle"></i><span> </span><em><span>蓝图</span></em><span>是用于编写 Lambda 函数的代码模板。系统会为标准 Lambda 触发器（例如，创建 Amazon Alexa 技能和处理 Amazon Kinesis Data Firehose 流）提供蓝图。本实验为您提供了一个预编写好的 Lambda 函数，因此您将使用 </span><strong><span>Author from scratch</span></strong><span>（从头开始创作）选项。</span></p></li><li><p><span>配置以下设置：</span></p><ul><li><strong><span>Function name</span></strong><span>（函数名称）：</span><code>Load-Inventory</code></li><li><strong><span>Runtime</span></strong><span>（运行时）：</span><em><span>Python 3.7</span></em></li><li><span>展开 </span><i class="fas fa-caret-right"></i><span> </span><strong><span>Change default execution role</span></strong><span>（更改默认执行角色）。</span></li><li><strong><span>Execution role</span></strong><span>（执行角色）：</span><em><span>Use an existing role</span></em><span>（使用现有角色）</span></li><li><strong><span>Existing role</span></strong><span>（现有角色）：</span><em><span>Lambda-Load-Inventory-Role</span></em></li></ul><p><span>此角色可以向该 Lambda 函数提供权限，以便它可以访问 Amazon S3 和 DynamoDB。</span></p></li><li><p><span>选择 </span><span id="ssb_lambda_orange"><span>Create function</span></span><span>（创建函数）</span></p></li><li><p><span>向下滚动至 </span><strong><span>Code source</span></strong><span>（代码源）部分，然后在代码编辑器中，删除所有代码。</span></p></li><li><p><span>在 </span><strong><span>Code source</span></strong><span>（代码源）编辑器中，复制以下代码：</span></p></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># Load-Inventory Lambda function</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">#</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># This function is triggered by an object being created in an Amazon S3 bucket.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># The file is downloaded and each line is inserted into a DynamoDB table.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  import json, urllib, boto3, csv</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># Connect to S3 and DynamoDB</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  s3 <span class="cm-operator">=</span> boto3.resource(<span class="cm-string">'s3'</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  dynamodb <span class="cm-operator">=</span> boto3.resource(<span class="cm-string">'dynamodb'</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># Connect to the DynamoDB tables</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  inventoryTable <span class="cm-operator">=</span> dynamodb.Table(<span class="cm-string">'Inventory'</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># This handler is run every time the Lambda function is triggered</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  def lambda_handler(event, context):</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-comment"># Show the incoming event in the debug log</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  print(<span class="cm-string">"Event received by Lambda function: "</span> <span class="cm-operator">+</span> json.dumps(event, <span class="cm-def">indent</span><span class="cm-operator">=</span><span class="cm-number">2</span>))</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-comment"># Get the bucket and object key from the Event</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  bucket <span class="cm-operator">=</span> event[<span class="cm-string">'Records'</span>][0][<span class="cm-string">'s3'</span>][<span class="cm-string">'bucket'</span>][<span class="cm-string">'name'</span>]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  key <span class="cm-operator">=</span> urllib.parse.unquote_plus(event[<span class="cm-string">'Records'</span>][0][<span class="cm-string">'s3'</span>][<span class="cm-string">'object'</span>][<span class="cm-string">'key'</span>])</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  localFilename <span class="cm-operator">=</span> <span class="cm-string">'/tmp/inventory.txt'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-comment"># Download the file from S3 to the local filesystem</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  try:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  s3.meta.client.download_file(bucket, key, localFilename)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  except Exception as e:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  print(e)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  print(<span class="cm-string">'Error getting object {} from bucket {}. Make sure they exist and your bucket is in the same region as this function.'</span>.format(key, bucket))</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  raise e</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-comment"># Read the Inventory CSV file</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  with open(localFilename) as csvfile:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  reader <span class="cm-operator">=</span> csv.DictReader(csvfile, <span class="cm-def">delimiter</span><span class="cm-operator">=</span><span class="cm-string">','</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-comment"># Read each row in the file</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  rowCount <span class="cm-operator">=</span> <span class="cm-number">0</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-keyword">for</span> row <span class="cm-keyword">in</span> reader:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  rowCount <span class="cm-operator">+=</span> <span class="cm-number">1</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment"># Show the row in the debug log</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  print(row[<span class="cm-string">'store'</span>], row[<span class="cm-string">'item'</span>], row[<span class="cm-string">'count'</span>])</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  try:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment"># Insert Store, Item and Count into the Inventory table</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  inventoryTable.put_item(</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-def">Item</span><span class="cm-operator">=</span>{</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-string">'Store'</span>:  row[<span class="cm-string">'store'</span>],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-string">'Item'</span>: &nbsp; row[<span class="cm-string">'item'</span>],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-string">'Count'</span>:  int(row[<span class="cm-string">'count'</span>])})</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  except Exception as e:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print(e)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print(<span class="cm-string">"Unable to insert data into DynamoDB table"</span>.format(e))</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-comment"># Finished!</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  return <span class="cm-string">"%d counts inserted"</span> % rowCount</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 1053px;"></div><div class="CodeMirror-gutters" style="display: none; height: 1053px;"></div></div></div></pre><p><span>检查代码。它将执行以下步骤：</span></p><ul><li><span>从 Amazon S3 下载触发事件的文件</span></li><li><span>遍历文件中的每一行</span></li><li><span>将数据插入到 DynamoDB </span><em><span>Inventory</span></em><span>（库存）表中</span></li></ul><ol start='11' ><li><span>在页面顶部，选择 </span><span id="ssb_lambda_orange"><span>File &gt; Save</span></span><span>（文件 &gt; 保存），然后选择 Deploy（部署）</span></li></ol><p><span>   接下来，您要配置 Amazon S3 以在上传文件时触发该 Lambda 函数。</span></p><br><h2 id='任务-2配置-amazon-s3-事件'><span>任务 2：配置 Amazon S3 事件</span></h2><p><span>世界各地的商店提供库存文件以加载到库存跟踪系统中。商店可以直接将文件上传到 Amazon S3，而不是通过 FTP 上传文件。他们可以通过网页、脚本或程序的一部分上传文件。收到文件后，它会触发 Lambda 函数。然后，此 Lambda 函数会将库存加载到 DynamoDB 表中。</span></p><p><img src="images/module-13-guided-lab-task-2.png" referrerpolicy="no-referrer" alt="Lambda 函数"></p><p><span>在此任务中，您将创建一个 S3 存储桶，并将其配置为触发 Lambda 函数。</span></p><ol start='12' ><li><span>在 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单上，选择 </span><strong><span>S3</span></strong><span>。</span></li><li><span>选择 </span><span id="ssb_s3_blue"><i class="fas fa-plus"></i><span> Create bucket</span></span><span>（创建存储桶）</span></li></ol><p><span>   每个存储桶都必须具有一个独一无二的名称，因此您可以为存储桶名称添加一个随机编号。例如，</span><em><span>inventory-123</span></em></p><ol start='14' ><li><span>对于 </span><strong><span>Bucket name</span></strong><span>（存储桶名称），请输入：</span><code>inventory-&lt;number&gt;</code><span>（将 </span><em><number></em><span> 替换为一个随机数字）</span></li><li><span>选择 </span><span id="ssb_s3_white"><span>Create bucket</span></span><span>（创建存储桶）</span></li></ol><p><span>   </span><i class="fas fa-comment"></i><span> 您可能会收到以下错误：</span><em><span>请求的存储桶名称不可用</span></em><span>。如果您收到此错误，请选择第一个 </span><strong><span>Edit</span></strong><span>（编辑）链接，更改存储桶名称，然后重试，直到存储桶名称被接受为止。</span></p><p><span>   现在，您将配置存储桶，以在上传文件时自动触发 Lambda 函数。</span></p><ol start='16' ><li><span>选择您的 </span><em><span>inventory-</span><number></em><span> 存储桶的名称。</span></li><li><span>选择 </span><strong><span>Properties</span></strong><span>（属性）选项卡。</span></li><li><span>向下滚动至 </span><strong><span>Event notifications</span></strong><span>（事件通知）</span><strong></strong><span>。</span></li></ol><p><span>   您将配置一个事件，以在 S3 存储桶中创建对象时触发该事件。</span></p><ol start='19' ><li><span>单击 </span><span style="color:#00a0d2"><i class="fas fa-plus"></i><span> Create event notification</span></span><span>（创建事件通知），然后配置以下设置：</span></li></ol><ul><li><strong><span>Event Name</span></strong><span>（事件名称）：</span><code>Load-Inventory</code></li><li><strong><span>Event types</span></strong><span>（事件类型）：</span><i class="far fa-check-square"></i><span> </span><em><span>All object create events</span></em><span>（所有对象创建事件）</span></li><li><strong><span>Destination</span></strong><span>（目标）：</span><em><span>Lambda Function</span></em><span>（Lambda 函数）</span></li><li><strong><span>Lambda function</span></strong><span>（Lambda 函数）：</span><em><span>Load-Inventory</span></em></li><li><span>选择 </span><span id="ssb_s3_blue"><span>Save</span></span><span>（保存更改）</span></li></ul><p><span>   在存储桶中创建对象时，此配置将告诉 Amazon S3 触发您之前创建的 </span><em><span>Load-Inventory</span></em><span> Lambda 函数。</span></p><p><span>   您的存储桶现在已经准备好接收库存文件了！</span></p><br><h2 id='任务-3测试加载过程'><span>任务 3：测试加载过程</span></h2><p><span>您现在已经准备就绪，可以测试加载过程。您将上传一个库存文件，然后检查它是否成功加载。</span></p><p><img src="images/module-13-guided-lab-task-3-1.png" referrerpolicy="no-referrer" alt="加载测试"></p><ol start='20' ><li><p><span>通过打开以下链接的上下文（右键单击）菜单下载库存文件：</span></p><p><a href='../../../scripts/inventory-berlin.csv'><span>inventory-berlin.csv</span></a></p><p><a href='../../../scripts/inventory-calcutta.csv'><span>inventory-calcutta.csv</span></a></p><p><a href='../../../scripts/inventory-karachi.csv'><span>inventory-karachi.csv</span></a></p><p><a href='../../../scripts/inventory-pusan.csv'><span>inventory-pusan.csv</span></a></p><p><a href='../../../scripts/inventory-shanghai.csv'><span>inventory-shanghai.csv</span></a></p><p><a href='../../../scripts/inventory-springfield.csv'><span>inventory-springfield.csv</span></a></p></li></ol><p>&nbsp;</p><p><span>这些文件是您可以用来测试系统的库存文件。它们是逗号分隔值 (CSV) 文件。以下示例显示了 Berlin 文件的内容：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="plain"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; store,item,count</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; Berlin,Echo Dot,12</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; Berlin,Echo (2nd Gen),19</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; Berlin,Echo Show,18</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; Berlin,Echo Plus,0</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; Berlin,Echo Look,10</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; Berlin,Amazon Tap,15</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 157px;"></div><div class="CodeMirror-gutters" style="display: none; height: 157px;"></div></div></div></pre><ol start='21' ><li><span>在控制台中，通过选择 </span><strong><span>Objects</span></strong><span>（对象）选项卡返回 S3 存储桶。</span></li><li><span>选择 </span><span id="ssb_s3_blue"><i class="fas fa-upload"></i><span> Upload</span></span><span>（上传），然后将其中一个 CSV 文件上传到存储桶。（您可以选择任何库存文件。）</span></li></ol><p><span>   Amazon S3 将自动触发 Lambda 函数，该函数会将数据加载到 DynamoDB 表中。</span></p><p><span>   我们已为您提供一个无服务器控制面板应用程序，您可以用它查看结果。</span></p><ol start='23' ><li><span>在这些说明的顶部，选择 </span><strong><span>Details</span></strong><span>（详细信息）按钮，然后在 </span><strong><span>AWS</span></strong><span> 右侧选择 </span><strong><span>Show</span></strong><span>（显示）按钮。</span></li><li><span>从 </span><strong><span>Credentials</span></strong><span>（凭证）窗口，复制 </span><strong><span>Dashboard</span></strong><span>（控制面板）URL。</span></li><li><span>打开一个新的 Web 浏览器标签页，粘贴该 URL，并按 ENTER 键。</span></li></ol><p><span>   将打开控制面板应用程序，并显示您加载到存储桶中的库存数据。数据是从 DynamoDB 检索的，这证明上传成功地触发了 Lambda 函数。</span></p><p><img src="images/module-13-guided-lab-task-3-2.png" referrerpolicy="no-referrer" alt="控制面板"></p><p>&nbsp;</p><p><i class="fas fa-exclamation-triangle"></i><span> 如果控制面板应用程序未显示任何信息，请讲师帮助您诊断问题。</span></p><p><span>此控制面板应用程序作为 Amazon S3 中的一个静态网页提供。此控制面板以 </span><em><span>anonymous user</span></em><span>（匿名用户）的身份通过 Amazon Cognito 进行身份验证，这为控制面板提供了足够的权限，可以从 DynamoDB 检索数据。</span></p><p><span>您还可以直接在 DynamoDB 表中查看数据。</span></p><ol start='26' ><li><span>在 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单上，选择 </span><strong><span>DynamoDB</span></strong><span>。</span></li><li><span>在左侧导航窗格中，选择 </span><strong><span>Tables</span></strong><span>（表）。</span></li><li><span>选择 </span><strong><span>Inventory</span></strong><span>（库存）表。</span></li><li><span>选择 </span><strong><span>Items</span></strong><span>（项目）选项卡。</span></li></ol><p><span>   系统将显示库存文件中的数据，包括 Store（店铺）、Item（项目）和 Inventory Count（库存盘点）。</span></p><br><h2 id='任务-4配置通知'><span>任务 4：配置通知</span></h2><p><span>您希望在商店缺货时通知库存管理人员。对于此无服务器通知功能，您将使用 </span><strong><span>Amazon SNS</span></strong><span>。</span></p><p><img src="images/module-13-guided-lab-task-4.png" referrerpolicy="no-referrer" alt="加载测试"></p><p><span>Amazon SNS 是一项灵活且完全托管的发布/订阅消息收发和移动通知服务。它将消息传送到订阅终端节点和客户端。借助 Amazon SNS，您可以将消息群发给大量订户，包括分布式系统和服务以及移动设备。</span></p><ol start='30' ><li><p><span>在 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单中，选择 </span><strong><span>Simple Notification Service</span></strong><span>。</span></p></li><li><p><span>在 </span><strong><span>Create topic</span></strong><span>（创建主题）框中，为 </span><strong><span>Topic name</span></strong><span>（主题名称）输入 </span><code>NoStock</code></p></li><li><p><span>选择 </span><span id="ssb_orange"><span>Next step</span></span><span>（下一步）</span></p></li><li><p><span>滚动到页面底部。</span></p></li><li><p><span>选择 </span><span id="ssb_orange"><span>Create topic</span></span><span>（创建主题）</span></p><p><span>要接收通知，您必须</span><em><span>订阅</span></em><span>主题。您可以选择通过短信和电子邮件等多种方式接收通知。</span></p></li><li><p><span>在页面下半部分中，选择 </span><span id="ssb_orange"><span>Create subscription</span></span><span>（创建订阅），然后配置以下设置：</span></p></li></ol><ul><li><strong><span>Protocol</span></strong><span>（协议）：</span><em><span>SMS</span></em></li><li><strong><span>Endpoint</span></strong><span>（终端节点）：以国际格式输入您的手机号码（例如 </span><em><span>+14155550135</span></em><span> 或 </span><em><span>+9175550190</span></em><span>）</span></li><li><span>选择 </span><span id="ssb_orange"><span>Create subscription</span></span><span>（创建订阅）</span></li></ul><p><i class="fas fa-comment"></i><span> 如果您不想接收短信，可以改为通过</span><em><span>电子邮件</span></em><span>订阅。您必须提供一个在进行本实验时可以访问的电子邮件地址。创建电子邮件订阅后，您将收到一封确认电子邮件。请打开此邮件，然后选择 </span><em><span>Confirm subscription</span></em><span>（确认订阅）链接。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">任何发送到 SNS 主题的消息都将通过短信或电子邮件转发给您。</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><br><h2 id='任务-5创建-lambda-函数以发送通知'><span>任务 5：创建 Lambda 函数以发送通知</span></h2><p><span>您可以修改现有 </span><em><span>Load-Inventory</span></em><span> Lambda 函数，以便在加载文件时检查库存水平。但是，此配置不是一种很好的架构做法。您将创建另一个在数据加载到 DynamoDB 表中时触发的 Lambda 函数，而不是使用业务逻辑过载 </span><em><span>Load-Inventory</span></em><span> 函数。此函数将由 </span><em><span>DynamoDB 流</span></em><span>触发。</span></p><p><span>此架构方法具有多种优势：</span></p><ul><li><span>每个 Lambda 函数都执行一项特定的功能。这种做法使代码变得更简单、更易于维护。</span></li><li><span>可以通过创建更多的 Lambda 函数来添加更多业务逻辑。由于每个函数都是独立运行的，因此现有功能不受影响。</span></li></ul><p><span>在此任务中，您将创建另一个 Lambda 函数，当库存加载到 DynamoDB 表中时，该函数可以检索库存。如果 Lambda 函数发现某个项目缺货，它将通过您之前创建的短信主题发送通知。</span></p><p><img src="images/module-13-guided-lab-task-5.png" referrerpolicy="no-referrer" alt="加载测试"></p><ol start='36' ><li><span>在 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单上，选择 </span><strong><span>Lambda</span></strong><span>。</span></li><li><span>选择 </span><span id="ssb_lambda_orange"><span>Create function</span></span><span>（创建函数）并配置以下设置：</span></li></ol><ul><li><p><strong><span>Function name</span></strong><span>（函数名称）：</span><code>Check-Stock</code></p></li><li><p><strong><span>Runtime</span></strong><span>（运行时）：</span><em><span>Python 3.7</span></em></p></li><li><p><span>展开 </span><i class="fas fa-caret-right"></i><span> </span><strong><span>Change default execution role</span></strong><span>（更改默认执行角色）。</span></p></li><li><p><strong><span>Execution role</span></strong><span>（执行角色）：</span><em><span>Use an existing role</span></em><span>（使用现有角色）</span></p></li><li><p><strong><span>Existing role</span></strong><span>（现有角色）：</span><em><span>Lambda-Check-Stock-Role</span></em></p></li><li><p><span>选择 </span><span id="ssb_lambda_orange"><span>Create function</span></span><span>（创建函数）</span></p><p><span>此角色已配置为有权将通知发送到 Amazon SNS。</span></p></li></ul><ol start='38' ><li><p><span>向下滚动至 </span><strong><span>Code source</span></strong><span>（代码源）部分，然后在代码编辑器中，删除所有代码。</span></p></li><li><p><span>复制以下代码，并将其粘贴到 </span><strong><span>Function code</span></strong><span>（函数代码）编辑器中：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Stock Check Lambda function</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">#</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># This function is triggered when values are inserted into the Inventory DynamoDB table.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Inventory counts are checked and if an item is out of stock, a notification is sent to an SNS Topic.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">import json, boto3</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># This handler is run every time the Lambda function is triggered</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">def lambda_handler(event, context):</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># Show the incoming event in the debug log</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  print(<span class="cm-string">"Event received by Lambda function: "</span> <span class="cm-operator">+</span> json.dumps(event, <span class="cm-def">indent</span><span class="cm-operator">=</span><span class="cm-number">2</span>))</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># For each inventory item added, check if the count is zero</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">for</span> record <span class="cm-keyword">in</span> event[<span class="cm-string">'Records'</span>]:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  newImage <span class="cm-operator">=</span> record[<span class="cm-string">'dynamodb'</span>].get(<span class="cm-string">'NewImage'</span>, None)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">if</span> newImage: &nbsp; &nbsp; &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  count <span class="cm-operator">=</span> int(record[<span class="cm-string">'dynamodb'</span>][<span class="cm-string">'NewImage'</span>][<span class="cm-string">'Count'</span>][<span class="cm-string">'N'</span>]) &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span> count <span class="cm-operator">==</span> <span class="cm-number">0</span>:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  store <span class="cm-operator">=</span> record[<span class="cm-string">'dynamodb'</span>][<span class="cm-string">'NewImage'</span>][<span class="cm-string">'Store'</span>][<span class="cm-string">'S'</span>]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  item &nbsp;<span class="cm-operator">=</span> record[<span class="cm-string">'dynamodb'</span>][<span class="cm-string">'NewImage'</span>][<span class="cm-string">'Item'</span>][<span class="cm-string">'S'</span>] &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment"># Construct message to be sent</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  message <span class="cm-operator">=</span> store <span class="cm-operator">+</span> <span class="cm-string">' is out of stock of '</span> <span class="cm-operator">+</span> item</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  print(message) &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment"># Connect to SNS</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  sns <span class="cm-operator">=</span> boto3.client(<span class="cm-string">'sns'</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  alertTopic <span class="cm-operator">=</span> <span class="cm-string">'NoStock'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  snsTopicArn <span class="cm-operator">=</span> [t[<span class="cm-string">'TopicArn'</span>] <span class="cm-keyword">for</span> t <span class="cm-keyword">in</span> sns.list_topics()[<span class="cm-string">'Topics'</span>]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-keyword">if</span> t[<span class="cm-string">'TopicArn'</span>].lower().endswith(<span class="cm-string">':'</span> <span class="cm-operator">+</span> alertTopic.lower())][0] &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-comment"># Send message to SNS</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  sns.publish(</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-def">TopicArn</span><span class="cm-operator">=</span>snsTopicArn,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-def">Message</span><span class="cm-operator">=</span>message,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-def">Subject</span><span class="cm-operator">=</span><span class="cm-string">'Inventory Alert!'</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-def">MessageStructure</span><span class="cm-operator">=</span><span class="cm-string">'raw'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  )</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment"># Finished!</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  return <span class="cm-string">'Successfully processed {} records.'</span>.format(len(event[<span class="cm-string">'Records'</span>]))</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 829px;"></div><div class="CodeMirror-gutters" style="display: none; height: 829px;"></div></div></div></pre><p><span>检查代码。它将执行以下步骤：</span></p><ul><li><span>遍历传入的记录</span></li><li><span>如果库存盘点为零，则向 </span><em><span>NoStock</span></em><span> SNS 主题发送消息</span></li></ul><p><span>现在，您将对此函数进行配置，以便在将数据添加到 DynamoDB 中的 </span><em><span>Inventory</span></em><span> 表中时触发该函数。</span></p></li><li><p><span>滚动到 </span><strong><span>Function overview</span></strong><span>（函数概述）部分（位于页面顶部）。</span></p></li><li><p><span>选择 </span><span id="ssb_lambda_white"><i class="fas fa-plus"></i><span> Add trigger</span></span><span>（添加触发器），然后配置以下设置：</span></p></li></ol><ul><li><strong><span>Add trigger</span></strong><span>（触发器配置）：</span><em><span>DynamoDB</span></em></li><li><strong><span>DynamoDB Table</span></strong><span>（DynamoDB 表）：</span><em><span>Inventory</span></em><span>（库存）</span></li><li><span>选择 </span><span id="ssb_lambda_orange"><span>Add</span></span><span>（添加）</span></li></ul><ol start='42' ><li><span>在页面顶部，选择 </span><span id="ssb_lambda_orange"><span>File &gt; Save</span></span><span>（文件 &gt; 保存），然后选择 Deploy（部署）</span></li></ol><p><span>   您现在已准备好测试系统！</span></p><br><h2 id='任务-6测试系统'><span>任务 6：测试系统</span></h2><p><span>现在，您将向 Amazon S3 上传一个库存文件，这将触发原始的 </span><em><span>Load-Inventory</span></em><span> 函数。此函数会将数据加载到 DynamoDB 中，然后将触发新的 </span><em><span>Check-Stock</span></em><span> Lambda 函数。如果 Lambda 函数检测到库存为零的商品，它将向 Amazon SNS 发送消息。然后，Amazon SNS 将通过短信或电子邮件通知您。</span></p><ol start='43' ><li><span>在 </span><span id="ssb_services"><span>Services </span><i class="fas fa-angle-down"></i></span><span>（服务）菜单上，选择 </span><strong><span>S3</span></strong><span>。</span></li><li><span>选择您的 </span><em><span>inventory-</span><number></em><span> 存储桶的名称。</span></li><li><span>选择 </span><strong><span>Upload</span></strong><span>（上传）并上传其他库存文件。</span></li><li><span>返回 </span><strong><span>Inventory System Dashboard</span></strong><span>（库存系统控制面板）并刷新 </span><i class="fas fa-sync"></i><span> 页面。</span></li></ol><p><span>   您现在应该能够使用 </span><strong><span>Store</span></strong><span>（店铺）菜单查看两家店铺的库存。</span></p><p><span>   此外，您还应该会</span><em><span>通过短信或电子邮件收到一个通知</span></em><span>，说明店铺中的一种商品缺货（每个库存文件都有一种商品缺货）。</span></p><p><span>   </span><i class="fas fa-comment"></i><span> 如果您没有收到通知，请等待几分钟，然后上传其他库存文件。DynamoDB 触发器有时可能需要几分钟才能启用。</span></p><ol start='47' ><li><span>如果尝试同时上传多个库存文件，您认为将会发生什么情况？</span></li></ol><br><h2 id='提交作业'><span>提交作业</span></h2><ol start='48' ><li><span>在这些说明的顶部，选择 </span><span id="ssb_blue"><span>Submit</span></span><span>（提交）记录您的进度，在出现提示时，选择 </span><strong><span>Yes</span></strong><span>（是）。</span></li><li><span>如果在几分钟后仍未显示结果，请返回到这些说明的顶部，并选择 </span><span id="ssb_voc_grey"><span>Grades</span></span><span>（成绩）</span></li></ol><p><span>   </span><strong><span>提示</span></strong><span>：您可以多次提交作业。更改作业后，再次选择 </span><strong><span>Submit</span></strong><span>（提交）即可。您最后一次提交的作业将记录为本实验的成绩。</span></p><ol start='50' ><li><span>要查找有关您作业的详细反馈，请选择 </span><span id="ssb_voc_grey"><span>Details</span></span><span>（详细信息），然后选择 </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span>（查看提交报告）。</span></li></ol><br><h2 id='实验完成-i-classfas-fa-graduation-capi'><span>实验完成 </span><i class="fas fa-graduation-cap"></i></h2><p><i class="fas fa-flag-checkered"></i><span> 恭喜！您已完成实验。</span></p><ol start='51' ><li><span>选择此页面顶部的 </span><span id="ssb_voc_grey"><span>End Lab</span></span><span>（结束实验），然后选择 </span><span id="ssb_blue"><span>Yes</span></span><span>（是）确认您要结束实验。</span></li></ol><p><span>   此时将显示一个面板，表明 </span><em><span>DELETE has been initiated... You may close this message box now.</span></em><span>（删除操作已启动...您现在可以关闭此消息框。）</span></p><ol start='52' ><li><span>选择右上角的 </span><strong><span>X</span></strong><span> 以关闭面板。</span></li></ol><p>&nbsp;</p><p>&nbsp;</p><p><em><span>©2020 Amazon Web Services, Inc. 及其附属公司。保留所有权利。未经 Amazon Web Services, Inc. 事先书面许可，不得复制或转载本文的部分或全部内容。禁止商业性复制、出租或出售。</span></em></p></div></div>
+</body>
+</html>

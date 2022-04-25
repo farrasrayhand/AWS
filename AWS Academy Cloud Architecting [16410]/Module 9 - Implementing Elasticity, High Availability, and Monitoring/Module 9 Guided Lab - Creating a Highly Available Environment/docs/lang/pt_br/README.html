@@ -1,0 +1,1166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='módulo-9----laboratório-guiado-criar-um-ambiente-altamente-disponível'><span>Módulo 9 – Laboratório guiado: Criar um ambiente altamente disponível</span></h1><h2 id='visão-geral-e-objetivos-do-laboratório'><span>Visão geral e objetivos do laboratório</span></h2><p><span>Sistemas essenciais para os negócios devem ser implantados como </span><em><span>aplicações altamente disponíveis</span></em><span>, ou seja, as aplicações permanecem operacionais mesmo quando alguns componentes falham. Para obter alta disponibilidade na Amazon Web Services (AWS), recomendamos que você </span><em><span>execute serviços em várias zonas de disponibilidade</span></em><span>.</span></p><p><span>Muitos serviços da AWS são inerentemente altamente disponíveis, como os load balancers, ou podem ser configurados para atingir alta disponibilidade, como a implantação de instâncias do Amazon Elastic Compute Cloud (Amazon EC2) em várias zonas de disponibilidade.</span></p><p><span>Neste laboratório, você começará com uma aplicação que é executada em uma única instância do EC2. Depois, você tornará a aplicação altamente disponível.</span></p><p><span>Depois de concluir este laboratório, você deverá ser capaz de:</span></p><ul><li><span>Inspecionar uma Virtual Private Cloud (VPC)</span></li><li><span>Criar um Application Load Balancer</span></li><li><span>Criar um grupo de Auto Scaling</span></li><li><span>Testar a </span><em><span>alta disponibilidade</span></em><span> da aplicação</span></li></ul><p>&nbsp;</p><p><span>No </span><strong><span>final</span></strong><span> deste laboratório, sua arquitetura será semelhante ao seguinte exemplo:</span></p><p><img src="images/module-9-guided-lab-architecture.png" referrerpolicy="no-referrer" alt="Arquitetura"></p><p><br>
+<span>##Duração</span></p><p><span>O laboratório levará aproximadamente </span><strong><span>40 minutos</span></strong><span> para ser concluído.</span></p><p>&nbsp;</p><br><h2 id='restrições-de-serviço-da-aws'><span>Restrições de serviço da AWS</span></h2><p><span>Neste ambiente de laboratório, o acesso aos serviços e ações de serviço da AWS pode estar restrito àqueles necessários para concluir as instruções do laboratório. Você poderá encontrar erros se tentar acessar outros serviços ou executar ações além do que está descrito neste laboratório.</span></p><br><h2 id='acessar-o-console-de-gerenciamento-da-aws'><span>Acessar o Console de Gerenciamento da AWS</span></h2><ol start='' ><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratório) para iniciar o laboratório.</span></p><p><span>Um painel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratório) é aberto com o status do laboratório.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Dica</span></strong><span>: se você precisar de mais tempo para concluir o laboratório, escolha novamente o botão </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratório) para reiniciar o cronômetro do ambiente.</span></p></li><li><p><span>Aguarde até que o painel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratório) exiba a mensagem </span><em><span>Lab status: ready (Status do laboratório: pronto)</span></em><span> e, em seguida, escolha </span><strong><span>X</span></strong><span> para fechar o painel.</span></p></li><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>Essa ação abrirá o Console de Gerenciamento da AWS em uma nova guia do navegador. O sistema fará seu login automaticamente.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Dica</span></strong><span>: se uma nova guia do navegador não for aberta, normalmente você verá uma faixa ou um ícone na parte superior do navegador com uma mensagem informando que o navegador está impedindo que o site abra janelas pop-up. Escolha a faixa ou o ícone e depois </span><strong><span>Allow pop ups</span></strong><span> (Permitir pop-ups).</span></p></li><li><p><span>Organize a guia do </span><strong><span>Console de Gerenciamento da AWS</span></strong><span> para que ela seja exibida com essas instruções. O ideal é ver as duas guias do navegador abertas ao mesmo tempo, para facilitar o acompanhamento das etapas do laboratório.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Não altere a região, a menos que seja especificamente instruído a fazer isso</span></strong><span>.</span></p></li></ol><br><h2 id='tarefa-1-inspecionar-sua-vpc'><span>Tarefa 1: inspecionar sua VPC</span></h2><p><span>O laboratório começa com um ambiente já implantado pelo AWS CloudFormation, incluindo:</span></p><ul><li><span>Uma VPC</span></li><li><span>Sub-redes públicas e privadas em duas zonas de disponibilidade</span></li><li><span>Um gateway da Internet (não mostrado no diagrama) associado às sub-redes públicas</span></li><li><span>Um gateway NAT em uma das sub-redes públicas</span></li><li><span>Uma instância do Amazon Relational Database Service (Amazon RDS) em uma das sub-redes privadas</span></li></ul><p><img src="images/module-9-guided-lab-task-1.png" referrerpolicy="no-referrer" alt="Tarefa 1"></p><p><span>Nesta tarefa, você analisará a configuração da VPC que já foi criada para este laboratório.</span></p><ol start='5' ><li><p><span>No </span><strong><span>Console de Gerenciamento da AWS</span></strong><span>, no menu </span><span id="ssb_services"><span>Services</span><i class="fas fa-angle-down"></i></span><span> (Serviços), escolha </span><strong><span>VPC</span></strong><span>.</span></p></li><li><p><span>No painel de navegação à esquerda, em </span><strong><span>Filter by VPC</span></strong><span> (Filtrar por VPC), clique em </span><i class="fas fa-search"></i><span> a caixa </span><strong><span>Select a VPC</span></strong><span> (Selecionar uma VPC) e depois </span><strong><span>Lab VPC</span></strong><span>.</span></p><p><span>Essa configuração limitará o console para mostrar apenas os recursos associados à </span><em><span>Lab VPC</span></em><span>.</span></p></li><li><p><span>No painel de navegação à esquerda, escolha </span><strong><span>Your VPCs</span></strong><span> (Suas VPCs).</span></p><p><span>Aqui, você pode acessar informações sobre a </span><strong><span>Lab VPC</span></strong><span> criada para você.</span></p><p><span>A coluna </span><strong><span>CIDR</span></strong><span> tem um valor de </span><em><span>10.0.0.0/16</span></em><span>, o que significa que essa VPC inclui todos os endereços IP que começam com </span><em><span>10.0.x.x</span></em><span>.</span></p></li><li><p><span>No painel de navegação à esquerda, escolha </span><strong><span>Subnets</span></strong><span> (Sub-redes).</span></p><p><span>Aqui, você pode acessar informações sobre a </span><strong><span>Sub-rede pública 1:</span></strong></p><ul><li><span>A coluna </span><strong><span>VPC</span></strong><span> mostra que essa sub-rede existe dentro da </span><em><span>Lab VPC</span></em><span>.</span></li><li><span>A coluna </span><strong><span>CIDR IPv4</span></strong><span> tem um valor de </span><em><span>10.0.0.0/24</span></em><span>, o que significa que essa sub-rede inclui os 256 endereços IP entre </span><em><span>10.0.0.0</span></em><span> e </span><em><span>10.0.0.255</span></em><span>. Cinco desses endereços são reservados e inutilizáveis.</span></li><li><span>A coluna </span><strong><span>Zona de disponibilidade</span></strong><span> lista a zona de disponibilidade em que esta sub-rede reside.</span></li></ul></li><li><p><span>Para revelar mais detalhes na parte inferior da página, selecione </span><i class="far fa-check-square"></i><span> </span><strong><span>Sub-rede pública 1</span></strong><span>.</span></p><p><strong><span>Dica:</span></strong><span> para ajustar o tamanho do painel inferior da janela, você pode arrastar o divisor.</span></p></li><li><p><span>Na metade inferior da página, escolha a guia </span><strong><span>Route Table</span></strong><span> (Tabela de rotas).</span></p><p><span>Esta guia inclui detalhes sobre o roteamento para esta sub-rede:</span></p><ul><li><span>A primeira entrada especifica que o tráfego destinado ao intervalo de roteamento interdomínio sem classe (CIDR) para a VPC (</span><em><span>10.0.0.0/16</span></em><span>) será roteado dentro da VPC (</span><em><span>local</span></em><span>).</span></li><li><span>A segunda entrada especifica que qualquer tráfego destinado à Internet (</span><em><span>0.0.0.0/0</span></em><span>) é encaminhado para o gateway da Internet (</span><em><span>igw-</span></em><span>). Essa configuração torna a sub-rede </span><em><span>pública</span></em><span>.</span></li></ul></li><li><p><span>Escolha a guia </span><strong><span>Network ACL</span></strong><span>.</span></p><p><span>Essa guia tem informações sobre a lista de controle de acesso à rede (Network ACL) associada à sub-rede. As regras atualmente permitem que </span><em><span>todo o tráfego</span></em><span> flua para dentro e para fora da sub-rede, mas é possível restringir ainda mais as regras usando grupos de segurança.</span></p></li><li><p><span>No painel de navegação à esquerda, escolha </span><strong><span>Internet Gateways</span></strong><span> (Gateways da Internet).</span></p></li></ol><p><span>Observe que um gateway da Internet já está associado à </span><strong><span>Lab VPC</span></strong><span>.</span></p><ol start='13' ><li><span>No painel de navegação à esquerda, escolha </span><strong><span>Security Groups (Grupos de segurança)</span></strong><span>.</span></li><li><span>Selecione </span><i class="far fa-check-square"></i><span> </span><strong><span>Banco de dados do inventário</span></strong><span>.</span></li></ol><p><span>Esse grupo de segurança controla o tráfego de entrada para o banco de dados.</span></p><ol start='15' ><li><p><span>Na parte inferior da página, escolha a guia </span><strong><span>Inbound rules</span></strong><span> (Regras de entrada).</span></p><p><span>Essas regras permitem tráfego de entrada para o MySQL ou do Aurora (porta 3306) de qualquer lugar na VPC (</span><em><span>10.0.0.0/16</span></em><span>). Mais tarde, você modificará essa configuração para que ela aceite apenas o tráfego dos servidores de aplicações.</span></p></li><li><p><span>Escolha a guia </span><strong><span>Outbound Rules</span></strong><span> (Regras de saída).</span></p><p><span>Por padrão, os grupos de segurança permitem todo o tráfego de saída. No entanto, essa configuração pode ser modificada conforme necessário.</span></p></li></ol><br><h2 id='tarefa-2-criar-um-application-load-balancer'><span>Tarefa 2: criar um Application Load Balancer</span></h2><p><span>Para criar uma aplicação altamente disponível, uma das melhores práticas é iniciar recursos em </span><em><span>várias zonas de disponibilidade</span></em><span>. Zonas de disponibilidade são datacenters (ou grupos de datacenters) fisicamente separados na mesma região. Se você executar suas aplicações em várias zonas de disponibilidade, poderá fornecer maior </span><em><span>disponibilidade</span></em><span> caso um datacenter sofra uma falha.</span></p><p><span>Como a aplicação é executada em vários servidores, você precisará de uma maneira de distribuir tráfego entre eles. Isso pode ser feito usando um </span><em><span>balanceador de carga</span></em><span>. Esse balanceador de carga também realizará verificações de integridade em instâncias e enviará solicitações somente para instâncias íntegras.</span></p><p><img src="images/module-9-guided-lab-task-2.png" referrerpolicy="no-referrer" alt="Tarefa 2"></p><ol start='17' ><li><p><span>No menu </span><span id="ssb_services"><span>Services</span><i class="fas fa-angle-down"></i></span><span> (Serviços), escolha </span><strong><span>EC2</span></strong><span>.</span></p></li><li><p><span>No painel de navegação à esquerda, escolha </span><strong><span>Load Balancers</span></strong><span> (Balanceadores de carga) (pode ser necessário rolar para encontrar essa opção).</span></p></li><li><p><span>Escolha </span><span id="ssb_blue"><span>Create Load Balancer</span></span><span> (Criar Load Balancer)</span></p><p><span>Vários tipos de balanceadores de carga são exibidos. Leia as descrições de cada tipo para entender suas capacidades.</span></p></li><li><p><span>Em </span><strong><span>Application Load Balancer</span></strong><span>, escolha </span><span id="ssb_blue"><span>Create</span></span><span> (Criar)</span></p></li><li><p><span>Em </span><strong><span>Nome</span></strong><span>, insira: </span><code>Inventory-LB</code></p></li><li><p><span>Role até a seção </span><strong><span>Availability Zones</span></strong><span> (Zonas de disponibilidade) e, para </span><strong><span>VPC</span></strong><span>, selecione </span><strong><span>Lab VPC</span></strong><span>.</span></p><p><span>Agora você especificará quais </span><em><span>sub-redes</span></em><span> o balanceador de carga deve usar. Ele será um balanceador de carga voltado para a Internet, portanto você selecionará as duas sub-redes públicas.</span></p></li><li><p><span>Escolha a </span><strong><span>primeira</span></strong><span> zona de disponibilidade e a </span><strong><span>Public Subnet</span></strong><span> (Sub-rede pública) exibida.</span></p></li><li><p><span>Escolha a </span><strong><span>segunda</span></strong><span> zona de disponibilidade e a </span><strong><span>Public Subnet</span></strong><span> (Sub-rede pública) exibida.</span></p><p><span>Agora você deve ter duas sub-redes selecionadas: </span><strong><span>Sub-rede pública 1</span></strong><span> e </span><strong><span>Sub-rede pública 2</span></strong><span>. (Caso contrário, volte e tente a configuração novamente.)</span></p></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Next: Configure Security Settings</span></span><span> (Próximo: Definir as configurações de segurança)</span></p><p><span>É exibido um aviso recomendando que você use HTTP Seguro (HTTPS) para melhorar a segurança. Esse é um bom conselho, mas não é necessário para este laboratório.</span></p></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Next: Configure Security Groups</span></span><span> (Próximo: Configurar grupos de segurança)</span></p><p><span>Agora, você criará um grupo de segurança que aceite todo o tráfego </span><em><span>HTTP</span></em><span> e </span><em><span>HTTPS</span></em><span> de entrada.</span></p></li><li><p><span>Selecione </span><i class="far fa-dot-circle"></i><span> </span><strong><span>Crie um </span><em><span>novo</span></em><span> grupo de segurança</span></strong><span> e, depois, configure:</span></p><ul><li><strong><span>Nome do grupo de segurança:</span></strong><span> </span><code>Inventory-LB</code></li><li><strong><span>Descrição:</span></strong><span> </span><code>Habilitar acesso do balanceador de carga à Web</code></li></ul></li><li><p><span>Configure a regra existente (que já está na página) como:</span></p><ul><li><strong><span>Tipo</span></strong><span>: </span><em><span>HTTP</span></em></li><li><strong><span>Origem</span></strong><span>: </span><em><span>qualquer lugar</span></em></li></ul></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Add Rule</span></span><span> (Adicionar regra) e configure:</span></p><ul><li><strong><span>Tipo:</span></strong><span> </span><em><span>HTTPS</span></em></li><li><strong><span>Origem</span></strong><span>: </span><em><span>qualquer lugar</span></em></li></ul><p><span>Essas configurações aceitarão todas as solicitações HTTP e HTTPS recebidas.</span></p></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Next: Configure Routing</span></span><span> (Próximo: Configurar roteamento)</span></p><p><em><span>Grupos de destino</span></em><span> definem para onde </span><em><span>enviar</span></em><span> o tráfego que entra no balanceador de carga. O Application Load Balancer pode enviar tráfego para vários grupos de destino com base no URL da solicitação recebida. Um exemplo seria enviar solicitações de aplicativos móveis a um conjunto diferente de servidores. Sua aplicação Web usará apenas um grupo de destino.</span></p></li><li><p><span>Em </span><strong><span>Nome</span></strong><span>, insira: </span><code>Inventory-App</code></p></li><li><p><span>Expanda </span><i class="fas fa-caret-right"></i><span> </span><strong><span>Configurações avançadas de verificação de integridade</span></strong><span>.</span></p><p><span>O Application Load Balancer executa automaticamente </span><em><span>verificações de integridade</span></em><span> em todas as instâncias para garantir que elas estejam respondendo às solicitações. As configurações padrão são recomendadas, mas isso fará com que elas sejam um pouco mais rápidas neste laboratório.</span></p></li><li><p><span>Configure estes valores:</span></p><ul><li><strong><span>Limite de integridade:</span></strong><span> </span><code>2</code></li><li><strong><span>Intervalo:</span></strong><span> </span><code>10</code></li></ul><p><span>Isso significa que a verificação de integridade será executada a cada 10 segundos. Se a instância responder corretamente duas vezes seguidas, ela será considerada íntegra.</span></p></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Next: Register Targets</span></span><span> (Próximo: Registrar destinos)</span></p><p><em><span>Destinos</span></em><span> são as instâncias individuais que responderão às solicitações do balanceador de carga. Você ainda não tem nenhuma instância de aplicação Web, portanto pode ignorar esta etapa.</span></p></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Next: Review</span></span><span> (Próximo: Revisar)</span></p></li><li><p><span>Revise as configurações. Escolha </span><span id="ssb_blue"><span>Create</span></span><span> (Criar) e </span><span id="ssb_blue"><span>Close</span></span><span> (Fechar)</span></p><p><span>Agora, seu balanceador de carga será provisionado em segundo plano. Você não precisa esperar.</span></p></li></ol><br><h2 id='tarefa-3-criar-um-grupo-de-auto-scaling'><span>Tarefa 3: criar um grupo de Auto Scaling</span></h2><p><span>O </span><em><span>Amazon EC2 Auto Scaling</span></em><span> é um serviço feito para </span><em><span>executar</span></em><span> ou </span><em><span>encerrar</span></em><span> instâncias do Amazon EC2 automaticamente com base em políticas, programações e verificações de integridade definidas pelo usuário. Ele também </span><em><span>distribui automaticamente instâncias em várias zonas de disponibilidade</span></em><span> para tornar as aplicações </span><em><span>altamente disponíveis</span></em><span>.</span></p><p><span>Nesta tarefa, você criará um grupo de Auto Scaling que implanta instâncias do EC2 em </span><em><span>sub-redes privadas</span></em><span>, o que é uma das melhores práticas de segurança para a implantação de aplicações. As instâncias de uma sub-rede privada não podem ser acessadas pela Internet. Em vez disso, os usuários enviam solicitações para o balanceador de carga, que encaminha as solicitações para instâncias do EC2 nas sub-redes privadas.</span></p><p><img src="images/module-9-guided-lab-task-3.png" referrerpolicy="no-referrer" alt="Tarefa 3"></p><br><h3 id='criar-uma-ami-para-o-auto-scaling'><span>Criar uma AMI para o Auto Scaling</span></h3><p><span>Nesta tarefa, você criará uma AMI a partir do </span><em><span>Servidor da Web 1</span></em><span> existente. Isso salvará o conteúdo do disco de execução para que novas instâncias possam ser executadas com conteúdo idêntico.</span></p><ol start='37' ><li><p><span>No </span><strong><span>Console de Gerenciamento da AWS</span></strong><span>, no menu </span><span id="ssb_services"><span>Services</span><i class="fas fa-angle-down"></i></span><span> (Serviços), clique em </span><strong><span>EC2</span></strong><span>.</span></p></li><li><p><span>No painel de navegação esquerdo, clique em </span><strong><span>Instances</span></strong><span> (Instâncias).</span></p><p><span>Primeiro, você confirmará que a instância está em execução.</span></p></li><li><p><span>Aguarde até que as </span><strong><span>Status Checks</span></strong><span> (Verificações de status) para o </span><strong><span>Web Server 1</span></strong><span> (Servidor da Web 1) exiba </span><em><span>2/2 checks passed (2/2 verificações aprovadas)</span></em><span>. Clique em Refresh (Atualizar) </span><i class="fas fa-sync"></i><span> para atualizar.</span></p><p><span>Agora, você criará uma AMI com base nessa instância.</span></p></li><li><p><span>Selecione </span><i class="far fa-check-square"></i><span> </span><strong><span>Web Server 1</span></strong><span> (Servidor da Web 1).</span></p></li><li><p><span>No menu </span><span id="ssb_grey"><span>Actions</span><i class="fas fa-angle-down"></i></span><span> (Ações), clique em </span><strong><span>Image</span></strong><span> (Imagem) &gt; </span><strong><span>Create Image</span></strong><span> (Criar imagem) e configure:</span></p><ul><li><strong><span>Image name</span></strong><span> (Nome da imagem): </span><code>Web Server AMI (AMI do servidor da Web)</code></li><li><strong><span>Descrição da imagem</span></strong><span>: </span><code>AMI do laboratório para o servidor da Web</code></li></ul></li><li><p><span>Clique em </span><span id="ssb_orange"><span>Create image</span></span><span> (Criar imagem)</span></p><p><span>A tela de confirmação exibe o </span><strong><span>ID da AMI</span></strong><span> para a nova AMI.</span></p></li><li><p><span>Clique em </span><span id="ssb_blue"><span>Close</span></span><span> (Fechar)</span></p><p><span>Você usará essa AMI ao iniciar o grupo de Auto Scaling posteriormente no laboratório.</span></p></li></ol><br><h3 id='criar-uma-configuração-de-execução-e-um-grupo-de-auto-scaling'><span>Criar uma configuração de execução e um grupo de Auto Scaling</span></h3><p><span>Primeiro, você criará uma </span><em><span>configuração de execução</span></em><span> que define o tipo de instâncias que o Amazon EC2 Auto Scaling deve executar. A interface é semelhante a quando você executa uma instância do EC2. No entanto, em vez de executar uma instância, ela </span><em><span>armazena</span></em><span> a configuração para uso posterior.</span></p><ol start='44' ><li><p><span>No painel de navegação à esquerda, escolha </span><strong><span>Launch Configurations (Configurações de execução)</span></strong><span>.</span></p></li><li><p><span>Escolha </span><span id="ssb_orange"><span>Create launch configuration</span></span><span> (Criar configuração de execução)</span></p></li><li><p><span>Defina estas configurações:</span></p><ul><li><p><strong><span>Nome da configuração de execução:</span></strong><span> </span><code>Inventory-LC</code></p></li><li><p><strong><span>Imagem de máquina da Amazon (AMI):</span></strong><span> escolha </span><em><span>Web Server AMI (AMI do servidor da Web)</span></em></p></li><li><p><strong><span>Tipo de instância:</span></strong></p><ul><li><span>Selecione </span><span id="ssb_white"><span>Choose instance type</span></span><span> (Escolher tipo de instância)</span></li><li><span>Selecione </span><em><span>t3.micro</span></em></li><li><span>Escolha </span><span id="ssb_orange"><span>Choose</span></span><span> (Escolher)</span></li></ul><p><strong><span>Observação:</span></strong><span> se você executou o laboratório na região us-east-1, selecione o tipo de instância </span><strong><span>t2.micro</span></strong><span>. Para localizar a região, olhe no canto superior direito do console do Amazon EC2.</span></p><p><strong><span>Observação:</span></strong><span> se você receber a mensagem de erro &quot;Algo deu errado. Atualize e tente novamente.&quot;, ignore-a e prossiga com o exercício.</span></p></li><li><p><strong><span>Configuração adicional</span></strong></p><ul><li><strong><span>IAM instance profile</span></strong><span> (Perfil de instância do IAM): selecione </span><em><span>Inventory-App-Role</span></em></li></ul></li><li><p><strong><span>Monitoring</span></strong><span> (Monitoramento): </span></i><span>selecione </span><i class="far fa-check-square"></i><span> </span><em><span>Enable EC2 instance detailed monitoring within CloudWatch (Habilitar monitoramento detalhado de instância do EC2 no CloudWatch)</span></em></p><p><span>Isso permite que o Auto Scaling reaja rapidamente a alterações na utilização.</span></p></li></ul></li><li><p><span>Expanda </span><i class="fas fa-caret-right"></i><span> </span><strong><span>Detalhes avançados</span></strong><span>. Em </span><strong><span>Dados do usuário</span></strong><span>, copie e cole este script:</span></p></li></ol><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">#!/bin/bash</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Install Apache Web Server and PHP</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">yum install <span class="cm-attribute">-y</span> httpd mysql</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">amazon-linux-extras install <span class="cm-attribute">-y</span> php7.2</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Download Lab files</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod9-guided/scripts/inventory-app.zip</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">unzip inventory-app.zip <span class="cm-attribute">-d</span> /var/www/html/</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Download and install the AWS SDK for PHP</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> https://github.com/aws/aws-sdk-php/releases/download/3.62.3/aws.zip</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">unzip aws <span class="cm-attribute">-d</span> /var/www/html</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Turn on web server</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">chkconfig httpd on</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">service</span> httpd <span class="cm-builtin">start</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 314px;"></div><div class="CodeMirror-gutters" style="display: none; height: 314px;"></div></div></div></pre><ol start='48' ><li><span>Em </span><strong><span>Grupos de segurança</span></strong></li></ol><ul><li><strong><span>Select an existing security group</span></strong><span> (Selecione um grupo de segurança existente): </span><em><span>Inventory-App</span></em></li></ul><p><i class="fas fa-comment"></i><span> Será exibido um aviso de que </span><em><span>Você não será capaz de se conectar à instância</span></em><span>. Ignore esse aviso, porque você não se conectará à instância. Toda a configuração é feita pelo script de dados do usuário.</span></p><ol start='49' ><li><span>Em </span><strong><span>Par de chaves</span></strong><span> (login):</span></li></ol><ul><li><span>Selecione </span><strong><span>Proceed without a key pair</span></strong><span> (Prosseguir sem um par de chaves)</span></li><li><span>Selecione </span><i class="far fa-check-square"></i><span> </span><em><span>Reconheço que...</span></em></li></ul><ol start='50' ><li><span>Escolha </span><span id="ssb_orange"><span>Create launch configuration</span></span><span> (Criar configuração de execução)</span></li></ol><p><span>A </span><em><span>configuração de execução</span></em><span> definiu </span><em><span>o que executar</span></em><span>, mas o </span><em><span>grupo de Auto Scaling</span></em><span> define </span><em><span>onde executar</span></em><span> os recursos.</span></p><ol start='51' ><li><p><span>Na tabela </span><strong><span>Launch configurations</span></strong><span> (Configurações de execução), selecione </span><i class="far fa-check-square"></i><span> </span><em><span>Inventory-LC</span></em><span>.</span></p></li><li><p><span>No menu </span><span id="ssb_white"><span>Actions</span><i class="fas fa-caret-down"></i></span><span> (Ações), escolha </span><em><span>Create Auto Scaling group (Criar grupo de Auto Scaling)</span></em></p></li><li><p><span>Insira o nome do grupo de Auto Scaling:</span></p><ul><li><strong><span>Nome:</span></strong><span>  </span><code>Inventory-ASG</code><span> (</span><em><span>ASG</span></em><span> significa </span><em><span>grupo de Auto Scaling, na sigla em inglês</span></em><span>)</span></li></ul></li><li><p><span>Escolha </span><span id="ssb_orange"><span>Next</span></span><span> (Próximo)</span></p></li><li><p><span>Na página </span><strong><span>Network</span></strong><span> (Rede), configure</span></p><ul><li><strong><span>VPC:</span></strong><span> </span><em><span>Lab VPC</span></em></li><li><strong><span>Subnet</span></strong><span> (Sub-rede): selecione </span><em><span>Sub-rede privada 1</span></em><span> </span><strong><span>e</span></strong><span> </span><em><span>Sub-rede privada 2</span></em></li></ul><p><i class="fas fa-comment"></i><span> Você pode ignorar o aviso que diz </span><em><span>Nenhum endereço IP público será atribuído</span></em><span>. As instâncias do EC2 serão executadas em uma </span><em><span>sub-rede privada</span></em><span>, então não necessitam de endereços IP públicos.</span></p><p><span>Isso executará instâncias do EC2 em sub-redes privadas em ambas as zonas de disponibilidade.</span></p></li><li><p><span>Escolha </span><span id="ssb_orange"><span>Next</span></span><span> (Próximo)</span></p></li><li><p><span>Em </span><strong><span>Balanceamento de carga</span></strong><span>:</span></p><ul><li><span>Selecione </span><i class="far fa-check-square"></i><span> </span><strong><span>Enable load balancing</span></strong><span> (Habilitar balanceamento de carga)</span></li><li><span>Escolha </span><strong><span>Application Load Balancer or Network Load Balancer</span></strong><span> (Application Load Balancer ou Network Load Balancer)</span></li><li><strong><span>Escolha um grupo de destino para o balanceador de carga:</span></strong><span>  </span><em><span>Inventory-App</span></em></li></ul><p><span>Essas configurações dizem ao grupo de Auto Scaling para registrar novas instâncias do EC2 como parte do grupo-alvo do </span><em><span>Application-App</span></em><span> criado anteriormente. O balanceador de carga enviará tráfego para instâncias que estão nesse grupo de destino.</span></p></li><li><p><span>Em </span><strong><span>Verificações de integridade</span></strong><span>:</span></p></li></ol><ul><li><span>Selecione </span><i class="far fa-check-square"></i><span> </span><strong><span>ELB</span></strong></li><li><strong><span>Período de carência da verificação de integridade:</span></strong><span> 90</span></li></ul><ol start='59' ><li><span>Em </span><strong><span>Configurações adicionais:</span></strong></li></ol><ul><li><span>selecione </span><i class="far fa-check-square"></i><span> </span><strong><span>Habilitar coleta de métricas de grupo no CloudWatch</span></strong></li></ul><ol start='60' ><li><p><span>Escolha </span><span id="ssb_orange"><span>Next</span></span><span> (Próximo)</span></p></li><li><p><span>Em </span><strong><span>Group Size</span></strong><span> (Tamanho do grupo), configure:</span></p><ul><li><strong><span>Desired capacity</span></strong><span> (Capacidade desejada): 2</span></li><li><strong><span>Capacidade mínima:</span></strong><span> 2</span></li><li><strong><span>Capacidade máxima:</span></strong><span> 2</span></li></ul></li><li><p><span>Em </span><strong><span>Scaling policies</span></strong><span> (Políticas de escalabilidade), escolha </span><em><span>None (Nenhuma)</span></em><span>.</span></p><p><span>Para este laboratório, você </span><em><span>manterá duas instâncias em todos os momentos</span></em><span> para garantir </span><em><span>alta disponibilidade</span></em><span>. Caso espere-se que a aplicação receberá cargas variadas de tráfego, você também pode criar </span><em><span>políticas de dimensionamento</span></em><span>, que definem quando executar ou encerrar instâncias. No entanto, você não precisa criar políticas de disponibilidade para a aplicação de inventário deste laboratório.</span></p></li><li><p><span>Escolha </span><span id="ssb_orange"><span>Next</span></span><span> (Próximo)</span></p></li><li><p><span>Na página </span><strong><span>Add notifications</span></strong><span> (Adicionar notificações), escolha </span><span id="ssb_orange"><span>Next</span></span><span> (Avançar). Não é necessário alterar essas configurações.</span></p></li><li><p><span>Na página </span><strong><span>Add tags</span></strong><span> (Adicionar tags), escolha </span><span id="ssb_white"><span>Add tag</span></span><span> (Adicionar tag)</span></p><ul><li><strong><span>Key</span></strong><span> (Chave): </span><code>Name (Nome)</code></li><li><strong><span>Valor:</span></strong><span> </span><code>Inventory-App</code></li><li><span>Selecione </span><i class="far fa-check-square"></i><span> </span><span id="ssb_orange"><span>Próximo</span></span></li></ul><p><span>Essas configurações atribuirão uma </span><em><span>tag</span></em><span> ao grupo de Auto Scaling com um </span><em><span>nome</span></em><span>, que também aparecerá nas instâncias do EC2 que são executadas pelo grupo de Auto Scaling. Você pode usar tags para identificar quais instâncias do Amazon EC2 estão associadas a quais aplicações. Você também pode adicionar tags como </span><em><span>Centro de custo</span></em><span> para atribuir custos de aplicações nos arquivos de faturamento.</span></p></li><li><p><span>Na página **Review (Revisão):</span></p><ul><li><span>Escolha </span><span id="ssb_orange"><span>Create Auto Scaling group</span></span><span> (Criar grupo de Auto Scaling)</span></li></ul><p><em><span>Inventory-ASG</span></em><span> aparecerá no console:</span></p><p><img src="images/asg-console.png" referrerpolicy="no-referrer" alt="Console do grupo de Auto Scaling"></p><p><span>A revisão mostra que:</span></p><ul><li><span>No momento, o grupo </span><em><span>não tem instâncias</span></em><span>, mas o ícone de informações </span><i class="fas fa-info-circle"></i><span> indica que as instâncias estão sendo executadas. (Passe sobre o ícone para obter mais detalhes.)</span></li><li><span>A quantidade </span><strong><span>desejada</span></strong><span> é </span><em><span>2 instâncias</span></em><span>. O Amazon EC2 Auto Scaling tentará executar duas instâncias para alcançar a quantidade desejada</span></li><li><span>O </span><strong><span>mínimo</span></strong><span> e o </span><strong><span>máximo</span></strong><span> também serão definidos como </span><em><span>2 instâncias</span></em><span>. O Amazon EC2 Auto Scaling tentará sempre fornecer duas instâncias, mesmo que haja falhas.</span></li></ul><p><span>A aplicação logo será executada em duas zonas de disponibilidade. O Amazon EC2 Auto Scaling manterá essa configuração mesmo que alguma instância ou zona de disponibilidade falhe.</span></p><p><span>Depois de um minuto, escolha </span><i class="fas fa-sync"></i><span> </span><strong><span>Atualize</span></strong><span> para ver a nova exibição. Ela deve mostrar que </span><em><span>2 instâncias</span></em><span> estão em execução.</span></p></li></ol><br><h2 id='tarefa-4-atualizar-grupos-de-segurança'><span>Tarefa 4: atualizar grupos de segurança</span></h2><p><span>A aplicação que você implantou é uma </span><em><span>arquitetura de três camadas</span></em><span>. Agora você configurará os grupos de segurança para reforçar estas camadas:</span></p><p><img src="images/module-9-guided-lab-task-4.png" referrerpolicy="no-referrer" alt="Tarefa 4"></p><br><h3 id='grupo-de-segurança-do-balanceador-de-carga'><span>Grupo de segurança do balanceador de carga</span></h3><p><span>Você já configurou o </span><em><span>grupo de segurança do balanceador de carga</span></em><span> quando criou o balanceador de carga. Ele aceita todo o tráfego </span><em><span>HTTP</span></em><span> e </span><em><span>HTTPS</span></em><span> de entrada.</span></p><p><span>O balanceador de carga foi configurado para encaminhar as solicitações recebidas para um </span><em><span>grupo de destino</span></em><span>. Quando o Auto Scaling executar novas instâncias, ele automaticamente adicionará essas instâncias ao grupo de destino.</span></p><br><h3 id='grupo-de-segurança-da-aplicação-web'><span>Grupo de segurança da aplicação Web</span></h3><p><span>O </span><em><span>grupo de segurança de aplicações</span></em><span> foi fornecido como parte da configuração do laboratório. Agora você o configurará para aceitar apenas o tráfego de entrada do balanceador de carga.</span></p><ol start='67' ><li><span>No painel de navegação à esquerda, escolha </span><strong><span>Security Groups (Grupos de segurança)</span></strong><span>.</span></li><li><span>Selecione </span><i class="far fa-check-square"></i><span> </span><strong><span>Inventory-App</span></strong><span>.</span></li><li><span>Na parte inferior da página, escolha a guia </span><strong><span>Inbound rules</span></strong><span> (Regras de entrada).</span></li></ol><p><span>O grupo de segurança está vazio no momento. Agora você adicionará uma regra para aceitar o tráfego </span><em><span>HTTP</span></em><span> de entrada do balanceador de carga. Você não precisa configurar o tráfego </span><em><span>HTTPS</span></em><span> porque o balanceador de carga foi configurado para encaminhar solicitações HTTPS via HTTP. Essa prática passa a segurança para o balanceador de carga, reduzindo a quantidade de trabalho exigida pelos servidores de aplicações individuais.</span></p><ol start='70' ><li><span>Escolha </span><span id="ssb_grey"><span>Edit inbound rules</span></span><span> (Editar regras de entrada).</span></li><li><span>Na página </span><strong><span>Edit inbound rules</span></strong><span> (Editar regras de entrada), escolha </span><span id="ssb_grey"><span>Add rule</span></span><span> (Adicionar regra) e defina estas configurações:</span></li></ol><ul><li><p><strong><span>Tipo</span></strong><span>: </span><em><span>HTTP</span></em></p></li><li><p><strong><span>Origem:</span></strong></p><ul><li><span>Clique na caixa de pesquisa ao lado de </span><strong><span>Custom</span></strong><span> (Personalizado)</span></li><li><span>Exclua o conteúdo atual</span></li><li><span>Digite </span><code>sg</code></li><li><span>Selecione </span><strong><span>Inventory-LB</span></strong><span> na lista que será exibida</span></li></ul></li><li><p><strong><span>Descrição:</span></strong><span> </span><code>tráfego do balanceador de carga</code></p></li><li><p><span>Escolha </span><span id="ssb_orange"><span>Save rules</span></span><span> (Salvar regras)</span></p></li></ul><p><span>Os servidores de aplicações agora podem receber tráfego do balanceador de carga. Isso inclui </span><em><span>verificações de integridade</span></em><span> que o balanceador de carga executa automaticamente.</span></p><br><h3 id='grupo-de-segurança-de-banco-de-dados'><span>Grupo de segurança de banco de dados</span></h3><p><span>Agora, você configurará o </span><em><span>grupo de segurança do banco de dados</span></em><span> para aceitar apenas o tráfego de entrada dos servidores de aplicações.</span></p><ol start='72' ><li><span>Selecione </span><i class="far fa-check-square"></i><span> </span><strong><span>Inventory-DB</span></strong><span> (e garanta que nenhum outro grupo de segurança esteja selecionado).</span></li></ol><p><span>A regra existente permite tráfego na porta 3306 (usada pelo MySQL) de qualquer endereço IP dentro da VPC. Essa é uma boa regra, mas a segurança pode ser restringida ainda mais.</span></p><ol start='73' ><li><span>Na guia </span><strong><span>Inbound rules</span></strong><span> (Regras de entrada), escolha </span><span id="ssb_grey"><span>Edit inbound rules</span></span><span> (Editar regras de entrada) e defina estas configurações:</span></li></ol><ul><li><span>Clique na caixa de pesquisa ao lado de </span><strong><span>Custom</span></strong><span> (Personalizado)</span></li><li><span>Exclua o conteúdo atual</span></li><li><span>Digite </span><code>sg</code></li><li><span>Selecione </span><strong><span>Inventory-App</span></strong><span> na lista exibida</span></li><li><strong><span>Descrição:</span></strong><span> </span><code>tráfego de servidores de aplicações</code></li><li><span>Escolha </span><span id="ssb_orange"><span>Save rules</span></span><span> (Salvar regras)</span></li></ul><p><span>Você acaba de configurar a </span><em><span>segurança de três camadas</span></em><span>. Cada elemento da camada aceita somente tráfego da camada superior.</span></p><p><span>Além disso, o uso de sub-redes privadas significa que você tem duas barreiras de segurança entre a Internet e os recursos da aplicação. Essa arquitetura segue as melhores práticas para aplicar várias camadas de segurança.</span></p><br><h2 id='tarefa-5-testar-a-aplicação'><span>Tarefa 5: testar a aplicação</span></h2><p><span>Sua aplicação agora está pronta para testes.</span></p><p><span>Nesta tarefa, você poderá confirmar se a aplicação Web está em execução e testar se ela é altamente disponível.</span></p><ol start='74' ><li><span>No painel de navegação, escolha </span><strong><span>Target Groups</span></strong><span> (Grupos de destino).</span></li></ol><p><span>O grupo de instâncias </span><em><span>Inventory-App</span></em><span> será exibido.</span></p><ol start='75' ><li><span>Na parte inferior da página, escolha a guia </span><strong><span>Targets</span></strong><span> (Destinos).</span></li></ol><p><span>Essa guia deve mostrar dois </span><em><span>destinos registrados</span></em><span>. A coluna </span><strong><span>Status</span></strong><span> mostra os resultados da verificação de integridade do balanceador de carga executada nas instâncias.</span></p><ol start='76' ><li><span>Na área superior direita, escolha </span><i class="fas fa-sync"></i><span> ocasionalmente </span><strong><span>Atualize</span></strong><span> até que o </span><strong><span>Status</span></strong><span> de ambas as instâncias apareça como </span><em><span>íntegro</span></em><span>.</span></li></ol><p><span>Se o status não mudar para </span><em><span>saudável</span></em><span>, peça ajuda ao educador para diagnosticar a configuração. Passe sobre o ícone </span><i class="fas fa-info-circle"></i><span> na coluna </span><strong><span>Status</span></strong><span> para acessar mais informações.</span></p><p><span>Você testará a aplicação conectando-se ao balanceador de carga, que enviará sua solicitação para uma das instâncias do EC2. Primeiro, você precisará recuperar o nome do Domain Name System (DNS) do balanceador de carga.</span></p><ol start='77' ><li><span>No painel de navegação à esquerda, escolha </span><strong><span>Load Balancers</span></strong><span>.</span></li><li><span>Na guia </span><strong><span>Description (Descrição)</span></strong><span> na parte inferior da página, copie o </span><strong><span>DNS Name</span></strong><span> (Nome da DNS) para a área de transferência.</span></li></ol><p><span>Ele deve ser semelhante a: </span><em><span>inventory-LB-xxxx.elb.amazonaws.com</span></em></p><ol start='79' ><li><span>Abra uma nova guia do navegador Web, cole o nome do DNS da sua área de transferência e selecione ENTER.</span></li></ol><p><span>O balanceador de carga encaminhou sua solicitação para uma das instâncias do EC2. O ID da instância e a zona de disponibilidade são mostrados na parte inferior da página da Web.</span></p><ol start='80' ><li><p><span>Recarregue a página </span><i class="fas fa-sync"></i><span> no seu navegador da Web. Você deve notar que pode haver diferenças no ID e na zona de disponibilidade das duas instâncias.</span></p><p><span>Quando esta aplicação Web é exibida, o fluxo de informações é:</span></p><p><img src="images/module-9-guided-lab-task-5.png" referrerpolicy="no-referrer" alt="Tarefa 5"></p><ul><li><span>Você enviou a solicitação para o </span><em><span>balanceador de carga</span></em><span>, que fica nas </span><em><span>sub-redes públicas</span></em><span> conectadas à internet.</span></li><li><span>O balanceador de carga escolheu uma das </span><em><span>instâncias do EC2</span></em><span> que residem nas </span><em><span>sub-redes privada</span></em><span> e encaminhou a solicitação para ela.</span></li><li><span>A instância do EC2 retornou a página da Web para o balanceador de carga, que a retornou ao seu navegador da Web.</span></li></ul></li></ol><p><br>
+<span>##Tarefa 6: testar a alta disponibilidade</span></p><p><span>Sua aplicação foi configurada para estar altamente disponível. Você pode comprovar a alta disponibilidade dela encerrando uma das instâncias do EC2.</span></p><ol start='81' ><li><p><span>Volte para a guia do </span><strong><span>Console do Amazon EC2</span></strong><span> no navegador da Web (mas não feche a guia da aplicação Web, você retornará a ela em breve).</span></p></li><li><p><span>No painel de navegação à esquerda, escolha </span><strong><span>Instances</span></strong><span> (Instâncias).</span></p><p><span>Agora, você encerrará uma das instâncias da aplicação Web para simular uma falha.</span></p></li><li><p><span>Selecione </span><i class="far fa-check-square"></i><span> uma das instâncias do </span><strong><span>Inventory-App</span></strong><span> (não importa qual).</span></p></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Actions</span><i class="fas fa-angle-down"></i></span><span> (Ações) e depois </span><strong><span>Instance State</span></strong><span> (Estado da instância) &gt; </span><strong><span>Terminate </span></strong><span>(Encerrar).</span></p></li><li><p><span>Escolha </span><strong><span>Yes, Terminate</span></strong><span> (Sim, encerrar)</span></p><p><span>Em um curto período, as verificações de integridade do balanceador de carga perceberão que a instância não está respondendo e automaticamente roteará todas as solicitações para a instância restante.</span></p></li><li><p><span>Volte para a guia da aplicação Web no navegador e recarregue </span><i class="fas fa-sync"></i><span> a página várias vezes.</span></p><p><span>Você deve notar que a </span><em><span>zona de disponibilidade</span></em><span> que é mostrada na parte inferior da página permanece a mesma. Embora uma instância tenha falhado, a aplicação permanece disponível.</span></p><p><span>Após alguns minutos, o Amazon EC2 Auto Scaling também notará a falha da instância. Ele foi configurado para manter duas instâncias em execução, portanto </span><em><span>executará automaticamente uma instância de substituição</span></em><span>.</span></p></li><li><p><span>Retorne à guia do </span><strong><span>Console do Amazon EC2</span></strong><span> em seu navegador da Web. Na área superior direita, atualize a cada 30 segundos </span><i class="fas fa-sync"></i><span> até que uma nova instância do EC2 seja exibida.</span></p><p><span>Após alguns minutos, a verificação de integridade da nova instância deve se tornar íntegra. O balanceador de carga continuará enviando tráfego entre duas zonas de disponibilidade. Você pode recarregar a guia da aplicação da Web para ver isso acontecer.</span></p><p><span>Essa tarefa mostra que a aplicação agora está </span><em><span>altamente disponível</span></em><span>.</span></p></li></ol><br><h2 id='tarefa-opcional-1-tornar-o-banco-de-dados-altamente-disponível'><span>Tarefa opcional 1: Tornar o banco de dados altamente disponível</span></h2><p><i class="fas fa-comment"></i><span> </span><em><span>Esta tarefa é </span><strong><span>opcional</span></strong><span>. Você pode trabalhar nela se tiver tempo sobrando no laboratório.</span></em></p><p><span>A arquitetura da aplicação agora está altamente disponível. No entanto, o banco de dados do Amazon RDS opera a partir de apenas uma instância de banco de dados.</span></p><p><span>Nesta tarefa opcional, você tornará o banco de dados altamente disponível. Para isso, ele será configurado para ser executado em várias zonas de disponibilidade (ou seja, em uma </span><em><span>implantação Multi-AZ</span></em><span>).</span></p><p><img src="images/module-9-guided-lab-challenge-1.png" referrerpolicy="no-referrer" alt="Tarefa opcional 1"></p><ol start='88' ><li><span>No menu </span><span id="ssb_services"><span>Services</span><i class="fas fa-angle-down"></i></span><span> (Serviços), escolha </span><strong><span>RDS</span></strong><span>.</span></li><li><span>No painel de navegação à esquerda, escolha </span><strong><span>Databases</span></strong><span> (Bancos de dados).</span></li><li><span>Escolha </span><span style="color:blue;"><span>inventory-db</span></span></li></ol><p><span>Fique à vontade para explorar as informações sobre o banco de dados.</span></p><ol start='91' ><li><span>Escolha </span><span id="ssb_rds_white"><span>Modify</span></span><span> (Modificar).</span></li><li><span>Para </span><strong><span>Multi-AZ deployment</span></strong><span> (Implantação Multi-AZ), selecione </span><i class="far fa-dot-circle"></i><span> </span><strong><span>Sim</span></strong><span>.</span></li></ol><p><span>Você só precisa fazer isso para converter o banco de dados para ser executado em vários datacenters (zonas de disponibilidade).</span></p><p><span>Essa opção não significa que o banco de dados seja </span><em><span>distribuído</span></em><span> em várias instâncias. Em vez disso, uma instância é a instância </span><em><span>primária</span></em><span>, que lida com todas as solicitações. Outra instância será executada como a instância </span><em><span>standby</span></em><span>, que assume se a instância primária falhar. Sua aplicação continua usando o mesmo nome DNS para o banco de dados. No entanto, as conexões serão redirecionadas automaticamente para o servidor de banco de dados ativo no momento.</span></p><p><span>Você pode dimensionar uma instância do EC2 e um banco de dados do RDS alterando atributos. Agora, você vai dimensionar o banco de dados.</span></p><ol start='93' ><li><span>Para </span><strong><span>DB instance class</span></strong><span> (Classe da instância de banco de dados), selecione </span><strong><span>db.t3.small</span></strong><span>.</span></li></ol><p><span>Essa ação dobra o tamanho da instância.</span></p><ol start='94' ><li><span>Para </span><strong><span>Armazenamento alocado</span></strong><span>, insira: </span><code>10</code></li></ol><p><span>Essa ação duplica a quantidade de espaço alocada ao banco de dados.</span></p><p><span>Sinta-se livre para explorar as outras opções da página, mas não altere nenhum valor.</span></p><ol start='95' ><li><span>Na parte inferior da página, escolha </span><span id="ssb_orange"><span>Continue</span></span><span> (Continuar).</span></li></ol><p><span>A performance do banco de dados será afetada por essas mudanças. Portanto, essas alterações podem ser programadas durante uma janela de manutenção definida ou podem ser executadas imediatamente.</span></p><ol start='96' ><li><p><span>Em </span><strong><span>Scheduling of Modifications</span></strong><span> (Programação de modificações), selecione </span><i class="far fa-dot-circle"></i><span> </span><strong><span>Aplicar imediatamente</span></strong><span>.</span></p></li><li><p><span>Escolha </span><span id="ssb_orange"><span>Modify DB instance</span></span><span> (Modificar instância de banco de dados)</span></p><p><span>O banco de dados insere um estado de </span><em><span>modificação</span></em><span> enquanto aplica as alterações. Você não precisa esperar que ele seja concluído.</span></p></li></ol><br><h2 id='tarefa-opcional-2-configurar-um-gateway-nat-altamente-disponível'><span>Tarefa opcional 2: Configurar um gateway NAT altamente disponível</span></h2><p><i class="fas fa-comment"></i><span> </span><em><span>Esta tarefa é </span><strong><span>opcional</span></strong><span>. Você pode trabalhar nela se tiver tempo sobrando no laboratório.</span></em></p><p><span>Os servidores de aplicações são executados em uma sub-rede privada. Se os servidores precisarem acessar a Internet (por exemplo, para transferir dados), as solicitações devem ser redirecionadas por um </span><em><span>gateway NAT</span></em><span>. (O gateway NAT deve estar em uma sub-rede pública).</span></p><p><span>A arquitetura atual tem apenas um gateway NAT na </span><em><span>Sub-rede pública 1</span></em><span>. Assim, se a zona de disponibilidade 1 falhar, os servidores de aplicações não poderão se comunicar com a Internet.</span></p><p><span>Nesta tarefa opcional, você tornará o gateway NAT altamente disponível executando outro gateway NAT na outra zona de disponibilidade. A arquitetura resultante será altamente disponível:</span></p><p><img src="images/module-9-guided-lab-challenge-2.png" referrerpolicy="no-referrer" alt="Tarefa opcional 2"></p><ol start='98' ><li><p><span>No menu </span><span id="ssb_services"><span>Services (Serviços)</span><i class="fas fa-angle-down"></i></span><span>, escolha </span><strong><span>VPC</span></strong><span>.</span></p></li><li><p><span>No painel de navegação à esquerda, escolha </span><strong><span>NAT Gateways</span></strong><span> (Gateways NAT).</span></p><p><span>O gateway NAT existente será exibido. Agora, você criará um gateway NAT para a outra zona de disponibilidade.</span></p></li><li><p><span>Escolha </span><span id="ssb_orange"><span>Create NAT gateway</span></span><span> (Criar gateway NAT) e defina estas configurações:</span></p><ul><li><strong><span>Subnet</span></strong><span> (Sub-rede): </span><em><span>PublicSubnet2</span></em><span> (selecione esta opção na lista)</span></li></ul><p><i class="fas fa-comment"></i><span>Os detalhes da </span><em><span>sub-rede</span></em><span> estão no início dessas instruções. Escolha </span><strong><span>Details</span></strong><span> (Detalhes) e, à direita da </span><strong><span>AWS</span></strong><span>, escolha </span><strong><span>Show</span></strong><span> (Mostrar). Observe os nomes </span><strong><span>PublicSubnet2</span></strong><span> e </span><strong><span>NATGateway1</span></strong><span>.</span></p><ul><li><span>Escolha </span><span id="ssb_grey"><span>Allocate Elastic IP</span></span><span> (Alocar IP elástico)</span></li><li><span>Escolha </span><span id="ssb_orange"><span>Create NAT gateway</span></span><span> (Criar gateway NAT)</span></li><li><span>Escolha </span><span id="ssb_blue"><span>Edit route tables</span></span><span> (Editar tabelas de rotas)</span></li></ul><p><span>Agora você criará uma nova tabela de rotas para </span><em><span>Private Subnet 2</span></em><span>. Essa tabela de rotas reorientará o tráfego para o novo gateway NAT.</span></p></li><li><p><span>Escolha </span><span id="ssb_blue"><span>Create route table</span></span><span> (Criar tabela de rotas) e defina estas configurações:</span></p><ul><li><strong><span>Name tag</span></strong><span> (Tag de nome): </span><code>Tabela de rotas privada 2</code></li><li><strong><span>VPC:</span></strong><span> </span><em><span>Lab VPC</span></em></li><li><span>Escolha </span><span id="ssb_blue"><span>Create</span></span><span> (Criar) e </span><span id="ssb_blue"><span>Close</span></span><span> (Fechar).</span></li></ul></li><li><p><span>Selecione </span><i class="far fa-check-square"></i><span> </span><strong><span>Tabela de rotas privada 2</span></strong><span> e confirme que essa é a única tabela de rotas selecionada.</span></p></li><li><p><span>Escolha a guia </span><strong><span>Routes</span></strong><span> (Rotas).</span></p><p><span>Atualmente, uma rota direciona todo o tráfego </span><em><span>locally</span></em><span>.</span>
+<span>  </span><br/><span>Você adicionará uma rota para enviar o tráfego voltado à Internet através do novo gateway NAT.</span></p></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Edit routes</span></span><span> (Editar rotas) e defina estas configurações:</span></p><ul><li><span>Escolha </span><span id="ssb_grey"><span>Add route</span></span><span> (Adicionar rota)</span></li><li><strong><span>Destination</span></strong><span> (Destino): </span><code>0.0.0.0/0</code></li></ul><ul><li><strong><span>Target</span></strong><span> (Alvo): selecione </span><em><span>Gateway NAT</span></em><span>, depois a entrada </span><em><span>nat-</span></em><span>, que </span><em><span>não</span></em><span> é a entrada para </span><em><span>NATGateway1</span></em><span> (que está no botão </span><strong><span>Details</span></strong><span> (Detalhes) acima destas instruções)</span></li></ul><ul><li><span>Escolha </span><span id="ssb_blue"><span>Save routes</span></span><span> (Salvar rotas) e </span><span id="ssb_blue"><span>Close</span></span><span> (Fechar)</span></li></ul><p><i class="fas fa-comment"></i><span> O gateway NAT listado sob o botão </span><strong><span>Details</span></strong><span> (Detalhes) (que está acima destas instruções) é para a </span><em><span>Sub-rede pública 1</span></em><span>. Você está configurando a tabela de rotas para usar o </span><em><span>outro</span></em><span> gateway NAT.</span></p></li><li><p><span>Abra a guia </span><strong><span>Subnet Associations</span></strong><span> (Associações de sub-rede).</span></p></li><li><p><span>Escolha </span><span id="ssb_grey"><span>Edit subnet associations (Editar associações de sub-rede)</span></span><span>.</span></p></li><li><p><span>Selecione </span><i class="far fa-check-square"></i><span> </span><strong><span>Sub-rede privada 2</span></strong><span>.</span></p></li><li><p><span>Escolha </span><span id="ssb_blue"><span>Save</span></span><span> (Salvar)</span></p><p><span>Essa ação agora envia o tráfego vinculado à Internet da sub-rede privada 2 para o gateway NAT que está na mesma zona de disponibilidade.</span></p><p><span>Seus gateways NAT agora estão altamente disponíveis. Uma falha em uma zona de disponibilidade não afetará o tráfego na outra zona de disponibilidade.</span></p></li></ol><br><h2 id='enviar-o-trabalho'><span>Enviar o trabalho</span></h2><ol start='109' ><li><p><span>Na parte superior destas instruções, escolha </span><span id="ssb_blue"><span>Submit</span></span><span> (Enviar) para gravar seu progresso e, quando solicitado, escolha </span><strong><span>Yes</span></strong><span> (Sim).</span></p></li><li><p><span>Se os resultados não forem exibidos após alguns minutos, volte ao topo destas instruções e escolha </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Notas).</span></p><p><strong><span>Dica</span></strong><span>: você pode enviar seu trabalho várias vezes. Depois de alterar o trabalho, escolha </span><strong><span>Submit</span></strong><span> (Enviar) novamente. Seu último envio é o que será gravado para este laboratório.</span></p></li><li><p><span>Para ver o feedback detalhado do seu trabalho, escolha </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalhes) e depois </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Visualizar relatório de envio).</span></p></li></ol><br><h2 id='laboratório-concluído-i-classfas-fa-graduation-capi'><span>Laboratório concluído </span><i class="fas fa-graduation-cap"></i></h2><p><i class="fas fa-flag-checkered"></i><span> Parabéns! Você concluiu o laboratório.</span></p><ol start='112' ><li><p><span>Escolha </span><span id="ssb_voc_grey"><span>End Lab</span></span><span> (Encerrar laboratório) na parte superior desta página e, em seguida, selecione </span><span id="ssb_blue"><span>Yes</span></span><span> (Sim) para confirmar que você deseja encerrar o laboratório.</span></p><p><span>Um painel indica que </span><em><span>A EXCLUSÃO foi iniciada... Você pode fechar esta caixa de mensagem agora.</span></em></p></li><li><p><span>Escolha o </span><strong><span>X</span></strong><span> no canto superior direito para fechar o painel.</span></p></li></ol><p>&nbsp;</p><p><em><span>©2020, Amazon Web Services, Inc. e suas afiliadas. Todos os direitos reservados. Este trabalho não pode ser reproduzido ou redistribuído, no todo ou em parte, sem permissão prévia por escrito da Amazon Web Services, Inc. É proibido copiar, emprestar ou vender para fins comerciais.</span></em></p></div></div>
+</body>
+</html>
