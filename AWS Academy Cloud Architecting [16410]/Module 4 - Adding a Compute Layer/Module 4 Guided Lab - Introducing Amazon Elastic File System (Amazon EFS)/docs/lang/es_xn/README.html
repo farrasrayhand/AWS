@@ -1,0 +1,1163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='módulo-4---laboratorio-guiado-introducción-a-amazon-elastic-file-system-amazon-efs'><span>Módulo 4 - Laboratorio guiado: Introducción a Amazon Elastic File System (Amazon EFS)</span></h1><h2 id='información-general-y-objetivos-del-laboratorio'><span>Información general y objetivos del laboratorio</span></h2><p><span>En este laboratorio, se presenta Amazon Elastic File System (Amazon EFS) con la consola de administración de AWS.</span></p><p><span>Después de completar este laboratorio, debería ser capaz de lo siguiente:</span></p><ul><li><span>Iniciar sesión en la consola de administración de AWS</span></li><li><span>Crear un sistema de archivos de Amazon EFS</span></li><li><span>Iniciar sesión en una instancia de Amazon Elastic Compute Cloud (Amazon EC2) que ejecuta Amazon Linux</span></li><li><span>Montar el sistema de archivos en su instancia EC2</span></li><li><span>Analizar y monitorear el rendimiento del sistema de archivos</span></li></ul><br><h2 id='duración'><span>Duración</span></h2><p><span>El tiempo estimado para completar este laboratorio es de </span><strong><span>20 minutos</span></strong><span>.</span></p><br><h2 id='restricciones-de-los-servicios-de-aws'><span>Restricciones de los servicios de AWS</span></h2><p><span>En este entorno de laboratorio, el acceso a los servicios y las acciones de los servicios de AWS puede restringirse a los que se necesiten para cumplir las instrucciones del laboratorio. Es posible que se produzcan errores si intenta acceder a otros servicios o hacer acciones que no sean las que se describen en este laboratorio.</span></p><br><h2 id='acceso-a-la-consola-de-administración-de-aws'><span>Acceso a la consola de administración de AWS</span></h2><ol start='' ><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratorio) y comience a trabajar en él.</span></p><p><span>Se abrirá el panel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratorio), donde se muestra el estado del laboratorio.</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>Sugerencia</span></strong><span>: Si necesita más tiempo para completar el laboratorio, vuelva a hacer clic en el botón </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratorio) para reiniciar el temporizador del entorno.</span></p></li><li><p><span>Espere hasta que el panel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratorio) muestre el mensaje </span><em><span>Lab Status: ready (Estado del laboratorio: listo)</span></em><span> y, luego, cierre el panel haciendo clic en la </span><strong><span>X</span></strong><span>.</span></p></li><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>Con esta acción, se abrirá la consola de administración de AWS en una nueva pestaña del navegador, y el sistema iniciará su sesión de forma automática.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>Sugerencia</span></strong><span>: Si no se abre una nueva pestaña del navegador, por lo general habrá un aviso o un icono en la parte superior, el cual indicará que el navegador impide que el sitio abra ventanas emergentes. Haga clic en el aviso o el icono y elija </span><strong><span>Allow pop ups</span></strong><span> (Permitir ventanas emergentes).</span></p></li><li><p><span>Ubique la pestaña de la </span><strong><span>consola de administración de AWS</span></strong><span> de modo que aparezca junto con estas instrucciones. El método más óptimo sería tener ambas pestañas del navegador abiertas al mismo tiempo para que pueda seguir los pasos del laboratorio más fácilmente.</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>No cambie la región a menos que se le indique expresamente que debe hacerlo</span></strong><span>.</span></p></li></ol><br><h2 id='tarea-1 configurar-un-grupo-de-seguridad-para-acceder-a-su-sistema-de-archivos-de-efs'><span>Tarea 1: Configurar un grupo de seguridad para acceder a su sistema de archivos de EFS</span></h2><p><span>El grupo de seguridad que asocia a un destino de montaje </span><em><span>debe permitir el acceso de entrada para TCP en el puerto 2049 para Network File System (NFS)</span></em><span>. Este es el grupo de seguridad que ahora creará, configurará y asociará a los destinos de montaje de EFS.</span></p><ol start='5' ><li><p><span>En la </span><strong><span>consola de administración de AWS</span></strong><span>, en el menú </span><span id="ssb_services"><span>Services</span></span><span> (Servicios), elija </span><strong><span>EC2</span></strong><span>.</span></p></li><li><p><span>En el panel de navegación de la izquierda, elija </span><strong><span>Security Groups</span></strong><span> (Grupos de seguridad).</span></p></li><li><p><span>Copie el </span><strong><span>ID del grupo de seguridad</span></strong><span> del grupo de seguridad </span><em><span>EFSClient</span></em><span> en el editor de texto.</span></p><p><span>El ID del grupo debería ser similar a </span><em><span>sg-03727965651b6659b</span></em><span>.</span></p></li><li><p><span>Elija </span><span id="ssb_orange"><span>Create security group</span></span><span> (Crear grupo de seguridad) y, a continuación, configure lo siguiente:</span></p><p><a id='securitygroup'></a></p><ul><li><strong><span>Security group name</span></strong><span> (Nombre del grupo de seguridad): </span><code>EFS Mount Target (Destino de montaje de EFS)</code></li><li><strong><span>Description</span></strong><span> (Descripción): </span><code>Inbound NFS access from EFS clients (Acceso de NFS de entrada de clientes EFS)</code></li><li><strong><span>VPC:</span></strong><span> </span><em><span>Lab VPC</span></em></li></ul></li><li><p><span>En la sección </span><strong><span>Inbound rules</span></strong><span> (Reglas de entrada), elija </span><span id="ssb_white"><span>Add rule</span></span><span> (Agregar regla) y, a continuación, configure lo siguiente:</span></p><ul><li><p><strong><span>Type</span></strong><span> (Tipo): </span><em><span>NFS</span></em></p></li><li><p><strong><span>Source</span></strong><span> (Origen):</span></p><ul><li><em><span>Custom (Personalizar)</span></em></li><li><span>En el cuadro </span><em><span>Custom (Personalizar)</span></em><span>, pegue el </span><strong><span>ID del grupo de seguridad</span></strong><span> del grupo de seguridad que copió en el editor de texto</span></li></ul></li><li><p><span>Elija </span><span id="ssb_orange"><span>Create security group</span></span><span> (Crear grupo de seguridad).</span></p></li></ul></li></ol><br><h2 id='tarea-2 crear-un-sistema-de-archivos-de-efs'><span>Tarea 2: Crear un sistema de archivos de EFS</span></h2><p><span>Los sistemas de archivos de EFS se pueden montar en varias instancias EC2 que se ejecutan en diferentes zonas de disponibilidad en la misma región. Estas instancias utilizan </span><em><span>destinos de montaje</span></em><span> que se crean en cada </span><em><span>zona de disponibilidad</span></em><span> para montar el sistema de archivos con la semántica estándar de NFSv4.1. Puede montar el sistema de archivos en instancias en una sola nube privada virtual (VPC) a la vez. Tanto el sistema de archivos como la VPC deben estar en la misma región.</span></p><ol start='10' ><li><p><span>En el menú </span><span id="ssb_services"><span>Services</span></span><span> (Servicios), elija </span><strong><span>EFS</span></strong><span>.</span></p></li><li><p><span>Elija </span><span id="ssb_orange"><span>Create File System</span></span><span> (Crear sistema de archivos)</span></p></li><li><p><span>En la ventana </span><strong><span>Create file system</span></strong><span> (Crear sistema de archivos), elija </span><span id="ssb_white"><span>Customize</span></span><span> (Personalizar)</span></p></li><li><p><span>En el </span><strong><span>paso 1</span></strong><span>:</span></p><ul><li><p><span>Desactive </span><i class="far fa-square"></i><span> Enable automatic backups (Habilitar copias de seguridad automáticas).</span></p></li><li><p><strong><span>Lifecycle management</span></strong><span> (Administración del ciclo de vida): Seleccione </span><em><span>None (Ninguna)</span></em></p></li><li><p><span>En la sección </span><strong><span>Tags</span></strong><span> (Etiquetas), configure:</span></p><ul><li><strong><span>Key</span></strong><span> (Clave): </span><code>Name (Nombre)</code></li><li><strong><span>Value</span></strong><span> (Valor): </span><code>My First EFS File System (Mi primer sistema de archivos EFS)</code></li></ul></li></ul></li><li><p><span>Elija </span><span id="ssb_orange"><span>Next</span></span><span> (Siguiente)</span></p></li><li><p><span>En </span><strong><span>VPC</span></strong><span>, seleccione </span><em><span>Lab VPC</span></em><span>.</span></p></li><li><p><span>Seleccione la casilla de verificación </span><i class="fas fa-times"></i><span> de cada grupo de seguridad predeterminado para desconectar el grupo de seguridad predeterminado de cada destino de montaje de la </span><em><span>zona de disponibilidad</span></em><span>.</span></p></li><li><p><span>Asocie el grupo de seguridad del </span><strong><span>destino de montaje de EFS</span></strong><span> a cada destino de montaje de la </span><em><span>zona de disponibilidad</span></em><span> con los siguientes pasos:</span></p><ul><li><span>Seleccione cada casilla de verificación </span><strong><span>Security groups</span></strong><span> (Grupos de seguridad).</span></li><li><span>Elija </span><strong><span>EFS Mount Target</span></strong><span> (Destino de montaje de EFS).</span></li></ul><p><span>Se crea un destino de montaje para cada subred.</span></p><p><span>Sus destinos de montaje deberían ser similares al siguiente ejemplo. El diagrama muestra dos destinos de montaje en la </span><strong><span>Lab VPC</span></strong><span> que utilizan el grupo de seguridad </span><strong><span>EFS Mount Target</span></strong><span> (Destino de montaje de EFS). En este laboratorio, debe usar la Lab VPC.</span></p><p><img src="images/mount-targets-security-groups.png" alt="Grupos de seguridad de destino" width="600" ></p></li><li><p><span>Elija </span><span id="ssb_orange"><span>Next</span></span><span> (Siguiente)</span></p></li><li><p><span>En el </span><strong><span>paso 3</span></strong><span>, elija </span><span id="ssb_orange"><span>Next</span></span><span> (Siguiente)</span></p></li><li><p><span>En el </span><strong><span>paso 4:</span></strong></p><ul><li><span>Revise la configuración.</span></li><li><span>Elija </span><span id="ssb_orange"><span>Create</span></span><span> (Crear)</span></li></ul><p><i class="far fa-thumbs-up"></i><span> ¡Felicitaciones! Ha creado un nuevo sistema de archivos de EFS en su Lab VPC y destinos de montaje en cada subred de Lab VPC. En unos segundos, el </span><strong><span>File system state</span></strong><span> (Estado del sistema de archivos) del sistema de archivos cambiará a </span><em><span>Available (Disponible)</span></em><span>, y 2 o 3 minutos más tarde lo harán los destinos de montaje.</span></p><p><span>Continúe con el siguiente paso después de que el </span><strong><span>Mount target state</span></strong><span> (Estado del destino de montaje) de cada destino de montaje cambie a </span><em><span>Available (Disponible)</span></em><span>. 2 o 3 minutos más tarde, elija el botón de actualización de la pantalla para comprobar su progreso.</span></p></li></ol><br><h2 id='tarea-3 conectarse-a-su-instancia-ec2-mediante-ssh'><span>Tarea 3: Conectarse a su instancia EC2 mediante SSH</span></h2><p><span>En esta tarea, se conectará a la instancia EC2 mediante Secure Shell (SSH).</span></p><h3 id='i-classfab-fa-windowsi-usuarios-de-microsoft-windows'><i class="fab fa-windows"></i><span> Usuarios de Microsoft Windows</span></h3><p><i class="fas fa-comment"></i><span> Estas instrucciones se dirigen específicamente a usuarios de Microsoft Windows. Si utiliza macOS o Linux,</span><a href="#ssh-MACLinux"><span>pase a la siguiente sección</span></a><span>.</span></p><ol start='21' ><li><p><span>Encima de estas instrucciones, elija el menú desplegable </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalles) y, a continuación, seleccione </span><span id="ssb_voc_grey"><span>Show</span></span><span> (Mostrar).</span></p><p><span>Aparece la ventana </span><strong><span>Credentials</span></strong><span> (Credenciales).</span></p></li><li><p><span>Haga clic en el botón </span><strong><span>Download PPK</span></strong><span> (Descargar PPK) y guarde el archivo </span><strong><span>labsuser.ppk</span></strong><span>.</span></p><p><strong><span>Nota:</span></strong><span> Por lo general, el navegador guarda el archivo en el directorio </span><strong><span>Downloads</span></strong><span> (Descargas).</span></p></li><li><p><span>Tome nota de la dirección </span><strong><span>EC2Publicip</span></strong><span> si se muestra.</span></p></li><li><p><span>Para salir del panel </span><strong><span>Details</span></strong><span> (Detalles), haga clic en la </span><strong><span>X</span></strong><span>.</span></p></li><li><p><span>Para acceder mediante SSH a la instancia EC2, debe utilizar </span><strong><em><span>*</span><span>PuTTY</span><span>*</span></em></strong><span>. Si no tiene instalado PuTTY en su equipo,</span><a href="https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe"><span>descárguelo</span></a><span>.</span></p></li><li><p><span>Abra </span><strong><span>putty.exe</span></strong><span>.</span></p></li><li><p><span>Configure el tiempo de espera de PuTTY de manera que se mantenga la sesión abierta durante un periodo más prolongado:</span></p><ul><li><span>Elija </span><strong><span>Connection</span></strong><span> (Conexión).</span></li><li><strong><span>Seconds between keepalives</span></strong><span> (Segundos entre señales de conexión persistente): </span><code>30</code></li></ul></li><li><p><span>Configure la sesión de PuTTY con los siguientes ajustes:</span></p><ul><li><p><span>Elija </span><strong><span>Session</span></strong><span> (Sesión).</span></p></li><li><p><strong><span>Host Name</span></strong><span> (or IP address) (Nombre de alojamiento [o dirección IP]): pegue el valor de </span><strong><span>EC2PublicIP</span></strong><span> de la instancia que anotó antes</span></p><ul><li><span>Como alternativa, vuelva a la consola de Amazon EC2 y elija </span><strong><span>Instances</span></strong><span> (Instancias).</span></li><li><span>Seleccione la instancia a la que desea conectarse.</span></li><li><span>En la pestaña </span><em><span>Description (Descripción)</span></em><span>, copie el valor </span><strong><span>IPv4 Public IP</span></strong><span> (IP pública IPv4).</span></li></ul></li><li><p><span>De vuelta en PuTTY, en la lista </span><strong><span>Connection</span></strong><span> (Conexión), expanda </span><i class="far fa-plus-square"></i><span> </span><strong><span>SSH</span></strong></p></li><li><p><span>Elija </span><strong><span>Auth</span></strong><span> (Autenticación) (pero no lo amplíe).</span></p></li><li><p><span>Elija </span><strong><span>Browse</span></strong><span> (Examinar)</span></p></li><li><p><span>Busque el archivo </span><em><span>labsuser.ppk</span></em><span> que descargó, selecciónelo y elija </span><strong><span>Open</span></strong><span> (Abrir)</span></p></li><li><p><span>Elija </span><strong><span>Open</span></strong><span> (Abrir) nuevamente</span></p></li></ul></li></ol><ol start='29' ><li><p><span>Para validar el alojamiento y conectarse a él, elija </span><strong><span>Yes</span></strong><span> (Sí).</span></p></li><li><p><span>Cuando aparezca </span><strong><span>login as</span></strong><span> (Iniciar sesión como), escriba </span><code>ec2-user</code><span>.</span></p><p><span>Esta acción lo conecta a la instancia EC2.</span></p></li><li><p><span>Si es usuario de Microsoft Windows:</span><a href="#ssh-after"><span>Haga clic aquí para pasar a la siguiente tarea.</span></a></p></li></ol><p>&nbsp;</p><p><a id='ssh-MACLinux'></a></p><h3 id='si-es-usuario-de-macos-i-classfab-fa-applei-y-linux-i-classfab-fa-linuxi'><span>Si es usuario de macOS </span><span style="font-size: 30px; color: #808080;"><i class="fab fa-apple"></i></span><span> y Linux </span><span style="font-size: 30px; "><i class="fab fa-linux"></i></span></h3><p><span>Estas instrucciones se dirigen específicamente a usuarios de macOS o Linux. Si es usuario de Windows,</span><a href="#ssh-after"><span>pase a la siguiente tarea.</span></a></p><ol start='32' ><li><p><span>Encima de estas instrucciones, elija el menú desplegable </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalles) y, a continuación, seleccione </span><span id="ssb_voc_grey"><span>Show</span></span><span> (Mostrar).</span></p><p><span>Aparece la ventana </span><strong><span>Credentials</span></strong><span> (Credenciales).</span></p></li><li><p><span>Haga clic en el botón </span><strong><span>Download PEM</span></strong><span> (Descargar PEM) y guarde el archivo </span><strong><span>labsuser.pem</span></strong><span>.</span></p></li><li><p><span>Tome nota de la dirección </span><strong><span>EC2Publicip</span></strong><span> si se muestra.</span></p></li><li><p><span>Para salir del panel </span><strong><span>Details</span></strong><span> (Detalles), haga clic en la </span><strong><span>X</span></strong><span>.</span></p></li><li><p><span>Abra una ventana de terminal y cambie el directorio por aquel en el que se descargó el archivo </span><em><span>labsuser.pem</span></em><span> con el comando </span><code>cd</code><span>.</span></p><p><span>Por ejemplo, si guardó el archivo </span><em><span>labuser.pem</span></em><span> en el directorio </span><strong><span>Downloads</span></strong><span> (Descargas), ejecute este comando:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> ~/Downloads</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Ejecute este comando para cambiar los permisos de la clave a fin de que sean de solo lectura:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">chmod</span> <span class="cm-number">400</span> labsuser.pem</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Ejecute el siguiente comando (reemplace </span><strong><span>&lt;public-ip</span><span>&gt;</span></strong><span> por la dirección </span><strong><span>EC2PublicIP</span></strong><span> que copió anteriormente).</span></p><ul><li><span>Como alternativa, para encontrar la dirección IP de la instancia en las instalaciones, vuelva a la consola de Amazon EC2 y seleccione </span><strong><span>Instances</span></strong><span> (Instancias).</span></li><li><span>Seleccione la instancia a la que desea conectarse.</span></li><li><span>En la pestaña </span><strong><span>Description</span></strong><span> (Descripción), copie el valor </span><strong><span>IPv4 Public IP</span></strong><span> (IP pública IPv4).</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">ssh</span> <span class="cm-attribute">-i</span> labsuser.pem ec2-user@&lt;public-ip&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Cuando se le pregunte si desea permitir la primera conexión a este servidor SSH remoto, escriba </span><code>yes (sí)</code><span>.</span></p><p><span>Como está usando un par de claves para la autenticación, no se le pide una contraseña.</span></p></li></ol><p><a id='ssh-after'></a></p><br><h2 id='tarea-4 crear-un-directorio-nuevo-y-montar-el-sistema-de-archivos-de-efs'><span>Tarea 4: Crear un directorio nuevo y montar el sistema de archivos de EFS</span></h2><p><i class="fas fa-info-circle" aria-hidden="true"></i><span> Amazon EFS admite los protocolos NFSv4.1 y NFSv4.0 cuando monta los sistemas de archivos en instancias EC2. Aunque NFSv4.0 es compatible, le recomendamos que utilice NFSv4.1. Cuando monte el sistema de archivos de EFS en la instancia EC2, también debe utilizar un cliente de NFS que admita el protocolo NFSv4 elegido. La instancia EC2 que se lanzó como parte de este laboratorio incluye un cliente de NFSv4.1, que ya está instalado en ella.</span></p><ol start='40' ><li><p><span>En el menú </span><span id="ssb_services"><span>Services</span></span><span> (Servicios) que se encuentra en la </span><strong><span>consola de administración de AWS</span></strong><span>, haga clic en </span><strong><span>EFS</span></strong><span>.</span></p></li><li><p><span>Elija </span><strong><span>My First EFS File System</span></strong><span>.</span></p></li><li><p><span>En la </span><strong><span>consola de Amazon EFS</span></strong><span>, en la esquina superior derecha de la página, elija </span><span id="ssb_orange"><span>Attach</span></span><span> (Asociar) para abrir las instrucciones de montaje de Amazon EC2.</span></p></li><li><p><span>En la sesión SSH, siga las instrucciones de la sección </span><strong><span>To set up your EC2 instance</span></strong><span> (Para configurar la instancia EC2). Copie y pegue (o escriba manualmente) el comando para instalar las utilidades necesarias.</span></p><p><span>El comando debería ser similar al siguiente ejemplo:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">sudo yum install -y amazon-efs-utils</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><em><span>Sugerencia:</span></em><span> Para pegarlo en el terminal del navegador, coloque el cursor justo a la derecha del símbolo del sistema y haga clic con el botón derecho para ver la opción de pegar.</span></p></li><li><p><span>Desplácese hacia abajo hasta la sección </span><strong><span>Mounting your file system</span></strong><span> (Montaje del sistema de archivos).</span></p></li><li><p><span>En su sesión SSH, escriba </span><code>sudo mkdir efs</code><span> para crear un directorio nuevo</span></p></li><li><p><span>Copie el comando completo en la sección </span><strong><span>Using the NFS client</span></strong><span> (Uso del cliente de NFS).</span></p><p><span>El montaje debería ser similar al siguiente ejemplo:</span></p><p><code>sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-bce57914.efs.us-west-2.amazonaws.com:/ efs</code></p><p><i class="fas fa-comment" aria-hidden="true"></i><span> El comando proporcionado </span><code>sudo mount…</code><span> utiliza las opciones de montaje predeterminadas de Linux.</span></p></li><li><p><span>En su sesión SSH de Linux, monte el sistema de archivos de Amazon EFS de la siguiente manera:</span></p><ul><li><span>Pegue el comando.</span></li><li><span>Presione INTRO.</span></li></ul></li></ol><ol start='48' ><li><p><span>Obtenga un resumen completo del uso de espacio en disco disponible y utilizado. Para ello, escriba:</span></p><p><code>sudo df -hT</code></p><p><span>La siguiente captura de pantalla es un ejemplo del resultado del siguiente comando del </span><em><span>sistema de archivos del disco</span></em><span>:</span></p><p><code>df -hT</code></p><p><span>Observe el </span><em><span>tipo</span></em><span> y el </span><em><span>tamaño</span></em><span> del sistema de archivos de EFS montado.</span></p><p><img src="images/disk-space.png" alt="espacio en disco" width="600"></p></li></ol><br><h2 id='tarea-5 examinar-el-rendimiento-del-nuevo-sistema-de-archivos-de-efs'><span>Tarea 5: Examinar el rendimiento del nuevo sistema de archivos de EFS</span></h2><h3 id='examinar-el-rendimiento-con-flexible-io'><span>Examinar el rendimiento con Flexible I/O</span></h3><p><i class="fas fa-info-circle"></i><span> Flexible I/O (fio) es una utilidad sintética de punto de referencia de E/S para Linux. Se utiliza para comparar y probar subsistemas de E/S de Linux. Durante el arranque, </span><em><span>fio</span></em><span> se instaló automáticamente en la instancia EC2.</span></p><ol start='49' ><li><p><span>Para examinar las características de rendimiento de escritura del sistema de archivos escriba:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2002px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">sudo fio --name=fio-efs --filesize=10G --filename=./efs/fio-efs-test.img --bs=1M --nrfiles=1 --direct=1 --sync=0 --rw=write --iodepth=200 --ioengine=libaio</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p><i class="fas fa-comment"></i><span> El comando </span><code>fio</code><span> tardará entre 5 y 10 minutos en completarse. El resultado debe verse como el ejemplo de la siguiente captura de pantalla. Asegúrese de examinar el resultado del comando </span><code>fio</code><span>, en especial la información de estado de resumen para esta prueba de escritura.</span></p><p><img src="images/fio.png" alt="fio" width="600" ></p></li></ol><br><h3 id='monitorear-el-rendimiento-con-amazon-cloudwatch'><span>Monitorear el rendimiento con Amazon CloudWatch</span></h3><ol start='50' ><li><p><span>En la </span><strong><span>consola de administración de AWS</span></strong><span>, en el menú </span><span id="ssb_services"><span>Services</span></span><span> (Servicios), elija </span><strong><span>CloudWatch</span></strong><span>.</span></p></li><li><p><span>En el panel de navegación de la izquierda, elija </span><strong><span>Metrics</span></strong><span> (Métricas).</span></p></li><li><p><span>En la pestaña </span><strong><span>All metrics</span></strong><span> (Todas las métricas), elija </span><strong><span>EFS</span></strong><span>.</span></p></li><li><p><span>Elija </span><strong><span>File System Metrics</span></strong><span> (Métricas del sistema de archivos).</span></p></li><li><p><span>Seleccione la fila que tiene el nombre de métrica </span><strong><span>PermittedThroughput</span></strong><span> (Rendimiento permitido).</span></p><p><i class="fas fa-comment"></i><span> Es posible que deba esperar de 2 a 3 minutos y actualizar la pantalla varias veces antes de que todas las métricas disponibles, incluida </span><strong><span>PermittedThroughput</span></strong><span> (Rendimiento permitido), se calculen y rellenen.</span></p></li><li><p><span>En el gráfico, elija y arrastre la línea de datos. Si no ve el gráfico de líneas, ajuste el intervalo de tiempo del gráfico para que se muestre el periodo durante el cual ejecutó el comando </span><code>fio</code><span>.</span></p><p><img src="images/graph.png" alt="elegir arrastrar" width="600" ></p></li></ol><ol start='56' ><li><p><span>Detenga el puntero en la línea de datos del gráfico. El valor debe ser </span><em><span>105M</span></em><span>.</span></p><p><img src="images/throughput.png" alt="Rendimiento" width="600" ></p><p><span>El rendimiento de Amazon EFS aumenta a medida que crece el sistema de archivos. Las cargas de trabajo basadas en archivos suelen tener picos. Impulsan altos niveles de rendimiento durante periodos cortos y bajos niveles de rendimiento el resto del tiempo. Debido a este comportamiento, Amazon EFS está diseñado para ampliar a niveles elevados de rendimiento durante ciertos periodos. Todos los sistemas de archivos, independientemente del tamaño, pueden aumentar el rendimiento a 100 MiB/s. Para obtener más información acerca de las características de rendimiento del sistema de archivos de EFS, consulte la</span><a href="http://docs.aws.amazon.com/efs/latest/ug/performance.html" target="_blank"><span>documentación de Amazon Elastic File System</span></a><span>.</span></p></li><li><p><span>En la pestaña </span><strong><span>All metrics</span></strong><span> (Todas las métricas)** </span><em><span>desmarque</span></em><span> la casilla </span><strong><span>PermittedThroughput</span></strong><span> (Rendimiento permitido).</span></p></li><li><p><span>Seleccione la casilla de verificación </span><strong><span>DataWriteIOBytes</span></strong><span> (Bytes de E/S de escritura de datos).</span></p><p><i class="fas fa-comment"></i><span> Si no ve </span><em><span>DataWriteIOBytes (Bytes de E/S de escritura de datos)</span></em><span> en la lista de métricas, utilice la búsqueda </span><strong><span>File System Metrics</span></strong><span> (Métricas del sistema de archivos) para encontrarla.</span></p></li><li><p><span>Elija la pestaña </span><strong><span>Graphed metrics</span></strong><span> (Métricas diagramadas).</span></p></li><li><p><span>En la columna </span><strong><span>Statistics</span></strong><span> (Estadísticas), seleccione </span><strong><span>Sum</span></strong><span> (Suma).</span></p></li><li><p><span>En la columna </span><strong><span>Period</span></strong><span> (Periodo), seleccione </span><strong><span>1 Minute</span></strong><span> (1 minuto).</span></p></li><li><p><span>Detenga el puntero en el pico del gráfico de líneas. Tome este número (en bytes) y divídalo por la duración en segundos (60 segundos). El resultado le da el rendimiento de escritura (B/s) de su sistema de archivos durante la prueba.</span></p><p><img src="images/Sum-1-minute.png" alt="Suma 1 minuto" width="600" ></p><p><span>El rendimiento que está disponible para un sistema de archivos aumenta a medida que crece un sistema de archivos. Todos los sistemas de archivos ofrecen un rendimiento de referencia constante de 50 MiB/s por TiB de almacenamiento. Además, todos los sistemas de archivos (independientemente del tamaño) pueden aumentarlo a 100 MiB/s. Los sistemas de archivos que son mayores que 1 TB pueden aumentarlo 100 MiB/s por TiB de almacenamiento. A medida que agrega datos al sistema de archivos, su rendimiento máximo disponible aumenta de forma lineal y automática con el almacenamiento.</span></p><p><span>El rendimiento del sistema de archivos se comparte entre todas las instancias EC2 conectadas a un sistema de archivos. Para obtener más información acerca de las características de rendimiento del sistema de archivos de EFS, consulte la </span><a href="http://docs.aws.amazon.com/efs/latest/ug/performance.html" target="_blank"><span>documentación de Amazon Elastic File System</span></a><span>.</span></p><p><i class="far fa-thumbs-up" style="color:blue"></i><span> ¡Felicitaciones! Creó un sistema de archivos de EFS, lo montó en una instancia EC2 y ejecutó una prueba de referencia de E/S para examinar sus características de rendimiento.</span></p></li></ol><br><h2 id='envío-de-su-trabajo'><span>Envío de su trabajo</span></h2><ol start='63' ><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_blue"><span>Submit</span></span><span> (Enviar) para registrar su progreso y, cuando se le indique, elija </span><strong><span>Yes</span></strong><span> (Sí).</span></p></li><li><p><span>Si los resultados no se muestran después de algunos minutos, vuelva a la parte superior de estas instrucciones y elija </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Resultados).</span></p><p><strong><span>Sugerencia</span></strong><span>: Puede enviar su trabajo varias veces. Después de realizar las modificaciones pertinentes, vuelva a elegir </span><strong><span>Submit</span></strong><span> (Enviar). Su último envío es el que se registrará para este laboratorio.</span></p></li><li><p><span>Para encontrar comentarios detallados sobre su trabajo, elija </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalles) seguido de </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Ver informe de envío).</span></p></li></ol><br><h2 id='fin-del-laboratorio-i-classfas-fa-graduation-capi'><span>Fin del laboratorio </span><i class="fas fa-graduation-cap"></i></h2><p><i class="fas fa-flag-checkered"></i><span> ¡Felicitaciones! Ha completado el laboratorio.</span></p><ol start='66' ><li><p><span>Elija </span><span id="ssb_voc_grey"><span>End Lab</span></span><span> (Finalizar laboratorio), en la parte superior de esta página, y, a continuación, seleccione </span><span id="ssb_blue"><span>Yes</span></span><span> (Sí) para confirmar que desea finalizar el laboratorio.</span></p><p><span>Debería aparecer un panel con el siguiente mensaje: </span><em><span>DELETE has been initiated… You may close this message box now (Se ha iniciado la ELIMINACIÓN… Ya puede cerrar este cuadro de mensaje)</span></em><span>.</span></p></li><li><p><span>Seleccione la </span><strong><span>X</span></strong><span> de la esquina superior derecha para cerrar el panel.</span></p></li></ol><p>&nbsp;</p><p>&nbsp;</p><p><em><span>© 2020 Amazon Web Services, Inc. y sus empresas afiliadas. Todos los derechos reservados. Este contenido no puede reproducirse ni redistribuirse, total ni parcialmente, sin el permiso previo por escrito de Amazon Web Services, Inc. Queda prohibida la copia, el préstamo y la venta de carácter comercial.</span></em></p></div></div>
+</body>
+</html>

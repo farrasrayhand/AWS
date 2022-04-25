@@ -1,0 +1,736 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-fences-math .MathJax_SVG_Display, .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: visible; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; zoom: 90%; }
+#math-inline-preview-content { zoom: 1.1; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-math .MathJax_SVG_Display { margin-top: 8px; cursor: default; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+ :root {--mermaid-font-zoom:1.25em ;} 
+</style><title>README</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='laboratorio-de-desafíos-del-módulo-4 creación-de-un-sitio-web-dinámico-para-la-cafetería'><span>Laboratorio de desafíos del módulo 4: Creación de un sitio web dinámico para la cafetería</span></h1><h2 id='caso'><span>Caso</span></h2><p><span>Después de que la cafetería lanzó la primera versión de su sitio web, los clientes le dijeron al personal lo bonito que se veía. Sin embargo, además de los elogios, los clientes a menudo preguntaban si podían realizar pedidos en línea.</span></p><p><span>Sofía, Nikhil, Frank y Martha analizaron la situación. Estuvieron de acuerdo en que su estrategia empresarial y sus decisiones debían centrarse en deleitar a sus clientes y en proporcionarles la mejor experiencia posible en la cafetería.</span></p><p>&nbsp;</p><h2 id='información-general-y-objetivos-del-laboratorio'><span>Información general y objetivos del laboratorio</span></h2><p><span>En este laboratorio, implementará una aplicación en una instancia de Amazon Elastic Compute Cloud (Amazon EC2). La aplicación permite que la cafetería tome pedidos en línea. Después de probar que la aplicación funcione según lo previsto en la primera región de AWS (el entorno de </span><em><span>desarrollo</span></em><span>), creará una imagen de Amazon Machine (AMI) a partir de la instancia EC2. También implementará una segunda instancia de la misma aplicación como el entorno de </span><em><span>producción</span></em><span> en otra región de AWS.</span></p><p><span>Después de completar este laboratorio, debería ser capaz de lo siguiente:</span></p><ul><li><span>Conectarse al IDE de AWS Cloud9 en una instancia EC2 existente</span></li><li><span>Analizar el entorno de la instancia EC2 y confirmar la accesibilidad del servidor web</span></li><li><span>Instalar una aplicación web en una instancia EC2 que también utilice AWS Systems Manager Parameter Store</span></li><li><span>Probar la aplicación web</span></li><li><span>Crear una AMI</span></li><li><span>Implementar una segunda copia de la aplicación web en otra región de AWS</span></li></ul><p>&nbsp;</p><p><span>Cuando </span><em><span>comience</span></em><span> el laboratorio, ya se habrán creado algunos recursos en la cuenta de AWS para usted:</span></p><p><img src="images/m4ch-lab-start-arch.png" referrerpolicy="no-referrer" alt="arquitectura inicial"></p><p><span>Una vez que </span><em><span>termine</span></em><span> este laboratorio, la arquitectura debería verse como el siguiente ejemplo:</span></p><p><img src="images/m4ch-lab-end-arch.png" referrerpolicy="no-referrer" alt="arquitectura final"></p><p>&nbsp;</p><h2 id='duración'><span>Duración</span></h2><p><span>El tiempo estimado para completar este laboratorio es de </span><strong><span>60 minutos</span></strong><span>.</span></p><p>&nbsp;</p><h2 id='restricciones-de-los-servicios-de-aws'><span>Restricciones de los servicios de AWS</span></h2><p><span>En este entorno de laboratorio, el acceso a los servicios y las acciones de los servicios de AWS puede restringirse a los que se necesiten para cumplir las instrucciones del laboratorio. Es posible que se produzcan errores si intenta acceder a otros servicios o hacer acciones que no sean las que se describen en este laboratorio.</span></p><p>&nbsp;</p><h2 id='acceso-a-la-consola-de-administración-de-aws'><span>Acceso a la consola de administración de AWS</span></h2><ol start='' ><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratorio) y comience a trabajar en él.</span></p><p><span>Se abrirá el panel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratorio), donde se muestra el estado del laboratorio.</span></p><p><strong><span>Sugerencia</span></strong><span>: Si alguna vez necesita más tiempo para completar el laboratorio que el que se muestra en el temporizador, elija el botón </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Iniciar laboratorio) de nuevo para reiniciar el temporizador del entorno. Esta acción no eliminará los recursos que haya creado.</span></p></li></ol><p>&nbsp;</p><ol start='2' ><li><span>Espere hasta que aparezca el mensaje </span><em><span>Lab status: ready (Estado del laboratorio: listo)</span></em><span> y, a continuación, haga clic en </span><strong><span>X</span></strong><span> para cerrar el panel </span><strong><span>Start Lab</span></strong><span> (Iniciar laboratorio).</span></li></ol><p>&nbsp;</p><ol start='3' ><li><p><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_voc_grey"><span>AWS</span></span><span>.</span></p><p><span>Esto abrirá la consola de administración de AWS en una nueva pestaña del navegador y el sistema iniciará su sesión de forma automática.</span></p><p><strong><span>Sugerencia</span></strong><span>: Si no se abre una nueva pestaña del navegador, por lo general habrá un aviso o un icono en la parte superior, el cual indicará que el navegador impide que el sitio abra ventanas emergentes. Haga clic en el aviso o el icono y elija </span><strong><span>Allow pop ups</span></strong><span> (Permitir ventanas emergentes).</span></p></li></ol><p>&nbsp;</p><ol start='4' ><li><span>Ubique la pestaña de la consola de administración de AWS de modo que aparezca junto con estas instrucciones. El método más óptimo sería tener ambas pestañas del navegador abiertas al mismo tiempo para que pueda seguir los pasos del laboratorio más fácilmente.</span></li></ol><p>&nbsp;</p><h2 id='una-solicitud-empresarial-para-la-cafetería preparar-una-instancia-ec2-para-alojar-un-sitio-web-desafío-1'><span>Una solicitud empresarial para la cafetería: preparar una instancia EC2 para alojar un sitio web (Desafío 1)</span></h2><p><span>La cafetería quiere ofrecer pedidos en línea para los clientes y permitir que su personal vea los pedidos enviados. La arquitectura actual de su sitio web, en la que el sitio web está alojado en Amazon S3, no es compatible con los nuevos requisitos empresariales.</span></p><p><span>En la primera parte de este laboratorio, asumirá el rol de Sofía. Configurará una instancia de Amazon EC2 para que pueda alojar un sitio web para la cafetería.</span></p><p>&nbsp;</p><h3 id='tarea-1 analizar-la-instancia-ec2-existente'><span>Tarea 1: Analizar la instancia EC2 existente</span></h3><p><span>En esta tarea, obtendrá información sobre una instancia EC2 existente que se creó para usted en la cuenta de AWS.</span></p><ol start='5' ><li><p><span>En el menú </span><strong><span>Services</span></strong><span> (Servicios), elija </span><strong><span>EC2</span></strong><span> y, a continuación, seleccione </span><strong><span>Running instances</span></strong><span> (Instancias en ejecución).</span></p><p><span>Observe la instancia en ejecución denominada </span><em><span>aws-cloud9-CafeWebServer-...</span></em><span>. Esta instancia EC2 se creó cuando inició el laboratorio.</span></p><p><img src="images/ec2.png" referrerpolicy="no-referrer" alt="Consola de EC2"></p></li></ol><p>&nbsp;</p><h4 id='respuesta-a-las-preguntas-sobre-la-instancia'><span>Respuesta a las preguntas sobre la instancia</span></h4><p><span>Las respuestas se evaluarán cuando haga clic en el botón azul </span><strong><span>Submit</span></strong><span> (Enviar) que está al final del laboratorio.</span></p><ol start='6' ><li><p><span>Acceda a las preguntas de este laboratorio.</span></p><ul><li><span>Haga clic en el menú </span><strong><span>Details</span></strong><span> (Detalles) y, luego, en </span><strong><span>Show</span></strong><span> (Mostrar).</span></li><li><span>Elija el enlace </span><strong><span>Access the multiple choice questions</span></strong><span> (Acceder a las preguntas de múltiple opción) que aparece en la parte inferior de la página.</span></li></ul></li></ol><p>&nbsp;</p><ol start='7' ><li><p><span>En la página que cargó, responda las primeras cuatro preguntas:</span></p><ul><li><strong><span>Pregunta 1</span></strong><span>: ¿La instancia se encuentra en una subred pública?</span></li><li><strong><span>Pregunta 2</span></strong><span>: ¿La instancia EC2 tiene una dirección IP pública IPv4 asignada?</span></li><li><strong><span>Pregunta 3:</span></strong><span> ¿Qué números de puerto TCP de entrada están abiertos para esta instancia?</span></li><li><strong><span>Pregunta 4</span></strong><span>: ¿La instancia EC2 tiene asociado un rol de AWS Identity and Access Management (IAM)?</span></li></ul><p><strong><span>Nota</span></strong><span>: Deje abierta la página web con las preguntas en la pestaña de su navegador. Volverá a ella más adelante en este laboratorio.</span></p></li></ol><p>&nbsp;</p><h3 id='tarea-2 conectarse-al-ide-en-la-instancia-ec2'><span>Tarea 2: Conectarse al IDE en la instancia EC2</span></h3><p><span>AWS Cloud9 es un servicio que puede ejecutarse en una instancia EC2. Ofrece un entorno de desarrollo integrado (IDE) que incluye características como un editor de código, un depurador y un terminal.</span></p><p><span>Como se utiliza el entorno de AWS Cloud9, no es necesario descargar un par de claves y conectarse a la instancia de EC2 mediante PuTTY o un software de Secure Shell (SSH) similar. Como se utiliza AWS Cloud9, tampoco es necesario utilizar herramientas de edición de texto de línea de comandos (como vi o nano) para editar archivos en la instancia de Linux.</span></p><ol start='8' ><li><p><span>En el menú </span><em><span>Services (Servicios)</span></em><span>, elija </span><strong><span>AWS Cloud9</span></strong><span> y, a continuación, elija </span><strong><span>Your environments</span></strong><span> (Sus entornos).</span></p><p><span>Observe el entorno </span><em><span>CafeWebServer</span></em><span>. Indica que es de entrada </span><em><span>EC2</span></em><span>.</span></p></li></ol><p>&nbsp;</p><ol start='9' ><li><p><span>Elija </span><strong><span>Open IDE</span></strong><span> (Abrir IDE).</span></p><p><span>Ya está conectado al IDE de AWS Cloud9 que se ejecuta en la instancia EC2 que observó anteriormente.</span></p><p><span>El IDE incluye:</span></p><ul><li><span>Un </span><em><span>terminal de Bash</span></em><span> en el panel inferior derecho.</span></li><li><span>Un </span><em><span>explorador de archivos</span></em><span> en el panel izquierdo que muestra los archivos en el directorio </span><code>/home/ec2-user/environment</code><span> en la instancia.</span></li><li><span>Un </span><em><span>editor de archivos</span></em><span> en el panel superior derecho. Si hace doble clic en un archivo en el explorador de archivos, como el archivo README.md, se mostrará en el editor.</span></li></ul></li></ol><p><img src="images/cloud9.png" referrerpolicy="no-referrer" alt="AWS Cloud9"></p><p>&nbsp;</p><h3 id='tarea-3 analizar-el-entorno-de-pila-lamp-y-confirmar-que-sea-posible-acceder-al-servidor-web'><span>Tarea 3: Analizar el entorno de pila LAMP y confirmar que sea posible acceder al servidor web</span></h3><p><span>Recuerde que el objetivo de este laboratorio de desafíos es configurar una instancia EC2 para alojar el nuevo sitio web dinámico para la cafetería. En esta tarea, analizará lo que ya está instalado.</span></p><ol start='10' ><li><p><span>Observe la versión del sistema operativo.</span></p><p><span>En el terminal de Bash de AWS Cloud9, ejecute este comando:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cat</span> /proc/version</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>Observe cómo el resultado indica que es una instancia de Amazon Linux, bastante similar a Red Hat 7.</span></p></li></ol><p>&nbsp;</p><ol start='11' ><li><p><span>Observe los detalles del servidor web, la base de datos y PHP, y el estado del servidor.</span></p><p><span>En el terminal, ejecute estos comandos:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> httpd <span class="cm-attribute">-v</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">service</span> httpd status</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysql <span class="cm-attribute">--version</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">service</span> mysqld status</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">php <span class="cm-attribute">--version</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 157px;"></div><div class="CodeMirror-gutters" style="display: none; height: 157px;"></div></div></div></pre><p><span>El resultado debe mostrar las versiones del servidor web y la base de datos, y también mostrar que no se están ejecutando en la actualidad.</span></p></li></ol><p>&nbsp;</p><ol start='12' ><li><p><span>Inicie el servidor web y la base de datos, y también configúrelos para que se inicien automáticamente después de que se reinicie la instancia EC2 en cualquier momento en el futuro.</span></p><p><span>En el terminal, ejecute estos comandos:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> chkconfig httpd on</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> <span class="cm-builtin">service</span> httpd <span class="cm-builtin">start</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> <span class="cm-builtin">service</span> httpd status</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> chkconfig mysqld on</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> <span class="cm-builtin">service</span> mysqld <span class="cm-builtin">start</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> <span class="cm-builtin">service</span> mysqld status</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 157px;"></div><div class="CodeMirror-gutters" style="display: none; height: 157px;"></div></div></div></pre></li></ol><p>&nbsp;</p><ol start='13' ><li><p><span>Configure la instancia EC2 para que pueda utilizar el editor de AWS Cloud9 para editar los archivos del servidor web.</span></p><p><span>Observe que el explorador de archivos de AWS Cloud9 actualmente no muestra el directorio web predeterminado del servidor web Apache.</span></p><p><span>En el terminal, ejecute estos dos comandos:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">ln</span> <span class="cm-attribute">-s</span> /var/www/ /home/ec2-user/environment</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> <span class="cm-builtin">chown</span> ec2-user:ec2-user /var/www/html</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><p><span>Con el primer comando que ejecutó se creó un enlace simbólico desde el espacio de trabajo predeterminado del editor de AWS Cloud9 al directorio </span><code>/var/www</code><span> que contiene los archivos de su servidor web.</span></p><p><span>Con el segundo comando se cambió la propiedad del subdirectorio </span><strong><span>html</span></strong><span> para que </span><em><span>ec2-user</span></em><span> (con el que inició sesión) pueda editar y crear nuevos archivos en él.</span></p></li></ol><p>&nbsp;</p><ol start='14' ><li><p><span>Creación de un sitio web de prueba simple.</span></p><ul><li><p><span>En el </span><em><span>explorador de archivos</span></em><span>, expanda el directorio </span><strong><span>CafeWebServer &gt; www</span></strong><span> y resalte el directorio </span><strong><span>html</span></strong><span>.</span></p></li><li><p><span>Elija </span><strong><span>File</span></strong><span> (Archivo) &gt; </span><strong><span>New File</span></strong><span> (Archivo nuevo).</span></p></li><li><p><span>En la pestaña del editor de texto, pegue la siguiente línea:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="html"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="html"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">html</span><span class="cm-tag cm-bracket">&gt;</span>Hello from the café web server!<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Elija </span><strong><span>File</span></strong><span> (Archivo) &gt; </span><strong><span>Save</span></strong><span> (Guardar), y guarde el archivo en el directorio </span><strong><span>html</span></strong><span> como </span><em><span>index.html</span></em><span>.</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='15' ><li><p><span>Posibilite el acceso al sitio web desde Internet.</span></p><p><span>En este paso, deberá verificar y actualizar las configuraciones que hacen que se pueda acceder a las páginas web (que están alojadas en el servidor web) desde Internet.</span></p><p><span>Aquí tiene algunas sugerencias que lo ayudarán a comenzar:</span></p></li></ol><details>
+<summary><b>Sugerencia n.º&nbsp;1</b> (haga clic para ampliar)</summary>
+Descubra la dirección IP pública IPv4 de la instancia EC2 e intente cargar `http://&lt;public-ip&gt;` en una pestaña del navegador nueva. ¿Se carga el mensaje que escribió en index.html en el navegador?
+</details><p>&nbsp;</p><details>
+<summary><b>Sugerencia n.º&nbsp;2</b> (haga clic para ampliar)</summary>
+Para permitir el tráfico HTTP de entrada en el puerto TCP 80 desde cualquier lugar, actualice el grupo de seguridad de la instancia EC2, según sea necesario.
+</details><p>&nbsp;</p><h2 id='nuevo-requisito-empresarial instalar-una-aplicación-de-sitio-web-dinámica-en-una-instancia-ec2-desafío-2'><span>Nuevo requisito empresarial: Instalar una aplicación de sitio web dinámica en una instancia EC2 (Desafío 2)</span></h2><p><span>En el desafío anterior, configuró la instancia EC2. Ahora sabe que PHP está instalado y que una base de datos relacional se ejecuta en el entorno de la aplicación. Además, en el entorno se ejecuta un servidor web al que se puede acceder desde Internet. Ahora cuenta con la configuración básica para alojar un sitio web dinámico para la cafetería.</span></p><p><span>En la segunda parte de este laboratorio, asumirá el rol de Sofía e instalará la aplicación de la cafetería en la instancia EC2.</span></p><p>&nbsp;</p><h3 id='tarea-4 instalar-la-aplicación-de-la-cafetería'><span>Tarea 4: Instalar la aplicación de la cafetería</span></h3><ol start='16' ><li><p><span>Descargue y extraiga los archivos de la aplicación del servidor web.</span></p><p><span>En el terminal de Bash, ejecute estos comandos:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> ~/environment</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod4-challenge/setup.tar.gz</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">tar <span class="cm-attribute">-zxvf</span> setup.tar.gz</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod4-challenge/db.tar.gz</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">tar <span class="cm-attribute">-zxvf</span> db.tar.gz</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod4-challenge/cafe.tar.gz</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">tar <span class="cm-attribute">-zxvf</span> cafe.tar.gz</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 224px;"></div><div class="CodeMirror-gutters" style="display: none; height: 224px;"></div></div></div></pre><p><span>Observe cómo el explorador de archivos ahora muestra los tres archivos .tar.gz que descargó.</span></p><p><span>También extrajo estos archivos de almacenamiento, que crearon los directorios </span><code>cafe</code><span>, </span><code>db</code><span> y </span><code>setup</code><span> en su entorno de trabajo.</span></p></li></ol><p>&nbsp;</p><ol start='17' ><li><p><span>Copie los archivos de la cafetería en la raíz del documento del servidor web.</span></p><p><span>En el terminal de Bash, ejecute este comando:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">mv</span> cafe /var/www/html/</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li></ol><p>&nbsp;</p><ol start='18' ><li><p><span>Observe el diseño de la aplicación para su funcionamiento.</span></p><ul><li><span>Abra el código fuente </span><code>html/cafe/index.php</code><span> en el editor de AWS Cloud9 haciendo doble clic en él.</span></li><li><span>Observe que este archivo contiene código HTML, pero también contiene secciones que van entre elementos </span><em><?php ... ?></em><span>. Estos elementos realizan llamadas a otros sistemas y recursos.</span></li><li><span>Por ejemplo, en la </span><strong><span>línea 18</span></strong><span>, verá que el código PHP hace referencia a un archivo denominado </span><em><span>getAppParameters.php</span></em><span>.</span></li><li><span>Abra el archivo </span><strong><span>getAppParameters.php</span></strong><span> en el editor de código.</span></li><li><span>Observe en la </span><strong><span>línea 3</span></strong><span> de este archivo que se invoca a </span><em><span>AWSSDK</span></em><span>.</span></li><li><span>Además, en </span><strong><span>las líneas 10 a 33</span></strong><span>, la aplicación web crea un cliente que se conecta al servicio </span><em><span>ssm</span></em><span>, que es AWS Systems Manager. A continuación, la aplicación recupera siete parámetros de Systems Manager. Estos parámetros aún no se han creado en AWS Systems Manager, pero lo hará a continuación.</span></li></ul></li></ol><p>&nbsp;</p><ol start='19' ><li><p><span>En AWS Systems Manager Parameter Store, configure los parámetros de la aplicación.</span></p><p><span>En el terminal de Bash, ejecute estos comandos:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> setup</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">./set-app-parameters.sh</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><p><span>El script de shell que acaba de ejecutar emitió los comandos de la interfaz de la línea de comandos (CLI) de AWS. Estos comandos agregaron los parámetros que utilizará la aplicación en el almacén de parámetros.</span></p></li></ol><p>&nbsp;</p><ol start='20' ><li><span>En la consola de administración de AWS, encontrará el menú </span><strong><span>Services</span></strong><span> (Servicios), donde debe elegir </span><strong><span>Systems Manager</span></strong><span>.</span></li></ol><p>&nbsp;</p><ol start='21' ><li><p><span>En el panel de la izquierda, elija </span><strong><span>Parameter Store (Almacén de parámetros)</span></strong><span>.</span></p><p><span>Observe cómo ahora hay siete parámetros almacenados aquí.</span></p><p><span>El código PHP de la aplicación de la cafetería hace referencia a estos valores (por ejemplo, para recuperar la información de conexión de la base de datos de MySQL).</span></p><p><span>Elija el parámetro </span><code>/cafe/dbPassword</code><span> y copie el </span><em><span>valor</span></em><span> en el portapapeles. Usará este valor en un momento.</span></p></li></ol><p>&nbsp;</p><ol start='22' ><li><p><span>Configure la base de datos de MySQL para que respalde la aplicación de la cafetería.</span></p><p><span>En el terminal de Bash de AWS Cloud9, ejecute los siguientes comandos:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> ../db/</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">./set-root-password.sh</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">./create-db.sh</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre></li></ol><p>&nbsp;</p><ol start='23' ><li><p><span>Observe que se crearon las tablas de la base de datos.</span></p><p><span>En el terminal de Bash, ejecute este comando para conectar el cliente de MySQL basado en el terminal a la base de datos:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; mysql <span class="cm-attribute">-u</span> root <span class="cm-attribute">-p</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>Cuando se le solicite la contraseña de la base de datos, pegue el valor del parámetro </span><em><span>dbPassword</span></em><span> que copió.</span></p><p><span>Ahora debería ver el aviso </span><code>mysql&gt;</code><span> que indica que ahora está conectado a la base de datos de MySQL que se ejecuta en esta instancia EC2.</span></p></li></ol><p><img src="images/db-client.png" referrerpolicy="no-referrer" alt="database-client"></p><p>&nbsp;</p><p><span>Para observar el contenido de la base de datos (en particular, las tablas que admiten la aplicación web de la cafetería), escriba los siguientes comandos:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="sql"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="sql"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">show</span> <span class="cm-keyword">databases</span><span class="cm-punctuation">;</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">use</span> cafe_db<span class="cm-punctuation">;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">show</span> <span class="cm-keyword">tables</span><span class="cm-punctuation">;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">select</span> <span class="cm-operator">*</span> <span class="cm-keyword">from</span> product<span class="cm-punctuation">;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">exit</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 112px;"></div><div class="CodeMirror-gutters" style="display: none; height: 112px;"></div></div></div></pre><p>&nbsp;</p><ol start='24' ><li><p><span>Actualice la configuración de la </span><em><span>zona horaria</span></em><span> en PHP.</span></p><p><span>En el terminal de Bash, ejecute los siguientes comandos:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> <span class="cm-builtin">sed</span> <span class="cm-attribute">-i</span> <span class="cm-string">"2i date.timezone = \"America/New_York\" "</span> /etc/php.ini</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> <span class="cm-builtin">service</span> httpd <span class="cm-builtin">restart</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><p><span>Con el primer comando que ejecutó, se configuró la zona horaria en el software PHP.</span></p><p><span>Con el segundo comando que ejecutó, se reinició el servidor web para incluir la actualización de la configuración.</span></p></li></ol><p>&nbsp;</p><ol start='25' ><li><p><span>Pruebe si el sitio web de la cafetería funciona y si se puede acceder a él desde Internet.</span></p><p><span>En una nueva pestaña del navegador, intente cargar la aplicación en </span><code>http://&lt;public-ip&gt;/cafe</code><span>, donde &lt;</span><em><span>public-ip</span></em><span>&gt; es la dirección IP pública IPv4 de la instancia EC2.</span></p><p><span>Verá que </span><em><span>solo se carga el banner del título</span></em><span> del sitio web. El resto de la página web no se carga correctamente.</span></p></li></ol><p>&nbsp;</p><ol start='26' ><li><p><span>Resolver los problemas del sitio web.</span></p><p><span>En este paso, deberá averiguar cómo hacer que el sitio web de la cafetería funcione correctamente.</span></p><p><span>Esta es una lista de lo que </span><em><span>sí</span></em><span> funciona:</span></p><ul><li><span>La página de prueba de </span><em><a href='http://&amp;lt;public-ip' target='_blank' class='url'>http://&lt;public-ip</a><span>&gt;/</span></em><span> se carga, por lo que sabe que el servidor web funciona y es accesible desde Internet</span></li><li><span>También sabe que la base de datos MySQL se está ejecutando y contiene tablas y datos para respaldar la aplicación.</span></li></ul></li></ol><p><span>¿Cuál podría ser el problema?</span></p><details>
+<summary>
+<b>Sugerencia n.º&nbsp;1</b> (haga clic para ampliar)
+</summary>
+No hay ningún problema con la forma en la que está escrito el código PHP. El problema está relacionado con los permisos.
+</details><details>
+<summary>
+<b>Sugerencia n.º&nbsp;2</b> (haga clic para ampliar)
+</summary>
+¿La aplicación web utiliza otros servicios o recursos además del servidor web y la base de datos? Por ejemplo, ¿requiere acceso a otro servicio de AWS?
+</details><details>
+<summary>
+<b>Sugerencia n.º&nbsp;3</b> (haga clic para ampliar)
+</summary>
+Vaya al servicio de IAM y busque el rol de IAM que se denomina <b>CafeRole</b>. Observe los permisos que otorga este rol. ¿Sería útil otorgar estos derechos a la instancia EC2? ¿Cómo podría otorgar estos permisos a la aplicación web de la cafetería?
+</details><details>
+<summary>
+<b>Sugerencia n.º&nbsp;4</b> (haga clic para ampliar)
+</summary>
+Seleccione la instancia EC2 en la consola de Amazon EC2 y revise las opciones del menú <b>Actions (Acciones)</b>. ¿Alguna de las acciones ayudaría a resolver el problema?
+</details><p>&nbsp;</p><p><span>Cuando crea haber solucionado el problema, vuelva a cargar la página </span><code>http://&lt;public-ip&gt;/cafe</code><span>. ¿Se carga completamente y puede ver los elementos del menú de la cafetería? Si es así, ¡felicitaciones!</span></p><p><strong><span>Nota</span></strong><span>: Si todavía no puede resolver el problema, le puede resultar útil ejecutar el script de corrección, tal y como se documenta en la sección </span><strong><span>Submitting your work</span></strong><span> (Envío del trabajo) al final de las instrucciones de este laboratorio. El informe de envío que se genera puede ofrecer otras sugerencias para las partes del laboratorio que no completó correctamente. Puede enviar su trabajo tantas veces como desee. Solo se conserva la puntuación que obtiene la última vez que envía su trabajo.</span></p><p>&nbsp;</p><h3 id='tarea 5 probar-la-aplicación-web'><span>Tarea 5: Probar la aplicación web</span></h3><ol start='27' ><li><p><span>Realizar un pedido de prueba.</span></p><ul><li><p><span>En la pestaña del navegador donde tiene abierta la página </span><code>http://&lt;public-ip&gt;/cafe</code><span>, elija </span><strong><span>Menu</span></strong><span> (Menú).</span></p></li><li><p><span>Envíe un pedido con al menos uno de los elementos que se muestran en el menú</span></p><ul><li><span>Nota: Es posible que deba desplazarse hacia abajo para encontrar el botón </span><strong><span>Submit Order</span></strong><span> (Enviar pedido).</span></li></ul></li><li><p><span>Vuelva a la página de menú y realice otro pedido. Luego, vaya a la página </span><strong><span>Order History</span></strong><span> (Historial de pedidos) para ver los detalles de todos los pedidos realizados.</span></p></li></ul></li></ol><p>&nbsp;</p><h2 id='nuevo-requisito-empresarial crear-sitios-web-de-desarrollo-y-producción-en-diferentes-regiones-de-aws-desafío-3'><span>Nuevo requisito empresarial: Crear sitios web de desarrollo y producción en diferentes regiones de AWS (Desafío 3)</span></h2><p><img src="images/sofie.png" referrerpolicy="no-referrer" alt="Sofía"></p><p>&nbsp;</p><p><span>¡Todos en la cafetería están impresionados con el nuevo sitio web dinámico que creó Sofía! Los clientes están felices de poder realizar pedidos en línea y programar la búsqueda de los postres en el local. La satisfacción de los clientes ha aumentado debido a la reducción de sus tiempos de espera.</span></p><p><span>Sin embargo, junto con los elogios, surge otro requisito empresarial. A Martha y Frank les gustaría tener </span><em><span>dos</span></em><span> sitios web de la cafetería:</span></p><ul><li><span>Un sitio web que se pueda utilizar como </span><em><span>entorno de desarrollo</span></em><span> para simular funciones y diseños web nuevos antes de que se lancen para los clientes.</span></li><li><span>Un sitio web independiente que alojará el </span><em><span>entorno de producción</span></em><span> que utilizan los clientes.</span></li></ul><p><span>Sofía analizó el nuevo requisito con Mateo cuando este llegó a la cafetería una mañana para tomar su café. Él sugirió que, idealmente, los dos entornos estarían en </span><em><span>diferentes regiones de AWS</span></em><span>. El beneficio adicional de un diseño así sería proporcionar una recuperación de desastres (DR) más sólida en la situación poco probable de que una región de AWS no esté disponible temporalmente.</span></p><p><span>Sofía ahora está muy ocupada. A medida que realiza un trabajo cada vez más impresionante, sus habilidades se vuelven más demandadas.</span></p><p>&nbsp;</p><h3 id='tarea-6 crear-una-ami-y-lanzar-otra-instancia-ec2'><span>Tarea 6: Crear una AMI y lanzar otra instancia EC2</span></h3><p><span>Debido a que el sitio web de la cafetería ya funciona bien en una instancia EC2 existente, Sofía decide duplicarlo mediante la creación de una AMI a partir de ella. Luego, lanzará una instancia nueva desde la AMI nueva.</span></p><p><span>Usted continuará asumiendo el rol de Sofía para esta tarea. Antes de crear una AMI a partir de esta instancia, debe crear un par de claves nuevo. Esto podría ser importante para más adelante en el laboratorio.</span></p><ol start='28' ><li><p><span>Establezca un nombre de host interno estático y cree un par de claves nuevo en la instancia EC2.</span></p><p><span>En el terminal de Bash, ejecute los siguientes comandos:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> hostname cafeserver</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">ssh-keygen <span class="cm-attribute">-t</span> rsa <span class="cm-attribute">-f</span> ~/.ssh/id_rsa</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 45px;"></div><div class="CodeMirror-gutters" style="display: none; height: 45px;"></div></div></div></pre><p><span>Las dos veces que se le solicite una contraseña, presione la tecla INTRO.</span></p><p><span>Para que la clave nueva esté disponible para las utilidades de SSH, en el terminal de Bash, ejecute el siguiente comando:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; <span class="cm-builtin">cat</span> ~/.ssh/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li></ol><p>&nbsp;</p><ol start='29' ><li><span>En la consola de administración de AWS, vaya al área de servicio de </span><strong><span>EC2</span></strong><span> y seleccione la instancia.</span></li></ol><p>&nbsp;</p><ol start='30' ><li><p><span>Elija </span><strong><span>Actions (Acciones) &gt; Image (Imagen) &gt; Create Image (Crear imagen)</span></strong><span>.</span></p><p><strong><span>Sugerencia</span></strong><span>: Deje abierto el cuadro de diálogo </span><strong><span>Create Image</span></strong><span> (Crear imagen) en la pestaña del navegador mientras responde algunas preguntas sobre las AMI.</span></p></li></ol><p>&nbsp;</p><h4 id='responder-las-preguntas-sobre-las-ami'><span>Responder las preguntas sobre las AMI</span></h4><p><span>Las respuestas se registrarán cuando haga clic en el botón azul </span><strong><span>Submit</span></strong><span> (Enviar), que se encuentra al final del laboratorio.</span></p><ol start='31' ><li><p><span>Vuelva a la pestaña del navegador que tiene las preguntas para este laboratorio. Ya accedió a esta pestaña anteriormente.</span></p><p><span>Si necesita encontrar la página de nuevo:</span></p><ul><li><span>Haga clic en el menú </span><strong><span>Details</span></strong><span> (Detalles) y, luego, en </span><strong><span>Show</span></strong><span> (Mostrar).</span></li><li><span>Elija el enlace </span><strong><span>Access the multiple choice questions</span></strong><span> (Acceder a las preguntas de múltiple opción) que aparece en la parte inferior de la página.</span></li></ul></li></ol><p>&nbsp;</p><ol start='32' ><li><p><span>En la página, envíe las respuestas a las siguientes preguntas:</span></p><ul><li><strong><span>Pregunta 5</span></strong><span>: Cuando cree una AMI a partir de una instancia, ¿se reiniciará la instancia?</span></li><li><strong><span>Pregunta 6</span></strong><span>: ¿De qué manera puede modificar las propiedades del volumen raíz cuando crea una AMI a partir de una instancia?</span></li><li><strong><span>Pregunta 7</span></strong><span>: ¿Puede agregar más volúmenes a una AMI que cree a partir de una instancia que solo tiene un volumen?</span></li></ul></li></ol><p>&nbsp;</p><ol start='33' ><li><p><span>En la consola de administración de AWS, en la pantalla </span><strong><span>Create Image</span></strong><span> (Crear imagen), cree la AMI nueva:</span></p><ul><li><strong><span>Image name</span></strong><span> (Nombre de la imagen): </span><code>CafeServer</code></li><li><span>Elija </span><strong><span>Create Image</span></strong><span> (Crear imagen)</span></li></ul></li></ol><p>&nbsp;</p><ol start='34' ><li><span>Elija el enlace </span><strong><span>View pending image ami-… (Ver imagen pendiente ami-…)</span></strong><span> y espere hasta que el estado de la imagen sea </span><em><span>Available (Disponible)</span></em><span>. Por lo general, este proceso demora dos minutos.</span></li></ol><p>&nbsp;</p><ol start='35' ><li><p><span>Crear una AMI en otra región de AWS</span></p><p><span>En este paso, su objetivo es crear una nueva instancia EC2 a partir de la AMI que acaba de crear. Sin embargo, debe crear la nueva instancia en la región de AWS de Oregón (us-west-2).</span></p></li></ol><details>
+<summary>
+<b>Sugerencia n.º&nbsp;1</b> (haga clic para ampliar)
+</summary>
+Copie el ID de AMI de la imagen que acaba de crear. Luego, intente encontrarlo en la región us-west-2.
+</details><details>
+<summary>
+<b>Sugerencia n.º&nbsp;2</b> (haga clic para ampliar)
+</summary>
+¿Existen las AMI al nivel de la cuenta?
+</details><details>
+<summary>
+<b>Sugerencia n.º&nbsp;3</b> (haga clic para ampliar)
+</summary>
+Seleccione la AMI que creó en la región de AWS donde llevó a cabo esta acción. A continuación, elija el menú <b>Actions (Acciones)</b>. ¿Alguna de las acciones parece que podría ayudarlo a hacer que la AMI esté disponible en la región de EE.&nbsp;UU.&nbsp;Oeste (Oregón)? Continúe y elija la acción adecuada. Después de iniciar la acción, esta puede tardar hasta cinco&nbsp;minutos en completarse. Elija el icono de actualización de vez en cuando para saber con mayor rapidez cuando se haya completado.
+</details><p>&nbsp;</p><ol start='36' ><li><p><span>Cree la nueva instancia de la cafetería a partir de su AMI. La nueva instancia que cree debe coincidir con los siguientes criterios.</span></p><ul><li><p><strong><span>Region</span></strong><span> (Región): </span><code>Oregon (Oregón)</code></p></li><li><p><strong><span>Instance size</span></strong><span> (Tamaño de instancia): </span><code>t2.small</code></p></li><li><p><strong><span>Network</span></strong><span> (Red): </span><code>Lab VPC Region 2</code><span>, </span><code>Public Subnet</code><span> (Lab VPC región 2, subred pública)</span></p></li><li><p><strong><span>IAM Role</span></strong><span> (Rol de IAM): </span><code>CafeRole</code></p></li><li><p><span>Etiqueta:</span></p><ul><li><strong><span>Key</span></strong><span> (Clave): </span><code>Name (Nombre)</code></li><li><strong><span>Value</span></strong><span> (Valor): </span><code>ProdCafeServer</code></li></ul></li><li><p><span>Grupo de seguridad:</span></p><ul><li><span>Cree uno nuevo denominado </span><strong><span>cafeSG</span></strong><span>, con un puerto TCP </span><strong><span>22</span></strong><span> abierto a cualquier sitio</span></li><li><span>Configure el puerto TCP </span><strong><span>80</span></strong><span> para que también esté abierto a cualquier sitio</span></li></ul></li><li><p><strong><span>Continúe sin un par de claves</span></strong><span> (el par de claves que creó anteriormente en este laboratorio debería funcionar para conectarse a él, si es necesario)</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='37' ><li><span>Espere a que se le asigne un valor de </span><em><span>DNS público</span></em><span> a la instancia nueva, incluso si su estado aún no es </span><em><span>Available (Disponible)</span></em><span>.</span></li></ol><p>&nbsp;</p><ol start='38' ><li><span>Copie el valor de </span><strong><span>DNS público</span></strong><span>. Lo utilizará pronto.</span></li></ol><p>&nbsp;</p><ol start='39' ><li><p><span>Para crear los </span><em><span>parámetros de AWS Systems Manager</span></em><span> necesarios en la nueva región de AWS, complete estos pasos.</span></p><ul><li><p><span>Vuelva al IDE de AWS Cloud9 en la región </span><strong><span>Norte de Virginia</span></strong><span> (us-east-1).</span></p></li><li><p><span>Abra el archivo CafeWebServer/setup/</span><strong><span>set-app-parameters.sh</span></strong><span> en el editor de texto.</span></p></li><li><p><span>Edite la </span><strong><span>línea 12</span></strong><span> del archivo para que coincida con esta configuración:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">region</span><span class="cm-operator">=</span><span class="cm-string">"us-west-2"</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Edite la </span><strong><span>línea 18</span></strong><span> para que coincida con esta configuración (donde &lt;</span><em><span>public-dns-of-ProdCafeServer-instance</span></em><span>&gt; es el DNS real de la instancia ProdCafeServer):</span></p></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">publicDNS</span><span class="cm-operator">=</span><span class="cm-string">"&lt;public-dns-of-ProdCafeServer-instance&gt;"</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><strong><span>Nota</span></strong><span>: La línea debe contener las comillas, pero </span><em><span>no</span></em><span> los corchetes angulares (&lt; &gt;).</span></p><p><span>En este ejemplo se muestra cómo debería verse la línea 12 y el formato que debería tener la línea 18. Sin embargo, el valor de su DNS público será diferente.</span></p></li></ol><p><img src="images/php-file.png" referrerpolicy="no-referrer" alt="php-file"></p><ul><li><span>Utilice </span><strong><span>File (Archivo) &gt; Save (Guardar)</span></strong><span> para guardar el cambio.</span></li><li><span>Para ejecutar este script, vaya a la parte superior del IDE y elija el botón </span><strong><span>Run</span></strong><span> (Ejecutar).</span></li></ul><p><span>En el terminal de Bash, debajo del editor de texto, debería ver el resultado con formato JavaScript Object Notation (JSON). Este resultado indica que el script de parámetros se ejecutó correctamente.</span></p><details>
+<summary>Si se detectó un problema en el script, haga clic aquí para ver algunas sugerencias para la solución de problemas.</summary>
+Si el resultado del comando indica que las credenciales han caducado, intente ejecutar estos comandos en el terminal de Bash (y luego ejecute set-app-parameters.sh de nuevo):
+<br><code>wget https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/mod4-challenge/cred-update.sh</code><br>
+<code>chmod +x cred-update.sh</code><br>
+<code>./cred-update.sh</code>
+</details><p><strong><span>Nota</span></strong><span>: Como se cambió la información de la región de AWS y se ejecutó de nuevo este script, se crearon los mismos parámetros que creó anteriormente en la región us-east-1 de AWS Systems Manager Parameter Store. Sin embargo, esta vez se crearon estos parámetros en la región de Oregón.</span></p><p>&nbsp;</p><h3 id='tarea-7 verificar-la-nueva-instancia-de-la-cafetería'><span>Tarea 7: Verificar la nueva instancia de la cafetería</span></h3><ol start='40' ><li><span>Vuelva a la consola de EC2 en la región de </span><strong><span>Oregón</span></strong><span> y compruebe que se esté ejecutando la nueva instancia de </span><strong><span>ProdCafeServer</span></strong><span>.</span></li></ol><p>&nbsp;</p><ol start='41' ><li><p><span>Copie la dirección IP pública IPv4 y cárguela en un navegador web.</span></p><p><span>Debería aparecer el mensaje </span><em><span>Hello from the cafe web server! (¡Hola de parte del servidor web de la cafetería!)</span></em><span>.</span></p></li></ol><p>&nbsp;</p><ol start='42' ><li><p><span>Cargue la URL </span><code>http://&lt;public-ip&gt;/cafe/</code><span> en la pestaña del navegador.</span></p><p><span>Debería verse todo el sitio web de la cafetería.</span></p></li></ol><p>&nbsp;</p><ol start='43' ><li><p><span>Cargue la página </span><strong><span>Menu</span></strong><span> (Menú).</span></p><p><span>Debería cargarse la página </span><em><span>Menu (Menú)</span></em><span> completa y debería ejecutarse la funcionalidad para realizar pedidos.</span></p></li></ol><p>&nbsp;</p><ol start='44' ><li><span>Realice un pedido para verificar que el sitio web funcione según lo previsto.</span></li></ol><p>&nbsp;</p><ol start='45' ><li><p><span>Sugerencias para la solución de problemas (omita este paso si no ha encontrado ningún problema al cargar la página </span><em><span>Menu (Menú)</span></em><span>).</span></p><p><span>El script de corrección puede ofrecer otras sugerencias para las partes del laboratorio que no completó correctamente. Puede enviar su trabajo tantas veces como desee. Solo se conserva la puntuación que obtiene la última vez que envía su trabajo.</span></p><p><span>Además, si desea conectarse a la nueva instancia EC2 en Oregón (us-west-2) para solucionar los problemas, ejecute este comando desde el IDE de AWS Cloud9 en us-east-1:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">ssh</span> <span class="cm-attribute">-i</span> ~/.ssh/id_rsa ec2-user@&lt;public-ip-of-ProdCafeServer&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>Tenga en cuenta que &lt;</span><em><span>public-ip-of-ProdCafeServer</span></em><span>&gt; es la dirección IP pública real de la instancia ProdCafeServer.</span></p></li></ol><p>&nbsp;</p><h2 id='noticias-de-la-cafetería'><span>Noticias de la cafetería</span></h2><p><img src="images/cafe-team.png" referrerpolicy="no-referrer" alt="equipo de la cafetería"></p><p><span>Sofía se convirtió en una heroína en la cafetería. Creó un sitio web dinámico </span><em><span>y</span></em><span> también creó una versión duplicada del mismo sitio web que se ejecuta en una segunda región de AWS.</span></p><p><span>Sofía decidió designar la primera instancia EC2 que creó, la de la región us-east-1, como la instancia de </span><em><span>desarrollo</span></em><span>. La segunda instancia que ella creó, la de Oregón (o us-west-2), será la instancia de </span><em><span>producción</span></em><span>.</span></p><p><span>De esta manera, Sofía y cualquier otro desarrollador de aplicaciones pueden probar las mejoras de la aplicación en el sitio de </span><em><span>desarrollo</span></em><span> sin afectar el sitio de </span><em><span>producción</span></em><span>. Luego, cuando los desarrolladores decidan que las mejoras funcionan bien y las hayan probado completamente, pueden migrar el código al sitio de producción.</span></p><p><span>Sofía les explicó a sus padres, Frank y Martha, lo que hizo. Aunque no entendían completamente todos los términos técnicos que usaba Sofía, estaban encantados de saber que el sitio web ahora puede recibir pedidos en línea. También se alegraron de saber que ahora pueden probar las nuevas mejoras en el sitio web sin mostrar inmediatamente esos cambios a los clientes.</span></p><p>&nbsp;</p><h2 id='envío-del-trabajo'><span>Envío del trabajo</span></h2><ol start='46' ><li><span>En la parte superior de estas instrucciones, elija </span><span id="ssb_blue"><span>Submit</span></span><span> (Enviar) para registrar su progreso y, cuando se le indique, elija </span><strong><span>Yes</span></strong><span> (Sí).</span></li></ol><p>&nbsp;</p><ol start='47' ><li><p><span>Si los resultados no se muestran después de algunos minutos, vuelva a la parte superior de estas instrucciones y elija </span><span id="ssb_voc_grey"><span>Grades</span></span><span> (Resultados).</span></p><p><strong><span>Sugerencia</span></strong><span>: Puede enviar su trabajo varias veces. Después de realizar las modificaciones pertinentes, vuelva a elegir </span><strong><span>Submit</span></strong><span> (Enviar). Su último envío es el que se registrará para este laboratorio.</span></p></li></ol><p>&nbsp;</p><ol start='48' ><li><span>Para encontrar comentarios detallados sobre su trabajo, elija </span><span id="ssb_voc_grey"><span>Details</span></span><span> (Detalles) seguido de </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span> (Ver informe de envío).</span></li></ol><p>&nbsp;</p><h2 id='fin-del-laboratorio'><span>Fin del laboratorio</span></h2><p><i class="icon-flag-checkered"></i><span> ¡Felicitaciones! Ha completado el laboratorio.</span></p><ol start='49' ><li><p><span>Para confirmar que desea finalizar el laboratorio, haga clic en </span><strong><span id="ssb_voc_grey"><span>End Lab</span></span></strong><span> (Finalizar laboratorio) en la parte superior de esta página y, a continuación, elija </span><strong><span id="ssb_blue"><span>Yes</span></span></strong><span> (Sí).</span></p><p><span>Debería aparecer un panel con el siguiente mensaje: </span><em><span>DELETE has been initiated… You may close this message box now (Se ha iniciado la ELIMINACIÓN… Ya puede cerrar este cuadro de mensaje).</span></em></p></li></ol><p>&nbsp;</p><ol start='50' ><li><span>Para cerrar el panel, haga clic en la </span><strong><span>X</span></strong><span> de la esquina superior derecha.</span></li></ol><p>&nbsp;</p><p><em><span>© 2020 Amazon Web Services, Inc. y sus empresas afiliadas. Todos los derechos reservados. Este contenido no puede reproducirse ni redistribuirse, total ni parcialmente, sin el permiso previo por escrito de Amazon Web Services, Inc. Queda prohibida la copia, el préstamo y la venta de carácter comercial.</span></em></p></div></div>
+</body>
+</html>
