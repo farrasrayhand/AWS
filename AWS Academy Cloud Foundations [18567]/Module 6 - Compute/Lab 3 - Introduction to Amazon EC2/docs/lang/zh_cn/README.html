@@ -1,0 +1,1245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; white-space: nowrap; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; border: none !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; background-position: 0px 0px; background-repeat: initial initial; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-style: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-style: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background-color: rgba(255, 255, 0, 0.4); background-position: initial initial; background-repeat: initial initial; }
+@media print { 
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'>
+<div id='write'  class=''><h1><a name="实验-3amazon-ec2-简介" class="md-header-anchor"></a><span>实验 3：Amazon EC2 简介</span></h1><!-- Note to translators: This is based on SPL-200. Copy the translation from there. Do not re-translate the whole document. --><p><strong><span>版本 1.1.7 (spl200)</span></strong></p><h2><a name="概览" class="md-header-anchor"></a><span>概览</span></h2><p><img src="images/lab-scenario.jpeg" alt="架构图" width="400"></p><p>&nbsp;</p><p><span>本实验概述了如何启动、管理和监控 Amazon EC2 实例以及调整其大小。</span></p><p><strong><span>Amazon Elastic Compute Cloud (Amazon EC2)</span></strong><span> 是一种 Web 服务，可在提供大小可调的云端计算容量。该服务旨在让开发人员更轻松地进行 Web 规模的云计算。</span></p><p><span>Amazon EC2 的 Web 服务界面非常简单，您可以在此界面上轻松获取和配置容量。使用该服务，您可以完全控制您的计算资源，并可以在经过验证的 Amazon 计算环境中运行。Amazon EC2 将获取并启动新服务器实例所需要的时间缩短至几分钟，这样一来，在您的计算要求发生变化时，您便可以快速扩展或缩减计算容量。</span></p><p><span>Amazon EC2 按您实际使用的容量收费，改变了计算的成本结算方式。Amazon EC2 还为开发人员提供了相关工具来创建能够迅速从故障中恢复的应用程序并避免常见故障。</span></p><p>&nbsp;</p><h3><a name="涵盖的主题" class="md-header-anchor"></a><span>涵盖的主题</span></h3><p><span>本实验结束时，您将能够：</span></p><ul><li><span>在启用终止保护的情况下，启动 Web 服务器</span></li><li><span>监控您的 EC2 实例</span></li><li><span>修改您的 Web 服务器使用的安全组以允许 HTTP 访问</span></li><li><span>调整 Amazon EC2 实例的大小以进行扩展或缩减</span></li><li><span>探索 EC2 限制</span></li><li><span>测试终止保护</span></li><li><span>终止 EC2 实例</span></li></ul><p>&nbsp;</p><h3><a name="持续时间" class="md-header-anchor"></a><span>持续时间</span></h3><p><span>完成本实验大约需要 </span><strong><span>35 分钟</span></strong><span>。</span></p><p>&nbsp;
+&nbsp;</p><h2><a name="访问-aws-管理控制台" class="md-header-anchor"></a><span>访问 AWS 管理控制台</span></h2><ol start='' ><li><p><span>在这些说明的顶部，单击 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（启动实验）启动您的实验。</span></p><p><span>“Start Lab”（启动实验）面板随即会打开，其中显示了实验状态。</span></p></li><li><p><span>请耐心等待，直到您看到“</span><strong><span>Lab status: ready</span></strong><span>”（实验状态：就绪）消息，然后单击 </span><strong><span>X</span></strong><span> 关闭 Start Lab（启动实验）面板。</span></p></li><li><p><span>在这些说明的顶部，单击 </span><span id="ssb_voc_grey"><span>AWS</span></span></p><p><span>在您执行此操作后，AWS 管理控制台将会在一个新的浏览器标签页中打开。您将自动登录系统。</span></p><p><strong><span>提示：</span></strong><span>如果未打开新的浏览器选项卡，则您的浏览器顶部通常会出现一个横幅或图标，表明您的浏览器阻止该网站打开弹出窗口。单击横幅或图标，然后选择 Allow pop ups（允许弹出窗口）。</span></p></li><li><p><span>排列 AWS 管理控制台选项卡，使其与这些说明一起显示。理想情况下，您将能够同时看到这两个浏览器选项卡，以便更轻松地执行实验步骤。</span></p></li></ol><p>&nbsp;
+&nbsp;</p><h2><a name="任务-1启动-amazon-ec2-实例" class="md-header-anchor"></a><span>任务 1：启动 Amazon EC2 实例</span></h2><p><span>在此任务中，您将启动带有</span><em><span>终止保护</span></em><span>的 Amazon EC2 实例。终止保护可以防止您意外终止 EC2 实例。您将使用用户数据脚本部署实例，该脚本使您能够部署简单的 Web 服务器。</span></p><ol start='5' ><li><span>在 </span><strong><span>AWS 管理控制台</span></strong><span>的 </span><strong><span>Services</span></strong><span>（服务）菜单上，单击 </span><strong><span>EC2</span></strong><span>。</span></li><li><span>选择 </span><span id="ssb_orange"><span>Launch Instance </span><i class="fas fa-caret-down"></i></span><span>（启动实例）。然后选择 </span><span id="ssb_white"><span>Launch Instance</span></span><span>（启动实例）</span></li></ol><h3><a name="第-1-步选择-amazon-系统映像-ami" class="md-header-anchor"></a><span>第 1 步：选择 Amazon 系统映像 (AMI)</span></h3><p><i class="fas fa-info-circle"></i><strong><span>Amazon 系统映像 (AMI)</span></strong><span> 提供启动实例（云中的虚拟服务器）所需的信息。AMI 包括：</span></p><ul><li><span>用于实例根卷的模板（例如，操作系统或者包含应用程序的应用程序服务器）</span></li><li><span>启动许可，用于控制哪些 AWS 账户可以使用 AMI 来启动实例。</span></li><li><span>块储存设备映射，用于指定在实例启动时要向其挂载的卷</span></li></ul><p><strong><span>Quick Start</span></strong><span>（快速启动）列表包含最常用的 AMI。您也可以创建自己的 AMI 或从 AWS Marketplace 选择一个 AMI。AWS Marketplace 是一个在线商店，您可以在其中销售或购买在 AWS 上运行的软件。</span></p><ol start='7' ><li><span>单击 </span><strong><span>Amazon Linux 2 AMI</span></strong><span>（列表顶部）旁边的 </span><span id="ssb_blue"><span>Select</span></span><span>（选择）。</span></li></ol><p>&nbsp;</p><h3><a name="第-2-步选择实例类型" class="md-header-anchor"></a><span>第 2 步：选择实例类型</span></h3><p><i class="fas fa-info-circle"></i><span>Amazon EC2 提供了多种经过优化的</span><em><span>实例类型</span></em><span>，适合不同的使用案例。实例类型包括由 CPU、内存、存储和网络容量组成的不同组合，使您能够灵活地为应用程序选择适当的资源组合。每种实例类型都包含一个或多个</span><em><span>实例大小</span></em><span>，使您能够根据目标工作负载的需求扩展资源。</span></p><p><span>默认情况下，您要使用的 </span><strong><span>t2.micro</span></strong><span> 实例应处于选中状态</span><i class="fas fa-square" style="color:blue"></i><span>。此实例类型具有 1 个虚拟 CPU 和 1GiB 内存。</span><strong><span>注意</span></strong><span>：本实验可能会限制您使用其他实例类型。</span></p><ol start='8' ><li><span>单击 </span><span id="ssb_grey"><span>Next: Configure Instance Details</span></span><span>（下一步：配置实例详细信息）</span></li></ol><p>&nbsp;</p><h3><a name="第-3-步配置实例详细信息" class="md-header-anchor"></a><span>第 3 步：配置实例详细信息</span></h3><p><span>您可以在此页面配置实例以满足您的需求。这包括联网和监控设置。</span></p><p><strong><span>Network</span></strong><span>（网络）指明您希望在哪个 Virtual Private Cloud (VPC) 中启动实例。您可以拥有多个网络，例如分别用于开发、测试和生产的不同网络。</span></p><ol start='9' ><li><p><span>对于 </span><strong><span>Network</span></strong><span>（网络），选择 </span><strong><span>Lab VPC</span></strong><span>。</span></p><p><span>Lab VPC 是在实验的设置过程中使用 AWS CloudFormation 模板创建的。此 VPC 包含在两个不同的可用区中的两个公有子网。</span></p></li><li><p><span>对于 </span><strong><span>Enable termination protection</span></strong><span>（启用终止保护），请选择 </span><i class="far fa-check-square"></i><span> </span><strong><span>Protect against accidental termination</span></strong><span>（防止意外终止）。</span></p></li></ol><p><i class="fas fa-info-circle"></i><span>当不再需要某个 Amazon EC2 实例时，可以将其</span><em><span>终止</span></em><span>，这意味着该实例已停止并释放了其资源。实例一旦终止就无法再次启动。如果要防止实例意外终止，可以为实例启用</span><em><span>终止保护</span></em><span>，以防止实例终止。</span></p><ol start='11' ><li><span>向下滚动，然后展开 </span><i class="fas fa-caret-right"></i><span> </span><strong><span>Advanced Details</span></strong><span>（高级详细信息）。</span></li></ol><p><span>此时将显示 </span><strong><span>User data</span></strong><span>（用户数据）字段。</span></p><p><i class="fas fa-info-circle"></i><span>当您启动实例时，可以将</span><em><span>用户数据</span></em><span>传递到实例，用户数据可用于执行常见的自动配置任务甚至在实例启动后运行脚本。</span></p><p><span>您的实例运行的是 Amazon Linux，因此需要提供一个将在实例启动时运行的 </span><em><span>Shell 脚本</span></em><span>。</span></p><ol start='12' ><li><p><span>复制以下命令并将其粘贴到 </span><strong><span>User data</span></strong><span>（用户数据）字段中：</span></p><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="plain"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">#!/bin/bash</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">yum -y install httpd</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">systemctl enable httpd</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">systemctl start httpd</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">echo '&lt;html&gt;&lt;h1&gt;Hello From Your Web Server!&lt;/h1&gt;&lt;/html&gt;' &gt; /var/www/html/index.html</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 134px;"></div><div class="CodeMirror-gutters" style="display: none; height: 134px;"></div></div></div></pre><p><span>该脚本将执行以下操作：</span></p><ul><li><span>安装 Apache Web 服务器 (httpd)</span></li><li><span>将 Web 服务器配置为在引导时自动启动</span></li><li><span>激活 Web 服务器</span></li><li><span>创建简单的网页</span></li></ul></li></ol><ol start='13' ><li><span>单击 </span><span id="ssb_grey"><span>Next: Add Storage</span></span><span>（下一步：添加存储）</span></li></ol><p>&nbsp;</p><h3><a name="第-4-步添加存储" class="md-header-anchor"></a><span>第 4 步：添加存储</span></h3><p><i class="fas fa-info-circle"></i><span>Amazon EC2 将数据存储在名为 </span><em><span>Elastic Block Store</span></em><span> 的网络挂载的虚拟磁盘上。</span></p><p><span>您将使用默认的 8GiB 磁盘卷启动 Amazon EC2 实例。该卷将是您的根卷（也称为“启动卷”）。</span></p><ol start='14' ><li><span>单击 </span><span id="ssb_grey"><span>Next: Add Tags</span></span><span>（下一步：添加标签）</span></li></ol><p>&nbsp;</p><h3><a name="第-5-步添加标签" class="md-header-anchor"></a><span>第 5 步：添加标签</span></h3><p><i class="fas fa-info-circle"></i><span>标签让您能够按各种标准（例如用途、拥有者或环境）对 AWS 资源进行分类。这在您具有许多同类资源时会很有用 </span>&mdash;<span> 您可以根据分配给资源的标签快速识别特定资源。每个标签都包含您定义的一个键和一个值。</span></p><ol start='15' ><li><span>单击 </span><span id="ssb_grey"><span>Add Tag</span></span><span>（添加标签），然后进行以下配置：</span></li></ol><ul><li><strong><span>Key</span></strong><span>（键）：</span><code>Name</code></li><li><strong><span>Value</span></strong><span>（值）：</span><code>Web Server</code></li></ul><ol start='16' ><li><span>单击 </span><span id="ssb_grey"><span>Next: Configure Security Group</span></span><span>（下一步：配置安全组）</span></li></ol><p>&nbsp;</p><h3><a name="第-6-步配置安全组" class="md-header-anchor"></a><span>第 6 步：配置安全组</span></h3><p><i class="fas fa-info-circle"></i><em><span>安全组</span></em><span>将起到虚拟防火墙的作用，用于控制一个或多个实例的流量。在您启动某个实例时，会将一个或多个安全组与该实例相关联。您可以向每个安全组添加</span><em><span>规则</span></em><span>，以允许进出关联实例的流量。您可以随时修改安全组的规则；新规则将自动应用于与该安全组关联的所有实例。</span></p><ol start='17' ><li><span>在</span><strong><span>第 6 步：配置安全组</span></strong><span>中，进行以下配置：</span></li></ol><ul><li><strong><span>Security group name</span></strong><span>（安全组名称）：</span><code>Web Server security group</code></li><li><strong><span>Description</span></strong><span>（描述）：</span><code>Security group for my web server</code></li></ul><p><span>   在本实验中，您无法使用 SSH 登录您的实例。删除 SSH 访问权限将提高实例的安全性。</span></p><ol start='18' ><li><span>删除</span><i class="fas fa-times-circle"></i><span>现有的 SSH 规则。</span></li><li><span>单击 </span><span id="ssb_blue"><span>Review and Launch</span></span><span>（审核和启动）</span></li></ol><p>&nbsp;</p><h3><a name="第-7-步核查实例启动" class="md-header-anchor"></a><span>第 7 步：核查实例启动</span></h3><p><span>“Review”（核查）页面将显示您要启动的实例的配置。</span></p><ol start='20' ><li><span>单击 </span><span id="ssb_blue"><span>Launch</span></span><span>（启动）</span></li></ol><p><span>此时将显示 </span><strong><span>Select an existing key pair or create a new key pair</span></strong><span>（选择现有密钥对或创建新密钥对）窗口。</span></p><p><i class="fas fa-info-circle"></i><span>Amazon EC2 使用公有密钥加密法来加密和解密登录信息。要登录您的实例，您必须创建密钥对，并在启动该实例时指定密钥对名称，然后在连接到该实例时提供私有密钥。</span></p><p><span>在本实验中，您无需登录实例，因此不需要密钥对。</span></p><ol start='21' ><li><span>单击 </span><strong><span>Choose an existing key pair</span></strong><span> </span><i class="fas fa-angle-down"></i><span>（选择现有密钥对）下拉菜单，然后选择 </span><em><span>Proceed without a key pair</span></em><span>（在没有密钥对的情况下继续）。</span></li><li><span>选择 </span><i class="far fa-check-square"></i><span> </span><strong><span>I acknowledge that ...</span></strong><span>（我确认...）。</span></li><li><span>单击 </span><span id="ssb_blue"><span>Launch Instance</span></span><span>（启动实例）</span></li></ol><p><span>   此时，您的实例将会启动。</span></p><ol start='24' ><li><span>单击 </span><span id="ssb_blue"><span>View Instances</span></span><span>（查看实例）</span></li></ol><p><span>   该实例的状态将显示为 </span><em><span>pending</span></em><span>（等待中），这表示它正在启动。随后，它的状态将变为 </span><em><span>running</span></em><span>（正在运行），这表示该实例已开始启动。一小段时间之后，您就可以访问该实例了。</span></p><p><span>   该实例将获得一个</span><em><span>公有 DNS 名称</span></em><span>，您可使用此名称通过互联网与实例通信。</span></p><p><span>   您的 </span><i class="fas fa-square" style="color:blue"></i><span> </span><strong><span>Web Server</span></strong><span>（Web 服务器）必须处于选中状态。</span><strong><span>Description</span></strong><span>（描述）选项卡显示有关您的实例的详细信息。</span></p><p><span>   </span><i class="fas fa-comment"></i><span>要在 Description（描述）选项卡中查看更多信息，请向上拖动窗口分隔线。</span></p><p><span>   查看 </span><strong><span>Description</span></strong><span>（描述）选项卡中显示的信息。其中包括有关实例类型、安全设置和网络设置的信息。</span></p><ol start='25' ><li><span>等待您的实例显示以下内容：</span></li></ol><ul><li><strong><span>Instance State</span></strong><span>（实例状态）：</span><span style="color:green"><i class="fas fa-circle"></i></span><span>running（正在运行）</span></li><li><strong><span>Status Checks:</span></strong><span>（状态检查）：</span><span style="color:green"><i class="fas fa-check-circle"></i></span><span>2/2 checks passed（2/2 已通过检查）</span></li></ul><p><span style="color:blue"><i class="far fa-thumbs-up"></i></span><span> </span><strong><span>恭喜！</span></strong><span>您已成功启动自己的第一个 Amazon EC2 实例。</span></p><p>&nbsp;
+&nbsp;</p><h2><a name="任务-2监控实例" class="md-header-anchor"></a><span>任务 2：监控实例</span></h2><p><span>监控是保持 Amazon Elastic Compute Cloud (Amazon EC2) 实例和 AWS 解决方案可靠性、可用性和性能的重要一环。</span></p><ol start='26' ><li><span>单击 </span><strong><span>Status Checks</span></strong><span>（状态检查）选项卡。</span></li></ol><p><span>   </span><i class="fas fa-info-circle"></i><span>使用实例状态监控，您可以快速确定 Amazon EC2 是否已经检测到可能阻止您的实例运行应用程序的任何问题。Amazon EC2 将自动对所有正在运行的 EC2 实例执行检查，以识别硬件和软件问题。</span></p><p><span>   请注意，本实验中的实例已通过 </span><strong><span>System reachability</span></strong><span>（系统可访问性）和 </span><strong><span>Instance reachability</span></strong><span>（实例可访问性）检查。</span></p><ol start='27' ><li><span>单击 </span><strong><span>Monitoring</span></strong><span>（监控）选项卡。</span></li></ol><p><span>   此选项卡显示您的实例的 Amazon CloudWatch 指标。目前，此选项卡显示的指标并不多，因为实例是最近才启动的。</span></p><p><span>   您可以单击图表来查看放大图。</span></p><p><span>   </span><i class="fas fa-info-circle"></i><span>Amazon EC2 将指标发送到用于您的 EC2 实例的 Amazon CloudWatch。默认情况下，基本监控（5 分钟）处于启用状态。您可以启用详细监控（1 分钟）。</span></p><ol start='28' ><li><span>在 </span><span id="ssb_grey_square"><span>Actions </span><i class="fas fa-caret-down"></i></span><span>（操作）菜单中，选择</span><strong><span>Monitor and troubleshoot</span></strong><span>（监控并排查问题）</span><i class="fas fa-caret-right"></i><span> </span><strong><span>Get System Log</span></strong><span>（获取系统日志）。</span></li></ol><p><span>   系统日志将显示实例的控制台输出，这是一种很有价值的工具，可用于问题诊断。它尤其适合用于排查内核问题和服务配置问题，它们可能会导致实例在 SSH 后台程序启动前终止或变得不可访问。如果您没有看到系统日志，请等待几分钟，然后重试。</span></p><ol start='29' ><li><span>滚动浏览输出，请注意，HTTP 包是在您创建实例时利用您添加的</span><strong><span>用户数据</span></strong><span>安装的。</span></li></ol><p><img src="images/Console-output.png" alt="控制台输出" width="600"></p><ol start='30' ><li><span>选择 </span><strong><span>Cancel</span></strong><span>（取消）。</span></li><li><span>在 </span><span id="ssb_grey_square"><span>Actions </span><i class="fas fa-caret-down"></i></span><span>（操作）菜单中，选择</span><strong><span>Monitor and troubleshoot</span></strong><span>（监控并排查问题）</span><i class="fas fa-caret-right"></i><span> </span><strong><span>Get Instance Screenshot</span></strong><span>（获取实例屏幕截图）。</span></li></ol><p><span>   系统此时会向您展示当屏幕连接到 Amazon EC2 实例控制台时，该控制台的外观。</span></p><p><img src="images/Screen-shot.png" alt="屏幕截图" width="600"></p><p><span>   </span><i class="fas fa-info-circle"></i><span>如果您无法通过 SSH 或 RDP 访问您的实例，可以截取实例的屏幕截图，以图像形式查看。这可以让您了解实例的状态，更快地进行故障排查。</span></p><ol start='32' ><li><span>选择 </span><strong><span>Cancel</span></strong><span>（取消）。</span></li></ol><p><span>   </span><span style="color:blue"><i class="far fa-thumbs-up"></i></span><span> </span><strong><span>恭喜！</span></strong><span>您已探索了多种监控实例的方法。</span></p><p>&nbsp;
+&nbsp;</p><h2><a name="任务-3更新安全组并访问-web-服务器" class="md-header-anchor"></a><span>任务 3：更新安全组并访问 Web 服务器</span></h2><p><span>启动 EC2 实例时，您提供了一个脚本，该脚本安装了 Web 服务器并创建了一个简单的网页。在此任务中，您将从该 Web 服务器访问内容。</span></p><ol start='33' ><li><span>单击 </span><strong><span>Details</span></strong><span>（详细信息）选项卡。</span></li><li><span>将您实例的 </span><strong><span>IPv4 Public IP</span></strong><span>（IPv4 公有 IP）复制到剪贴板。</span></li><li><span>在 Web 浏览器中打开一个新选项卡，粘贴您刚刚复制的 IP 地址，然后按 </span><strong><span>Enter</span></strong><span> 键。</span></li></ol><p><span>   </span><strong><span>问题</span></strong><span>：您能否访问您的 Web 服务器？为什么无法访问？</span></p><p><span>   您目前</span><strong><span>无法</span></strong><span>访问您的网络服务器，因为</span><em><span>安全组</span></em><span>不允许端口 80 上的入站流量，该端口用于 HTTP Web 请求。这演示了如何将安全组用作防火墙来限制允许进出实例的网络流量。</span></p><p><span>   要解决此问题，您现在应更新安全组以允许端口 80 上的 Web 流量。</span></p><ol start='36' ><li><span>让浏览器选项卡保持打开状态，同时返回 </span><strong><span>EC2 管理控制台</span></strong><span>选项卡。</span></li><li><span>在左侧导航窗格中，单击 </span><strong><span>Security Groups</span></strong><span>（安全组）。</span></li><li><span>选择 </span><i class="fas fa-square" style="color:blue"></i><span> </span><strong><span>Web Server security group</span></strong><span>（Web 服务器安全组）。</span></li><li><span>单击 </span><strong><span>Inbound</span></strong><span>（入站）选项卡。</span></li></ol><p><span>   此安全组当前没有规则。</span></p><ol start='40' ><li><span>单击 </span><span id="ssb_grey_square"><span>Edit inboud rules</span></span><span>（编辑入站规则），然后完成以下配置：</span></li></ol><ul><li><strong><span>Type</span></strong><span>（类型）：</span><em><span>HTTP</span></em></li><li><strong><span>Source</span></strong><span>（源）：</span><em><span>Anywhere</span></em><span>（任何位置）</span></li><li><span>单击 </span><span id="ssb_orange"><span>Save rules</span></span><span>（保存规则）</span></li></ul><ol start='41' ><li><span>返回您之前打开的 Web 服务器选项卡，然后刷新</span><i class="fas fa-sync"></i><span>页面。</span></li></ol><p><span>   您应该会看到以下消息：</span><em><span>Hello From Your Web Server!</span></em><span>（Web 服务器向您问好！）</span></p><p><span>   </span><span style="color:blue"><i class="far fa-thumbs-up"></i></span><span> </span><strong><span>恭喜！</span></strong><span>您已成功修改安全组以允许 HTTP 流量进入您的 Amazon EC2 实例。</span></p><p>&nbsp;
+&nbsp;</p><h2><a name="任务-4调整实例大小实例类型和-ebs-卷" class="md-header-anchor"></a><span>任务 4：调整实例大小：实例类型和 EBS 卷</span></h2><p><span>随着您的需求变化，您可能会发现您的实例被过度使用（过小）或未得到充分使用（过大）。如果是这样，您可以更改</span><em><span>实例类型</span></em><span>。例如，如果 </span><em><span>t2.micro</span></em><span> 实例对于其工作负载来说过小，您可将其更改为 </span><em><span>m5.medium</span></em><span> 实例。同样，您可以更改磁盘的大小。</span></p><h3><a name="停止实例" class="md-header-anchor"></a><span>停止实例</span></h3><p><span>在调整实例大小之前，您必须将其</span><em><span>停止</span></em><span>。</span></p><p><i class="fas fa-info-circle"></i><span>当您停止实例时，它会关闭。已停止的 EC2 实例不会产生任何费用，但 Amazon EBS 卷仍会产生存储费用。</span></p><ol start='42' ><li><span>在 </span><strong><span>EC2 管理控制台</span></strong><span>中，单击左侧导航窗格中的 </span><strong><span>Instances</span></strong><span>（实例）。</span></li></ol><p><span>   </span><i class="fas fa-square" style="color:blue"></i><span> </span><strong><span>Web Server</span></strong><span> 应已经选中。</span></p><ol start='43' ><li><span>在 </span><span id="ssb_grey_square"><span>Instance State </span><i class="fas fa-caret-down"></i></span><span>（实例状态）菜单中，选择 </span><strong><span>Stop instance</span></strong><span>（停止实例）。</span></li><li><span>选择 </span><span id="ssb_orange"><span>Stop</span></span><span>（停止）</span></li></ol><p><span>   您的实例将执行正常的关机操作，然后将停止运行。</span></p><ol start='45' ><li><span>等待 </span><strong><span>Instance State</span></strong><span>（实例状态）显示：</span><span style="color:red"><i class="fas fa-circle"></i></span><span>stopped（已停止）</span></li></ol><h3><a name="更改实例类型" class="md-header-anchor"></a><span>更改实例类型</span></h3><ol start='46' ><li><span>在 </span><span id="ssb_grey_square"><span>Actions </span><i class="fas fa-caret-down"></i></span><span>（操作）菜单中，选择 </span><strong><span>Instance Settings</span></strong><span>（实例设置）</span><i class="fas fa-caret-right"></i><span> </span><strong><span>Change Instance Type</span></strong><span>（更改实例类型），然后进行以下配置：</span></li></ol><ul><li><strong><span>Instance Type</span></strong><span>（实例类型）：</span><em><span>t2.small</span></em></li><li><span>选择 </span><span id="ssb_orange"><span>Apply</span></span><span>（应用）</span></li></ul><p><span>   当您再次启动该实例时，它将是 </span><em><span>t2.small</span></em><span>，其内存是 </span><em><span>t2.micro</span></em><span> 实例的两倍。</span><strong><span>注意</span></strong><span>：本实验可能会限制您使用其他实例类型。</span></p><h3><a name="调整-ebs-卷的大小" class="md-header-anchor"></a><span>调整 EBS 卷的大小</span></h3><ol start='47' ><li><span>在左侧导航菜单中，单击 </span><strong><span>Volumes</span></strong><span>（卷）。</span></li><li><span>在 </span><span id="ssb_grey"><span>Actions </span><i class="fas fa-caret-down"></i></span><span>（操作）菜单中，选择 </span><strong><span>Modify Volume</span></strong><span>（修改卷）。</span></li></ol><p><span>   当前磁盘卷的大小为 8GiB。现在，您将增加该磁盘的大小。</span></p><ol start='49' ><li><span>将大小更改为：</span><code>10</code><span> </span><strong><span>注意</span></strong><span>：本实验可能会限制您创建较大的 Amazon EBS 卷。</span></li><li><span>选择 </span><span id="ssb_grey"><span>Modify</span></span><span>（修改）</span></li><li><span>选择 </span><span id="ssb_blue"><span>Yes</span></span><span>（是）以确认并增加卷的大小。</span></li><li><span>选择 </span><span id="ssb_blue"><span>Close</span></span><span>（关闭）</span></li></ol><h3><a name="启动调整大小后的实例" class="md-header-anchor"></a><span>启动调整大小后的实例</span></h3><p><span>现在，您将再次启动该实例，该实例现在将具有更多的内存和更多的磁盘空间。</span></p><ol start='53' ><li><span>在左侧导航窗格中，单击 </span><strong><span>Instances</span></strong><span>（实例）。</span></li><li><span>在 </span><span id="ssb_grey_square"><span>Instance State </span><i class="fas fa-caret-down"></i></span><span>（实例状态）菜单中，选择 </span><strong><span>Start instance</span></strong><span>（启动实例）。</span></li><li><span>选择 </span><span id="ssb_orange"><span>Start</span></span><span>（启动）。</span></li></ol><p><span>   </span><span style="color:blue"><i class="far fa-thumbs-up"></i></span><span> </span><strong><span>恭喜！</span></strong><span>您已成功调整 Amazon EC2 实例的大小。在此任务中，您已将实例类型从 </span><em><span>t2.micro _ 更改为 _t2.small</span></em><span>。您还将根磁盘卷的大小从 8GiB 修改为了 10GiB。</span></p><p>&nbsp;
+&nbsp;</p><h2><a name="任务-5了解-ec2-限制" class="md-header-anchor"></a><span>任务 5：了解 EC2 限制</span></h2><p><span>Amazon EC2 提供了不同的资源供您使用。这些资源包括映像、实例、卷和快照。在您创建 AWS 账户时，应遵循这些资源在每个区域的默认限制。</span></p><ol start='56' ><li><span>在左侧导航窗格中，单击 </span><strong><span>Limits</span></strong><span>（限制）。</span></li><li><span>从下拉列表中，选择 </span><strong><span>Running instances</span></strong><span>（正在运行的实例）。</span></li></ol><p><span>   请注意，您可在此区域中启动的实例数存在限制。在您启动实例时，该请求不得导致您的用量超出您在该区域的当前实例限制。</span></p><p><span>   您可以请求提高其中许多限制。</span></p><p>&nbsp;
+&nbsp;</p><h2><a name="任务-6测试终止保护" class="md-header-anchor"></a><span>任务 6：测试终止保护</span></h2><p><span>当您不再需要实例时，可将其删除。这项操作称为</span><em><span>终止</span></em><span>实例。实例终止后，您将无法连接或重启该实例。</span></p><p><span>在此任务中，您将了解如何使用</span><em><span>终止保护</span></em><span>功能。</span></p><ol start='58' ><li><span>在左侧导航窗格中，单击 </span><strong><span>Instances</span></strong><span>（实例）。</span></li><li><span>在 </span><span id="ssb_grey_square"><span>Instance State </span><i class="fas fa-caret-down"></i></span><span>（实例状态）菜单中，选择 </span><strong><span>Terminate instance</span></strong><span>（终止实例）。</span></li><li><span>然后选择 </span><span id="ssb_orange"><span>Terminate</span></span><span>（终止）</span></li></ol><p><span>   请注意，会出现这样一则消息：</span><em><span>Failed to terminate the instance i-1234567xxx.The instance &#39;i-1234567xxx&#39; may not be terminated.Modify its &#39;disableApiTermination&#39; instance attribute and try again.</span></em><span>（无法终止实例 i-1234567xxx。实例 i-1234567xxx 可能不会终止。请修改其 disableApiTermination 实例属性，然后重试。）</span></p><p><span>   这是一种保护措施，用于防止意外终止实例。如果确实要终止该实例，则您需要禁用终止保护。</span></p><ol start='61' ><li><span>在 </span><span id="ssb_grey_square"><span>Actions </span><i class="fas fa-caret-down"></i></span><span>（操作）菜单中，选择 </span><strong><span>Instance Settings</span></strong><span>（实例设置）</span><i class="fas fa-caret-right"></i><span> </span><strong><span>Change Termination Protection</span></strong><span>（更改终止保护）。</span></li><li><span>移除对 </span><i class="far fa-square"></i><span> </span><strong><span>Enable</span></strong><span>（启用）旁复选框的选择。</span></li><li><span>选择 </span><span id="ssb_orange"><span>Save</span></span><span>（保存）</span></li></ol><p><span>   现在，您可以终止该实例。</span></p><ol start='64' ><li><span>在 </span><span id="ssb_grey_square"><span>Instance State </span><i class="fas fa-caret-down"></i></span><span>（实例状态）菜单中，选择 </span><strong><span>Terminate</span></strong><span>（终止）。</span></li><li><span>选择 </span><span id="ssb_orange"><span>Terminate</span></span><span>（终止）</span></li></ol><p><span>   </span><span style="color:blue"><i class="far fa-thumbs-up"></i></span><span> </span><strong><span>恭喜！</span></strong><span>您已成功测试终止保护并终止了您的实例。</span></p><p>&nbsp;
+&nbsp;</p><h2><a name="实验完成" class="md-header-anchor"></a><span>实验完成</span></h2><p><i class="icon-flag-checkered"></i><span>恭喜！您已完成本实验。</span></p><ol start='66' ><li><span>单击此页面顶部的 </span><span id="ssb_voc_grey"><span>End Lab</span></span><span>（结束实验），然后单击 </span><span id="ssb_blue"><span>Yes</span></span><span>（是）确认您要结束实验。  </span></li></ol><p><span>   此时将显示一个面板，指示“DELETE has been initiated...You may close this message box now.”（删除操作已启动...您现在可以关闭此消息框。）</span></p><ol start='67' ><li><span>单击右上角的 </span><strong><span>X</span></strong><span> 关闭面板。</span></li></ol><p><span>如有反馈、建议或更正，请发送电子邮件至：</span><em><a href='mailto:aws-course-feedback@amazon.com' target='_blank' class='url'>aws-course-feedback@amazon.com</a></em></p><p>&nbsp;
+&nbsp;</p><h2><a name="其他资源" class="md-header-anchor"></a><span>其他资源</span></h2><ul><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/LaunchingAndUsingInstances.html" target="_blank"><span>启动实例</span></a></li><li><a href="https://aws.amazon.com/ec2/instance-types" target="_blank"><span>Amazon EC2 实例类型</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html" target="_blank"><span>Amazon 系统映像 (AMI)</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html" target="_blank"><span>Amazon EC2 – 用户数据和 Shell 脚本</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/RootDeviceStorage.html" target="_blank"><span>Amazon EC2 根设备卷</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html" target="_blank"><span>标记 Amazon EC2 资源</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html" target="_blank"><span>安全组</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html" target="_blank"><span>Amazon EC2 密钥对</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-system-instance-status-check.html?icmpid=docs_ec2_console" target="_blank"><span>实例状态检查</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-console.html" target="_blank"><span>获取控制台输出和重启实例</span></a></li><li><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ec2-metricscollected.html" target="_blank"><span>Amazon EC2 指标和维度</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-resize.html" target="_blank"><span>调整实例大小</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html" target="_blank"><span>停止和启动实例</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html" target="_blank"><span>Amazon EC2 服务限制</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html" target="_blank"><span>终止实例</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html" target="_blank"><span>实例终止保护</span></a></li></ul></div>
+</body>
+</html>

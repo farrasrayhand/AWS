@@ -1,0 +1,1245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<style type="text/css">
+    #ssb_alexa_blue {
+        background-color: #3366ff;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #3366ff;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_alexa_ocean {
+        background-color: #00a0d2;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00a0d2;
+        white-space: nowrap
+    }
+    #ssb_alexa_sand {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_alexa_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00a0d2;
+        position: relative;
+        top: -1px;
+        border-color: #00a0d2;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_blue {
+        background-color: #257ACF;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_orange {
+        background-color: #E36000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_catalog_red {
+        background-color: #D90000;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_dark_blue {
+        color: white;
+        background-color: darkblue;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_grafana_blue {
+        background-color: #00678b;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00678b;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_green {
+        background-color: #629300;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #629300;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grafana_orange {
+        background-color: #ec8427;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #ec8427;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_grey {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_grey_square {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_blue {
+        background-color: #00A1C9;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_iot_grey {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: gray;
+        position: relative;
+        top: -1px;
+        border-color: gray;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_iot_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #00A1C9;
+        position: relative;
+        top: -1px;
+        border-color: #00A1C9;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_kibana_blue {
+        background-color: #0079a5;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_kibana_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #0079a5;
+        position: relative;
+        top: -1px;
+        border-color: #0079a5;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_lambda_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_maroon {
+        color: white;
+        background-color: darkred;
+        border-radius: 3px;
+        padding: 0px 6px;
+        white-space: nowrap
+    }
+    #ssb_orange {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssl_orange {
+        color: #ec7211;
+        font-weight: bold
+    }
+    #ssb_orange_oval {
+        background-color: #ec7211;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_oval {
+        background-color: #DEDEDE;
+        font-weight: bold;
+        font-size: 90%;
+        color: #444;
+        position: relative;
+        top: -1px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #444;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_start_lab {
+        background-color: #34A853;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_open_console {
+        background-color: white;
+        font-family: Google Sans;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1a73e8;
+        border-color: #dadce0;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        outline-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_rds_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_red {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px
+    }
+    #ssb_red_oval {
+        background-color: #D93025;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        white-space: nowrap
+    }
+    #ssb_s3_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_s3_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #329AD6;
+        position: relative;
+        top: -1px;
+        border-color: #329AD6;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_services {
+        background-color: #232f3e;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_square_lex {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #1166bb;
+        position: relative;
+        top: -1px;
+        border-color: #c4cbcd;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    #ssb_ssm_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssb_white {
+        background-color: white;
+        font-weight: bold;
+        font-size: 90%;
+        color: #545b64;
+        position: relative;
+        top: -1px;
+        border-color: #545b64;
+        border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssbox_cloudformation_blue {
+        font-weight: bold;
+        background-color: #f1faff;
+        font-size: 90%;
+        border-color: #00A1C9;
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ssl_alexa_ocean {
+        color: #00a0d2;
+        font-weight: bold
+    }
+    #ssl_blue {
+        color: #1166bb;
+        font-weight: bold
+    }
+    #ssl_catalog_orange {
+        color: #E16706;
+        font-weight: bold
+    }
+    #ssb_codestar_blue {
+        background-color: #329AD6;
+        font-weight: bold;
+        font-size: 80%;
+        color: white;
+        position: relative;
+        top: -1px;
+        border-radius: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap
+    }
+    #ssb_cognito_blue {
+        background-color: #2a7fd4;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-radius: 2px;
+        white-space: nowrap
+    }
+    #ssb_eb_blue {
+        background-color: #0f6dca;
+        font-weight: bold;
+        font-size: 90%;
+        color: white;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #0055aa;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    #ssb_eb_grey {
+        background-color: #e5e5e5;
+        font-weight: bold;
+        font-size: 90%;
+        color: 444444;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        white-space: nowrap
+    }
+    #ssb_voc_grey {
+        background-color: #F2F3F4;
+        font-size: 90%;
+        color: black;
+        position: relative;
+        top: -1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        white-space: nowrap
+    }
+</style>
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; white-space: nowrap; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; border: none !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; background-position: 0px 0px; background-repeat: initial initial; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-style: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-style: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background-color: rgba(255, 255, 0, 0.4); background-position: initial initial; background-repeat: initial initial; }
+@media print { 
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows'>
+<div id='write'  class=''><h1><a name="lab-3-pengantar-amazon-ec2" class="md-header-anchor"></a><span>Lab 3: Pengantar Amazon EC2</span></h1><!-- Note to translators: This is based on SPL-200. Copy the translation from there. Do not re-translate the whole document. --><p><strong><span>Versi 1.1.7 (spl200)</span></strong></p><h2><a name="ikhtisar" class="md-header-anchor"></a><span>Ikhtisar</span></h2><p><img src="images/lab-scenario.jpeg" alt="diagram arsitektur" width="400"></p><p>&nbsp;</p><p><span>Lab ini memberi Anda ikhtisar dasar dalam meluncurkan, mengubah ukuran, mengelola, dan memantau instans Amazon EC2.</span></p><p><strong><span>Amazon Elastic Compute Cloud (Amazon EC2)</span></strong><span> adalah layanan web yang menyediakan kapasitas komputasi yang ukurannya dapat diubah di cloud. Layanan ini dirancang untuk mempermudah komputasi cloud berskala web untuk pengembang.</span></p><p><span>Antarmuka layanan web sederhana Amazon EC2 ini memungkinkan Anda memperoleh dan mengonfigurasi kapasitas dengan sedikit gesekan. Ini menyediakan Anda dengan kontrol penuh dari sumber daya komputasi Anda dan memungkinkan Anda berjalan di lingkungan komputasi Amazon yang terbukti. Amazon EC2 mengurangi waktu yang diperlukan untuk mendapatkan dan melakukan boot instans server baru ke menit, memungkinkan Anda meningkatkan atau mengurangi skala kapasitas, ketika kebutuhan komputasi Anda berubah.</span></p><p><span>Amazon EC2 mengubah ekonomi komputasi dengan memungkinkan Anda membayar hanya untuk kapasitas yang benar-benar Anda gunakan. Amazon EC2 menyediakan pengembang alat untuk membangun aplikasi yang tahan terhadap kegagalan dan mengisolasinya dari skenario kegagalan umum.</span></p><p>&nbsp;</p><h3><a name="topik-yang-dibahas" class="md-header-anchor"></a><span>Topik yang dibahas</span></h3><p><span>Pada akhir lab ini, Anda akan mampu:</span></p><ul><li><span>Meluncurkan server web dengan perlindungan penghentian diaktifkan</span></li><li><span>Memantau instans EC2 Anda</span></li><li><span>Memodifikasi grup keamanan yang menggunakan server web Anda untuk mengizinkan akses HTTP</span></li><li><span>Mengubah ukuran instans Amazon EC2 Anda agar dapat diskalakan</span></li><li><span>Menjelajahi batas EC2</span></li><li><span>Menguji perlindungan penghentian</span></li><li><span>Menghentikan instans EC2 Anda</span></li></ul><p>&nbsp;</p><h3><a name="durasi" class="md-header-anchor"></a><span>Durasi</span></h3><p><span>Diperlukan sekitar </span><strong><span>35 menit </span></strong><span> untuk menyelesaikan lab ini.</span></p><p>&nbsp;
+&nbsp;</p><h2><a name="mengakses-aws-management-console" class="md-header-anchor"></a><span>Mengakses AWS Management Console</span></h2><ol start='' ><li><p><span>Di bagian atas instruksi ini, klik </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> (Mulai Lab) untuk meluncurkan lab Anda.</span></p><p><span>Panel Start Lab (Mulai Lab) terbuka dan menampilkan status lab.</span></p></li><li><p><span>Tunggu hingga Anda melihat pesan &quot;</span><strong><span>Lab status: ready</span></strong><span>&quot; (Status lab: siap), kemudian klik </span><strong><span>X</span></strong><span> untuk menutup panel Start Lab (Mulai Lab).</span></p></li><li><p><span>Di bagian atas instruksi ini, klik </span><span id="ssb_voc_grey"><span>AWS</span></span></p><p><span>Tindakan ini akan membuka AWS Management Console di tab browser baru. Anda akan secara otomatis masuk ke sistem.</span></p><p><strong><span>Tips</span></strong><span>: Jika tab browser baru tidak terbuka, biasanya akan ada banner atau ikon di bagian atas browser Anda yang menunjukkan bahwa browser Anda mencegah situs membuka jendela pop-up. Klik pada banner atau ikon dan pilih &quot;Allow pop ups&quot; (&quot;Izinkan pop ups&quot;)</span></p></li><li><p><span>Atur tab AWS Management Console agar tampil di sebelah petunjuk ini. Idealnya, Anda akan dapat melihat kedua tab browser pada saat bersamaan, agar lebih mudah mengikuti langkah-langkah lab.</span></p></li></ol><p>&nbsp;
+&nbsp;</p><h2><a name="tugas-1-meluncurkan-instans-amazon-ec2-anda" class="md-header-anchor"></a><span>Tugas 1: Meluncurkan Instans Amazon EC2 Anda</span></h2><p><span>Dalam tugas ini, Anda akan meluncurkan instans Amazon EC2 dengan </span><em><span>perlindungan penghentian</span></em><span>. Perlindungan penghentian mencegah Anda dari dengan sengaja mengakhiri instans EC2. Anda akan menerapkan instans Anda dengan skrip Data Pengguna yang akan memungkinkan Anda menerapkan web server sederhana.</span></p><ol start='5' ><li><span>Di </span><strong><span>AWS Management Console</span></strong><span> pada menu </span><strong><span>Services</span></strong><span> (Layanan), klik </span><strong><span>EC2</span></strong><span>.</span></li><li><span>Pilih </span><span id="ssb_orange"><span>Launch Instance </span><i class="fas fa-caret-down"></i></span><span> (Luncurkan Instans), lalu pilih </span><span id="ssb_white"><span>Launch Instance</span></span><span> (Luncurkan Instans)</span></li></ol><h3><a name="langkah-1-memilih-amazon-machine-image-ami" class="md-header-anchor"></a><span>Langkah 1: Memilih Amazon Machine Image (AMI)</span></h3><p><i class="fas fa-info-circle"></i><strong><span>Amazon Machine Image (AMI)</span></strong><span> menyediakan informasi yang diperlukan untuk meluncurkan instans yang merupakan server virtual di cloud. AMI mencakup:</span></p><ul><li><span>Template untuk volume root pada instans (misalnya, sistem operasi, server aplikasi dengan aplikasi).</span></li><li><span>Izin peluncuran yang mengontrol akun AWS mana yang dapat menggunakan AMI untuk meluncurkan instans</span></li><li><span>Pemetaan perangkat blok yang menentukan volume yang akan dipasang ke instans saat diluncurkan</span></li></ul><p><span>Daftar </span><strong><span>Quick Start</span></strong><span> (Mulai Cepat) berisi AMI yang paling umum digunakan. Anda juga dapat membuat AMI Anda sendiri atau memilih AMI dari AWS Marketplace, toko online tempat Anda dapat menjual atau membeli perangkat lunak yang berjalan pada AWS.</span></p><ol start='7' ><li><span>Klik </span><span id="ssb_blue"><span>Select</span></span><span> (Pilih) di sebelah </span><strong><span>Amazon Linux 2 AMI</span></strong><span> (di bagian atas daftar).</span></li></ol><p>&nbsp;</p><h3><a name="langkah-2-memilih-jenis-instans" class="md-header-anchor"></a><span>Langkah 2: Memilih Jenis Instans</span></h3><p><i class="fas fa-info-circle"></i><span> Amazon EC2 menyediakan berbagai pilihan </span><em><span>jenis instans</span></em><span> yang dioptimalkan agar sesuai dengan kasus penggunaan yang berbeda. Jenis instans terdiri dari berbagai kombinasi CPU, memori, penyimpanan, dan kapasitas jaringan dan memberi Anda fleksibilitas untuk memilih campuran sumber daya yang sesuai untuk aplikasi Anda. Setiap jenis instans mencakup satu atau beberapa </span><em><span>ukuran instans</span></em><span>, yang memungkinkan Anda menskalakan sumber daya sesuai kebutuhan beban kerja target Anda.</span></p><p><span>Anda akan menggunakan instans </span><strong><span>t2.micro</span></strong><span> yang harus dipilih </span><i class="fas fa-square" style="color:blue"></i><span> secara default. Jenis instans ini memiliki 1 CPU virtual dan memori 1 GiB. </span><strong><span>CATATAN</span></strong><span>: Anda mungkin dibatasi untuk menggunakan jenis instans lain di lab ini.</span></p><ol start='8' ><li><span>Klik </span><span id="ssb_grey"><span>Next: Configure Instance Details</span></span><span> (Selanjutnya: Konfigurasikan Detail Instans)</span></li></ol><p>&nbsp;</p><h3><a name="langkah-3-mengonfigurasi-detail-instans" class="md-header-anchor"></a><span>Langkah 3: Mengonfigurasi Detail Instans</span></h3><p><span>Halaman ini digunakan untuk mengonfigurasi instans yang sesuai dengan kebutuhan Anda. Ini termasuk pengaturan jaringan dan pemantauan.</span></p><p><strong><span>Network</span></strong><span> (Jaringan) menunjukkan Virtual Private Cloud (VPC) mana yang ingin Anda luncurkan ke instans. Anda dapat memiliki beberapa jaringan, misalnya, jaringan yang berbeda untuk pengembangan, pengujian, dan produksi.</span></p><ol start='9' ><li><p><span>Untuk </span><strong><span>Network</span></strong><span> (Jaringan), pilih </span><strong><span>Lab VPC</span></strong><span>.</span></p><p><span>Lab VPC dibuat menggunakan template AWS CloudFormation selama proses penyiapan lab Anda. VPC ini mencakup dua subnet publik dalam dua Availability Zone yang berbeda.</span></p></li><li><p><span>Untuk </span><strong><span>Enable termination protection</span></strong><span> (Aktifkan perlindungan penghentian), pilih </span><i class="far fa-check-square"></i><span> </span><strong><span>Protect against accidental termination</span></strong><span> (Lindungi terhadap penghentian yang tidak disengaja).</span></p></li></ol><p><i class="fas fa-info-circle"></i><span> Ketika instans Amazon EC2 tidak lagi diperlukan, instans bisa </span><em><span>dihentikan</span></em><span>, ini berarti bahwa instans dihentikan dan sumber dayanya dirilis. Instans yang dihentikan tidak bisa dimulai lagi. Jika Anda ingin mencegah instans dari dihentikan secara tidak sengaja, Anda dapat mengaktifkan </span><em><span>perlindungan penghentian</span></em><span> untuk instans, yang mencegahnya dari dihentikan.</span></p><ol start='11' ><li><span>Gulir ke bawah, lalu buka </span><i class="fas fa-caret-right"></i><span> </span><strong><span>Advanced Details</span></strong><span> (Detail Lanjutan).</span></li></ol><p><span>Bidang untuk </span><strong><span>User data</span></strong><span> (Data pengguna) akan muncul.</span></p><p><i class="fas fa-info-circle"></i><span> Ketika Anda meluncurkan instans, Anda bisa meloloskan </span><em><span>data pengguna</span></em><span> ke instans yang dapat digunakan untuk melakukan tugas konfigurasi otomatis umum dan bahkan menjalankan skrip setelah instans dimulai.</span></p><p><span>Instans Anda menjalankan Amazon Linux, sehingga Anda akan menyediakan </span><em><span>skrip shell</span></em><span> yang akan berjalan ketika instans dimulai.</span></p><ol start='12' ><li><p><span>Salin perintah berikut dan tempel di bidang </span><strong><span>User data</span></strong><span> (Data pengguna):</span></p><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="plain"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="plain"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; #!/bin/bash</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; yum -y install httpd</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; systemctl enable httpd</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; systemctl start httpd</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; echo '&lt;html&gt;&lt;h1&gt;Hello From Your Web Server!&lt;/h1&gt;&lt;/html&gt;' &gt; /var/www/html/index.html</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 134px;"></div><div class="CodeMirror-gutters" style="display: none; height: 134px;"></div></div></div></pre><p><span>Skrip akan:</span></p><ul><li><span>Menginstal server web Apache (httpd)</span></li><li><span>Mengonfigurasi server web untuk secara otomatis dimulai saat boot</span></li><li><span>Mengaktifkan server Web</span></li><li><span>Membuat halaman web sederhana</span></li></ul></li></ol><ol start='13' ><li><span>Klik </span><span id="ssb_grey"><span>Next: Add Storage</span></span><span> (Selanjutnya: Menambahkan Penyimpanan)</span></li></ol><p>&nbsp;</p><h3><a name="langkah-4-menambahkan-penyimpanan" class="md-header-anchor"></a><span>Langkah 4: Menambahkan Penyimpanan</span></h3><p><i class="fas fa-info-circle"></i><span> Amazon EC2 menyimpan data pada disk virtual yang terpasang di jaringan yang disebut </span><em><span>Elastic Block Store</span></em><span>.</span></p><p><span>Anda akan meluncurkan instans Amazon EC2 menggunakan volume disk 8 GiB default. Ini akan menjadi volume root Anda (juga disebut sebagai volume &#39;boot&#39;).</span></p><ol start='14' ><li><span>Klik </span><span id="ssb_grey"><span>Next: Add Tags</span></span><span> (Selanjutnya: Menambahkan Tag)</span></li></ol><p>&nbsp;</p><h3><a name="langkah-5-menambahkan-tag" class="md-header-anchor"></a><span>Langkah 5: Menambahkan Tag</span></h3><p><i class="fas fa-info-circle"></i><span> Tag memungkinkan Anda mengategorikan sumber daya AWS Anda dengan cara yang berbeda, misalnya, berdasarkan tujuan, pemilik, atau lingkungan. Tag berguna ketika Anda memiliki banyak sumber daya dari jenis yang sama - Anda dapat dengan cepat mengidentifikasi sumber daya tertentu berdasarkan tag yang telah Anda tetapkan pada sumber daya tersebut. Setiap tag terdiri dari Kunci dan Nilai, yang keduanya Anda tentukan.</span></p><ol start='15' ><li><p><span>Klik </span><span id="ssb_grey"><span>Add Tag</span></span><span> (Tambah Tag), lalu konfigurasikan:</span></p><ul><li><strong><span>Key:</span></strong><span> (Kunci:) </span><code>Name</code><span> (Nama)</span></li><li><strong><span>Value:</span></strong><span> (Nilai:) </span><code>Web Server</code><span> (Server Web)</span></li></ul></li><li><p><span>Klik </span><span id="ssb_grey"><span>Next: Configure Security Group</span></span><span> (Selanjutnya: Mengonfigurasikan Grup Keamanan)</span></p></li></ol><p>&nbsp;</p><h3><a name="langkah-6-mengonfigurasikan-grup-keamanan" class="md-header-anchor"></a><span>Langkah 6: Mengonfigurasikan Grup Keamanan</span></h3><p><i class="fas fa-info-circle"></i><span> </span><em><span>Grup keamanan</span></em><span> bertindak sebagai firewall virtual yang mengontrol lalu lintas untuk satu atau beberapa instans. Ketika Anda meluncurkan instans, Anda mengaitkan satu atau beberapa grup keamanan dengan instans. Anda menambahkan </span><em><span>aturan</span></em><span> ke setiap grup keamanan yang mengizinkan lalu lintas ke atau dari instans yang terkait. Anda dapat mengubah aturan untuk grup keamanan setiap saat; aturan baru secara otomatis diterapkan ke semua instans yang dikaitkan dengan grup keamanan.</span></p><ol start='17' ><li><p><span>Pada </span><strong><span>Langkah 6: Konfigurasikan Grup Keamanan</span></strong><span>, konfigurasikan:</span></p><ul><li><strong><span>Security group name:</span></strong><span> (Nama grup keamanan:) </span><code>Web Server security group</code><span> (Grup keamanan Server Web)</span></li><li><strong><span>Description:</span></strong><span> (Deskripsi:) </span><code>Security group for my web server</code><span> (Grup keamanan untuk server web saya)</span></li></ul><p><span>Di lab ini, Anda tidak akan masuk ke instans Anda menggunakan SSH. Menghapus akses SSH akan meningkatkan keamanan instans.</span></p></li><li><p><span>Hapus </span><i class="fas fa-times-circle"></i><span> aturan SSH yang ada.</span></p></li><li><p><span>Klik </span><span id="ssb_blue"><span>Review and Launch</span></span><span> (Tinjau dan Luncurkan)</span></p></li></ol><p>&nbsp;</p><h3><a name="langkah-7-meninjau-peluncuran-instans" class="md-header-anchor"></a><span>Langkah 7: Meninjau Peluncuran Instans</span></h3><p><span>Halaman Tinjauan menampilkan konfigurasi untuk instans yang akan Anda luncurkan.</span></p><ol start='20' ><li><span>Klik </span><span id="ssb_blue"><span>Launch</span></span><span> (Luncurkan)</span></li></ol><p><span>Jendela </span><strong><span>Select an existing key pair or create a new key pair</span></strong><span> (Pilih key pair yang ada atau buat key pair baru) akan muncul.</span></p><p><i class="fas fa-info-circle"></i><span> Amazon EC2 menggunakan kriptografi kunci publik untuk mengenkripsi dan mendekripsi informasi login. Untuk masuk ke instans Anda, Anda harus membuat key pair, menentukan nama key pair ketika Anda meluncurkan instans, dan menyediakan kunci privat ketika Anda terhubung ke instance.</span></p><p><span>Di lab ini Anda tidak akan masuk ke instans Anda, sehingga Anda tidak memerlukan key pair.</span></p><ol start='21' ><li><p><span>Klik drop-down </span><strong><span>Choose an existing key pair</span></strong><span> (Pilih key pair yang ada) </span><i class="fas fa-angle-down"></i><span> dan pilih </span><em><span>Proceed without a key pair</span></em><span> (Lanjutkan tanpa key pair).</span></p></li><li><p><span>Pilih </span><i class="far fa-check-square"></i><span> </span><strong><span>I acknowledge that ...</span></strong><span> (Saya mengakui bahwa ....)</span></p></li><li><p><span>Klik </span><span id="ssb_blue"><span>Launch Instances</span></span><span> (Luncurkan Instans)</span></p><p><span>Instans Anda sekarang akan diluncurkan.</span></p></li><li><p><span>Klik </span><span id="ssb_blue"><span>View Instances</span></span><span> (Tampilkan Instans)</span></p><p><span>Instans akan muncul dengan status </span><em><span>tertunda</span></em><span> , yang berarti sedang diluncurkan. Status kemudian akan berubah menjadi </span><em><span>berjalan</span></em><span>, yang menunjukkan bahwa instans telah memulai boot. Anda akan memerlukan beberapa saat sebelum dapat mengakses instans.</span></p><p><span>Instans menerima </span><em><span>nama DNS publik</span></em><span> yang dapat Anda gunakan untuk menghubungi instans dari Internet.</span></p><p><i class="fas fa-square" style="color:blue"></i><span> Anda </span><strong><span>Web Server</span></strong><span> (Server Web) harus dipilih. Tab </span><strong><span>Description</span></strong><span> (Deskripsi) menampilkan informasi terperinci tentang instans Anda.</span></p><p><i class="fas fa-comment"></i><span> Untuk melihat informasi selengkapnya di tab Deskripsi, seret pembagi jendela ke atas.</span></p><p><span>Tinjau informasi yang ditampilkan di tab </span><strong><span>Description</span></strong><span> (Deskripsi). Informasi ini mencakup jenis instans, pengaturan keamanan, dan pengaturan jaringan.</span></p></li><li><p><span>Tunggu instans Anda untuk menampilkan berikut:</span></p></li></ol><ul><li><strong><span>Instance State:</span></strong><span> (Status Instans:) </span><span style="color:green"><i class="fas fa-circle"></i></span><span> running (berjalan)</span></li><li><strong><span>Status Checks:</span></strong><span> (Pemeriksaan Status:) </span><span style="color:green"><i class="fas fa-check-circle"></i></span><span> 2/2 checks passed (lolos pemeriksaan 2/2)</span></li></ul><p><span style="color:blue"><i class="far fa-thumbs-up"></i></span><span> </span><strong><span>Selamat!</span></strong><span> Anda telah berhasil meluncurkan instans Amazon EC2 pertama Anda.</span></p><p>&nbsp;
+&nbsp;</p><h2><a name="tugas-2-memantau-instans-anda" class="md-header-anchor"></a><span>Tugas 2: Memantau Instans Anda</span></h2><p><span>Pemantauan merupakan bagian penting dari menjaga keandalan, ketersediaan, dan kinerja dari instans Anda Amazon Elastic Compute Cloud (Amazon EC2) dan solusi AWS Anda.</span></p><ol start='26' ><li><p><span>Klik tab </span><strong><span>Status Checks</span></strong><span> (Pemeriksaan Status).</span></p><p><i class="fas fa-info-circle"></i><span> Dengan pemantauan status instans, Anda dapat dengan cepat menentukan apakah Amazon EC2 telah mendeteksi masalah yang mungkin mencegah instans Anda dari menjalankan aplikasi. Amazon EC2 menjalankan pemeriksaan otomatis pada setiap instans EC2 berjalan untuk mengidentifikasi masalah perangkat keras dan perangkat lunak.</span></p><p><span>Perhatikan bahwa pemeriksaan </span><strong><span>System reachability</span></strong><span> (Jangkauan sistem) dan </span><strong><span>Instance reachability</span></strong><span> (Jangkauan instans) sudah lulus.</span></p></li><li><p><span>Klik tab </span><strong><span>Monitoring</span></strong><span> (Pemantauan).</span></p><p><span>Tab ini menampilkan metrik Amazon CloudWatch untuk instans Anda. Saat ini, tidak banyak metrik untuk ditampilkan karena instans baru saja diluncurkan.</span></p><p><span>Anda dapat mengklik grafik untuk memperluas tampilan.</span></p><p><i class="fas fa-info-circle"></i><span> Amazon EC2 mengirimkan metrik ke Amazon CloudWatch untuk instans EC2 Anda. Pemantauan dasar (lima menit) diaktifkan secara default. Anda dapat mengaktifkan pemantauan terperinci (satu menit).</span></p></li><li><p><span>Di menu </span><span id="ssb_grey_square"><span>Actions </span><i class="fas fa-caret-down"></i></span><span> (Tindakan), pilih </span><strong><span>Monitor and troubleshoot</span></strong><span> </span><i class="fas fa-caret-right"></i><span> (Pemantauan dan Pemecahan Masalah) </span><strong><span>Get System Log</span></strong><span> (Dapatkan Log Sistem).</span></p></li></ol><p><span>   Log Sistem menampilkan output konsol dari instans, yang merupakan alat yang berguna untuk diagnosis masalah. Alat ini terutama berguna untuk memecahkan masalah kernel dan masalah konfigurasi layanan yang dapat menyebabkan instans dihentikan atau menjadi tidak dapat dijangkau sebelum daemon SSH-nya dapat dimulai. Jika Anda tidak melihat log sistem, tunggu beberapa menit, lalu coba lagi.</span></p><ol start='29' ><li><span>Gulir seluruh output dan perhatikan bahwa paket HTTP sudah diinstal dari </span><strong><span>data pengguna</span></strong><span> yang ditambahkan ketika Anda membuat instans.</span></li></ol><p><img src="images/Console-output.png" alt="Konsol-Output" width="600"></p><ol start='30' ><li><p><span>Pilih </span><strong><span>Cancel</span></strong><span> (Batalkan).</span></p></li><li><p><span>Di menu </span><span id="ssb_grey_square"><span>Actions </span><i class="fas fa-caret-down"></i></span><span> (Tindakan), pilih </span><strong><span>Monitor and troubleshoot</span></strong><span> </span><i class="fas fa-caret-right"></i><span> (Pemantauan dan Pemecahan Masalah) </span><strong><span>Get Instance Screenshot</span></strong><span> (Dapatkan Tangkapan Layar Instans).</span></p><p><span>Ini menunjukkan bagaimana tampilan konsol instans Amazon EC2 Anda jika layar ditambahkan pada instans tersebut.</span></p><p><img src="images/Screen-shot.png" alt="Tangkapan Layar" width="600"></p><p><i class="fas fa-info-circle"></i><span> Jika Anda tidak dapat menjangkau instans Anda melalui SSH atau RDP, Anda dapat melakukan tangkapan layar untuk instans Anda dan menampilkannya sebagai gambar. Ini memberikan visibilitas mengenai status instans, dan memungkinkan pemecahan masalah yang lebih cepat.</span></p></li><li><p><span>Pilih </span><strong><span>Cancel</span></strong><span> (Batalkan).</span></p><p><span style="color:blue"><i class="far fa-thumbs-up"></i></span><span> </span><strong><span>Selamat!</span></strong><span> Anda telah menjelajahi beberapa cara untuk memantau  instans Anda.</span></p></li></ol><p>&nbsp;
+&nbsp;</p><h2><a name="tugas-3-memperbarui-grup-keamanan-anda-dan-mengakses-server-web" class="md-header-anchor"></a><span>Tugas 3: Memperbarui Grup Keamanan Anda dan Mengakses Server Web</span></h2><p><span>Ketika Anda meluncurkan instans EC2, Anda menyediakan skrip yang menginstal server web dan membuat halaman web sederhana. Dalam tugas ini, Anda akan mengakses konten dari server web.</span></p><ol start='33' ><li><p><span>Klik tab </span><strong><span>Details</span></strong><span> (Detail).</span></p></li><li><p><span>Salin </span><strong><span>IP Publik IPv4</span></strong><span> dari instans ke clipboard Anda.</span></p></li><li><p><span>Buka tab baru di browser web Anda, tempel alamat IP yang baru saja Anda salin, lalu tekan </span><strong><span>Enter</span></strong><span>.</span></p><p><strong><span>Pertanyaan:</span></strong><span> Apakah Anda dapat mengakses server web Anda? Mengapa tidak?</span></p><p><span>Anda saat ini </span><strong><span>tidak</span></strong><span> dapat mengakses server web Anda karena </span><em><span>grup keamanan</span></em><span> tidak mengizinkan lalu lintas masuk pada port 80, yang digunakan untuk permintaan web HTTP. Ini adalah demonstrasi penggunaan grup keamanan sebagai firewall untuk membatasi lalu lintas jaringan yang diizinkan masuk dan keluar dari instans.</span></p><p><span>Untuk memperbaiki ini, Anda sekarang akan memperbarui grup keamanan untuk mengizinkan lalu lintas web pada port 80.</span></p></li><li><p><span>Tetap buka tab browser, tetapi kembali ke tab </span><strong><span>EC2 Management Console</span></strong><span>.</span></p></li><li><p><span>Di panel navigasi kiri, klik </span><strong><span>Security Groups</span></strong><span> (Grup Keamanan).</span></p></li><li><p><span>Pilih </span><i class="fas fa-square" style="color:blue"></i><span> </span><strong><span>Web Server security group</span></strong><span> (Grup keamanan Server Web).</span></p></li><li><p><span>Klik tab </span><strong><span>Inbound</span></strong><span> (Masuk).</span></p><p><span>Grup keamanan saat ini tidak memiliki aturan.</span></p></li><li><p><span>Klik </span><span id="ssb_grey_square"><span>Edit inboud rules</span></span><span> (Edit aturan masuk), lalu konfigurasikan:</span></p><ul><li><strong><span>Type:</span></strong><span> (Jenis:) </span><em><span>HTTP</span></em></li><li><strong><span>Source:</span></strong><span> (Sumber:) </span><em><span>Anywhere</span></em><span> (Mana Saja)</span></li><li><span>Klik </span><span id="ssb_orange"><span>Save rules</span></span><span> (Simpan Aturan)</span></li></ul></li><li><p><span>Kembali ke tab server web yang sebelumnya Anda buka dan segarkan </span><i class="fas fa-sync"></i><span> halaman.</span></p><p><span>Anda akan melihat pesan </span><em><span>Hello From Your Web Server!</span></em><span> (Halo dari Server Web Anda!)</span></p><p><span style="color:blue"><i class="far fa-thumbs-up"></i></span><span> </span><strong><span>Selamat!</span></strong><span> Anda telah berhasil mengubah grup keamanan Anda untuk mengizinkan lalu lintas HTTP ke dalam instans Amazon EC2 Anda.</span></p></li></ol><p>&nbsp;
+&nbsp;</p><h2><a name="tugas-4-mengubah-ukuran-instans-anda-jenis-instans-dan-volume-ebs" class="md-header-anchor"></a><span>Tugas 4: Mengubah Ukuran Instans Anda: Jenis Instans dan Volume EBS</span></h2><p><span>Ketika kebutuhan Anda berubah, Anda mungkin mendapati bahwa instans Anda terlalu banyak digunakan (terlalu kecil) atau kurang dimanfaatkan (terlalu besar). Jika demikian, Anda dapat mengubah </span><em><span>jenis instance</span></em><span>. Misalnya, jika instans </span><em><span>t2.micro</span></em><span> terlalu kecil untuk beban kerjanya, Anda dapat mengubahnya ke instans </span><em><span>m5.medium</span></em><span>. Demikian pula, Anda dapat mengubah ukuran disk.</span></p><h3><a name="menghentikan-instans-anda" class="md-header-anchor"></a><span>Menghentikan Instans Anda</span></h3><p><span>Sebelum Anda dapat mengubah ukuran instans, Anda harus </span><em><span>menghentikannya</span></em><span>.</span></p><p><i class="fas fa-info-circle"></i><span> Ketika Anda menghentikan instans, instans akan dimatikan. Tidak ada biaya untuk instans EC2 yang dihentikan, tetapi biaya penyimpanan untuk volume Amazon EBS yang dipasang tetap Anda.</span></p><ol start='42' ><li><p><span>Pada </span><strong><span>EC2 Management Console</span></strong><span>, di panel kiri, klik </span><strong><span>Instances</span></strong><span> (Instans).</span></p><p><i class="fas fa-square" style="color:blue"></i><span> </span><strong><span>Web Server</span></strong><span> (Server Web) harus sudah dipilih.</span></p></li><li><p><span>Di menu </span><span id="ssb_grey_square"><span>Instance State </span><i class="fas fa-caret-down"></i></span><span> (Status Instans), pilih </span><strong><span>Stop instance</span></strong><span> (Hentikan instans).</span></p></li><li><p><span>Pilih </span><span id="ssb_orange"><span>Stop</span></span><span> (Hentikan)</span></p><p><span>Instans Anda akan melakukan penghentian normal, lalu akan berhenti berjalan.</span></p></li><li><p><span>Tunggu </span><strong><span>Instance State</span></strong><span> (Status Instans) menampilkan: </span><span style="color:red"><i class="fas fa-circle"></i></span><span> stopped (berhenti)</span></p></li></ol><h3><a name="mengubah-jenis-instans" class="md-header-anchor"></a><span>Mengubah Jenis Instans</span></h3><ol start='46' ><li><p><span>Di menu </span><span id="ssb_grey_square"><span>Actions </span><i class="fas fa-caret-down"></i></span><span> (Tindakan), pilih </span><strong><span>Instance Settings</span></strong><span> (Pengaturan Instans) </span><i class="fas fa-caret-right"></i><span> </span><strong><span>Change Instance Type</span></strong><span> (Ubah Jenis Instans), lalu konfigurasikan:</span></p><ul><li><strong><span>Instance Type:</span></strong><span> (Jenis Instans:) </span><em><span>t2.small</span></em></li><li><span>Pilih </span><span id="ssb_orange"><span>Apply</span></span><span> (Terapkan)</span></li></ul><p><span>Ketika instans dimulai lagi, maka akan menjadi </span><em><span>t2.small</span></em><span>, yang memiliki memori dua kali dari instans </span><em><span>t2.micro</span></em><span>. </span><strong><span>CATATAN</span></strong><span>: Anda mungkin dibatasi untuk menggunakan jenis instans lain di lab in.</span></p></li></ol><h3><a name="mengubah-ukuran-volume-ebs" class="md-header-anchor"></a><span>Mengubah Ukuran Volume EBS</span></h3><ol start='47' ><li><p><span>Di menu navigasi kiri, klik </span><strong><span>Volumes</span></strong><span> (Volume).</span></p></li><li><p><span>Di menu </span><span id="ssb_grey"><span>Actions </span><i class="fas fa-caret-down"></i></span><span> (Tindakan), pilih </span><strong><span>Modify Volume</span></strong><span> (Ubah Volume).</span></p><p><span>Volume disk saat ini memiliki ukuran 8 GiB. Sekarang Anda akan meningkatkan ukuran disk ini.</span></p></li><li><p><span>Ubah ukuran menjadi: </span><code>10</code><span> </span><strong><span>CATATAN</span></strong><span>: Anda mungkin dibatasi untuk membuat volume Amazon EBS yang besar di lab ini.</span></p></li><li><p><span>Pilih </span><span id="ssb_grey"><span>Modify</span></span><span> (Ubah)</span></p></li><li><p><span>Pilih </span><span id="ssb_blue"><span>Yes</span></span><span> (Ya) untuk mengonfirmasi dan meningkatkan ukuran volume.</span></p></li><li><p><span>Pilih </span><span id="ssb_blue"><span>Close</span></span><span> (Tutup)</span></p></li></ol><h3><a name="mulai-instance-yang-ukurannya-diubah" class="md-header-anchor"></a><span>Mulai Instance yang Ukurannya Diubah</span></h3><p><span>Anda sekarang akan memulai instans lagi, yang sekarang akan memiliki lebih banyak memori dan lebih banyak ruang disk.</span></p><ol start='53' ><li><p><span>Di panel navigasi kiri, klik </span><strong><span>Instances</span></strong><span> (Instans).</span></p></li><li><p><span>Di menu </span><span id="ssb_grey_square"><span>Instance State </span><i class="fas fa-caret-down"></i></span><span> (Status Instans), pilih </span><strong><span>Start instance</span></strong><span> (Mulai instans).</span></p></li><li><p><span>Pilih </span><span id="ssb_orange"><span>Start</span></span><span> (Mulai)</span></p><p><span style="color:blue"><i class="far fa-thumbs-up"></i></span><span> </span><strong><span>Selamat!</span></strong><span> Anda telah berhasil mengubah ukuran Instans Amazon EC2 Anda. Dalam tugas ini, Anda mengubah jenis instans Anda dari </span><em><span>t2.micro</span></em><span> ke </span><em><span>t2.small</span></em><span>. Anda juga memodifikasi volume disk root dari 8 GiB menjadi 10 GiB.</span></p></li></ol><p>&nbsp;
+&nbsp;</p><h2><a name="tugas-5-menjelajahi-batas-ec2" class="md-header-anchor"></a><span>Tugas 5: Menjelajahi Batas EC2</span></h2><p><span>Amazon EC2 menyediakan sumber daya yang berbeda yang dapat Anda gunakan. Sumber daya ini mencakup gambar, instans, volume, dan snapshot. Ketika Anda membuat akun AWS, ada batas default pada sumber daya ini per wilayah.</span></p><ol start='56' ><li><p><span>Di panel navigasi kiri, klik </span><strong><span>Limits</span></strong><span> (Batas).</span></p></li><li><p><span>Dari daftar drop down, pilih </span><strong><span>Running instances</span></strong><span> (Instans yang Berjalan).</span></p><p><span>Perhatikan bahwa ada batas pada jumlah instans yang dapat Anda luncurkan di wilayah ini. Ketika meluncurkan instans, permintaan tidak harus membuat penggunaan Anda melebihi batas instans saat ini di wilayah tersebut.</span></p><p><span>Anda dapat meminta peningkatan untuk berbagai batas ini.</span></p></li></ol><p>&nbsp;
+&nbsp;</p><h2><a name="tugas-6-menguji-perlindungan-penghentian" class="md-header-anchor"></a><span>Tugas 6: Menguji Perlindungan Penghentian</span></h2><p><span>Anda dapat menghapus instans Anda ketika Anda tidak lagi membutuhkannya. Hal ini disebut sebagai </span><em><span>mengakhiri</span></em><span> instans Anda. Anda tidak dapat terhubung ke atau me-restart instans setelah telah dihentikan.</span></p><p><span>Dalam tugas ini, anda akan belajar cara menggunakan </span><em><span>perlindungan penghentian</span></em><span>.</span></p><ol start='58' ><li><p><span>Di panel navigasi kiri, klik </span><strong><span>Instances</span></strong><span> (Instans).</span></p></li><li><p><span>Di menu </span><span id="ssb_grey_square"><span>Instance State </span><i class="fas fa-caret-down"></i></span><span> (Status Instans), pilih </span><strong><span>Terminate instance</span></strong><span> (Hentikan instans).</span></p></li><li><p><span>Kemudian pilih </span><span id="ssb_orange"><span>Terminate</span></span><span> (Hentikan)</span></p><p><span>Perhatikan bahwa Anda pesan yang berbunyi: </span><em><span>Failed to terminate the instance i-1234567xxx. The instance &#39;i-1234567xxx&#39; may not be terminated. Modify its &#39;disableApiTermination&#39; instance attribute and try again.</span></em><span> (Gagal menghentikan instans i-1234567xxx. Instans &#39;i-1234567xxx&#39; tidak dapat dihentikan. Ubah atribut instans &#39;disableApiTermination&#39; dan coba lagi).</span></p><p><span>Ini adalah perlindungan untuk mencegah penghentian instans secara tidak sengaja. Jika Anda benar-benar ingin menghentikan instans, Anda harus menonaktifkan perlindungan penghentian.</span></p></li><li><p><span>Di menu </span><span id="ssb_grey_square"><span>Actions </span><i class="fas fa-caret-down"></i></span><span> (Tindakan), pilih </span><strong><span>Instance Settings</span></strong><span> (Pengaturan Instans) </span><i class="fas fa-caret-right"></i><span> </span><strong><span>Change Termination Protection</span></strong><span> (Ubah Perlindungan Penghentian).</span></p></li><li><p><span>Hapus tanda centang di sebelah </span><i class="far fa-square"></i><span> </span><strong><span>Enable</span></strong><span> (Aktifkan).</span></p></li><li><p><span>Pilih </span><span id="ssb_orange"><span>Save</span></span><span> (Simpan)</span></p><p><span>Anda sekarang dapat menghentikan instans.</span></p></li><li><p><span>Di menu </span><span id="ssb_grey_square"><span>Status Instans </span><i class="fas fa-caret-down"></i></span><span>, pilih </span><strong><span>Terminate</span></strong><span> (Hentikan).</span></p></li><li><p><span>Pilih </span><span id="ssb_orange"><span>Terminate</span></span><span> (Hentikan)</span></p><p><span style="color:blue"><i class="far fa-thumbs-up"></i></span><span> </span><strong><span>Selamat!</span></strong><span> Anda telah berhasil menguji perlindungan penghentian dan menghentikan instans Anda.</span></p></li></ol><p>&nbsp;
+&nbsp;</p><h2><a name="lab-selesai" class="md-header-anchor"></a><span>Lab Selesai</span></h2><p><i class="icon-flag-checkered"></i><span> Selamat! Anda telah menyelesaikan lab.</span></p><ol start='66' ><li><p><span>Klik </span><span id="ssb_voc_grey"><span>End Lab</span></span><span> (Akhiri Lab) di bagian atas halaman ini, kemudian klik </span><span id="ssb_blue"><span>Yes</span></span><span> (Ya) untuk mengonfirmasi bahwa Anda ingin mengakhiri lab.</span></p><p><span>Panel akan muncul, yang menunjukkan bahwa &quot;DELETE has been initiated... You may close this message box now&quot; (&quot;DELETE sudah dimulai... Anda dapat menutup kotak pesan ini sekarang&quot;.) </span></p></li><li><p><span>Klik </span><strong><span>X</span></strong><span> di sudut kanan atas untuk menutup panel.</span></p></li></ol><p><span>Untuk umpan balik, saran, atau koreksi, silakan kirim email kepada kami di: </span><em><a href='mailto:aws-course-feedback@amazon.com' target='_blank' class='url'>aws-course-feedback@amazon.com</a></em></p><p>&nbsp;
+&nbsp;</p><h2><a name="sumber-daya-tambahan" class="md-header-anchor"></a><span>Sumber Daya Tambahan</span></h2><ul><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/LaunchingAndUsingInstances.html" target="_blank"><span>Meluncurkan Instans Anda</span></a></li><li><a href="https://aws.amazon.com/ec2/instance-types" target="_blank"><span>Jenis Instans Amazon EC2</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html" target="_blank"><span>Amazon Machine Images (AMI)</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html" target="_blank"><span>Amazon EC2 - Data Pengguna dan Skrip Shell</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/RootDeviceStorage.html" target="_blank"><span>Volume Perangkat Root Amazon EC2</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html" target="_blank"><span>Menandai Sumber Daya  Amazon EC2 Anda</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html" target="_blank"><span>Grup Keamanan</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html" target="_blank"><span>Amazon EC2 Key Pair</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-system-instance-status-check.html?icmpid=docs_ec2_console" target="_blank"><span>Pemeriksaan Status untuk Instans Anda</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-console.html" target="_blank"><span>Mendapatkan Konsol Output dan Melakukan Boot Instans</span></a></li><li><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ec2-metricscollected.html" target="_blank"><span>Metrik dan Dimensi Amazon EC2</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-resize.html" target="_blank"><span>Mengubah Ukuran Instans Anda</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html" target="_blank"><span>Menghentikan dan Memulai Instans Anda</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html" target="_blank"><span>Batas Layanan Amazon EC2</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html" target="_blank"><span>Menghentikan Instans Anda</span></a></li><li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html" target="_blank"><span>Perlindungan Penghentian untuk Instans</span></a></li></ul></div>
+</body>
+</html>

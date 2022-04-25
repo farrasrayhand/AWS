@@ -1,0 +1,832 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-require-zoom-fix { height: auto; margin-top: 16px; margin-bottom: 16px; }
+.md-require-zoom-fix foreignObject { font-size: var(--mermaid-font-zoom); }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) { 
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) { 
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ''; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ''; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ''; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: '−'; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; white-space: nowrap; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; border: none !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; background-position: 0px 0px; background-repeat: initial initial; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-style: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-style: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background-color: rgba(255, 255, 0, 0.4); background-position: initial initial; background-repeat: initial initial; }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print { 
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+ :root {--mermaid-font-zoom:1em ;}  @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}} .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style><title>README</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='lab-2-building-your-vpc-and-launching-a-web-server'><span>Lab 2: Building Your VPC and Launching a Web Server</span></h1><p>&nbsp;</p><p><span>In this lab, you will use Amazon Virtual Private Cloud (Amazon VPC) to create your own VPC and add additional components to produce a customized network. You will also create security groups for your Amazon Elastic Compute Cloud (Amazon EC2) instance. You will then configure and customize an EC2 instance to run a web server and launch it in the VPC. This lab is based on the AWS Command Line Interface (AWS CLI). Feel free to explore the </span><a href='https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/index.html'><span>AWS CLI documentation for Amazon EC2</span></a><span> as you work through the lab.</span></p><p><em><span>Amazon Virtual Private Cloud (Amazon VPC)</span></em><span> enables you to launch Amazon Web Services (AWS) resources into a virtual network that you define. This virtual network closely resembles a traditional network that you would operate in your own data center, with the benefits of using the scalable infrastructure of AWS. You can create a VPC that spans multiple Availability Zones.</span></p><p>&nbsp;</p><p><strong><span>Scenario</span></strong></p><p><span>In this lab, you will build the following infrastructure:</span></p><p><img src="images/architecture.png" alt="Architecture" width="800"></p><p>&nbsp;&nbsp;</p><p><strong><span>Objectives</span></strong></p><p><span>After completing this lab, you should be able to:</span></p><ul><li><span>Create a VPC</span></li><li><span>Create subnets</span></li><li><span>Configure a security group</span></li><li><span>Launch an EC2 instance in a VPC</span></li></ul><p>&nbsp;</p><p><strong><span>Duration</span></strong></p><p><span>This lab takes approximately </span><strong><span>60 minutes</span></strong><span> to complete.</span></p><p>&nbsp;&nbsp;</p><p><strong><span>Other AWS services</span></strong></p><p><span>During this lab, you might receive error messages when you perform actions beyond the steps in this lab guide. These messages will not impact your ability to complete the lab.</span></p><p>&nbsp;</p><h2 id='launching-your-lab-environment'><span>Launching your lab environment</span></h2><ol start='' ><li><p><span>At the top of these instructions, launch this lab by choosing </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span> </span></p><p><span>A </span><strong><span>Start Lab</span></strong><span> panel opens, and it displays the lab status.</span></p></li><li><p><span>Wait until you see the message </span><em><span>Lab status: ready</span></em><span>, then close the </span><strong><span>Start Lab</span></strong><span> panel by selecting the </span><strong><span>X</span></strong><span>.</span></p><p><span>This lab launches an EC2 instance that&#39;s named </span><em><span>Bastion Host</span></em><span>. You will use this server to create lab resources by running the AWS CLI commands.</span></p></li><li><p><span>Above these instructions, select the </span><span id="ssb_voc_grey"><span>Details</span></span><span> dropdown menu, and then select </span><span id="ssb_voc_grey"><span>Show</span></span></p><p><span>Copy all the lab details—such as </span><em><span>BastionHost</span></em><span>, </span><em><span>UserAccessSecretKey</span></em><span>, </span><em><span>Region</span></em><span>, and others—to a text file and save it as </span><code>Lab Details.txt</code><span>. </span></p></li></ol><p><strong><span>Note</span></strong><span>: Make sure that you use a </span><em><span>text editor</span></em><span> (a program for editing text files) to save the file. Examples of text editors include </span><a href='https://atom.io/'><span>Atom</span></a><span>, </span><a href='https://www.sublimetext.com/'><span>Sublime Text</span></a><span>, or </span><a href='https://code.visualstudio.com/'><span>Microsoft Visual Studio Code</span></a><span>.</span>
+<span>  </span><br/><span>In the lab, the information that you saved will be referred to as </span><u><em><span>Lab Details</span></em></u><span>.</span></p><p>&nbsp;</p><h2 id='using-ssh-to-connect-to-the-bastion-host'><span>Using SSH to connect to the Bastion Host</span></h2><h3 id='microsoft-windows-users'><span>Microsoft Windows users</span></h3><p><i class="fas fa-comment"></i><span> These instructions are specifically for Microsoft Windows users. If you are using macOS or Linux, </span><a href="#ssh-MACLinux"><span>skip to the next section</span></a><span>.</span>
+<span>​</span></p><ol start='4' ><li><p><span>Above these instructions that you are currently reading, choose the </span><span id="ssb_voc_grey"><span>Details</span></span><span> dropdown menu and then choose </span><span id="ssb_voc_grey"><span>Show</span></span></p><p><span>A </span><strong><span>Credentials</span></strong><span> window opens.</span></p></li><li><p><span>Choose the </span><strong><span>Download PPK</span></strong><span> button and save the </span><strong><span>labsuser.ppk</span></strong><span> file.</span></p><p><span>Typically, your browser will save the file to the </span><strong><span>Downloads</span></strong><span> directory.</span></p></li><li><p><span>Close the </span><strong><span>Credentials</span></strong><span> window by choosing the </span><strong><span>X</span></strong><span>.</span></p></li><li><p><span>From the Lab Details text file, note the </span><strong><span>Bastion Host</span></strong><span> address. </span></p></li><li><p><span>Download </span><strong><span>PuTTY</span></strong><span> so that you can use SSH to connect to the EC2 instance. If you don&#39;t have PuTTY installed on your computer, </span><a href="https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe"><span>download it here</span></a><span>.</span></p></li><li><p><span>Open </span><strong><span>putty.exe</span></strong></p></li><li><p><span>Configure PuTTY timeout to keep the PuTTY session open for a longer period of time.</span></p><ul><li><span>Choose </span><strong><span>Connection</span></strong></li><li><span>Set </span><strong><span>Seconds between keepalives</span></strong><span> to </span><code>30</code></li></ul></li><li><p><span>Configure your PuTTY session:</span></p><ul><li><span>Choose </span><strong><span>Session</span></strong></li><li><strong><span>Host Name (or IP address):</span></strong><span> Paste the </span><em><span>Public DNS or IPv4 address</span></em><span> of the Bastion Host instance that you noted earlier. </span></li><li><span>Back in PuTTY, in the </span><strong><span>Connection</span></strong><span> list, expand </span><i class="far fa-plus-square"></i><span> </span><strong><span>SSH</span></strong></li><li><span>Choose </span><strong><span>Auth</span></strong><span> </span><em><span>(don&#39;t expand it)</span></em></li><li><span>Choose </span><strong><span>Browse</span></strong></li><li><span>Browse to and select the </span><strong><span>labsuser.ppk</span></strong><span> file that you downloaded</span></li><li><span>Choose </span><strong><span>Open</span></strong><span> to select it</span></li><li><span>Choose </span><strong><span>Open</span></strong><span> again</span></li></ul></li><li><p><span>To trust and connect to the host, choose </span><strong><span>Yes</span></strong><span>.</span></p></li><li><p><span>When prompted to </span><strong><span>login as</span></strong><span>, enter: </span><code>ec2-user</code></p><p><span>This action will connect you to the EC2 instance.</span></p></li><li><p><span>Windows users: </span><a href="#ssh-after"><span> Skip ahead to the next task.</span></a></p></li></ol><p><a id='ssh-MACLinux'></a></p><p>&nbsp;</p><h3 id='macos-and-linux-users'><span>macOS and Linux users</span></h3><p><span>These instructions are specifically for macOS or Linux users. If you are a Windows user, </span><a href="#ssh-after"><span>skip ahead to the next task.</span></a></p><ol start='15' ><li><span>Above these instructions (that you are currently reading), choose the </span><span id="ssb_voc_grey"><span>Details</span></span><span> dropdown menu and then choose </span><span id="ssb_voc_grey"><span>Show</span></span><span> </span></li></ol><p><span>A </span><strong><span>Credentials</span></strong><span> window opens.</span></p><ol start='16' ><li><p><span>Choose the </span><strong><span>Download PEM</span></strong><span> button and save the </span><strong><span>labsuser.pem</span></strong><span> file.</span></p></li><li><p><span>Exit the </span><strong><span>Credentials</span></strong><span> window by choosing the </span><strong><span>X</span></strong><span>.</span></p></li><li><p><span>From the Lab Details text file, note the </span><strong><span>Bastion Host</span></strong><span> address. </span></p></li><li><p><span>Open a terminal window, and change directory (by using </span><code>cd</code><span>) to the directory where the </span><em><span>labsuser.pem</span></em><span> file was downloaded.</span></p><p><span>For example, if the </span><em><span>labsuser.pem</span></em><span> file was saved to your </span><strong><span>Downloads</span></strong><span> directory, run this command:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> ~/Downloads</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Change the permissions on the key to be read-only by running this command:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">chmod</span> <span class="cm-number">400</span> labsuser.pem</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Run the following command </span><em><span>(replace </span><strong>&lt;<span>public-ip-address</span>&gt;</strong><span> with the </span><strong><span>Bastion Host</span></strong><span> address that you copied previously)</span></em><span>. </span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">ssh</span> <span class="cm-attribute">-i</span> labsuser.pem ec2-user@&lt;public-ip-address&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>When you are prompted to allow the first connection to this remote SSH server, enter: </span><code>yes</code><span> </span></p></li></ol><p><span>Because you are using a key pair for authentication, you will not be prompted for a password.</span></p><p><a id='ssh-after'></a></p><p>&nbsp;</p><h3 id='configuring-the-aws-cli'><span>Configuring the AWS CLI</span></h3><p><span>You will use the information from the Lab Details text file that you created in the </span><em><span>Launch Your Lab Environment</span></em><span> task.</span></p><p><span>The </span><em><span>Bastion Host</span></em><span> instance has an instance profile that&#39;s called </span><em><span>EC2InstanceProfile</span></em><span> associated with it. This instance profile gives it the required permissions. </span></p><ol start='23' ><li><p><span>In the terminal window, configure the AWS CLI.​</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws configure</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>At the prompts, enter the following information. For the access key, secret access key, and Region settings, use the values from the Lab Details text file.</span></p><p><strong><span>Note</span></strong><span>: Ensure that you copy and paste the correct user values from the Lab Details text file to these fields. </span></p><ul><li><strong><span>AWS Access Key ID</span></strong><span>: </span><em><span>AccessKey</span></em><span> value</span></li><li><strong><span>AWS Secret Access Key</span></strong><span>: </span><em><span>SecretKey</span></em><span> value</span></li><li><strong><span>Default region name</span></strong><span>:  Name of the Region (for example, </span><code>us-east-1</code><span> or </span><code>eu-west-2</code><span>)</span></li><li><strong><span>Default output format</span></strong><span>: </span><code>json</code></li></ul></li></ol><p>&nbsp;</p><h2 id='task-1-creating-your-vpc'><span>Task 1: Creating your VPC</span></h2><p><span>In this task, you will use the AWS CLI to create a VPC and an internet gateway in a single Availability Zone. An </span><em><span>internet gateway</span></em><span> is a VPC component that allows communication between instances in your VPC and the internet.</span></p><p><span>After you create a VPC, you can add </span><em><span>subnets</span></em><span>. Each subnet resides entirely in one Availability Zone and can&#39;t span Availability Zones. If a subnet&#39;s traffic is routed to an internet gateway, the subnet is known as a </span><em><span>public subnet</span></em><span>. If a subnet doesn&#39;t have a route to an internet gateway, the subnet is known as a </span><em><span>private subnet</span></em><span>.</span></p><p><i class="fas fa-comment"></i><span> Unless otherwise noted, all steps are completed by using the </span><em><span>Work Server</span></em><span> command line.</span></p><ol start='25' ><li><p><span>Create a VPC.</span></p><p><span>Run the following command, and set these options. </span></p><ul><li><p><strong><span>cidr-block:</span></strong><span> </span><code>10.0.0.0/16</code></p><p><span>The VPN has a Classless Inter-Domain Routing (CIDR) block of </span><em><span>10.0.0.0/16</span></em><span>. This CIDR block contains all IP addresses that start with </span><em><span>10.0.x.x</span></em><span>. </span></p></li><li><p><strong><span>region:</span></strong><span> </span><code>us-east-1</code></p></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-vpc <span class="cm-attribute">--cidr-block</span> <span class="cm-number">10</span>.0.0.0/16 <span class="cm-attribute">--region</span> us-east-1</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>To run commands, press the ENTER key.</span></p><p><span>Example output:</span></p><blockquote><p><span>{</span></p><p><span>&quot;Vpc&quot;: {</span></p><p><strong><span>&quot;VpcId&quot;: &quot;vpc-002e01aXXXXXXXXX&quot;</span></strong><span>,</span></p><p><span>&quot;InstanceTenancy&quot;: &quot;default&quot;, </span></p><p><span>&quot;Tags&quot;: [], </span></p><p><span>&quot;CidrBlockAssociationSet&quot;: [</span></p><p><span> {</span></p><p><span>   &quot;AssociationId&quot;: &quot;vpc-cidr-assoc-04169db9XXXXXXXXX&quot;, </span></p><p><span>   &quot;CidrBlock&quot;: &quot;10.0.0.0/16&quot;, </span></p><p><span>   &quot;CidrBlockState&quot;: {</span></p><p><span>   &quot;State&quot;: &quot;associated&quot;</span></p><p><span>   }</span></p><p><span>  }</span></p><p><span>], </span></p><p><span>&quot;Ipv6CidrBlockAssociationSet&quot;: [], </span></p><p><span>&quot;State&quot;: &quot;pending&quot;, </span></p><p><span>&quot;DhcpOptionsId&quot;: &quot;dopt-09e8dfcXXXXXXXXX&quot;, </span></p><p><span>&quot;OwnerId&quot;: &quot;484652755256&quot;, </span></p><p><span>&quot;CidrBlock&quot;: &quot;10.0.0.0/16&quot;, </span></p><p><span>&quot;IsDefault&quot;: false</span></p><p><span>}</span></p><p><span>}</span></p></blockquote></li><li><p><span>Make a note of the </span><em><span>VpcId</span></em><span> value (for example, copy it from the output and paste it in the Lab Details text file). The VPC ID will look similar to </span><em><span>vpc-0187eedeaxxxxxx3</span></em><span>.</span></p></li><li><p><span>To make your VPC easier to manage in the future, assign a tag to it. Run the following command with the </span><em><span>VpcId</span></em><span> value. </span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-tags <span class="cm-attribute">--resources</span> &lt;VpcId&gt; <span class="cm-attribute">--tags</span> <span class="cm-string">'Key=Name,Value="Lab VPC"'</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>The following example shows this command updated with a </span><em><span>VpcId</span></em><span> value:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-tags --resources vpc-0187eedeaa5xxxxx3 --tags 'Key=Name,Value="Lab VPC"'</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><i class="fas fa-comment"></i><span> If you must look up details about your VPC later in the lab, you can use the following command.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 describe-vpcs <span class="cm-attribute">--filters</span> <span class="cm-def">Name</span><span class="cm-operator">=</span>tag:Name<span class="cm-def">,Values</span><span class="cm-operator">=</span><span class="cm-string">"Lab VPC"</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>Example output:</span></p><blockquote><p><span>{</span></p><p><span>&quot;Vpcs&quot;: [</span></p><p><span>{</span></p><p><span>&quot;VpcId&quot;: &quot;vpc-09ad15ed2578fd07c&quot;, </span></p><p><span>&quot;InstanceTenancy&quot;: &quot;default&quot;, </span></p><p><span>&quot;Tags&quot;: [</span></p><p><span>{</span></p><p><span>&quot;Value&quot;: &quot;Lab VPC&quot;, </span></p><p><span>&quot;Key&quot;: &quot;Name&quot;</span></p><p><span>}</span></p><p><span>], </span></p><p><span>&quot;CidrBlockAssociationSet&quot;: [</span></p><p><span>{</span></p><p><span>&quot;AssociationId&quot;: &quot;vpc-cidr-assoc-0abc37b35e6b7e4d3&quot;, </span></p><p><span>&quot;CidrBlock&quot;: &quot;10.0.0.0/16&quot;, </span></p><p><span>&quot;CidrBlockState&quot;: {</span></p><p><span>&quot;State&quot;: &quot;associated&quot;</span></p><p><span>}</span></p><p><span>}</span></p><p><span>], </span></p><p><span>&quot;State&quot;: &quot;available&quot;, </span></p><p><span>&quot;DhcpOptionsId&quot;: &quot;dopt-04541c0cef2906622&quot;, </span></p><p><span>&quot;OwnerId&quot;: &quot;523831018285&quot;, </span></p><p><span>&quot;CidrBlock&quot;: &quot;10.0.0.0/16&quot;, </span></p><p><span>&quot;IsDefault&quot;: false</span></p><p><span>}</span></p><p><span>]</span></p><p><span>}</span></p></blockquote></li><li><p><span>Create a new internet gateway.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-internet-gateway</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>Example output:</span></p><blockquote><p><span>{</span>
+<span>&quot;InternetGateway&quot;: {</span></p><p><span>&quot;Tags&quot;: [], </span></p><p><span>&quot;Attachments&quot;: [], </span></p><p><strong><span>&quot;InternetGatewayId&quot;: &quot;igw-0e58324325xxxxx5&quot;</span></strong></p><p><span>}</span></p><p><span>}</span></p></blockquote></li><li><p><span>Save the </span><em><span>InternetGatewayId</span></em><span> value to the Lab Details text file. It should look similar to </span><em><span>igw-0b8ba89b3xxxxxx3</span></em><span>.</span></p></li><li><p><span>Assign a tag to your internet gateway.</span></p><p><span>Run the following command with the ID of the internet gateway that you just created.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-tags <span class="cm-attribute">--resources</span> &lt;InternetGatewayId&gt; <span class="cm-attribute">--tags</span> <span class="cm-string">'Key=Name,Value="Lab IGW"'</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>Attach the internet gateway to your VPC. This action allows your VPC to access the public internet. Without it, your VPC is like a house without doors that open to the outside. </span></p><p><span>Run the following command with your internet gateway ID and VPC ID.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 attach-internet-gateway <span class="cm-attribute">--internet-gateway-id</span> &lt;InternetGatewayId&gt; <span class="cm-attribute">--vpc-id</span> &lt;VpcId&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li></ol><p>&nbsp;</p><h2 id='task-2-creating-a-public-subnet'><span>Task 2: Creating a public subnet</span></h2><p><span>In this task, you will create a public subnet. You can use these same steps to create additional subnets in a second Availability Zone. Creating resources in multiple Availability Zones provides </span><em><span>high availability (HA)</span></em><span>.</span></p><p><span>A subnet must be associated with one (and only one) Availability Zone. For this task, uou will create your public subnet in the first Availability Zone.</span></p><ol start='32' ><li><p><span>Find the </span><em><span>ZoneId</span></em><span> value of the first Availability Zone.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 describe-availability-zones <span class="cm-attribute">--filters</span> <span class="cm-def">Name</span><span class="cm-operator">=</span>zone-name<span class="cm-def">,Values</span><span class="cm-operator">=</span>us-east-1a</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>In the output, locate the </span><em><span>ZoneId</span></em><span> value and save it in the Lab Details file.</span></p><p><span>Example output: In this example, the </span><em><span>ZoneId</span></em><span> value is </span><em><span>use1-az6</span></em><span>.</span></p><blockquote><p><span>{</span></p><p><span>&quot;AvailabilityZones&quot;: [</span></p><p><span>{</span></p><p><span> &quot;OptInStatus&quot;: &quot;opt-in-not-required&quot;, </span></p><p><span> &quot;Messages&quot;: [], </span></p><p><span> </span><strong><span>&quot;ZoneId&quot;: &quot;use1-az6&quot;,</span></strong></p><p><span> &quot;GroupName&quot;: &quot;us-east-1&quot;, </span></p><p><span> &quot;State&quot;: &quot;available&quot;, </span></p><p><span> &quot;NetworkBorderGroup&quot;: &quot;us-east-1&quot;, </span></p><p><span> &quot;ZoneName&quot;: &quot;us-east-1a&quot;, </span></p><p><span> &quot;RegionName&quot;: &quot;us-east-1&quot;</span></p><p><span>}</span></p><p><span>]</span></p><p><span>}</span></p></blockquote></li><li><p><span>Create a public subnet.</span></p><p><span>Run the following command by setting these options.</span></p><ul><li><strong><span>availability-zone-id:</span></strong><span>  </span><em><span>ZoneId</span></em><span> value from the previous step </span></li><li><strong><span>cider-block:</span></strong><span> </span><code>10.0.0.0/24</code></li><li><strong><span>vpc-id:</span></strong><span> </span><em><span>VpcId</span></em><span> value that you saved previously</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-subnet <span class="cm-attribute">--availability-zone-id</span> &lt;ZoneId&gt; <span class="cm-attribute">--cidr-block</span> <span class="cm-number">10</span>.0.0.0/24 <span class="cm-attribute">--vpc-id</span> &lt;VpcId&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>The public subnet has a CIDR block of </span><em><span>10.0.0.0/24</span></em><span>. It contains all the IP addresses that start with </span><em><span>10.0.0.x</span></em><span>.</span></p><p><span>Example output:</span></p><blockquote><p><span>{</span></p><p><span> &quot;Subnet&quot;: {</span></p><p><span>   &quot;MapPublicIpOnLaunch&quot;: false, </span></p><p><span>   &quot;AvailabilityZoneId&quot;: &quot;use1-az6&quot;, </span></p><p><span>   &quot;AvailableIpAddressCount&quot;: 251, </span></p><p><span>   &quot;DefaultForAz&quot;: false, </span></p><p><span>   &quot;SubnetArn&quot;: &quot;arn:aws:ec2:us-east-1:523831018285:subnet/subnet-0ebe1d4bd2deeae16&quot;, </span></p><p><span>   &quot;Ipv6CidrBlockAssociationSet&quot;: [], </span></p><p><span>   &quot;VpcId&quot;: &quot;vpc-09ad15edxxxxxxxxc&quot;, </span></p><p><span>   &quot;State&quot;: &quot;pending&quot;, </span></p><p><span>   &quot;AvailabilityZone&quot;: &quot;us-east-1a&quot;, </span></p><p><span>   </span><strong><span>&quot;SubnetId&quot;: &quot;subnet-0ebe1d4bdxxxxxxx6&quot;</span></strong><span>,</span></p><p><span>   &quot;OwnerId&quot;: &quot;523831018285&quot;, </span></p><p><span>   &quot;CidrBlock&quot;: &quot;10.0.0.0/24&quot;, </span></p><p><span>   &quot;AssignIpv6AddressOnCreation&quot;: false</span></p><p><span> }</span></p><p><span>}</span></p></blockquote></li><li><p><span>Save the </span><em><span>SubnetId</span></em><span> value of the public subnet. It should look similar to </span><em><span>subnet-0234acc518f2e1835.</span></em></p></li><li><p><span>Add a tag to the public subnet.</span></p><p><span>Run the following command with the </span><em><span>SubnetId</span></em><span> value of the public subnet.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-tags <span class="cm-attribute">--resources</span> &lt;public-subnet-SubnetId&gt; <span class="cm-attribute">--tags</span> <span class="cm-string">'Key=Name,Value="Lab Public Subnet"'</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p>&nbsp;</p></li></ol><h2 id='task-3-creating-a-nat-gateway'><span>Task 3: Creating a NAT gateway</span></h2><p><span>A </span><em><span>NAT gateway</span></em><span> provides internet connectivity to EC2 instances in private subnets. NAT gateways must reside in a public subnet so that they can forward requests outside the VPC. </span></p><p><span>You will use the </span><em><span>Lab Public Subnet</span></em><span> to host the NAT gateway.</span></p><ol start='36' ><li><p><span>Create an Elastic IP reservation. This resource assigns a public IP address to the NAT gateway.</span></p><p><span>Run the following command:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 allocate-address</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>Example output:</span></p><blockquote><p><span>{</span></p><p><span>&quot;Domain&quot;: &quot;vpc&quot;, </span></p><p><span>&quot;PublicIpv4Pool&quot;: &quot;amazon&quot;, </span></p><p><span>&quot;PublicIp&quot;: &quot;184.73.52.246&quot;, </span></p><p><strong><span>&quot;AllocationId&quot;: &quot;eipalloc-0c68d3321xxxxxxe&quot;</span></strong><span>,</span></p><p><span>&quot;NetworkBorderGroup&quot;: &quot;us-east-1&quot;</span></p><p><span>}</span></p></blockquote></li><li><p><span>Save the </span><em><span>AllocationId</span></em><span> value. It will look similar to </span><em><span>eipalloc-0f009b89xxxxxx8</span></em><span>. </span></p></li><li><p><span>Create the NAT gateway.</span></p><p><span>Run the following command with the values of both the public </span><em><span>SubnetId</span></em><span> and the </span><em><span>AllocationId</span></em><span>:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-nat-gateway <span class="cm-attribute">--subnet-id</span> &lt;SubnetId&gt; <span class="cm-attribute">--allocation-id</span> &lt;AllocationId&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>Example output:</span></p><blockquote><p><span>{</span></p><p><span>&quot;NatGateway&quot;: {</span></p><p><span>&quot;NatGatewayAddresses&quot;: [</span></p><p><span> {</span></p><p><span>   &quot;AllocationId&quot;: &quot;eipalloc-0c68d3321xxxxxxe&quot;</span></p><p><span> }</span></p><p><span>], </span></p><p><span>&quot;VpcId&quot;: &quot;vpc-09ad15ed25xxxxxxxc&quot;, </span></p><p><span>&quot;State&quot;: &quot;pending&quot;, </span></p><p><strong><span>&quot;NatGatewayId&quot;: &quot;nat-0c6837629xxxxxxd&quot;</span></strong><span>,</span></p><p><span>&quot;SubnetId&quot;: &quot;subnet-0ebe1d4bdxxxxxx6&quot;, </span></p><p><span>&quot;CreateTime&quot;: &quot;2020-05-12T13:54:25.000Z&quot;</span></p><p><span>}</span></p><p><span>}</span></p></blockquote></li><li><p><span>Save the </span><em><span>NatGatewayId</span></em><span> value. It will look similar to </span><em><span>nat-0db71ddbdxxxxx2</span></em><span>.</span></p></li></ol><p>&nbsp;</p><h2 id='task-4-creating-a-route-table-for-the-public-subnet'><span>Task 4: Creating a route table for the public subnet</span></h2><p><span>You will now configure the </span><em><span>Lab Public Subnet</span></em><span> to route internet-bound traffic to the </span><em><span>internet gateway</span></em><span> so that resources in the public subnet can connect to the internet. You do this by configuring a </span><em><span>route table</span></em><span>.</span></p><p><span>A </span><em><span>route table</span></em><span> contains a set of rules, called </span><em><span>routes</span></em><span>, that determine where network traffic is directed. The route table controls routing for the subnet.</span></p><p><span>First, you will create a </span><em><span>route table</span></em><span> in a VPC. Then, you will associate each subnet in a VPC with the route table. </span></p><ol start='40' ><li><p><span>Create a new route table for the public subnet.</span></p><p><span>Run the following command with the </span><em><span>VpcId</span></em><span> value that you saved previously:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-route-table <span class="cm-attribute">--vpc-id</span> &lt;VpcId&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>Example output:</span></p><blockquote><p><span>{</span></p><p><span>&quot;RouteTable&quot;: {</span></p><p><span>&quot;Associations&quot;: [], </span></p><p><strong><span>&quot;RouteTableId&quot;: &quot;rtb-074b34310xxxxxxx4&quot;</span></strong><span>,</span></p><p><span>&quot;VpcId&quot;: &quot;vpc-09ad15ed2xxxxxxc&quot;,</span></p><p><span>&quot;PropagatingVgws&quot;: [], </span></p><p><span>&quot;Tags&quot;: [], </span></p><p><span>&quot;Routes&quot;: [</span></p><p><span> {</span></p><p><span>   &quot;GatewayId&quot;: &quot;local&quot;, </span></p><p><span>   &quot;DestinationCidrBlock&quot;: &quot;10.0.0.0/16&quot;, </span></p><p><span>   &quot;State&quot;: &quot;active&quot;, </span></p><p><span>   &quot;Origin&quot;: &quot;CreateRouteTable&quot;</span></p><p><span> }</span></p><p><span>], </span></p><p><span>&quot;OwnerId&quot;: &quot;523831018285&quot;</span></p><p><span>}</span></p><p><span>}</span></p></blockquote></li><li><p><span>Save the </span><em><span>RouteTableId</span></em><span> value of the public subnet. It will look similar to </span><em><span>rtb-05cf777cxxxxxxe</span></em><span>.</span></p></li><li><p><span>Add a tag to the public route table.</span></p><p><span>Run the following command with the </span><em><span>RouteTableId</span></em><span> value of the public subnet:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.833740234375px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-tags <span class="cm-attribute">--resources</span> &lt;public-subnet-RouteTableId&gt; <span class="cm-attribute">--tags</span> <span class="cm-string">'Key=Name,Value="Public Subnet Route Table"'</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 44px;"></div><div class="CodeMirror-gutters" style="display: none; height: 44px;"></div></div></div></pre></li><li><p><span>Add a route to the public route table.</span></p><p><span>The route table must be told where to send requests. Routing is based on CIDR block ranges. For this rule, if a request is made to any address outside the VPC CIDR block, the route will send the request to the internet gateway. The CIDR range </span><em><span>0.0.0.0/0</span></em><span> means that requests can be sent to </span><em><span>all</span></em><span> IP addresses, or anywhere on the internet. </span></p><p><span>Run the following command by setting these options.</span></p><ul><li><strong><span>destination-cidr-block:</span></strong><span> </span><code>0.0.0.0/0</code></li><li><strong><span>gateway-id:</span></strong><span> </span><em><span>InternetGatewayId</span></em><span> value that you saved previously</span></li><li><strong><span>route-table-id:</span></strong><span> Public subnet </span><em><span>RouteTableId</span></em><span> value</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.833251953125px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-route <span class="cm-attribute">--destination-cidr-block</span> <span class="cm-number">0</span>.0.0.0/0 <span class="cm-attribute">--gateway-id</span> &lt;InternetGatewayId&gt; <span class="cm-attribute">--route-table-id</span> &lt;public-subnet-RouteTableId&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 44px;"></div><div class="CodeMirror-gutters" style="display: none; height: 44px;"></div></div></div></pre><p><span>Example output:</span></p><blockquote><p><span>{</span></p><p><span>&quot;Return&quot;: true</span></p><p><span>}</span></p></blockquote></li><li><p><span>Next, associate the </span><em><span>Public Subnet Route Table</span></em><span> with the </span><em><span>Lab Public Subnet</span></em><span>.</span></p><p><span>Run the following command by setting these options.</span></p><ul><li><strong><span>route-table-id:</span></strong><span> Public subnet </span><em><span>RouteTableId</span></em><span> value</span></li><li><strong><span>subnet-id:</span></strong><span> Public subnet </span><em><span>SubnetId</span></em><span> value </span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.833251953125px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 associate-route-table <span class="cm-attribute">--route-table-id</span> &lt;public-subnet-RouteTableId&gt; <span class="cm-attribute">--subnet-id</span> &lt;public-subnet-SubnetId&gt; &nbsp; &nbsp;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 44px;"></div><div class="CodeMirror-gutters" style="display: none; height: 44px;"></div></div></div></pre><p><span>Example output:</span></p><blockquote><p><span>{</span></p><p><span>&quot;AssociationState&quot;: {</span></p><p><span> &quot;State&quot;: &quot;associated&quot;</span></p><p><span>}, </span></p><p><strong><span>&quot;AssociationId&quot;: &quot;rtbassoc-0c1a558699xxxxxx6&quot;</span></strong></p><p><span>}</span></p></blockquote></li></ol><p>&nbsp;</p><h2 id='task-5-creating-a-private-subnet'><span>Task 5: Creating a private subnet</span></h2><p><span>In this task, you will create a </span><em><span>private subnet</span></em><span> in the same Availability Zone. However, you could reuse these basic steps that you used to create the public subnet to create additional subnets in a second Availability Zone. Recall that creating resources in multiple Availability Zones provides HA.</span></p><ol start='45' ><li><p><span>Create a private subnet.</span></p><p><span>Edit the following command by setting these options.</span></p><ul><li><strong><span>availability-zone-id:</span></strong><span> </span><em><span>ZoneId</span></em><span> value that you used for the public subnet </span></li><li><strong><span>cider-block:</span></strong><span> </span><code>10.0.1.0/24</code></li><li><strong><span>vpc-id:</span></strong><span> </span><em><span>VpcId</span></em><span> value that you used previously</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-subnet <span class="cm-attribute">--availability-zone-id</span> &lt;ZoneId&gt; <span class="cm-attribute">--cidr-block</span> <span class="cm-number">10</span>.0.1.0/24 <span class="cm-attribute">--vpc-id</span> &lt;VpcId&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>The private subnet has a CIDR block of </span><em><span>10.0.1.0/24</span></em><span>. It contains all IP addresses that start with </span><em><span>10.0.1.x</span></em><span>.</span></p><p><span>Example output:</span></p><blockquote><p><span>{</span></p><p><span>&quot;Subnet&quot;: {</span></p><p><span>   &quot;MapPublicIpOnLaunch&quot;: false, </span></p><p><span>   &quot;AvailabilityZoneId&quot;: &quot;use1-az6&quot;, </span></p><p><span>   &quot;AvailableIpAddressCount&quot;: 251, </span></p><p><span>   &quot;DefaultForAz&quot;: false, </span></p><p><span>   &quot;SubnetArn&quot;: &quot;arn:aws:ec2:us-east-1:523831018285:subnet/subnet-0ed85b0982eaa802c&quot;, </span></p><p><span>   &quot;Ipv6CidrBlockAssociationSet&quot;: [], </span></p><p><span>   &quot;VpcId&quot;: &quot;vpc-09ad15ed2xxxxxxc&quot;, </span></p><p><span>   &quot;State&quot;: &quot;pending&quot;, </span></p><p><span>   &quot;AvailabilityZone&quot;: &quot;us-east-1a&quot;, </span></p><p><span>   </span><strong><span>&quot;SubnetId&quot;: &quot;subnet-0ed85b098xxxxxxc&quot;</span></strong><span>,</span></p><p><span>   &quot;OwnerId&quot;: &quot;523831018285&quot;, </span></p><p><span>   &quot;CidrBlock&quot;: &quot;10.0.1.0/24&quot;, </span></p><p><span>   &quot;AssignIpv6AddressOnCreation&quot;: false</span></p><p><span>}</span></p><p><span>}</span></p></blockquote></li><li><p><span>Save the </span><em><span>SubnetId</span></em><span> value of the private subnet. </span></p></li><li><p><span>Add a tag to the private subnet.</span></p><p><span>Run the following command with </span><em><span>SubnetId</span></em><span> value of the private subnet.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-tags <span class="cm-attribute">--resources</span> &lt;private-subnet-SubnetId&gt; <span class="cm-attribute">--tags</span> <span class="cm-string">'Key=Name,Value="Lab Private Subnet"'</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li></ol><p>&nbsp;</p><h2 id='task-6-creating-a-route-table-for-the-private-subnet'><span>Task 6: Creating a route table for the private subnet</span></h2><p><span>You will now configure the </span><em><span>Lab Private Subnet</span></em><span> to route internet-bound traffic to the </span><em><span>NAT gateway</span></em><span>. By doing so, resources in the private subnet can connect to the internet, while still keeping the resources private. </span></p><p><span>You will create another </span><em><span>route table</span></em><span>, add a route to the table, and associate the table with the </span><em><span>Lab Private Subnet</span></em><span>.</span></p><ol start='48' ><li><p><span>Create a new route table for the private subnet.</span></p><p><span>Run the following command with the </span><em><span>VpcId</span></em><span> value that you saved previously:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-route-table <span class="cm-attribute">--vpc-id</span> &lt;VpcId&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>Example output:</span></p><blockquote><p><span>{</span></p><p><span>&quot;RouteTable&quot;: {</span></p><p><span>&quot;Associations&quot;: [], </span></p><p><strong><span>&quot;RouteTableId&quot;: &quot;rtb-0302d7607xxxxxx8&quot;,</span></strong><span> </span></p><p><span>&quot;VpcId&quot;: &quot;vpc-09ad15edxxxxxxc&quot;, </span></p><p><span>&quot;PropagatingVgws&quot;: [], </span></p><p><span>&quot;Tags&quot;: [], </span></p><p><span>&quot;Routes&quot;: [</span></p><p><span> {</span></p><p><span>   &quot;GatewayId&quot;: &quot;local&quot;, </span></p><p><span>   &quot;DestinationCidrBlock&quot;: &quot;10.0.0.0/16&quot;, </span></p><p><span>   &quot;State&quot;: &quot;active&quot;, </span></p><p><span>   &quot;Origin&quot;: &quot;CreateRouteTable&quot;</span></p><p><span> }</span></p><p><span>], </span></p><p><span>&quot;OwnerId&quot;: &quot;523831018285&quot;</span></p><p><span>}</span></p><p><span>}</span></p></blockquote></li><li><p><span>Save the </span><em><span>RouteTableId</span></em><span> value of the private subnet.</span></p></li><li><p><span>Tag the route table for the private subnet.</span></p><p><span>Run the following command with the </span><em><span>RouteTableId</span></em><span> value of the private subnet:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.833251953125px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-tags <span class="cm-attribute">--resources</span> &lt;private-subnet-RouteTableId&gt; <span class="cm-attribute">--tags</span> <span class="cm-string">'Key=Name,Value="Private Subnet Route Table"'</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 44px;"></div><div class="CodeMirror-gutters" style="display: none; height: 44px;"></div></div></div></pre></li><li><p><span>Add a route to the route table for the private subnet.</span></p><p><span>Recall that route tables are configured to send requests, and that routing is based on CIDR block ranges. For this rule, the route will send a request that&#39;s made to any address outside the VPC CIDR block to the NAT gateway. The CIDR range </span><em><span>0.0.0.0/0</span></em><span> means </span><em><span>all</span></em><span> IP addresses, or any IP address from anywhere. </span></p><p><span>Run the following command by setting these optionss:</span></p><ul><li><strong><span>destination-cidr-block:</span></strong><span> </span><code>0.0.0.0/0</code></li><li><strong><span>gateway-id:</span></strong><span> </span><em><span>NatGatewayId</span></em><span> value that you saved previously</span></li><li><strong><span>route-table-id:</span></strong><span> Private subnet </span><em><span>RouteTableId</span></em><span> value</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.83349609375px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-route <span class="cm-attribute">--destination-cidr-block</span> <span class="cm-number">0</span>.0.0.0/0 <span class="cm-attribute">--nat-gateway-id</span> &lt;NatGatewayId&gt; <span class="cm-attribute">--route-table-id</span> &lt;private-subnet-RouteTableId&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 44px;"></div><div class="CodeMirror-gutters" style="display: none; height: 44px;"></div></div></div></pre><p><span>Example output:</span></p><blockquote><p><span>{</span></p><p><span>&quot;Return&quot;: true</span></p><p><span>}</span></p></blockquote></li><li><p><span>Next, associate the </span><em><span>Private Subnet Route Table</span></em><span> with the </span><em><span>Lab Private Subnet</span></em><span>.</span></p><p><span>Run the following command by setting these options.</span></p><ul><li><strong><span>route-table-id:</span></strong><span> Private subnet </span><em><span>RouteTableId</span></em><span> value</span></li><li><strong><span>subnet-id:</span></strong><span> Private subnet </span><em><span>SubnetId</span></em><span> value </span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.833251953125px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 associate-route-table <span class="cm-attribute">--route-table-id</span> &lt;private-subnet-RouteTableId&gt; <span class="cm-attribute">--subnet-id</span> &lt;private-subnet-SubnetId&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 44px;"></div><div class="CodeMirror-gutters" style="display: none; height: 44px;"></div></div></div></pre><p><span>Example output:</span></p><blockquote><p><span>{</span></p><p><span>&quot;AssociationState&quot;: {</span></p><p><span>&quot;State&quot;: &quot;associated&quot;</span></p><p><span>}, </span></p><p><strong><span>&quot;AssociationId&quot;: &quot;rtbassoc-00812e516xxxxxx5&quot;</span></strong></p><p><span>}</span></p></blockquote></li></ol><p>&nbsp;</p><h2 id='task-7-creating-a-vpc-security-group'><span>Task 7: Creating a VPC security group</span></h2><p><span>In this task, you will create a VPC security group, which acts as a virtual firewall. When you launch an EC2 instance, you associate one or more security groups with the instance. You can add rules to each security group that allow traffic to or from its associated instances.</span></p><ol start='53' ><li><p><span>Create a new security group.</span></p><p><span>Run the following command with the </span><em><span>VpcId</span></em><span> value that you used previously:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.833251953125px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 create-security-group <span class="cm-attribute">--description</span> <span class="cm-string">"Enable HTTP access"</span> <span class="cm-attribute">--group-name</span> <span class="cm-string">"Web Security Group"</span> <span class="cm-attribute">--vpc-id</span> &lt;VpcId&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 44px;"></div><div class="CodeMirror-gutters" style="display: none; height: 44px;"></div></div></div></pre><p><span>Example output:</span></p><blockquote><p><span>{</span></p><p><span>&quot;GroupId&quot;: &quot;sg-0a0879f902xxxxxx7&quot;</span></p><p><span>}</span></p></blockquote></li><li><p><span>Save the </span><em><span>GroupId</span></em><span> value of the security group. It will look similar to </span><em><span>sg-08e8e4f61xxxxxxf</span></em><span>.</span></p></li><li><p><span>Add an </span><em><span>ingress rule</span></em><span> to the security group.</span></p><p><em><span>Ingress rules</span></em><span> control traffic that enters a VPC. They allow requests to access designated ports by using the specified protocols. The requests are also filtered by the source IP address by using the </span><em><span>CIDR</span></em><span> option.</span></p><p><span>Run the following command by setting these options.</span></p><ul><li><strong><span>group-id:</span></strong><span> Security group </span><em><span>GroupId</span></em><span> value</span></li><li><strong><span>protocol:</span></strong><span> </span><code>tcp</code></li><li><strong><span>port:</span></strong><span> </span><code>80</code></li><li><strong><span>cidr:</span></strong><span> </span><code>0.0.0.0/0</code></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.8330078125px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 authorize-security-group-ingress <span class="cm-attribute">--group-id</span> &lt;security-group-GroupId&gt; <span class="cm-attribute">--protocol</span> tcp <span class="cm-attribute">--port</span> <span class="cm-number">80</span> <span class="cm-attribute">--cidr</span> <span class="cm-number">0</span>.0.0.0/0</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 44px;"></div><div class="CodeMirror-gutters" style="display: none; height: 44px;"></div></div></div></pre><p><span>You will use this security group in the next task when you launch an EC2 instance.</span></p></li></ol><p>&nbsp;</p><h2 id='task-8-launching-a-web-server-instance'><span>Task 8: Launching a web server instance</span></h2><p><span>In this task, you will launch an EC2 instance into the new VPC. You will configure the instance to act as a web server.</span></p><ol start='56' ><li><p><span>Find the Amazon Machine Image (AMI) ID of the Amazon Linux 2 image.</span></p><p><span>Because Amazon periodically updates machine images, you must identify the most recent AMI ID that is available.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.83349609375px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 describe-images <span class="cm-attribute">--owners</span> amazon <span class="cm-attribute">--filters</span> <span class="cm-string">'Name=name,Values=amzn2-ami-hvm-2.0.????????.?-x86_64-gp2'</span> <span class="cm-string">'Name=state,Values=available'</span> <span class="cm-attribute">--query</span> <span class="cm-string">'reverse(sort_by(Images, &amp;CreationDate))[:1].ImageId'</span> <span class="cm-attribute">--output</span> text</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><p><span>Example output:</span></p><blockquote><p><span>ami-0323c3dd2da7fb37d</span></p></blockquote></li><li><p><span>Save the </span><em><span>ImageId</span></em><span> value. It will look similar to </span><em><span>ami-0fc61db85xxxxxed</span></em><span>.</span></p></li><li><p><span>Retrieve the user_data.txt file by running the following command.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.83349609375px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/CUR-TF-100-ACCLFO-2/lab2-cli-vpc/user_data.txt</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 44px;"></div><div class="CodeMirror-gutters" style="display: none; height: 44px;"></div></div></div></pre><p><span>The user_data.txt file will be passed as a parameter in the </span><em><span>ec2 run-instances</span></em><span> command. This file contains commands that will run on the new Amazon EC2 host after it starts.</span></p><p><span>Review the contents of the user_data.txt file:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">#!/bin/bash</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Install Apache Web Server and PHP</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">yum install <span class="cm-attribute">-y</span> httpd mysql php</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Download Lab files</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">wget</span> %% S3_HTTP_PATH_PREFIX %%/lab-app.zip</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">unzip lab-app.zip <span class="cm-attribute">-d</span> /var/www/html/</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># Turn on web server</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">chkconfig httpd on</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">service</span> httpd <span class="cm-builtin">start</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 200px;"></div><div class="CodeMirror-gutters" style="display: none; height: 200px;"></div></div></div></pre></li></ol><ol start='59' ><li><p><span>Create an EC2 instance in the </span><em><span>Lab Public Subnet</span></em><span>.</span></p><p><span>Run the following command by setting these options.</span></p><ul><li><strong><span>image-id:</span></strong><span> AMI </span><em><span>ImageId</span></em><span> value</span></li><li><strong><span>instance-type:</span></strong><span> </span><code>t2.micro</code></li><li><strong><span>key-name:</span></strong><span> </span><code>vockey</code></li><li><strong><span>security-group-ids:</span></strong><span> Security group </span><em><span>GroupId</span></em><span> value</span></li><li><strong><span>subnet-id:</span></strong><span> Public subnet </span><em><span>SubnetId</span></em><span> value</span></li></ul><p><i class="fas fa-comment"></i><span> This command is split across multiple lines for legibility. The back slash (</span><span>\</span><span>) at the end of a line indicates that the command continues to the next line. You could also enter this entire command on a single line, but you would need to remove the back slashes.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">aws ec2 run-instances <span class="cm-attribute">--image-id</span> &lt;ami-ImageId&gt; <span class="cm-attribute">--count</span> <span class="cm-number">1</span> <span class="cm-attribute">--instance-type</span> t2.micro \</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--key-name</span> vockey <span class="cm-attribute">--security-group-ids</span> &lt;security-group-GroupId&gt; <span class="cm-attribute">--subnet-id</span> &lt;public-subnet-SubnetId&gt; \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--associate-public-ip-address</span> <span class="cm-attribute">--user-data</span> file://user_data.txt \</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-attribute">--tag-specifications</span> <span class="cm-string">'ResourceType=instance,Tags=[{Key=Name,Value="Web Server 1"}]'</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 89px;"></div><div class="CodeMirror-gutters" style="display: none; height: 89px;"></div></div></div></pre><p><span>Example output: The following output is an excerpt. You can find the EC2 instance ID in the top-half of the output.</span>
+<span>    </span></p><blockquote><p><span>{</span></p><p><span>&quot;Instances&quot;: [</span></p><p><span>{</span></p><p><span> &quot;Monitoring&quot;: {</span></p><p><span>   &quot;State&quot;: &quot;disabled&quot;</span></p><p><span> }, </span></p><p><span> &quot;PublicDnsName&quot;: &quot;&quot;, </span></p><p><span> &quot;StateReason&quot;: {</span></p><p><span>   &quot;Message&quot;: &quot;pending&quot;, </span></p><p><span>   &quot;Code&quot;: &quot;pending&quot;</span></p><p><span> }, </span></p><p><span> &quot;State&quot;: {</span></p><p><span>   &quot;Code&quot;: 0, </span></p><p><span>   &quot;Name&quot;: &quot;pending&quot;</span></p><p><span> }, </span></p><p><span> &quot;EbsOptimized&quot;: false, </span></p><p><span> &quot;LaunchTime&quot;: &quot;2020-05-12T14:26:34.000Z&quot;, </span></p><p><span> &quot;PrivateIpAddress&quot;: &quot;10.0.0.213&quot;, </span></p><p><span> &quot;ProductCodes&quot;: [], </span></p><p><span> &quot;VpcId&quot;: &quot;vpc-09ad15ed25xxxxxxc&quot;, </span></p><p><span> &quot;CpuOptions&quot;: {</span></p><p><span>   &quot;CoreCount&quot;: 1, </span></p><p><span>   &quot;ThreadsPerCore&quot;: 1</span></p><p><span> }, </span></p><p><span> &quot;StateTransitionReason&quot;: &quot;&quot;, </span></p><p><span> </span><strong><span>&quot;InstanceId&quot;: &quot;i-0109b9c4d9xxxxxxb&quot;</span></strong><span>,</span></p><p><span> &quot;ImageId&quot;: &quot;ami-0323c3dd2da7fb37d&quot;, </span></p><p><span> &quot;PrivateDnsName&quot;: &quot;ip-10-0-0-213.ec2.internal&quot;, </span></p><p><span> &quot;KeyName&quot;: &quot;vockey&quot;, </span></p><p><span> &quot;SecurityGroups&quot;: [</span></p><p><span>  {</span></p><p><span>   &quot;GroupName&quot;: &quot;Web Security Group&quot;, </span></p><p><span>   &quot;GroupId&quot;: &quot;sg-0a0879f902xxxxx7&quot;</span></p><p><span>  }</span></p><p><span> ], </span></p></blockquote></li></ol><ol start='60' ><li><p><span>Save the </span><em><span>InstanceId</span></em><span> value of the EC2 instance. It will look similar to </span><em><span>i-05e986d21xxxxx2</span></em><span>.</span></p></li><li><p><span>Retrieve the public IP address of the EC2 instance by running the following command.</span></p><p><span>Update this command with the </span><em><span>InstanceID</span></em><span> value:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.111111640930176px; left: 7.326385498046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  aws ec2 describe-instances <span class="cm-attribute">--filter</span> <span class="cm-def">Name</span><span class="cm-operator">=</span>instance-id<span class="cm-def">,Values</span><span class="cm-operator">=</span>&lt;ec2-instance-InstanceId&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>Example output: This output is an excerpt. You can find the </span><em><span>PublicIP</span></em><span> value in the </span><strong><span>NetworkInterfaces</span></strong><span> section of the output.</span></p><blockquote><p><span>&quot;NetworkInterfaces&quot;: [</span></p><p><span>{</span></p><p><span>&quot;Status&quot;: &quot;in-use&quot;, </span></p><p><span>&quot;MacAddress&quot;: &quot;0e:24:21:4c:03:bf&quot;, </span></p><p><span>&quot;SourceDestCheck&quot;: true, </span></p><p><span>&quot;VpcId&quot;: &quot;vpc-09ad15ed25xxxxxxc&quot;, </span></p><p><span>&quot;Description&quot;: &quot;&quot;, </span></p><p><span>&quot;NetworkInterfaceId&quot;: &quot;eni-049d461cc2xxxxxx5&quot;, </span></p><p><span>&quot;PrivateIpAddresses&quot;: [</span></p><p><span>{</span></p><p><span>&quot;PrivateIpAddress&quot;: &quot;10.0.0.213&quot;, </span></p><p><span>&quot;Primary&quot;: true, </span></p><p><span>&quot;Association&quot;: {</span></p><p><strong><span>&quot;PublicIp&quot;: &quot;54.166.255.25&quot;</span></strong><span>,</span></p><p><span>&quot;PublicDnsName&quot;: &quot;&quot;, </span></p><p><span>&quot;IpOwnerId&quot;: &quot;amazon&quot;  </span><br/><span>}</span></p><p><span>}</span></p><p><span>], </span></p></blockquote><p>&nbsp;</p><p><span>Wait a few minutes for the instance to start before you continue to the next step.</span></p></li><li><p><span>Open a new web browser tab, paste the public IP address into the browser, and press ENTER.</span></p><p><span>A webpage that displays the AWS logo and instance metadata values should open.</span></p><p><span>The complete architecture that you deployed is:</span></p><p><img src="images/architecture.png" alt="Architecture" width="800"></p></li></ol><p>&nbsp;</p><h2 id='lab-complete'><span>Lab complete</span></h2><p><i class="icon-flag-checkered"></i><span> Congratulations! You have completed the lab.</span></p><ol start='63' ><li><p><span>To confirm that you want to end the lab, at the top of this page, choose </span><span id="ssb_voc_grey"><span>End Lab</span></span><span> and then choose </span><span id="ssb_blue"><span>Yes</span></span></p><p><span>A panel should appear with this message: </span><em><span>DELETE has been initiated... You may close this message box now.</span></em>
+<span>​</span></p></li><li><p><span>To close the panel, choose the </span><strong><span>X</span></strong><span> in the top-right corner.</span></p></li></ol><h3 id='contact-us'><span>Contact us</span></h3><p><a href='mailto:aws-course-feedback@amazon.com'><span>Report an error or correction.</span></a></p><p><span>For other questions, contact us through the </span><a href='https://aws.amazon.com/contact-us/aws-training'><span>Contact AWS Training and Certification page.</span></a></p><p><em><span>©2021 Amazon Web Services, Inc. and its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited.</span></em></p></div></div>
+</body>
+</html>
